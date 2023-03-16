@@ -1,0 +1,17 @@
+{
+    "path": "public/static/app/js/app",
+    "compile": "../app.js",
+    "sources": [
+        "variables.js",
+        "helpers.js",
+        "queue.js",
+        "app.js",
+        "request.js",
+        "dom.js",
+        "domquery.js",
+        "validator.js",
+        "form.js",
+        "tasks.js",
+        "lib.js"
+    ]
+}

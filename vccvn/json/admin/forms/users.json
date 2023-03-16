@@ -1,0 +1,58 @@
+{
+    "inputs":{
+        "name": { "type": "text", "text": "Họ tên", "placeholder":"Nhập họ tên", "required":"true"},
+        "first_name": { "type":"text", "text": "Họ và tên", "required":"true", "placeholder":"Tên", "prepend_group":["last_name"]},
+        "last_name": { "type":"text", "text": "họ và đệm", "required":"true", "placeholder":"Họ"},
+        "gender": { "type":"radio", "text": "Giới tính", "required":"true", "data":{"male":"Nam", "female":"Nữ"}, "default":"male" },
+        "birthday": { "type":"dateselect", "text": "Sinh nhật", "required":"true", "template":"date", "placeholder":"Nhập ngày sinh", "@year-params": ["vi", "current", -70]},
+        "address": { "type": "textarea", "text": "Địa chỉ", "placeholder":"Nhập địa chỉ..."},
+        "email": { "type": "email", "text": "Địa chỉ E-mail", "required":"true" , "prepend_text":"<i class=\"fa fa-envelope\"></i>"},
+        "username": { "type": "text", "text": "Tên đăng nhập", "required":"true", "prepend_text":"<i class=\"fa fa-user\"></i>"},
+        "phone_number": { "type": "text", "text": "Số diện thoại", "prepend_text":"<i class=\"fa fa-phone\"></i>"},
+        "password": {"type":"password", "text":"Mật khẩu", "placeholder": "Nhập mật khẩu", "prepend_text":"<i class=\"fa fa-key\"></i>"},
+        "password_confirmation": {"type":"password", "text":"Mật khẩu xác nhận", "placeholder": "Nhập lại mật khẩu", "prepend_text":"<i class=\"fa fa-key\"></i>"},
+        "avatar": { "type": "file", "text": "Hình đại diện", "template":"cropit", "data-width": 400, "data-height":400},
+        "status": { "type": "deepselect", "text": "Trạng thái", "required":"true", "func":"get_user_config", "params":["status_list"], "template":"deepselect" }
+    },
+    "config":{
+        "name": "Th\u00f4ng tin ng\u01b0\u1eddi d\u00f9ng",
+        "layout_type": "column",
+        "form_groups": [
+            {
+                "title": "Th\u00f4ng tin c\u00e1 nh\u00e2n",
+                "class": "col-md-6",
+                "inputs": [
+                    "first_name",
+                    "last_name",
+                    "gender",
+                    "birthday",
+                    "address",
+                    "email",
+                    "phone_number"
+                ]
+            },
+            {
+                "class": "col-md-6",
+                "inputs": [
+                    "avatar"
+                ]
+            },
+            {
+                "title": "Th\u00f4ng tin t\u00e0i kho\u1ea3n",
+                "class": "col-md-6",
+                "inputs": [
+                    "username",
+                    "password",
+                    "password_confirmation"
+                ]
+            },
+            {
+                "title": "Th\u00f4ng tin kh\u00e1c",
+                "class": "col-md-6",
+                "inputs": [
+                    "status"
+                ]
+            }
+        ]
+    }
+}

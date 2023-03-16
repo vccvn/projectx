@@ -1,0 +1,173 @@
+{
+    "inputs": {
+        "billing_name": {
+            "type": "text",
+            "label": "Họ và tên khách hàng",
+            "placeholder": "Nhập Họ và tên",
+            "required": "true"
+        },
+        "billing_email": {
+            "type": "email",
+            "label": "Email khách hàng",
+            "placeholder": "Nhập email",
+            "required": "true"
+        },
+        "billing_phone_number": {
+            "type": "text",
+            "label": "Số điện thoại",
+            "placeholder": "Nhập só điện thoại",
+            "required": "true"
+        },
+        
+        "billing_region_id": {
+            "type": "crazyselect",
+            "label": "Tỉnh / Thành phố",
+            "className": "d-block",
+            "call": "get_region_options",
+            "@change": "App.cart.changeRegionID"
+        },
+        
+        "billing_district_id": {
+            "type": "crazyselect",
+            "label": "Quận / huyện",
+            "className": "d-block",
+            "call": "get_district_options",
+            "params":[
+                {
+                    "region_id":"#billing_region_id|0"
+                }
+            ],
+            "@change": "App.cart.changeDistrictID"
+        },
+
+        "billing_ward_id": {
+            "type": "crazyselect",
+            "label": "Xã / phường",
+            "className": "d-block",
+            "call": "get_ward_options",
+            "params":[
+                {
+                    "district_id": "#billing_district_id|0"
+                }
+            ]
+        },
+        
+        "billing_address": {
+            "type": "text",
+            "label": "Địa chỉ ",
+            "placeholder": "Nhập Địa chỉ. Ví dụ: Số nhà, tên dường, ..."
+        },
+        "create_account": {
+            "type": "check",
+            "label": "Tạo tài khoản",
+            "check_label": "Tạo tài khoản?"
+            
+        },
+        "password": {
+            "type":"password", 
+            "label":"Mật khẩu", 
+            "placeholder": "Nhập mật khẩu"
+        },
+        "ship_to_different_address": {
+            "type": "check",
+            "label": "Tạo tài khoản",
+            "check_label": "Giao hàng đến địa chỉ khác"
+            
+        },
+        
+        "shipping_name": {
+            "type": "text",
+            "label": "Họ và tên người nhận",
+            "placeholder": "Nhập Họ và tên"
+        },
+        "shipping_email": {
+            "type": "email",
+            "label": "Email khách hàng",
+            "placeholder": "Nhập email"
+        },
+        "shipping_phone_number": {
+            "type": "text",
+            "label": "Số điện thoại",
+            "placeholder": "Nhập só điện thoại"
+        },
+        
+        "shipping_region_id": {
+            "type": "crazyselect",
+            "label": "Tỉnh / Thành phố",
+            "className": "d-block",
+            "call": "get_region_options",
+            "@change": "App.cart.changeShippingRegionID"
+        },
+        
+        "shipping_district_id": {
+            "type": "crazyselect",
+            "label": "Quận / huyện",
+            "className": "d-block",
+            "call": "get_district_options",
+            "params":[
+                {
+                    "region_id":"#shipping_region_id|0"
+                }
+            ],
+            "@change": "App.cart.changeShippingDistrictID"
+        },
+
+        "shipping_ward_id": {
+            "type": "crazyselect",
+            "label": "Xã / phường",
+            "className": "d-block",
+            "call": "get_ward_options",
+            "params":[
+                {
+                    "district_id": "#shipping_district_id|0"
+                }
+            ]
+        },
+        
+        "shipping_address": {
+            "type": "text",
+            "label": "Địa chỉ",
+            "placeholder": "Nhập Địa chỉ. Ví dụ: Số nhà, tên dường, ..."
+        },
+
+        "note": {
+            "type": "textarea",
+            "label": "Ghi chú",
+            "placeholder": "Nhập ghi chú"
+        },
+        "payment_method": {
+            "type": "radio",
+            "template": "radio",
+            "label": "Phương thức thanh toán",
+            "data": [
+                "Giao hàng trả tiền",
+                "Chuyển khoản ngân hàng",
+                "Thanh toán online"
+            ]
+        }
+    },
+    "config": {
+        "name": "Thông tin Đơn hàng",
+        "layout_type": "column",
+        "form_groups": {
+            "customer_info": {
+                "title": "Thông tin khách hàng",
+                "class": "col-md-6",
+                "inputs": [
+                    "name",
+                    "email",
+                    "phone_number",
+                    "address"
+                ]
+            },
+            "order_info": {
+                "title": "Thông tin đơn hàng",
+                "class": "col-md-6",
+                "inputs": [
+                    "payment_method",
+                    "note"
+                ]
+            }
+        }
+    }
+}

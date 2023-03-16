@@ -1,0 +1,36 @@
+{
+    "inputs": {
+        "name": {
+            "type": "text",
+            "label": "Họ tên",
+            "placeholder": "Nhập họ tên",
+            "required": "true"
+        },
+        "email": {
+            "type": "email",
+            "label": "Địa chỉ E-mail",
+            "placeholder": "Nhập email",
+            "required": "true",
+            "prepend_text": "<i class=\"fa fa-envelope\"></i>"
+        },
+        "username": {
+            "type": "text",
+            "label": "Tên đăng nhập",
+            "placeholder": "Nhập tên tài khoản",
+            "required": "true",
+            "prepend_text": "<i class=\"fa fa-user\"></i>"
+        },
+        "password": {
+            "type": "password",
+            "label": "Mật khẩu",
+            "placeholder": "Nhập mật khẩu",
+            "prepend_text": "<i class=\"fa fa-key\"></i>"
+        },
+        "password_confirmation": {
+            "type": "password",
+            "label": "Mật khẩu xác xác nhận",
+            "placeholder": "Nhập lại mật khẩu",
+            "prepend_text": "<i class=\"fa fa-key\"></i>"
+        }
+    }
+}

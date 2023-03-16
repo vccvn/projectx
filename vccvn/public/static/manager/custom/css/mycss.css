@@ -1,0 +1,11 @@
+#pr_user_image{
+    width:40px!important;
+    height:40px!important;
+    margin:0 auto!important;
+    position:relative!important;
+}
+#user_image{
+    margin:auto!important;
+    position:absolute!important;
+    top:0; left:0; right:0; bottom:0!important;
+}

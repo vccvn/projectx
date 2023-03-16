@@ -1,0 +1,68 @@
+{
+    "name": "Tài khoản khách hàng",
+    "package": "customers",
+    "use_trash": true,
+    "titles": {
+        "default": "Danh sách Tài khoản khách hàng",
+        "trash": "Danh sách đã xóa"
+    },
+    "data": {
+        
+    },
+    "filter":{
+        "search_columns": {
+            "name":"Họ và tên",
+            "email": "Email",
+            "phone_number": "Số điện thoại",
+            "address": "Địa chỉ"
+        },
+        "sort_columns": {
+            "name":"Họ và tên",
+            "email": "Email",
+            "phone_number": "Số điện thoại",
+            "id": "Mã khách"
+        }
+    },
+    "table": {
+        "class": "header-center",
+        "columns": [
+            {
+                "title": "Mã",
+                "class": "text-center",
+                "text": ":id"
+            },
+            {
+                "title": "Họ và tên",
+                "class": "min-160 text-center",
+                "template": "<a href=\"{url}\">{name}</a>",
+                "data": {
+                    "url": {
+                        "call":"route",
+                        "params":[".update", {"id": ":id"}]
+                    },
+                    "id": ":id"
+                }
+            },
+            {
+                "title": "Email",
+                "class": "min-160 max-250 text-center",
+                "template": "<a href=\"mailto:{email}\">{email}</a>"
+            },
+            {
+                "title": "Số điện thoại",
+                "class": "min-100 text-center",
+                "template": "<a href=\"tel:{phone_number}\">{phone_number}</a>"
+            },
+            {
+                "title": "Địa chỉ",
+                "class": "min-160 max-250",
+                "text": ":address"
+            }
+        ]
+    },
+    "resources":{
+        "js_data":{},
+        "js":[],
+        "css":[]
+    }
+}

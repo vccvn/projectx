@@ -1,0 +1,444 @@
+.dropzone-library, .dropzone-library *,
+.results .library-images, .results .library-images * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.dropzone-library, .results .library-images {
+  min-height: 150px;
+  background: #fff;
+  padding: 20px 0px;
+}
+
+.dropzone-library.dz-clickable, .results .library-images.dz-clickable {
+  cursor: pointer;
+}
+
+.dropzone-library.dz-clickable *, .results .library-images.dz-clickable * {
+  cursor: default;
+}
+
+.dropzone-library.dz-clickable .dz-message, .dropzone-library.dz-clickable .dz-message *, .results .library-images.dz-clickable .dz-message, .results .library-images.dz-clickable .dz-message * {
+  cursor: pointer;
+}
+
+.dropzone-library.dz-started .dz-message, .results .library-images.dz-started .dz-message {
+  display: none;
+}
+
+.dropzone-library.dz-drag-hover, .results .library-images.dz-drag-hover {
+  border-style: solid;
+}
+
+.dropzone-library.dz-drag-hover .dz-message, .results .library-images.dz-drag-hover .dz-message {
+  opacity: .5;
+}
+
+.dropzone-library .dz-message, .results .library-images .dz-message {
+  text-align: center;
+  margin: 2em 0;
+}
+
+.dropzone-library .dz-preview, .results .library-images .dz-preview {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 16px 14px;
+  min-height: 100px;
+}
+
+.dropzone-library .dz-preview:hover, .results .library-images .dz-preview:hover {
+  z-index: 1000;
+}
+
+.dropzone-library .dz-preview:hover .dz-details, .results .library-images .dz-preview:hover .dz-details {
+  opacity: 1;
+}
+
+.dropzone-library .dz-preview.dz-file-preview .dz-image, .results .library-images .dz-preview.dz-file-preview .dz-image {
+  border-radius: 20px;
+  background: #999;
+  background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#ddd));
+  background: linear-gradient(to bottom, #eee, #ddd);
+}
+
+.dropzone-library .dz-preview.dz-file-preview .dz-details, .results .library-images .dz-preview.dz-file-preview .dz-details {
+  opacity: 1;
+}
+
+.dropzone-library .dz-preview.dz-file-preview, .dropzone-library .dz-preview.dz-image-preview, .results .library-images .dz-preview.dz-file-preview, .results .library-images .dz-preview.dz-image-preview {
+  background: #fff;
+}
+
+.dropzone-library .dz-preview.dz-image-preview .dz-details, .results .library-images .dz-preview.dz-image-preview .dz-details {
+  -webkit-transition: opacity .2s linear;
+  transition: opacity .2s linear;
+}
+
+.dropzone-library .dz-preview .dz-remove, .results .library-images .dz-preview .dz-remove {
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  border: none;
+}
+
+.dropzone-library .dz-preview .dz-remove:hover, .results .library-images .dz-preview .dz-remove:hover {
+  text-decoration: underline;
+}
+
+.dropzone-library .dz-preview:hover .dz-details, .results .library-images .dz-preview:hover .dz-details {
+  opacity: 1;
+}
+
+.dropzone-library .dz-preview .dz-details, .results .library-images .dz-preview .dz-details {
+  z-index: 20;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  font-size: 13px;
+  min-width: 100%;
+  max-width: 100%;
+  padding: 2em 1em;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.9);
+  line-height: 150%;
+}
+
+.dropzone-library .dz-preview .dz-details .dz-size, .results .library-images .dz-preview .dz-details .dz-size {
+  margin-bottom: 1em;
+  font-size: 16px;
+}
+
+.dropzone-library .dz-preview .dz-details .dz-filename, .results .library-images .dz-preview .dz-details .dz-filename {
+  white-space: nowrap;
+}
+
+.dropzone-library .dz-preview .dz-details .dz-filename:hover span, .results .library-images .dz-preview .dz-details .dz-filename:hover span {
+  border: 1px solid rgba(200, 200, 200, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.dropzone-library .dz-preview .dz-details .dz-filename:not(:hover), .results .library-images .dz-preview .dz-details .dz-filename:not(:hover) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dropzone-library .dz-preview .dz-details .dz-filename:not(:hover) span, .results .library-images .dz-preview .dz-details .dz-filename:not(:hover) span {
+  border: 1px solid transparent;
+}
+
+.dropzone-library .dz-preview .dz-details .dz-size span, .dropzone-library .dz-preview .dz-details .dz-filename span, .results .library-images .dz-preview .dz-details .dz-size span, .results .library-images .dz-preview .dz-details .dz-filename span {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 0 .4em;
+  border-radius: 3px;
+}
+
+.dropzone-library .dz-preview:hover .dz-image img, .results .library-images .dz-preview:hover .dz-image img {
+  -webkit-transform: scale(1.05, 1.05);
+  transform: scale(1.05, 1.05);
+  -webkit-filter: blur(8px);
+  filter: blur(8px);
+}
+
+.dropzone-library .dz-preview .dz-image, .results .library-images .dz-preview .dz-image {
+  border-radius: 20px;
+  overflow: hidden;
+  width: 120px;
+  height: 120px;
+  position: relative;
+  display: block;
+  z-index: 10;
+}
+
+.dropzone-library .dz-preview .dz-image img, .results .library-images .dz-preview .dz-image img {
+  display: block;
+  object-fit: cover;
+  width: 120px;
+  height: 120px;
+}
+
+.dropzone-library .dz-preview.dz-success .dz-success-mark, .results .library-images .dz-preview.dz-success .dz-success-mark {
+  -webkit-animation: passing-through 3s cubic-bezier(0.77, 0, 0.175, 1);
+  animation: passing-through 3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.dropzone-library .dz-preview.dz-error .dz-error-mark, .results .library-images .dz-preview.dz-error .dz-error-mark {
+  opacity: 1;
+  -webkit-animation: slide-in 3s cubic-bezier(0.77, 0, 0.175, 1);
+  animation: slide-in 3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.dropzone-library .dz-preview.dz-error .dz-error-message, .results .library-images .dz-preview.dz-error .dz-error-message {
+  display: block;
+}
+
+.dropzone-library .dz-preview.dz-error:hover .dz-error-message, .results .library-images .dz-preview.dz-error:hover .dz-error-message {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.dropzone-library .dz-preview .dz-error-mark, .dropzone-library .dz-preview .dz-success-mark, .results .library-images .dz-preview .dz-error-mark, .results .library-images .dz-preview .dz-success-mark {
+  pointer-events: none;
+  opacity: 0;
+  z-index: 500;
+  position: absolute;
+  display: block;
+  top: 60px;
+  left: 60px;
+  margin-left: -27px;
+  margin-top: -27px;
+}
+
+.dropzone-library .dz-preview .dz-error-mark svg, .dropzone-library .dz-preview .dz-success-mark svg, .results .library-images .dz-preview .dz-error-mark svg, .results .library-images .dz-preview .dz-success-mark svg {
+  display: block;
+  width: 54px;
+  height: 54px;
+}
+
+.dropzone-library .dz-preview.dz-processing .dz-progress, .results .library-images .dz-preview.dz-processing .dz-progress {
+  opacity: 1;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.dropzone-library .dz-preview.dz-complete .dz-progress, .results .library-images .dz-preview.dz-complete .dz-progress {
+  opacity: 0;
+  -webkit-transition: opacity .4s ease-in;
+  transition: opacity .4s ease-in;
+}
+
+.dropzone-library .dz-preview:not(.dz-processing) .dz-progress, .results .library-images .dz-preview:not(.dz-processing) .dz-progress {
+  -webkit-animation: pulse 6s ease infinite;
+  animation: pulse 6s ease infinite;
+}
+
+.dropzone-library .dz-preview .dz-progress, .results .library-images .dz-preview .dz-progress {
+  opacity: 1;
+  z-index: 1000;
+  pointer-events: none;
+  position: absolute;
+  height: 16px;
+  left: 50%;
+  top: 50%;
+  margin-top: -8px;
+  width: 80px;
+  margin-left: -40px;
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-transform: scale(1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.dropzone-library .dz-preview .dz-progress .dz-upload, .results .library-images .dz-preview .dz-progress .dz-upload {
+  background: #333;
+  background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#444));
+  background: linear-gradient(to bottom, #666, #444);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  -webkit-transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+}
+
+.dropzone-library .dz-preview .dz-error-message, .results .library-images .dz-preview .dz-error-message {
+  pointer-events: none;
+  z-index: 1000;
+  position: absolute;
+  display: block;
+  display: none;
+  opacity: 0;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+  border-radius: 8px;
+  font-size: 13px;
+  bottom: 130px;
+  left: -10px;
+  width: 140px;
+  background: #be2626;
+  background: -webkit-gradient(linear, left top, left bottom, from(#be2626), to(#a92222));
+  background: linear-gradient(to bottom, #be2626, #a92222);
+  padding: .5em 1.2em;
+  color: #fff;
+}
+
+.dropzone-library .dz-preview .dz-error-message:after, .results .library-images .dz-preview .dz-error-message:after {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 64px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #be2626;
+}
+
+.dropzone-library .dz-preview .dz-outer-filename, .results .library-images .dz-preview .dz-outer-filename {
+  width: 120px;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.library-body .results {
+  max-height: 480px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.library-body .results #image-list {
+  max-height: 480px;
+  overflow-y: auto;
+  padding-bottom: 15px;
+}
+
+.library-body .results #image-list .dz-image {
+  background: #f3f3f3;
+}
+
+.library-body .results #image-list, .library-body .results #image-preview {
+  transition: all 0.3s;
+}
+
+.library-body .results #image-preview {
+  background: #f3f3f3;
+}
+
+.library-body .results #image-preview .preview-detail {
+  padding-top: 15px;
+}
+
+.library-body .results #image-preview img {
+  max-width: 100%;
+  max-height: 200px;
+}
+
+.library-body .results .library-images {
+  text-align: center;
+}
+
+.library-body .results .library-images .dz-preview {
+  cursor: pointer;
+}
+
+.library-body .results .library-images .dz-preview .btn-remove-image-file {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: block;
+  z-index: 100;
+  opacity: 0.3;
+}
+
+.library-body .results .library-images .dz-preview .btn-remove-image-file svg {
+  width: 22px;
+  height: 22px;
+}
+
+.library-body .results .library-images .dz-preview .dz-success-mark {
+  cursor: pointer;
+}
+
+.library-body .results .library-images .dz-preview:hover .btn-remove-image-file {
+  opacity: 0.7;
+}
+
+.library-body .results .library-images .dz-preview:hover .btn-remove-image-file:hover {
+  opacity: 1;
+}
+
+.library-body .results .library-images .dz-preview.selected .dz-success-mark {
+  opacity: 1;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.library-body .results .library-images .dz-preview.selected .dz-details, .library-body .results .library-images .dz-preview.selected:hover .dz-details {
+  opacity: 0;
+}
+
+.library-body .results .library-images .dz-preview .dz-details .dz-filename {
+  white-space: nowrap;
+}
+
+.library-body .results .library-images .dz-preview .dz-details .dz-filename:hover {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.library-body .results .library-images .dz-preview .dz-details .dz-filename:hover span {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 0 .4em;
+  border-radius: 3px;
+  border: 1px solid transparent;
+}
+
+@media screen and (min-width: 1100px) {
+  .library-body .results .library-images {
+    text-align: left;
+  }
+}
+
+.library-body .message {
+  text-align: center;
+}
+
+.library-modal .modal-dialog {
+  max-width: 866px;
+  margin: 3rem auto 0 auto;
+}
+
+@media screen and (min-width: 880px) {
+  .library-modal .modal-dialog {
+    max-width: 860px;
+    margin: 3rem auto 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .library-modal .modal-dialog {
+    max-width: 1120px;
+    margin: 1rem auto 0 auto;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .library-modal .modal-dialog {
+    max-width: 1260px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .library-modal .modal-dialog {
+    max-width: 1560px;
+  }
+}
+
+.library-modal .m-portlet {
+  margin-bottom: 0 !important;
+}
+
+.library-modal .m-portlet .m-portlet__body {
+  padding: 0 0 !important;
+}
+
+.library-modal .m-portlet .footer-buttons {
+  padding: 15px;
+  border-top: 1px solid #ebedf2;
+  text-align: right;
+}
+
+.library-modal .m-portlet .upload-block {
+  padding: 20px;
+}
+
+.col-0 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 0%;
+  flex: 0 0 0%;
+  max-width: 0%;
+  padding: 0 0 0 0 !important;
+}

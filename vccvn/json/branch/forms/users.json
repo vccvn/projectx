@@ -1,0 +1,150 @@
+{
+    "name": {
+        "type": "text",
+        "text": "Họ tên",
+        "placeholder": "Nhập họ tên",
+        "required": "true"
+    },
+    "first_name": {
+        "type": "text",
+        "text": "Họ và tên",
+        "required": "true",
+        "placeholder": "Tên",
+        "prepend_group": [
+            "last_name"
+        ]
+    },
+    "last_name": {
+        "type": "text",
+        "text": "họ và đệm",
+        "required": "true",
+        "placeholder": "Họ"
+    },
+    "gender": {
+        "type": "radio",
+        "text": "Giới tính",
+        "required": "true",
+        "data": {
+            "male": "Nam",
+            "female": "Nữ"
+        },
+        "default": "male"
+    },
+    "birthday": {
+        "type": "date",
+        "text": "Sinh nhật",
+        "required": "true",
+        "template": "date",
+        "placeholder": "Nhập ngày sinh"
+    },
+    "address": {
+        "type": "textarea",
+        "text": "Địa chỉ",
+        "placeholder": "Nhập địa chỉ..."
+    },
+    "type": {
+        "type": "deepselect",
+        "text": "Loại user",
+        "required": "true",
+        "template": "deepselect",
+        "func": "get_user_config",
+        "params": [
+            "type_list"
+        ],
+        "default": "user"
+    },
+    "email": {
+        "type": "email",
+        "text": "Địa chỉ E-mail",
+        "required": "true",
+        "prepend_text": "<i class=\"fa fa-envelope\"></i>"
+    },
+    "username": {
+        "type": "text",
+        "text": "Tên đăng nhập",
+        "required": "true",
+        "prepend_text": "<i class=\"fa fa-user\"></i>"
+    },
+    "phone_number": {
+        "type": "text",
+        "text": "Số diện thoại",
+        "prepend_text": "<i class=\"fa fa-phone\"></i>"
+    },
+    "password": {
+        "type": "password",
+        "text": "Mật khẩu",
+        "placeholder": "Nhập mật khẩu",
+        "prepend_text": "<i class=\"fa fa-key\"></i>"
+    },
+    "password_confirmation": {
+        "type": "password",
+        "text": "Mật khẩu xác xác nhận",
+        "placeholder": "Nhập lại mật khẩu",
+        "prepend_text": "<i class=\"fa fa-key\"></i>"
+    },
+    "avatar": {
+        "type": "file",
+        "text": "Hình đại diện",
+        "template": "cropit",
+        "data-width": 400,
+        "data-height": 400
+    },
+    "status": {
+        "type": "deepselect",
+        "text": "Trạng thái",
+        "required": "true",
+        "func": "get_user_config",
+        "params": [
+            "status_list"
+        ],
+        "template": "deepselect"
+    },
+    "web_type": {
+        "type": "deepselect",
+        "text": "Gói dịch vụ",
+        "required": "true",
+        "template": "deepselect",
+        "data": {
+            "default": "Mặc định",
+            "wordpress": "Wordpress",
+            "vcchosting": "Hosting"
+        },
+        "default": "default"
+    },
+    "subdomain": {
+        "type": "text",
+        "text": "Tên miền",
+        "required": "true",
+        "append_group": [
+            "base_domain"
+        ]
+    },
+    "base_domain": {
+        "type": "deepselect",
+        "label": "Miền chính",
+        "data": "get_cfg_domain_options"
+    },
+    "account_type": {
+        "type": "radio",
+        "text": "Loại tài khoản",
+        "required": "true",
+        "data": {
+            "demo": "Dùng thử",
+            "pro": "Chuyên nghiệp",
+            "max": "Max"
+        },
+        "default": "demo"
+    },
+    "expired_at": {
+        "type": "text",
+        "text": "Ngày hết hạn",
+        "className": "inp-time",
+        "data-format": "yyyy-mm-dd HH:ii:ss",
+        "append_text": "<i class=\"fa fa-calendar\"></i>"
+    },
+    "alias_domain": {
+        "type": "text",
+        "text": "Tên miền Alias",
+        "prepend_text": "www."
+    }
+}

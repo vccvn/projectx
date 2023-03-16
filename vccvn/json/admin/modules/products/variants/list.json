@@ -1,0 +1,74 @@
+{
+    "name": "[module]",
+    "package": "product_variants",
+    "use_trash": true,
+    "titles": {
+        "default": "Danh sách [module]",
+        "trash": "Danh sách [module] đã xóa"
+    },
+    "data": [],
+    "filter": {
+        "search_columns": [],
+        "sort_columns": []
+    },
+    "table": {
+        "class": "header-center",
+        "columns": [
+            {
+                "title": "",
+                "class": "",
+                "text": ":product_id"
+            },
+            {
+                "title": "",
+                "class": "",
+                "text": ":name"
+            },
+            {
+                "title": "",
+                "class": "",
+                "text": ":description"
+            },
+            {
+                "title": "",
+                "class": "",
+                "text": ":feature_image"
+            },
+            {
+                "title": "",
+                "class": "",
+                "text": ":list_price"
+            },
+            {
+                "title": "",
+                "class": "",
+                "text": ":sale_price"
+            },
+            {
+                "title": "",
+                "class": "",
+                "text": ":on_sale"
+            },
+            {
+                "title": "",
+                "class": "",
+                "text": ":deleted"
+            },
+            {
+                "title": "",
+                "class": "",
+                "text": ":created_by"
+            },
+            {
+                "title": "",
+                "class": "",
+                "text": ":owner_id"
+            }
+        ]
+    },
+    "resources": {
+        "js_data": [],
+        "js": [],
+        "css": []
+    }
+}

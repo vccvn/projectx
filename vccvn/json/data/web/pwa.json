@@ -1,0 +1,77 @@
+{
+    "data": {
+        "active": {
+            "type": "switch",
+            "label": "Kích hoạt PWA",
+            "value_type": "boolean"
+        },
+        "short_name": {
+            "type": "text",
+            "label": "Short Name<br><small>(Tên ngắn ngọn 1 - 3 từ)</small>",
+            "placeholder": "Viết gì đó...",
+            "default": "My App"
+        },
+        "name": {
+            "type": "text",
+            "label": "Name<br><small>(Tên Đẩy dủ)</small>",
+            "placeholder": "Viết gì đó...",
+            "default": "My Web App Full Name"
+        },
+        "description": {
+            "type": "textarea",
+            "label": "Mô tả ngắn",
+            "placeholder": "Viết gì đó...",
+            "default": ""
+        },
+        "start_url": {
+            "type": "text",
+            "label": "Đường dẫn nguồn",
+            "placeholder": "Viết gì đó...",
+            "default": "/?source=pwa"
+        },
+        "scope": {
+            "type": "text",
+            "label": "Phạm vi truy cập",
+            "placeholder": "Viết gì đó...",
+            "default": "/"
+        },
+        "display": {
+            "type": "crazyselect",
+            "label": "Hiển thị",
+            "data": {
+                "standalone": "Stand Alone",
+                "fullscreen": "Full-Screen",
+                "minimal-ui": "Minimal-UI",
+                "browser": "Browser"
+            },
+            "default": "standalone"
+        },
+        "background_color": {
+            "type": "colorpicker",
+            "label": "Màu nền",
+            "default": "#3367D6"
+        },
+        "theme_color": {
+            "type": "colorpicker",
+            "label": "Màu chủ đạo",
+            "default": "#3367D6"
+        },
+        "icon_192_png":{
+            "type": "media",
+            "label": "Biệu tượng 192x192 (png)",
+            "@type": "image"
+        },
+        "icon_512_png":{
+            "type": "media",
+            "label": "Biệu tượng 512x512 (png)",
+            "@type": "image"
+        },
+        "icon_512_svg":{
+            "type": "media",
+            "label": "Biệu tượng 512x512 (svg)",
+            "@type": "image"
+        }
+        
+        
+    }
+}

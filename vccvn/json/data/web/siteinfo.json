@@ -1,0 +1,101 @@
+{
+    "data": [
+        {
+            "name": "site_name",
+            "type": "text",
+            "value": "Tên website",
+            "label": "Tên trang web"
+        },
+        {
+            "name": "slogan",
+            "type": "text",
+            "value": "Nghĩ lớn - Làm lớn",
+            "label": "Khẩu hiệu"
+        },
+        {
+            "name": "title",
+            "type": "text",
+            "value": "Tên website",
+            "label": "Tiêu đề trang"
+        },
+        {
+            "name": "logo",
+            "type": "file",
+            "value": "",
+            "label": "Logo"
+        },
+        {
+            "name": "mobile_logo",
+            "type": "file",
+            "value": "",
+            "label": "Mobile Logo"
+        },
+        {
+            "name": "footer_logo",
+            "type": "file",
+            "value": "",
+            "label": "Footer Logo"
+        },
+        {
+            "name": "web_image",
+            "type": "file",
+            "value": "",
+            "label": "Hình ảnh đại diện cho web"
+        },
+        {
+            "name": "favicon",
+            "type": "file",
+            "value": "",
+            "label": "Biệu tượng cho trang web"
+        },
+        {
+            "name": "admin_page_logo",
+            "type": "file",
+            "value": "",
+            "label": "Logo Trang Admin"
+        },
+        {
+            "name": "admin_login_logo",
+            "type": "file",
+            "value": "",
+            "label": "Logo Trang đăng nhập admin"
+        },
+        {
+            "name": "meta_title",
+            "type": "text",
+            "value": "Tên website",
+            "label": "Tiêu đề seo"
+        },
+        {
+            "name": "meta_description",
+            "type": "textarea",
+            "value": "Đôi nét về website của bạn",
+            "label": "Mô tả website"
+        },
+        {
+            "name": "keywords",
+            "type": "text",
+            "value": "ten trang web",
+            "label": "Từ khóa"
+        },
+        {
+            "name": "email",
+            "type": "email",
+            "value": "",
+            "label": "Địa chỉ email"
+        },
+        {
+            "name": "phone_number",
+            "type": "tel",
+            "value": "",
+            "label": "Số điện thoại"
+        },
+        {
+            "name": "address",
+            "type": "text",
+            "value": "",
+            "label": "Địa chỉ"
+        }
+        
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "data": {
+        "comments": {
+            "text": "Phản hôi",
+            "title": "Phản hôi",
+            "active_key": "comments",
+            "route": "admin.comments.list",
+            "icon": "comment"
+        }
+    }
+}

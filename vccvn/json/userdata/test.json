@@ -1,0 +1,1154 @@
+{
+    "default": {
+        "head": {
+            "id": 1559,
+            "owner_id": 87,
+            "name": "Head (css Ho\u1eb7c js)",
+            "slug": "head",
+            "ref": "default",
+            "ref_id": 0,
+            "components": []
+        },
+        "top": {
+            "id": 1560,
+            "owner_id": 87,
+            "name": "Top (js: GA, FB,...)",
+            "slug": "top",
+            "ref": "default",
+            "ref_id": 0,
+            "components": []
+        },
+        "header": {
+            "id": 1561,
+            "owner_id": 87,
+            "name": "Header",
+            "slug": "header",
+            "ref": "default",
+            "ref_id": 0,
+            "components": []
+        },
+        "article_top": {
+            "id": 1562,
+            "owner_id": 87,
+            "name": "\u0110\u1ea7u n\u1ed9i dung",
+            "slug": "article_top",
+            "ref": "default",
+            "ref_id": 0,
+            "components": []
+        },
+        "main": {
+            "id": 1563,
+            "owner_id": 87,
+            "name": "Main",
+            "slug": "main",
+            "ref": "default",
+            "ref_id": 0,
+            "components": []
+        },
+        "article_bottom": {
+            "id": 1564,
+            "owner_id": 87,
+            "name": "Cu\u1ed1i n\u1ed9i dung",
+            "slug": "article_bottom",
+            "ref": "default",
+            "ref_id": 0,
+            "components": []
+        },
+        "sidebar": {
+            "id": 1565,
+            "owner_id": 87,
+            "name": "Sidebar",
+            "slug": "sidebar",
+            "ref": "default",
+            "ref_id": 0,
+            "components": []
+        },
+        "sidebar_top": {
+            "id": 1566,
+            "owner_id": 87,
+            "name": "\u0110\u1ea7u sidebar",
+            "slug": "sidebar_top",
+            "ref": "default",
+            "ref_id": 0,
+            "components": []
+        },
+        "sidebar_bottom": {
+            "id": 1567,
+            "owner_id": 87,
+            "name": "Cu\u1ed1i sidebar",
+            "slug": "sidebar_bottom",
+            "ref": "default",
+            "ref_id": 0,
+            "components": []
+        },
+        "footer": {
+            "id": 1568,
+            "owner_id": 87,
+            "name": "Footer",
+            "slug": "footer",
+            "ref": "default",
+            "ref_id": 0,
+            "components": []
+        },
+        "bottom": {
+            "id": 1569,
+            "owner_id": 87,
+            "name": "Bottom (js)",
+            "slug": "bottom",
+            "ref": "default",
+            "ref_id": 0,
+            "components": []
+        },
+        "custom": {
+            "id": 1570,
+            "owner_id": 87,
+            "name": "T\u00f9y ch\u1ec9nh (custom)",
+            "slug": "custom",
+            "ref": "default",
+            "ref_id": 0,
+            "components": []
+        }
+    },
+    "theme": {
+        "desktop_home": {
+            "id": 1639,
+            "owner_id": 87,
+            "name": "Trang Ch\u1ee7 Desktop",
+            "slug": "desktop_home",
+            "ref": "theme",
+            "ref_id": 35,
+            "components": [
+                {
+                    "id": 2411,
+                    "owner_id": 87,
+                    "component_id": 959,
+                    "area_id": 1639,
+                    "parent_id": 0,
+                    "priority": 0,
+                    "data": {
+                        "title": "Nem Chua R\u00e1n",
+                        "title_2": null,
+                        "sub_title": "V\u1ecb Ph\u1ed1",
+                        "background": "5f9ae84345fa3-87.jpg",
+                        "button_1_link": "\/san-pham",
+                        "button_1_text": "\u0110\u1eb7t h\u00e0ng",
+                        "button_2_link": "\/lien-he.html",
+                        "button_2_text": "Li\u00ean h\u1ec7"
+                    },
+                    "name": "Desktop - Home: Banner",
+                    "type": "blade",
+                    "ref": "theme",
+                    "ref_id": 35,
+                    "path": "desktop.home.banner",
+                    "inputs": "{\"background\":{\"type\":\"file\",\"label\":\"H\\u00ecnh n\\u1ec1n\",\"accept\":\"image\\\/*\"},\"sub_title\":{\"type\":\"text\",\"label\":\"Ti\\u00eau \\u0111\\u1ec1 nh\\u1ecf\",\"placeholder\":\"V\\u00ed d\\u1ee5: Welcome to Web102\"},\"title\":{\"type\":\"text\",\"label\":\"Ti\\u00eau \\u0111\\u1ec1 ch\\u00ednh\",\"placeholder\":\"V\\u00ed d\\u1ee5: M\\u00f3n \\u0103n ngon nh\\u1ea5t Vi\\u1ec7t Nam\"},\"title_2\":{\"type\":\"text\",\"label\":\"Ti\\u00eau \\u0111\\u1ec1 ph\\u1ee5\",\"placeholder\":\"V\\u00ed d\\u1ee5: Mi\\u1ec5n ph\\u00ed giao h\\u00e0ng\"},\"button_1_link\":{\"type\":\"text\",\"label\":\"\\u0110\\u01b0\\u1eddng d\\u1eabn button 1\",\"placeholder\":\"V\\u00ed d\\u1ee5: http:\\\/\\\/example.com\"},\"button_1_text\":{\"type\":\"text\",\"label\":\"Text hi\\u1ec3n th\\u1ecb c\\u1ee7a button 1\",\"placeholder\":\"V\\u00ed d\\u1ee5: \\u0110\\u1eb7t h\\u00e0ng\"},\"button_2_link\":{\"type\":\"text\",\"label\":\"\\u0110\\u01b0\\u1eddng d\\u1eabn button 2\",\"placeholder\":\"V\\u00ed d\\u1ee5: http:\\\/\\\/example2.com\"},\"button_2_text\":{\"type\":\"text\",\"label\":\"Text hi\\u1ec3n th\\u1ecb c\\u1ee7a button 2\",\"placeholder\":\"V\\u00ed d\\u1ee5: Cem Menu\"}}",
+                    "children": [
+                        {
+                            "id": 2412,
+                            "owner_id": 87,
+                            "component_id": 954,
+                            "area_id": 1639,
+                            "parent_id": 2411,
+                            "priority": 0,
+                            "data": {
+                                "image": "5f028477cf3dc-87.jpg",
+                                "title": "\u0110\u00f4i n\u00e9t v\u1ec1 Nem V\u1ecb Ph\u1ed1",
+                                "sub_title": "Gi\u1edbi thi\u1ec7u",
+                                "button_link": "#",
+                                "button_text": "Chi ti\u1ebft",
+                                "description": "Nem V\u1ecb Ph\u1ed1 l\u00e0 th\u01b0\u01a1ng hi\u1ec7u \u0111\u1ed9c quy\u1ec1n c\u1ee7a ch\u00fang t\u00f4i trong l\u0129nh v\u1ef1c b\u00e1n \u0111\u1ed3 \u0103n v\u00e0 h\u01b0\u1edbng d\u1eabn n\u1ea5u c\u00e1c m\u00f3n ngon m\u1ed7i ng\u00e0y..."
+                            },
+                            "name": "Desktop - Home: About",
+                            "type": "blade",
+                            "ref": "theme",
+                            "ref_id": 35,
+                            "path": "desktop.home.about",
+                            "inputs": "{\"sub_title\":{\"type\":\"text\",\"label\":\"Ti\\u00eau \\u0111\\u1ec1 nh\\u1ecf\",\"placeholder\":\"V\\u00ed d\\u1ee5: Welcome to Web102\"},\"title\":{\"type\":\"text\",\"label\":\"Ti\\u00eau \\u0111\\u1ec1 ch\\u00ednh\",\"placeholder\":\"V\\u00ed d\\u1ee5: M\\u00f3n \\u0103n ngon nh\\u1ea5t Vi\\u1ec7t Nam\"},\"description\":{\"type\":\"textarea\",\"label\":\"N\\u1ed9i dung\",\"className\":\"auto-height\",\"placeholder\":\"Vi\\u1ebft g\\u00ec \\u0111\\u00f3...\"},\"image\":{\"type\":\"file\",\"label\":\"File \\u1ea3nh\",\"accept\":\"image\\\/*\"},\"button_link\":{\"type\":\"text\",\"label\":\"\\u0110\\u01b0\\u1eddng d\\u1eabn button\",\"placeholder\":\"V\\u00ed d\\u1ee5: http:\\\/\\\/example.com\"},\"button_text\":{\"type\":\"text\",\"label\":\"Text hi\\u1ec3n th\\u1ecb c\\u1ee7a button\",\"placeholder\":\"V\\u00ed d\\u1ee5: \\u0110\\u1eb7t h\\u00e0ng\"}}",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": 2413,
+                    "owner_id": 87,
+                    "component_id": 956,
+                    "area_id": 1639,
+                    "parent_id": 0,
+                    "priority": 1,
+                    "data": {
+                        "title": "Ch\u00e0o m\u1eebng ng\u00e0y khai tr\u01b0\u01a1ng",
+                        "promo_id": "7",
+                        "sorttype": "1",
+                        "container": "ps-container",
+                        "sub_title": "Khuy\u1ebfn m\u00e3i",
+                        "background": "5f021e490232b-87.jpg",
+                        "product_number": "4"
+                    },
+                    "name": "Desktop - Home: Promo",
+                    "type": "blade",
+                    "ref": "theme",
+                    "ref_id": 35,
+                    "path": "desktop.home.promo",
+                    "inputs": "{\"sub_title\":{\"type\":\"text\",\"label\":\"Ti\\u00eau \\u0111\\u1ec1 nh\\u1ecf\",\"placeholder\":\"V\\u00ed d\\u1ee5: Welcome to Web102\"},\"title\":{\"type\":\"text\",\"label\":\"Ti\\u00eau \\u0111\\u1ec1\"},\"promo_id\":{\"type\":\"crazyselect\",\"label\":\"Ch\\u01b0\\u01a1ng t\\u00ecnh khuy\\u1ebfn m\\u00e3i\",\"call\":\"get_promo_options\"},\"product_number\":{\"type\":\"number\",\"label\":\"S\\u1ed1 s\\u1ea3n ph\\u1ea9m hi\\u1ec3n th\\u1ecb\",\"min\":1,\"step\":1,\"default\":4},\"sorttype\":{\"type\":\"crazyselect\",\"label\":\"ki\\u1ec3u s\\u1eafp x\\u1ebfp SP\",\"call\":\"get_product_sortby_options\"},\"background\":{\"type\":\"file\",\"label\":\"H\\u00ecnh n\\u1ec1n\",\"accept\":\"image\\\/*\"},\"icon\":{\"type\":\"file\",\"label\":\"Icon (\\u1ea3nh)\",\"accept\":\"image\\\/*\"}}",
+                    "children": [
+                        {
+                            "id": 2417,
+                            "owner_id": 87,
+                            "component_id": 957,
+                            "area_id": 1639,
+                            "parent_id": 2413,
+                            "priority": 0,
+                            "data": {
+                                "icon": "5f014c46b1f08-87.png",
+                                "title": "M\u00f3n Ngon M\u1ed7i Ng\u00e0y",
+                                "container": "ps-container",
+                                "sub_title": "Th\u1ef1c \u0111\u01a1n"
+                            },
+                            "name": "Desktop - Home: Product Tab Area",
+                            "type": "blade",
+                            "ref": "theme",
+                            "ref_id": 35,
+                            "path": "desktop.home.product-tabs.area",
+                            "inputs": "{\"sub_title\":{\"type\":\"text\",\"label\":\"Ti\\u00eau \\u0111\\u1ec1 nh\\u1ecf\",\"placeholder\":\"V\\u00ed d\\u1ee5: Welcome to Web102\"},\"title\":{\"type\":\"text\",\"label\":\"Ti\\u00eau \\u0111\\u1ec1\"},\"background\":{\"type\":\"file\",\"label\":\"H\\u00ecnh n\\u1ec1n\",\"accept\":\"image\\\/*\"},\"icon\":{\"type\":\"file\",\"label\":\"Icon (\\u1ea3nh)\",\"accept\":\"image\\\/*\"}}",
+                            "children": []
+                        },
+                        {
+                            "id": 2418,
+                            "owner_id": 87,
+                            "component_id": 951,
+                            "area_id": 1639,
+                            "parent_id": 2413,
+                            "priority": 1,
+                            "data": {
+                                "title": "\u0110\u00e1nh gi\u00e1 c\u1ee7a kh\u00e1ch h\u00e0ng",
+                                "list_type": "custom",
+                                "sort_type": "id-ASC",
+                                "sub_title": null,
+                                "background": "",
+                                "item_number": "4"
+                            },
+                            "name": "Desktop - Home: Review area",
+                            "type": "blade",
+                            "ref": "theme",
+                            "ref_id": 35,
+                            "path": "desktop.home.reviews.area",
+                            "inputs": "{\"sub_title\":{\"type\":\"text\",\"label\":\"Ti\\u00eau \\u0111\\u1ec1 nh\\u1ecf\",\"placeholder\":\"V\\u00ed d\\u1ee5: \\u0110\\u00e1nh gi\\u00e1\"},\"title\":{\"type\":\"text\",\"label\":\"Ti\\u00eau \\u0111\\u1ec1\",\"value\":\"Ph\\u1ea3n h\\u1ed3i t\\u1eeb kh\\u00e1ch h\\u00e0ng\"},\"background\":{\"type\":\"file\",\"Label\":\"H\\u00ecnh n\\u1ec1n\"},\"list_type\":{\"type\":\"radio\",\"label\":\"Ki\\u1ec3u danh s\\u00e1ch\",\"data\":{\"data\":\"Trong b\\u1ea3ng ph\\u1ea3n h\\u1ed3i\",\"custom\":\"Danh s\\u00e1ch t\\u00f9y bi\\u1ebfn\"},\"value\":\"custom\"},\"item_number\":{\"type\":\"number\",\"label\":\"S\\u1ed1 l\\u01b0\\u1ee3ng\",\"value\":0},\"sort_type\":{\"type\":\"crazyselect\",\"label\":\"S\\u1eafp x\\u1ebfp\",\"data\":{\"id-ASC\":\"M\\u1eb7c \\u0111\\u1ecbnh\",\"id-DESC\":\"M\\u1edbi nh\\u1ea5t\",\"name-ASC\":\"h\\u1ee9 t\\u1ef1 b\\u1ea3ng ch\\u1ef1 c\\u00e1i\"},\"value\":\"id-ASC\"}}",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "id": 2421,
+                    "owner_id": 87,
+                    "component_id": 953,
+                    "area_id": 1639,
+                    "parent_id": 0,
+                    "priority": 2,
+                    "data": {
+                        "icon": "",
+                        "link": null,
+                        "title": "V\u1ecb Ph\u00f3 Blog",
+                        "sorttype": "1",
+                        "sub_title": "Blog",
+                        "background": "",
+                        "dynamic_id": null,
+                        "category_id": "0",
+                        "post_number": "3",
+                        "group_by_category": null
+                    },
+                    "name": "Desktop - Home: Danh s\u00e1ch b\u00e0i vi\u1ebft (Post List)",
+                    "type": "blade",
+                    "ref": "theme",
+                    "ref_id": 35,
+                    "path": "desktop.home.posts",
+                    "inputs": "{\"sub_title\":{\"type\":\"text\",\"label\":\"Ti\\u00eau \\u0111\\u1ec1 nh\\u1ecf\",\"placeholder\":\"\"},\"title\":{\"type\":\"text\",\"label\":\"Ti\\u00eau \\u0111\\u1ec1 (T\\u00f9y ch\\u1ecdn)\"},\"background\":{\"type\":\"file\",\"label\":\"H\\u00ecnh n\\u1ec1n\",\"accept\":\"image\\\/*\"},\"icon\":{\"type\":\"file\",\"label\":\"Icon (\\u1ea3nh)\",\"accept\":\"image\\\/*\"},\"dynamic_id\":{\"type\":\"crazyselect\",\"label\":\"M\\u1ee5c (t\\u00f9y ch\\u1ecdn)\",\"template\":\"crazyselect\",\"call\":\"get_dynamic_options\",\"params\":[[],\"Ch\\u1ecdn m\\u1ed9t\"],\"@change\":\"App.posts.changeDynamicID\",\"required\":\"true\"},\"category_id\":{\"type\":\"crazyselect\",\"label\":\"Danh m\\u1ee5c (t\\u00f9y ch\\u1ecdn)\",\"template\":\"crazyselect\",\"call\":\"get_post_category_options\",\"params\":[{\"dynamic_id\":\"#dynamic_id\"},true],\"@label-type\":\"value\"},\"group_by_category\":{\"type\":\"switch\",\"label\":\"Nh\\u00f3m theo danh m\\u1ee5c\",\"value_type\":\"boolean\"},\"sorttype\":{\"type\":\"select\",\"label\":\"ki\\u1ec3u s\\u1eafp x\\u1ebfp\",\"call\":\"get_post_sortby_options\"},\"post_number\":{\"type\":\"number\",\"label\":\"S\\u1ed1 tin b\\u00e0i\",\"min\":1,\"step\":1,\"default\":3},\"link\":{\"type\":\"text\",\"label\":\"Li\\u00ean k\\u1ebft (t\\u00f9y ch\\u1ecdn)\",\"placeholder\":\"Nh\\u1eadp li\\u00ean k\\u1ebft. (Kh\\u00f4ng b\\u1eaft bu\\u1ed9c)\"}}",
+                    "children": []
+                },
+                {
+                    "id": 2420,
+                    "owner_id": 87,
+                    "component_id": 955,
+                    "area_id": 1639,
+                    "parent_id": 0,
+                    "priority": 3,
+                    "data": {
+                        "icon": "",
+                        "image": "",
+                        "title": "Th\u00f4ng tin li\u00ean h\u1ec7",
+                        "map_code": null,
+                        "sub_title": "Li\u00ean h\u1ec7",
+                        "background": "5f021f32f3149-87.jpg",
+                        "banner_type": "map",
+                        "button_text": "G\u1eedi li\u00ean h\u1ec7"
+                    },
+                    "name": "Desktop - Home: M\u1ee5c Li\u00ean h\u1ec7",
+                    "type": "blade",
+                    "ref": "theme",
+                    "ref_id": 35,
+                    "path": "desktop.home.contact-us",
+                    "inputs": "{\"sub_title\":{\"type\":\"text\",\"label\":\"Ti\\u00eau \\u0111\\u1ec1 nh\\u1ecf\",\"placeholder\":\"\"},\"title\":{\"type\":\"text\",\"label\":\"Ti\\u00eau \\u0111\\u1ec1\",\"placeholder\":\"V\\u00ed d\\u1ee5: Li\\u00ean h\\u1ec7 ch\\u00fang t\\u00f4i\"},\"background\":{\"type\":\"file\",\"label\":\"H\\u00ecnh n\\u1ec1n\",\"accept\":\"image\\\/*\"},\"icon\":{\"type\":\"file\",\"label\":\"Icon (\\u1ea3nh)\",\"accept\":\"image\\\/*\"},\"button_text\":{\"type\":\"text\",\"label\":\"N\\u00fat g\\u1eedi\",\"value\":\"G\\u1eedi li\\u00ean h\\u1ec7\"},\"banner_type\":{\"type\":\"radio\",\"label\":\"Ki\\u1ec3u banner\",\"data\":{\"image\":\"\\u1ea2nh\",\"map\":\"B\\u1ea3n \\u0111\\u1ed3\"},\"default\":\"image\"},\"image\":{\"type\":\"file\",\"label\":\"\\u1ea2nh minh h\\u1ecda\",\"accept\":\"image\\\/*\"},\"map_code\":{\"type\":\"textarea\",\"label\":\"M\\u00e3 nh\\u00fang b\\u1ea3n \\u0111\\u1ed3\",\"placeholder\":\"M\\u00e3 nh\\u00fang Google Map. M\\u1eb7c \\u0111\\u1ecbnh s\\u1ebd l\\u1ea5y trong m\\u1ee5c li\\u00ean h\\u1ec7\",\"className\":\"auto-height\"}}",
+                    "children": []
+                }
+            ]
+        },
+        "desktop_footer": {
+            "id": 1640,
+            "owner_id": 87,
+            "name": "Desktop Footer",
+            "slug": "desktop_footer",
+            "ref": "theme",
+            "ref_id": 35,
+            "components": [
+                {
+                    "id": 2401,
+                    "owner_id": 87,
+                    "component_id": 948,
+                    "area_id": 1640,
+                    "parent_id": 0,
+                    "priority": 0,
+                    "data": {
+                        "link": "#",
+                        "logo": "",
+                        "slogan": "K\u1ebft n\u1ed1i t\u01b0\u01a1ng lai",
+                        "button_link": "#service",
+                        "button_text": "G\u1eedi li\u00ean h\u1ec7",
+                        "right_title": "\u0110\u00e3 kinh doanh th\u00ec n\u00ean c\u00f3 m\u1ed9t website",
+                        "show_button": "on"
+                    },
+                    "name": "Desktop - Footer: News Link",
+                    "type": "blade",
+                    "ref": "theme",
+                    "ref_id": 35,
+                    "path": "desktop.footer.news-link",
+                    "inputs": "{\"logo\":{\"type\":\"file\",\"label\":\"Logo (T\\u00f9y ch\\u1ecdn)\",\"accept\":\"image\\\/*\"},\"link\":{\"type\":\"text\",\"label\":\"\\u0110\\u01b0\\u1eddng d\\u1eabn\",\"placeholder\":\"V\\u00ed d\\u1ee5: http:\\\/\\\/vcc.vn\"},\"slogan\":{\"type\":\"text\",\"label\":\"Slogan\",\"placeholder\":\"V\\u00ed d\\u1ee5: M\\u00e1y l\\u1ecdc n\\u01b0\\u1edbc h\\u00e0ng \\u0111\\u1ea7u Vi\\u1ec7t Nam\"},\"right_title\":{\"type\":\"text\",\"label\":\"Ti\\u00eau \\u0111\\u1ec1 b\\u00ean ph\\u1ea3i\",\"placeholder\":\"V\\u00ed d\\u1ee5: M\\u00e1y l\\u1ecdc n\\u01b0\\u1edbc h\\u00e0ng \\u0111\\u1ea7u Vi\\u1ec7t Nam\"},\"show_button\":{\"type\":\"switch\",\"label\":\"Button\",\"check_label\":\"Hi\\u1ec3n th\\u1ecb button\",\"value_type\":\"boolean\"},\"button_link\":{\"type\":\"text\",\"label\":\"\\u0110\\u01b0\\u1eddng d\\u1eabn c\\u1ee7a button\",\"placeholder\":\"V\\u00ed d\\u1ee5: http:\\\/\\\/vcc.vn\"},\"button_text\":{\"type\":\"text\",\"label\":\"Text hi\\u1ec3n th\\u0129 trong button\",\"placeholder\":\"V\\u00ed d\\u1ee5: Xem th\\u00eam\"}}",
+                    "children": []
+                },
+                {
+                    "id": 2402,
+                    "owner_id": 87,
+                    "component_id": 950,
+                    "area_id": 1640,
+                    "parent_id": 0,
+                    "priority": 1,
+                    "data": {
+                        "background": ""
+                    },
+                    "name": "Desktop - Footer: Widget Area",
+                    "type": "blade",
+                    "ref": "theme",
+                    "ref_id": 35,
+                    "path": "desktop.footer.widgets",
+                    "inputs": "{\"background\":{\"type\":\"file\",\"label\":\"H\\u00ecnh n\\u1ec1n (T\\u00f9y ch\\u1ecdn)\",\"accept\":\"image\\\/*\"}}",
+                    "children": []
+                }
+            ]
+        },
+        "desktop_footer_widgets": {
+            "id": 1641,
+            "owner_id": 87,
+            "name": "Desktop Footer Widgets",
+            "slug": "desktop_footer_widgets",
+            "ref": "theme",
+            "ref_id": 35,
+            "components": [
+                {
+                    "id": 2403,
+                    "owner_id": 87,
+                    "component_id": 947,
+                    "area_id": 1641,
+                    "parent_id": 0,
+                    "priority": 0,
+                    "data": {
+                        "title": "Gi\u1edbi thi\u1ec7u",
+                        "col_lg": "4",
+                        "col_md": "6",
+                        "col_sm": "12",
+                        "col_xl": "4",
+                        "col_xs": "12",
+                        "description": "Noof Food",
+                        "show_socials": "on",
+                        "subscribe_button": "\u0110\u0103ng k\u00fd"
+                    },
+                    "name": "Desktop - Footer Widget: \u0110\u0103ng k\u00fd theo d\u00f5i",
+                    "type": "blade",
+                    "ref": "theme",
+                    "ref_id": 35,
+                    "path": "desktop.footer.news-letter",
+                    "inputs": "{\"title\":{\"type\":\"text\",\"label\":\"Ti\\u00eau \\u0111\\u1ec1 c\\u00e2u h\\u1ecfi (T\\u00f9y ch\\u1ecdn)\"},\"description\":{\"type\":\"textarea\",\"label\":\"N\\u1ed9i dung\",\"placeholder\":\"Vi\\u1ebft g\\u00ec \\u0111\\u00f3...\",\"className\":\"auto-height\"},\"subscribe_button\":{\"type\":\"text\",\"label\":\"N\\u00fat \\u0110\\u0103ng k\\u00fd\"},\"show_socials\":{\"type\":\"switch\",\"label\":\"Show Social Links\",\"value_type\":\"boolean\",\"check_label\":\"Hi\\u1ec3n th\\u1ecb li\\u00ean k\\u1ebft m\\u1ea1ng x\\u00e3 h\\u1ed9i\",\"default\":true},\"col_xs\":{\"type\":\"crazyselect\",\"label\":\"col (col-xs)\",\"data\":{\"\":\"Kh\\u00f4ng\",\"1\":\"1 \\\/ 12\",\"2\":\"2 \\\/ 12\",\"3\":\"3 \\\/ 12\",\"4\":\"4 \\\/ 12\",\"5\":\"5 \\\/ 12\",\"6\":\"6 \\\/ 12\",\"7\":\"7 \\\/ 12\",\"8\":\"8 \\\/ 12\",\"9\":\"9 \\\/ 12\",\"10\":\"10 \\\/ 12\",\"11\":\"11 \\\/ 12\",\"12\":\"12 \\\/ 12\"},\"default\":12},\"col_sm\":{\"type\":\"crazyselect\",\"label\":\"col-sm\",\"data\":{\"\":\"Kh\\u00f4ng\",\"1\":\"1 \\\/ 12\",\"2\":\"2 \\\/ 12\",\"3\":\"3 \\\/ 12\",\"4\":\"4 \\\/ 12\",\"5\":\"5 \\\/ 12\",\"6\":\"6 \\\/ 12\",\"7\":\"7 \\\/ 12\",\"8\":\"8 \\\/ 12\",\"9\":\"9 \\\/ 12\",\"10\":\"10 \\\/ 12\",\"11\":\"11 \\\/ 12\",\"12\":\"12 \\\/ 12\"},\"default\":12},\"col_md\":{\"type\":\"crazyselect\",\"label\":\"col-md\",\"data\":{\"\":\"Kh\\u00f4ng\",\"1\":\"1 \\\/ 12\",\"2\":\"2 \\\/ 12\",\"3\":\"3 \\\/ 12\",\"4\":\"4 \\\/ 12\",\"5\":\"5 \\\/ 12\",\"6\":\"6 \\\/ 12\",\"7\":\"7 \\\/ 12\",\"8\":\"8 \\\/ 12\",\"9\":\"9 \\\/ 12\",\"10\":\"10 \\\/ 12\",\"11\":\"11 \\\/ 12\",\"12\":\"12 \\\/ 12\"},\"default\":6},\"col_lg\":{\"type\":\"crazyselect\",\"label\":\"col-lg\",\"data\":{\"\":\"Kh\\u00f4ng\",\"1\":\"1 \\\/ 12\",\"2\":\"2 \\\/ 12\",\"3\":\"3 \\\/ 12\",\"4\":\"4 \\\/ 12\",\"5\":\"5 \\\/ 12\",\"6\":\"6 \\\/ 12\",\"7\":\"7 \\\/ 12\",\"8\":\"8 \\\/ 12\",\"9\":\"9 \\\/ 12\",\"10\":\"10 \\\/ 12\",\"11\":\"11 \\\/ 12\",\"12\":\"12 \\\/ 12\"},\"default\":4},\"col_xl\":{\"type\":\"crazyselect\",\"label\":\"col-xl\",\"data\":{\"\":\"Kh\\u00f4ng\",\"1\":\"1 \\\/ 12\",\"2\":\"2 \\\/ 12\",\"3\":\"3 \\\/ 12\",\"4\":\"4 \\\/ 12\",\"5\":\"5 \\\/ 12\",\"6\":\"6 \\\/ 12\",\"7\":\"7 \\\/ 12\",\"8\":\"8 \\\/ 12\",\"9\":\"9 \\\/ 12\",\"10\":\"10 \\\/ 12\",\"11\":\"11 \\\/ 12\",\"12\":\"12 \\\/ 12\"},\"default\":4}}",
+                    "children": []
+                },
+                {
+                    "id": 2404,
+                    "owner_id": 87,
+                    "component_id": 945,
+                    "area_id": 1641,
+                    "parent_id": 0,
+                    "priority": 1,
+                    "data": {
+                        "title": "Gi\u1edd m\u1edf c\u1eeda",
+                        "col_lg": "4",
+                        "col_md": "6",
+                        "col_sm": "12",
+                        "col_xl": "4",
+                        "col_xs": "12",
+                        "menu_id": "143",
+                        "class_name": "opening-time"
+                    },
+                    "name": "Desktop - Footer Widget: Gi\u1edd m\u1edf c\u1eeda",
+                    "type": "blade",
+                    "ref": "theme",
+                    "ref_id": 35,
+                    "path": "desktop.footer.opening-time",
+                    "inputs": "{\"title\":{\"type\":\"text\",\"label\":\"Ti\\u00eau \\u0111\\u1ec1\",\"placeholder\":\"v\\u00ed d\\u1ee5 Gi\\u1edd m\\u1edf c\\u1eeda\"},\"menu_id\":{\"type\":\"crazyselect\",\"label\":\"Menu\",\"call\":\"get_menu_options\"},\"class_name\":{\"type\":\"text\",\"label\":\"Class Name\",\"placeholder\":\"v\\u00ed d\\u1ee5 opening-time\",\"default\":\"opening-time\"},\"col_xs\":{\"type\":\"crazyselect\",\"label\":\"col (col-xs)\",\"data\":{\"\":\"Kh\\u00f4ng\",\"1\":\"1 \\\/ 12\",\"2\":\"2 \\\/ 12\",\"3\":\"3 \\\/ 12\",\"4\":\"4 \\\/ 12\",\"5\":\"5 \\\/ 12\",\"6\":\"6 \\\/ 12\",\"7\":\"7 \\\/ 12\",\"8\":\"8 \\\/ 12\",\"9\":\"9 \\\/ 12\",\"10\":\"10 \\\/ 12\",\"11\":\"11 \\\/ 12\",\"12\":\"12 \\\/ 12\"},\"default\":12},\"col_sm\":{\"type\":\"crazyselect\",\"label\":\"col-sm\",\"data\":{\"\":\"Kh\\u00f4ng\",\"1\":\"1 \\\/ 12\",\"2\":\"2 \\\/ 12\",\"3\":\"3 \\\/ 12\",\"4\":\"4 \\\/ 12\",\"5\":\"5 \\\/ 12\",\"6\":\"6 \\\/ 12\",\"7\":\"7 \\\/ 12\",\"8\":\"8 \\\/ 12\",\"9\":\"9 \\\/ 12\",\"10\":\"10 \\\/ 12\",\"11\":\"11 \\\/ 12\",\"12\":\"12 \\\/ 12\"},\"default\":12},\"col_md\":{\"type\":\"crazyselect\",\"label\":\"col-md\",\"data\":{\"\":\"Kh\\u00f4ng\",\"1\":\"1 \\\/ 12\",\"2\":\"2 \\\/ 12\",\"3\":\"3 \\\/ 12\",\"4\":\"4 \\\/ 12\",\"5\":\"5 \\\/ 12\",\"6\":\"6 \\\/ 12\",\"7\":\"7 \\\/ 12\",\"8\":\"8 \\\/ 12\",\"9\":\"9 \\\/ 12\",\"10\":\"10 \\\/ 12\",\"11\":\"11 \\\/ 12\",\"12\":\"12 \\\/ 12\"},\"default\":6},\"col_lg\":{\"type\":\"crazyselect\",\"label\":\"col-lg\",\"data\":{\"\":\"Kh\\u00f4ng\",\"1\":\"1 \\\/ 12\",\"2\":\"2 \\\/ 12\",\"3\":\"3 \\\/ 12\",\"4\":\"4 \\\/ 12\",\"5\":\"5 \\\/ 12\",\"6\":\"6 \\\/ 12\",\"7\":\"7 \\\/ 12\",\"8\":\"8 \\\/ 12\",\"9\":\"9 \\\/ 12\",\"10\":\"10 \\\/ 12\",\"11\":\"11 \\\/ 12\",\"12\":\"12 \\\/ 12\"},\"default\":4},\"col_xl\":{\"type\":\"crazyselect\",\"label\":\"col-xl\",\"data\":{\"\":\"Kh\\u00f4ng\",\"1\":\"1 \\\/ 12\",\"2\":\"2 \\\/ 12\",\"3\":\"3 \\\/ 12\",\"4\":\"4 \\\/ 12\",\"5\":\"5 \\\/ 12\",\"6\":\"6 \\\/ 12\",\"7\":\"7 \\\/ 12\",\"8\":\"8 \\\/ 12\",\"9\":\"9 \\\/ 12\",\"10\":\"10 \\\/ 12\",\"11\":\"11 \\\/ 12\",\"12\":\"12 \\\/ 12\"},\"default\":4}}",
+                    "children": []
+                },
+                {
+                    "id": 2405,
+                    "owner_id": 87,
+                    "component_id": 949,
+                    "area_id": 1641,
+                    "parent_id": 0,
+                    "priority": 2,
+                    "data": {
+                        "title": "Li\u00ean k\u1ebft",
+                        "col_lg": "4",
+                        "col_md": "6",
+                        "col_sm": "12",
+                        "col_xl": "4",
+                        "col_xs": "12",
+                        "menu_id": "142",
+                        "class_name": null
+                    },
+                    "name": "Desktop - Footer Widget: Links",
+                    "type": "blade",
+                    "ref": "theme",
+                    "ref_id": 35,
+                    "path": "desktop.footer.links",
+                    "inputs": "{\"title\":{\"type\":\"text\",\"label\":\"Ti\\u00eau \\u0111\\u1ec1\",\"placeholder\":\"v\\u00ed d\\u1ee5 Li\\u00ean k\\u1ebft\"},\"menu_id\":{\"type\":\"crazyselect\",\"label\":\"Menu\",\"call\":\"get_menu_options\"},\"class_name\":{\"type\":\"text\",\"label\":\"Class Name\",\"placeholder\":\"v\\u00ed d\\u1ee5 contant-info\"},\"col_xs\":{\"type\":\"crazyselect\",\"label\":\"col (col-xs)\",\"data\":{\"\":\"Kh\\u00f4ng\",\"1\":\"1 \\\/ 12\",\"2\":\"2 \\\/ 12\",\"3\":\"3 \\\/ 12\",\"4\":\"4 \\\/ 12\",\"5\":\"5 \\\/ 12\",\"6\":\"6 \\\/ 12\",\"7\":\"7 \\\/ 12\",\"8\":\"8 \\\/ 12\",\"9\":\"9 \\\/ 12\",\"10\":\"10 \\\/ 12\",\"11\":\"11 \\\/ 12\",\"12\":\"12 \\\/ 12\"},\"default\":12},\"col_sm\":{\"type\":\"crazyselect\",\"label\":\"col-sm\",\"data\":{\"\":\"Kh\\u00f4ng\",\"1\":\"1 \\\/ 12\",\"2\":\"2 \\\/ 12\",\"3\":\"3 \\\/ 12\",\"4\":\"4 \\\/ 12\",\"5\":\"5 \\\/ 12\",\"6\":\"6 \\\/ 12\",\"7\":\"7 \\\/ 12\",\"8\":\"8 \\\/ 12\",\"9\":\"9 \\\/ 12\",\"10\":\"10 \\\/ 12\",\"11\":\"11 \\\/ 12\",\"12\":\"12 \\\/ 12\"},\"default\":12},\"col_md\":{\"type\":\"crazyselect\",\"label\":\"col-md\",\"data\":{\"\":\"Kh\\u00f4ng\",\"1\":\"1 \\\/ 12\",\"2\":\"2 \\\/ 12\",\"3\":\"3 \\\/ 12\",\"4\":\"4 \\\/ 12\",\"5\":\"5 \\\/ 12\",\"6\":\"6 \\\/ 12\",\"7\":\"7 \\\/ 12\",\"8\":\"8 \\\/ 12\",\"9\":\"9 \\\/ 12\",\"10\":\"10 \\\/ 12\",\"11\":\"11 \\\/ 12\",\"12\":\"12 \\\/ 12\"},\"default\":6},\"col_lg\":{\"type\":\"crazyselect\",\"label\":\"col-lg\",\"data\":{\"\":\"Kh\\u00f4ng\",\"1\":\"1 \\\/ 12\",\"2\":\"2 \\\/ 12\",\"3\":\"3 \\\/ 12\",\"4\":\"4 \\\/ 12\",\"5\":\"5 \\\/ 12\",\"6\":\"6 \\\/ 12\",\"7\":\"7 \\\/ 12\",\"8\":\"8 \\\/ 12\",\"9\":\"9 \\\/ 12\",\"10\":\"10 \\\/ 12\",\"11\":\"11 \\\/ 12\",\"12\":\"12 \\\/ 12\"},\"default\":4},\"col_xl\":{\"type\":\"crazyselect\",\"label\":\"col-xl\",\"data\":{\"\":\"Kh\\u00f4ng\",\"1\":\"1 \\\/ 12\",\"2\":\"2 \\\/ 12\",\"3\":\"3 \\\/ 12\",\"4\":\"4 \\\/ 12\",\"5\":\"5 \\\/ 12\",\"6\":\"6 \\\/ 12\",\"7\":\"7 \\\/ 12\",\"8\":\"8 \\\/ 12\",\"9\":\"9 \\\/ 12\",\"10\":\"10 \\\/ 12\",\"11\":\"11 \\\/ 12\",\"12\":\"12 \\\/ 12\"},\"default\":4}}",
+                    "children": []
+                }
+            ]
+        },
+        "desktop_home_product_tabs": {
+            "id": 1642,
+            "owner_id": 87,
+            "name": "Tab s\u1ea3n ph\u1ea9m tr\u00ean Desktop",
+            "slug": "desktop_home_product_tabs",
+            "ref": "theme",
+            "ref_id": 35,
+            "components": [
+                {
+                    "id": 2415,
+                    "owner_id": 87,
+                    "component_id": 958,
+                    "area_id": 1642,
+                    "parent_id": 0,
+                    "priority": 0,
+                    "data": {
+                        "icon": "5f014add29669-87.png",
+                        "title": "Nem V\u1ecb Ph\u1ed1",
+                        "sorttype": "1",
+                        "container": "ps-container",
+                        "category_id": "231",
+                        "product_number": "4"
+                    },
+                    "name": "Desktop - Home: Product Tab Item",
+                    "type": "blade",
+                    "ref": "theme",
+                    "ref_id": 35,
+                    "path": "desktop.home.product-tabs.item",
+                    "inputs": "{\"title\":{\"type\":\"text\",\"label\":\"Ti\\u00eau \\u0111\\u1ec1\"},\"icon\":{\"type\":\"file\",\"label\":\"Icon (\\u1ea3nh)\",\"accept\":\"image\\\/*\"},\"category_id\":{\"type\":\"crazyselect\",\"label\":\"Danh m\\u1ee5c\",\"call\":\"get_product_category_options\",\"parans\":[[],\"Kh\\u00f4ng\"]},\"product_number\":{\"type\":\"number\",\"label\":\"S\\u1ed1 s\\u1ea3n ph\\u1ea9m hi\\u1ec3n th\\u1ecb\",\"min\":1,\"step\":1,\"default\":4},\"sorttype\":{\"type\":\"crazyselect\",\"label\":\"ki\\u1ec3u s\\u1eafp x\\u1ebfp SP\",\"call\":\"get_product_sortby_options\"}}",
+                    "children": []
+                },
+                {
+                    "id": 2416,
+                    "owner_id": 87,
+                    "component_id": 958,
+                    "area_id": 1642,
+                    "parent_id": 0,
+                    "priority": 1,
+                    "data": {
+                        "icon": "5f014affa0562-87.png",
+                        "title": "C\u0169ng l\u00e0 Nem V\u1ecb Ph\u1ed1",
+                        "sorttype": "6",
+                        "container": "ps-container",
+                        "category_id": "0",
+                        "product_number": "4"
+                    },
+                    "name": "Desktop - Home: Product Tab Item",
+                    "type": "blade",
+                    "ref": "theme",
+                    "ref_id": 35,
+                    "path": "desktop.home.product-tabs.item",
+                    "inputs": "{\"title\":{\"type\":\"text\",\"label\":\"Ti\\u00eau \\u0111\\u1ec1\"},\"icon\":{\"type\":\"file\",\"label\":\"Icon (\\u1ea3nh)\",\"accept\":\"image\\\/*\"},\"category_id\":{\"type\":\"crazyselect\",\"label\":\"Danh m\\u1ee5c\",\"call\":\"get_product_category_options\",\"parans\":[[],\"Kh\\u00f4ng\"]},\"product_number\":{\"type\":\"number\",\"label\":\"S\\u1ed1 s\\u1ea3n ph\\u1ea9m hi\\u1ec3n th\\u1ecb\",\"min\":1,\"step\":1,\"default\":4},\"sorttype\":{\"type\":\"crazyselect\",\"label\":\"ki\\u1ec3u s\\u1eafp x\\u1ebfp SP\",\"call\":\"get_product_sortby_options\"}}",
+                    "children": []
+                }
+            ]
+        },
+        "desktop_team_members": {
+            "id": 1643,
+            "owner_id": 87,
+            "name": "Desktop: Th\u00e0nh vi\u00ean nh\u00f3m",
+            "slug": "desktop_team_members",
+            "ref": "theme",
+            "ref_id": 35,
+            "components": [
+                {
+                    "id": 2423,
+                    "owner_id": 87,
+                    "component_id": 962,
+                    "area_id": 1643,
+                    "parent_id": 0,
+                    "priority": 0,
+                    "data": {
+                        "job": "B\u1ea5p tr\u01b0\u1edfng",
+                        "name": "L\u00ea Ng\u1ecdc Anh",
+                        "email": "nooffood09@gmail.com",
+                        "avatar": "5f015599e14d1-87.jpg",
+                        "twitter": "https:\/\/twitter.com\/NgocDoanLe",
+                        "youtube": null,
+                        "facebook": "https:\/\/www.facebook.com\/Visional98",
+                        "linkedin": null,
+                        "instagram": "https:\/\/www.instagram.com\/ngocanhhhle\/",
+                        "is_loader": "on",
+                        "pinterest": null,
+                        "description": null,
+                        "phone_number": "0348080777"
+                    },
+                    "name": "Desktop - Home: Team Member",
+                    "type": "blade",
+                    "ref": "theme",
+                    "ref_id": 35,
+                    "path": "desktop.home.team.item",
+                    "inputs": "{\"name\":{\"type\":\"text\",\"label\":\"T\\u00ean th\\u00e0nh vi\\u00ean\",\"placeholder\":\"V\\u00ed d\\u1ee5: Thi\\u1ec7n CH\"},\"avatar\":{\"type\":\"file\",\"label\":\"Avatar\"},\"job\":{\"type\":\"text\",\"label\":\"c\\u00f4ng vi\\u1ec7c (V\\u1ecb tr\\u00ed l\\u00e0m vi\\u1ec7c)\"},\"description\":{\"type\":\"textarea\",\"label\":\"M\\u00f4 t\\u1ea3\",\"placeholder\":\"Vi\\u1ebft g\\u00ec \\u0111\\u00f3...\",\"className\":\"auto-height\"},\"is_loader\":{\"type\":\"switch\",\"label\":\"Tr\\u01b0\\u1edfng nh\\u00f3m?\",\"value_type\":\"boolean\"},\"email\":{\"type\":\"text\",\"Label\":\"Email\",\"placeholder\":\"M\\u1eb7c d\\u1ecbnh s\\u1ebd l\\u1ea5y t\\u1eeb thi\\u1ebft l\\u1eadp th\\u00f4ng tin wwbsite\"},\"phone_number\":{\"type\":\"text\",\"Label\":\"S\\u1ed1 \\u0111i\\u1ec7n tho\\u1ea1i\",\"placeholder\":\"M\\u1eb7c d\\u1ecbnh s\\u1ebd l\\u1ea5y t\\u1eeb thi\\u1ebft l\\u1eadp th\\u00f4ng tin wwbsite\"},\"facebook\":{\"type\":\"text\",\"label\":\"facebook (T\\u00f9y ch\\u1ecdn)\",\"placeholder\":\"Kh\\u00f4ng b\\u1eaft bu\\u1ed9c\"},\"twitter\":{\"type\":\"text\",\"label\":\"twitter (T\\u00f9y ch\\u1ecdn)\",\"placeholder\":\"Kh\\u00f4ng b\\u1eaft bu\\u1ed9c\"},\"youtube\":{\"type\":\"text\",\"label\":\"youtube (T\\u00f9y ch\\u1ecdn)\",\"placeholder\":\"Kh\\u00f4ng b\\u1eaft bu\\u1ed9c\"},\"instagram\":{\"type\":\"text\",\"label\":\"instagram (T\\u00f9y ch\\u1ecdn)\",\"placeholder\":\"Kh\\u00f4ng b\\u1eaft bu\\u1ed9c\"},\"linkedin\":{\"type\":\"text\",\"label\":\"Linkedin (T\\u00f9y ch\\u1ecdn)\",\"placeholder\":\"Kh\\u00f4ng b\\u1eaft bu\\u1ed9c\"},\"pinterest\":{\"type\":\"text\",\"label\":\"Pinterest (T\\u00f9y ch\\u1ecdn)\",\"placeholder\":\"Kh\\u00f4ng b\\u1eaft bu\\u1ed9c\"}}",
+                    "children": []
+                }
+            ]
+        },
+        "desktop_home_reviews": {
+            "id": 1644,
+            "owner_id": 87,
+            "name": "Desktop: \u0110\u00e1nh gi\u00e1 s\u1ea3n ph\u1ea9m",
+            "slug": "desktop_home_reviews",
+            "ref": "theme",
+            "ref_id": 35,
+            "components": [
+                {
+                    "id": 2419,
+                    "owner_id": 87,
+                    "component_id": 952,
+                    "area_id": 1644,
+                    "parent_id": 0,
+                    "priority": 0,
+                    "data": {
+                        "job": "DEV",
+                        "link": "#",
+                        "name": "L\u00ea Ng\u1ecdc Do\u00e3n",
+                        "avatar": "5f01526186bab-87.jpg",
+                        "rating": "5",
+                        "comment": "R\u1ea5t ngon. T\u00f4i r\u1ea5t h\u00e0i l\u00f2ng"
+                    },
+                    "name": "Desktop - Home: Review Item",
+                    "type": "blade",
+                    "ref": "theme",
+                    "ref_id": 35,
+                    "path": "desktop.home.reviews.item",
+                    "inputs": "{\"name\":{\"type\":\"text\",\"label\":\"T\\u00ean ng\\u01b0\\u1eddi \\u0111\\u00e1nh gi\\u00e1\",\"placeholder\":\"V\\u00ed d\\u1ee5: Nguy\\u1ec5n V\\u0103n A\"},\"avatar\":{\"type\":\"file\",\"label\":\"\\u00c3nh \\u0111\\u1ea1i di\\u1ec7n\"},\"job\":{\"type\":\"text\",\"label\":\"C\\u00f4ng vi\\u1ec7c\",\"placeholder\":\"V\\u00ed d\\u1ee5: CEO\"},\"link\":{\"type\":\"text\",\"label\":\"Li\\u00ean k\\u1ebft (t\\u00f9y ch\\u1ecdn)\",\"placeholder\":\"V\\u00ed d\\u1ee5: http:\\\/\\\/www.facebook.com\\\/LeNgocDoan\"},\"rating\":{\"type\":\"radio\",\"label\":\"X\\u1ebfp h\\u1ea1ng\",\"data\":{\"1\":\"1 Sao\",\"2\":\"2 Sao\",\"3\":\"3 Sao\",\"4\":\"4 Sao\",\"5\":\"5 Sao\"},\"default\":5},\"comment\":{\"type\":\"textarea\",\"label\":\"\\u0110\\u00e1nh gi\\u00e1\",\"className\":\"auto-height\",\"placeholder\":\"V\\u00ed d\\u1ee5: Very grateful to have found this app. D&L team did a fantastic job...\"}}",
+                    "children": []
+                }
+            ]
+        },
+        "affiliate_settings": {
+            "id": 1645,
+            "owner_id": 87,
+            "name": "Affiliate Settings",
+            "slug": "affiliate_settings",
+            "ref": "theme",
+            "ref_id": 35,
+            "components": []
+        },
+        "desktop_sidebar_post": {
+            "id": 1646,
+            "owner_id": 87,
+            "name": "Desktop Post Sidebar Widgets",
+            "slug": "desktop_sidebar_post",
+            "ref": "theme",
+            "ref_id": 35,
+            "components": [
+                {
+                    "id": 2407,
+                    "owner_id": 87,
+                    "component_id": 940,
+                    "area_id": 1646,
+                    "parent_id": 0,
+                    "priority": 0,
+                    "data": [],
+                    "name": "Desktop - Post Sidebar: T\u00ecm ki\u1ebfm b\u00e0i vi\u1ebft",
+                    "type": "blade",
+                    "ref": "theme",
+                    "ref_id": 35,
+                    "path": "desktop.sidebar.posts.search",
+                    "inputs": "[]",
+                    "children": []
+                },
+                {
+                    "id": 2408,
+                    "owner_id": 87,
+                    "component_id": 942,
+                    "area_id": 1646,
+                    "parent_id": 0,
+                    "priority": 1,
+                    "data": {
+                        "title": "Danh m\u1ee5c",
+                        "sorttype": "1",
+                        "parent_id": "0",
+                        "dynamic_id": null,
+                        "cate_number": "10",
+                        "get_by_dynamic_active": "on"
+                    },
+                    "name": "Desktop - Post Sidebar: Danh m\u1ee5c b\u00e0i vi\u1ebft",
+                    "type": "blade",
+                    "ref": "theme",
+                    "ref_id": 35,
+                    "path": "desktop.sidebar.posts.categories",
+                    "inputs": "{\"title\":{\"type\":\"text\",\"label\":\"Ti\\u00eau \\u0111\\u1ec1 (T\\u00f9y ch\\u1ecdn)\"},\"get_by_dynamic_active\":{\"type\":\"switch\",\"label\":\"\\u01afu ti\\u00ean m\\u1ee5c \\u0111ang xem\",\"value_type\":\"boolean\"},\"dynamic_id\":{\"type\":\"crazyselect\",\"label\":\"M\\u1ee5c (t\\u00f9y ch\\u1ecdn)\",\"template\":\"crazyselect\",\"call\":\"get_dynamic_options\",\"params\":[[],\"Ch\\u1ecdn m\\u1ed9t\"],\"@change\":\"App.posts.changeDynamicID\",\"data-ref\":\"parent_id\"},\"parent_id\":{\"type\":\"crazyselect\",\"label\":\"Danh m\\u1ee5c Cha\",\"template\":\"crazyselect\",\"call\":\"get_post_category_options\",\"params\":[{\"dynamic_id\":\"#dynamic_id\"},true],\"@label-type\":\"value\"},\"sorttype\":{\"type\":\"select\",\"label\":\"ki\\u1ec3u s\\u1eafp x\\u1ebfp\",\"call\":\"get_post_category_sortby_options\"},\"cate_number\":{\"type\":\"number\",\"label\":\"S\\u1ed1 l\\u01b0\\u1ee3ng danh m\\u1ee5c\",\"min\":1,\"step\":1,\"valudate\":\"number|min:1\",\"default\":10}}",
+                    "children": []
+                },
+                {
+                    "id": 2409,
+                    "owner_id": 87,
+                    "component_id": 941,
+                    "area_id": 1646,
+                    "parent_id": 0,
+                    "priority": 2,
+                    "data": {
+                        "title": "Tin m\u1edbi nh\u1ea5t",
+                        "sorttype": "1",
+                        "dynamic_id": null,
+                        "category_id": "0",
+                        "post_number": "10",
+                        "content_type": null
+                    },
+                    "name": "Desktop - Post Sidebar: Danh s\u00e1ch tin b\u00e0i",
+                    "type": "blade",
+                    "ref": "theme",
+                    "ref_id": 35,
+                    "path": "desktop.sidebar.posts.posts",
+                    "inputs": "{\"title\":{\"type\":\"text\",\"label\":\"Ti\\u00eau \\u0111\\u1ec1 (T\\u00f9y ch\\u1ecdn)\",\"default\":\"Tin m\\u1edbi nh\\u1ea5t\"},\"dynamic_id\":{\"type\":\"crazyselect\",\"label\":\"M\\u1ee5c (t\\u00f9y ch\\u1ecdn)\",\"template\":\"crazyselect\",\"call\":\"get_dynamic_options\",\"params\":[[],\"Ch\\u1ecdn m\\u1ed9t\"],\"@change\":\"App.posts.changeDynamicID\",\"required\":\"true\"},\"category_id\":{\"type\":\"crazyselect\",\"label\":\"Danh m\\u1ee5c\",\"template\":\"crazyselect\",\"call\":\"get_post_category_options\",\"params\":[{\"dynamic_id\":\"#dynamic_id\"},true],\"@label-type\":\"value\"},\"content_type\":{\"type\":\"radio\",\"label\":\"Lo\\u1ea1i n\\u1ed9i dung\",\"call\":\"get_content_type_options\",\"params\":[\"T\\u1ea5t c\\u1ea3\"]},\"sorttype\":{\"type\":\"select\",\"label\":\"ki\\u1ec3u s\\u1eafp x\\u1ebfp\",\"call\":\"get_post_sortby_options\"},\"post_number\":{\"type\":\"number\",\"label\":\"S\\u1ed1 tin b\\u00e0i\",\"min\":1,\"step\":1,\"default\":10}}",
+                    "children": []
+                },
+                {
+                    "id": 2410,
+                    "owner_id": 87,
+                    "component_id": 944,
+                    "area_id": 1646,
+                    "parent_id": 0,
+                    "priority": 3,
+                    "data": {
+                        "code": null,
+                        "link": "#",
+                        "title": null,
+                        "banner": "5f0143bcad5e6-87.png",
+                        "ads_type": "banner"
+                    },
+                    "name": "Desktop - Sidebar: Banner",
+                    "type": "blade",
+                    "ref": "theme",
+                    "ref_id": 35,
+                    "path": "desktop.sidebar.banner",
+                    "inputs": "{\"title\":{\"type\":\"text\",\"label\":\"Ti\\u00eau \\u0111\\u1ec1 (T\\u00f9y ch\\u1ecdn)\",\"placeholder\":\"Nh\\u1eadp ti\\u00eau \\u0111\\u1ec1 (Kh\\u00f4ng b\\u1eaft bu\\u1ed9c)\"},\"ads_type\":{\"type\":\"radio\",\"label\":\"Lo\\u1ea1i banner\",\"data\":{\"banner\":\"Link v\\u00e0 \\u1ea2nh\",\"code\":\"M\\u00e3 qu\\u1ea3ng c\\u00e1o\"}},\"banner\":{\"type\":\"file\",\"label\":\"Banner\"},\"link\":{\"type\":\"text\",\"label\":\"Li\\u00ean k\\u1ebft\",\"placeholder\":\"v\\u00ed d\\u1ee5: http:\\\/\\\/abc.com\\\/xyz\"},\"code\":{\"type\":\"textarea\",\"label\":\"M\\u00e3 qu\\u1ea3ng c\\u00e1o\",\"placeholder\":\"Vi\\u1ebft g\\u00ec \\u0111\\u00f3\",\"className\":\"auto-height\"}}",
+                    "children": []
+                }
+            ]
+        },
+        "desktop_sidebar_page": {
+            "id": 1647,
+            "owner_id": 87,
+            "name": "Desktop Page Sidebar Widgets",
+            "slug": "desktop_sidebar_page",
+            "ref": "theme",
+            "ref_id": 35,
+            "components": []
+        },
+        "mobile_home": {
+            "id": 1648,
+            "owner_id": 87,
+            "name": "Trang Ch\u1ee7 mobile",
+            "slug": "mobile_home",
+            "ref": "theme",
+            "ref_id": 35,
+            "components": [
+                {
+                    "id": 2430,
+                    "owner_id": 87,
+                    "component_id": 976,
+                    "area_id": 1648,
+                    "parent_id": 0,
+                    "priority": 0,
+                    "data": {
+                        "slider_id": "9",
+                        "button_text": null
+                    },
+                    "name": "Mobile - Home: Slider Style 1",
+                    "type": "blade",
+                    "ref": "theme",
+                    "ref_id": 35,
+                    "path": "mobile.home.slider.style-1",
+                    "inputs": "{\"slider_id\":{\"type\":\"select\",\"label\":\"Slider\",\"call\":\"Helper::getSliderOptions\"},\"button_text\":{\"type\":\"text\",\"label\":\"N\\u00fat b\\u1ea5m\",\"placeholder\":\"Chi ti\\u1ebft\"}}",
+                    "children": []
+                },
+                {
+                    "id": 2447,
+                    "owner_id": 87,
+                    "component_id": 983,
+                    "area_id": 1648,
+                    "parent_id": 0,
+                    "priority": 1,
+                    "data": {
+                        "worktimes": "T2 - T6: 06:00 am - 22:00 pm\r\nT7 - CN: 08:00 am - 18:00 pm"
+                    },
+                    "name": "Mobile - Home: Work Time",
+                    "type": "blade",
+                    "ref": "theme",
+                    "ref_id": 35,
+                    "path": "mobile.home.banner.style-1",
+                    "inputs": "{\"worktimes\":{\"type\":\"textarea\",\"label\":\"Th\\u1eddi gian l\\u00e0m vi\\u1ec7c \\\/ hiao h\\u00e0ng\",\"placeholder\":\"Ng\\u00e0y: th\\u1eddi gian;\\nV\\u00ed d\\u1ee5: \\nT2 - T7 : 06:00 s\\u00e1ng - 06:30 chi\\u1ec1u\\nCN: 06:30 s\\u00e1ng - 03:00 chi\\u1ec1u\",\"className\":\"auto-height\"}}",
+                    "children": []
+                },
+                {
+                    "id": 2432,
+                    "owner_id": 87,
+                    "component_id": 970,
+                    "area_id": 1648,
+                    "parent_id": 0,
+                    "priority": 2,
+                    "data": {
+                        "title": "D\u1ecbch v\u1ee5"
+                    },
+                    "name": "Mobile - Hone: Service Area ",
+                    "type": "blade",
+                    "ref": "theme",
+                    "ref_id": 35,
+                    "path": "mobile.home.services.area",
+                    "inputs": "{\"title\":{\"type\":\"text\",\"label\":\"Ti\\u00eau \\u0111\\u1ec1\",\"placeholder\":\"V\\u00ed d\\u1ee5 Mi\\u1ec5n ph\\u00ed giao h\\u00e0ng\"}}",
+                    "children": []
+                },
+                {
+                    "id": 2431,
+                    "owner_id": 87,
+                    "component_id": 978,
+                    "area_id": 1648,
+                    "parent_id": 0,
+                    "priority": 3,
+                    "data": {
+                        "image": "",
+                        "title": "Tinh hoa \u1ea9m th\u1ef1c",
+                        "description": "Nem V\u1ecb Ph\u1ed1 - Tinh hoa \u1ea9m th\u1ef1c trong th\u1eddi \u0111\u1ea1i 4.0"
+                    },
+                    "name": "Mobile - Hone: About Us",
+                    "type": "blade",
+                    "ref": "theme",
+                    "ref_id": 35,
+                    "path": "mobile.home.about",
+                    "inputs": "{\"title\":{\"type\":\"text\",\"label\":\"Ti\\u00eau \\u0111\\u1ec1\",\"placeholder\":\"V\\u00ed d\\u1ee5 Gi\\u00f3i thi\\u1ec7u\"},\"image\":{\"type\":\"file\",\"label\":\"\\u00c3nh\"},\"description\":{\"type\":\"textarea\",\"label\":\"M\\u00f4 t\\u1ea3 (t\\u00f9y ch\\u1ecdn)\",\"placeholder\":\"Vi\\u1ebft g\\u00ec \\u0111\\u00f3...\"}}",
+                    "children": []
+                },
+                {
+                    "id": 2435,
+                    "owner_id": 87,
+                    "component_id": 980,
+                    "area_id": 1648,
+                    "parent_id": 0,
+                    "priority": 4,
+                    "data": {
+                        "title": "Danh m\u1ee5c",
+                        "list_type": "custom",
+                        "sort_type": "id-ASC",
+                        "cate_number": "6"
+                    },
+                    "name": "Mobile - Home: Product Category area",
+                    "type": "blade",
+                    "ref": "theme",
+                    "ref_id": 35,
+                    "path": "mobile.home.categories.area",
+                    "inputs": "{\"title\":{\"type\":\"text\",\"label\":\"Ti\\u00eau \\u0111\\u1ec1\"},\"list_type\":{\"type\":\"radio\",\"label\":\"Ki\\u1ec3u danh s\\u00e1ch\",\"data\":{\"data\":\"Trong b\\u1ea3ng Danh m\\u1ee5c\",\"custom\":\"Danh s\\u00e1ch t\\u00f9y bi\\u1ebfn\"},\"value\":\"data\"},\"cate_number\":{\"type\":\"number\",\"label\":\"S\\u1ed1 l\\u01b0\\u1ee3ng\",\"value\":6},\"sort_type\":{\"type\":\"crazyselect\",\"label\":\"S\\u1eafp x\\u1ebfp\",\"data\":{\"id-ASC\":\"M\\u1eb7c \\u0111\\u1ecbnh\",\"id-DESC\":\"M\\u1edbi nh\\u1ea5t\",\"name-ASC\":\"h\\u1ee9 t\\u1ef1 b\\u1ea3ng ch\\u1ef1 c\\u00e1i\",\"best-seller\":\"B\\u00e1n ch\\u1ea1y\"},\"value\":\"id-ASC\"}}",
+                    "children": []
+                },
+                {
+                    "id": 2441,
+                    "owner_id": 87,
+                    "component_id": 986,
+                    "area_id": 1648,
+                    "parent_id": 0,
+                    "priority": 5,
+                    "data": {
+                        "title": "Menu",
+                        "sorttype": "1",
+                        "container": "ps-container",
+                        "categories": [
+                            "231"
+                        ],
+                        "product_number": "4"
+                    },
+                    "name": "Mobile - Home: Menu (Th\u1ef1c \u0111\u00f4n)",
+                    "type": "blade",
+                    "ref": "theme",
+                    "ref_id": 35,
+                    "path": "mobile.home.menu.style-1",
+                    "inputs": "{\"title\":{\"type\":\"text\",\"label\":\"Ti\\u00eau \\u0111\\u1ec1\"},\"categories\":{\"type\":\"checklist\",\"label\":\"Danh m\\u1ee5c\",\"call\":\"get_product_category_list_options\"},\"product_number\":{\"type\":\"number\",\"label\":\"S\\u1ed1 s\\u1ea3n ph\\u1ea9m hi\\u1ec3n th\\u1ecb\",\"min\":1,\"step\":1,\"default\":4},\"sorttype\":{\"type\":\"crazyselect\",\"label\":\"ki\\u1ec3u s\\u1eafp x\\u1ebfp SP\",\"call\":\"get_product_sortby_options\"}}",
+                    "children": []
+                },
+                {
+                    "id": 2444,
+                    "owner_id": 87,
+                    "component_id": 972,
+                    "area_id": 1648,
+                    "parent_id": 0,
+                    "priority": 6,
+                    "data": {
+                        "style": "1",
+                        "title": "\u0110\u00e1nh gi\u00e1 s\u1ea3n ph\u1ea9m",
+                        "list_type": "custom",
+                        "sort_type": "id-ASC",
+                        "item_number": "0"
+                    },
+                    "name": "Mobile - Home: Review area",
+                    "type": "blade",
+                    "ref": "theme",
+                    "ref_id": 35,
+                    "path": "mobile.home.reviews.area",
+                    "inputs": "{\"title\":{\"type\":\"text\",\"label\":\"Ti\\u00eau \\u0111\\u1ec1\"},\"style\":{\"type\":\"radio\",\"label\":\"Style\",\"data\":{\"1\":\"Style 1\",\"2\":\"Style 2\",\"3\":\"Style 3\"},\"default\":1},\"list_type\":{\"type\":\"radio\",\"label\":\"Ki\\u1ec3u danh s\\u00e1ch\",\"data\":{\"data\":\"Trong b\\u1ea3ng ph\\u1ea3n h\\u1ed3i\",\"custom\":\"Danh s\\u00e1ch t\\u00f9y bi\\u1ebfn\"},\"value\":\"custom\"},\"item_number\":{\"type\":\"number\",\"label\":\"S\\u1ed1 l\\u01b0\\u1ee3ng\",\"value\":0},\"sort_type\":{\"type\":\"crazyselect\",\"label\":\"S\\u1eafp x\\u1ebfp\",\"data\":{\"id-ASC\":\"M\\u1eb7c \\u0111\\u1ecbnh\",\"id-DESC\":\"M\\u1edbi nh\\u1ea5t\",\"name-ASC\":\"h\\u1ee9 t\\u1ef1 b\\u1ea3ng ch\\u1ef1 c\\u00e1i\"},\"value\":\"id-ASC\"}}",
+                    "children": []
+                }
+            ]
+        },
+        "mobile_footer": {
+            "id": 1649,
+            "owner_id": 87,
+            "name": "Mobile Footer",
+            "slug": "mobile_footer",
+            "ref": "theme",
+            "ref_id": 35,
+            "components": [
+                {
+                    "id": 2426,
+                    "owner_id": 87,
+                    "component_id": 966,
+                    "area_id": 1649,
+                    "parent_id": 0,
+                    "priority": 0,
+                    "data": {
+                        "logo": "",
+                        "custom": null,
+                        "logo_icon": "far fa-star",
+                        "logo_text": "Moof<span>Food<span>",
+                        "logo_type": "text"
+                    },
+                    "name": "Mobile - Footer: Logo",
+                    "type": "blade",
+                    "ref": "theme",
+                    "ref_id": 35,
+                    "path": "mobile.footer.logo",
+                    "inputs": "{\"custom\":{\"type\":\"switch\",\"label\":\"T\\u00f9y ch\\u1ec9nh\",\"value_type\":\"boolean\",\"check_label\":\"Cho ph\\u00e9p t\\u00f9y bi\\u1ebfn logo (m\\u1eb7c \\u0111\\u1ecbnh theo General)\"},\"logo_type\":{\"type\":\"radio\",\"label\":\"Lo\\u1ea1i logo\",\"data\":{\"text\":\"Text\",\"image\":\"\\u1ea2nh\"},\"default\":\"text\"},\"logo\":{\"type\":\"file\",\"label\":\"Logo\"},\"logo_icon\":{\"type\":\"iconpicker\",\"label\":\"Icon Logo\",\"default\":\"far fa-star\"},\"logo_text\":{\"type\":\"text\",\"label\":\"Text Logo\",\"placeholder\":\"D\\u00f9ng th\\u1ebb span d\\u1ec3 t\\u00f4 m\\u00e0u\"}}",
+                    "children": []
+                },
+                {
+                    "id": 2427,
+                    "owner_id": 87,
+                    "component_id": 967,
+                    "area_id": 1649,
+                    "parent_id": 0,
+                    "priority": 1,
+                    "data": {
+                        "description": "Tinh hoa \u1ea9m th\u1ef1c"
+                    },
+                    "name": "Mobile - Footer: Description",
+                    "type": "blade",
+                    "ref": "theme",
+                    "ref_id": 35,
+                    "path": "mobile.footer.description",
+                    "inputs": "{\"description\":{\"type\":\"textarea\",\"label\":\"M\\u00f4 t\\u1ea3 (t\\u00f9y ch\\u1ecdn)\",\"placeholder\":\"Vi\\u1ebft g\\u00ec \\u0111\\u00f3...\"}}",
+                    "children": []
+                },
+                {
+                    "id": 2428,
+                    "owner_id": 87,
+                    "component_id": 964,
+                    "area_id": 1649,
+                    "parent_id": 0,
+                    "priority": 2,
+                    "data": {
+                        "email": null,
+                        "address": null,
+                        "phone_number": null
+                    },
+                    "name": "Mobile - Footer: Contacts",
+                    "type": "blade",
+                    "ref": "theme",
+                    "ref_id": 35,
+                    "path": "mobile.footer.contacts",
+                    "inputs": "{\"address\":{\"type\":\"text\",\"Label\":\"\\u0110\\u1ecba ch\\u1ec9\",\"placeholder\":\"M\\u1eb7c d\\u1ecbnh s\\u1ebd l\\u1ea5y t\\u1eeb thi\\u1ebft l\\u1eadp th\\u00f4ng tin wwbsite\"},\"email\":{\"type\":\"text\",\"Label\":\"Email\",\"placeholder\":\"M\\u1eb7c d\\u1ecbnh s\\u1ebd l\\u1ea5y t\\u1eeb thi\\u1ebft l\\u1eadp th\\u00f4ng tin wwbsite\"},\"phone_number\":{\"type\":\"text\",\"Label\":\"S\\u1ed1 \\u0111i\\u1ec7n tho\\u1ea1i\",\"placeholder\":\"M\\u1eb7c d\\u1ecbnh s\\u1ebd l\\u1ea5y t\\u1eeb thi\\u1ebft l\\u1eadp th\\u00f4ng tin wwbsite\"}}",
+                    "children": []
+                },
+                {
+                    "id": 2448,
+                    "owner_id": 87,
+                    "component_id": 969,
+                    "area_id": 1649,
+                    "parent_id": 0,
+                    "priority": 3,
+                    "data": {
+                        "style": "1",
+                        "twitter": null,
+                        "youtube": null,
+                        "facebook": null,
+                        "linkedin": null,
+                        "instagram": null,
+                        "pinterest": null
+                    },
+                    "name": "Mobile - Footer: Socials",
+                    "type": "blade",
+                    "ref": "theme",
+                    "ref_id": 35,
+                    "path": "mobile.footer.socials",
+                    "inputs": "{\"style\":{\"type\":\"radio\",\"label\":\"Style\",\"data\":{\"1\":\"Style 1\",\"2\":\"Style 2\",\"3\":\"Style 3\"},\"default\":1},\"facebook\":{\"type\":\"text\",\"label\":\"facebook (T\\u00f9y ch\\u1ecdn)\",\"placeholder\":\"Kh\\u00f4ng b\\u1eaft bu\\u1ed9c (M\\u1eb7c \\u0111\\u1ecbnh thoe thi\\u1ebft l\\u1eadp MXH)\"},\"twitter\":{\"type\":\"text\",\"label\":\"twitter (T\\u00f9y ch\\u1ecdn)\",\"placeholder\":\"Kh\\u00f4ng b\\u1eaft bu\\u1ed9c (M\\u1eb7c \\u0111\\u1ecbnh thoe thi\\u1ebft l\\u1eadp MXH)\"},\"youtube\":{\"type\":\"text\",\"label\":\"youtube (T\\u00f9y ch\\u1ecdn)\",\"placeholder\":\"Kh\\u00f4ng b\\u1eaft bu\\u1ed9c (M\\u1eb7c \\u0111\\u1ecbnh thoe thi\\u1ebft l\\u1eadp MXH)\"},\"linkedin\":{\"type\":\"text\",\"label\":\"Linkedin (T\\u00f9y ch\\u1ecdn)\",\"placeholder\":\"Kh\\u00f4ng b\\u1eaft bu\\u1ed9c (M\\u1eb7c \\u0111\\u1ecbnh thoe thi\\u1ebft l\\u1eadp MXH)\"},\"instagram\":{\"type\":\"text\",\"label\":\"instagram (T\\u00f9y ch\\u1ecdn)\",\"placeholder\":\"Kh\\u00f4ng b\\u1eaft bu\\u1ed9c (M\\u1eb7c \\u0111\\u1ecbnh thoe thi\\u1ebft l\\u1eadp MXH)\"},\"pinterest\":{\"type\":\"text\",\"label\":\"Pinterest (T\\u00f9y ch\\u1ecdn)\",\"placeholder\":\"Kh\\u00f4ng b\\u1eaft bu\\u1ed9c (M\\u1eb7c \\u0111\\u1ecbnh thoe thi\\u1ebft l\\u1eadp MXH)\"}}",
+                    "children": []
+                },
+                {
+                    "id": 2429,
+                    "owner_id": 87,
+                    "component_id": 965,
+                    "area_id": 1649,
+                    "parent_id": 0,
+                    "priority": 4,
+                    "data": {
+                        "copyright": null
+                    },
+                    "name": "Mobile - Footer: Copyright",
+                    "type": "blade",
+                    "ref": "theme",
+                    "ref_id": 35,
+                    "path": "mobile.footer.copyright",
+                    "inputs": "{\"copyright\":{\"type\":\"textarea\",\"label\":\"Copyright (t\\u00f9y ch\\u1ecdn)\",\"placeholder\":\"Vi\\u1ebft g\\u00ec \\u0111\\u00f3...\"}}",
+                    "children": []
+                }
+            ]
+        },
+        "mobile_home_services": {
+            "id": 1650,
+            "owner_id": 87,
+            "name": "Mobile Home Services",
+            "slug": "mobile_home_services",
+            "ref": "theme",
+            "ref_id": 35,
+            "components": [
+                {
+                    "id": 2433,
+                    "owner_id": 87,
+                    "component_id": 971,
+                    "area_id": 1650,
+                    "parent_id": 0,
+                    "priority": 0,
+                    "data": {
+                        "icon": "fa fa-truck",
+                        "title": "Mi\u1ec5n ph\u00ed giao h\u00e0ng",
+                        "description": "Mo t\u1ea3 d\u1ecbch v\u1ee5 b\u1eb1ng m\u1ed9t c\u00e2u ng\u1eafn kho\u1ea3ng 10 \u0111\u1ebfn 20 t\u1eeb"
+                    },
+                    "name": "Mobile - Hone: Service Item ",
+                    "type": "blade",
+                    "ref": "theme",
+                    "ref_id": 35,
+                    "path": "mobile.home.services.item",
+                    "inputs": "{\"title\":{\"type\":\"text\",\"label\":\"Ti\\u00eau \\u0111\\u1ec1\",\"placeholder\":\"V\\u00ed d\\u1ee5 Mi\\u1ec5n ph\\u00ed giao h\\u00e0ng\"},\"description\":{\"type\":\"textarea\",\"label\":\"M\\u00f4 t\\u1ea3 (t\\u00f9y ch\\u1ecdn)\",\"placeholder\":\"Vi\\u1ebft g\\u00ec \\u0111\\u00f3...\"},\"icon\":{\"type\":\"iconpicker\",\"label\":\"Bi\\u1ec3u t\\u01b0\\u1ee3ng\",\"placeholder\":\"V\\u00ed d\\u1ee5: fa fa-rocket\"}}",
+                    "children": []
+                },
+                {
+                    "id": 2434,
+                    "owner_id": 87,
+                    "component_id": 971,
+                    "area_id": 1650,
+                    "parent_id": 0,
+                    "priority": 1,
+                    "data": {
+                        "icon": "fa fa-rocket",
+                        "title": "D\u1ecbch v\u1ee5 2",
+                        "description": "Tinh hoa \u1ea9m th\u1ef1c"
+                    },
+                    "name": "Mobile - Hone: Service Item ",
+                    "type": "blade",
+                    "ref": "theme",
+                    "ref_id": 35,
+                    "path": "mobile.home.services.item",
+                    "inputs": "{\"title\":{\"type\":\"text\",\"label\":\"Ti\\u00eau \\u0111\\u1ec1\",\"placeholder\":\"V\\u00ed d\\u1ee5 Mi\\u1ec5n ph\\u00ed giao h\\u00e0ng\"},\"description\":{\"type\":\"textarea\",\"label\":\"M\\u00f4 t\\u1ea3 (t\\u00f9y ch\\u1ecdn)\",\"placeholder\":\"Vi\\u1ebft g\\u00ec \\u0111\\u00f3...\"},\"icon\":{\"type\":\"iconpicker\",\"label\":\"Bi\\u1ec3u t\\u01b0\\u1ee3ng\",\"placeholder\":\"V\\u00ed d\\u1ee5: fa fa-rocket\"}}",
+                    "children": []
+                },
+                {
+                    "id": 2439,
+                    "owner_id": 87,
+                    "component_id": 971,
+                    "area_id": 1650,
+                    "parent_id": 0,
+                    "priority": 2,
+                    "data": {
+                        "icon": "fa fa-clock",
+                        "title": "D\u1ecbch v\u1ee5 3",
+                        "description": "M\u00f4 t\u1ea3 d\u1ecbch v\u1ee5"
+                    },
+                    "name": "Mobile - Hone: Service Item ",
+                    "type": "blade",
+                    "ref": "theme",
+                    "ref_id": 35,
+                    "path": "mobile.home.services.item",
+                    "inputs": "{\"title\":{\"type\":\"text\",\"label\":\"Ti\\u00eau \\u0111\\u1ec1\",\"placeholder\":\"V\\u00ed d\\u1ee5 Mi\\u1ec5n ph\\u00ed giao h\\u00e0ng\"},\"description\":{\"type\":\"textarea\",\"label\":\"M\\u00f4 t\\u1ea3 (t\\u00f9y ch\\u1ecdn)\",\"placeholder\":\"Vi\\u1ebft g\\u00ec \\u0111\\u00f3...\"},\"icon\":{\"type\":\"iconpicker\",\"label\":\"Bi\\u1ec3u t\\u01b0\\u1ee3ng\",\"placeholder\":\"V\\u00ed d\\u1ee5: fa fa-rocket\"}}",
+                    "children": []
+                },
+                {
+                    "id": 2440,
+                    "owner_id": 87,
+                    "component_id": 971,
+                    "area_id": 1650,
+                    "parent_id": 0,
+                    "priority": 3,
+                    "data": {
+                        "icon": "fa fa-home",
+                        "title": "D\u1ecbch v\u1ee5 4",
+                        "description": "M\u00f4 t\u1ea3 d\u1ecbch v\u1ee5"
+                    },
+                    "name": "Mobile - Hone: Service Item ",
+                    "type": "blade",
+                    "ref": "theme",
+                    "ref_id": 35,
+                    "path": "mobile.home.services.item",
+                    "inputs": "{\"title\":{\"type\":\"text\",\"label\":\"Ti\\u00eau \\u0111\\u1ec1\",\"placeholder\":\"V\\u00ed d\\u1ee5 Mi\\u1ec5n ph\\u00ed giao h\\u00e0ng\"},\"description\":{\"type\":\"textarea\",\"label\":\"M\\u00f4 t\\u1ea3 (t\\u00f9y ch\\u1ecdn)\",\"placeholder\":\"Vi\\u1ebft g\\u00ec \\u0111\\u00f3...\"},\"icon\":{\"type\":\"iconpicker\",\"label\":\"Bi\\u1ec3u t\\u01b0\\u1ee3ng\",\"placeholder\":\"V\\u00ed d\\u1ee5: fa fa-rocket\"}}",
+                    "children": []
+                }
+            ]
+        },
+        "mobile_home_reviews": {
+            "id": 1651,
+            "owner_id": 87,
+            "name": "Mobile: \u0110\u00e1nh gi\u00e1 s\u1ea3n ph\u1ea9m",
+            "slug": "mobile_home_reviews",
+            "ref": "theme",
+            "ref_id": 35,
+            "components": [
+                {
+                    "id": 2445,
+                    "owner_id": 87,
+                    "component_id": 973,
+                    "area_id": 1651,
+                    "parent_id": 0,
+                    "priority": 0,
+                    "data": {
+                        "link": "#",
+                        "name": "L\u00ea Ng\u1ecdc Do\u00e3n",
+                        "avatar": "5f018f39c8f22-87.png",
+                        "rating": "5",
+                        "comment": "Ngon"
+                    },
+                    "name": "Mobile - Home: Review Item",
+                    "type": "blade",
+                    "ref": "theme",
+                    "ref_id": 35,
+                    "path": "mobile.home.reviews.item",
+                    "inputs": "{\"name\":{\"type\":\"text\",\"label\":\"T\\u00ean ng\\u01b0\\u1eddi \\u0111\\u00e1nh gi\\u00e1\",\"placeholder\":\"V\\u00ed d\\u1ee5: Nguy\\u1ec5n V\\u0103n A\"},\"avatar\":{\"type\":\"file\",\"label\":\"\\u00c3nh \\u0111\\u1ea1i di\\u1ec7n\"},\"link\":{\"type\":\"text\",\"label\":\"Li\\u00ean k\\u1ebft (t\\u00f9y ch\\u1ecdn)\",\"placeholder\":\"V\\u00ed d\\u1ee5: http:\\\/\\\/www.facebook.com\\\/LeNgocDoan\"},\"rating\":{\"type\":\"radio\",\"label\":\"X\\u1ebfp h\\u1ea1ng\",\"data\":{\"1\":\"1 Sao\",\"2\":\"2 Sao\",\"3\":\"3 Sao\",\"4\":\"4 Sao\",\"5\":\"5 Sao\"},\"default\":5},\"comment\":{\"type\":\"textarea\",\"label\":\"\\u0110\\u00e1nh gi\\u00e1\",\"className\":\"auto-height\",\"placeholder\":\"V\\u00ed d\\u1ee5: Very grateful to have found this app. D&L team did a fantastic job...\"}}",
+                    "children": []
+                },
+                {
+                    "id": 2446,
+                    "owner_id": 87,
+                    "component_id": 973,
+                    "area_id": 1651,
+                    "parent_id": 0,
+                    "priority": 1,
+                    "data": {
+                        "link": "#",
+                        "name": "V\u0169 Minh Hi\u1ebfu",
+                        "avatar": "5f018f6583853-87.png",
+                        "rating": "5",
+                        "comment": "R\u1ea5t ngon"
+                    },
+                    "name": "Mobile - Home: Review Item",
+                    "type": "blade",
+                    "ref": "theme",
+                    "ref_id": 35,
+                    "path": "mobile.home.reviews.item",
+                    "inputs": "{\"name\":{\"type\":\"text\",\"label\":\"T\\u00ean ng\\u01b0\\u1eddi \\u0111\\u00e1nh gi\\u00e1\",\"placeholder\":\"V\\u00ed d\\u1ee5: Nguy\\u1ec5n V\\u0103n A\"},\"avatar\":{\"type\":\"file\",\"label\":\"\\u00c3nh \\u0111\\u1ea1i di\\u1ec7n\"},\"link\":{\"type\":\"text\",\"label\":\"Li\\u00ean k\\u1ebft (t\\u00f9y ch\\u1ecdn)\",\"placeholder\":\"V\\u00ed d\\u1ee5: http:\\\/\\\/www.facebook.com\\\/LeNgocDoan\"},\"rating\":{\"type\":\"radio\",\"label\":\"X\\u1ebfp h\\u1ea1ng\",\"data\":{\"1\":\"1 Sao\",\"2\":\"2 Sao\",\"3\":\"3 Sao\",\"4\":\"4 Sao\",\"5\":\"5 Sao\"},\"default\":5},\"comment\":{\"type\":\"textarea\",\"label\":\"\\u0110\\u00e1nh gi\\u00e1\",\"className\":\"auto-height\",\"placeholder\":\"V\\u00ed d\\u1ee5: Very grateful to have found this app. D&L team did a fantastic job...\"}}",
+                    "children": []
+                }
+            ]
+        },
+        "mobile_home_categories": {
+            "id": 1652,
+            "owner_id": 87,
+            "name": "Mobile: Danh m\u1ee5c",
+            "slug": "mobile_home_categories",
+            "ref": "theme",
+            "ref_id": 35,
+            "components": [
+                {
+                    "id": 2436,
+                    "owner_id": 87,
+                    "component_id": 981,
+                    "area_id": 1652,
+                    "parent_id": 0,
+                    "priority": 0,
+                    "data": {
+                        "link": null,
+                        "name": "C\u01a1m rang",
+                        "image": "5f018cd081995-87.png",
+                        "category_id": "222"
+                    },
+                    "name": "Mobile - Hone: Product Category Item",
+                    "type": "blade",
+                    "ref": "theme",
+                    "ref_id": 35,
+                    "path": "mobile.home.categories.item",
+                    "inputs": "{\"category_id\":{\"type\":\"crazyselect\",\"label\":\"Danh m\\u1ee5c\",\"call\":\"get_product_category_options\"},\"image\":{\"type\":\"file\",\"label\":\"\\u00c3nh (T\\u00f9y ch\\u1ec9nh)\"},\"name\":{\"type\":\"text\",\"label\":\"T\\u00ean danh m\\u1ee5c t\\u00f9y bi\\u1ebfn\",\"placeholder\":\"Kh\\u00f4ng b\\u1eaft bu\\u1ed9c. (V\\u00ed d\\u1ee5 C\\u01a1m rang) \"},\"link\":{\"type\":\"text\",\"label\":\"URL (T\\u00f9y ch\\u1ecdn)\",\"placeholder\":\"V\\u00ed d\\u1ee5: http:\\\/\\\/example.com\"}}",
+                    "children": []
+                },
+                {
+                    "id": 2437,
+                    "owner_id": 87,
+                    "component_id": 981,
+                    "area_id": 1652,
+                    "parent_id": 0,
+                    "priority": 1,
+                    "data": {
+                        "link": null,
+                        "name": "Nem Chua R\u00e1n",
+                        "image": "5f018cff2afc8-87.png",
+                        "category_id": "231"
+                    },
+                    "name": "Mobile - Hone: Product Category Item",
+                    "type": "blade",
+                    "ref": "theme",
+                    "ref_id": 35,
+                    "path": "mobile.home.categories.item",
+                    "inputs": "{\"category_id\":{\"type\":\"crazyselect\",\"label\":\"Danh m\\u1ee5c\",\"call\":\"get_product_category_options\"},\"image\":{\"type\":\"file\",\"label\":\"\\u00c3nh (T\\u00f9y ch\\u1ec9nh)\"},\"name\":{\"type\":\"text\",\"label\":\"T\\u00ean danh m\\u1ee5c t\\u00f9y bi\\u1ebfn\",\"placeholder\":\"Kh\\u00f4ng b\\u1eaft bu\\u1ed9c. (V\\u00ed d\\u1ee5 C\\u01a1m rang) \"},\"link\":{\"type\":\"text\",\"label\":\"URL (T\\u00f9y ch\\u1ecdn)\",\"placeholder\":\"V\\u00ed d\\u1ee5: http:\\\/\\\/example.com\"}}",
+                    "children": []
+                },
+                {
+                    "id": 3786,
+                    "owner_id": 87,
+                    "component_id": 981,
+                    "area_id": 1652,
+                    "parent_id": 0,
+                    "priority": 2,
+                    "data": {
+                        "link": null,
+                        "name": "Nem V\u1ecb Ph\u1ed1",
+                        "image": "5f9b908776e34-87.jpg",
+                        "category_id": "231"
+                    },
+                    "name": "Mobile - Hone: Product Category Item",
+                    "type": "blade",
+                    "ref": "theme",
+                    "ref_id": 35,
+                    "path": "mobile.home.categories.item",
+                    "inputs": "{\"category_id\":{\"type\":\"crazyselect\",\"label\":\"Danh m\\u1ee5c\",\"call\":\"get_product_category_options\"},\"image\":{\"type\":\"file\",\"label\":\"\\u00c3nh (T\\u00f9y ch\\u1ec9nh)\"},\"name\":{\"type\":\"text\",\"label\":\"T\\u00ean danh m\\u1ee5c t\\u00f9y bi\\u1ebfn\",\"placeholder\":\"Kh\\u00f4ng b\\u1eaft bu\\u1ed9c. (V\\u00ed d\\u1ee5 C\\u01a1m rang) \"},\"link\":{\"type\":\"text\",\"label\":\"URL (T\\u00f9y ch\\u1ecdn)\",\"placeholder\":\"V\\u00ed d\\u1ee5: http:\\\/\\\/example.com\"}}",
+                    "children": []
+                }
+            ]
+        }
+    }
+}

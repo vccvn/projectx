@@ -1,0 +1,13 @@
+{
+    "title": {
+        "type": "text",
+        "label": "Trình độ",
+        "placeholder": "nhập trình độ. Ví dụ: Đạ học",
+        "required": "true"
+    },
+    "keywords": {
+        "type": "text",
+        "label": "Từ khóa",
+        "placeholder": "nhập từ khóa"
+    }
+}

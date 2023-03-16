@@ -1,0 +1,20 @@
+{
+    "path": "public/static/app/js/modules",
+    "compile": "../app.modules.js",
+    "sources": [
+        "storage.js",
+        "select.js",
+        "popup.js",
+        "comments.js",
+        "products.js",
+        "api.js",
+        "auth.js",
+        "location.js",
+        "contact.js",
+        "cart.js",
+        "orders.js",
+        "subcribes.js",
+        "visitors.js",
+        "custom.js"
+    ]
+}

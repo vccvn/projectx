@@ -1,0 +1,46 @@
+{
+    "name": "T\u1ed5 ch\u1ee9c",
+    "layout_type": "column",
+    "form_groups": [
+        {
+            "title": "Th\u00f4ng tin t\u1ed5 ch\u1ee9c",
+            "class": "col-md-7",
+            "inputs": [
+                "name",
+                "type",
+                "address",
+                "phone_number",
+                "email",
+                "website"
+            ]
+        },
+        {
+            "title": "Th\u01b0\u01a1ng hi\u1ec7u",
+            "class": "col-md-5",
+            "inputs": [
+                "logo"
+            ]
+        }
+    ],
+    "custom_form_groups": [
+        {
+            "title": "Th\u00f4ng tin t\u1ed5 ch\u1ee9c",
+            "class": "col-md-7",
+            "inputs": [
+                "name",
+                "type",
+                "address",
+                "phone_number",
+                "email"
+            ]
+        },
+        {
+            "title": "Th\u01b0\u01a1ng hi\u1ec7u",
+            "class": "col-md-5",
+            "inputs": [
+                "logo",
+                "website"
+            ]
+        }
+    ]
+}

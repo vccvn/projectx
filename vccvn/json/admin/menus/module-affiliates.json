@@ -1,0 +1,38 @@
+{
+    "data": {
+        "affiliates": {
+            "text": "Affiliate",
+            "title": "Affiliate",
+            "active_key": "affiliates",
+            "route": "admin.affiliates.list",
+            "icon": "share-alt",
+            "submenu": {
+                "type": "list",
+                "data": [
+                    {
+                        "text": "Danh sách",
+                        "title": "Danh sách",
+                        "active_key": "list",
+                        "route": "admin.affiliates.list",
+                        "icon": "list-ul"
+                    },
+                    
+                    {
+                        "text": "Thêm site",
+                        "title": "Thêm Form",
+                        "active_key": "add",
+                        "route": "admin.affiliates.create",
+                        "icon": "plus-circle"
+                    },
+                    {
+                        "text": "Thùng rác",
+                        "title": "Thùng rác",
+                        "active_key": "trash",
+                        "route": "admin.affiliates.trash",
+                        "icon": "trash-alt"
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "title": {
+        "type": "text",
+        "label": "Tiêu đề",
+        "placeholder": "nhập tiêu đề"
+    },
+    "description": {
+        "type": "textarea",
+        "label": "Mô tả",
+        "placeholder": "Viết gì đó"
+    },
+    "privacy": {
+        "type": "radio",
+        "label": "Riêng tư",
+        "data":{
+            "public": "Công khai",
+            "private": "Riêng tư"
+        }
+    }
+    
+}

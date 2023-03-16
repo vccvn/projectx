@@ -1,0 +1,26 @@
+{
+    "name": "Th\u00f4ng tin ng\u01b0\u1eddi d\u00f9ng",
+    "layout_type": "column",
+    "form_groups": [
+        {
+            "title": "Th\u00f4ng tin t\u00e0i kho\u1ea3n",
+            "class": "col-md-6",
+            "inputs": [
+                "name",
+                "email",
+                "username",
+                "password",
+                "password_confirmation"
+            ]
+        },
+        {
+            "title": "Th\u00f4ng tin g\u00f3i",
+            "class": "col-md-6",
+            "inputs": [
+                "web_type",
+                "subdomain",
+                "alias_domain"
+            ]
+        }
+    ]
+}

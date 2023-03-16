@@ -1,0 +1,54 @@
+{
+    "inputs": {
+        "name": { "type": "text", "text": "Tên tổ chức", "placeholder":"Nhập tên tổ chức", "required":"true"},
+        "type": { "type": "crazyselect", "text": "Loại tổ chức", "template":"crazyselect", "required":"true", "data":{"business":"Doanh nghiệp", "education":"Giáo dục"}},
+        "logo": { "type": "file", "text": "Logo","template":"cropit"},
+        "address": { "type": "textarea", "text": "Địa chỉ", "placeholder":"Nhập địa chỉ..."},
+        "phone_number": { "type": "text", "text": "Số diện thoại"},
+        "email": { "type": "email", "text": "Địa chỉ E-mail"},
+        "website": { "type": "text", "text": "Website"}
+    },
+    "config": {
+        "name": "Thông tin tổ chức",
+        "layout_type": "column",
+        "form_groups": {
+            "base_info": {
+                "title":"",
+                "class": "col-md-7",
+                "inputs": [
+                    "name",
+                    "type",
+                    "phone_number",
+                    "address"
+                ]
+            },
+            "image": {
+                "title":"",
+                "class": "col-md-5",
+                "inputs": [
+                    "logo"
+                ]
+            },
+            "contact": {
+                "title":"",
+                "class": "col-md-6",
+                "inputs": [
+                    "email"
+                ]
+            },
+            "map": {
+                "title":"",
+                "class": "col-md-6",
+                "inputs": [
+                    "website"
+                ]
+            }
+        },
+        "assets": {
+            "js": [
+                
+            ],
+            "css": []
+        }
+    }
+}

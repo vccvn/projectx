@@ -1,0 +1,63 @@
+{
+    "name": "Bookings",
+    "package": "bookings",
+    "use_trash": false,
+    "titles": {
+        "default": "Danh sách Bookings",
+        "trash": "Danh sách Bookings đã xóa"
+    },
+    "data": [],
+    "filter": {
+        "search_columns": {
+            "name": "Họ tên",
+            "email": "Email",
+            "phone_number": "Số điện thoại"
+        },
+        "sort_columns": []
+    },
+    "table": {
+        "class": "",
+        "columns": [
+            {
+                "title": "Tiêu đề",
+                "class": "max-150",
+                "text": ":title"
+            },
+            {
+                "title": "Họ tên",
+                "class": "max-150",
+                "text": ":name"
+            },
+            {
+                "title": "Email",
+                "class": "max-200",
+                "text": ":email"
+            },
+            {
+                "title": "SĐT",
+                "class": "text-cemter max-120",
+                "text": ":phone_number"
+            },
+            {
+                "title": "Sớ lượng",
+                "class": "text-cemter",
+                "text": ":quantity"
+            },
+            {
+                "title": "Thời gian",
+                "class": "text-cemter max-200",
+                "text": ":booking_time"
+            },
+            {
+                "title": "Tin nhắn",
+                "class": "text-cemter max-200",
+                "text": ":message"
+            }
+        ]
+    },
+    "resources": {
+        "js_data": [],
+        "js": [],
+        "css": []
+    }
+}

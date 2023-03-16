@@ -1,0 +1,30 @@
+{
+    "data": [
+        {
+            "name": "cache_data_time",
+            "type": "number",
+            "value_type": "number",
+            "label": "Thời gian lưu cache của Dữ liệu từ DB"
+        },
+        {
+            "name": "cache_view_time",
+            "type": "number",
+            "value_type": "number",
+            "label": "Thời gian lưu cache của view"
+        },
+        {
+            "name": "send_mail_notification",
+            "type": "checkbox",
+            "value_type": "boolean",
+            "label": "Gửi mail thông báo",
+            "props":{
+                "template": "switch"
+            }
+        },
+        {
+            "name": "mail_notification",
+            "type": "maillist",
+            "label": "Email nhận thông báo (ngăn cách bằng dấu phẩy (,))"
+        }
+    ]
+}

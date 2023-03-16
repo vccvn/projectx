@@ -1,0 +1,89 @@
+{
+    "inputs": {
+        "product_id": {
+            "type": "crazyselect",
+            "template": "crazyselect",
+            "label": "Sản phẩm",
+            "call": "get_product_select_options",
+            "params":[{"id":":defval"}],
+            "@select-type": "search",
+            "@search-route": "admin.products.select-options",
+            "@change": "Product.variant.changeProduct"
+        },
+        "description": {
+            "type": "textarea",
+            "label": "Mô tả",
+            "placeholder": "Nhập mô tả"
+        },
+        "feature_image": {
+            "type": "file",
+            "label": "Hình đạ diện",
+            "template": "cropit",
+            "data-width": 400,
+            "data-height": 400,
+            "@keep-original": true
+        },
+        "list_price": {
+            "type": "number",
+            "label": "Giá bán",
+            "required": "true",
+            "placeholder": "Nhập giá"
+        },
+        "sale_price": {
+            "type": "number",
+            "label": "Giá khuyến mại",
+            "placeholder": "Nhập giá khuyến mại",
+            "@options": {
+                "form_group_class": "toggle-by-on-sale-status"
+            }
+        },
+        "on_sale": {
+            "type": "checkbox",
+            "label": "Khuyến mại?",
+            "check_label": "Sản phẩm đang khuyến mại",
+            "template": "switch",
+            "@options": {
+                "form_group_class": "row",
+                "label_class": "col-12 col-sm-3 col-md-4 col-lg-3 col-form-label",
+                "wrapper_class": "col-12 col-sm-9 col-md-8 col-lg-9"
+            },
+            "@change": "Product.variant.checkOnSaleStatus"
+        },
+        "attributes": {
+            "type": "variant-attribute",
+            "label": "Thuộc tính sản phẩm",
+            "call": "get_product_variant_attribute_input_data",
+            "params": [
+                "#hidden_id",
+                true
+            ],
+            "template": "variant-attribute",
+            "@detail-route": "admin.products.attributes.detail-values",
+            "@add-value-route": "admin.products.attributes.values.create"
+        }
+    },
+    "config": {
+        "name": "Thông tin sản phẩm",
+        "layout_type": "column",
+        "form_groups": {
+            "baseinfo": {
+                "title": "Thông tin biến thể",
+                "class": "col-md-7",
+                "inputs": [
+                    "product_id",
+                    "attributes",
+                    "description",
+                    "list_price",
+                    "on_sale",
+                    "sale_price"
+                ]
+            },
+            "images": {
+                "class": "col-md-5",
+                "inputs": [
+                    "feature_image"
+                ]
+            }
+        }
+    }
+}

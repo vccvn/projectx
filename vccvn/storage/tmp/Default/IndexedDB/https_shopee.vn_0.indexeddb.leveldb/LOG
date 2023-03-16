@@ -1,0 +1,24 @@
+2021/11/30-16:46:22.746 c41d Reusing MANIFEST /var/www/vccvn/storage/tmp/Default/IndexedDB/https_shopee.vn_0.indexeddb.leveldb/MANIFEST-000001
+2021/11/30-16:46:22.746 c41d Recovering log #6
+2021/11/30-16:46:22.746 c41d Reusing old log /var/www/vccvn/storage/tmp/Default/IndexedDB/https_shopee.vn_0.indexeddb.leveldb/000006.log 
+2021/11/30-16:46:23.081 c420 Level-0 table #10: started
+2021/11/30-16:46:23.089 c420 Level-0 table #10: 597 bytes OK
+2021/11/30-16:46:23.098 c420 Delete type=0 #6
+2021/11/30-16:46:23.098 c420 Manual compaction at level-0 from '\x00\x05\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x06\x00\x00\x00' @ 0 : 0; will stop at '\x00\x05\x00\x00\x05' @ 255 : 1
+2021/11/30-16:46:23.098 c420 Compacting 1@0 + 1@1 files
+2021/11/30-16:46:23.107 c420 Generated table #11@0: 111 keys, 2864 bytes
+2021/11/30-16:46:23.107 c420 Compacted 1@0 + 1@1 files => 2864 bytes
+2021/11/30-16:46:23.114 c420 compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/11/30-16:46:23.115 c420 Delete type=2 #10
+2021/11/30-16:46:23.115 c420 Manual compaction at level-0 from '\x00\x05\x00\x00\x05' @ 255 : 1 .. '\x00\x06\x00\x00\x00' @ 0 : 0; will stop at (end)
+2021/11/30-16:46:25.658 c41c Level-0 table #13: started
+2021/11/30-16:46:25.673 c41c Level-0 table #13: 1266 bytes OK
+2021/11/30-16:46:25.682 c41c Delete type=2 #7
+2021/11/30-16:46:25.682 c41c Delete type=0 #9
+2021/11/30-16:46:25.682 c41c Manual compaction at level-0 from '\x00\x06\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x07\x00\x00\x00' @ 0 : 0; will stop at '\x00\x06\x00\x00\x05' @ 296 : 1
+2021/11/30-16:46:25.682 c41c Compacting 1@0 + 1@1 files
+2021/11/30-16:46:25.692 c41c Generated table #14@0: 115 keys, 2891 bytes
+2021/11/30-16:46:25.692 c41c Compacted 1@0 + 1@1 files => 2891 bytes
+2021/11/30-16:46:25.701 c41c compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/11/30-16:46:25.702 c41c Delete type=2 #13
+2021/11/30-16:46:25.702 c41c Manual compaction at level-0 from '\x00\x06\x00\x00\x05' @ 296 : 1 .. '\x00\x07\x00\x00\x00' @ 0 : 0; will stop at (end)

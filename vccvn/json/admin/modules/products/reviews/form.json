@@ -1,0 +1,48 @@
+{
+    "product_id": {
+        "type": "crazyselect",
+        "template": "crazyselect",
+        "label": "Sản phẩm",
+        "call": "get_product_select_options",
+        "params":[{"id":":defval"}],
+        "@select-type": "search",
+        "@search-route": "admin.products.select-options",
+        "required": "true"
+    },
+    "customer_id": {
+        "type": "crazyselect",
+        "template": "crazyselect",
+        "label": "Khách hàng",
+        "call": "get_customer_select_options",
+        "params":[{"id":":defval"}],
+        "@select-type": "search",
+        "@search-route": "admin.customers.select-options",
+        "@note": "có thể bỏ qua nếu đã muốn nhập email và tên tùy chỉnh"
+    },
+    "name": {
+        "type": "text",
+        "text": "Tên ",
+        "placeholder": "Nhập tên",
+        "@note": "có thể bỏ qua nếu đã chọn dích danh khách hàng"
+    },
+    "email": {
+        "type": "text",
+        "text": "Email",
+        "placeholder": "Nhập Email",
+        "@note": "có thể bỏ qua nếu đã chọn dích danh khách hàng"
+    },
+    "rating": {
+        "type": "radio",
+        "text": "Thang điểm dánh giá",
+        "required": "true",
+        "data":{
+            "1": "1 Sao", "2": "2 Sao", "3": "3 Sao", "4": "4 Sao", "5": "5 Sao"
+        },
+        "default": 5
+    },
+    "comment": {
+        "type": "textarea",
+        "text": "Mô tả chi tiết",
+        "placeholder": "Nhập chi tiết"
+    }
+}

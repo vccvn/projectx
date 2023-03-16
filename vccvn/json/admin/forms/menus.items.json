@@ -1,0 +1,215 @@
+{
+    "inputs": {
+        "text": {
+            "type": "text",
+            "label": "Text hiển thị",
+            "placeholder": "Nhập text hiển thị"
+        },
+        "url": {
+            "type": "text",
+            "label": "Đường dẫn",
+            "placeholder": "Nhập đường dẫn"
+        },
+        "active_key": {
+            "type": "text",
+            "label": "Mã kích hoạt (Tùy chọn)",
+            "placeholder": "Nhập key kích hoạt (tùy chọn)"
+        },
+        "class": {
+            "type": "text",
+            "label": "Item Class (Tùy chọn)",
+            "placeholder": "Nhập class (tùy chọn)"
+        },
+        "link_class": {
+            "type": "text",
+            "label": "Link Class (Tùy chọn)",
+            "placeholder": "Nhập class (tùy chọn)"
+        },
+        "icon": {
+            "type": "iconpicker",
+            "template": "iconpicker",
+            "label": "icon (Tùy chọn)",
+            "placeholder": "Nhập class (tùy chọn)"
+        },
+        "target": {
+            "type": "select",
+            "label": "Link Target",
+            "data": {
+                "none": "Không",
+                "_blank": "Tab mới"
+            }
+        },
+        "sub_type": {
+            "type": "select",
+            "label": "Kiểu menu con",
+            "data": {
+                "default": "Mặc định",
+                "item": "Chỉ theo loại Item",
+                "custom": "Chỉ tùy biến ",
+                "mega": "Mega Menu"
+            }
+        },
+        "show_submenu": {
+            "type": "select",
+            "label": "Hiển thị submenu",
+            "data":{
+                "show": "Hiện",
+                "hidden": "Ẩn"
+            },
+            "default": "show"
+        },
+        "route": {
+            "type": "crazyselect",
+            "template": "crazyselect",
+            "label": "Route",
+            "call": "get_route_options",
+            "params": [
+                "client"
+            ]
+        },
+        "ref_id": {
+            "type": "crazyselect",
+            "template": "crazyselect",
+            "label": "Tham chiếu"
+        },
+        "dynamic_id": {
+            "type": "crazyselect",
+            "template": "crazyselect",
+            "label": "Mục bài viết",
+            "call": "get_dynamic_options"
+        },
+        "page_id": {
+            "type": "crazyselect",
+            "template": "crazyselect",
+            "label": "Trang",
+            "call": "get_page_options",
+            "@label-type": "value"
+        },
+        "product_category_id": {
+            "type": "crazyselect",
+            "template": "crazyselect",
+            "label": "Danh mục sản phẩm",
+            "call": "get_product_category_options",
+            "@label-type": "value"
+        },
+        "project_category_id": {
+            "type": "crazyselect",
+            "template": "crazyselect",
+            "label": "Danh mục dự án",
+            "call": "get_project_category_options",
+            "@label-type": "value"
+        },
+        "post_category_id": {
+            "type": "crazyselect",
+            "template": "crazyselect",
+            "label": "Danh mục",
+            "call": "get_post_category_options",
+            "@label-type": "value"
+        }
+    },
+    "config": {
+        "name": "Menu item",
+        "form_groups": {
+            "url": {
+                "text": "Đường dẫn",
+                "icon": "flaticon-network",
+                "inputs": [
+                    "text",
+                    "url",
+                    "target",
+                    "link_class",
+                    "sub_type",
+                    "show_submenu",
+                    "active_key",
+                    "icon",
+                    "class"
+                ]
+            },
+            "route": {
+                "text": "Route",
+                "icon": "flaticon-more-v4 ",
+                "inputs": [
+                    "text",
+                    "route",
+                    "target",
+                    "link_class",
+                    "sub_type",
+                    "show_submenu",
+                    "active_key",
+                    "icon",
+                    "class"
+                ]
+            },
+            "dynamic": {
+                "text": "Kênh đăng bài",
+                "icon": "flaticon-app",
+                "inputs": [
+                    "dynamic_id",
+                    "target",
+                    "link_class",
+                    "sub_type",
+                    "show_submenu",
+                    "active_key",
+                    "icon",
+                    "class"
+                ]
+            },
+            "page": {
+                "text": "Trang",
+                "icon": "flaticon-list",
+                "inputs": [
+                    "page_id",
+                    "target",
+                    "link_class",
+                    "sub_type",
+                    "show_submenu",
+                    "active_key",
+                    "icon",
+                    "class"
+                ]
+            },
+            "product_category": {
+                "text": "Danh mục sản phẩm",
+                "icon": "flaticon-cart",
+                "inputs": [
+                    "product_category_id",
+                    "target",
+                    "link_class",
+                    "sub_type",
+                    "show_submenu",
+                    "active_key",
+                    "icon",
+                    "class"
+                ]
+            },
+            "project_category": {
+                "text": "Danh mục dụ án",
+                "icon": "flaticon-calendar-2",
+                "inputs": [
+                    "project_category_id",
+                    "target",
+                    "link_class",
+                    "sub_type",
+                    "show_submenu",
+                    "active_key",
+                    "icon",
+                    "class"
+                ]
+            },
+            "post_category": {
+                "text": "Danh mục bài viết",
+                "icon": "flaticon-folder-1",
+                "inputs": [
+                    "post_category_id",
+                    "target",
+                    "link_class",
+                    "sub_type",
+                    "show_submenu",
+                    "active_key",
+                    "icon",
+                    "class"
+                ]
+            }
+        }
+    }
+}

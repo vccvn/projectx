@@ -1,0 +1,11 @@
+{
+    "data": {
+        "embeds": {
+            "text": "Mã nhúng",
+            "title": "Mã nhúng",
+            "active_key": "embeds",
+            "route": "admin.embeds.list",
+            "icon": "code"
+        }
+    }
+}

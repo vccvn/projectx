@@ -1,0 +1,41 @@
+{
+    "customer_id": {
+        "type": "crazyselect",
+        "template": "crazyselect",
+        "label": "Khách hàng",
+        "call": "get_customer_select_options",
+        "params":[{"id":":defval"}],
+        "@select-type": "search",
+        "@search-route": "admin.customers.select-options",
+        "@change": "Order.feedback.changeCustomer"
+    },
+    "order_id": {
+        "type": "crazyselect",
+        "template": "crazyselect",
+        "label": "Đơn hàng",
+        "call": "get_order_select_options",
+        "params":[{"customer_id":"#customer_id"}],
+        "@select-type": "search",
+        "@search-params": ".crazy-form #category_id",
+        "@search-route": "admin.orders.select-options"
+    },
+    "type": {
+        "type": "radio",
+        "text": "Loại",
+        "required": "true",
+        "data":{
+            "feedback": "Phản hồi / góp ý", "complain": "Khiếu nại", "return": "Đổi trả"
+        },
+        "default": "feedback"
+    },
+    "title": {
+        "type": "text",
+        "text": "Tiêu đề",
+        "placeholder": "Nhập một câu ngắn gọn"
+    },
+    "description": {
+        "type": "textarea",
+        "text": "Mô tả chi tiết",
+        "placeholder": "Nhập chi tiết"
+    }
+}

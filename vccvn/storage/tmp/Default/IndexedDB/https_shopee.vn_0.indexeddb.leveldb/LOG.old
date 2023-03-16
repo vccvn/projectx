@@ -1,0 +1,9 @@
+2021/11/30-16:45:57.613 c3dc Reusing MANIFEST /var/www/vccvn/storage/tmp/Default/IndexedDB/https_shopee.vn_0.indexeddb.leveldb/MANIFEST-000001
+2021/11/30-16:45:57.898 c3db Level-0 table #5: started
+2021/11/30-16:45:57.905 c3db Level-0 table #5: 1336 bytes OK
+2021/11/30-16:45:57.917 c3db Delete type=0 #3
+2021/11/30-16:45:57.917 c3db Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)
+2021/11/30-16:46:07.611 c3db Level-0 table #7: started
+2021/11/30-16:46:07.619 c3db Level-0 table #7: 5261 bytes OK
+2021/11/30-16:46:07.626 c3db Delete type=0 #4
+2021/11/30-16:46:07.626 c3db Manual compaction at level-0 from '\x00\x04\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x05\x00\x00\x00' @ 0 : 0; will stop at (end)

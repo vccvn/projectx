@@ -1,0 +1,65 @@
+{
+    "name": "Liên hệ",
+    "package": "contacts",
+    "use_trash": false,
+    "titles": {
+        "default": "Danh sách liên hệ",
+        "trash": "Danh sách liên hệ đã xóa"
+    },
+    "data": [],
+    "filter": {
+        "general_columns":{
+            "name":"Họ và tên",
+            "subject": "Chủ đề"
+        },
+        "search_columns": {
+            "email": "Email",
+            "phone_number":"Số điện thoại"
+        },
+        "sort_columns": {
+            "created_at": "Thời gian gửi"
+        }
+    },
+    "table": {
+        "columns": [
+            {
+                "title": "Mã",
+                "class": "id-col",
+                "text": ":id"
+            },
+            {
+                "title": "Họ tên",
+                "class": "min-100 max-205",
+                "text": ":name"
+            },
+            {
+                "title": "Email",
+                "class": "min-100 max-205",
+                "text": ":email"
+            },
+            {
+                "title": "Chủ đề",
+                "class": "min-100 max-500",
+                "text": ":subject"
+            },
+            {
+                "title": "Thời gian",
+                "class": "min-100 text-center",
+                "template": "{@calculator_time}",
+                "data": {
+                    "@calculator_time": ["created_at"]
+                }
+            },
+            {
+                "title": "Chi tiết",
+                "class": "min-100 text-center",
+                "template": "<a class='btn-view-contact-detail' href='javascript:void(0);' data-id='{id}'>Xem</a>"
+            }
+        ]
+    },
+    "resources": {
+        "js_data": [],
+        "js": ["static/manager/js/contacts.js"],
+        "css": []
+    }
+}

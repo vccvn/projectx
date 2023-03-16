@@ -1,0 +1,235 @@
+{
+    "data":{
+        "dashboard": {
+            "text": "Bảng điều khiển",
+            "title": "Bảng điều khiển",
+            "active_key": "dashboard",
+            "route": "dashboard",
+            "icon": "tachometer-alt"
+        },
+        "users": {
+            "text": "Người dùng",
+            "title": "Người dùng",
+            "active_key": "users",
+            "route": "users",
+            "icon": "user",
+            "submenu": {
+                "type": "list",
+                "data": [
+                    {
+                        "text": "Danh sách",
+                        "title": "Danh sách",
+                        "active_key": "list",
+                        "route": "users.list",
+                        "icon": "users"
+                    },
+                    {
+                        "text": "Thêm mới",
+                        "title": "Thêm mới",
+                        "active_key": "add",
+                        "route": "users.create",
+                        "icon": "user-plus"
+                    },
+                    {
+                        "text": "Thùng rác",
+                        "title": "Thùng rác",
+                        "active_key": "trash",
+                        "route": "users.trash",
+                        "icon": "user-slash"
+                    }
+                ]
+            }
+        },
+        "packages": {
+            "text": "Gói dịch vụ",
+            "title": "Quản lý Gói dịch vụ",
+            "active_key": "packages",
+            "route": "packages",
+            "icon": "cubes",
+            "submenu": {
+                "type": "list",
+                "data": [
+                    {
+                        "text": "Danh sách",
+                        "title": "Danh sách Gói dịch vụ",
+                        "active_key": "list",
+                        "route": "packages.list",
+                        "icon": "list"
+                    },
+                    {
+                        "text": "Thêm mới",
+                        "title": "Thêm mới",
+                        "active_key": "add",
+                        "route": "packages.create",
+                        "icon": "plus"
+                    },
+                    {
+                        "text": "Thùng rác",
+                        "title": "Thùng rác",
+                        "active_key": "trash",
+                        "route": "packages.trash",
+                        "icon": "trash-alt"
+                    }
+                ]
+            }
+        },
+        "payments": {
+            "text": "Thanh toán",
+            "title": "Thanh toán",
+            "route": "payments.methods",
+            "icon": "credit-card"
+            
+        },
+        "transactions": {
+            "text": "Giao dịch",
+            "title": "Quản lý giao dịch",
+            "route": "transactions.packages",
+            "active_ley": "transactions.packages",
+            "icon": "exchange-alt",
+            "submenu": {
+                "type": "list",
+                "data": [
+                    {
+                        "text": "Danh sách",
+                        "title": "Danh sách khách hàng",
+                        "active_key": "list",
+                        "route": "transactions.packages.list",
+                        "icon": "list-ul"
+                    },
+                    {
+                        "text": "Đã xóa",
+                        "title": "Thùng rác",
+                        "active_key": "trash",
+                        "route": "transactions.packages.trash",
+                        "icon": "ban"
+                    }
+                ]
+            }
+        },
+        "#permissions": {
+            "text": "Phân quyền",
+            "title": "Quản lý phân quyền",
+            "url": "#permissions",
+            "active_key":"permissions",
+            "icon": "lock",
+            "submenu": {
+                "type": "list",
+                "data": [
+                    {
+                        "text": "Danh sách Module",
+                        "title": "Danh sách Module",
+                        "active_key": "permissions.modules",
+                        "route": "permissions.modules.list",
+                        "icon": "qrcode"
+                    },
+                    {
+                        "text": "Quyền truy cập",
+                        "title": "Quyền truy cập",
+                        "active_key": "permissions.roles",
+                        "route": "permissions.roles.list",
+                        "icon": "user-lock"
+                    }
+                ]
+            }
+        },
+        "themes": {
+            "text": "Giao diện",
+            "title": "Quản lý Giao diện",
+            "active_key": "themes",
+            "route": "themes",
+            "icon": "palette",
+            "submenu": {
+                "type": "list",
+                "data": [
+                    {
+                        "text": "Danh sách",
+                        "title": "Danh sách",
+                        "active_key": "list",
+                        "route": "themes.list",
+                        "icon": "list"
+                    },
+                    {
+                        "text": "Thêm mới",
+                        "title": "Thêm mới",
+                        "active_key": "add",
+                        "route": "themes.create",
+                        "icon": "plus"
+                    },
+                    {
+                        "text": "Thùng rác",
+                        "title": "Thùng rác",
+                        "active_key": "trash",
+                        "route": "themes.trash",
+                        "icon": "trash-alt"
+                    }
+                ]
+            }
+        },
+        "notices": {
+            "text": "Thông báo",
+            "title": "Quản lý Thông báo",
+            "active_key": "notices",
+            "route": "notices",
+            "icon": "bell",
+            "submenu": {
+                "type": "list",
+                "data": [
+                    {
+                        "text": "Danh sách",
+                        "title": "Danh sách",
+                        "active_key": "list",
+                        "route": "notices.list",
+                        "icon": "list"
+                    },
+                    {
+                        "text": "Thêm mới",
+                        "title": "Thêm mới",
+                        "active_key": "add",
+                        "route": "notices.create",
+                        "icon": "plus"
+                    }
+                ]
+            }
+        },
+        "profile": {
+            "text": "Dữ liệu cá nhân",
+            "title": "Quản lý Dữ liệu cá nhân",
+            "active_key": "profile",
+            "url": "#",
+            "icon": "address-card",
+            "submenu": {
+                "type": "list",
+                "data": [
+                    {
+                        "text": "Học vấn",
+                        "title": "Quản lý học vấn",
+                        "active_key": "academics",
+                        "route": "academics.list",
+                        "icon": "user-graduate"
+                    },
+                    {
+                        "text": "Nghề nghiệp",
+                        "title": "Quản lý nghề nghiệp",
+                        "active_key": "works",
+                        "route": "works.list",
+                        "icon": "briefcase"
+                    },
+                    {
+                        "text": "Kỹ năng",
+                        "title": "Quản lý Kỹ năng",
+                        "active_key": "skills",
+                        "route": "skills.list",
+                        "icon": "hands-helping"
+                    },
+                    {
+                        "text": "Tổ chức",
+                        "title": "Quản lý tổ chức",
+                        "active_key": "organizations",
+                        "route": "organizations.list",
+                        "icon": "globe"
+                    }
+                ]
+            }
+        }
+    }
+}

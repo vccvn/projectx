@@ -1,0 +1,11 @@
+{
+    "data": {
+        "menus": {
+            "text": "Menu",
+            "title": "Menu",
+            "active_key": "menus",
+            "route": "admin.menus.list",
+            "icon": "bars"
+        }
+    }
+}

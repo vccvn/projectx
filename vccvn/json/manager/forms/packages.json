@@ -1,0 +1,31 @@
+{
+    "name": {
+        "type": "text",
+        "text": "Tên package",
+        "placeholder": "Nhập tên package",
+        "required": "true"
+    },
+    
+    "description": {
+        "type": "textarea",
+        "text": "Mô tả",
+        "placeholder": "Nhập Mô tả..."
+    },
+    "user_limited": {
+        "type": "number",
+        "text": "Số lượng user giới hạn",
+        "min": 0,
+        "default": 10,
+        "step": 1,
+        "required": "true"
+    },
+    "price": {
+        "type": "number",
+        "text": "Giá gói",
+        "min": 0,
+        "default": 0,
+        "step": 1000,
+        "required": "true"
+    }
+    
+}

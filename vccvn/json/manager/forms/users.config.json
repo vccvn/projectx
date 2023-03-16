@@ -1,0 +1,47 @@
+{
+    "name": "Th\u00f4ng tin ng\u01b0\u1eddi d\u00f9ng",
+    "layout_type": "column",
+    "form_groups": [
+        {
+            "title": "Th\u00f4ng tin c\u00e1 nh\u00e2n",
+            "class": "col-md-6",
+            "inputs": [
+                "first_name",
+                "last_name",
+                "gender",
+                "birthday",
+                "address",
+                "email",
+                "phone_number"
+            ]
+        },
+        {
+            "class": "col-md-6",
+            "inputs": [
+                "avatar"
+            ]
+        },
+        {
+            "title": "Th\u00f4ng tin t\u00e0i kho\u1ea3n",
+            "class": "col-md-6",
+            "inputs": [
+                "type",
+                "username",
+                "password",
+                "password_confirmation",
+                "status"
+            ]
+        },
+        {
+            "title": "Th\u00f4ng tin g\u00f3i",
+            "class": "col-md-6",
+            "inputs": [
+                "account_type",
+                "expired_at",
+                "web_type",
+                "subdomain",
+                "alias_domain"
+            ]
+        }
+    ]
+}

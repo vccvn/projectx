@@ -1,0 +1,26 @@
+{
+    "profile": {
+        "date": {
+            "start": "1900-01-01",
+            "finish": "2200-12-31"
+        }
+    },
+    "option_input_types": {
+        "text": "Chữ, số, ký tự",
+        "number": "Số",
+        "textarea": "Văn bản",
+        "email": "Email",
+        "tel": "Số điện thoại",
+        "file": "File",
+        "checkbox": "Check Box",
+        "switch": "Switch",
+        "date": "Ngày tháng",
+        "time": "Thời gian",
+        "daterange": "Khoảng ngày tháng",
+        "touchspin": "Spin",
+        "crazyselect": "Crazy Select",
+        "dateselect": "Chọn ngày tháng năm",
+        "cropit": "Ảnh (Cắt)",
+        "tinymce": "Trình soạn thảo"
+    }
+}

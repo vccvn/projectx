@@ -1,0 +1,102 @@
+{
+    "inputs": {
+        "name": {
+            "type": "text",
+            "label": "Tên chương trình",
+            "placeholder": "Nhập tên chương trình khuyến mãi"
+        },
+        "description": {
+            "type": "textarea",
+            "label": "Mô tả",
+            "placeholder": "Mô tả ngắn về chương chình khuyến mãi"
+        },
+        "times": {
+            "type": "daterange",
+            "template": "daterange",
+            "label": "Thời gian áp dụng",
+            "placeholder": "Thời gian bắt đầu - thời gian kết thúc",
+            "data-format": "YYYY-MM-DD HH:mm",
+            "data-use-time": "true"
+        },
+        "scope": {
+            "type": "crazyselect",
+            "label": "Áp dụng cho",
+            "data": {
+                "product": "Sản phẩm",
+                "order": "Đơn hàng",
+                "user": "Người dùng cụ thể"
+            },
+            "default": "product",
+            "@change": "App.promos.onChangeRef"
+        },
+        "code": {
+            "type": "text",
+            "label": "Mã giảm giá (tùy chọn)",
+            "placeholder": "Nhập mã giảm gia"
+        },
+        "type": {
+            "type": "radio",
+            "label": "Hình thức giảm giá",
+            "data":{
+                "0": "Trừ thẳng vào giá gốc", 
+                "1": "Giảm theo phần trăn",
+                "2": "Miễn phí giao hàng"
+            },
+            "default": 0,
+            "@change": "App.promos.onChangeType"
+        },
+        "down_price": {
+            "type": "number",
+            "label": "Mức giảm",
+            "placeholder": "Mức giảm",
+            "default":0
+        },
+        "limited_total": {
+            "type": "number",
+            "label": "Giới hạn số lượng",
+            "min": 0,
+            "step": 1,
+            "default": 0
+        },
+        "map_id": {
+            "type": "crazyselect",
+            "label": "Tìm theo Danh mục<br><small>(Danh mục này chỉ phục vụ tìm kiếm)</small>",
+            "call": "get_product_attribute_category_options",
+            "@label-type":"value"
+        },
+        "products":{
+            "type":"crazytag",
+            "label": "Danh sách sản phẩm",
+            "placeholder":"Nhập tên sản phẩm...",
+            "template":"crazytag",
+            "@type":"search",
+            "@search-route": "admin.products.tag-data",
+            "@search-params": "#map_id",
+            "call": "get_product_tag_data",
+            "params": ["promo", "#hidden_id"]
+        },
+        "user_list":{
+            "type":"crazytag",
+            "label": "Danh sách người dùng",
+            "placeholder":"Nhập tên người dùng...",
+            "template":"crazytag",
+            "@type":"search",
+            "@search-route": "admin.users.tag-data",
+            "call": "get_user_discount_tag_data",
+            "params": ["#hidden_id"]
+        },
+        "quantity_per_user": {
+            "type": "number",
+            "label": "Số lượng cho từng người",
+            "placeholder": "Mức giảm",
+            "default":1
+        }
+        
+    },
+    "config": {
+        "name": "Chương trình khuyến mãi",
+        "layout_type": "single",
+        "js": ["static/manager/js/promos.js"],
+        "css": []
+    }
+}

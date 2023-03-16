@@ -1,0 +1,11 @@
+{
+    "data": {
+        "teams": {
+            "text": "Nhóm",
+            "title": "Nhóm",
+            "active_key": "teams",
+            "route": "admin.teams.list",
+            "icon": "users"
+        }
+    }
+}

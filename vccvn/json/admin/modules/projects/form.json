@@ -1,0 +1,181 @@
+{
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề",
+            "placeholder": "Nhập tiêu đề",
+            "required": "true",
+            "id": "project-title"
+        },
+        "slug": {
+            "type": "text",
+            "label": "Đường dẫn (slug)",
+            "placeholder": "Nhập đường dẫn",
+            "template": "crazyslug",
+            "@check-field": "custom_slug",
+            "@extension": ".html",
+            "@check-slug-route": "admin.projects.check-slug",
+            "@get-slug-route": "admin.projects.get-slug",
+            "@source-id": "project-title",
+            "@ajax-param-selectors": "#input-hidden-id",
+            "@ajax-check-name": "slug",
+            "@ajax-get-name": "slug"
+        },
+        "custom_slug": {
+            "type": "checkbox",
+            "label": "Tùy chọn slug",
+            "check_label": "Tùy chỉnh",
+            "@hidden": true
+        },
+        "category_id": {
+            "type": "crazyselect",
+            "label": "Danh mục",
+            "required": "true",
+            "call": "get_project_category_options",
+            "@label-type": "header",
+            "@change": "Project.form.changeCategory"
+        },
+        "client_id": {
+            "type": "crazyselect",
+            "label": "Khách hàng (Tùy chọn)",
+            "call": "get_client_options",
+            "params": [[], "Chọn khách hàng", "id", "{$name} - email: {$email}"]
+        },
+        "website": {
+            "type": "text",
+            "label": "Website (tên trang web)"
+        },
+        "link": {
+            "type": "text",
+            "label": "Liên kết"
+        },
+        "description": {
+            "type": "textarea",
+            "label": "Mô tả",
+            "placeholder": "Nhập mô tả"
+        },
+        "content": {
+            "type": "textarea",
+            "label": "Chi tiết dự án",
+            "placeholder": "Nhập nội dung",
+            "className": "tiny-mce",
+            "template": "tinymce",
+            "height": 500
+        },
+        "meta_title": {
+            "type": "text",
+            "label": "Meta Title",
+            "placeholder": "Nhập meta title"
+        },
+        "meta_description": {
+            "type": "textarea",
+            "label": "Meta Description",
+            "placeholder": "Nhập meta description",
+            "row": 4
+        },
+        "keywords": {
+            "type": "text",
+            "label": "Từ khóa",
+            "placeholder": "Nhập từ khóa"
+        },
+        "feature_image": {
+            "type": "file",
+            "label": "Hình xem trước",
+            "template": "cropit",
+            "data-width": 400,
+            "data-height": 400,
+            "@keep-original": true
+        },
+        "gallery": {
+            "type": "file",
+            "label": "Thư viện ảnh",
+            "template": "gallery",
+            "call": "get_ref_files",
+            "params": [
+                {
+                    "ref": "project",
+                    "ref_id": "#hidden_id"
+                }
+            ]
+        },
+        "tags": {
+            "type": "crazytag",
+            "label": "Thẻ",
+            "placeholder": "Nhập thẻ...",
+            "template": "crazytag",
+            "@type": "dynamic",
+            "@search-route": "admin.tags.data",
+            "@create-route": "admin.tags.create",
+            "@create-field": "tags",
+            "call": "get_input_tag_data",
+            "params": [
+                "project",
+                "#hidden_id",
+                {
+                    "id": ":defval"
+                }
+            ]
+        },
+        "privacy": {
+            "type": "radio",
+            "template": "radio",
+            "label": "Riêng tư",
+            "data": {
+                "public": "Công khai",
+                "private": "Không công khai"
+            },
+            "default": "public",
+            "@options": {
+                "form_group_class": "row",
+                "label_class": "col-12 col-lg-4 col-xl-3 col-form-label",
+                "wrapper_class": "col-12 col-lg-8 col-xl-9"
+            }
+        }
+        
+    },
+    "config": {
+        "name": "Thông tin dự án",
+        "layout_type": "column",
+        "form_groups": {
+            "baseinfo": {
+                "title": "Thông tin cơ bản",
+                "class": "col-md-7",
+                "inputs": [
+                    "title",
+                    "slug",
+                    "category_id",
+                    "description"
+                ]
+            },
+            "images": {
+                "title": "Ảnh dự án",
+                "class": "col-md-5",
+                "inputs": [
+                    "feature_image"
+                ]
+            },
+            "detail": {
+                "title": "Thông tin Chi tiết",
+                "class": "col-sm-12",
+                "inputs": [
+                    "content"
+                ]
+            },
+            "props": {
+                "class": "col-md-6",
+                "inputs": [
+                    "tags",
+                    "gallery"
+                ]
+            },
+            "seo": {
+                "class": "col-md-6",
+                "inputs": [
+                    "client_id",
+                    "website",
+                    "link"
+                ]
+            }
+        }
+    }
+}

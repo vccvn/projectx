@@ -1,0 +1,9 @@
+{
+    "name": { "type": "text", "text": "Tên tổ chức", "placeholder":"Nhập tên tổ chức", "required":"true"},
+    "type": { "type": "deepselect", "text": "loại tổ chức", "template":"deepselect", "required":"true", "data":{"business":"Doanh nghiệp", "education":"Giáo dục"}},
+    "logo": { "type": "file", "text": "logo","template":"cropit"},
+    "address": { "type": "textarea", "text": "Địa chỉ", "placeholder":"Nhập địa chỉ..."},
+    "phone_number": { "type": "text", "text": "Số diện thoại"},
+    "email": { "type": "email", "text": "Địa chỉ E-mail"},
+    "website": { "type": "text", "text": "Website"}
+}

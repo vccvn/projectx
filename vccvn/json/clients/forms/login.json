@@ -1,0 +1,16 @@
+{
+    "inputs": {
+        "username": {
+            "type": "text",
+            "text": "Email hoặc Tên đăng nhập",
+            "required": "true",
+            "prepend_text": "<i class=\"fa fa-user\"></i>"
+        },
+        "password": {
+            "type": "password",
+            "text": "Mật khẩu",
+            "placeholder": "Nhập mật khẩu",
+            "prepend_text": "<i class=\"fa fa-key\"></i>"
+        }
+    }
+}

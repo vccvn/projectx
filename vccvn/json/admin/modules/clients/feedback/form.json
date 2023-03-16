@@ -1,0 +1,21 @@
+{
+    "client_id": {
+        "type": "crazyselect",
+        "template": "crazyselect",
+        "label": "Khách hàng",
+        "call": "get_client_select_options",
+        "params":[{"id":":defval"}, "Chọn một"],
+        "@select-type": "search",
+        "@search-route": "admin.clients.select-options"
+    },
+    "subject": {
+        "type": "text",
+        "label": "Chủ đề",
+        "placeholder": "nhập Chủ đề"
+    },
+    "message": {
+        "type": "textarea",
+        "label": "Nội dung",
+        "placeholder": "nhập nội dung"
+    }
+}

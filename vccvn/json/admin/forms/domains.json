@@ -1,0 +1,31 @@
+{
+    "subdomain": {
+        "type": "text",
+        "text": "Tên miền",
+        "required": "true",
+        "append_group": [
+            "base_domain"
+        ]
+    },
+    "base_domain": {
+        "type": "deepselect",
+        "label": "Miền chính",
+        "data": "get_cfg_domain_options"
+    },
+    "domain": {
+        "type": "text",
+        "text": "Tên miền chính (non www)",
+        "placeholder": "Ví dụ: domain.com.vn không chứa www"
+    },
+    "alias_domain": {
+        "type": "text",
+        "text": "Tên miền Alias (non www)",
+        "placeholder": "Ví dụ: domain.com.vn không chứa www"
+    },
+    "ssl": {
+        "type": "switch",
+        "label": "SSL",
+        "check_label": "Cài đặt và sử dụng SSL",
+        "value_type": "boolean"
+    }
+}

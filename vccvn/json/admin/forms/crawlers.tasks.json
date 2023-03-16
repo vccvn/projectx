@@ -1,0 +1,123 @@
+{
+    "frame_id": {
+        "type": "crazyselect",
+        "label": "Nguồn",
+        "template": "crazyselect",
+        "call": "get_crawler_post_frame_options",
+        "required": "true"
+    },
+    "task_url": {
+        "type": "text",
+        "label": "Đường dẫn (URL)",
+        "placeholder": "Nhập đường dẫn. Ví dụ: https://news.zing.vn/the-gioi/",
+        "required": "true"
+    },
+    "post_url_selector": {
+        "type": "text",
+        "label": "Thẻ link tin bài",
+        "placeholder": "Nhập thẻ (ví dụ a[data-role=\"nav-link\"]) (mặc định theo nguồn)"
+    },
+    "quantity": {
+        "type": "number",
+        "label": "Số bài viết",
+        "placeholder": "Nhập số bài viết",
+        "required": "true"
+    },
+    "crawl_resources": {
+        "type": "checkbox",
+        "label": "Crawl Tài nguyên",
+        "template": "switch",
+        "@options": {
+            "form_group_class": "row",
+            "label_class": "col-6 col-md-4 col-lg-3 col-xl-2 col-form-label",
+            "wrapper_class": "col-6 col-md-8 col-lg-9 col-xl-10"
+        }
+    },
+    "dynamic_id": {
+        "type": "crazyselect",
+        "label": "Mục đăng bài",
+        "template": "crazyselect",
+        "call": "get_dynamic_options",
+        "params": [
+            [],
+            "Chọn một"
+        ],
+        "@change": "App.crawler.changeDynamicID",
+        "required": "true"
+    },
+    "category_id": {
+        "type": "crazyselect",
+        "label": "Danh mục",
+        "template": "crazyselect",
+        "call": "get_post_category_options",
+        "params": [
+            {
+                "dynamic_id": "#dynamic_id"
+            },
+            true
+        ]
+    },
+    "author_id": {
+        "type": "crazyselect",
+        "label": "Người đăng bài",
+        "template": "crazyselect",
+        "@select-type": "search",
+        "@search-route": "admin.users.select-option",
+        "call": "get_user_options",
+        "params": [
+            {
+                "id": ":defval"
+            }
+        ]
+    },
+    "custom_run_time": {
+        "type": "checkbox",
+        "label": "Thời gian crawl",
+        "template": "switch",
+        "@change": "console.log",
+        "@options": {
+            "form_group_class": "row",
+            "label_class": "col-6 col-md-4 col-lg-3 col-xl-2 col-form-label",
+            "wrapper_class": "col-6 col-md-8 col-lg-9 col-xl-10"
+        },
+        "hidden": true
+    },
+    "repeat_time": {
+        "type": "crazyselect",
+        "template": "crazyselect",
+        "label": "Thời gian lâp",
+        "@change": "console.log",
+        "data": {
+            "12:00:00": "12 tiếng",
+            "24:00:00": "24 tiếng",
+            "48:00:00": "2 ngày",
+            "72:00:00": "3 ngày",
+            "96:00:00": "4 ngày",
+            "168:00:00": "7 ngày"
+        },
+        "default": "24:00:00"
+    },
+    "crawl_time": {
+        "type": "crazyselect",
+        "label": "Thời gian crawl",
+        "data": {
+            "00:00:00": "0h",
+            "06:00:00": "6h",
+            "12:00:00": "12h",
+            "18:00:00": "18h",
+            "22:00:00": "22h"
+        },
+        "default": "00:00:00"
+        
+    },
+    "status": {
+        "type": "checkbox",
+        "label": "Trạng thái",
+        "template": "switch",
+        "@options": {
+            "form_group_class": "row",
+            "label_class": "col-6 col-md-4 col-lg-3 col-xl-2 col-form-label",
+            "wrapper_class": "col-6 col-md-8 col-lg-9 col-xl-10"
+        }
+    }
+}

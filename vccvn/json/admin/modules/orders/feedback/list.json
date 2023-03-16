@@ -1,0 +1,83 @@
+{
+    "name": "Phản hồi đơn hàng",
+    "package": "orders.feedback",
+    "use_trash": false,
+    "titles": {
+        "default": "Danh sách",
+        "trash": "Danh sách đã xóa"
+    },
+    "data": {
+        "type": {
+            "feedback":"Phản hồi",
+            "complain": "Khiếu nại",
+            "return": "Đổi trả"
+        }
+    },
+    "filter":{
+        "search_columns": {
+            "title":"Tiêu đề",
+            "customer_name": "Tên khách hàng",
+            "customer_email": "Email khách hàng"
+        },
+        "sort_columns": {
+            "title":"Tiêu đề",
+            "customer_name": "Tên khách hàng",
+            "customer_email": "Email khách hàng",
+            "create_at": "Thời gian"
+        }
+    },
+    "table": {
+        "class": "list-center",
+        "columns": [
+            {
+                "title": "Tên khách hàng",
+                "class": "min-160",
+                "text": ":customer_name"
+                
+            },
+            {
+                "title": "Email",
+                "class": "min-100 max-250 text-center",
+                "template": "<a href=\"mailto:{customer_email}\">{customer_email}</a>"
+            },
+            {
+                "title": "Mả đơn hàng",
+                "class": "min-100",
+                "template": "<a href=\"javascript:void(0);\" class=\"view-order-detail\" data-id=\"{order_id}\">#{order_id}</a>"
+                
+                
+            },
+            {
+                "title": "Tiêu đề",
+                "class": "min-100",
+                "text": ":title"
+            },
+            {
+                "title": "Loại",
+                "class": "min-100",
+                "data_access": "type.{type}"
+            },
+            {
+                "title": "Chi tiết",
+                "class": "min-100 max-250",
+                "template": "<a class='btn-view-feedback-detail' href='{detail_url}' data-id='{id}'>Xem chi tiết<a>",
+                "data": {
+                    "detail_url":{
+                        "call": "route",
+                        "params": [".resource-detail"]
+                    }
+                }
+            },
+            {
+                "title": "Đơn hàng",
+                "class": "min-100",
+                "template": "<a href=\"javascript:void(0);\" class=\"view-order-detail\" data-id=\"{order_id}\">Xem đơn hàng</a>"
+            }
+        ]
+    },
+    "resources":{
+        "js_data":{},
+        "js":[],
+        "css":[]
+    }
+}

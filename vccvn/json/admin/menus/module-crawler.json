@@ -1,0 +1,36 @@
+{
+    "data": {
+        "crawlers": {
+            "text": "Crawler",
+            "title": "Crawler",
+            "url": "#",
+            "icon": "copy",
+            "submenu": {
+                "type": "list",
+                "data": [
+                    {
+                        "text": "Frame",
+                        "title": "Danh sách Frame",
+                        "active_key": "crawlers.frames",
+                        "route": "admin.crawlers.frames",
+                        "icon": "dice"
+                    },
+                    {
+                        "text": "Crawl Post",
+                        "title": "Crawl Post",
+                        "active_key": "crawlers.posts",
+                        "route": "admin.crawlers.posts.crawl-form",
+                        "icon": "file"
+                    },
+                    {
+                        "text": "Crawl task",
+                        "title": "Crawl task",
+                        "active_key": "crawlers.tasks",
+                        "route": "admin.crawlers.tasks",
+                        "icon": "tasks"
+                    }
+                ]
+            }
+        }
+    }
+}

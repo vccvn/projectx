@@ -1,0 +1,36 @@
+{
+    "data": {
+        "clients": {
+            "text": "khách hàng",
+            "title": "Quản lý khách hàng",
+            "route": "admin.clients.list",
+            "icon": "user-tie",
+            "submenu":{
+                "type": "list",
+                "data": {
+                    "clients": {
+                        "text": "khách hàng",
+                        "title": "Quản lý khách hàng",
+                        "route": "admin.clients.list",
+                        "icon": "user-tie"
+                    },
+                    "feedback": {
+                        "text": "Feedback",
+                        "title": "Feedback",
+                        "active_key": "clients.feedback",
+                        "route": "admin.clients.feedback.list",
+                        "icon": "chalkboard-teacher"
+                    },
+                    "testimonials": {
+                        "text": "Testimonial",
+                        "title": "Testimonial",
+                        "active_key": "testimonials",
+                        "route": "admin.testimonials.list",
+                        "icon": "comment-alt"
+                    }
+                }
+                
+            }
+        }
+    }
+}

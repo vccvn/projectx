@@ -1,0 +1,67 @@
+{
+    "name": "Slider",
+    "package": "sliders",
+    "use_trash": true,
+    "titles": {
+        "default": "Danh sách slider",
+        "trash": "Danh sách slider đã xóa"
+    },
+    "data": [],
+    "filter": {
+        "search_columns": [],
+        "sort_columns": []
+    },
+    "table": {
+        "class": "",
+        "columns": [
+            {
+                "title": "ID",
+                "class": "id-col",
+                "text": ":id"
+            },
+            {
+                "title": "Tên slider",
+                "class": "min-160",
+                "template": "<a href='{@route}'>{name}</a>",
+                "data":{
+                    "@route":[".items", {"slider":":id"}]
+                }
+            },
+            {
+                "title": "slug",
+                "class": "min-160",
+                "text": ":slug"
+            },
+            {
+                "title": "Mô tả",
+                "class": "min-160 max-300",
+                "text": ":description"
+            },
+            {
+                "title": "Kích thức",
+                "class": "text-center",
+                "template": "{@getSizeText}",
+                "data":{
+                    "@getSizeText": []
+                }
+            },
+            {
+                "title": "Chính",
+                "class": "text-center",
+                "input": {
+                    "type": "checkbox",
+                    "template": "switch",
+                    "name": "slider[status][]",
+                    "default": ":status",
+                    "@change": "App.slider.changeStatus",
+                    "data-slider-id": ":id"
+                }
+            }
+        ]
+    },
+    "resources": {
+        "js_data": [],
+        "js": ["static/manager/js/sliders.js"],
+        "css": []
+    }
+}

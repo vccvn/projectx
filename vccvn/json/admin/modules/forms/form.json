@@ -1,0 +1,17 @@
+{
+    "name": {
+        "type": "text",
+        "label": "Têm form",
+        "placeholder": "nhập tên form"
+    },
+    "slug": {
+        "type": "text",
+        "label": "Slug (Tùy chọn)",
+        "placeholder": "nhập slug"
+    },
+    "inputs": {
+        "type": "crazyprop",
+        "label": "Inputs",
+        "template": "crazyprop"
+    }
+}

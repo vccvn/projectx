@@ -1,0 +1,103 @@
+{
+    "products": {
+        "list": {
+            "sortby": {
+                "1": "Mới nhất",
+                "2": "Tên (A-Z)",
+                "3": "Tên (Z-A)",
+                "4": "Giá (thấp - cao)",
+                "5": "Giá (cao - thấp)",
+                "6": "Ngẫu nhiên",
+                "7": "Cũ nhất"
+            },
+            "filter": {
+                "attribute_prefix": "product_"
+            }
+        }
+    },
+    "categories": {
+        "list": {
+            "sortby": {
+                "1": "Mới nhất",
+                "2": "Tên (A-Z)",
+                "3": "Tên (Z-A)",
+                "4": "Bán chạy",
+                "5": "Ngẫu nhiên",
+                "6": "Cũ nhất"
+            }
+        }
+    },
+    "orders": {
+        "payment_methods":[
+            {
+                "value": 0,
+                "name": "Thanh toán khi nhận hàng",
+                "key": "cod",
+                "description": "Bạn sẽ chỉ phải thanh toán khi nhận được hàng và kiểm tra xem đã đúng với đơn hàng hay chưa",
+                "available": true
+            },
+            {
+                "value": 1,
+                "name":"Chuyển khoản ngân hàng",
+                "key": "transfer",
+                "description": "Sau khi xác thực đơn hàng chúng tôi sẽ gửi bạn một email thông tin và hướng dẫn chuyển khoản để thanh toán",
+                "available": true
+            }
+        ],
+        "status_list": {
+            "pending-verify":{
+                "code": 0,
+                "key": "pending-verify",
+                "label": "Chờ xác thực"
+            },
+            "verified": {
+                "code": 100,
+                "key": "verified",
+                "label": "Đã xác thực"
+            },
+            "pending-payment":{
+                "code": 200,
+                "key": "pending-payment",
+                "label": "Chờ thanh toán"
+            },
+            "paid": {
+                "code": 300,
+                "key": "paid",
+                "label": "Đã thanh toán"
+            },
+            "pending":{
+                "code": 400,
+                "key": "pending",
+                "label": "Chờ xử lý"
+            },
+            "processing":{
+                "code": 500,
+                "key": "processing",
+                "label": "Đang xử lý"
+            },
+            "completed":{
+                "code": 1000,
+                "key": "completed",
+                "label": "Đã hoàn thành"
+            },
+            "canceled":{
+                "code": -1,
+                "key": "canceled",
+                "label": "Bị hủy"
+            }
+        },
+        "status_keys":{
+            "cho-xac-nhan": "pending-verify",
+            "da-xac-nhan": "verified",
+            "cho-thanh-toan": "pending-payment",
+            "da-thanh-toan": "psid",
+            "cho-xu-ly": "pending",
+            "dang-giao-hang": "processing",
+            "da-hoan-thanh": "completed",
+            "da-huy": "canceled"
+        },
+        "customer_access_alow_status_list": [
+            "pending-verify", "pending-payment", "pending", "processing", "completed", "canceled"
+        ]
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "title": {
+        "type": "text",
+        "label": "Tiêu đề",
+        "placeholder": "Nhập tiêu đè"
+    },
+    "message": {
+        "type": "textarea",
+        "label": "Nội dung thông báo",
+        "placeholder": "Nhập nội dung thông báo"
+    },
+    "type": {
+        "type": "crazyselect",
+        "label": "Loại thông báo",
+        "data": {
+            "personal": "Cá nhân",
+            "staff": "Nhân viên",
+            "group": "Nhóm",
+            "all": "Tất cả"
+        },
+        "template": "crazyselect",
+        "data-changed-callback": "Crazy.noticeForm.checkType"
+    },
+    "to_group": {
+        "type": "deepselect",
+        "text": "Nhóm",
+        "required": "true",
+        "template": "deepselect",
+        "call": "get_user_config",
+        "params": [
+            "type_list"
+        ],
+        "default": "user"
+    },
+    "to_id": {
+        "type": "crazyselect",
+        "label": "Người nhận thông báo",
+        "template": "crazyselect",
+        "@select-type": "search",
+        "@search-route": "users.select-option",
+        "call": "App\\Repositories\\Users\\UserRepository::getDynamicSelectOptions",
+        "params": [
+            {
+                "id": ":defval"
+            }
+        ]
+    }
+}

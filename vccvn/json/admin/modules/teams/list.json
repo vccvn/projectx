@@ -1,0 +1,54 @@
+{
+    "name": "Nhóm",
+    "package": "teams",
+    "use_trash": false,
+    "titles": {
+        "default": "Danh sách Nhóm",
+        "trash": "Danh sách Nhóm đã xóa"
+    },
+    "data": [],
+    "filter": {
+        "general_columns": {
+            "name": "tên nhóm"
+        },
+        "search_columns": {},
+        "sort_columns": {
+            "created_at": "Thời gian tạo"
+        }
+    },
+    "table": {
+        "class": "list-center",
+        "columns": [
+            {
+                "title": "Mã",
+                "class": "id-col",
+                "text": ":id"
+            },
+            {
+                "title": "Tên nhóm",
+                "class": "min-100",
+                "text": ":name"
+            },
+            {
+                "title": "Mô tả",
+                "class": "min-100 max-500",
+                "text": ":description"
+            },
+            {
+                "title": "Thành viên",
+                "class": "min-100",
+                "template":"<a href='javascript:void(0)' data-id='{id}' class='btn-view-team-detail'>Xem</a>"
+
+            }
+
+        ]
+    },
+    "includes":{
+        "modals": ["team"]
+    },
+    "resources": {
+        "js_data": [],
+        "js": ["static/manager/js/team.js"],
+        "css": []
+    }
+}

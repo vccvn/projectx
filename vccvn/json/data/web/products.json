@@ -1,0 +1,32 @@
+{
+    "data": {
+        "sorttype": {
+            "type": "crazyselect",
+            "label": "kiểu sắp xếp SP",
+            "call": "get_product_sortby_options"
+        },
+        "per_page": {
+            "type": "number",
+            "value_type": "number",
+            "label": "Số sản phẩm hiển thị trên một trang",
+            "value": 12,
+            "min": 1
+        },
+        "comment_approve_request": {
+            "type": "checkbox",
+            "label": "Duyệt bình luận",
+            "value_type": "boolean",
+            "props": {
+                "template": "switch"
+            }
+        },
+        "review_approve_request": {
+            "type": "checkbox",
+            "label": "Duyệt Đánh giá",
+            "value_type": "boolean",
+            "props": {
+                "template": "switch"
+            }
+        }
+    }
+}

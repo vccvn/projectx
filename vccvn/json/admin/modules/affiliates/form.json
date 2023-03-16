@@ -1,0 +1,23 @@
+{
+    "name": {
+        "type": "text",
+        "label": "Tên website affiliate",
+        "placeholder": "Nhập tên website affiliate",
+        "required": "true"
+    },
+    "website": {
+        "type": "text",
+        "label": "Đường dẫn trang affiliate",
+        "placeholder": "Nhập URL"
+    },
+    "logo": {
+        "type": "file",
+        "label": "Logo",
+        "accept": "image/*"
+    },
+    "color": {
+        "type": "colorpicker",
+        "label": "Màu sắc (tùy chọn)",
+        "placeholder": "nhập mã màu"
+    }
+}

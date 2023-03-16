@@ -1,0 +1,29 @@
+{
+    "data": {
+        "permissions": {
+            "text": "Phân quyền",
+            "title": "Quản lý phân quyền",
+            "url": "#permissions",
+            "icon": "lock",
+            "submenu": {
+                "type": "list",
+                "data": [
+                    {
+                        "text": "Danh sách Module",
+                        "title": "Danh sách Module",
+                        "active_key": "permissions.modules",
+                        "route": "admin.permissions.modules.list",
+                        "icon": "qrcode"
+                    },
+                    {
+                        "text": "Quyền truy cập",
+                        "title": "Quyền truy cập",
+                        "active_key": "permissions.roles",
+                        "route": "admin.permissions.roles.list",
+                        "icon": "user-lock"
+                    }
+                ]
+            }
+        }
+    }
+}

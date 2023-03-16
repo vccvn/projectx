@@ -1,0 +1,53 @@
+{
+    "name": "Affiliate",
+    "package": "affiliates",
+    "use_trash": true,
+    "titles": {
+        "default": "Danh sách Affiliate",
+        "trash": "Danh sách Affiliate đã xóa"
+    },
+    "data": [],
+    "filter": {
+        "search_columns": {
+            "name": "Tên Website"
+        },
+        "sort_columns": {
+            "name": "Tên Website",
+            "created_at": "Thời gian khởi tạo"
+        }
+    },
+    "table": {
+        "class": "",
+        "columns": [
+            {
+                "title": "ID",
+                "class": "id-col",
+                "text": ":id"
+            },
+            {
+                "title":"Logo",
+                "class":"text-center",
+                "template":"<a href=\"{@route}\"><img src=\"{@getLogo}\" class=\"image-thumbnail\" alt=\"{name}\"></a>",
+                "data":{
+                    "@route": [".update", {"id": ":id"}],
+                    "@getLogo":[]
+                }
+            },
+            {
+                "title": "Tên Website",
+                "class": "max-150",
+                "text": ":name"
+            },
+            {
+                "title": "Đường dẫn",
+                "class": "max-500",
+                "text": ":website"
+            }
+        ]
+    },
+    "resources": {
+        "js_data": [],
+        "js": [],
+        "css": []
+    }
+}

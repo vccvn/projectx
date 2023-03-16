@@ -1,0 +1,361 @@
+{
+    "data": {
+        "orders": {
+            "text": "Đơn hàng",
+            "title": "Quản lý đơn hàng",
+            "route": "admin.orders",
+            "icon": "shopping-cart",
+            "submenu": {
+                "type": "list",
+                "data": [
+                    {
+                        "text": "Tất cả đơn hàng",
+                        "title": "Danh sách đơn hàng",
+                        "active_key": "list",
+                        "route": "admin.orders.list",
+                        "icon": "list-ul"
+                    },
+                    {
+                        "text": "Đơn hàng mới",
+                        "title": "Đơn hàng mới",
+                        "active_key": "list-verified",
+                        "route": "admin.orders.list-by-status",
+                        "params": {
+                            "list": "verified"
+                        },
+                        "icon": "rocket"
+                    },
+                    {
+                        "text": "Đã thanh toán",
+                        "title": "Đã thanh toán",
+                        "active_key": "list-paid",
+                        "route": "admin.orders.list-by-status",
+                        "params": {
+                            "list": "paid"
+                        },
+                        "icon": "money-bill"
+                    },
+                    {
+                        "text": "Chờ xử lý",
+                        "title": "Chờ xử lý",
+                        "active_key": "list-panding",
+                        "route": "admin.orders.list-by-status",
+                        "params": {
+                            "list": "pending"
+                        },
+                        "icon": "clock"
+                    },
+                    {
+                        "text": "Đang xử lý",
+                        "title": "Đang xử lý",
+                        "active_key": "list-processing",
+                        "route": "admin.orders.list-by-status",
+                        "params": {
+                            "list": "processing"
+                        },
+                        "icon": "truck"
+                    },
+                    {
+                        "text": "Đã hoàn thành",
+                        "title": "Đã hoàn thành",
+                        "active_key": "list-completed",
+                        "route": "admin.orders.list-by-status",
+                        "params": {
+                            "list": "completed"
+                        },
+                        "icon": "check-circle"
+                    },
+                    {
+                        "text": "Đơn hàng bị hủy",
+                        "title": "Đơn hàng bị hủy",
+                        "active_key": "list-canceled",
+                        "route": "admin.orders.list-by-status",
+                        "params": {
+                            "list": "canceled"
+                        },
+                        "icon": "ban"
+                    },
+                    {
+                        "text": "Thêm mới",
+                        "title": "Thêm mới",
+                        "active_key": "add",
+                        "route": "admin.orders.create",
+                        "icon": "plus-circle"
+                    },
+                    {
+                        "text": "Đơn hàng đã xóa",
+                        "title": "Thùng rác",
+                        "active_key": "trash",
+                        "route": "admin.orders.trash",
+                        "icon": "trash-alt"
+                    },
+                    {
+                        "text": "Feedback",
+                        "title": "Feedback",
+                        "active_key": "orders.feedback",
+                        "route": "admin.orders.feedback.list",
+                        "icon": "chalkboard-teacher"
+                    }
+                ]
+            }
+        },
+        "transactions": {
+            "text": "Giao dịch",
+            "title": "Quản lý giao dịch",
+            "route": "admin.transactions.orders",
+            "active_ley": "transactions.orders",
+            "icon": "exchange-alt",
+            "submenu": {
+                "type": "list",
+                "data": [
+                    {
+                        "text": "Danh sách",
+                        "title": "Danh sách khách hàng",
+                        "active_key": "list",
+                        "route": "admin.transactions.orders.list",
+                        "icon": "list-ul"
+                    },
+                    {
+                        "text": "Thêm mới",
+                        "title": "Thêm mới",
+                        "active_key": "add",
+                        "route": "admin.transactions.orders.create",
+                        "icon": "plus-square"
+                    },
+                    {
+                        "text": "Đã xóa",
+                        "title": "Thùng rác",
+                        "active_key": "trash",
+                        "route": "admin.transactions.orders.trash",
+                        "icon": "ban"
+                    }
+                ]
+            }
+        },
+        "payments": {
+            "text": "Thanh toán",
+            "title": "Thanh toán",
+            "route": "admin.payments.methods",
+            "icon": "credit-card"
+            
+        },
+        "products": {
+            "text": "Sản phẩm",
+            "title": "Quản lý sản phẩm",
+            "route": "admin.products",
+            "icon": "cubes",
+            "submenu": {
+                "type": "list",
+                "data": [
+                    {
+                        "text": "Danh sách sản phẩm",
+                        "title": "Danh sách sản phẩm",
+                        "active_key": "products.list",
+                        "route": "admin.products.list",
+                        "icon": "dolly-flatbed"
+                    },
+                    {
+                        "text": "Thêm sản phẩm",
+                        "title": "Thêm sản phẩm mới",
+                        "active_key": "products.create",
+                        "route": "admin.products.create",
+                        "icon": "plus"
+                    },
+                    {
+                        "text": "Danh mục",
+                        "title": "Danh mục sản phẩm",
+                        "active_key": "products.categories.list",
+                        "route": "admin.products.categories.list",
+                        "icon": "project-diagram"
+                    },
+                    {
+                        "text": "Kho hàng",
+                        "title": "Kho hàng",
+                        "active_key": "products.warehouse",
+                        "route": "admin.products.warehouse.list",
+                        "icon": "truck-loading"
+                    },
+                    {
+                        "text": "Thuộc tính",
+                        "title": "Thuộc tính sản phẩm",
+                        "active_key": "products.attributes.list",
+                        "route": "admin.products.attributes.list",
+                        "icon": "puzzle-piece"
+                    },
+                    {
+                        "text": "Đánh giá",
+                        "title": "Đánh giá sản phẩm",
+                        "active_key": "products.reviews",
+                        "route": "admin.products.reviews.list",
+                        "icon": "question-circle"
+                    }
+                ]
+            }
+        },
+        "promos": {
+            "text": "Khuyến mãi",
+            "title": "Quản lý khuyến mãi",
+            "route": "admin.promos",
+            "icon": "gift",
+            "submenu": {
+                "type": "list",
+                "data": [
+                    {
+                        "text": "Danh sách",
+                        "title": "Danh sách khuyến mãi",
+                        "active_key": "list",
+                        "route": "admin.promos.list",
+                        "icon": "list-ul"
+                    },
+                    {
+                        "text": "Thêm mới",
+                        "title": "Thêm mới",
+                        "active_key": "add",
+                        "route": "admin.promos.create",
+                        "icon": "plus-circle"
+                    },
+                    {
+                        "text": "Thùng rác",
+                        "title": "Thùng rác",
+                        "active_key": "trash",
+                        "route": "admin.promos.trash",
+                        "icon": "trash-alt"
+                    }
+                ]
+            }
+        },
+        "customers": {
+            "text": "Tài khoản khách hàng",
+            "title": "Quản lý khách hàng",
+            "route": "admin.customers",
+            "icon": "users",
+            "submenu": {
+                "type": "list",
+                "data": [
+                    {
+                        "text": "Danh sách",
+                        "title": "Danh sách khách hàng",
+                        "active_key": "list",
+                        "route": "admin.customers.list",
+                        "icon": "list-ul"
+                    },
+                    {
+                        "text": "Thêm mới",
+                        "title": "Thêm mới",
+                        "active_key": "add",
+                        "route": "admin.customers.create",
+                        "icon": "user-plus"
+                    },
+                    {
+                        "text": "Đã xóa",
+                        "title": "Thùng rác",
+                        "active_key": "trash",
+                        "route": "admin.customers.trash",
+                        "icon": "user-slash"
+                    }
+                ]
+            }
+        },
+        "affiliates": {
+            "text": "Affiliate",
+            "title": "Affiliate",
+            "active_key": "affiliates",
+            "route": "admin.affiliates.list",
+            "icon": "share-alt",
+            "submenu": {
+                "type": "list",
+                "data": [
+                    {
+                        "text": "Danh sách",
+                        "title": "Danh sách",
+                        "active_key": "list",
+                        "route": "admin.affiliates.list",
+                        "icon": "list-ul"
+                    },
+                    
+                    {
+                        "text": "Thêm site",
+                        "title": "Thêm Form",
+                        "active_key": "add",
+                        "route": "admin.affiliates.create",
+                        "icon": "plus-circle"
+                    },
+                    {
+                        "text": "Thùng rác",
+                        "title": "Thùng rác",
+                        "active_key": "trash",
+                        "route": "admin.affiliates.trash",
+                        "icon": "trash-alt"
+                    }
+                ]
+            }
+        },
+        "crawlers":{
+            "text": "Crawl sản phẩm",
+            "title": "Crawl sản phẩm",
+            "url": "#",
+            "icon": "copy",
+            "submenu": {
+                "type": "list",
+                "data": [
+                    {
+                        "text": "Frame",
+                        "title": "Danh sách Frame",
+                        "active_key": "products.crawlers.frames",
+                        "route": "admin.products.crawlers.frames",
+                        "icon": "dice"
+                    },
+                    {
+                        "text": "Crawl",
+                        "title": "Crawl sản phẩm",
+                        "active_key": "products.crawlers",
+                        "route": "admin.products.crawlers.crawl-form",
+                        "icon": "leaf"
+                    },
+                    {
+                        "text": "Crawl task",
+                        "title": "Crawl task",
+                        "active_key": "products.crawlers.tasks",
+                        "route": "admin.products.crawlers.tasks",
+                        "icon": "tasks"
+                    }
+                ]
+            }
+        }
+    
+        
+    },
+    "crawlers":{
+        "text": "Crawl sản phẩm",
+        "title": "Crawl sản phẩm",
+        "url": "#",
+        "icon": "copy",
+        "submenu": {
+            "type": "list",
+            "data": [
+                {
+                    "text": "Frame",
+                    "title": "Danh sách Frame",
+                    "active_key": "products.crawlers.frames",
+                    "route": "admin.products.crawlers.frames",
+                    "icon": "dice"
+                },
+                {
+                    "text": "Crawl",
+                    "title": "Crawl sản phẩm",
+                    "active_key": "products.crawlers",
+                    "route": "admin.products.crawlers.crawl-form",
+                    "icon": "leaf"
+                },
+                {
+                    "text": "Crawl task",
+                    "title": "Crawl task",
+                    "active_key": "products.crawlers.tasks",
+                    "route": "admin.products.crawlers.tasks",
+                    "icon": "tasks"
+                }
+            ]
+        }
+    }
+    
+}

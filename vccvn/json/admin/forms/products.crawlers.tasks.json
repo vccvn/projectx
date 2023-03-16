@@ -1,0 +1,157 @@
+{
+    "frame_id": {
+        "type": "crazyselect",
+        "label": "Nguồn",
+        "template": "crazyselect",
+        "call": "get_crawler_product_frame_options",
+        "required": "true"
+    },
+    "task_url": {
+        "type": "text",
+        "label": "Đường dẫn (URL)",
+        "placeholder": "Nhập đường dẫn. Ví dụ: https://news.zing.vn/the-gioi/",
+        "required": "true"
+    },
+    "post_url_selector": {
+        "type": "text",
+        "label": "Thẻ link tin bài",
+        "placeholder": "Nhập thẻ (ví dụ a[data-role=\"nav-link\"]) (mặc định theo nguồn)"
+    },
+    "quantity": {
+        "type": "number",
+        "label": "Số sản phẩm",
+        "placeholder": "Nhập số sản phẩm",
+        "required": "true"
+    },
+    "crawl_resources": {
+        "type": "checkbox",
+        "label": "Crawl Tài nguyên",
+        "template": "switch",
+        "@options": {
+            "form_group_class":"row",
+            "label_class": "col-6 col-md-4 col-lg-3 col-xl-2 col-form-label",
+            "wrapper_class": "col-6 col-md-8 col-lg-9 col-xl-10"
+        }
+    },
+
+    
+    "category_id": {
+        "type": "crazyselect",
+        "label": "Danh mục",
+        "template": "crazyselect",
+        "call": "get_product_category_options"
+    },
+    "author_id": {
+        "type": "crazyselect",
+        "label": "Người đăng bài",
+        "template": "crazyselect",
+        "@select-type": "search",
+        "@search-route": "admin.users.select-option",
+        "call": "get_user_options",
+        "params": [
+            {
+                "id": ":defval",
+                "@limit" : 10
+            },
+            "Chọn một",
+            {
+                "id": 1
+            }
+        ]
+    },
+
+    "use_loadmore": {
+        "type": "switch",
+        "label": "Tải thêm",
+        "check_label": "Mặc định sẽ lấy theo nguồn (frame)",
+        "@options": {
+            "form_group_class":"row",
+            "label_class": "col-6 col-md-4 col-lg-3 col-xl-2 col-form-label",
+            "wrapper_class": "col-6 col-md-8 col-lg-9 col-xl-10"
+        }
+    },
+
+    "loadmore_method": {
+        "type": "radio",
+        "label": "Hình thức tải thêm",
+        "data": {
+            "link": "Link",
+            "scroll": "Scroll Down"
+        },
+        "default": "link"
+    },
+    "loadmore_link_selector": {
+        "type": "text",
+        "label": "Selector Loadmore",
+        "placeholder": "Nhập selector tãi thêm. Mặc định sẽ lấy theo nguồn (frame)"
+    },
+
+    "loadmore_scroll_selector": {
+        "type": "text",
+        "label": "Selector scroll",
+        "placeholder": "Nhập selector scroll. Mặc định sẽ lấy theo nguồn (frame)"
+    },
+
+    "loadmore_turn": {
+        "type": "number",
+        "label": "Số trang hoặc số lần scroll",
+        "placeholder": "Số trang hoặc số lần scroll. Mặc định sẽ lấy theo nguồn (frame)",
+        "min": 0,
+        "step": 1
+    },
+
+    
+
+
+    "custom_run_time": {
+        "type": "checkbox",
+        "label": "Thời gian crawl",
+        "template": "switch",
+        "@change":"console.log",
+        "@options": {
+            "form_group_class":"row",
+            "label_class": "col-6 col-md-4 col-lg-3 col-xl-2 col-form-label",
+            "wrapper_class": "col-6 col-md-8 col-lg-9 col-xl-10"
+        },
+        "hidden": true
+    },
+    "repeat_time": {
+        "type": "crazyselect",
+        "template": "crazyselect",
+        "label": "Thời gian lâp",
+        "@change": "console.log",
+        "data": {
+            "12:00:00": "12 tiếng",
+            "24:00:00": "24 tiếng",
+            "48:00:00": "2 ngày",
+            "72:00:00": "3 ngày",
+            "96:00:00": "4 ngày",
+            "168:00:00": "7 ngày"
+        },
+        "default": "24:00:00"
+    },
+    "crawl_time": {
+        "type": "crazyselect",
+        "label": "Thời gian crawl",
+        "data": {
+            "00:00:00": "0h",
+            "06:00:00": "6h",
+            "12:00:00": "12h",
+            "18:00:00": "18h",
+            "22:00:00": "22h"
+        },
+        "default": "00:00:00"
+        
+    },
+    "status": {
+        "type": "checkbox",
+        "label": "Trạng thái",
+        "template": "switch",
+        "@options": {
+            "form_group_class":"row",
+            "label_class": "col-6 col-md-4 col-lg-3 col-xl-2 col-form-label",
+            "wrapper_class": "col-6 col-md-8 col-lg-9 col-xl-10"
+        }
+        
+    }
+}

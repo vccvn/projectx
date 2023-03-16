@@ -1,0 +1,57 @@
+{
+    "parent_id": {
+        "type": "text",
+        "label": "",
+        "placeholder": "nhập "
+    },
+    "ref": {
+        "type": "text",
+        "label": "",
+        "placeholder": "nhập "
+    },
+    "ref_id": {
+        "type": "text",
+        "label": "",
+        "placeholder": "nhập "
+    },
+    "author_name": {
+        "type": "text",
+        "label": "",
+        "placeholder": "nhập "
+    },
+    "author_email": {
+        "type": "text",
+        "label": "",
+        "placeholder": "nhập "
+    },
+    "author_phone": {
+        "type": "text",
+        "label": "",
+        "placeholder": "nhập "
+    },
+    "author_website": {
+        "type": "text",
+        "label": "",
+        "placeholder": "nhập "
+    },
+    "author_id": {
+        "type": "text",
+        "label": "",
+        "placeholder": "nhập "
+    },
+    "message": {
+        "type": "text",
+        "label": "",
+        "placeholder": "nhập "
+    },
+    "approved_id": {
+        "type": "text",
+        "label": "",
+        "placeholder": "nhập "
+    },
+    "privacy": {
+        "type": "text",
+        "label": "",
+        "placeholder": "nhập "
+    }
+}

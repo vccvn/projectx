@@ -1,0 +1,89 @@
+{
+    "name": "phản hồi",
+    "package": "comments",
+    "use_trash": false,
+    "can_edit": false,
+    "titles": {
+        "default": "Danh sách phản hồi",
+        "trash": "Danh sách phản hồi đã xóa"
+    },
+    "data": {
+        "refs": {
+            "post": "Bài viết",
+            "project": "Dự án",
+            "product": "Sản phẩm",
+            "page": "Trang"
+        }
+    },
+    "filter": {
+        "search_columns": {
+            "author_name": "Tên",
+            "author_email": "Email",
+            "ref": "Mục",
+            "message": "Nội dung"
+        },
+        "sort_columns": {
+            "author_name": "Tên",
+            "author_email": "Email",
+            "ref": "Mục"
+        }
+    },
+    "table": {
+        "columns": [
+            {
+                "title": "ID",
+                "class": "id-col",
+                "text": ":id"
+            },
+            {
+                "title": "Tên",
+                "class": "max-120 min-90",
+                "text": ":author_name"
+            },
+            {
+                "title": "Email",
+                "class": "",
+                "text": ":author_email"
+            },
+            {
+                "title": "Mục",
+                "class": "",
+                "data_access": "refs.{ref}"
+            },
+            {
+                "title": "Tham chiếu",
+                "class": "max-200 min-100",
+                "template": "<a target\"_blank\" href=\"{@getRefViewUrl}\">{@getRefTitle}</a>",
+                "data":{
+                    "@getRefViewUrl":[],
+                    "@getRefTitle":[]
+                }
+            },
+            {
+                "title": "Nội dung",
+                "class": "max-200 min-100",
+                "template": "{@getShortMsg}",
+                "data":{
+                    "@getShortMsg": [100]
+                }
+            },
+            {
+                "title": "Phê duyệt",
+                "class": "text-center",
+                "input": {
+                    "type": "checkbox",
+                    "template": "switch",
+                    "name": "comment[approved][]",
+                    "default": ":approved",
+                    "@change": "App.comments.changeApproveStatus",
+                    "data-comment-id": ":id"
+                }
+            }
+        ]
+    },
+    "resources": {
+        "js_data": [],
+        "js": ["static/manager/js/comments.js"],
+        "css": []
+    }
+}

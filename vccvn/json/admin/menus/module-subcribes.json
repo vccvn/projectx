@@ -1,0 +1,11 @@
+{
+    "data": {
+        "subcribes": {
+            "text": "Đăng ký theo dỏi",
+            "title": "Đăng ký theo dỏi",
+            "active_key": "subcribes",
+            "route": "admin.subcribes.list",
+            "icon": "wifi"
+        }
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "name": "Kỹ năng",
+    "package": "skills",
+    "use_trash": false,
+    "titles": {
+        "default": "Danh sách Kỹ năng",
+        "trash": "Danh sách Kỹ năng đã xóa"
+    },
+    "data": {
+        "types":{
+            "hard": "Kỹ năng chuyên môn",
+            "soft": "Kỹ năng mềm"
+        }
+    },
+    "filter": {
+        "search_columns": {
+            "name": "Tên kỹ năng",
+            "work_title": "Công việc"
+        },
+        "sort_columns": {
+            "name": "Tên kỹ năng",
+            "work_title": "Công việc",
+            "type": "Loại kỹ năng"
+        }
+    },
+    "table": {
+        "class": "list-center",
+        "columns": [
+            {
+                "title": "Mã",
+                "class": "id-col",
+                "text": ":id"
+            },
+            {
+                "title": "Tên kỹ năng",
+                "class": "min-160",
+                "text": ":name"
+            },
+            {
+                "title": "Loại kỹ năng",
+                "data_access": "types.{type}"
+            },
+            {
+                "title": "Công việc",
+                "class": "min-100",
+                "text": ":work_title"
+            },
+            {
+                "title": "Mô tả",
+                "class": "min-100",
+                "text": ":description"
+            }
+        ]
+    },
+    "resources": {
+        "js_data": [],
+        "js": [],
+        "css": []
+    }
+}

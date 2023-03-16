@@ -1,0 +1,109 @@
+{
+    "name": "Giao dịch với đơn hàng",
+    "package": "transactions.orders",
+    "use_trash": true,
+    "titles": {
+        "default": "Danh sách giao dịch",
+        "trash": "Danh sách giao dịch đã xóa"
+    },
+    "data": {
+        "status": {
+            "1": "Đã duyệt",
+            "0": "Đang chờ",
+            "-1": "Bị từ chôi"
+        },
+        "type": {
+            "payment": "Thanh toán đơn hàng",
+            "refund": "Hoàn tiền",
+            "othoe": "Khác"
+        }
+    },
+    "filter": {
+        "form": "daterange",
+        "search_columns": {
+            "code": "mã giao dịch",
+            "ref_id": "Mã đơn hàng",
+            "customer_name": "Tên khách hàng",
+            "customer_email": "Email khách hàng"
+        },
+        "sort_columns": {
+            "code": "mã giao dịch",
+            "ref_id": "Mã đơn hàng",
+            "customer_name": "Tên khách hàng",
+            "customer_email": "Email khách hàng",
+            "time": "Thời gian"
+        }
+    },
+    "table": {
+        "columns": [
+            {
+                "title": "ID",
+                "class": "id-col",
+                "text": ":id"
+            },
+            {
+                "title": "Tên khách hàng",
+                "class": "min-160 max-250",
+                "text": ":customer_name"
+            },
+            {
+                "title": "Email",
+                "class": "min-160 max-250",
+                "template": "<a href=\"mailto:{customer_email}\">{customer_email}</a>"
+            },
+            {
+                "title": "Mã đơn hàng",
+                "class": "min-100 text-center",
+                "text": ":ref_id"
+            },
+            {
+                "title": "Mã giao dịch",
+                "class": "min-160 text-center",
+                "text": ":code"
+            },
+            {
+                "title": "Số tiền",
+                "header_class": "min-100 text-center",
+                "class": "min-100 text-right",
+                "template": "{@number_format} VNĐ",
+                "data": {
+                    "@number_format": [
+                        ":amount",
+                        0,
+                        ",",
+                        "."
+                    ]
+                }
+            },
+            {
+                "title": "Trạng thái",
+                "header_class": "min-100 max-250 text-center",
+                "class": "min-100 max-250 text-center col-transaction-status",
+                "data_access": "status.{status}"
+            },
+            {
+                "title": "Chi tiết",
+                "class": "min-100 text-center",
+                "template": "<a href=\"{url}\" class=\"view-transaction-detail\" data-id=\"{id}\">Chi tiết</a>",
+                "data": {
+                    "url": {
+                        "call": "route",
+                        "params": [
+                            ".update",
+                            {
+                                "id": ":id"
+                            }
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    "resources": {
+        "js_data": {},
+        "js": [
+            "static/manager/js/order.list.js"
+        ],
+        "css": []
+    }
+}

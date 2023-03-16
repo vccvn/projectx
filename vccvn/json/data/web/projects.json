@@ -1,0 +1,28 @@
+{
+    "data": {
+        "show_mode": {
+            "type": "radio",
+            "label": "Ưu tiên hiển thị",
+            "data": {
+                "projects": "Tất cả dự án",
+                "categories": "Danh mục hoặc danh mục con"
+            },
+            "value": "posts"
+        },
+        "per_page": {
+            "type": "number",
+            "value_type": "number",
+            "label": "Số Dự án hiển thị trên một trang",
+            "value": 12,
+            "min": 1
+        },
+        "comment_approve_request": {
+            "type": "checkbox",
+            "label": "Duyệt bình luận",
+            "value_type": "boolean",
+            "props": {
+                "template": "switch"
+            }
+        }
+    }
+}

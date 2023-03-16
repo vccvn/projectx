@@ -1,0 +1,46 @@
+{
+    "data": {
+        "profile": {
+            "text": "Profile",
+            "title": "Quản lý Profile",
+            "url": "#",
+            "active_ley": "profile",
+            "icon": "user-tie",
+            "submenu": {
+                "type": "list",
+                "data": {
+                    "edit": {
+                        "text": "Thông tin cá nhân",
+                        "title": "Quản lý Profile",
+                        "route": "admin.profile.general",
+                        "active_ley": "profile-edit",
+                        "icon": "user-edit"
+                    },
+                    "education": {
+                        "text": "Học vấn",
+                        "title": "Học vấn",
+                        "route": "admin.profile.education",
+                        "active_ley": "profile.education",
+                        "icon": "graduation-cap"
+                    },
+                    "experiences": {
+                        "text": "Kinh nghiệm",
+                        "title": "Kinh nghiệm",
+                        "route": "admin.profile.experiences",
+                        "active_ley": "profile.experiences",
+                        "icon": "anchor"
+                    },
+                    "skills": {
+                        "text": "Kỹ năng",
+                        "title": "Quản lý Kỹ năng",
+                        "route": "admin.profile.skills",
+                        "active_ley": "profile.skills",
+                        "icon": "handshake"
+                    }
+                }
+            }
+        }
+        
+        
+    }
+}

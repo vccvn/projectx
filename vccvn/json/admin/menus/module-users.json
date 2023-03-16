@@ -1,0 +1,36 @@
+{
+    "data": {
+        "users": {
+            "text": "Người dùng",
+            "title": "Người dùng",
+            "route": "admin.users",
+            "icon": "user",
+            "submenu": {
+                "type": "list",
+                "data": [
+                    {
+                        "text": "Danh sách",
+                        "title": "Danh sách",
+                        "active_key": "list",
+                        "route": "admin.users.list",
+                        "icon": "list-ul"
+                    },
+                    {
+                        "text": "Sổ đen",
+                        "title": "Người dùng bị chặn",
+                        "active_key": "trash",
+                        "route": "admin.users.trash",
+                        "icon": "user-slash"
+                    },
+                    {
+                        "text": "Thêm mới",
+                        "title": "Thêm mới",
+                        "active_key": "add",
+                        "route": "admin.users.create",
+                        "icon": "user-plus"
+                    }
+                ]
+            }
+        }
+    }
+}

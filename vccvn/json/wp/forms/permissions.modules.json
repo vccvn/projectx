@@ -1,0 +1,51 @@
+{
+    "name": {
+        "type": "text",
+        "text": "Tên module",
+        "placeholder": "Nhập tên module",
+        "required": "true"
+    },
+    "type": {
+        "type": "crazyselect",
+        "text": "Loại module",
+        "required": "true",
+        "template": "crazyselect",
+        "data":{
+            "default":"Mặc định",
+            "uri":"Route URI (Đường dẫn)",
+            "name":"Route Name (Tên Route)",
+            "prefix":"Route Prefix (Đường dẫn module)"
+        },
+        "default": "default",
+        "@change":"CrazyModule.changeType"
+    },
+    "parent_id": {
+        "type": "crazyselect",
+        "text": "Module Cha",
+        "template": "crazyselect",
+        "call":"App\\Repositories\\Permissions\\ModuleRepository::getParentOptions",
+        "params": [":defval"]
+    },
+
+    "ref": {
+        "type": "crazyselect",
+        "text": "Route",
+        "required": "true",
+        "template": "crazyselect",
+        "call": "App\\Repositories\\Permissions\\RouteRepository::getOptions",
+        "params":["#type"]
+    },
+
+    "description": {
+        "type": "textarea",
+        "text": "Mô tả",
+        "placeholder": "Nhập Mô tả..."
+    },
+    "roles": {
+        "type": "checklist",
+        "text": "Các quyền truy cập",
+        "template": "checklist",
+        "call":"App\\Repositories\\Permissions\\RoleRepository::getOptions"
+    }
+    
+}

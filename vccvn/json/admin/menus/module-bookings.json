@@ -1,0 +1,11 @@
+{
+    "data": {
+        "bookings": {
+            "text": "Bookings",
+            "title": "Bookings",
+            "active_key": "bookings",
+            "route": "admin.bookings.list",
+            "icon": "calendar-check"
+        }
+    }
+}

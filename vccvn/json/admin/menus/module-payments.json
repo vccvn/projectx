@@ -1,0 +1,11 @@
+{
+    "data": {
+        "payments": {
+            "text": "Thanh toán",
+            "title": "Thanh toán",
+            "route": "admin.payments.methods",
+            "icon": "credit-card"
+            
+        }
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "name": "Form",
+    "package": "forms",
+    "use_trash": true,
+    "titles": {
+        "default": "Danh sách Form",
+        "trash": "Danh sách Form đã xóa"
+    },
+    "data": [],
+    "filter": {
+        "search_columns": [],
+        "sort_columns": []
+    },
+    "table": {
+        "class": "",
+        "columns": [
+            {
+                "title": "ID",
+                "class": "",
+                "text": ":id"
+            },
+            {
+                "title": "Tên Form",
+                "class": "",
+                "text": ":name"
+            },
+            {
+                "title": "Slug",
+                "class": "",
+                "text": ":slug"
+            },
+            {
+                "title": "Inputs",
+                "class": "max-200",
+                "template": "{@getInputText}",
+                "data": {
+                    "@getInputText": []
+                }
+            },
+            {
+                "title": "Số bản ghi",
+                "class": "",
+                "template": "{@countDataRow}",
+                "data":{
+                    "@countDataRow":[]
+                }
+            }
+        ]
+    },
+    "resources": {
+        "js_data": [],
+        "js": [],
+        "css": []
+    }
+}

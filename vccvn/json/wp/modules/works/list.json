@@ -1,0 +1,63 @@
+{
+    "name": "Công việc",
+    "package": "works",
+    "use_trash": false,
+    "titles": {
+        "default": "Danh sách công việc"
+    },
+    "data": {
+        "group":{
+            "it": "Công nghệ thông tin",
+            "office": "Văn phòng",
+            "other": "khác"
+        }
+    },
+    "filter":{
+        "search_columns": {
+            "title":"Công việc",
+            "description": "Mô tả",
+            "id": "Mã"
+        },
+        "sort_columns": {
+            "title":"Côn việc",
+            "work_group": "Nhóm",
+            "id": "Mã"
+        }
+    },
+    "table": {
+        "class": "list-center",
+        "columns": [
+            {
+                "title": "Mã",
+                "class": "id-col",
+                "text": ":id"
+            },
+            {
+                "title": "Tên công việc",
+                "class": "min-160",
+                "template": "<a href=\"{url}\">{title}</a>",
+                "data": {
+                    "url": {
+                        "call":"route",
+                        "params":[".update", {"id": ":id"}]
+                    }
+                }
+            },
+            {
+                "title": "Nhóm",
+                "class": "min-160 max-250",
+                "data_access": "group.{work_group}"
+            },
+            {
+                "title": "Mô tả",
+                "class": "min-160 max-250",
+                "text": ":description"
+            }
+        ]
+    },
+    "resources":{
+        "js_data":{},
+        "js":[],
+        "css":[]
+    }
+}

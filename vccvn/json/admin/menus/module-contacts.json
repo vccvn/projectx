@@ -1,0 +1,11 @@
+{
+    "data": {
+        "contacts": {
+            "text": "Liên hệ",
+            "title": "Liên hệ",
+            "active_key": "contacts",
+            "route": "admin.contacts.list",
+            "icon": "envelope"
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "data": {
+        "facebook": {
+            "type": "textarea",
+            "label": "Facebook JS SDK",
+            "placeholder": "Mã SDK từ ứng dụng của bạn",
+            "className": "auto-height",
+            "value": "  <div id=\"fb-root\"></div>\n            <script>(function(d, s, id) {\n              var js, fjs = d.getElementsByTagName(s)[0];\n              if (d.getElementById(id)) return;\n              js = d.createElement(s); js.id = id;\n              js.src = \"https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.0\";\n              fjs.parentNode.insertBefore(js, fjs);\n            }(document, 'script', 'facebook-jssdk'));</script>"
+        },
+        "twitter": {
+            "type": "textarea",
+            "label": "Twitter JS SDK",
+            "placeholder": "Mã SDK từ ứng dụng của bạn",
+            "className": "auto-height",
+            "value": "<script>window.twttr = (function(d, s, id) {\n                var js, fjs = d.getElementsByTagName(s)[0],\n                  t = window.twttr || {};\n                if (d.getElementById(id)) return t;\n                js = d.createElement(s);\n                js.id = id;\n                js.src = \"https://platform.twitter.com/widgets.js\";\n                fjs.parentNode.insertBefore(js, fjs);\n              \n                t._e = [];\n                t.ready = function(f) {\n                  t._e.push(f);\n                };\n              \n                return t;\n              }(document, \"script\", \"twitter-wjs\"));</script>"
+        }
+    }
+}

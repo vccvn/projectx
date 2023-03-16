@@ -1,0 +1,12 @@
+{
+    "name": {
+        "type": "text",
+        "label": "Tên nhóm",
+        "placeholder": "nhập tên nhóm"
+    },
+    "description": {
+        "type": "textarea",
+        "label": "Mô tả nhóm",
+        "placeholder": "Viết gì đó"
+    }
+}

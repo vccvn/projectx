@@ -1,0 +1,31 @@
+{
+    "name": {
+        "type": "text",
+        "label": "Tên quyền",
+        "placeholder": "Nhập tên quyền",
+        "required": "true"
+    },
+    "level": {
+        "type": "crazyselect",
+        "label": "Nhóm quyền",
+        "required": "true",
+        "template": "crazyselect",
+        "data":{
+            "1":"Quyền truy cập",
+            "2":"Quyền quản lý",
+            "3":"Quyền admin"
+        },
+        "default": "1"
+    },
+    "handle": {
+        "type": "text",
+        "label": "Handle",
+        "placeholder": "function hoặc static method hay class->method"
+    },
+
+    "description": {
+        "type": "textarea",
+        "label": "Mô tả",
+        "placeholder": "Nhập Mô tả..."
+    }
+}

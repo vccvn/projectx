@@ -1,0 +1,63 @@
+{
+    "inputs":{
+        "first_name": { "type":"text", "text": "Họ và tên", "required":"true", "placeholder":"Tên", "prepend_group":["last_name"]},
+        "last_name": { "type":"text", "text": "họ và đệm", "required":"true", "placeholder":"Họ"},
+        "gender": { "type":"radio", "text": "Giới tính", "required":"true", "data":{"male":"Nam", "female":"Nữ"}, "default":"male" },
+        "birthday": { "type":"date", "text": "Sinh nhật", "required":"true", "template":"date", "placeholder":"Nhập ngày sinh"},
+        "address": { "type": "text", "text": "Địa chỉ", "placeholder":"Nhập địa chỉ..."},
+        "email": { "type": "email", "text": "Địa chỉ E-mail", "required":"true" , "prepend_text":"<i class=\"fa fa-envelope\"></i>"},
+        "phone_number": { "type": "text", "text": "Số diện thoại", "prepend_text":"<i class=\"fa fa-phone\"></i>"},
+        "password": {"type":"password", "text":"Mật khẩu", "placeholder": "Nhập mật khẩu", "prepend_text":"<i class=\"fa fa-key\"></i>"},
+        "avatar": { "type": "file", "text": "Hình đại diện", "template":"cropit", "data-width": 400, "data-height":400},
+        "academic_id": {"type":"crazyselect","label":"Học vấn","call":"get_profile_academic_options","@select-type":"dynamic","@search-route":"admin.academics.select-options","@advance-click":"Profile.academics.showAddForm","@advance-text":"Thêm học vấn"},
+        "work_id": {"type":"crazyselect","label":"Công việc hiện tại","call":"get_work_options","params":[{"id":":defval"}],"@select-type":"dynamic","@search-route":"admin.works.select-options","@advance-click":"Profile.works.showAddForm","@advance-text":"Thêm công việc"},
+        "org_id": {"type":"crazyselect","label":"Công ty","call":"get_profile_organization_options","params":[{"id":":defval","type":"business"}],"@select-type":"dynamic","@search-route":"admin.organizations.select-options","@search-route-params":{"type":"business"},"@advance-click":"Profile.organizations.addBusiness","@advance-text":"Thêm công ty"},
+        "region_id": {"type":"crazyselect","label":"Tỉnh / Thành phố","className":"d-block","call":"get_region_options","@change":"App.location.changeRegionID"},
+        "district_id": {"type":"crazyselect","label":"Quận / huyện","className":"d-block","call":"get_district_options","params":[{"region_id":"#region_id|0"}],"@change":"App.location.changeDistrictID"},
+        "ward_id": {"type":"crazyselect","label":"Xã / phường","className":"d-block","call":"get_ward_options","params":[{"district_id":"#district_id|0"}]}
+        
+    },
+    "config":{
+        "name": "Thông tim cá nhân",
+        "layout_type": "column",
+        "form_groups": [
+            {
+                "title": "Thông tim cá nhân",
+                "class": "col-md-6",
+                "inputs": [
+                    "first_name",
+                    "last_name",
+                    "gender",
+                    "birthday",
+                    "phone_number",
+                    "email",
+                    "region_id",
+                    "district_id",
+                    "ward_id",
+                    "address"
+                ]
+            },
+            {
+                "class": "col-md-6",
+                "inputs": [
+                    "avatar"
+                ]
+            },
+            {
+                "title": "Học vấn",
+                "class": "col-md-6",
+                "inputs": [
+                    "academic_id"
+                ]
+            },
+            {
+                "title": "Công việc",
+                "class": "col-md-6",
+                "inputs": [
+                    "work_id", "org_id"
+                ]
+            }
+            
+        ]
+    }
+}

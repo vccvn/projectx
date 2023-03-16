@@ -1,0 +1,92 @@
+.deep-select-group .dropdown-header {
+  font-weight: 700;
+}
+
+.deep-select-group h6.dropdown-header {
+  cursor: default;
+}
+
+.deep-select-group > .dropdown-menu a {
+  padding: .7rem 1.2rem !important;
+}
+
+.deep-select-group > .dropdown-menu > .option-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.deep-select-group > .dropdown-menu > .option-list > a.dropdown-item {
+  padding-left: 1rem;
+}
+
+.deep-select-group > .dropdown-menu > .option-list > .option-group > a.dropdown-item {
+  padding-left: 2rem;
+}
+
+.deep-select-group > .dropdown-menu > .option-list > .option-group > .dropdown-header {
+  padding-left: 1rem !important;
+}
+
+.deep-select-group > .dropdown-menu > .option-list > .option-group > .option-group > a.dropdown-item {
+  padding-left: 3rem;
+}
+
+.deep-select-group > .dropdown-menu > .option-list > .option-group > .option-group > .dropdown-header {
+  padding-left: 2rem !important;
+}
+
+.deep-select-group > .dropdown-menu > .option-list > .option-group > .option-group > .option-group > a.dropdown-item {
+  padding-left: 4rem;
+}
+
+.deep-select-group > .dropdown-menu > .option-list > .option-group > .option-group > .option-group > .dropdown-header {
+  padding-left: 3rem !important;
+}
+
+.deep-select-group > .dropdown-menu > .option-list > .option-group > .option-group > .option-group > .option-group > a.dropdown-item {
+  padding-left: 5rem;
+}
+
+.deep-select-group > .dropdown-menu > .option-list > .option-group > .option-group > .option-group > .option-group > .dropdown-header {
+  padding-left: 4rem !important;
+}
+
+.deep-select-group > .dropdown-menu > .option-list > .option-group > .option-group > .option-group > .option-group > .option-group > a.dropdown-item {
+  padding-left: 6rem;
+}
+
+.deep-select-group > .dropdown-menu > .option-list > .option-group > .option-group > .option-group > .option-group > .option-group > .dropdown-header {
+  padding-left: 5rem !important;
+}
+
+.deep-select-group > .dropdown-menu > .option-list > .option-group > .option-group > .option-group > .option-group > .option-group > .option-group > a.dropdown-item {
+  padding-left: 7rem;
+}
+
+.deep-select-group > .dropdown-menu > .option-list > .option-group > .option-group > .option-group > .option-group > .option-group > .option-group > .dropdown-header {
+  padding-left: 6rem !important;
+}
+
+.deep-select-group > .dropdown-menu > .option-list > .option-group > .option-group > .option-group > .option-group > .option-group > .option-group > .option-group > a.dropdown-item {
+  padding-left: 8rem;
+}
+
+.deep-select-group > .dropdown-menu > .option-list > .option-group > .option-group > .option-group > .option-group > .option-group > .option-group > .option-group > .dropdown-header {
+  padding-left: 7rem !important;
+}
+
+.deep-select-group > .dropdown-menu > .option-list > .option-group > .option-group > .option-group > .option-group > .option-group > .option-group > .option-group > .option-group > a.dropdown-item {
+  padding-left: 9rem;
+}
+
+.deep-select-group > .dropdown-menu > .option-list > .option-group > .option-group > .option-group > .option-group > .option-group > .option-group > .option-group > .option-group > .dropdown-header {
+  padding-left: 8rem !important;
+}
+
+.deep-select-group > .dropdown-menu > .option-list > .option-group > .option-group > .option-group > .option-group > .option-group > .option-group > .option-group > .option-group > .option-group > a.dropdown-item {
+  padding-left: 10em;
+}
+
+.deep-select-group > .dropdown-menu > .option-list > .option-group > .option-group > .option-group > .option-group > .option-group > .option-group > .option-group > .option-group > .option-group > .dropdown-header {
+  padding-left: 9rem !important;
+}

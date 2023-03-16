@@ -1,0 +1,32 @@
+{
+    "name": "Đăng ký theo dỏi",
+    "package": "subcribes",
+    "use_trash": false,
+    "can_edit": false,
+    "titles": {
+        "default": "Danh sách Đăng ký theo dỏi",
+        "trash": "Danh sách Đăng ký theo dỏi đã xóa"
+    },
+    "data": [],
+    "filter": {
+        "general_columns":{
+            "email": "Email"
+        },
+        "search_columns": [],
+        "sort_columns": []
+    },
+    "table": {
+        "columns": [
+            {
+                "title": "ID",
+                "class": "id-col",
+                "text": ":id"
+            },
+            {
+                "title": "Email",
+                "class": "min-100",
+                "text": ":email"
+            }
+        ]
+    }
+}

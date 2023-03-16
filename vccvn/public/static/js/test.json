@@ -1,0 +1,742 @@
+[
+    {
+        "name": "1P_JAR",
+        "value": "2021-11-09-16",
+        "domain": ".google.com.vn"
+    },
+    {
+        "name": "1P_JAR",
+        "value": "2021-11-29-02",
+        "domain": ".google.com"
+    },
+    {
+        "name": "ABDEF",
+        "value": "V=13&amp;ABDV=13&amp;MRNB=1625931289396&amp;MRB=0",
+        "domain": ".bing.com"
+    },
+    {
+        "name": "ANON",
+        "value": "A=C952300B35B934D100298AD9FFFFFFFF&amp;E=197b&amp;W=1",
+        "domain": ".bing.com"
+    },
+    {
+        "name": "APISID",
+        "value": "mulpMtEe-yWOa7LQ/APURfe_of7VH7viiL",
+        "domain": ".google.com"
+    },
+    {
+        "name": "APISID",
+        "value": "PrVjm5cxPY4MmKe_/AwnnTre7IPNQ8U_d1",
+        "domain": ".google.com.vn"
+    },
+    {
+        "name": "DSID",
+        "value": "AAO-7r6ni918HNi-t8RrEcAT7nLqyqDpFF22pbvEYvow29Hl2-WXCsnT3959bxhaQdWMmziEt1b8o2Xf7wvXEI6KwLxS6_6SdGdqVhPBMuNudIslFLUq37PSgOBodX31DHxDGpR5tztB_vI1onJfklxZH2cUoc9rElWO5rD6vgH2LBykl7LIc1s411U1ME6esOBvu5i3SZRYK1IKP0kCmV7i4Xpb2EUuQt6EvfnuINNNmsAUYdh5U5Kwktu8r1OkrOffq4Zg_SYpCicy41k7nQWYCfTjkqz75L-WiNQFFuLE6sNgHqB9f_g",
+        "domain": ".doubleclick.net"
+    },
+    {
+        "name": "DV",
+        "value": "09mqjcNsh4OCIBy4P1MyROugBAOa1heHOyNFM9ZBVgAAAIAGwtOLQBGLiwAAAKxvDnFuwjx5PQAAAO4BBgAhOxlRL-YAQIC4KVS_0vUdjTkAEL5WPJip-J-GYw4AVNxZscBkzN8LmQMA",
+        "domain": "<a href=\"http://www.google.com\" target=\"_blank\" rel=\"noopener\">www.google.com</a>"
+    },
+    {
+        "name": "HSID",
+        "value": "A1qoCtoWfY3G8I-Wd",
+        "domain": ".google.com"
+    },
+    {
+        "name": "HSID",
+        "value": "AOYTU4jU8sXxPnPZt",
+        "domain": ".google.com.vn"
+    },
+    {
+        "name": "IDE",
+        "value": "AHWqTUkZAEG8bjgKPYPTRdMbs38yqajO28eg7_lx3n65MRg_TvGnHQuQm9LMqgkjymA",
+        "domain": ".doubleclick.net"
+    },
+    {
+        "name": "IR_9060",
+        "value": "1638155030820%7C0%7C1638155030820%7C%7C",
+        "domain": ".stockx.com"
+    },
+    {
+        "name": "IR_PI",
+        "value": "97ab5dc9-5062-11ec-9c18-0f57ddd8d2d0%7C1638241430820",
+        "domain": ".stockx.com"
+    },
+    {
+        "name": "IR_gbd",
+        "value": "<a href=\"http://stockx.com\" target=\"_blank\" rel=\"noopener\">stockx.com</a>",
+        "domain": ".stockx.com"
+    },
+    {
+        "name": "MR",
+        "value": "0",
+        "domain": ".bat.bing.com"
+    },
+    {
+        "name": "MUID",
+        "value": "2E16408295096BC214B250B594DE6A0D",
+        "domain": ".bing.com"
+    },
+    {
+        "name": "NID",
+        "value": "511=qKIYGRU7XoB5vaqZS0e2Jcsk2NeuF7lpLWokDP48z6OwJJGURc6pj5VAh-ju9zpHs-U9zXxJHoyMTN9tR1_keh5TyDjTKGB1sYlaPBpfrUQEvkpK5mLkvli0Wd6KGKIgvZtHhiI2Wf-1CUcDw955FfZ7jeqS-wKZQVM2Xa0a4HS4dqNxCLSSzKKOk7hqsr0wM06R43CJau4HfNni2s3XMi-2ax6DFmj2iwRrHLmHUrpOFgVG33uNI7u4e32nXBmadGEFKyQVZgnZiirvousWGH3Xe4eA9bl1TpcmnG516_1vFM3LG506sIoGWAY0aYKluqMB2amUaWY1_2JzFI3J7uTnPNCBXl3xjw_NTeRKPA1ozLBjs3pz",
+        "domain": ".google.com"
+    },
+    {
+        "name": "NID",
+        "value": "511=FQDi2nVmtx7Fjzdg9OTPzYJ1fwxbh-BQbcNeTHv2sGspg_XU2j4YFiZ-T1n64XPvkJgg8SUxh_Glec2MVnGm5G4nH1XnwTtf3Wo89ucogT2CourPR8fEYLCUEuupBsLoDGjEcqwf4LoNCcTguBsVvqtmHO41h1WWbCHmS_W7KnO6ZR9mHkVBTZE2BxL-CBtHzsM9a-t4Fo3xUCJVCxuoIzh1wbWsR9JKcJC-grc9K3hjnY0K-liYDBH0Evi8IBrmbskSQ3LJrrLlsJniMYrY5CJeewoWYiDa3NfCeRyYqHPcB3NPa4NciBJV-OHk85JtrO8cjUOzu8o9tyK2rWftLDusnPKMmZGcGYsv70-SBEjx84oUvccepBwR2qTwCczRx35xM9Eu5b5yUYvJ5jtOeKg7sH4RItbo1A",
+        "domain": ".google.com.vn"
+    },
+    {
+        "name": "OGP",
+        "value": "-19022519:-19020770:",
+        "domain": ".google.com"
+    },
+    {
+        "name": "OGPC",
+        "value": "19022519-2:19020770-1:",
+        "domain": ".google.com"
+    },
+    {
+        "name": "OTZ",
+        "value": "6260365_28_28__28_",
+        "domain": "<a href=\"http://www.google.com\" target=\"_blank\" rel=\"noopener\">www.google.com</a>"
+    },
+    {
+        "name": "QuantumMetricSessionID",
+        "value": "7eb2c5d501a620048a3468da28b0f8af",
+        "domain": ".stockx.com"
+    },
+    {
+        "name": "QuantumMetricUserID",
+        "value": "e9b5ba67f2c5fdc03cfbbe232646f0bf",
+        "domain": ".stockx.com"
+    },
+    {
+        "name": "RUL",
+        "value": "EOLP_4QGGOK2hJQGIugEATZhkONimfFgcHcBJPbQwFkb00Y-WiGkDN54--XKjoT3uWkuhm7DS_sODbpFEGiiloQeZXy7ljjlqag_aiVx13CGIzVopaUGut7CpCilPak0m0RJ8n7d7kNuCB0xODkQE9UOeQHr5sXIZqiKGlSYEok5Vqndx37SAahSvTIXuQ6UwyIok9YJp00ltY1BuTcnkKm_D7bdVT40bvfrwubNBmUnckFdjUnicnjc6yTuhzPbKub1AXHWZY4p9mEw9s-fHidf2Hme8uU13RvUHuVq_mFW7ucWHekuEI5QCaPLCrNt0ajaH2IHJ7FhZ5ISwB8OTyhOUpbu7xhdygAE5v2yx5MFk1AlP6VfAluYb-ll4NkarFdT2PJPEowZ5rABDI3Kzp68YBzmBQyGPGYAjn7a7viQCPDvN2Sk9CNHnImtsZOT4qQYlJ331r7T_DgS2uZqom2pNMUdjDPcRoeE2KZOUgeloBGJTrP7VgjFNkSEwk-1tXDwPUY4r4S32qkZy8MvkplUIkmQa9cjNOMVNA3VbMHxqXj5H4qec0mmx-aJJ8Bv52TLBkCng0vCml5DyWeK_pIfCxlVPHNYHZywxmQ7tDuUF3oJmzocnYiPxKDzvNMbFXIm3USe1VgxSHibjS3p5Z1yQ_L6p4qCFxFrpYo6g5Hb8KEX6i_0ItFqL58P99EUw-msrTmneMRU3p2ywGscOKBNgpjVbIXBzTTb5xGN9Mgg1fCXaZ8svTpQ64c_nrGomlTJeUZUYXKglmiXbqzO9veJY5kcw2xf_0gt1BRxbCiDjuk6yvTx4XuUorCBDCqnLLqt_ZH2Cg|cs=AP6Md-W8LTbbR5_YwyfXdWhoSqJG",
+        "domain": ".doubleclick.net"
+    },
+    {
+        "name": "SAPISID",
+        "value": "MrK4MxQl5cG6QrKj/AProosiRZAPZsD0hs",
+        "domain": ".google.com"
+    },
+    {
+        "name": "SAPISID",
+        "value": "qMBGBspoHU6IXTzU/AO0-pJwl4KjkPB5T1",
+        "domain": ".google.com.vn"
+    },
+    {
+        "name": "SEARCH_SAMESITE",
+        "value": "CgQI35MB",
+        "domain": ".google.com.vn"
+    },
+    {
+        "name": "SEARCH_SAMESITE",
+        "value": "CgQIjpQB",
+        "domain": ".google.com"
+    },
+    {
+        "name": "SID",
+        "value": "DggGuI4pSbDOPV2JP0eb4BBat2yX4T9Us4PIugmRGeGQtWgU1Umq_Vp8RlZ2y_y6Fl3Agg.",
+        "domain": ".google.com.vn"
+    },
+    {
+        "name": "SID",
+        "value": "DggGuESIYKVggNtJv8CgK_pg84Gnp2ibvudD8MsgYVgbuh2XYwA4xREtp2p0ZJJdnUwhYw.",
+        "domain": ".google.com"
+    },
+    {
+        "name": "SIDCC",
+        "value": "AJi4QfGgd6DKmAJN-XpZ3o17Beo9cLLwTuXKePKYww01xaVYISF59pIXQi8mI6-Pf2PBrMddEXk",
+        "domain": ".google.com"
+    },
+    {
+        "name": "SRCHD",
+        "value": "AF=NOFORM",
+        "domain": ".bing.com"
+    },
+    {
+        "name": "SRCHHPGUSR",
+        "value": "SRCHLANGV2=vi&amp;SRCHLANG=vi&amp;BRW=XW&amp;BRH=M&amp;CW=1536&amp;CH=754&amp;DPR=1.25&amp;UTC=420&amp;DM=0&amp;HV=1625931292&amp;WTS=63761528079",
+        "domain": ".bing.com"
+    },
+    {
+        "name": "SRCHUID",
+        "value": "V=2&amp;GUID=8DC1A103940A453CB610DDBEBD47B0B5&amp;dmnchg=1",
+        "domain": ".bing.com"
+    },
+    {
+        "name": "SRCHUSR",
+        "value": "DOB=20210527&amp;T=1625931279000&amp;TPC=1625931291000&amp;POEX=W",
+        "domain": ".bing.com"
+    },
+    {
+        "name": "SSID",
+        "value": "AONjRabmest7q08EH",
+        "domain": ".google.com"
+    },
+    {
+        "name": "SSID",
+        "value": "A_qqkUUIBc-0B63jE",
+        "domain": ".google.com.vn"
+    },
+    {
+        "name": "TDCPM",
+        "value": "CAESFwoIcHVibWF0aWMSCwjYtoqH0eeQOhAFEhcKCGxpdmVyYW1wEgsIjquYz6OtiToQBRIVCgZnb29nbGUSCwicxOLHkKSZOhAFEhYKB3J1Ymljb24SCwiquNbIzMWXOhAFEhkKCnJpZ2h0bWVkaWESCwiG6qvDkKSZOhAFEhUKBmNhc2FsZRILCLiBj83MxZc6EAUSFAoFdGFwYWQSCwio9P3TmaOZOhAFEhYKBzhyaHQ5bnESCwiOsZnUzMWXOhAFEhcKCGFwcG5leHVzEgsIvNyMlveimToQBRIUCgVvcGVueBILCPi6gLjMxZc6EAUSFgoHc3Z4OXQ1MBILCIbtu7vMxZc6EAUSEgoDYWFtEgsIhtfhmoOxiToQBRIWCgdibHVla2FpEgsIytHdhMy2mDoQBRIZCgpsaXZlaW50ZW50EgsImNKf45Hm0TkQBRIWCgdkajBwamprEgsIqNnhupnM6zkQBRIYCgliaWRzd2l0Y2gSCwiG6qvDkKSZOhAFEhUKBnNpZ25hbBILCJC_96TZ8Pc5EAUSGwoMc2hhcmV0aHJvdWdoEgsIsJiAn4XFkDoQBRITCgRrcnV4EgsIlpbki_itiToQBRIWCgdpbHYwMzd5EgsIrMqc6_GukjoQBRIWCgd2Y3hsemt6EgsIrMqc6_GukjoQBRIWCgcxaTA3MW5jEgsIrMqc6_GukjoQBRIYCgltb29raWUtcHMSCwiWhcKTzeKXOhAFGAUoAzILCLSNv6Xzu5k6EAVCDyINCAESCQoFdGllcjMQAVoHcGN5bzd1NWAB",
+        "domain": ".adsrvr.org"
+    },
+    {
+        "name": "TDID",
+        "value": "73f6b498-9c3c-4fe7-9784-72094b59a5aa",
+        "domain": ".adsrvr.org"
+    },
+    {
+        "name": "UULE",
+        "value": "a+cm9sZTogMQpwcm9kdWNlcjogMTIKdGltZXN0YW1wOiAxNjM4MTU0NjUwMjI3MDAwCmxhdGxuZyB7CiAgbGF0aXR1ZGVfZTc6IDIwOTg1MjI3NwogIGxvbmdpdHVkZV9lNzogMTA1OTMxODAxMgp9CnJhZGl1czogODc1Mjg0LjI3ODEwNDk3ODEKcHJvdmVuYW5jZTogNgo=",
+        "domain": "<a href=\"http://www.google.com\" target=\"_blank\" rel=\"noopener\">www.google.com</a>"
+    },
+    {
+        "name": "X-AB",
+        "value": "0d6e407936704bd380072f5891d28b0e",
+        "domain": "<a href=\"http://sc-static.net\" target=\"_blank\" rel=\"noopener\">sc-static.net</a>"
+    },
+    {
+        "name": "__Secure-1PAPISID",
+        "value": "MrK4MxQl5cG6QrKj/AProosiRZAPZsD0hs",
+        "domain": ".google.com"
+    },
+    {
+        "name": "__Secure-1PAPISID",
+        "value": "qMBGBspoHU6IXTzU/AO0-pJwl4KjkPB5T1",
+        "domain": ".google.com.vn"
+    },
+    {
+        "name": "__Secure-1PSID",
+        "value": "DggGuESIYKVggNtJv8CgK_pg84Gnp2ibvudD8MsgYVgbuh2XzpR3b_Kylhhhk75-tjZbEQ.",
+        "domain": ".google.com"
+    },
+    {
+        "name": "__Secure-1PSID",
+        "value": "DggGuI4pSbDOPV2JP0eb4BBat2yX4T9Us4PIugmRGeGQtWgUqJLXG8yikXHOONMIM6YXug.",
+        "domain": ".google.com.vn"
+    },
+    {
+        "name": "__Secure-3PAPISID",
+        "value": "MrK4MxQl5cG6QrKj/AProosiRZAPZsD0hs",
+        "domain": ".google.com"
+    },
+    {
+        "name": "__Secure-3PAPISID",
+        "value": "qMBGBspoHU6IXTzU/AO0-pJwl4KjkPB5T1",
+        "domain": ".google.com.vn"
+    },
+    {
+        "name": "__Secure-3PSID",
+        "value": "DggGuI4pSbDOPV2JP0eb4BBat2yX4T9Us4PIugmRGeGQtWgU7aqpDIIWT2eUMm_vOpmyEA.",
+        "domain": ".google.com.vn"
+    },
+    {
+        "name": "__Secure-3PSID",
+        "value": "DggGuESIYKVggNtJv8CgK_pg84Gnp2ibvudD8MsgYVgbuh2XvE1N5M_HdydJLVQTXGDJnA.",
+        "domain": ".google.com"
+    },
+    {
+        "name": "__Secure-3PSIDCC",
+        "value": "AJi4QfG0g8loL7NyX7k2iQF0ig2oqINPIW4pC4aYc5caxiYUyTs1dCeedcP8qbE0vNPpqPQfXnA",
+        "domain": ".google.com"
+    },
+    {
+        "name": "__pdst",
+        "value": "7f095eb72ad847ce9a40a826aa3a890f",
+        "domain": "<a href=\"http://stockx.com\" target=\"_blank\" rel=\"noopener\">stockx.com</a>"
+    },
+    {
+        "name": "__ssid",
+        "value": "8ca34e6c1ef20df3eec77f075b93b4b",
+        "domain": ".stockx.com"
+    },
+    {
+        "name": "_auth",
+        "value": "1",
+        "domain": ".pinterest.com"
+    },
+    {
+        "name": "_b",
+        "value": "\"AVlstlDKWf1AEqBLuzpojUrCQsNxQZZ+CZt/Zqlv8Nf/nI5l+Ecrw1El8vQS5Fbh8Bk=\"",
+        "domain": ".pinterest.com"
+    },
+    {
+        "name": "_dd_s",
+        "value": "rum=0&amp;expire=1638155922283",
+        "domain": "<a href=\"http://stockx.com\" target=\"_blank\" rel=\"noopener\">stockx.com</a>"
+    },
+    {
+        "name": "_derived_epik",
+        "value": "dj0yJnU9Ni1qeDFwaW9wNWZHT2NSNmo5VVg1S0tFZ2hpY3RQQ2Imbj1vU3lSWkwtYkExR0N4UHE0TGVhZ3N3Jm09MSZ0PUFBQUFBR0drUXhVJnJtPTEmcnQ9QUFBQUFHR2tReFU",
+        "domain": ".stockx.com"
+    },
+    {
+        "name": "_fbc",
+        "value": "fb.1.1638114457069.IwAR2ui2ul6CvWI-LHsSHTbma6ajUWipEvjka7c46-N8-GkbEGW3sVNyc99HE",
+        "domain": ".stockx.com"
+    },
+    {
+        "name": "_fbp",
+        "value": "fb.1.1638114457070.516775282",
+        "domain": ".stockx.com"
+    },
+    {
+        "name": "_ga",
+        "value": "GA1.2.1893154913.1638114454",
+        "domain": "<a href=\"http://stockx.com\" target=\"_blank\" rel=\"noopener\">stockx.com</a>"
+    },
+    {
+        "name": "_ga",
+        "value": "GA1.2.1893154913.1638114454",
+        "domain": ".stockx.com"
+    },
+    {
+        "name": "_gat",
+        "value": "1",
+        "domain": ".stockx.com"
+    },
+    {
+        "name": "_gcl_au",
+        "value": "1.1.1333213585.1638114456",
+        "domain": ".stockx.com"
+    },
+    {
+        "name": "_gid",
+        "value": "GA1.2.1177728106.1638114454",
+        "domain": ".stockx.com"
+    },
+    {
+        "name": "_kuid_",
+        "value": "OIEKzldX",
+        "domain": ".krxd.net"
+    },
+    {
+        "name": "_pin_unauth",
+        "value": "dWlkPU1HVmlOV1psTnpndE9ETTVOQzAwWVRKbExUZ3lNV1l0T0dZM1l6STFNV1V6TmpReQ",
+        "domain": ".stockx.com"
+    },
+    {
+        "name": "_pinterest_cm",
+        "value": "\"TWc9PSZTMm51bit6LzR3OTR3UFlwTUNaZU04V1hwWnp6UkxpYW9vYVVVSkxuLzkxamNOZGV0OS93bzlXSlF5TzRneW1TMXpNTnl5SkIyaEhPdTlUM1hQbE4vRGpJRitrNERDSEFWb3NieEx1Rkh6RXhYR2dSbDY5T2ZteG1NekZKUGFVVmRJOTdPSVhwMXFwdENOR3FpZGErdlltUDQ4V0loZE4yMUhWVVd5MDhNOGdmNC83VzdoMlRRUm9mMmtGeEdaa0gmUE93UmI3cjNaMzVGZ2pZZDdaeE85WU5lVkxrPQ==\"",
+        "domain": ".pinterest.com"
+    },
+    {
+        "name": "_pinterest_ct_rt",
+        "value": "TWc9PSY2Z2FSTmtWc2x3SU1DcGlhQzFQN3JJU3NNQkZSVXlic2drRnV4YlpVYWozQ0hoOEJ3b3dobUQrRnowNXZEb1lWcUFDRXhDNmNOUnhyUUl6LzZISGFCTTNNMWlzMEs2Q0VYZ2FMcEhrNVdMTXJOWHF1VitXaHpUYy9IM05NNGQ0TXZlbmJ0LzBrYzZ4R2Q0MmF4Mk4vYlBYM3FXWWFyNkFUcmRQbi9ZaWFSOEJwMEkzR3lnQXlxeUZEV2pRaVZFWmRvRFRXVlBpWVlhSDUxTWhOT3QwN2k4cm5hWmtpZVF2dXZvMTRlaUNXOTZ5dEszZ1RySlgrd0NOa1R6aktjbC85N0o5TUhjcmtlUVp0MVdQdlFlZkg1MDNxTU1GaVkyUGpLMnBHUlBINFlWclRWR2lvekxVY0tNOGtpcGl1cmlUZDVhL3RlTzFVVmZ3akhsaVZXa2M1VjZNMitRRFBaV2RFOFJIUW02a3UxZnRJc2I5NjFxVnZFU3MxMGh4cWRETmpQVGNZZTZQcFVBdEtjZWFYU1RtbFdKQlJSZ20zVExVKy9xWkdrN0NsRitVZ2xhTjdkb2dOQm05U3F5ejgwL01STFdXelJyMm14TWFLbjZ1M21QeCtvQ0d6bGUrZ2JTdXNFODRuRUtjV1YyNnhzOWlwY2NBcGNXTWczZG1sOVUvVSZqUXR1UTFPVHNlTHE5eGZoS3EzM2dwdGVSQVk9",
+        "domain": ".ct.pinterest.com"
+    },
+    {
+        "name": "_pinterest_ct_ua",
+        "value": "\"TWc9PSZxbzlrTmZPTWFBWG9GNzk1MytNZ3grOHlNSVhnWnRTaU5POFFIWTRFL2xQQ1NnVzNlc1kyc2U4YWRaZ210VlFPdXdTNUtYNVMyTG4yblNEUXkraS91Mk4yS2xEZGdXaXJBYU9Ec0tNdDVIaz0mSGczKzBHUGMxSFBIVjdiZnpydk9XNW9iWEMwPQ==\"",
+        "domain": ".ct.pinterest.com"
+    },
+    {
+        "name": "_pinterest_sess",
+        "value": "TWc9PSZJY2VqUGRycGlDZTg3SjdxbldMTHpGbnNuR2hJaFFzQzFlQnFlSEVjbXl1cGdPYWtlU0J3UDNzdTlvL1lHM2RVYlRZTzh3M05YY2NwZHBlakd4ZzRzU2lwNUlFc3VrUllpSFdVM25JTVIvOFdGOGwvOG91OFJMS2RhaVVTWk9HcUZNV3lTZ3J6eS9nVUJ4WTN0SHFqSGFabVZYL0pDUjVFUkZsTWlqQmt5QkExKzFSNi9HWEVYTEhXbHR2Z0lhWk1FRU9nMFpNbU5WeTl2Ym0weGpOcXQyUVBrbzh1aXZOWTVGSUdJcUZ6SnMxOVVOSU9RNDJlNXRQT2tZVkxMODc3RVJ0VmtHcjZlYWtZOXoxL0pvWkVRNzdJTkFMQnZHME9BejFaZUdUTStxb3cxdy9UZ0IrRW9YeDBVU3pRWXpnSi9VUmZ0VEUvenVMak1vUkpmODZKWDVUVDNQcU15eVVQL3Fuc1JtamlKWXE3eHpFZW1wRU5BcS8yZ0hnbVd6SzNzQnZpVWRBMi9XQmhadlF6Um1LcFduQkpLcGtJN2hwYkxnRS9DNlZyNlRmb1YzV1hlRVRQdng3cHk2bmhxWTRQaGl2cWtJQzNwYUZ3cm1aRTlCeWJhNVZVUFY2eWZhMkNBQ3hLVGdId0xXWnZXQy9ZRFcrc0UvT25YSkl1bm9PNW1PQmFnZk1XdkdZb2tra0tRdXZ3N0tqalplR3FkTWVLM2plTEp1dHBRcVRwUCszNWZveWtyYzhEOFFnakN4L29IeTRZdmNEQ3IxS1A4MmZVRGo1QSsxQUJOV1RuTnhpSnJuWFJ1aUVvYzZvOTdRKzNOZTVTem9vTWliSHl5c3FmRWlhZGltUkJYZEQ2VkZMeWQrS0FwdDd0a0hYSEtHdkxTaVZvMlRBczVLUzNHcDAvd243UTg0dmgxNzVxKzR2bEZzV1VxMkhHUzhhWUJjUXpncUVTWndyTzlhTVlNQmVFS1ZmUzN3bXN…",
+        "domain": ".pinterest.com"
+    },
+    {
+        "name": "_px3",
+        "value": "b4e01b7f9d5caa2b64d6f704e3e4e85a0a9a3b1751eeffe1a33d5827e14c0353:olamMpYzyXw2CbdjztMtjak584l6zYvNX3+mSH6SSiz/uv+KbnVci/6AWLLlRYM1qwgekZGV5DeKug59hzcr7g==:1000:UE9XNR5pVBfckfTl/i6U83Bgkuq3n1ZE1nrb2qoqLSMAD8W4gilWIj4rPaiPUg9i/lmcahwdsQLvywuYIQZ+uGJTkHQReAq4Ur2t6Lh1sKY0GdVLnefXrK2gnfKMA4TnV0arDlu06rUDaSS9mhhC2WGUQkGHvIcpmiAkI2vMdlhKkrhgdtm+pgY6RrHl/V78ObUu8MKsprRY7YrGFQ3F6FppShhUzHxb24NvM1T0v+8=",
+        "domain": ".stockx.com"
+    },
+    {
+        "name": "_px_7125205957_cs",
+        "value": "eyJpZCI6IjZkYTUwNjcwLTUwYmYtMTFlYy1hZDYzLTlkNjdkOTYzOGRmZiIsInN0b3JhZ2UiOnt9LCJleHBpcmF0aW9uIjoxNjM4MTU2ODI0Mzc1fQ==",
+        "domain": ".stockx.com"
+    },
+    {
+        "name": "_px_f394gi7Fvmc43dfg_user_id",
+        "value": "ODNhNTdhYzAtNTA2Mi0xMWVjLThjMmEtOWY0YjBhMWU1OTZl",
+        "domain": ".stockx.com"
+    },
+    {
+        "name": "_pxvid",
+        "value": "7fee8489-5062-11ec-a4b7-626f65786749",
+        "domain": ".stockx.com"
+    },
+    {
+        "name": "_rdt_uuid",
+        "value": "1638114494076.77612cb3-e800-41e1-a4c2-359604fcdc76",
+        "domain": ".stockx.com"
+    },
+    {
+        "name": "_scid",
+        "value": "095fb34d-f476-455a-88db-b3032aa53cfb",
+        "domain": ".stockx.com"
+    },
+    {
+        "name": "_uetsid",
+        "value": "94914f90506211ecb0c8550c8d53d8c8",
+        "domain": ".stockx.com"
+    },
+    {
+        "name": "_uetvid",
+        "value": "9491d120506211eca867cf0a08f96abc",
+        "domain": ".stockx.com"
+    },
+    {
+        "name": "ajs_anonymous_id",
+        "value": "29c4090e-26ca-48ed-98f8-7c731f812020",
+        "domain": ".stockx.com"
+    },
+    {
+        "name": "ajs_group_id",
+        "value": "ab_3ds_messaging_eu_web.false%2Cab_aia_pricing_visibility_web.novariant%2Cab_chk_germany_returns_cta_web.true%2Cab_chk_order_status_reskin_web.true%2Cab_chk_place_order_verbage_web.false%2Cab_chk_remove_affirm_bid_entry_web.true%2Cab_chk_remove_fees_bid_entry_web.false%2Cab_citcon_psp_web.true%2Cab_desktop_home_hero_section_web.control%2Cab_home_contentstack_modules_web.variant%2Cab_home_dynamic_content_targeting_web.variant%2Cab_low_inventory_badge_pdp_web.variant_1%2Cab_pirate_recently_viewed_browse_web.false%2Cab_product_page_refactor_web.true%2Cab_recently_viewed_pdp_web.variant_1%2Cab_test_korean_language_web.true%2Cab_web_aa_1103.false",
+        "domain": ".stockx.com"
+    },
+    {
+        "name": "brwsr",
+        "value": "97ab5dc9-5062-11ec-9c18-0f57ddd8d2d0",
+        "domain": ".pvxt.net"
+    },
+    {
+        "name": "c_user",
+        "value": "100001591236047",
+        "domain": ".facebook.com"
+    },
+    {
+        "name": "csv",
+        "value": "1",
+        "domain": ".reddit.com"
+    },
+    {
+        "name": "datr",
+        "value": "6kieYNDWOTmr1EdfS06u44Zp",
+        "domain": ".facebook.com"
+    },
+    {
+        "name": "dpr",
+        "value": "1.25",
+        "domain": ".facebook.com"
+    },
+    {
+        "name": "edgebucket",
+        "value": "YcvOsbnsOTgYObhwn6",
+        "domain": ".reddit.com"
+    },
+    {
+        "name": "forterToken",
+        "value": "4fe20007fe8c4ee7824103dc68b9aa60_1638155022449__UDF43_13ck",
+        "domain": ".stockx.com"
+    },
+    {
+        "name": "fr",
+        "value": "0NhqJmTKXisRPhmVJ.AWUn1-hGITnzHIpmS70PGcqSoJY.Bho9Si.TA.AAA.0.0.Bho9Si.AWUdERQwt_Y",
+        "domain": ".facebook.com"
+    },
+    {
+        "name": "hide_my_vices",
+        "value": "FALSE",
+        "domain": "<a href=\"http://stockx.com\" target=\"_blank\" rel=\"noopener\">stockx.com</a>"
+    },
+    {
+        "name": "language_code",
+        "value": "en",
+        "domain": "<a href=\"http://stockx.com\" target=\"_blank\" rel=\"noopener\">stockx.com</a>"
+    },
+    {
+        "name": "lastRskxRun",
+        "value": "1638155035430",
+        "domain": ".stockx.com"
+    },
+    {
+        "name": "loid",
+        "value": "0000000000ccblfpmr.2.1622019923000.Z0FBQUFBQmdyZzlUQUpDdHdlMWhUbEJfMkh4VWt6aTVFM3lkMW03anFXTEFpanJsd2lRdlhDekNCZi12Vm10VHZ2RHlwdU5FTERtMWV1bVhfT2pkYTVsckNyb1RTTERBNFlxeUt2ZUp5Zl82RFNkWFN1NzRwZmctR2U1Yml2c09zZzdOdEhXcmV0SEI",
+        "domain": ".reddit.com"
+    },
+    {
+        "name": "matchadform",
+        "value": "5",
+        "domain": ".w55c.net"
+    },
+    {
+        "name": "matchan",
+        "value": "5",
+        "domain": ".w55c.net"
+    },
+    {
+        "name": "matchbidswitch",
+        "value": "2",
+        "domain": ".w55c.net"
+    },
+    {
+        "name": "matchbluekai",
+        "value": "5",
+        "domain": ".w55c.net"
+    },
+    {
+        "name": "matchbp",
+        "value": "3",
+        "domain": ".w55c.net"
+    },
+    {
+        "name": "matchcasale",
+        "value": "5",
+        "domain": ".w55c.net"
+    },
+    {
+        "name": "matchcomscore",
+        "value": "2",
+        "domain": ".w55c.net"
+    },
+    {
+        "name": "matchcontextweb",
+        "value": "2",
+        "domain": ".w55c.net"
+    },
+    {
+        "name": "matchdemdex",
+        "value": "2",
+        "domain": ".w55c.net"
+    },
+    {
+        "name": "matchexelate",
+        "value": "2",
+        "domain": ".w55c.net"
+    },
+    {
+        "name": "matcheyeota",
+        "value": "5",
+        "domain": ".w55c.net"
+    },
+    {
+        "name": "matchfreewheel",
+        "value": "2",
+        "domain": ".w55c.net"
+    },
+    {
+        "name": "matchgoogle",
+        "value": "5",
+        "domain": ".w55c.net"
+    },
+    {
+        "name": "matchgroupm",
+        "value": "3",
+        "domain": ".w55c.net"
+    },
+    {
+        "name": "matchid5",
+        "value": "5",
+        "domain": ".w55c.net"
+    },
+    {
+        "name": "matchliveramp",
+        "value": "2",
+        "domain": ".w55c.net"
+    },
+    {
+        "name": "matchmedianet",
+        "value": "2",
+        "domain": ".w55c.net"
+    },
+    {
+        "name": "matchonemobile",
+        "value": "2",
+        "domain": ".w55c.net"
+    },
+    {
+        "name": "matchopenx",
+        "value": "5",
+        "domain": ".w55c.net"
+    },
+    {
+        "name": "matchpubmatic",
+        "value": "5",
+        "domain": ".w55c.net"
+    },
+    {
+        "name": "matchrubicon",
+        "value": "5",
+        "domain": ".w55c.net"
+    },
+    {
+        "name": "matchsharethrough",
+        "value": "2",
+        "domain": ".w55c.net"
+    },
+    {
+        "name": "matchsmartx",
+        "value": "2",
+        "domain": ".w55c.net"
+    },
+    {
+        "name": "matchspotx",
+        "value": "2",
+        "domain": ".w55c.net"
+    },
+    {
+        "name": "matchtapad",
+        "value": "2",
+        "domain": ".w55c.net"
+    },
+    {
+        "name": "matchtargus",
+        "value": "2",
+        "domain": ".w55c.net"
+    },
+    {
+        "name": "matchtradedesk",
+        "value": "2",
+        "domain": ".w55c.net"
+    },
+    {
+        "name": "matchtremor",
+        "value": "2",
+        "domain": ".w55c.net"
+    },
+    {
+        "name": "matchtriplelift",
+        "value": "5",
+        "domain": ".w55c.net"
+    },
+    {
+        "name": "matchtwitter",
+        "value": "2",
+        "domain": ".w55c.net"
+    },
+    {
+        "name": "matchxaxis",
+        "value": "2",
+        "domain": ".w55c.net"
+    },
+    {
+        "name": "matchyahoo",
+        "value": "2",
+        "domain": ".w55c.net"
+    },
+    {
+        "name": "muc",
+        "value": "35923231-52fb-4da1-8f5b-d28e272f7eae",
+        "domain": ".t.co"
+    },
+    {
+        "name": "ops_banner_id",
+        "value": "blt055adcbc7c9ad752",
+        "domain": "<a href=\"http://stockx.com\" target=\"_blank\" rel=\"noopener\">stockx.com</a>"
+    },
+    {
+        "name": "personalization_id",
+        "value": "\"v1_cPaHepdNVymWwHfks7KBfg==\"",
+        "domain": ".twitter.com"
+    },
+    {
+        "name": "pxcts",
+        "value": "68fab840-50bf-11ec-8cae-614fee8f207c",
+        "domain": ".stockx.com"
+    },
+    {
+        "name": "rCookie",
+        "value": "syb11met3apnubyyr8qoikwjf2axy",
+        "domain": ".stockx.com"
+    },
+    {
+        "name": "recent_srs",
+        "value": "t5_x56q7%2Ct5_2rhbw%2Ct5_2v6gg%2C",
+        "domain": ".reddit.com"
+    },
+    {
+        "name": "riskified_recover_updated_verbiage",
+        "value": "TRUE",
+        "domain": "<a href=\"http://stockx.com\" target=\"_blank\" rel=\"noopener\">stockx.com</a>"
+    },
+    {
+        "name": "rskxRunCookie",
+        "value": "0",
+        "domain": ".stockx.com"
+    },
+    {
+        "name": "sb",
+        "value": "6kieYEzcaOkIUlooEVP0zwn_",
+        "domain": ".facebook.com"
+    },
+    {
+        "name": "sc_at",
+        "value": "v2|H4sIAAAAAAAAAE3GwQ3AMAgEsImQQAeIdBtSclNk+H7rl5m9GxzhLIqfk7IrIbbeLvWOCV5zfSxRFqHA/VU/kjY8J0AAAAA=",
+        "domain": ".snapchat.com"
+    },
+    {
+        "name": "spin",
+        "value": "r.1004772822_b.trunk_t.1638095624_s.1_v.2_",
+        "domain": ".facebook.com"
+    },
+    {
+        "name": "stockx_default_collectibles_size",
+        "value": "All",
+        "domain": "<a href=\"http://stockx.com\" target=\"_blank\" rel=\"noopener\">stockx.com</a>"
+    },
+    {
+        "name": "stockx_dismiss_modal",
+        "value": "TRUE",
+        "domain": "<a href=\"http://stockx.com\" target=\"_blank\" rel=\"noopener\">stockx.com</a>"
+    },
+    {
+        "name": "stockx_dismiss_modal_expiration",
+        "value": "2021-12-05T15%3A47%3A55.129Z",
+        "domain": "<a href=\"http://stockx.com\" target=\"_blank\" rel=\"noopener\">stockx.com</a>"
+    },
+    {
+        "name": "stockx_dismiss_modal_set",
+        "value": "2021-11-28T15%3A47%3A55.129Z",
+        "domain": "<a href=\"http://stockx.com\" target=\"_blank\" rel=\"noopener\">stockx.com</a>"
+    },
+    {
+        "name": "stockx_experiments_id",
+        "value": "web-04b80d37-05de-4bdc-aab1-ca63fc7569ae",
+        "domain": "<a href=\"http://stockx.com\" target=\"_blank\" rel=\"noopener\">stockx.com</a>"
+    },
+    {
+        "name": "stockx_homepage",
+        "value": "collectibles",
+        "domain": "<a href=\"http://stockx.com\" target=\"_blank\" rel=\"noopener\">stockx.com</a>"
+    },
+    {
+        "name": "stockx_market_country",
+        "value": "VN",
+        "domain": "<a href=\"http://stockx.com\" target=\"_blank\" rel=\"noopener\">stockx.com</a>"
+    },
+    {
+        "name": "stockx_preferred_market_activity",
+        "value": "sales",
+        "domain": "<a href=\"http://stockx.com\" target=\"_blank\" rel=\"noopener\">stockx.com</a>"
+    },
+    {
+        "name": "stockx_product_visits",
+        "value": "2",
+        "domain": "<a href=\"http://stockx.com\" target=\"_blank\" rel=\"noopener\">stockx.com</a>"
+    },
+    {
+        "name": "stockx_session",
+        "value": "%22eed298a4-86cb-42c1-98a4-fcce1508653b%22",
+        "domain": "<a href=\"http://stockx.com\" target=\"_blank\" rel=\"noopener\">stockx.com</a>"
+    },
+    {
+        "name": "token_v2",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzQyNjk3MjQsInN1YiI6Ii1LU2V5aHZIemJyaTVXbE9nRzFTa1p3LUVpOXZTY3ciLCJsb2dnZWRJbiI6ZmFsc2UsInNjb3BlcyI6WyIqIiwiZW1haWwiLCJwaWkiXX0.qo-EnKvJHhbsRUXkmd9b6BoxmD4w4Iqg3hAulFS1CtU",
+        "domain": ".reddit.com"
+    },
+    {
+        "name": "tracker_device",
+        "value": "15b2290c-0e53-49b8-8396-55498a76ecf5",
+        "domain": "<a href=\"http://stockx.com\" target=\"_blank\" rel=\"noopener\">stockx.com</a>"
+    },
+    {
+        "name": "wfivefivec",
+        "value": "PBCWGcJh1LHuFO5",
+        "domain": ".w55c.net"
+    },
+    {
+        "name": "xs",
+        "value": "21%3AaxdtuI447pHlSA%3A2%3A1638005581%3A-1%3A6378%3A%3AAcVeWmempOCLUd8DC09Z4KlIBjN3OORmod7b2KsViw",
+        "domain": ".facebook.com"
+    }
+]

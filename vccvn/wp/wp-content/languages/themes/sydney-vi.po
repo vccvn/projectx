@@ -1,0 +1,1925 @@
+# Translation of Themes - Sydney in Vietnamese
+# This file is distributed under the same license as the Themes - Sydney package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2019-12-25 16:49:21+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: vi_VN\n"
+"Project-Id-Version: Themes - Sydney\n"
+
+#. Description of the theme
+msgid "Sydney is a powerful business theme that provides a fast way for companies or freelancers to create an awesome online presence. As well as being fully compatible with Elementor, Sydney brings plenty of customization possibilities like access to all Google Fonts, full color control, layout control, logo upload, full screen slider, header image, sticky navigation and much more. Also, Sydney provides all the construction blocks you need to rapidly create an engaging front page."
+msgstr "Sydney là một giao diện chủ đề kinh doanh mạnh mẽ giúp cho các công ty và freelancers tạo nên sự hiện diện của họ thật tuyệt vời và nhanh chóng. Bên cạnh việc tương thích hoàn hảo với Elementor, Sydney mang đến rất nhiều khả năng tùy biến như sử dụng tất cả các phông chữ của Google, chọn màu tùy ý, tùy chỉnh bố cục, chọn logo, thanh trượt toàn màn hình, tiêu đề bằng hình ảnh, thanh điều hướng đính kèm và nhiều chức năng tuyệt vời khác. Ngoài ra, Sydney còn cung cấp mọi công cụ cần thiết để bạn nhanh chóng tạo nên trang web của mình."
+
+#. Theme Name of the theme
+#: inc/onboarding/theme-info.php:136
+msgid "Sydney"
+msgstr "Sydney"
+
+#: inc/customizer.php:1040 inc/customizer.php:2264
+msgid "Modern"
+msgstr "Hiện đại"
+
+#: content-modern.php:40
+msgid "Read more"
+msgstr "Đọc thêm"
+
+#: inc/customizer.php:305 inc/customizer.php:2355
+msgid "or go to the Customizer"
+msgstr "hoặc đi đến phần Tùy Chỉnh"
+
+#: inc/customizer.php:287 inc/customizer.php:2339
+msgid "Click the pencil icon to change this text"
+msgstr "Nhấn vào biểu tượng bút chì để thay đổi nội dung"
+
+#. Template Name of the theme
+msgid "No sidebar"
+msgstr "Không có thanh bên"
+
+#. translators: %2$s: plugin name in screen reader markup
+#: plugins/class-tgm-plugin-activation.php:2614
+msgid "Activate %2$s"
+msgstr "Kích hoạt %2$s"
+
+#. translators: %2$s: plugin name in screen reader markup
+#: plugins/class-tgm-plugin-activation.php:2608
+msgid "Update %2$s"
+msgstr "Cập nhật %2$s"
+
+#. translators: %2$s: plugin name in screen reader markup
+#: plugins/class-tgm-plugin-activation.php:2603
+msgid "Install %2$s"
+msgstr "Cài đặt %2$s"
+
+#: plugins/class-tgm-plugin-activation.php:2533
+msgid "No plugins to install, update or activate."
+msgstr "Không có tiện ích bổ sung nào để cài đặt, cập nhật hoặc kích hoạt."
+
+#. translators: 1: install status, 2: update status
+#: plugins/class-tgm-plugin-activation.php:2342
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr "%1$s, %2$s"
+
+#. translators: %s: version number
+#: plugins/class-tgm-plugin-activation.php:1982
+msgid "TGMPA v%s"
+msgstr "TGMPA v%s"
+
+#: plugins/class-tgm-plugin-activation.php:396
+msgid "There are one or more required or recommended plugins to install, update or activate."
+msgstr "Có một hoặc nhiều tiện ích bổ sung cần thiết hoặc được đề xuất để cài đặt, cập nhật hoặc kích hoạt."
+
+#. translators: %s: plugin name.
+#: plugins/class-tgm-plugin-activation.php:332
+msgid "Updating Plugin: %s"
+msgstr "Đang cập nhật tiện ích bổ sung: %s"
+
+#: inc/template-tags.php:81
+msgctxt "post date"
+msgid "Posted %s"
+msgstr "Đã đăng %s"
+
+#: inc/customizer.php:1684
+msgid "Single post title size"
+msgstr "Kích cỡ tiêu đề một bài viết"
+
+#: inc/customizer.php:1039 inc/customizer.php:2263
+msgid "Classic (alternative)"
+msgstr "Cổ điển (thay thế)"
+
+#. Template Name of the theme
+msgid "Page builder ready"
+msgstr "Trình dựng trang đã sẵn sàng"
+
+#: inc/onboarding/theme-info.php:242
+msgid "Priority support"
+msgstr "Hỗ trợ ưu tiên"
+
+#: inc/onboarding/theme-info.php:237
+msgid "5 Extra Page Templates (Contact, Featured Header - Default, Featured Header - Wide, No Header - Default, No Header - Wide)"
+msgstr "5 Mẫu trang bổ sung (Liên hệ, Tiêu đề nổi bật - Mặc định, Tiêu đề nổi bật - Rộng, Không có tiêu đề - Mặc định, Không có tiêu đề - Rộng)"
+
+#: inc/onboarding/theme-info.php:232
+msgid "WooCommerce compatible"
+msgstr "Tương thích với WooCommerce"
+
+#: inc/onboarding/theme-info.php:227
+msgid "Single Post/Page Options"
+msgstr "Bài viết/Tùy chỉnh trang"
+
+#: inc/onboarding/theme-info.php:222
+msgid "Header support for shortcodes"
+msgstr "Tiêu đề hỗ trợ shortcodes"
+
+#: inc/onboarding/theme-info.php:217
+msgid "Header support for Crelly Slider"
+msgstr "Tiêu đề hỗ trợ Crelly Slider"
+
+#: inc/onboarding/theme-info.php:212
+msgid "Extra Customizer Options (Front Page Section Titles, Single Employees, Single Projects, Header Contact Info, Buttons)"
+msgstr "Tùy chọn tùy chỉnh bổ sung (Tiêu đề trang trước, nhân viên đơn, dự án đơn, thông tin liên hệ tiêu đề, nút)"
+
+#: inc/onboarding/theme-info.php:207
+msgid "Extra widgets (timeline, latest news in carousel, pricing tables, a new employees widget and a new contact widget)"
+msgstr "Các tiện ích bổ sung (dòng thời gian, bảng tin tức mới nhất, bảng giá, tiện ích nhân viên mới và tiện ích liên hệ mới)"
+
+#: inc/onboarding/theme-info.php:202
+msgid "Footer Credits option"
+msgstr "Tùy chọn Cuối trang"
+
+#: inc/onboarding/theme-info.php:197
+msgid "Background image support"
+msgstr "Hỗ trợ hình nền"
+
+#: inc/onboarding/theme-info.php:192
+msgid "Widgetized footer"
+msgstr "Hỗ trợ widget cuối trang"
+
+#: inc/onboarding/theme-info.php:107 inc/onboarding/theme-info.php:182
+msgid "Color options"
+msgstr "Tùy chọn màu"
+
+#: inc/onboarding/theme-info.php:177
+msgid "Polylang integration"
+msgstr "Tích hợp Polylang"
+
+#: inc/onboarding/theme-info.php:172
+msgid "Translation ready"
+msgstr "Bản dịch đã hoàn thành"
+
+#: inc/onboarding/theme-info.php:167
+msgid "Front Page Blocks"
+msgstr "Các khối trang chính"
+
+#: inc/onboarding/theme-info.php:162
+msgid "Slider, image or video header"
+msgstr "Thanh trượt, hình ảnh hoặc tiêu đề video"
+
+#: inc/onboarding/theme-info.php:157
+msgid "Social Icons"
+msgstr "Biểu tượng mạng xã hội"
+
+#: inc/onboarding/theme-info.php:142
+msgid "Access to all Google Fonts"
+msgstr "Sử dụng tất cả phông chữ của Google"
+
+#: inc/onboarding/theme-info.php:137
+msgid "Sydney Pro"
+msgstr "Sydney Pro"
+
+#: inc/onboarding/theme-info.php:135
+msgid "Feature"
+msgstr "Tính năng"
+
+#: inc/onboarding/theme-info.php:127
+msgid "See the Documentation"
+msgstr "Xem Tài liệu Hướng dẫn"
+
+#: inc/onboarding/theme-info.php:126
+msgid "Our documentation can help you learn how to use the theme and also provides you with premade code snippets and answers to FAQs."
+msgstr "Tài liệu Hướng dẫn của chúng tôi có thể chỉ cho bạn biết cách sử dụng chủ đề và cũng cung cấp cho bạn các đoạn code thường dùng và trả lời các FAQs."
+
+#: inc/onboarding/theme-info.php:121
+msgid "Visit the forums"
+msgstr "Đi đến diễn đàn"
+
+#: inc/onboarding/theme-info.php:120
+msgid "Need help? Go ahead and visit our support forums and we'll be happy to assist you with any theme related questions you might have"
+msgstr "Cần trợ giúp? Hãy truy cập vào diễn đàn hỗ trợ và chúng tôi rất vui được hỗ trợ bạn với bất kỳ câu hỏi nào về chủ đề này."
+
+#: inc/onboarding/theme-info.php:119
+msgid "Visit our forums"
+msgstr "Đi đến diễn đàn"
+
+#: inc/onboarding/theme-info.php:95
+msgid "Go to the automatic importer"
+msgstr "Đi đến trình nhập tự động"
+
+#: inc/onboarding/theme-info.php:40
+msgid "Free vs Pro"
+msgstr "Miễn phí vs Pro"
+
+#: inc/onboarding/theme-info.php:38
+msgid "Getting started"
+msgstr "Bắt đầu"
+
+#: inc/onboarding/theme-info.php:30
+msgid "Hello, %s,"
+msgstr "Xin chào, %s,"
+
+#: functions.php:559
+msgid "Get started with Sydney"
+msgstr "Bắt đầu với Sydney"
+
+#: functions.php:558
+msgid "Welcome to Sydney. To get started please make sure to visit our <a href=\"%s\">welcome page</a>."
+msgstr "Chào mừng đến với Sydney. Để bắt đầu, hãy chắc chắn rằng bạn đã truy cập <a href=\"%s\">welcome page</a>."
+
+#: inc/onboarding/theme-info.php:152
+msgid "Parallax backgrounds"
+msgstr "Hình nền Parallax"
+
+#: inc/onboarding/theme-info.php:147 inc/customizer.php:211
+#: inc/customizer.php:2279
+msgid "Responsive"
+msgstr "Responsive"
+
+#: inc/customizer.php:210 inc/customizer.php:2278
+msgid "Full screen"
+msgstr "Toàn màn hình "
+
+#: inc/customizer.php:206
+msgid "Slider mobile behavior"
+msgstr "Hành vi trượt trên di động"
+
+#: widgets/video-widget.php:32
+msgid "Text before the play button (only for lightbox mode):"
+msgstr "Văn bản trước nút play (chỉ dành cho chế độ lightbox):"
+
+#: widgets/video-widget.php:29
+msgid "Lightbox"
+msgstr "Lightbox"
+
+#: widgets/video-widget.php:28
+msgid "Normal"
+msgstr "Bình thường"
+
+#: widgets/video-widget.php:26
+msgid "Video mode:"
+msgstr "Chế độ Video:"
+
+#: inc/customizer.php:1894
+msgid "Mobile menu button"
+msgstr "Nút Menu trên di động"
+
+#: inc/customizer.php:1835
+msgid "Menu items hover"
+msgstr "Di chuột vào thành phần Menu"
+
+#: inc/customizer.php:156 inc/customizer.php:179 inc/customizer.php:2207
+msgid "Video"
+msgstr "Video"
+
+#: inc/so-page-builder.php:65
+msgid "Add a value in the field to change the top/bottom row padding, otherwise 100px will be applied by default"
+msgstr "Thêm một giá trị vào trường này để thay đổi phần đệm hàng trên cùng / dưới cùng, nếu không 100px sẽ được áp dụng theo mặc định"
+
+#: widgets/fp-services-type-b.php:54 widgets/fp-services-type-a.php:46
+msgid "Excerpt"
+msgstr "Tóm tắt"
+
+#: widgets/fp-services-type-b.php:53 widgets/fp-services-type-a.php:45
+msgid "Full content"
+msgstr "Toàn bộ nội dung"
+
+#: widgets/fp-services-type-b.php:51 widgets/fp-services-type-a.php:43
+msgid "Content to display:"
+msgstr "Nội dung hiển thị:"
+
+#: inc/upsell/class-customize.php:77
+msgid "Get Sydney Pro"
+msgstr "Mua Sydney Pro"
+
+#: inc/upsell/class-customize.php:76
+msgid "Ready for more?"
+msgstr "Sẵn sàng để biết thêm?"
+
+#: inc/so-page-builder.php:198
+msgid "This applies to all headings in the widget, except the widget title"
+msgstr "Điều này áp dụng cho tất cả các tiêu đề trong widget, ngoại trừ tiêu đề widget"
+
+#: inc/so-page-builder.php:194
+msgid "Headings color"
+msgstr "Màu Tiêu đề"
+
+#: inc/so-page-builder.php:187
+msgid "Widget title color"
+msgstr "Màu tiêu đề Widget"
+
+#: inc/so-page-builder.php:183
+msgid "This setting depends on the content, it may or may not work"
+msgstr "Cài đặt này phụ thuộc vào nội dung, nó có thể hoặc không hoạt động"
+
+#: inc/so-page-builder.php:180
+msgid "Right"
+msgstr "Bên phải"
+
+#: inc/so-page-builder.php:179
+msgid "Center"
+msgstr "Chính giữa"
+
+#: inc/so-page-builder.php:178
+msgid "Left"
+msgstr "Bên trái"
+
+#: inc/so-page-builder.php:174
+msgid "Content alignment"
+msgstr "Căn chỉnh nội dung"
+
+#: inc/so-page-builder.php:113
+msgid "Overlay color"
+msgstr "Lớp phủ màu"
+
+#: inc/so-page-builder.php:107
+msgid "Disable row overlay?"
+msgstr "Vô hiệu hóa lớp phủ dòng?"
+
+#: inc/customizer.php:2075
+msgid "[DEPRECATED] Please use the color option from Edit Row > Design > Overlay color"
+msgstr "[ĐÃ CŨ] Vui lòng sử dụng tùy chọn màu từ Chỉnh sửa hàng> Thiết kế> Màu lớp phủ"
+
+#: inc/customizer.php:1701
+msgid "Header"
+msgstr "Tiêu đề"
+
+#: inc/customizer.php:1696
+msgid "Colors"
+msgstr "Màu sắc"
+
+#: widgets/fp-portfolio.php:163
+msgid "Show project title?"
+msgstr "Hiện tiêu đề dự án?"
+
+#: widgets/fp-portfolio.php:160
+msgid "\"Show all\" text:"
+msgstr "Văn bản \"Hiện tất cả\":"
+
+#: widgets/fp-portfolio.php:159
+msgid "Show navigation filter? (Category slugs must be specified)."
+msgstr "Hiển thị bộ lọc điều hướng? (Chuyên mục của slugs phải được chỉ định)."
+
+#: widgets/fp-portfolio.php:156
+msgid "Enter the slugs (comma separated) for your categories or leave empty to show all projects."
+msgstr "Nhập các slugs (được phân tách bằng dấu phẩy) cho các danh mục của bạn hoặc để trống để hiển thị tất cả các dự án."
+
+#: widgets/fp-portfolio.php:154
+msgid "Number of projects to show (-1 shows all of them):"
+msgstr "Số dự án sẽ hiển thị (-1 để hiển thị tất cả):"
+
+#: widgets/fp-portfolio.php:35 widgets/fp-portfolio.php:148
+msgid "Show all"
+msgstr "Hiện tất cả"
+
+#: widgets/fp-portfolio.php:13
+msgid "Sydney FP: Portfolio"
+msgstr "Sydney FP: Portfolio"
+
+#: widgets/fp-portfolio.php:12
+msgid "Display your projects in a grid."
+msgstr "Hiển thị các dự án của bạn theo dạng lưới."
+
+#: inc/customizer.php:108
+msgid "Page wrapper - bottom padding"
+msgstr "Bao trang - padding phía dưới"
+
+#: widgets/fp-clients.php:35
+msgid "Open clients links in a new tab?"
+msgstr "Mở liên kết khách hàng trong một tab mới?"
+
+#: inc/customizer.php:111
+msgid "Bottom padding for the page wrapper (the space between the page content and the footer)"
+msgstr "Đệm phía dưới dành cho trình bao bọc trang (khoảng trắng giữa nội dung trang và chân trang)"
+
+#: inc/customizer.php:101
+msgid "100"
+msgstr "100"
+
+#: inc/customizer.php:88
+msgid "Top padding for the page wrapper (the space between the header and the page title)"
+msgstr "Phần đệm trên cùng cho trình bao bọc trang (khoảng trắng giữa tiêu đề và tiêu đề trang)"
+
+#: inc/customizer.php:85
+msgid "Page wrapper - top padding"
+msgstr "Phần bọc trang - đệm trên cùng"
+
+#: inc/customizer.php:78
+msgid "83"
+msgstr "83"
+
+#: inc/onboarding/theme-info.php:39
+msgid "Support"
+msgstr "Trợ giúp"
+
+#: widgets/fp-testimonials.php:33
+msgid "Autoplay time [ms]"
+msgstr "Thời gian tự động phát [ms]"
+
+#: inc/onboarding/theme-info.php:125
+msgid "Documentation"
+msgstr "Tài liệu"
+
+#: inc/onboarding/theme-info.php:21
+msgid "Sydney Info"
+msgstr "Thông tin về Sydney"
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: plugins/class-tgm-plugin-activation.php:3498
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr "Đang cập nhật gói mở rộng %1$s (%2$d/%3$d)"
+
+#: plugins/class-tgm-plugin-activation.php:2759
+msgid "No plugins were selected to be updated. No action taken."
+msgstr "Không có plugin nào được chọn để cập nhật. Không có hành động nào xảy ra."
+
+#: plugins/class-tgm-plugin-activation.php:2908
+msgid "No plugins were selected to be activated. No action taken."
+msgstr "Không có plugin nào được chọn để kích hoạt. Không có hành động nào xảy ra."
+
+#: plugins/class-tgm-plugin-activation.php:2802
+msgid "No plugins are available to be updated at this time."
+msgstr "Không có plugin nào có sẵn để được cập nhật tại thời điểm này."
+
+#: plugins/class-tgm-plugin-activation.php:2757
+msgid "No plugins were selected to be installed. No action taken."
+msgstr "Không có plugin nào được chọn để cài đặt. Không có hành động nào xảy ra."
+
+#: plugins/class-tgm-plugin-activation.php:2723
+msgid "Update"
+msgstr "Cập nhật"
+
+#: plugins/class-tgm-plugin-activation.php:2684
+msgid "Upgrade message from the plugin author:"
+msgstr "Thông báo nâng cấp từ tác giả plugin:"
+
+#: plugins/class-tgm-plugin-activation.php:2553
+msgid "Version"
+msgstr "Phiên bản"
+
+#: plugins/class-tgm-plugin-activation.php:2482
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr "Không rõ"
+
+#: plugins/class-tgm-plugin-activation.php:2498
+msgid "Minimum required version:"
+msgstr "Yêu cầu phiên bản tối thiểu:"
+
+#: plugins/class-tgm-plugin-activation.php:2490
+msgid "Installed version:"
+msgstr "Phiên bản đã cài đặt:"
+
+#: plugins/class-tgm-plugin-activation.php:2510
+msgid "Available version:"
+msgstr "Phiên bản có sẵn:"
+
+#. translators: 1: number of plugins.
+#: plugins/class-tgm-plugin-activation.php:2400
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] "Kích hoạt <span class=\"count\">(%s)</span>"
+
+#. translators: 1: number of plugins.
+#: plugins/class-tgm-plugin-activation.php:2396
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] "Nâng Cấp Hữu Dụng <span class=\"count\">(%s)</span>"
+
+#. translators: 1: number of plugins.
+#: plugins/class-tgm-plugin-activation.php:2392
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] "Cài đặt <span class=\"count\">(%s)</span>"
+
+#. translators: 1: number of plugins.
+#: plugins/class-tgm-plugin-activation.php:2388
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] "Toàn bộ<span class=\"count\">(%s)</span>"
+
+#: plugins/class-tgm-plugin-activation.php:2327
+msgid "Required Update not Available"
+msgstr "Yêu cầu cập nhật không có sẵn"
+
+#: plugins/class-tgm-plugin-activation.php:2333
+msgid "Update recommended"
+msgstr "Cập nhật được đề xuất"
+
+#: plugins/class-tgm-plugin-activation.php:2330
+msgid "Requires Update"
+msgstr "Yêu cầu cập nhật"
+
+#: plugins/class-tgm-plugin-activation.php:2321
+msgid "Active"
+msgstr "Hoạt động"
+
+#: plugins/class-tgm-plugin-activation.php:934
+msgid "The remote plugin package does not contain a folder with the desired slug and renaming did not work."
+msgstr "Gói plugin từ xa không chứa thư mục với slugs mong muốn và không thể đổi tên."
+
+#. translators: 1: plugin name(s).
+#: plugins/class-tgm-plugin-activation.php:352
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] "Có bản cập nhật cho: %1$s."
+
+#: plugins/class-tgm-plugin-activation.php:375
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] "Bắt đầu cập nhật plugin"
+
+#. translators: 1: plugin name.
+#: plugins/class-tgm-plugin-activation.php:390
+msgid "No action taken. Plugin %1$s was already active."
+msgstr "Không có hành động xảy ra. Plugin %1$s đã hoạt động."
+
+#. translators: 1: plugin name.
+#: plugins/class-tgm-plugin-activation.php:392
+msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
+msgstr "Plugin không được kích hoạt. Cần một phiên bản cao hơn của %s cho chủ đề này. Vui lòng cập nhật plugin."
+
+#: plugins/class-tgm-plugin-activation.php:397
+msgid "Please contact the administrator of this site for help."
+msgstr "Vui lòng liên hệ với quản trị viên của trang web này để được giúp đỡ."
+
+#: plugins/class-tgm-plugin-activation.php:522
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr "Plugin này cần được cập nhật để tương thích với chủ đề của bạn."
+
+#: plugins/class-tgm-plugin-activation.php:523
+msgid "Update Required"
+msgstr "Cập nhật được yêu cầu"
+
+#: plugins/class-tgm-plugin-activation.php:934
+#: plugins/class-tgm-plugin-activation.php:937
+msgid "Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines."
+msgstr "Vui lòng liên hệ với nhà cung cấp plugin và yêu cầu họ đóng gói plugin theo hướng dẫn của WordPress."
+
+#: plugins/class-tgm-plugin-activation.php:937
+msgid "The remote plugin package consists of more than one file, but the files are not packaged in a folder."
+msgstr "Gói plugin từ xa bao gồm nhiều hơn một tập tin, nhưng các tập tin đó không được đóng gói trong cùng một thư mục."
+
+#: plugins/class-tgm-plugin-activation.php:1121
+#: plugins/class-tgm-plugin-activation.php:2948
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr "và"
+
+#: plugins/class-tgm-plugin-activation.php:2295
+msgid "External Source"
+msgstr "Nguồn bên ngoài"
+
+#: plugins/class-tgm-plugin-activation.php:333
+msgid "Something went wrong with the plugin API."
+msgstr "Có gì đó không đúng với API của plugin."
+
+#. Template Name of the theme
+#: inc/customizer.php:719
+msgid "Full width"
+msgstr "Chiều rộng đầy đủ"
+
+#. Template Name of the theme
+msgid "Front Page"
+msgstr "Trang chủ"
+
+#: widgets/video-widget.php:24
+msgid "Paste the URL of the video (only from a network that supports oEmbed, like Youtube, Vimeo etc.):"
+msgstr "Dán URL của video (chỉ hỗ trợ oEmbed, như Youtube, Vimeo, v.v.):"
+
+#: widgets/video-widget.php:7
+msgid "Sydney: Video"
+msgstr "Sydney: Video"
+
+#: widgets/video-widget.php:6
+msgid "Display a video from Youtube, Vimeo etc."
+msgstr "Hiển thị video từ Youtube, Vimeo etc."
+
+#: widgets/fp-testimonials.php:31
+msgid "Enter the slug for your category or leave empty to show all testimonials."
+msgstr "Nhập slug cho danh mục của bạn hoặc để trống để hiển thị tất cả lời nhận xét."
+
+#: widgets/fp-testimonials.php:27
+msgid "The URL for your button [In case you want a button below your testimonials block]"
+msgstr "URL cho nút của bạn [Trong trường hợp bạn muốn có một nút bên dưới khối lời nhận xét của bạn]"
+
+#: widgets/fp-testimonials.php:25
+msgid "Number of testimonials to show (-1 shows all of them):"
+msgstr "Số lời nhận xét được hiển thị (-1 hiển thị tất cả):"
+
+#: widgets/fp-testimonials.php:20
+msgid "In order to display this widget, you must first add some testimonials from your admin area."
+msgstr "Để hiển thị widget này, trước tiên bạn phải thêm một số lời nhận xét từ khu vực quản trị của bạn."
+
+#: widgets/fp-testimonials.php:7
+msgid "Sydney FP: Testimonials"
+msgstr "Sydney FP: Lời nhận xét"
+
+#: widgets/fp-testimonials.php:6
+msgid "Display your testimonials in a slider."
+msgstr "Hiển thị lời nhận xét của bạn theo dạng thanh trượt."
+
+#: widgets/fp-testimonials.php:108
+msgid "See all our testimonials"
+msgstr "Xem tất cả lời nhận xét"
+
+#: widgets/fp-testimonials.php:29
+msgid "The text for the button [Defaults to <em>See all our testimonials</em> if left empty]"
+msgstr "Chữ trên nút [Mặc định là <em>Xem tất cả lời nhận xét của chúng tôi</em> nếu để trống]"
+
+#: widgets/fp-social.php:65
+msgid "&mdash; Select &mdash;"
+msgstr "&mdash; Chọn &mdash;"
+
+#: widgets/fp-social.php:63
+msgid "Select your social menu:"
+msgstr "Chọn menu mạng xã hội của bạn:"
+
+#: widgets/fp-social.php:61
+msgid "In order to display your social icons in a widget, all you need to do is go to <strong>Appearance > Menus</strong> and create a menu containing links to your social profiles, then assign that menu here. Supported networks: Facebook, Twitter, Google Plus, Instagram, Dribble, Vimeo, Linkedin, Youtube, Flickr, Pinterest, Tumblr, Foursquare, Behance."
+msgstr "Để hiển thị các biểu tượng xã hội của bạn trong một widget, tất cả những gì bạn cần làm là vào <strong> Giao diện> Menu </strong> và tạo một menu chứa các liên kết đến hồ sơ xã hội của bạn, sau đó gán menu đó tại đây. Các mạng được hỗ trợ: Facebook, Twitter, Google Plus, Instagram, Dribble, Vimeo, Linkedin, Youtube, Flickr, Pinterest, Tumblr, Foursquare, Behance."
+
+#: widgets/fp-social.php:53
+msgid "No menus have been created yet. <a href=\"%s\">Create some</a>."
+msgstr "Hiện chưa có trình đơn nào được tạo. Hãy <a href=\"%s\">bắt đầu tạo mới</a>."
+
+#: widgets/fp-social.php:6
+msgid "Sydney FP: Social Profile"
+msgstr "Sydney FP: Hồ sơ mạng xã hội"
+
+#: widgets/fp-social.php:5
+msgid "Display your social profile on your front page"
+msgstr "Hiển thị hồ sơ mạng xã hội trên trang nhất của bạn"
+
+#: widgets/fp-skills.php:68
+msgid "Fourth skill value"
+msgstr "Giá trị kỹ năng thứ 4"
+
+#: widgets/fp-skills.php:63
+msgid "Fourth skill name"
+msgstr "Tên kỹ năng thứ 4"
+
+#: widgets/fp-skills.php:57
+msgid "Third skill value"
+msgstr "Giá trị kỹ năng thứ 3"
+
+#: widgets/fp-skills.php:52
+msgid "Third skill name"
+msgstr "Tên kỹ năng thứ 3"
+
+#: widgets/fp-skills.php:46
+msgid "Second skill value"
+msgstr "Giá trị kỹ năng thứ 2"
+
+#: widgets/fp-skills.php:41
+msgid "Second skill name"
+msgstr "Tên kỹ năng thứ 2"
+
+#: widgets/fp-skills.php:35
+msgid "First skill value"
+msgstr "Giá trị kỹ năng thứ 1"
+
+#: widgets/fp-skills.php:30
+msgid "First skill name"
+msgstr "Tên kỹ năng thứ 1"
+
+#: widgets/fp-skills.php:7
+msgid "Sydney FP: Skills"
+msgstr "Sydney FP: Kỹ năng"
+
+#: widgets/fp-skills.php:6
+msgid "Show your visitors some of your skills."
+msgstr "Cho khách truy cập xem một số kỹ năng của bạn."
+
+#: widgets/fp-services-type-b.php:41
+msgid "Number of columns:"
+msgstr "Số cột:"
+
+#: widgets/fp-services-type-b.php:12
+msgid "Sydney FP: Services type B"
+msgstr "Sydney FP: Dịch vụ loại B"
+
+#: widgets/fp-services-type-b.php:160 widgets/fp-services-type-a.php:145
+msgid "See all our services"
+msgstr "Xem tất cả dịch vụ của chúng tôi"
+
+#: widgets/fp-services-type-a.php:42
+msgid "Display services in two columns instead of three?"
+msgstr "Hiển thị dịch vụ trong hai cột thay vì ba?"
+
+#: widgets/fp-services-type-b.php:38 widgets/fp-services-type-a.php:39
+msgid "Enter the slug for your category or leave empty to show all services."
+msgstr "Nhập slug cho danh mục của bạn hoặc để trống để hiển thị tất cả các dịch vụ."
+
+#: widgets/fp-services-type-b.php:36 widgets/fp-services-type-a.php:37
+msgid "The text for the button [Defaults to <em>See all our services</em> if left empty]"
+msgstr "Văn bản cho nút [Mặc định cho <em>Xem tất cả các dịch vụ của chúng tôi</em> nếu để trống]"
+
+#: widgets/fp-services-type-b.php:34 widgets/fp-services-type-a.php:35
+msgid "The URL for your button [In case you want a button below your services block]"
+msgstr "URL cho nút của bạn [Trong trường hợp bạn muốn có nút bên dưới khối dịch vụ của mình]"
+
+#: widgets/fp-services-type-b.php:32 widgets/fp-services-type-a.php:33
+msgid "Number of services to show (-1 shows all of them):"
+msgstr "Số lượng dịch vụ sẽ hiển thị (-1 hiển thị tất cả):"
+
+#: widgets/fp-services-type-b.php:27 widgets/fp-services-type-a.php:28
+msgid "In order to display this widget, you must first add some services from your admin area."
+msgstr "Để hiển thị widget này, trước tiên bạn phải thêm một số dịch vụ từ khu vực quản trị của bạn."
+
+#: widgets/fp-services-type-a.php:12
+msgid "Sydney FP: Services Type A"
+msgstr "Sydney FP: Dịch vụ loại A"
+
+#: widgets/fp-services-type-b.php:11 widgets/fp-services-type-a.php:11
+msgid "Show what services you are able to provide."
+msgstr "Hiển thị những dịch vụ bạn có thể cung cấp."
+
+#: widgets/fp-list.php:75
+msgid "Call to action button text:"
+msgstr "Văn bản nút kêu gọi hành động"
+
+#: widgets/fp-list.php:72
+msgid "Call to action button URL:"
+msgstr "Văn bản trên URL kêu gọi hành động:"
+
+#: widgets/fp-list.php:69
+msgid "Add your list items here. One item per row, start each row with <strong>^</strong>. Example: <strong>^ list item </strong>"
+msgstr "Thêm các mục của bạn ở đây. Một mục trên mỗi hàng, bắt đầu mỗi hàng bằng <strong>^</strong>. Ví dụ: <strong>^mục</strong>"
+
+#: widgets/fp-list.php:66
+msgid "Add a bit of text here. It will be displayed."
+msgstr "Thêm một ít văn bản ở đây. Nó sẽ được hiển thị."
+
+#: widgets/fp-social.php:58 widgets/fp-list.php:63 widgets/fp-portfolio.php:152
+msgid "Title:"
+msgstr "Tiêu đề:"
+
+#: widgets/fp-list.php:13
+msgid "Sydney FP: List"
+msgstr "Sydney FP: Danh sách"
+
+#: widgets/fp-list.php:11
+msgid "A simple list widget"
+msgstr "Một danh sách widget đơn giản"
+
+#: widgets/fp-latest-news.php:51 widgets/fp-latest-news.php:53
+msgid "See all our news"
+msgstr "Xem tất cả tin tức của chúng tôi"
+
+#: widgets/fp-latest-news.php:26
+msgid "Add the text for the button here if you want to change the default <em>See all our news</em>"
+msgstr "Thêm chữ cho nút ở đây nếu bạn muốn thay đổi chữ mặc định <em>Xem tất cả tin tức của chúng tôi</em>"
+
+#: widgets/fp-latest-news.php:23
+msgid "Enter the slug for your category or leave empty to show posts from all categories."
+msgstr "Nhập slug cho danh mục của bạn hoặc để trống để hiển thị bài đăng từ tất cả các danh mục."
+
+#: widgets/fp-latest-news.php:7
+msgid "Sydney FP: Latest News"
+msgstr "Sydney FP: Tin mới nhất"
+
+#: widgets/fp-latest-news.php:6
+msgid "Show the latest news from your blog."
+msgstr "Hiển thị những tin tức mới nhất từ ​​blog của bạn."
+
+#: widgets/fp-facts.php:96
+msgid "Fourth fact icon"
+msgstr "Biểu tượng thực tế thứ 4"
+
+#: widgets/fp-facts.php:30
+msgid "Usage example: <strong>fa-android</strong>"
+msgstr "Vi dụ cách sử dụng: <strong>fa-android</strong>"
+
+#: widgets/fp-facts.php:30
+msgid "here."
+msgstr "tại đây."
+
+#: widgets/fp-facts.php:30
+msgid "You can find a list of the available icons "
+msgstr "Bạn có thể tìm thấy danh sách các biểu tượng có sẵn"
+
+#: widgets/fp-facts.php:7
+msgid "Show your visitors some facts about your company."
+msgstr "Hiển thị cho người truy cập một số sự thật về công ty của bạn."
+
+#: widgets/fp-employees.php:6
+msgid "Display your team members in a stylish way."
+msgstr "Hiển thị các thành viên trong nhóm của bạn một cách sành điệu."
+
+#: widgets/fp-clients.php:111
+msgid "See all our clients"
+msgstr "Xem tất cả khách hàng của chúng tôi"
+
+#: widgets/fp-clients.php:32
+msgid "Enter the slug for your category or leave empty to show all clients."
+msgstr "Nhập slug cho danh mục của bạn hoặc để trống để hiển thị tất cả các khách hàng."
+
+#: widgets/fp-clients.php:30
+msgid "The text for the button [Defaults to <em>See all our clients</em> if left empty]"
+msgstr "Chữ cho nút [Mặc định là <em>Xem tất cả khách hàng của chúng tôi</em> nếu để trống]"
+
+#: widgets/fp-clients.php:28
+msgid "The URL for your button [In case you want a button below your clients block]"
+msgstr "URL cho nút của bạn [Trong trường hợp bạn muốn có một nút bên dưới khối khách hàng của mình]"
+
+#: widgets/fp-clients.php:26
+msgid "Number of clients to show (-1 shows all of them):"
+msgstr "Số lượng khách hàng hiển thị (-1 hiển thị tất cả):"
+
+#: widgets/fp-clients.php:21
+msgid "In order to display this widget, you must first add some clients from your admin area. Set your client logos as featured images."
+msgstr "Để hiển thị widget này, trước tiên bạn phải thêm một số khách hàng từ khu vực quản trị của bạn. Đặt logo khách hàng của bạn như hình ảnh đặc trưng."
+
+#: widgets/fp-clients.php:7
+msgid "Sydney FP: Clients"
+msgstr "Sydney FP: Khách hàng"
+
+#: widgets/fp-clients.php:6
+msgid "Display your clients list."
+msgstr "Hiển thị danh sách khách hàng."
+
+#: widgets/fp-call-to-action.php:27
+msgid "Display the button inline with the text?"
+msgstr "Hiển thị nút cùng dòng với văn bản?"
+
+#: widgets/fp-facts.php:91
+msgid "Fourth fact value"
+msgstr "Giá trị sự kiện thứ tư"
+
+#: widgets/fp-facts.php:86
+msgid "Fourth fact name"
+msgstr "Tên sự kiện thứ tư"
+
+#: widgets/fp-facts.php:80
+msgid "Third fact icon"
+msgstr "Biểu tượng sự kiện thứ ba"
+
+#: widgets/fp-facts.php:75
+msgid "Third fact value"
+msgstr "Giá trị sự kiện thứ ba"
+
+#: widgets/fp-facts.php:70
+msgid "Third fact name"
+msgstr "Tên sự kiện thứ ba"
+
+#: widgets/fp-facts.php:64
+msgid "Second fact icon"
+msgstr "Biểu tượng sự kiện thứ hai"
+
+#: widgets/fp-facts.php:59
+msgid "Second fact value"
+msgstr "Giá trị sự kiện thứ hai"
+
+#: widgets/fp-facts.php:54
+msgid "Second fact name"
+msgstr "Tên sự kiện thứ hai"
+
+#: widgets/fp-facts.php:48
+msgid "First fact icon"
+msgstr "Biểu tượng sự kiện thứ hai"
+
+#: widgets/fp-facts.php:43
+msgid "First fact value"
+msgstr "Giá trị sự kiện thứ nhất"
+
+#: widgets/fp-facts.php:38
+msgid "First fact name"
+msgstr "Tên sự kiện thứ nhất"
+
+#: widgets/fp-facts.php:8
+msgid "Sydney FP: Facts"
+msgstr "Sydney FP: Sự kiện"
+
+#: widgets/fp-employees.php:140
+msgid "See all our employees"
+msgstr "Xem tất cả nhân viên của chúng tôi"
+
+#: widgets/fp-employees.php:35
+msgid "Center the employees? (use only if you have 1 or 2 employees)"
+msgstr "Căn giữa Nhân viên? (chỉ dùng nếu bạn có 1 hoặc 2 nhân viên)"
+
+#: widgets/fp-employees.php:32
+msgid "Enter the slug for your category or leave empty to show all employees."
+msgstr "Nhập slug cho danh mục của bạn hoặc để trống để hiển thị tất cả nhân viên."
+
+#: widgets/fp-employees.php:30
+msgid "The text for the button [Defaults to <em>See all our employees</em> if left empty]"
+msgstr "Chữ cho nút [Mặc định là <em>Xem tất cả nhân viên của chúng tôi</em> nếu để trống]"
+
+#: widgets/fp-employees.php:28
+msgid "Enter an URL here if you want to section to link somewhere."
+msgstr "Nhập một URL ở đây nếu bạn muốn phần để liên kết ở đâu đó."
+
+#: widgets/fp-employees.php:26
+msgid "Number of employees to show (-1 shows all of them):"
+msgstr "Số lượng nhân viên hiển thị (-1 hiển thị tất cả):"
+
+#: widgets/fp-employees.php:21
+msgid "In order to display this widget, you must first add some employees from the dashboard. Add as many as you want and the theme will automatically display them all."
+msgstr "Để hiển thị plugin này, trước tiên bạn phải thêm một số nhân viên từ bảng điều khiển. Thêm bao nhiêu tùy ý và chủ đề sẽ tự động hiển thị tất cả."
+
+#: widgets/fp-employees.php:7
+msgid "Sydney FP: Employees"
+msgstr "Sydney FP: Nhân viên"
+
+#: widgets/fp-call-to-action.php:24
+msgid "Title for the button"
+msgstr "Tiêu đề cho nút"
+
+#: widgets/fp-call-to-action.php:22
+msgid "Link for the button"
+msgstr "Liên kết cho nút"
+
+#: widgets/fp-call-to-action.php:20
+msgid "Enter your call to action."
+msgstr "Nhập lời kêu gọi hành động của bạn."
+
+#: widgets/fp-call-to-action.php:7
+msgid "Sydney FP: Call to action"
+msgstr "Sydney FP: Kêu gọi hành động"
+
+#: widgets/fp-call-to-action.php:6
+msgid "Display a call to action block."
+msgstr "Hiển thị một khối cho kêu gọi hành động."
+
+#: widgets/contact-info.php:30
+msgid "Enter your email address"
+msgstr "Nhập email của bạn"
+
+#: widgets/contact-info.php:27
+msgid "Enter your phone number"
+msgstr "Nhập số điện thoại của bạn"
+
+#: widgets/contact-info.php:24
+msgid "Enter your address"
+msgstr "Nhập địa chỉ của bạn"
+
+#: widgets/fp-services-type-b.php:29 widgets/fp-testimonials.php:22
+#: widgets/video-widget.php:20 widgets/fp-call-to-action.php:18
+#: widgets/fp-employees.php:23 widgets/fp-skills.php:24 widgets/fp-facts.php:32
+#: widgets/fp-clients.php:23 widgets/fp-services-type-a.php:30
+#: widgets/contact-info.php:20 widgets/fp-latest-news.php:19
+msgid "Title"
+msgstr "Tiêu đề"
+
+#: widgets/contact-info.php:7
+msgid "Sydney: Contact info"
+msgstr "Sydney: Thông tin liên hệ"
+
+#: widgets/contact-info.php:6
+msgid "Display your contact info"
+msgstr "Hiển thị thông tin liên hệ của bạn"
+
+#: search.php:16
+msgid "Search Results for: %s"
+msgstr "Kết quả tìm kiếm cho: %s"
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: plugins/class-tgm-plugin-activation.php:3520
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "Đang cập nhật gói mở rộng %1$s (%2$d/%3$d)"
+
+#: plugins/class-tgm-plugin-activation.php:3518
+msgid "All installations have been completed."
+msgstr "Tất cả đã được cập nhật thành công."
+
+#. translators: 1: plugin name.
+#: plugins/class-tgm-plugin-activation.php:3517
+msgid "%1$s installed successfully."
+msgstr "%1$s đã cài đặt thành công."
+
+#: plugins/class-tgm-plugin-activation.php:3515
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr "Quá trình cài đặt đang bắt đầu. Tiến trình này có thể cần nhiều thời gian để hoàn tất, vì vậy hãy kiên nhẫn."
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: plugins/class-tgm-plugin-activation.php:3512
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "Đang cài đặt và Kích hoạt Plugin %1$s (%2$d/%3$d)"
+
+#: plugins/class-tgm-plugin-activation.php:3510
+msgid "All installations and activations have been completed."
+msgstr "Tất cả cài đặt và kích hoạt đã hoàn tất."
+
+#. translators: 1: plugin name.
+#: plugins/class-tgm-plugin-activation.php:3509
+#: plugins/class-tgm-plugin-activation.php:3517
+msgid "Hide Details"
+msgstr "Ẩn chi tiết"
+
+#. translators: 1: plugin name.
+#: plugins/class-tgm-plugin-activation.php:3509
+#: plugins/class-tgm-plugin-activation.php:3517
+msgid "Show Details"
+msgstr "Hiện chi tiết"
+
+#. translators: 1: plugin name.
+#: plugins/class-tgm-plugin-activation.php:3509
+msgid "%1$s installed and activated successfully."
+msgstr "%1$s đã cài đặt và kích hoạt thành công."
+
+#: plugins/class-tgm-plugin-activation.php:3507
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr "Quá trình cài đặt và kích hoạt đang bắt đầu. Tiến trình này có thể cần nhiều thời gian để hoàn tất, vì vậy hãy kiên nhẫn."
+
+#. translators: 1: plugin name.
+#: plugins/class-tgm-plugin-activation.php:3503
+msgid "The installation of %1$s failed."
+msgstr "Cài đặt %1$s thất bại."
+
+#. translators: 1: plugin name, 2: error message.
+#: plugins/class-tgm-plugin-activation.php:3501
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr "Đã xảy ra lỗi khi cài đặt %1$s: <strong>%2$s</strong>."
+
+#: plugins/class-tgm-plugin-activation.php:3158
+msgid "Plugin activation failed."
+msgstr "Kích hoạt plugin thất bại."
+
+#: plugins/class-tgm-plugin-activation.php:2934
+msgid "No plugins are available to be activated at this time."
+msgstr "Không có plugin nào có sẵn để được kích hoạt tại thời điểm này."
+
+#: plugins/class-tgm-plugin-activation.php:2800
+msgid "No plugins are available to be installed at this time."
+msgstr "Không có plugin nào có sẵn để cài đặt tại thời điểm này."
+
+#: inc/onboarding/plugins/class-sydney-recommended-plugins.php:92
+#: inc/onboarding/plugins/class-sydney-recommended-plugins.php:112
+#: plugins/class-tgm-plugin-activation.php:2726
+msgid "Activate"
+msgstr "Kích hoạt"
+
+#: plugins/class-tgm-plugin-activation.php:2717
+msgid "Install"
+msgstr "Cài đặt"
+
+#: plugins/class-tgm-plugin-activation.php:2554
+msgid "Status"
+msgstr "Trạng thái"
+
+#: plugins/class-tgm-plugin-activation.php:2549
+msgid "Type"
+msgstr "Định dạng"
+
+#: plugins/class-tgm-plugin-activation.php:2548
+msgid "Source"
+msgstr "Nguồn"
+
+#: plugins/class-tgm-plugin-activation.php:2547
+msgid "Plugin"
+msgstr "Plugin"
+
+#: plugins/class-tgm-plugin-activation.php:2319
+msgid "Installed But Not Activated"
+msgstr "Đã cài đặt nhưng chưa Kích hoạt"
+
+#: plugins/class-tgm-plugin-activation.php:2315
+msgid "Not Installed"
+msgstr "Chưa cài đặt"
+
+#: plugins/class-tgm-plugin-activation.php:2276
+msgid "Recommended"
+msgstr "Được đề xuất"
+
+#: plugins/class-tgm-plugin-activation.php:2273
+msgid "Required"
+msgstr "Bắt buộc"
+
+#: plugins/class-tgm-plugin-activation.php:2292
+msgid "WordPress Repository"
+msgstr "Kho WordPress"
+
+#: plugins/class-tgm-plugin-activation.php:2298
+msgid "Pre-Packaged"
+msgstr "Được đóng gói sẵn"
+
+#: plugins/class-tgm-plugin-activation.php:386
+#: plugins/class-tgm-plugin-activation.php:827
+#: plugins/class-tgm-plugin-activation.php:2533
+#: plugins/class-tgm-plugin-activation.php:3580
+msgid "Return to the Dashboard"
+msgstr "Quay lại Dashboard"
+
+#: plugins/class-tgm-plugin-activation.php:395
+msgid "Dismiss this notice"
+msgstr "Tắt thông báo"
+
+#. translators: 1: dashboard link.
+#: plugins/class-tgm-plugin-activation.php:394
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "Tất cả plugins được cài đặt và kích hoạt thành công. %1$s"
+
+#: plugins/class-tgm-plugin-activation.php:388
+#: plugins/class-tgm-plugin-activation.php:2952
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] "Các plugin sau đã được kích hoạt thành công:"
+
+#: plugins/class-tgm-plugin-activation.php:387
+#: plugins/class-tgm-plugin-activation.php:3159
+msgid "Plugin activated successfully."
+msgstr "Plugin đã được kích hoạt thành công."
+
+#: plugins/class-tgm-plugin-activation.php:385
+msgid "Return to Required Plugins Installer"
+msgstr "Quay lại Trình cài đặt plugin cần thiết"
+
+#: plugins/class-tgm-plugin-activation.php:380
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] "Bắt đầu kích hoạt plugin"
+
+#: plugins/class-tgm-plugin-activation.php:370
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] "Bắt đầu cài đặt plugin"
+
+#. translators: 1: plugin name(s).
+#: plugins/class-tgm-plugin-activation.php:346
+msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
+msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
+msgstr[0] "Plugin sau cần được cập nhật lên phiên bản mới nhất để đảm bảo khả năng tương thích tối đa với chủ đề này: %1$s."
+
+#. translators: 1: plugin name(s).
+#: plugins/class-tgm-plugin-activation.php:364
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] "Các plugin được đề xuất sau đây hiện không hoạt động: %1$s."
+
+#. translators: 1: plugin name(s).
+#: plugins/class-tgm-plugin-activation.php:358
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] "Các plugin cần thiết sau đây hiện không hoạt động: %1$s."
+
+#. translators: 1: plugin name(s).
+#: plugins/class-tgm-plugin-activation.php:340
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] "Chủ đề này đề xuất các plugin sau: %1$s."
+
+#. translators: 1: plugin name(s).
+#: plugins/class-tgm-plugin-activation.php:334
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] "Chủ đề này yêu cầu các plugin sau: %1$s."
+
+#. translators: %s: plugin name.
+#: plugins/class-tgm-plugin-activation.php:330
+msgid "Installing Plugin: %s"
+msgstr "Đang cài đặt gói mở rộng: %s"
+
+#: plugins/class-tgm-plugin-activation.php:328
+msgid "Install Plugins"
+msgstr "Cài đặt plugin"
+
+#: plugins/class-tgm-plugin-activation.php:327
+msgid "Install Required Plugins"
+msgstr "Cài đặt các Plugin cần thiết"
+
+#: inc/template-tags.php:173
+msgid "Archives"
+msgstr "Lưu trữ"
+
+#. translators: 1: Taxonomy singular name, 2: Current taxonomy term
+#: inc/template-tags.php:171
+msgid "%1$s: %2$s"
+msgstr "%1$s: %2$s"
+
+#: inc/template-tags.php:167
+msgid "Archives: %s"
+msgstr "Lưu trữ: %s"
+
+#: inc/template-tags.php:164
+msgctxt "post format archive title"
+msgid "Chats"
+msgstr "Chat"
+
+#: inc/template-tags.php:162
+msgctxt "post format archive title"
+msgid "Audio"
+msgstr "Âm thanh"
+
+#: inc/template-tags.php:160
+msgctxt "post format archive title"
+msgid "Statuses"
+msgstr "Trạng thái"
+
+#: inc/template-tags.php:158
+msgctxt "post format archive title"
+msgid "Links"
+msgstr "Đường dẫn"
+
+#: inc/template-tags.php:156
+msgctxt "post format archive title"
+msgid "Quotes"
+msgstr "Trích dẫn"
+
+#: inc/template-tags.php:154
+msgctxt "post format archive title"
+msgid "Videos"
+msgstr "Video"
+
+#: inc/template-tags.php:152
+msgctxt "post format archive title"
+msgid "Images"
+msgstr "Hình ảnh"
+
+#: inc/template-tags.php:150
+msgctxt "post format archive title"
+msgid "Galleries"
+msgstr "Bộ sưu tập"
+
+#: inc/template-tags.php:148
+msgctxt "post format archive title"
+msgid "Asides"
+msgstr "Trích đoạn bài viết"
+
+#: inc/template-tags.php:145
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr "F j, Y"
+
+#: inc/template-tags.php:145
+msgid "Day: %s"
+msgstr "Ngày: %s"
+
+#: inc/template-tags.php:143
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: inc/template-tags.php:143
+msgid "Month: %s"
+msgstr "Tháng: %s"
+
+#: inc/template-tags.php:141
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: inc/template-tags.php:141
+msgid "Year: %s"
+msgstr "Năm: %s"
+
+#: inc/template-tags.php:139
+msgid "Author: %s"
+msgstr "Tác giả: %s"
+
+#: inc/template-tags.php:137
+msgid "Tag: %s"
+msgstr "Thẻ: %s"
+
+#: inc/template-tags.php:135
+msgid "Category: %s"
+msgstr "Chuyên mục: %s"
+
+#: inc/template-tags.php:100
+msgid "Posted in %1$s"
+msgstr "Đã đăng trong %1$s"
+
+#: inc/template-tags.php:98
+msgid ", "
+msgstr ", "
+
+#: inc/template-tags.php:94
+msgid "% Comments"
+msgstr "% phản hồi"
+
+#: inc/template-tags.php:94
+msgid "1 Comment"
+msgstr "1 phản hồi"
+
+#: inc/template-tags.php:94
+msgid "Leave a comment"
+msgstr "Để lại phản hồi"
+
+#. translators: %s: post date.
+#: inc/template-tags.php:277
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "Đã đăng vào %s"
+
+#: inc/template-tags.php:51
+msgid "Post navigation"
+msgstr "Điều hướng bài viết"
+
+#: inc/template-tags.php:31
+msgid "Newer posts"
+msgstr "Các bài viết mới hơn"
+
+#: inc/template-tags.php:27
+msgid "Older posts"
+msgstr "Bài viết cũ hơn"
+
+#: inc/template-tags.php:23
+msgid "Posts navigation"
+msgstr "Điều hướng bài viết"
+
+#: inc/so-page-builder.php:101
+msgid "45px"
+msgstr "45px"
+
+#: inc/so-page-builder.php:100
+msgid "30px"
+msgstr "30px"
+
+#: inc/so-page-builder.php:99
+msgid "15px"
+msgstr "15px"
+
+#: inc/so-page-builder.php:98
+msgid "0"
+msgstr "0"
+
+#: inc/so-page-builder.php:97
+msgid "Default"
+msgstr "Mặc định"
+
+#: inc/so-page-builder.php:95
+msgid "Here you can select a top/bottom row padding for screen sizes < 1024px"
+msgstr "Tại đây, bạn có thể chọn phần đệm hàng trên/dưới cho kích thước màn hình < 1024px"
+
+#: inc/so-page-builder.php:93
+msgid "Mobile padding"
+msgstr "Phần đệm cho di động"
+
+#: inc/so-page-builder.php:87
+msgid "Background image of the row."
+msgstr "Hình nền của dòng."
+
+#: inc/so-page-builder.php:85
+msgid "Background Image"
+msgstr "Ảnh nền"
+
+#: inc/so-page-builder.php:80
+msgid "Color of the row."
+msgstr "Màu của dòng."
+
+#: inc/so-page-builder.php:78
+msgid "Color"
+msgstr "Màu"
+
+#: inc/so-page-builder.php:72
+msgid "This may or may not work. It depends on the widget styles."
+msgstr "Cái này có thể hoặc không thể hoạt động. Nó phụ thuộc vào các kiểu widget."
+
+#: inc/so-page-builder.php:70
+msgid "Center align the content?"
+msgstr "Căn giữa nội dung?"
+
+#: inc/so-page-builder.php:63
+msgid "Top/bottom padding"
+msgstr "Phần đệm trên/dưới"
+
+#: inc/so-page-builder.php:57
+msgid "Bottom Border Color"
+msgstr "Màu viền dưới"
+
+#: inc/so-page-builder.php:44
+msgid "Sydney Theme Widgets"
+msgstr "Widget chủ đề Sydney"
+
+#: inc/customizer.php:2208
+msgid "Nothing (only menu)"
+msgstr "Không có gì (chỉ có menu)"
+
+#: inc/customizer.php:2088
+msgid "2. A full theme demo can be found "
+msgstr "2. Một bản demo đầy đủ cho chủ đề có thể được tìm thấy"
+
+#: inc/customizer.php:2088
+msgid "1. Documentation for Sydney can be found "
+msgstr "1. Tài liệu cho Sydney có thể được tìm thấy"
+
+#: inc/customizer.php:2086
+msgid "Theme info"
+msgstr "Thông tin chủ đề"
+
+#: inc/customizer.php:2073
+msgid "Rows overlay"
+msgstr "Lớp phủ dòng"
+
+#: inc/customizer.php:2054
+msgid "Footer color"
+msgstr "Màu chân trang"
+
+#: inc/customizer.php:2034
+msgid "Footer background"
+msgstr "Hình nền chân trang"
+
+#: inc/customizer.php:2014
+msgid "Footer widget area color"
+msgstr "Màu khu vực widget chân trang"
+
+#: inc/customizer.php:1954
+msgid "Sidebar background"
+msgstr "Hình nền thanh bên"
+
+#: inc/customizer.php:1974
+msgid "Sidebar color"
+msgstr "Màu thanh bên"
+
+#: inc/customizer.php:1994
+msgid "Footer widget area background"
+msgstr "Hình nền khu vực widget chân trang"
+
+#: inc/customizer.php:1934
+msgid "Body text"
+msgstr "Nội dung"
+
+#: inc/customizer.php:1914
+msgid "Header slider text"
+msgstr "Chữ trên thanh trượt tiêu đề"
+
+#: inc/customizer.php:1875
+msgid "Sub-menu background"
+msgstr "Hình nền menu phụ"
+
+#: inc/customizer.php:1856
+msgid "Sub-menu items"
+msgstr "Thành phần menu phụ"
+
+#: inc/customizer.php:1816
+msgid "Top level menu items"
+msgstr "Thành phần menu cấp cao nhất"
+
+#: inc/customizer.php:1755
+msgid "Menu background"
+msgstr "Hình nền menu"
+
+#: inc/customizer.php:1735
+msgid "Primary color"
+msgstr "Màu chính"
+
+#: inc/customizer.php:1665
+msgid "Body font size"
+msgstr "Kích thước phông chữ nội dung"
+
+#: inc/customizer.php:1646
+msgid "H6 font size"
+msgstr "Kích thước phông H6"
+
+#: inc/customizer.php:1627
+msgid "H5 font size"
+msgstr "Kích thước phông H5"
+
+#: inc/customizer.php:1608
+msgid "H4 font size"
+msgstr "Kích thước phông H4"
+
+#: inc/customizer.php:1589
+msgid "H3 font size"
+msgstr "Kích thước phông H3"
+
+#: inc/customizer.php:1570
+msgid "H2 font size"
+msgstr "Kích thước phông H2"
+
+#: inc/customizer.php:1551
+msgid "H1 font size"
+msgstr "Kích thước phông H1"
+
+#: inc/customizer.php:1532
+msgid "Menu items"
+msgstr "Thành phần menu"
+
+#: inc/customizer.php:1513 inc/customizer.php:1796
+msgid "Site description"
+msgstr "Mô tả trang"
+
+#: inc/customizer.php:1494 inc/customizer.php:1775
+msgid "Site title"
+msgstr "Tiêu đề trang"
+
+#: inc/customizer.php:1476
+msgid "Font sizes"
+msgstr "Kích cỡ chữ"
+
+#: inc/customizer.php:1411
+msgid "Headings fonts"
+msgstr "Phông chữ tiêu đề"
+
+#: inc/customizer.php:1363 inc/customizer.php:1429
+msgid "Font family"
+msgstr "Kiểu chữ"
+
+#: inc/customizer.php:1343
+msgid "Body fonts"
+msgstr "Phông chữ nội dung"
+
+#: inc/customizer.php:1281
+msgid "Fonts"
+msgstr "Phông chữ"
+
+#: inc/customizer.php:1270 inc/customizer.php:2239
+msgid "Four"
+msgstr "Bốn"
+
+#: inc/customizer.php:1269 inc/customizer.php:2238
+msgid "Three"
+msgstr "Ba"
+
+#: inc/customizer.php:1268 inc/customizer.php:2237
+msgid "Two"
+msgstr "Hai"
+
+#: inc/customizer.php:1267 inc/customizer.php:2236
+msgid "One"
+msgstr "Một"
+
+#: inc/customizer.php:1265
+msgid "Select the number of widget areas you want in the footer. After that, go to Appearance > Widgets and add your widgets."
+msgstr "Chọn số lượng khu vực widget bạn muốn trong phần chân trang. Sau đó, đi đến Giao diện> Widget và thêm các widget của bạn."
+
+#: inc/customizer.php:1263
+msgid "Footer widget area"
+msgstr "Khu vực widget cuối trang"
+
+#: inc/customizer.php:1247 inc/customizer.php:1717
+msgid "Footer"
+msgstr "Footer"
+
+#: inc/customizer.php:1218
+msgid "Check this box to hide featured images on single posts"
+msgstr "Chọn để ẩn hình ảnh nổi bật trên các bài đăng"
+
+#: inc/customizer.php:1202
+msgid "Check this box to hide featured images on index, archives etc."
+msgstr "Chọn để ẩn hình ảnh đặc trưng trên chỉ mục, tài liệu lưu trữ, vv"
+
+#: inc/customizer.php:1185
+msgid "Featured images"
+msgstr "Ảnh tiêu biểu"
+
+#: inc/customizer.php:1172
+msgid "Hide post meta on singles?"
+msgstr "Ẩn thông tin post trong các bài đơn?"
+
+#: inc/customizer.php:1155
+msgid "Hide post meta on index, archives?"
+msgstr "Ẩn thông tin bài đăng trong chỉ mục, lưu trữ?"
+
+#: inc/customizer.php:1137
+msgid "Meta"
+msgstr "Meta"
+
+#: inc/customizer.php:1122
+msgid "Choose your excerpt length. Default: 55 words"
+msgstr "Chọn đoạn trích của bạn. Mặc định: 55 từ"
+
+#: inc/customizer.php:1121
+msgid "Excerpt length"
+msgstr "Độ dài đoạn trích"
+
+#: inc/customizer.php:1104
+msgid "Check this box to display the full content of your posts on all archives."
+msgstr "Chọn để hiển thị toàn bộ nội dung bài đăng của bạn trên tất cả các tài liệu lưu trữ."
+
+#: inc/customizer.php:1088
+msgid "Check this box to display the full content of your posts on the home page."
+msgstr "Chọn để hiển thị toàn bộ nội dung bài đăng của bạn trên trang chủ."
+
+#: inc/customizer.php:1070
+msgid "Content/excerpt"
+msgstr "Nội dung/đoạn trích"
+
+#: inc/customizer.php:1057
+msgid "Full width single posts?"
+msgstr "Bài đăng nguyên trang?"
+
+#: inc/customizer.php:1042 inc/customizer.php:2266
+msgid "Masonry (grid style)"
+msgstr "Masonry (dạng lưới)"
+
+#: inc/customizer.php:1041 inc/customizer.php:2265
+msgid "Full width (no sidebar)"
+msgstr "Toàn màn hình (không thanh bên)"
+
+#: inc/customizer.php:1038 inc/customizer.php:2262
+msgid "Classic"
+msgstr "Cổ điển"
+
+#: inc/customizer.php:1034
+msgid "Blog layout"
+msgstr "Bố cục blog"
+
+#: inc/customizer.php:1017
+msgid "Layout"
+msgstr "Sơ đồ trình bày"
+
+#: inc/onboarding/theme-info.php:109 inc/onboarding/theme-info.php:187
+#: inc/customizer.php:1005
+msgid "Blog options"
+msgstr "Tùy chọn cho blog"
+
+#: inc/customizer.php:993
+msgid "Upload your logo"
+msgstr "Tải logo của bạn "
+
+#: inc/customizer.php:975
+msgid "Disable the overlay?"
+msgstr "Hiển thị lớp phủ?"
+
+#: inc/customizer.php:957
+msgid "Header height [default: 300px]"
+msgstr "Chiều cao tiêu đề [mặc định: 300px]"
+
+#: inc/customizer.php:941 inc/customizer.php:2225
+msgid "Contain"
+msgstr "Chứa"
+
+#: inc/customizer.php:940 inc/customizer.php:2224
+msgid "Cover"
+msgstr "Bao phủ"
+
+#: inc/customizer.php:937
+msgid "Header background size"
+msgstr "Kích thước hình nền tiêu đề"
+
+#: inc/customizer.php:698 inc/customizer.php:2291
+msgid "Centered (menu and site logo)"
+msgstr "Căn giữa (menu và logo trang)"
+
+#: inc/customizer.php:697 inc/customizer.php:2290
+msgid "Inline"
+msgstr "Thuộc cùng một dòng"
+
+#: inc/customizer.php:677 inc/customizer.php:2251
+msgid "Static"
+msgstr "Tĩnh"
+
+#: inc/customizer.php:676 inc/customizer.php:2250
+msgid "Sticky"
+msgstr "Dán"
+
+#: inc/customizer.php:597
+msgid "Subtitle for the fifth slide"
+msgstr "Phụ đề cho slide thứ năm"
+
+#: inc/customizer.php:579
+msgid "Title for the fifth slide"
+msgstr "Tiêu đề cho slide thứ năm"
+
+#: inc/customizer.php:559
+msgid "Upload your fifth image for the slider"
+msgstr "Tải lên hình ảnh thứ năm cho thanh trượt"
+
+#: inc/customizer.php:540
+msgid "Fifth slide"
+msgstr "Slide thứ năm"
+
+#: inc/customizer.php:526
+msgid "Subtitle for the fourth slide"
+msgstr "Phụ đề cho slide thứ tư"
+
+#: inc/customizer.php:508
+msgid "Title for the fourth slide"
+msgstr "Tiêu đề cho slide thứ tư"
+
+#: inc/customizer.php:488
+msgid "Upload your fourth image for the slider"
+msgstr "Tải lên hình ảnh thứ tư cho thanh trượt"
+
+#: inc/customizer.php:469
+msgid "Fourth slide"
+msgstr "Slide thứ tư"
+
+#: inc/customizer.php:455
+msgid "Subtitle for the third slide"
+msgstr "Phụ đề cho slide thứ ba"
+
+#: inc/customizer.php:437
+msgid "Title for the third slide"
+msgstr "Tiêu đề cho slide thứ ba"
+
+#: inc/customizer.php:417
+msgid "Upload your third image for the slider"
+msgstr "Tải lên hình ảnh thứ ba cho thanh trượt"
+
+#: inc/customizer.php:398
+msgid "Third slide"
+msgstr "Slide thứ ba"
+
+#: inc/customizer.php:384
+msgid "Subtitle for the second slide"
+msgstr "Phụ đề cho slide thứ hai"
+
+#: inc/customizer.php:366
+msgid "Title for the second slide"
+msgstr "Tiêu đề cho slide thứ hai"
+
+#: inc/customizer.php:346
+msgid "Upload your second image for the slider"
+msgstr "Tải lên hình ảnh thứ hai cho thanh trượt"
+
+#: inc/customizer.php:673
+msgid "Sticky menu"
+msgstr "Menu dính"
+
+#: inc/customizer.php:694
+msgid "Menu style"
+msgstr "Kiểu menu"
+
+#: inc/customizer.php:645
+msgid "Text for your call to action button"
+msgstr "Chữ cho nút kêu gọi hành động của bạn"
+
+#: inc/customizer.php:637
+msgid "Click to begin"
+msgstr "Nhấn để bắt đầu"
+
+#: inc/customizer.php:628
+msgid "URL for your call to action button"
+msgstr "URL cho nút kêu gọi hành động của bạn"
+
+#: inc/customizer.php:611
+msgid "Call to action button"
+msgstr "Nút kêu gọi hành động"
+
+#: inc/customizer.php:327
+msgid "Second slide"
+msgstr "Slide thứ hai"
+
+#: inc/customizer.php:313
+msgid "Subtitle for the first slide"
+msgstr "Phụ đề cho slide thứ nhất"
+
+#: inc/customizer.php:295
+msgid "Title for the first slide"
+msgstr "Tiêu đề cho slide thứ nhất"
+
+#: inc/customizer.php:275
+msgid "Upload your first image for the slider"
+msgstr "Tải lên hình ảnh đầu tiên cho thanh trượt"
+
+#: inc/customizer.php:256
+msgid "First slide"
+msgstr "Slide thứ nhất"
+
+#: inc/customizer.php:243
+msgid "Stop the text slider?"
+msgstr "Dừng thanh trượt văn bản?"
+
+#: inc/customizer.php:229
+msgid "Slider speed in miliseconds. Use 0 to disable [default: 4000]"
+msgstr "Tốc độ thanh trượt theo milli giây. Nhập 0 để tắt [mặc định: 4000]"
+
+#: inc/customizer.php:226
+msgid "Slider speed"
+msgstr "Tốc độ thanh trượt"
+
+#: inc/customizer.php:219
+msgid "4000"
+msgstr "4000"
+
+#: inc/customizer.php:189
+msgid "You can add up to 5 images in the slider. Make sure you select where to display your slider from the Header Type section found above. You can also add a Call to action button (scroll down to find the options)"
+msgstr "Bạn có thể thêm tối đa 5 hình ảnh vào thanh trượt. Đảm bảo bạn chọn nơi hiển thị thanh trượt của mình từ phần Loại tiêu đề được tìm thấy ở trên. Bạn cũng có thể thêm nút Kêu Gọi hành động (cuộn xuống để tìm các tùy chọn)"
+
+#: inc/customizer.php:188
+msgid "Header Slider"
+msgstr "Thanh trượt tiêu đề"
+
+#: inc/customizer.php:175
+msgid "Select the header type for all pages except the front page"
+msgstr "Chọn loại tiêu đề cho tất cả các trang trừ trang trước"
+
+#: inc/customizer.php:173
+msgid "Site header type"
+msgstr "Loại tiêu đề trang"
+
+#: inc/customizer.php:157 inc/customizer.php:180
+msgid "No header (only menu)"
+msgstr "Không tiêu đề (chỉ hiện menu)"
+
+#: inc/customizer.php:155 inc/customizer.php:178 inc/customizer.php:2206
+msgid "Image"
+msgstr "Ảnh"
+
+#: inc/customizer.php:152
+msgid "Select the header type for your front page"
+msgstr "Chọn loại tiêu đề cho trang trước của bạn"
+
+#: inc/customizer.php:150
+msgid "Front page header type"
+msgstr "Loại tiêu đề trang trước"
+
+#: inc/customizer.php:135
+msgid "You can select your header type from here. After that, continue below to the next two tabs (Header Slider and Header Image) and configure them."
+msgstr "Bạn có thể chọn loại tiêu đề của bạn từ đây. Sau đó, tiếp tục đến hai tab tiếp theo (Thanh trượt Tiêu đề và Hình ảnh Tiêu đề) và cấu hình chúng."
+
+#: inc/customizer.php:154 inc/customizer.php:177 inc/customizer.php:2205
+msgid "Full screen slider"
+msgstr "Thanh trượt toàn màn hình"
+
+#: inc/customizer.php:132
+msgid "Header type"
+msgstr "Loại tiêu đề"
+
+#: inc/customizer.php:126
+msgid "Header area"
+msgstr "Khu vực tiêu đề"
+
+#: inc/customizer.php:17 inc/customizer.php:70 inc/customizer.php:1300
+msgid "General"
+msgstr "Tổng quan"
+
+#: inc/customizer.php:16
+msgid "Site title/tagline/logo"
+msgstr "Tiêu đề/khẩu hiệu/logo trang"
+
+#: header.php:26
+msgid "Skip to content"
+msgstr "Chuyển đến nội dung"
+
+#: functions.php:271
+msgid "Create your menu here"
+msgstr "Tạo menu của bạn tại đây"
+
+#: functions.php:117
+msgid "Footer "
+msgstr "Footer"
+
+#: functions.php:104 inc/customizer.php:1709
+msgid "Sidebar"
+msgstr "Thanh bên"
+
+#: functions.php:57
+msgid "Primary Menu"
+msgstr "Trình đơn cơ sở"
+
+#: footer.php:26
+msgid "Theme: %2$s by %1$s."
+msgstr "Chủ đề: %2$s bởi %1$s."
+
+#: footer.php:24
+msgid "Proudly powered by %s"
+msgstr "Tự hào được phát triển từ %s"
+
+#: footer.php:24
+msgid "https://wordpress.org/"
+msgstr "https://wordpress.org/"
+
+#: content-page.php:31 inc/template-tags.php:118
+msgid "Edit"
+msgstr "Chỉnh sửa"
+
+#: content-page.php:24 content-classic-alt.php:34 content.php:34
+#: content-search.php:32 content-modern.php:35 content-single.php:36
+msgid "Pages:"
+msgstr "Trang:"
+
+#: content-none.php:28
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Có lẽ chũng tôi không thể thấy những gì bạn đang tìm kiếm. Bạn có thể dùng tìm kiếm."
+
+#: content-none.php:23
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Rất tiếc, không có nội dung nào khớp với yêu cầu tìm kiếm của bạn. Hãy thử lại với các từ khóa khác."
+
+#: content-none.php:19
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Bạn đã sẵn sàng đăng tải bài viết đầu tiên chưa? <a href=\"%1$s\">Hãy bắt đầu tại đây</a>."
+
+#: content-none.php:13
+msgid "Nothing Found"
+msgstr "Không tìm thấy"
+
+#: comments.php:66
+msgid "Comments are closed."
+msgstr "Không cho phép ghi chú."
+
+#: comments.php:38 comments.php:56
+msgid "Newer Comments &rarr;"
+msgstr "Các bình luận mới hơn&rarr;"
+
+#: comments.php:37 comments.php:55
+msgid "&larr; Older Comments"
+msgstr "&larr; Những bình luận cũ hơn"
+
+#: comments.php:36 comments.php:54
+msgid "Comment navigation"
+msgstr "Điều hướng bình luận"
+
+#: comments.php:29
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s bình luận về &ldquo;%2$s&rdquo;"
+
+#: 404.php:19
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr "Có vẻ như không có gì được tìm thấy tại vị trí này. Có thể thử một trong các liên kết dưới đây hoặc thử tìm kiếm?"
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oops! Không tìm thấy trang này."
+
+#. Author URI of the theme
+msgid "https://athemes.com"
+msgstr "https://athemes.com"
+
+#. Author of the theme
+msgid "aThemes"
+msgstr "aThemes"
+
+#. Theme URI of the theme
+msgid "https://athemes.com/theme/sydney"
+msgstr "https://athemes.com/theme/sydney"

@@ -1,0 +1,25 @@
+{
+    "inputs":{
+        "name": { "type": "text", "text": "Họ tên", "placeholder":"Nhập họ tên", "required":"true"},
+        "address": { "type": "textarea", "text": "Địa chỉ", "placeholder":"Nhập địa chỉ..."},
+        "email": { "type": "email", "text": "Địa chỉ E-mail", "required":"true" , "prepend_text":"<i class=\"fa fa-envelope\"></i>"},
+        "phone_number": { "type": "text", "text": "Số diện thoại", "prepend_text":"<i class=\"fa fa-phone\"></i>"},
+        "avatar": { "type": "file", "text": "Hình đại diện", "template":"cropit", "data-width": 360, "data-height": 360}
+    },
+    "config":{
+        "name": "Thông tin khách hàng",
+        "layout_type": "column",
+        "form_groups": [
+            {
+                "title": "Thông tin khách hàng",
+                "class": "col-md-7",
+                "inputs": ["name","email","phone_number","address"]
+            },
+            {
+                "title":"Avatar",
+                "class": "col-md-5",
+                "inputs": ["avatar"]
+            }
+        ]
+    }
+}

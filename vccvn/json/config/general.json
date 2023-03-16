@@ -1,0 +1,67 @@
+{
+    "posts": {
+        "list": {
+            "sortby": {
+                "1": "Mới nhất",
+                "2": "Trình tự thời gian",
+                "3": "Tiêu đề (A-Z)",
+                "4": "Tiêu đề (Z-A)",
+                "5": "Lượt xem",
+                "6": "Ngẫu nhiên"
+            },
+            "content_type": {
+                "text" : "Văn bản thường",
+                "gallery": "Thư viện ảnh",
+                "video_embed": "Nhúng video",
+                "news": "Tin tức (trính nguồn)"
+            }
+        }
+    },
+    "projects": {
+        "list": {
+            "sortby": {
+                "1": "Mới nhất",
+                "2": "Trình tự thời gian",
+                "3": "Tiêu đề (A-Z)",
+                "4": "Tiêu đề (Z-A)",
+                "5": "Lượt xem",
+                "6": "Ngẫu nhiên"
+            }
+        }
+    },
+    
+    "categories": {
+        "list": {
+            "sortby": {
+                "1": "Mới nhất",
+                "2": "Tên (A-Z)",
+                "3": "Tên (Z-A)",
+                "4": "Số tin bài",
+                "5": "Ngẫu nhiên",
+                "6": "Theo thứ tự thời gian"
+            }
+        }
+    },
+
+    "tags": {
+        "list": {
+            "sortby": {
+                "1": "Mới nhất",
+                "2": "Tag (A-Z)",
+                "3": "Tag (Z-A)",
+                "4": "Ngẫu nhiên",
+                "popular": "Phổ biến nhất"
+            }
+        }
+    },
+    "comments": {
+        "list": {
+            "refs": {
+                "post": "Bài viết",
+                "page": "Trang",
+                "product": "Sản phẩm",
+                "project": "Dự án"
+            }
+        }
+    }
+}

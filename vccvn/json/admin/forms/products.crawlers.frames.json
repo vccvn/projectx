@@ -1,0 +1,195 @@
+{
+    "inputs": {
+        "name": {
+            "type": "text",
+            "label": "Tên website",
+            "placeholder": "Ví dụ: zing.vn",
+            "required": "true"
+        },
+        "logo": {
+            "type": "file",
+            "label": "Logo"
+        },
+        "url": {
+            "type": "text",
+            "label": "Địa chỉ website (URL)",
+            "placeholder": "Ví dụ: http://www.zing.vn",
+            "required": "true"
+        },
+        "source_type": {
+            "type": "radio",
+            "label": "Loại web",
+            "data": {
+                "ssr": "Web view (Server Side Rendering)",
+                "csr": "Web sử dụng Frontend framework (Client Side Rendering)"
+            },
+            "default": "ssr"
+        },
+        "index": {
+            "type": "number",
+            "label": "Chỉ mục",
+            "min": 0
+        },
+        "product_name": {
+            "type": "text",
+            "label": "Selector tên sản phẩm",
+            "placeholder": "Ví dụ: meta[property=\"og:title\"]",
+            "required": "true",
+            "append_group": [
+                "product_name_attr"
+            ]
+        },
+        "product_name_attr": {
+            "type": "text",
+            "label": "thuộc tính",
+            "placeholder": "Không bắt buộc"
+        },
+        "regular_price": {
+            "type": "text",
+            "label": "Selector Giá bán",
+            "placeholder": "Ví dụ: p.product-price"
+        },
+        "old_price": {
+            "type": "text",
+            "label": "Selector Giá trước đó (tùy chọn)",
+            "placeholder": "Ví dụ: p.product-old-price"
+        },
+        "decimal_poiter": {
+            "type": "text",
+            "label": "Ký tự thập phân",
+            "placeholder": "không bắt buộc"
+        },
+        "thousands_sep": {
+            "type": "text",
+            "label": "Ký hiệu phân cách hàng nghìn",
+            "placeholder": "không bắt buộc"
+        },
+        "description": {
+            "type": "text",
+            "label": "Selector Mô tả",
+            "placeholder": "Ví dụ: meta[name=\"description\"]",
+            "append_group": [
+                "description_attr"
+            ]
+        },
+        "description_attr": {
+            "type": "text",
+            "label": "thuộc tính",
+            "placeholder": "Không bắt buộc"
+        },
+        "detail": {
+            "type": "text",
+            "label": "Selector Mô tả chi tiết",
+            "placeholder": "Ví dụ: div[id=\"post-content\"]",
+            "required": "true"
+        },
+        "style": {
+            "type": "textarea",
+            "label": "Style",
+            "placeholder": "Ví dụ: <style>p{font-fize:15px;}"
+        },
+        "image": {
+            "type": "text",
+            "label": "Selector image",
+            "placeholder": "Ví dụ: meta[property=\"og:image\"]",
+            "append_group": [
+                "image_attr"
+            ]
+        },
+        "image_attr": {
+            "type": "text",
+            "label": "thuộc tính",
+            "placeholder": "Không bắt buộc"
+        },
+        "gallery": {
+            "type": "text",
+            "label": "Selector gallery",
+            "placeholder": "Ví dụ: .gallery .item img",
+            "append_group": [
+                "gallery_attr"
+            ]
+        },
+        "gallery_attr": {
+            "type": "text",
+            "label": "thuộc tính",
+            "placeholder": "Không bắt buộc",
+            "default": "src"
+        },
+        "tag": {
+            "type": "text",
+            "label": "Selector tag",
+            "placeholder": "Ví dụ: meta[name=\"keywords\"]",
+            "append_group": [
+                "tag_attr"
+            ]
+        },
+        "tag_attr": {
+            "type": "text",
+            "label": "thuộc tính",
+            "placeholder": "Không bắt buộc"
+        },
+        "except": {
+            "type": "text",
+            "label": "Loại bỏ",
+            "placeholder": "Ví dụ: script"
+        },
+        "item_url_selector": {
+            "type": "text",
+            "label": "Thẻ link Sản phẩm (Tùy chọn)",
+            "placeholder": "Nhập thẻ link dùng cho viuc65 get link của task (ví dụ a[data-role=\"nav-link\"])",
+            "comment": "dùng mặc định cho task"
+        },
+        "use_loadmore": {
+            "type": "switch",
+            "label": "Tải thêm",
+            "template": "switch",
+            "@options": {
+                "form_group_class": "row",
+                "label_class": "col-6 col-md-4 col-lg-3 col-xl-2 col-form-label",
+                "wrapper_class": "col-6 col-md-8 col-lg-9 col-xl-10"
+            }
+        },
+        "loadmore_method": {
+            "type": "radio",
+            "label": "Hình thức tải thêm",
+            "data": {
+                "link": "Link",
+                "scroll": "Scroll Down"
+            },
+            "default": "link"
+        },
+        "loadmore_link_selector": {
+            "type": "text",
+            "label": "Selector Loadmore",
+            "placeholder": "Nhập selector tãi thêm"
+        },
+        "loadmore_scroll_selector": {
+            "type": "text",
+            "label": "Selector scroll",
+            "placeholder": "Nhập selector scroll"
+        },
+        "loadmore_turn": {
+            "type": "number",
+            "label": "Số trang hoặc số lần scroll",
+            "placeholder": "Số trang hoặc số lần scroll",
+            "default": 2,
+            "min": 0,
+            "step": 1
+        },
+        "meta_title": {
+            "type": "text",
+            "label": "Tiêu đề (SEO)",
+            "placeholder": "không bắt buộc"
+        },
+        "meta_description": {
+            "type": "text",
+            "label": "Mô tả (SEO)",
+            "placeholder": "không bắt buộc"
+        },
+        "meta_keywords": {
+            "type": "text",
+            "label": "Từ khóa (SEO)",
+            "placeholder": "không bắt buộc"
+        }
+    }
+}

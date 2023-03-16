@@ -1,0 +1,39 @@
+{
+    "data": {
+        "dashboard": {
+            "text": "Bảng điều khiển",
+            "title": "Bảng điều khiển",
+            "active_key": "dashboard",
+            "route": "dashboard",
+            "icon": "tachometer-alt"
+        },
+        "filemanager": {
+            "text": "File Manager",
+            "title": "File Manager",
+            "active_key": "filemanager",
+            "route": "filemanager",
+            "icon": "folder-open"
+        },
+        "database": {
+            "text": "Database",
+            "title": "Database",
+            "active_key": "database",
+            "route": "database",
+            "icon": "database"
+        },
+        "config": {
+            "text": "Config",
+            "title": "Config",
+            "active_key": "config",
+            "route": "config",
+            "icon": "cog"
+        },
+        "domain": {
+            "text": "Domain",
+            "title": "Database",
+            "active_key": "Domain",
+            "route": "domain",
+            "icon": "globe"
+        }
+    }
+}

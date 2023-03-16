@@ -1,0 +1,45 @@
+{
+    "data": {
+        "forms": {
+            "text": "Form",
+            "title": "Form",
+            "active_key": "forms",
+            "route": "admin.forms.list",
+            "icon": "id-card",
+            "submenu": {
+                "type": "list",
+                "data": [
+                    {
+                        "text": "Danh sách Form",
+                        "title": "Danh sách Form",
+                        "active_key": "list",
+                        "route": "admin.forms.list",
+                        "icon": "list-ul"
+                    },
+                    {
+                        "text": "Dử liệu",
+                        "title": "Dử liệu",
+                        "active_key": "list",
+                        "route": "admin.forms.data",
+                        "icon": "coins"
+                    },
+                    
+                    {
+                        "text": "Thêm Form",
+                        "title": "Thêm Form",
+                        "active_key": "add",
+                        "route": "admin.forms.create",
+                        "icon": "plus-circle"
+                    },
+                    {
+                        "text": "Thùng rác",
+                        "title": "Thùng rác",
+                        "active_key": "trash",
+                        "route": "admin.forms.trash",
+                        "icon": "trash-alt"
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,83 @@
+{
+    "data": {
+        "general_title": {
+            "type": "text",
+            "label": "Tiêu đề chung",
+            "placeholder": "Nhập tiêu đề mặc định chung cho tất cã bài viết, trang, dự án, sản phẩm"
+        },
+        "general_description": {
+            "type": "textarea",
+            "label": "Mô tả chung",
+            "placeholder": "Nhập mô tả mặc định chung cho tất cã bài viết, trang, dự án, sản phẩm"
+        },
+        "general_keywords": {
+            "type": "text",
+            "label": "Từ khóa chung",
+            "placeholder": "Nhập từ khóa mặc định chung cho tất cã bài viết, trang, dự án, sản phẩm"
+        },
+
+        "post_title": {
+            "type": "text",
+            "label": "Tiêu đề Bài viết",
+            "placeholder": "Nhập tiêu đề mặc định cho Bài viết"
+        },
+        "post_description": {
+            "type": "textarea",
+            "label": "Mô tả Bài viết",
+            "placeholder": "Nhập mô tả mặc định cho Bài viết"
+        },
+        "post_keywords": {
+            "type": "text",
+            "label": "Từ khóa Bài viết",
+            "placeholder": "Nhập từ khóa mặc định cho Bài viết"
+        },
+
+        "product_title": {
+            "type": "text",
+            "label": "Tiêu đề / tên sản phẩm",
+            "placeholder": "Nhập tiêu đề mặc định cho sản phẩm"
+        },
+        "product_description": {
+            "type": "textarea",
+            "label": "Mô tả sản phẩm",
+            "placeholder": "Nhập mô tả mặc định cho sản phẩm"
+        },
+        "product_keywords": {
+            "type": "text",
+            "label": "Từ khóa sản phẩm",
+            "placeholder": "Nhập từ khóa mặc định cho sản phẩm"
+        },
+
+        "project_title": {
+            "type": "text",
+            "label": "Tiêu đề / tên dự án",
+            "placeholder": "Nhập tiêu đề mặc định cho dự án"
+        },
+        "project_description": {
+            "type": "textarea",
+            "label": "Mô tả dự án",
+            "placeholder": "Nhập mô tả mặc định cho dự án"
+        },
+        "project_keywords": {
+            "type": "text",
+            "label": "Từ khóa dự án",
+            "placeholder": "Nhập từ khóa mặc định cho dự án"
+        },
+
+        "page_title": {
+            "type": "text",
+            "label": "Tiêu đề trang",
+            "placeholder": "Nhập tiêu đề mặc định cho trang"
+        },
+        "page_description": {
+            "type": "textarea",
+            "label": "Mô tả trang",
+            "placeholder": "Nhập mô tả mặc định cho trang"
+        },
+        "page_keywords": {
+            "type": "text",
+            "label": "Từ khóa trang",
+            "placeholder": "Nhập từ khóa mặc định cho trang"
+        }
+    }
+}

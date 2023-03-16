@@ -1,0 +1,75 @@
+{
+    "name": "Người dùng",
+    "package": "staffs",
+    "use_trash": true,
+    "titles": {
+        "default": "Danh sách Người dùng",
+        "trash": "Danh sách Người dùng đã xóa"
+    },
+    "data": {
+        "status": {
+            "1": "Kích hoạt",
+            "0": "Chờ sác minh",
+            "-1": "Bị khóa"
+        }
+    },
+    "filter":{
+        "general_columns":{
+            "name":"Họ và tên",
+            "email": "Email",
+            "phone_number": "Số điện thoại"
+        },
+        "search_columns": {
+            "username": "Tên đăng nhập"
+        },
+        "sort_columns": {
+            "created_at": "Thời gian tạo"
+        }
+    },
+    "table": {
+        "class": "header-center",
+        "columns": [
+            {
+                "title": "ID",
+                "class": "id-col text-center",
+                "text": ":id"
+            },
+            {
+                "title":"Avatar",
+                "class":"text-center",
+                "template":"<img src=\"{@getAvatar}\" class=\"image-thumbnail\" alt=\"{name}\">",
+                "data":{
+                    "@getAvatar":[]
+                }
+            },
+            {
+                "title": "Họ và tên",
+                "class": "min-160 text-center",
+                "text": ":name"
+            },
+            {
+                "title": "Email",
+                "class": "min-160 max-250 text-center",
+                "template": "<a href=\"mailto:{email}\">{email}</a>"
+            },
+            {
+                "title": "Số điện thoại",
+                "class": "min-100 text-center",
+                "template": "<a href=\"tel:{@getAttr}\">{phone_number}</a>",
+                "data":{
+                    "@getAttr":["phone_number", "0945786960"]
+                }
+            },
+            {
+                "title": "Trạng thái",
+                "class": "min-160 text-center",
+                "data_access": "status.{status}"
+            }
+        ]
+    },
+    "resources":{
+        "js_data":{},
+        "js":[],
+        "css":[]
+    }
+}

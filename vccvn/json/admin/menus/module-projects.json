@@ -1,0 +1,36 @@
+{
+    "data": {
+        "projects": {
+            "text": "Dự án",
+            "title": "Quản lý Dự án",
+            "route": "admin.projects",
+            "icon": "qrcode",
+            "submenu": {
+                "type": "list",
+                "data": [
+                    {
+                        "text": "Danh sách dự án",
+                        "title": "Danh sách dự án",
+                        "active_key": "projects.list",
+                        "route": "admin.projects.list",
+                        "icon": "file-code"
+                    },
+                    {
+                        "text": "Thêm dự án",
+                        "title": "Thêm sản phẩm mới",
+                        "active_key": "projects.create",
+                        "route": "admin.projects.create",
+                        "icon": "plus"
+                    },
+                    {
+                        "text": "Danh mục",
+                        "title": "Danh mục sản phẩm",
+                        "active_key": "projects.categories",
+                        "route": "admin.projects.categories.list",
+                        "icon": "project-diagram"
+                    }
+                ]
+            }
+        }
+    }
+}

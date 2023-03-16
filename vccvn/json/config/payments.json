@@ -1,0 +1,462 @@
+{
+    "methods": {
+        "cod": {
+            "key": "cod",
+            "title": "Giao hàng trả tiền",
+            "inputs": {
+                "name": {
+                    "type": "text",
+                    "label": "Tên hiển thị",
+                    "placeholder": "Ví dụ: Thanh toán tiền mặt"
+                },
+                "description": {
+                    "type": "textarea",
+                    "label": "Mô tả",
+                    "placeholder": "Viết gì đó"
+                }
+            }
+        },
+        "transfer": {
+            "key": "transfer",
+            "title": "Thanh toán chuyển khoản",
+            "inputs": {
+                "name": {
+                    "type": "text",
+                    "label": "Tên hiển thị",
+                    "placeholder": "Ví dụ: Thanh toán chuyển khoản"
+                },
+                "description": {
+                    "type": "textarea",
+                    "label": "Mô tả",
+                    "placeholder": "Viết gì đó"
+                },
+                "account_name": {
+                    "type": "text",
+                    "label": "Chủ tài khoản",
+                    "placeholder": "Ví dụ: Nguyen Van A",
+                    "required": true
+                },
+                "account_number": {
+                    "type": "text",
+                    "label": "Số tài khoản",
+                    "placeholder": "Ví dụ: 100021014971",
+                    "required": true
+                },
+                "bank_name": {
+                    "type": "text",
+                    "label": "Ngân Hàng",
+                    "placeholder": "Ví dụ: BIDV hoặc VPBank hay VietinBank",
+                    "required": true
+                },
+                "bank_branch": {
+                    "type": "text",
+                    "label": "Chi Nhánh",
+                    "placeholder": "Ví dụ: Hà Nội"
+                },
+                "sort_code": {
+                    "type": "text",
+                    "label": "Sort Code"
+                },
+                "iban": {
+                    "type": "text",
+                    "label": "IBAN"
+                },
+                "bic": {
+                    "type": "text",
+                    "label": "BIC / Swift"
+                },
+                "guide": {
+                    "type": "textarea",
+                    "label": "Hướng dẫn",
+                    "placeholder": "Ví gì đó"
+                }
+            }
+        },
+        "vnpay": {
+            "key": "vnpay",
+            "title": "VN Pay ATM",
+            "default_values": {
+                "vnp_Version": "2.1.0",
+                "vnp_TmnCode": "",
+                "vnp_Amount": 1000000,
+                "vnp_Command": "pay",
+                "vnp_CreateDate": "20210919110343",
+                "vnp_CurrCode": "VND",
+                "vnp_IpAddr": "127.0.0.1",
+                "vnp_Locale": "vn",
+                "vnp_OrderInfo": "Noi dung thanh toan",
+                "vnp_OrderType": "topup",
+                "vnp_ReturnUrl": "http://localhost/vnpay_php/vnpay_return.php",
+                "vnp_TxnRef": "0",
+
+                "vnp_ExpireDate": "20210919111151",
+                "vnp_Bill_Mobile": "0945786960",
+                "vnp_Bill_Email": "doanln16@gmail.com",
+                "vnp_Bill_FirstName": "Doan",
+                "vnp_Bill_LastName": "Le",
+                "vnp_Bill_Address": "72 Ngõ 102, Trường Chinh, Quận Đống Đa, TP Hà Nội",
+                "vnp_Bill_City": "Hà Nội",
+                "vnp_Bill_Country": "VN",
+
+                "vnp_Inv_Phone": "02437764668",
+                "vnp_Inv_Email": "pholv@vnpay.vn",
+                "vnp_Inv_Customer": "Lê Văn Phổ",
+                "vnp_Inv_Address": "22 Láng Hạ, Phường Láng Hạ, Quận Đống Đa, TP Hà Nội",
+                "vnp_Inv_Company": "Công ty Cổ phần giải pháp Thanh toán Việt Nam",
+                "vnp_Inv_Taxcode": "0102182292",
+                "vnp_Inv_Type": "I",
+                "vnp_BankCode": "NCB"
+            },
+            "inputs": {
+                "name": {
+                    "type": "text",
+                    "label": "Tên hiển thị",
+                    "placeholder": "Ví dụ: Thanh toán ATM VN Pay"
+                },
+                "description": {
+                    "type": "textarea",
+                    "label": "Mô tả",
+                    "placeholder": "Viết gì đó"
+                },
+                "TmnCode": {
+                    "type": "text",
+                    "label": "TmnCode",
+                    "required": true
+                },
+                "HashSecret": {
+                    "type": "text",
+                    "label": "HashSecret",
+                    "required": true
+                },
+                "OrderType": {
+                    "type": "select",
+                    "label": "Loại hàng hoá",
+                    "data": {
+                        "": "Chọn loại hàng hoá",
+                        "100000": "Thực Phẩm - Tiêu Dùng",
+                        "100001": "Bánh kẹo - Đồ ăn vặt - Giải khát",
+                        "100003": "Thực phẩm khô",
+                        "100004": "Sữa - Kem &amp; sản phẩm từ sữa",
+                        "100005": "Hóa phẩm – chất tẩy",
+                        "110000": "Điện thoại - Máy tính bảng",
+                        "110001": "Điện thoại dị động",
+                        "110002": "Máy tính bảng",
+                        "110003": "Smart Watch",
+                        "110004": "Phụ kiện",
+                        "110005": "Sim/Thẻ",
+                        "120000": "Điện gia dụng",
+                        "120001": "Điện gia dụng nhà bếp",
+                        "120002": "Điện gia dụng gia đình",
+                        "120003": "Điện lạnh &amp; Điện cỡ lớn",
+                        "130000": "Máy tính - Thiết bị văn phòng",
+                        "130001": "Máy tính xách tay",
+                        "130002": "Máy tính để bàn",
+                        "130003": "Màn hình máy tính",
+                        "130004": "Thiết bị mạng",
+                        "130005": "Phần mềm",
+                        "130006": "Linh kiện, Phụ kiện",
+                        "130007": "Máy in",
+                        "130008": "Thiết bị văn phòng khác",
+                        "140000": "Điện tử - Âm thanh",
+                        "140001": "Tivi",
+                        "140002": "Loa",
+                        "140003": "Dàn âm thanh",
+                        "140004": "Đồ chơi công nghệ",
+                        "140005": "Thiết bị Kỹ thuật số",
+                        "150000": "Sách/Báo/Tạp chí",
+                        "150001": "Văn phòng phẩm",
+                        "150002": "Quà tặng",
+                        "150003": "Nhạc cụ",
+                        "160000": "Thể thao, dã ngoại",
+                        "160001": "Trang phục thể thao",
+                        "160002": "Phụ kiện thể thao",
+                        "160003": "Đồ tập Yoga, thể hình",
+                        "160004": "Đồ/Vật dụng Dã ngoại",
+                        "170000": "Khách sạn &amp; Du lịch",
+                        "170001": "Du lịch trong nước",
+                        "170002": "Du lịch nước ngoài",
+                        "170003": "Đặt phòng khách sạn",
+                        "180000": "Ẩm thực",
+                        "190000": "Giải trí &amp; Đào tạo",
+                        "190001": "Vé xem phim",
+                        "190002": "Thẻ học/ Học trực tuyến",
+                        "190003": "Giải trí, vui chơi khác",
+                        "190004": "Thẻ học trực tuyến/Thẻ hội viên",
+                        "200000": "Thời trang",
+                        "200001": "Thời trang nữ",
+                        "200002": "Phụ kiện Nữ",
+                        "200003": "Thời trang Nam",
+                        "200004": "Thời trang Trẻ Em",
+                        "210000": "Sức khỏe - Làm đẹp",
+                        "210001": "Kem chống nắng",
+                        "210002": "Chăm sóc da mặt",
+                        "210003": "Trang điểm",
+                        "210004": "Chăm sóc cá nhân",
+                        "220000": "Mẹ &amp; Bé",
+                        "220001": "Sữa &amp; Bột cho bé",
+                        "220002": "Vệ sinh chăm sóc cho bé",
+                        "220003": "Đồ chơi &amp; Đồ dùng trẻ em",
+                        "220004": "Đồ dùng ăn uống cho bé",
+                        "230000": "Vật dụng nhà bếp",
+                        "230001": "Nội thất",
+                        "240000": "Xe cộ - phương tiện",
+                        "240001": "Mô tô - Xe máy",
+                        "240002": "Phụ kiện xe máy",
+                        "240003": "Phụ kiện ô tô",
+                        "240004": "Xe đạp điện",
+                        "250000": "Thanh toán hóa đơn",
+                        "250001": "Hóa đơn tiền điện",
+                        "250002": "Hóa đơn tiền nước",
+                        "250003": "Hóa đơn điện thoại trả sau",
+                        "250004": "Hóa đơn ADSL",
+                        "250005": "Hóa đơn truyền hình cáp",
+                        "250006": "Hóa đơn dịch vụ",
+                        "250007": "Vé máy bay",
+                        "260000": "Mua mã thẻ",
+                        "260001": "Thẻ điện thoại",
+                        "260002": "Thẻ Game",
+                        "270000": "Nhà thuốc - Dịch vụ y tế",
+                        "270001": "Đăng ký khám/chữa bệnh"
+                    }
+                }
+            },
+            "data": {
+                "ABBANK": {
+                    "code": "ABBANK",
+                    "title": "Ngân hàng thương mại cổ phần An Bình (ABBANK)",
+                    "logo": "abbank_logo.png"
+                },
+                "ACB": {
+                    "code": "ACB",
+                    "title": "Ngân hàng ACB",
+                    "logo": "acb_logo.png"
+                },
+                "AGRIBANK": {
+                    "code": "AGRIBANK",
+                    "title": "Ngân hàng Nông nghiệp (Agribank)",
+                    "logo": "agribank_logo.png"
+                },
+                "BACABANK": {
+                    "code": "BACABANK",
+                    "title": "Ngân Hàng TMCP Bắc Á",
+                    "logo": "bacabank_logo.png"
+                },
+                "BIDV": {
+                    "code": "BIDV",
+                    "title": "Ngân hàng đầu tư và phát triển Việt Nam (BIDV)",
+                    "logo": "bidv_logo.png"
+                },
+                "DONGABANK": {
+                    "code": "DONGABANK",
+                    "title": "Ngân hàng Đông Á (DongABank)",
+                    "logo": "dongabank_logo.png"
+                },
+                "EXIMBANK": {
+                    "code": "EXIMBANK",
+                    "title": "Ngân hàng EximBank",
+                    "logo": "eximbank_logo.png"
+                },
+                "HDBANK": {
+                    "code": "HDBANK",
+                    "title": "Ngân hàng HDBank",
+                    "logo": "hdbank_logo.png"
+                },
+                "IVB": {
+                    "code": "IVB",
+                    "title": "Ngân hàng TNHH Indovina (IVB)",
+                    "logo": "ivb_logo.png"
+                },
+                "MBBANK": {
+                    "code": "MBBANK",
+                    "title": "Ngân hàng thương mại cổ phần Quân đội",
+                    "logo": "mbbank_logo.png"
+                },
+                "MSBANK": {
+                    "code": "MSBANK",
+                    "title": "Ngân hàng Hàng Hải (MSBANK)",
+                    "logo": "msbank_logo.png"
+                },
+                "NAMABANK": {
+                    "code": "NAMABANK",
+                    "title": "Ngân hàng Nam Á (NamABank)",
+                    "logo": "namabank_logo.png"
+                },
+                "NCB": {
+                    "code": "NCB",
+                    "title": "Ngân hàng Quốc dân (NCB)",
+                    "logo": "ncb_logo.png"
+                },
+                "OCB": {
+                    "code": "OCB",
+                    "title": "Ngân hàng Phương Đông (OCB)",
+                    "logo": "ocb_logo.png"
+                },
+                "OJB": {
+                    "code": "OJB",
+                    "title": "Ngân hàng Đại Dương (OceanBank)",
+                    "logo": "ojb_logo.png"
+                },
+                "PVCOMBANK": {
+                    "code": "PVCOMBANK",
+                    "title": "Ngân hàng TMCP Đại Chúng Việt Nam",
+                    "logo": "PVComBank_logo.png"
+                },
+                "SACOMBANK": {
+                    "code": "SACOMBANK",
+                    "title": "Ngân hàng TMCP Sài Gòn Thương Tín (SacomBank)",
+                    "logo": "sacombank_logo.png"
+                },
+                "SAIGONBANK": {
+                    "code": "SAIGONBANK",
+                    "title": "Ngân hàng thương mại cổ phần Sài Gòn Công Thương",
+                    "logo": "saigonbank.png"
+                },
+                "SCB": {
+                    "code": "SCB",
+                    "title": "Ngân hàng TMCP Sài Gòn (SCB)",
+                    "logo": "scb_logo.png"
+                },
+                "SHB": {
+                    "code": "SHB",
+                    "title": "Ngân hàng Thương mại cổ phần Sài Gòn - Hà Nội(SHB)",
+                    "logo": "shb_logo.png"
+                },
+                "TECHCOMBANK": {
+                    "code": "TECHCOMBANK",
+                    "title": "Ngân hàng Kỹ thương Việt Nam (TechcomBank)",
+                    "logo": "techcombank_logo.png"
+                },
+                "TPBANK": {
+                    "code": "TPBANK",
+                    "title": "Ngân hàng Tiên Phong (TPBank)",
+                    "logo": "tpbank_logo.png"
+                },
+                "VPBANK": {
+                    "code": "VPBANK",
+                    "title": "Ngân hàng Việt Nam Thịnh vượng (VPBank)",
+                    "logo": "vpbank_logo.png"
+                },
+                "SEABANK": {
+                    "code": "SEABANK",
+                    "title": "Ngân Hàng TMCP Đông Nam Á",
+                    "logo": "seabank_logo.png"
+                },
+                "VIB": {
+                    "code": "VIB",
+                    "title": "Ngân hàng Thương mại cổ phần Quốc tế Việt Nam (VIB)",
+                    "logo": "vib_logo.png"
+                },
+                "VIETABANK": {
+                    "code": "VIETABANK",
+                    "title": "Ngân hàng TMCP Việt Á",
+                    "logo": "vietabank_logo.png"
+                },
+                "VIETBANK": {
+                    "code": "VIETBANK",
+                    "title": "Ngân hàng thương mại cổ phần Việt Nam Thương Tín",
+                    "logo": "vietbank_logo.png"
+                },
+                "VIETCOMBANK": {
+                    "code": "VIETCOMBANK",
+                    "title": "Ngân hàng Ngoại thương (Vietcombank)",
+                    "logo": "vietcombank_logo.png"
+                },
+                "VIETINBANK": {
+                    "code": "VIETINBANK",
+                    "title": "Ngân hàng Công thương (Vietinbank)",
+                    "logo": "vietinbank_logo.png"
+                },
+                "BIDC": {
+                    "code": "BIDC",
+                    "title": "Ngân Hàng BIDC",
+                    "logo": "bidc_logo.png"
+                },
+                "LAOVIETBANK": {
+                    "code": "LAOVIETBANK",
+                    "title": "Ngân HÀNG LIÊN DOANH LÀO - VIỆT",
+                    "logo": "laovietbank_logo.png"
+                },
+                "WOORIBANK": {
+                    "code": "WOORIBANK",
+                    "title": "Ngân hàng TNHH MTV Woori Việt Nam",
+                    "logo": "woori_logo.png"
+                },
+                "AMEX": {
+                    "code": "AMEX",
+                    "title": "American Express",
+                    "logo": "amex_logo.png"
+                },
+                "VISA": {
+                    "code": "VISA",
+                    "title": "Thẻ quốc tế Visa",
+                    "logo": "visa_logo.png"
+                },
+                "MASTERCARD": {
+                    "code": "MASTERCARD",
+                    "title": "Thẻ quốc tế MasterCard",
+                    "logo": "mastercard_logo.png"
+                },
+                "JCB": {
+                    "code": "JCB",
+                    "title": "Thẻ quốc tế JCB",
+                    "logo": "jcb_logo.png"
+                },
+                "UPI": {
+                    "code": "UPI",
+                    "title": "UnionPay International",
+                    "logo": "upi_logo.png"
+                },
+                "VNMART": {
+                    "code": "VNMART",
+                    "title": "Ví điện tử VnMart",
+                    "logo": "vnmart_logo.png"
+                },
+                "VNPAYQR": {
+                    "code": "VNPAYQR",
+                    "title": "Cổng thanh toán VNPAYQR",
+                    "logo": "CTT-VNPAY-QR.png"
+                },
+                "1PAY": {
+                    "code": "1PAY",
+                    "title": "Ví điện tử 1Pay",
+                    "logo": "1pay_logo.png"
+                },
+                "FOXPAY": {
+                    "code": "FOXPAY",
+                    "title": "Ví điện tử FOXPAY",
+                    "logo": "foxpay.png"
+                },
+                "VIMASS": {
+                    "code": "VIMASS",
+                    "title": "Ví điện tử Vimass",
+                    "logo": "vimass_logo.png"
+                },
+                "VINID": {
+                    "code": "VINID",
+                    "title": "Ví điện tử VINID",
+                    "logo": "vinid_logo.png"
+                },
+                "VIVIET": {
+                    "code": "VIVIET",
+                    "title": "Ví điện tử Ví Việt",
+                    "logo": "viviet_logo.png"
+                },
+                "VNPTPAY": {
+                    "code": "VNPTPAY",
+                    "title": "Ví điện tử VNPTPAY",
+                    "logo": "vnptpay_logo.png"
+                },
+                "YOLO": {
+                    "code": "YOLO",
+                    "title": "Ví điện tử YOLO",
+                    "logo": "yolo_logo.png"
+                },
+                "VIETCAPITALBANK": {
+                    "code": "VIETCAPITALBANK",
+                    "title": "Ngân Hàng Bản Việt",
+                    "logo": "vccb_logo.png"
+                }
+            }
+        }
+    }
+}

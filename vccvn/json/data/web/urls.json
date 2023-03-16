@@ -1,0 +1,36 @@
+{
+    "general": {
+        "title": "Đường dẫn chung",
+        "inputs": {
+            "https_redirect": {
+                "type": "switch",
+                "label": "Chuyển hướng https",
+                "value_type": "boolean"
+            }
+        }
+    },
+    "posts": {
+        "title": "Tin Bài",
+        "inputs": {
+            
+        }
+    },
+    "pages": {
+        "title": "Trang Tĩnh",
+        "inputs": {
+            
+        }
+    },
+    "shop": {
+        "title": "Cửa hàng",
+        "inputs": {
+            
+        }
+    },
+    "project": {
+        "title": "Dự án",
+        "inputs": {
+            
+        }
+    }
+}

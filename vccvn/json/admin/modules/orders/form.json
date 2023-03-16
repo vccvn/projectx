@@ -1,0 +1,214 @@
+{
+    "inputs": {
+        "billing_name": {
+            "type": "text",
+            "label": "Họ và tên khách hàng",
+            "placeholder": "nhập Họ và tên",
+            "required": "true"
+        },
+        "billing_phone_number": {
+            "type": "text",
+            "label": "Số điện thoại",
+            "placeholder": "nhập só điện thoại",
+            "required": "true"
+        },
+        "billing_email": {
+            "type": "email",
+            "label": "Email khách hàng",
+            "placeholder": "nhập email",
+            "required": "true"
+        },
+        "billing_region_id": {
+            "type": "crazyselect",
+            "label": "Tỉnh / Thành phố",
+            "className": "d-block",
+            "call": "get_region_options",
+            "@change": "Order.form.changeRegionID"
+        },
+        "billing_district_id": {
+            "type": "crazyselect",
+            "label": "Quận / huyện",
+            "className": "d-block",
+            "call": "get_district_options",
+            "params": [
+                {
+                    "region_id": "#billing_region_id|0"
+                }
+            ],
+            "@change": "Order.form.changeDistrictID"
+        },
+        "billing_ward_id": {
+            "type": "crazyselect",
+            "label": "Xã / phường",
+            "className": "d-block",
+            "call": "get_ward_options",
+            "params": [
+                {
+                    "district_id": "#billing_district_id|0"
+                }
+            ]
+        },
+        "billing_address": {
+            "type": "text",
+            "label": "Địa chỉ",
+            "placeholder": "nhập Địa chỉ"
+        },
+        "ship_to_different_address": {
+            "type": "checkbox",
+            "Template": "switch",
+            "label": "Giao hàng đến địa chỉ khác",
+            "@change": "Order.form.changShippingAddress"
+        },
+        "shipping_name": {
+            "type": "text",
+            "label": "Họ và tên Người nhận hàng hàng",
+            "placeholder": "nhập Họ và tên"
+        },
+        "shipping_email": {
+            "type": "email",
+            "label": "Email khách hàng",
+            "placeholder": "nhập email"
+        },
+        "shipping_phone_number": {
+            "type": "text",
+            "label": "Số điện thoại",
+            "placeholder": "nhập só điện thoại"
+        },
+        "shipping_region_id": {
+            "type": "crazyselect",
+            "label": "Tỉnh / Thành phố",
+            "className": "d-block",
+            "call": "get_region_options",
+            "@change": "Order.form.changeShippingRegionID"
+        },
+        "shipping_district_id": {
+            "type": "crazyselect",
+            "label": "Quận / huyện",
+            "className": "d-block",
+            "call": "get_district_options",
+            "params": [
+                {
+                    "region_id": "#shipping_region_id|0"
+                }
+            ],
+            "@change": "Order.form.changeShippingDistrictID"
+        },
+        "shipping_ward_id": {
+            "type": "crazyselect",
+            "label": "Xã / phường",
+            "className": "d-block",
+            "call": "get_ward_options",
+            "params": [
+                {
+                    "district_id": "#shipping_district_id|0"
+                }
+            ]
+        },
+        "shipping_address": {
+            "type": "text",
+            "label": "Địa chỉ",
+            "placeholder": "nhập Địa chỉ"
+        },
+        "payment_method_id": {
+            "type": "radio",
+            "template": "radio",
+            "label": "Phương thức thanh toán",
+            "call": "get_payment_method_id_options"
+        },
+        "shipping_fee": {
+            "type": "number",
+            "label": "Phí giao hàng",
+            "placeholder": "nhập phí giao hàng",
+            "append_text": "VNĐ"
+        },
+        "tax": {
+            "type": "number",
+            "label": "VAT",
+            "placeholder": "nhập VAT",
+            "append_text": "%"
+        },
+        "note": {
+            "type": "textarea",
+            "label": "Ghi chú",
+            "placeholder": "nhập ghi chú"
+        },
+        "status": {
+            "type": "crazyselect",
+            "template": "crazyselect",
+            "label": "Trạng thái đơn hàng",
+            "data": {
+                "0": "Đang chờ xác nhận",
+                "100": "Đã xác nhận",
+                "200": "Chờ thanh toán",
+                "300": "Đã thanh toán",
+                "400": "Đang xử lý",
+                "500": "Đang giao hàng",
+                "1000": "Đã hoàn thành",
+                "-1": "Bị hủy"
+            }
+        },
+        "items": {
+            "type": "product",
+            "label": "Chi tiết đơn hàng",
+            "template": "product",
+            "call": "get_order_product_items",
+            "params": [
+                "#hidden_id"
+            ],
+            "@add-route": "admin.orders.get-product-input",
+            "@on-add": "console.log",
+            "@on-remove": "console.log"
+        }
+    },
+    "config": {
+        "name": "Thông tin Đơn hàng",
+        "layout_type": "column",
+        "form_groups": {
+            "customer_info": {
+                "title": "Thông tin khách hàng",
+                "class": "col-md-6",
+                "inputs": [
+                    "billing_name",
+                    "billing_email",
+                    "billing_phone_number",
+                    "billing_region_id",
+                    "billing_district_id",
+                    "billing_ward_id",
+                    "billing_address",
+                    "ship_to_different_address",
+                    "shipping_name",
+                    "shipping_email",
+                    "shipping_phone_number",
+                    "shipping_region_id",
+                    "shipping_district_id",
+                    "shipping_ward_id",
+                    "shipping_address"
+                ]
+            },
+            "order_info": {
+                "title": "Thông tin đơn hàng",
+                "class": "col-md-6",
+                "inputs": [
+                    "payment_method_id",
+                    "shipping_fee",
+                    "tax",
+                    "status",
+                    "note"
+                ]
+            },
+            "detail": {
+                "title": "",
+                "class": "col-sm-12",
+                "inputs": [
+                    "items"
+                ]
+            }
+        },
+        "assets": {
+            "js": [
+                "static/manager/js/order.form.js"
+            ],
+            "css": []
+        }
+    }
+}

@@ -1,0 +1,54 @@
+{
+    "name": "Học vấn",
+    "package": "academics",
+    "use_trash": false,
+    "titles": {
+        "default": "Danh sách chức danh",
+        "trash": "Danh sách chức danh đã xóa"
+    },
+    "data": {
+        
+    },
+    "filter":{
+        "search_columns": {
+            "title":"Chức danh",
+            "keywords": "Từ khóa",
+            "id": "Mã"
+        },
+        "sort_columns": {
+            "title":"Chức danh",
+            "id": "Mã"
+        }
+    },
+    "table": {
+        "class": "list-center",
+        "columns": [
+            {
+                "title": "Mã",
+                "class": "id-col",
+                "text": ":id"
+            },
+            {
+                "title": "Chức danh",
+                "class": "min-160",
+                "template": "<a href=\"{url}\">{title}</a>",
+                "data": {
+                    "url": {
+                        "call":"route",
+                        "params":[".update", {"id": ":id"}]
+                    }
+                }
+            },
+            {
+                "title": "Từ khóa",
+                "class": "min-160 max-250",
+                "text": ":keywords"
+            }
+        ]
+    },
+    "resources":{
+        "js_data":{},
+        "js":[],
+        "css":[]
+    }
+}

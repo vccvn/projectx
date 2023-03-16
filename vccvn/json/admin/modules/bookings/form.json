@@ -1,0 +1,46 @@
+{
+    "title": {
+        "type": "text",
+        "label": "Tiêu đề (Tùy chọn)",
+        "placeholder": "Nhập Tiêu đề"
+    },
+    "name": {
+        "type": "text",
+        "label": "Họ tên",
+        "placeholder": "Nhập họ tên"
+    },
+    "email": {
+        "type": "email",
+        "label": "Email",
+        "placeholder": "Nhập email"
+    },
+    "phone_number": {
+        "type": "text",
+        "label": "Số điện thoại",
+        "placeholder": "Nhập số điện thoại"
+    },
+    "address": {
+        "type": "text",
+        "label": "Địa chỉ (Tùy chọn)",
+        "placeholder": "Nhập địa chỉ"
+    },
+    "quantity": {
+        "type": "number",
+        "label": "Số lượng",
+        "placeholder": "Từ 1 đến 8",
+        "min": 0,
+        "step": 1,
+        "default": 0
+    },
+    "booking_time": {
+        "type": "time",
+        "label": "Thời gian",
+        "placeholder": "Chọn thời gian ",
+        "data-format": "yyyy-mm-dd H:i:s"
+    },
+    "message": {
+        "type": "textarea",
+        "label": "Nội dung tin hắn",
+        "placeholder": "Viết gì đó"
+    }
+}
