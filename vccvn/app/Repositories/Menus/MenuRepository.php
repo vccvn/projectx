@@ -269,7 +269,7 @@ class MenuRepository extends BaseRepository
                     }
                 }]);
                 $menu = $this->first($args);
-                // dd($menu);
+                
                 if($menu) $data = $this->parseMenu($menu, true, $depth);
                 else $data = [];
             }
@@ -312,6 +312,7 @@ class MenuRepository extends BaseRepository
         return $list;
     }
 
+    
     /**
      * lấy thông tin item
      *

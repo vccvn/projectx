@@ -34,6 +34,10 @@ class ComponentValidator extends BaseValidator
                         $rule[] = 'check_number';
                     }elseif($type == 'boolean'){
                         $rule[] = 'check_boolean';
+                    }elseif($type == 'switch'){
+                        $rule[] = 'check_boolean';
+                    }elseif($type == 'boolean'){
+                        $rule[] = 'check_boolean';
                     }elseif($type == 'email'){
                         $messages[$name.'.email_or_null'] = $label.' không hợp lệ';
                         $rule[] = 'email_or_null';

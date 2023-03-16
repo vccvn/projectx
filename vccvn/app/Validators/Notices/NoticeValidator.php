@@ -47,7 +47,7 @@ class NoticeValidator extends BaseValidator
             'to_id'               => 'user_exists',
             'to_group'            => 'user_group',
             'title'               => 'required|string|max:191',
-            'message'            => 'mixed',
+            'message'             => 'mixed',
             
         ];
 

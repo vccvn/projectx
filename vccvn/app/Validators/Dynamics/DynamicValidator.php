@@ -24,7 +24,7 @@ class DynamicValidator extends BaseValidator
             if(is_null($value)) return true;
             if(is_array($value)){
                 foreach ($value as $field) {
-                    if(!in_array($field, ["title", "slug", "keywords", "description", "content", 'content_type', "feature_image", "tags", "privacy", "meta_title", "meta_description"])) return false;
+                    if(!in_array($field, ["title", "slug", "keywords", "description", "content", 'content_type', "feature_image", "tags", "privacy", "meta_title", "meta_description", 'seo'])) return false;
                 }
             }
             return true;

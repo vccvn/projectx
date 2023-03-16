@@ -107,6 +107,7 @@ class CrawlProductRepository extends ProductRepository
     public function getDataFromHtml($html, $frame, $url)
     {
         if (!is_object($html)) $html = $this->toDom($html);
+        
         $list_detail = explode('|', $frame->detail);
         $detail = '';
         foreach ($list_detail as $value) {
@@ -205,13 +206,12 @@ class CrawlProductRepository extends ProductRepository
         $frame->checkSelectors();
 
         $url = $this->parseSourceUrl($req->url, $frame->url, $frame->url);
-
         try {
             if (preg_match('/sendo\.vn\/([A-z0-9_\-]*)\.html/i', $url, $match)) {
                 return $this->sendo->saveProductBySlug($match[1], $req, $frame);
             } elseif (preg_match('/lazada\.vn\/products\/([A-z0-9_\-]*)\.html/i', $url)) {
                 return $this->lazada->saveProductByUrl($url, $req, $frame);
-            } elseif (preg_match('/stockx\.com\/([A-z0-9_\-]*)+$/i', $url)) {
+            } elseif (preg_match('/stockx\.com\/(.*)+/i', $url)) {
                 return $this->stockx->saveProductByUrl($url, $req, $frame);
             } elseif (preg_match('/mlb-korea\.com\//i', $url)) {
                 return $this->mlb->saveProductByUrl($url, $req, $frame);
@@ -222,12 +222,11 @@ class CrawlProductRepository extends ProductRepository
             // shopee.vn/[^\.]*\-i\.([0-9]*)\.([0-9]*)($|\?|\/)
             $html = $this->getHtml($url, $frame->source_type);
             // nếu ko lấy dc nội dung trang web
-
-            if (!$html) return false;
             // die($html);
-
+            if (!$html) return false;
+            
             $data = $this->getDataFromHtml($html, $frame, $url);
-
+            if(!$data) return false;
             $this->addDefaultValue('owner_id', $frame->owner_id);
             $data = array_merge($data, [
                 'category_id' => $req->category_id,

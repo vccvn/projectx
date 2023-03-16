@@ -21,7 +21,7 @@ trait InputTypes{
         'deepselect', 'crazyselect', 'crazytag', 'multiselect', 'select2', 'cropit', 'crazyprop','specification',
         'tinymce','gallery', 'attribute','product', 'variant-attribute', 'colorpicker', 'area',
         'dateselect','media',
-        'inputgroup'
+        'inputgroup', 'seo'
 
     ];
     protected $d = null;
@@ -59,6 +59,8 @@ trait InputTypes{
         'inputgroup'             => 'prepareInputGroup',
         'package'                => 'preparePackage',
         'frontend'               => 'prepareFrontendData',
+
+        'seo'                    => 'prepareSEOData',
     ];
 
     protected $typeTemplates = [
@@ -712,5 +714,12 @@ trait InputTypes{
     public function preparePackage()
     {
         $this->template = 'package';
+    }
+
+    
+    public function prepareSEOData()
+    {
+        $this->template = 'seo';
+        
     }
 }

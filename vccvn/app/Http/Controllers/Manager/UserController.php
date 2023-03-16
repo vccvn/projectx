@@ -28,11 +28,11 @@ class UserController extends ManagerController
 
     public $is_created = false;
     /**
-     * @var OwnerRepository $repository,
+     * @var OwnerRepository $repository
      *  
      *
      */
-
+    public $repository;
     /**
      * Create a new controller instance.
      *

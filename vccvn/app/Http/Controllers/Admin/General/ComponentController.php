@@ -91,9 +91,8 @@ class ComponentController extends AdminController
             $c->delete();
         }
         if($fileList){
-            $ownerID = get_owner_id();
             foreach($fileList as $item){
-                $fn = uniqid().'-'.$ownerID;
+                $fn = uniqid().'-'.time();
                 if($d){
                     if(isset($d[$item]) && $d[$item]){
                         $fn = $this->getFilenameWithoutExtension($d[$item]);

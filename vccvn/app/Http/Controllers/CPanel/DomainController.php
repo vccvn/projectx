@@ -73,11 +73,21 @@ class DomainController extends ManagerController
         $data->alias_domain = $data->alias_domain ? $data->alias_domain : '';
 
 
-        if (!($user = $request->user()) || !($setting = $this->repository->first(['owner_id' => $user->id])) || !($updateData = $this->repository->update($setting->id,$data->all())) || !($s = $user->secret_key) || !($filemanager = new Filemanager())) {
+        if (
+            !($user = $request->user()) ||
+            !($setting = $this->repository->first(['owner_id' => $user->id])) ||
+            !($updateData = $this->repository->update($setting->id, $data->all())) ||
+            !($s = $user->secret_key) ||
+            !($filemanager = new Filemanager())
+        ) {
             $this->addRedirectData('error', 'Lỗi không xác định');
-        } elseif (!($data->secret = $s)
-        || !($conf = str_eval($filemanager->getContent(base_path('webdata/vcc.conf')), $data->all())) || !($oldConf = $filemanager->getContent(base_path('webdata/hosting/' . $s . '.conf')))
-        || !($nginx = str_eval($filemanager->getContent(base_path('webdata/nginx.conf')), $data->all())) || !($oldnginx = $filemanager->getContent(base_path('webdata/hosting/' . $s . '.nginx.conf')))) {
+        } elseif (
+            !($data->secret = $s)
+            || !($conf = str_eval($filemanager->getContent(base_path('webdata/vcc.conf')), $data->all())) 
+            || !($oldConf = $filemanager->getContent(base_path('webdata/hosting/' . $s . '.conf')))
+            || !($nginx = str_eval($filemanager->getContent(base_path('webdata/nginx.conf')), $data->all())) 
+            || !($oldnginx = $filemanager->getContent(base_path('webdata/hosting/' . $s . '.nginx.conf')))
+        ) {
             $this->addRedirectData('error', 'Lỗi không xác định');
         } elseif ($conf == $oldConf) {
             // 
@@ -86,15 +96,14 @@ class DomainController extends ManagerController
         } elseif ($this->api->get(env('HOSTING_MANAGER_API') . '/hosting/update?secret_id=' . $s) != '1') {
             $this->addRedirectData('error', 'Lỗi không xác định');
         }
-        if($data->ssl && !$setting->ssl){
-            $domains = $updateData->subdomain.'.'.$updateData->base_domain;
-            if($updateData->domain) $domains.=','.$updateData->domain;
-            if($updateData->alias_domain) $domains.=' '.$updateData->alias_domain;
+        if ($data->ssl && $setting->ssl != $data->ssl) {
+            $domains = $updateData->subdomain . '.' . $updateData->base_domain;
+            if ($updateData->domain) $domains .= ' ' . $updateData->domain;
+            if ($updateData->alias_domain) $domains .= ' ' . $updateData->alias_domain;
             $this->api->setOutput('html');
-            $rs = $this->api->get(env('HOSTING_MANAGER_API') . '/certbot?domains='.$domains);
-            
-            if($rs != '1') $this->addRedirectData('error', 'Không thể kích hoạt SSL');
+            $rs = $this->api->get(env('HOSTING_MANAGER_API') . '/certbot?domains=' . $domains);
+
+            if ($rs != '1') $this->addRedirectData('error', 'Không thể kích hoạt SSL');
         }
-        
     }
 }

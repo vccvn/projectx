@@ -23,9 +23,12 @@
                 "text": ":id"
             },
             {
-                "title": "Email",
+                "title": "Thông tin",
                 "class": "min-100",
-                "text": ":email"
+                "template": "{@getSubcribeInfo}",
+                "data": {
+                    "@getSubcribeInfo": []
+                }
             }
         ]
     }

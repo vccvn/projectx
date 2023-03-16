@@ -62,7 +62,7 @@ class PageValidator extends BaseValidator
             'privacy'                          => 'privacy',
             'meta_title'                       => 'max:191',
             'meta_description'                 => 'max:300',
-            
+            'focus_keyword'                    => 'mixed',
         ];
         
         return $rules;

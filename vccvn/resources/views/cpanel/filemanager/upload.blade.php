@@ -84,7 +84,7 @@
                 var uploadManager = new Dropzone("#upload-files", {
                     paramName:"file",
                     maxFiles:10,
-                    maxFilesize:150,
+                    maxFilesize:1024,
                     addRemoveLinks:!0,
                     renameFile:true,
                     // acceptedFiles:"*.*,*/*",

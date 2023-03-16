@@ -54,6 +54,12 @@ class HomeController extends ClientController
         return $this->json(compact($this->apiSystemVars));
     }
 
+    public function redirect(Request $request)
+    {
+        // if($request->url) return redirect($request->url);
+        // return redirect('/');
+        return view('client-libs.redirect', ['url' => $request->url]);
+    }
 
     public function crawlData(Request $request){
         if($request->url){

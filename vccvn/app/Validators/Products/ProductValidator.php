@@ -246,7 +246,8 @@ class ProductValidator extends BaseValidator
             'feature_description'              => 'mixed|max:5000',
             'total'                            => 'check_total',
             'gallery'                          => 'mixed',
-            'attribute_default_selected'       => 'mixed'
+            'attribute_default_selected'       => 'mixed',
+            'focus_keyword'                    => 'mixed',
         ];
 
         $rules = array_merge($rules, $this->attrRulees);

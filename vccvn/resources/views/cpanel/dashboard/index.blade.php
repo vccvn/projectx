@@ -20,7 +20,7 @@
 										<div class="m-portlet__head-caption">
 											<div class="m-portlet__head-title">
 												<h3 class="m-portlet__head-text">
-													FPT Polytechnic Hosting Manager
+													VCC Hosting Manager
 												</h3>
 											</div>
 										</div>
@@ -87,8 +87,8 @@
 																<td>Sub-Domain</td>
 																<td>
 																	
-																	<a href="http://{{$settings->subdomain . '.' . $settings->domain}}">
-																		{{$settings->subdomain . '.' . $settings->domain}}
+																	<a href="http://{{$settings->subdomain . '.' . $settings->base_domain}}">
+																		{{$settings->subdomain . '.' . $settings->base_domain}}
 																	</a>
 																</td>
 															</tr>

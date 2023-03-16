@@ -93,6 +93,7 @@ class DatabaseController extends ManagerController
         $with = [];
         if (!($createUser = $this->myAdmin->createDatabase($secret_id))) {
             $with['error'] = 'Lỗi hệ thống không thể tạo database';
+            die($this->myAdmin->errorMessage);
         } elseif (!($createDatabase = $this->myAdmin->createUser($secret_id, $data['db_password']))) {
             $with['error'] = 'Không thể khởi tạo user';
             $with['error'] = 'Không thể khởi tạo user (' .('SQLSTATE[HY000]: General error: 1819 Your password does not satisfy the current policy requirements' == $this->myAdmin->errorMessage ?'Mật khẩu không an toàn': $this->myAdmin->errorMessage) .')';

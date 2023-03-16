@@ -76,9 +76,40 @@ class PageController extends AdminController
     }
 
     
+    public function beforeGetCrudForm($request, $config, $inputs, $data, $attribues)
+    {
+        $parent = $data->parent_id?get_page(['id' => $data->parent_id]):null;
+        $baseTitle = ($parent ? $parent->title . ' | ' : ''
+        ) .  siteinfo('site_name');
+        add_js_data('seo_data', [
+            'baseURL' => url($parent?$parent->slug:'') . '/',
+            'data' => [
+                'urlParh' => $data->slug,
+                'title' => $data->meta_title,
+                'metaDesc' => $data->meta_description,
+                'content' => $data->content,
+                'focusKeyword' => $data->focus_keyword,
+                'fullTitle' => ($data->title ? $data->title . ' | ' : '') . $baseTitle,
+                'baseTitle' => $baseTitle
+            ],
+            '__default__' => [
+                'baseURL' => url($parent?$parent->slug:'') . '/',
+                'baseTitle' => $baseTitle
+            ],
+            '__placeholder__' => [
+                'title' => $data->meta_title?$data->meta_title:(($data->title ? $data->title . ' | ' : 'Tiêu đề | ') . $baseTitle),
+                'urlPath' => $data->slug??'slug'
+            ]
+
+        ]);
+
+        // dd($data->all());
+    }
+
+    
     /**
      * can thiệp trước khi luu
-     * @param Illuminate\Http\Request $request
+     * @param Request $request
      * @param Arr $data dũ liệu đã được validate
      * @return void
      */
@@ -99,7 +130,7 @@ class PageController extends AdminController
     
     /**
      * can thiệp sau khi luu
-     * @param Illuminate\Http\Request $request
+     * @param Request $request
      * @param Model $result dũ liệu đã được luu
      * @param Arr $data 
      * @return void
@@ -110,6 +141,7 @@ class PageController extends AdminController
         $meta = $data->copy(
             [
                 'custom_slug',
+                'focus_keyword',
                 'meta_title',
                 'meta_description',
                 'feature_image_keep_original'

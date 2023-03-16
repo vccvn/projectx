@@ -55,7 +55,7 @@ class ProductCategoryController extends AdminController
 
     /**
      * can thiệp trước khi luu
-     * @param Illuminate\Http\Request $request
+     * @param \Illuminate\Http\Request $request
      * @param Arr $data dũ liệu đã được validate
      * @return void
      */

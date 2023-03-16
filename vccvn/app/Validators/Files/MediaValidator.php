@@ -35,7 +35,7 @@ class MediaValidator extends BaseValidator
         $rules = [
             'title'                            => 'max:191',
             'description'                      => 'mixed',
-            'file'                             => 'required|file|max:10240|mediatypes',
+            'file'                             => 'required|file|max:1024000|mediatypes',
         ];
         return $rules;
         // return $this->parseRules($rules);

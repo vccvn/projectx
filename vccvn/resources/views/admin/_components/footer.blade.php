@@ -26,8 +26,8 @@ $menu = new Menu(
 						<div class="m-stack__item m-stack__item--left m-stack__item--middle m-stack__item--last">
 							<span class="m-footer__copyright">
 								{{date('Y')}} &copy; 
-								<a href="https://web102.vcc.vn" class="m-link">WEB 1-0-2</a> | 
-								<a href="https://vcc.vn" class="m-link">VCC.VN</a> 
+								{{-- <a href="https://web102.vcc.vn" class="m-link">WEB 1-0-2</a> |  --}}
+								<a href="http://gomee.tech" class="m-link">Gomee</a> 
 							</span>
 						</div>
 						<div class="m-stack__item m-stack__item--right m-stack__item--middle m-stack__item--first">

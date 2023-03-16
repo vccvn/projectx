@@ -90,6 +90,7 @@ trait Crawler
     {
         if (!$folder) $folder = $this->folder;
         $string = HtmlDomParser::str_get_html($string);
+        if(is_bool($string) || !$string) return $string;
         foreach ($string->find('video,source,img') as $value) {
             if (isset($value->attr['src']) && $value->attr['src']) {
                 $a = substr($value->attr['src'], 0, 10);
@@ -289,7 +290,7 @@ trait Crawler
     {
         $params = [];
         if ($source_type == 'csr' || preg_match('/(lazada|shopee|sendo)\.vn\//i', $url)) {
-            $url = env('CRAWLER_BOT_API') . '?url=' . $url;
+            $url = env('CRAWLER_BOT_API') . '?url=' . urlencode($url);
         } elseif (preg_match('/soha\.vn\//i', $url)) {
             $params = [
                 "api_key" => env('SCRAPING_API_KEY'),
@@ -305,7 +306,9 @@ trait Crawler
             $url = env("SCRAPING_API_URL");
         }
         try {
+            // dd($url);
             $rs = $this->api->get($url, $params);
+            
             if ($rs) {
                 $content = $rs->getBody()->getContents();
             } elseif (function_exists('curl_init')) {

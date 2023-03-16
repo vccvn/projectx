@@ -203,7 +203,6 @@ $cache_data_time = system_setting('cache_data_time', 0);
             to make it easier for folks to view source and remix -->
       <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
       <script src="https://button.glitch.me/button.js"></script>
-    </body>
     @endif
 
 

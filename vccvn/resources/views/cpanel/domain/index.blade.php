@@ -40,9 +40,9 @@
                                         @include('cpanel.forms.templates.crazyselect', [
                                         'input' => html_input([
                                         'type' => 'crazyselect',
-                                        'name' => 'domain',
+                                        'name' => 'base_domain',
                                         'data' => 'get_cfg_domain_options',
-                                        'default' => old('domain', $webSetting->domain)
+                                        'default' => old('domain', $webSetting->base_domain)
                                         ])
                                         ])
                                     </div>
@@ -98,14 +98,14 @@
                             </div>
                         </div>
 
-                        <div class="mt-1 mb-4 crazy-form-group row " id="ssl-form-group">
-                            <label class="col-6 col-sm-4 col-md-3 col-lg-2 col-form-label" for="ssl">
+                        <div class="mt-1 mb-4 crazy-form-group form-group m-form__group row " id="ssl-form-group">
+                            <label class="col-form-label col-lg-3 col-6" for="ssl">
                                 SSL
                             </label>
-                            <div class="col-6 col-sm-2 col-md-3 col-lg-4">
+                            <div class="col-lg-9 col-6">
                                 <span class="m-switch m-switch--outline m-switch--icon m-switch--primary">
                                     <label>
-                                        <input type="checkbox" name="ssl" id="ssl" placeholder="Viết gì đó" value_type="ssl" @if ($webSetting->domain) checked="checked" @endif>
+                                        <input type="checkbox" name="ssl" id="ssl" placeholder="Viết gì đó" value_type="ssl" @if ($webSetting->ssl) checked="checked" @endif>
                                         <span></span>
                                         <i class="ml-2 pt-2 d-inline-block">Cài đặt và sử dụng SSL</i>
                                     </label>
@@ -161,9 +161,17 @@
                                     <td>Sub-Domain</td>
                                     <td>
 
-                                        <a href="http://{{ $webSetting->subdomain . '.' . $webSetting->domain }}">
-                                            {{ $webSetting->subdomain . '.' . $webSetting->domain }}
+                                        <a href="http://{{ $webSetting->subdomain . '.' . $webSetting->base_domain }}">
+                                            {{ $webSetting->subdomain . '.' . $webSetting->base_domain }}
                                         </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Domain</td>
+                                    <td>
+                                        @if ($webSetting->domain)
+                                            <a href="http://{{ $webSetting->domain }}">{{ $webSetting->domain }}</a>
+                                        @endif
                                     </td>
                                 </tr>
                                 <tr>

@@ -222,12 +222,24 @@ trait Crawl{
 
     public function sendRequest($url, $source_type = 'ssr')
     {
-        if($source_type == 'csr' || preg_match('/(lazada|shopee|sendo)\.vn\//i', $url)){
-            $url = env('CRAWLER_BOT_API') .'?url='.$url;
-            
+        $params = [];
+        if ($source_type == 'csr' || preg_match('/(lazada|shopee|sendo|soha)\.vn\//i', $url)) {
+            $params = [
+                "api_key" => env('SCRAPING_API_KEY'),
+                'device' => 'desktop',
+                'proxy_type'=> 'datacenter',
+                'country'=> 'jp',
+                "url" => urlencode($url),
+                "render_js" => 1,
+                'wait_for' => 2,
+                'timeout' => '60000',
+                # 'wait_until"=> 'networkidle2'
+            ];
+            $url = env("SCRAPING_API_URL");
         }
         try{
-            $rs = $this->api->get($url);
+            $rs = $this->api->get($url, $params);
+
             if($rs){
                 if(is_object($rs)){
                     $content = $rs->getBody()->getContents();
@@ -252,7 +264,7 @@ trait Crawl{
     public function getHtmlRaw($url, $method = 'GET')
     {
         try{
-            $rs = $this->api->send($url, 'GET');
+            $rs = $this->api->get($url);
             if($rs){
                 $content = $rs->getBody()->getContents();
             }

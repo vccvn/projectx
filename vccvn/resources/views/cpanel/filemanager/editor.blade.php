@@ -77,10 +77,18 @@ $mode = isset($modes[$ext]) ? $modes[$ext] : 'text/html';
             @csrf
 
             <div class="m-portlet__head">
+                <div class="m-portlet__head-tools">
+                    <ul class="m-portlet__nav">
+
+                        <li class="m-portlet__nav-item">
+                            <a href="{{ route('filemanager') . '?p=' . $path }}" data-toggle="m-tooltip" data-placement="top" title data-original-title="Quay về" class="ml-2 btn-make-dir btn btn-outline-warning m-btn btn-sm"><i class="fa fa-arrow-left"></i> <span class="d-none d-md-inline-block">Quay về</span></a>
+                        </li>
+                    </ul>
+                </div>
                 <div class="m-portlet__head-caption">
                     <div class="m-portlet__head-title">
                         <h3 class="m-portlet__head-text">
-                            Edit: {{ $filename }}
+                            {{ $filename }}
                         </h3>
                     </div>
                 </div>
@@ -89,9 +97,6 @@ $mode = isset($modes[$ext]) ? $modes[$ext] : 'text/html';
 
                         <li class="m-portlet__nav-item">
                             <button type="submit" class="btn btn-info btn-sm">Lưu</button>
-                        </li>
-                        <li class="m-portlet__nav-item">
-                            <a href="{{ route('filemanager') . '?p=' . $path }}" data-toggle="m-tooltip" data-placement="top" title data-original-title="Quay về" class="ml-2 btn-make-dir btn btn-outline-warning m-btn btn-sm"><i class="fa fa-arrow-left"></i> <span class="d-none d-md-inline-block">Quay về</span></a>
                         </li>
                     </ul>
                 </div>
@@ -189,5 +194,38 @@ $mode = isset($modes[$ext]) ? $modes[$ext] : 'text/html';
             temp.value = cnt;
 
         });
+
+        if($('.crazy-form').length){
+            $('.crazy-form').on("submit",function(){
+                var $this = $(this);
+                if($this.data('submitting')) {
+                    console.log('this form is submitting!');
+                    return false;
+                }
+                $this.data('submitting', "true");
+                $this.find('.btn-submit-form,button[type="submit"],input[type="submit"]').addClass("m-loader m-loader--right m-loader--light").attr("disabled",!0);
+                $this.find('.crazy-hidden-template').remove();
+                if($this.find('.input-gallery.has-advanced-upload').length){
+                    $this.find('.input-gallery.has-advanced-upload input[type="file"]').remove();
+                }
+                return true;
+            });
+            $(document).keydown(function(event) {
+                // If Control or Command key is pressed and the S key is pressed
+                // run save function. 83 is the key code for S.
+                if((event.ctrlKey || event.metaKey) && event.which == 83) {
+                    // Save Function
+                    event.preventDefault();
+                    $('.crazy-form').submit();
+                    return false;
+                }
+            });
+            $(document).on('click', '.sticky-btn-submit-form', function (e) {
+                e.preventDefault();
+                $('.crazy-form').submit();
+                $(this).addClass("m-loader m-loader--right m-loader--light").attr("disabled",!0);
+                return false;
+            })
+        }
     </script>
 @endsection

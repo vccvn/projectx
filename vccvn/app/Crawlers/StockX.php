@@ -59,6 +59,7 @@ class StockX extends Crawler
 
     public function parseProductData($data)
     {
+        die(json_encode($data, JSON_PRETTY_PRINT));
         $a = new Arr($data);
         return [
             'name' => $a->name,
@@ -85,7 +86,7 @@ class StockX extends Crawler
     {
         // lấy html của trang sp
         $html = $this->getHtml($this->parseUrl($url, $frame), $frame->source_type);
-
+        
         if (!$html) return null;
 
         $attr = [];
@@ -143,7 +144,7 @@ class StockX extends Crawler
                     }
                 }
             }
-
+            
             // header('Content-Type: Application/json');
             $hd = $this->repository->getDataFromHtml($html, $frame, $url);
             $a = new Arr($data);
@@ -160,7 +161,6 @@ class StockX extends Crawler
                 'offers' => $a->offers
 
             ];
-            dd($d);
             return $d;
         }
         return [];
@@ -237,6 +237,7 @@ class StockX extends Crawler
     {
         // lấy html của trang sp
         $data = $this->getProductByUrl($url, $frame);
+        dd($data);
         return $this->saveProduct($data, $config, $frame);
     }
 

@@ -32,7 +32,7 @@ class Form extends HtmlDom implements Countable, ArrayAccess, IteratorAggregate,
     protected $errors = null;
 
     /**
-     * @var array du lieu form dang nang
+     * @var Arr du lieu form dang nang
      */
 
     protected $form_data = null;
@@ -562,9 +562,18 @@ class Form extends HtmlDom implements Countable, ArrayAccess, IteratorAggregate,
 
 
 
+    public function formData($key = null){
+        if($key != null) return $this->form_data->get($key);
+        return $this->form_data->all();
+    }
+
+
     public function toArray()
     {
-        return $this->data;
+        return array_merge($this->_attrs, [
+            'data' => $this->form_data,
+            'inputs' => $this->inputs()
+        ]);
     }
 
 

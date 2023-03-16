@@ -2,8 +2,11 @@
 
 namespace App\Repositories\Html;
 
+use App\Masks\Html\ComponentCollection;
+use App\Masks\Html\ComponentMask;
 use App\Repositories\Base\BaseRepository;
 use App\Repositories\Components\ComponentRepository as Components;
+use App\Validators\Html\ComponentValidator;
 use Crazy\Helpers\Arr;
 
 class ComponentRepository extends BaseRepository
@@ -12,18 +15,9 @@ class ComponentRepository extends BaseRepository
      * class chứ các phương thức để validate dử liệu
      * @var string $validatorClass 
      */
-    protected $validatorClass = 'Html\ComponentValidator';
-    /**
-     * @var string $resourceClass
-     */
-    protected $resourceClass = 'HtmlComponentResource';
-    /**
-     * @var string $collectionClass
-     */
-    protected $collectionClass = 'HtmlComponentCollection';
-
-    protected $maskClass = 'Html\ComponentMask';
-    protected $maskCollectionClass = 'Html\ComponentCollection';
+    protected $validatorClass = ComponentValidator::class;
+    protected $maskClass = ComponentMask::class;
+    protected $maskCollectionClass = ComponentCollection::class;
 
     /**
      * component repository

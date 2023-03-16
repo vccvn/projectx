@@ -89,6 +89,9 @@ class PostController extends ClientController
                 ];
                 $post = $this->cacheTask($request, $postKey)->getPostDetail($args);
                 if ($post) {
+                    
+                    $this->repository->update($post->id, ['views' => $post->views+1]);
+                    
                     $post->applyMeta();
                     $post->post_type = $dynamic->post_type;
                     set_active_model('post', $post);
@@ -116,6 +119,9 @@ class PostController extends ClientController
                     ]);
                     
                 if ($page) {
+                    
+                    $this->pageRepository->update($page->id, ['views' => $page->views+1]);
+                    
                     $article = $page;
                     $page_title = $page->title;
                     $this->breadcrumb->addPage($page);
@@ -175,6 +181,8 @@ class PostController extends ClientController
             elseif ($page = $this->cacheTask($request, $key, $this->pageRepository)->getPageDetail(['slug' => $slug])) {
                 // nếu trang có trang con
 
+                $this->pageRepository->update($page->id, ['views' => $page->views+1]);
+                
                 $page->applyMeta();
                 set_active_model('page', $page);
                 $this->breadcrumb->addPage($page);

@@ -36,7 +36,7 @@ class SettingValidator extends BaseValidator
             return true;
         });
         $this->addRule('check_alias', function ($attr, $value) {
-            if ($value) return true;
+            if (!$value) return true;
             if (!$this->domain) {
                 if ($web = $this->repository->first(['alias_domain' => $value])) {
                     if ($this->ownerID == $web->owner_id) return true;
@@ -53,7 +53,7 @@ class SettingValidator extends BaseValidator
         });
 
         $this->addRule('check_domain', function ($attr, $value) {
-            if ($value) return true;
+            if (!$value) return true;
             if (!$this->alias_domain) {
                 if ($web = $this->repository->first(['domain' => $value])) {
                     if ($this->ownerID == $web->owner_id) return true;

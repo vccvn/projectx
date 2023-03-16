@@ -9,7 +9,7 @@
                         <a href="#" class="m-brand__logo-wrapper">
                             {{-- <img alt="" src="{{asset('static/manager/assets/demo/default/media/img/logo/logo_default_dark.png')}}" /> --}}
                             {{-- <img alt="" src="{{asset('static/manager/assets/images/logo.png')}}" /> --}}
-                            <img alt="" src="{{asset('static/images/logos/admin_page_logo.png')}}" />
+                            <img alt="" src="{{siteinfo('admin_login_logo', asset('static/images/logos/admin_page_logo.png'))}}" />
                         </a>
                     </div>
                     <div class="m-stack__item m-stack__item--middle m-brand__tools">

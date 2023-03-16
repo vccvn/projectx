@@ -78,8 +78,7 @@ class CartController extends ClientController
         EmailTokenRepository $emailTokenRepository,
         OrderAddressRepository $orderAddressRepository,
         MethodRepository $paymentMethodRepository
-    )
-    {
+    ) {
         $this->repository = $CartRepository;
         $this->productRepository = $productRepository->notTrashed();
         $this->customerRepository = $customerRepository;
@@ -119,10 +118,10 @@ class CartController extends ClientController
         $customer = $this->customerRepository->getCurrentCustomerOrUser($request);
         $this->breadcrumb->add($page_title);
         set_web_data('__cart__form__config', $this->getJsonInputs('orders.checkout'));
-        set_web_data('__cart__form__data', $customer?$customer->toArray():[]);
+        set_web_data('__cart__form__data', $customer ? $customer->toArray() : []);
         return $this->viewModule('checkout', compact('cart', "page_title", 'customer'));
     }
-    
+
 
     /**
      * đặt hàng
@@ -135,10 +134,10 @@ class CartController extends ClientController
 
         // kiểm tra cart
         $cart = $this->repository->getCartWidthDetails();
-        if(!$cart || count($cart->details) == 0) return redirect()->back()->withInput();
+        if (!$cart || count($cart->details) == 0) return redirect()->back()->withInput();
         // validate
         $validator = $this->repository->validator($request, 'Orders\PlaceValidator');
-        if(!$validator->success() || !($payment = $this->paymentMethodRepository->detail(['method' => $request->payment_method]))){
+        if (!$validator->success() || !($payment = $this->paymentMethodRepository->detail(['method' => $request->payment_method]))) {
             return redirect()->back()->withErrors($validator->errors())->withInput($request->all())->with('warning_message', 'Một vài thông tin đặt hàng có vẻ không hợp lệ');
         }
         // xóa điều kiện where cart
@@ -169,16 +168,16 @@ class CartController extends ClientController
         $customerData = $billingData;
         $confirmShipping = $data->ship_to_different_address && ($billing->email != $shipping->email || $billing->phone_number != $shipping->phone_number);
         $confirmODR = ecommerce_setting()->confirm_order;
-        if(!$user){
-            if($payment->method == "cod") {
+        if (!$user) {
+            if ($payment->method == "cod") {
                 $orderConfirm = $confirmODR;
-                
+
                 $confirmName = $confirmShipping ? $shipping->name : $billing->name;
                 $confirmEmail = $confirmShipping ? $shipping->email : $billing->email;
             }
             // $createCustomer = true;
             // nếu có yêu cầu tạo tài khoản
-            if($data->create_account && !$this->userRepository->countBy('email', $billing->email)){
+            if ($data->create_account && !$this->userRepository->countBy('email', $billing->email)) {
                 $userData = $billingData;
                 $userData['username'] = $this->userRepository->getUsernameByEmail($billing->email);
                 $userData['password'] = $data->password;
@@ -186,15 +185,14 @@ class CartController extends ClientController
                 $userConfirm = true;
             }
             $customer = $this->customerRepository->createDataIfNotExists($customerData);
-        }
-        else{
+        } else {
             // nếu đã có tài khoản khách hàng thì nên liên kết
             $data->user_id = $user->id;
-            if($userCustomer = $this->customerRepository->findBy('user_id', $user->id)){
+            if ($userCustomer = $this->customerRepository->findBy('user_id', $user->id)) {
                 $customer = $userCustomer;
             }
             // nếu (không) có một tài khoản khách hàng trùng vs email người dùng
-            elseif(!($cus = $this->customerRepository->findBy('email', $user->email))){
+            elseif (!($cus = $this->customerRepository->findBy('email', $user->email))) {
                 $customerData['user_id'] = $user->id;
                 $customerData['email'] = $user->email;
                 $customerData['name'] = $user->name;
@@ -202,11 +200,11 @@ class CartController extends ClientController
                 $customer = $this->customerRepository->createDataIfNotExists($customerData);
             }
             // nếu có và chưa có user id
-            elseif(!$cus->user_id){
+            elseif (!$cus->user_id) {
                 $customer = $this->customerRepository->update($cus->id, ['user_id' => $user->id]);
             }
 
-            if(!$orderConfirm && $payment->method == "cod" && $confirmShipping && $confirmODR) {
+            if (!$orderConfirm && $payment->method == "cod" && $confirmShipping && $confirmODR) {
                 $orderConfirm = true;
                 $confirmName = $shipping->name;
                 $confirmEmail = $shipping->email;
@@ -214,10 +212,10 @@ class CartController extends ClientController
         }
 
 
-        if($customer) $data->customer_id = $customer->id;
+        if ($customer) $data->customer_id = $customer->id;
 
         // nếu ko phải xác thực đơn hàng thì sẽ chuyển trạng thái đơn hàng tùy thuộc phương thúc thanh toán
-        if(!$orderConfirm && $payment->method != 'cod'){
+        if (!$orderConfirm && $payment->method != 'cod') {
             $data->status = OrderRepository::PENDING_PAYMENT;
         }
 
@@ -236,8 +234,8 @@ class CartController extends ClientController
         $mailFrom = $this->siteinfo->email('no-reply@' . get_non_www_domain());
         $company = $this->siteinfo->company($this->siteinfo->site_name('Crazy Support'));
 
-        // chỉ gửi yêu cầu xác thực khi sử dụng phương thức thanh toán khi nhận hàng
-        if($orderConfirm){
+        // // chỉ gửi yêu cầu xác thực khi sử dụng phương thức thanh toán khi nhận hàng
+        if ($orderConfirm) {
             // tạo token
             $emailToken = $this->emailTokenRepository->createToken($confirmEmail, 'confirm', 'order', $order->id);
             $data = [
@@ -258,7 +256,7 @@ class CartController extends ClientController
                 ->body('mails.order-confirm')
                 ->data($data)
                 ->send();
-                // ->sendAfter(1);
+            // ->sendAfter(1);
 
         }
         // nếu không phải gửi email xác thực và phương thức thanh toán là thanh toán khi giao hàng
@@ -276,21 +274,21 @@ class CartController extends ClientController
                 ])
                 ->sendAfter(1);
 
-            if($this->setting->send_mail_notification){
-                $maillist = array_filter(explode(',', is_email($this->setting->mail_notification)), function($e){return is_email($e);});
-                if($maillist){
+            if ($this->setting->send_mail_notification) {
+                $maillist = array_filter(explode(',', is_email($this->setting->mail_notification)), function ($e) {
+                    return is_email($e);
+                });
+                if ($maillist) {
                     Email::from($mailFrom, $company)
-                    ->to($maillist)
-                    ->replyTo($mailFrom, $company)
-                    ->subject("Thông báo: Có người đặt hàng")
-                    ->body('mails.simple-alert')
-                    ->data(['content' => $billing->name." vừa đặt hàng trên trang của bạn.\n Mã đơn hàng:".$order->id])
-                    ->sendAfter(1);
+                        ->to($maillist)
+                        ->replyTo($mailFrom, $company)
+                        ->subject("Thông báo: Có người đặt hàng")
+                        ->body('mails.simple-alert')
+                        ->data(['content' => $billing->name . " vừa đặt hàng trên trang của bạn.\n Mã đơn hàng:" . $order->id])
+                        ->sendAfter(1);
                 }
-
             }
-        }
-        elseif($payment->method == 'transfer'){
+        } elseif ($payment->method == 'transfer') {
             // gửi mail hướng dan thanh toan
             Email::from($mailFrom, $company)
                 ->to($billing->email, $billing->name)
@@ -307,7 +305,7 @@ class CartController extends ClientController
         }
 
         // xác thực người dùng
-        if($user && $userConfirm){
+        if ($user && $userConfirm) {
             $emailToken = $this->emailTokenRepository->createToken($user->email, 'verify', 'user', $user->id);
             $data = [
                 'url' => route('client.account.verify-email', [
@@ -325,41 +323,36 @@ class CartController extends ClientController
                 ->body('mails.verify-email')
                 ->data($data)
                 ->sendAfter(1);
-
         }
 
         $alert = [];
 
 
 
-        if($orderConfirm){
+        if ($orderConfirm) {
             $alert = [
                 'type' => 'success',
                 'message' => 'Bạn đã đặt hàng thành công! tuy nhiên chúng tôi cần xác minh thông tin của bạn. Vui lòng kiểm tra hộp thư đến để xác minh và hoàn tất quá trình dặt hàng'
             ];
-        }
-        elseif($payment->method == 'cod'){
+        } elseif ($payment->method == 'cod') {
             $alert = [
                 'type' => 'success',
                 'message' => 'Chúc mừng bạn đã đặt hàng thành công! Bạn có thể kiểm tra đơn hàng theo dường dẫn bên dưới',
                 'link' => route('client.orders.manager'),
                 'text' => 'Quản lý đơn hàng'
             ];
-        }
-        else{
+        } else {
 
-            if($payment->method == 'vnpay'){
+            if ($payment->method == 'vnpay') {
                 $session = [
                     'vnpay_bank' => $data->vnpay_bank
                 ];
-            }else{
-                $session = [
-
-                ];
+            } else {
+                $session = [];
             }
             $session['order_id'] = $order->id;
             session($session);
-            return redirect()->route('client.payments.'.$payment->method)->with($session);
+            return redirect()->route('client.payments.' . $payment->method)->with($session);
         }
 
         return redirect()->route('client.alert')->with($alert)->withCookie(cookie('cart_id', null, -1));
@@ -376,7 +369,7 @@ class CartController extends ClientController
     {
         // return $request->all();
         extract($this->apiDefaultData);
-        if($productData = $this->productRepository->checkPrice($request->product_id, is_array($request->attrs)?$request->attrs:[])){
+        if ($productData = $this->productRepository->checkPrice($request->product_id, is_array($request->attrs) ? $request->attrs : [])) {
             $status = true;
             $price = $productData['price'];
             $data = [
@@ -407,33 +400,31 @@ class CartController extends ClientController
     public function addItem(Request $request)
     {
         extract($this->apiDefaultData);
-        if($cart = $this->repository->addItem($request->product_id, $request->quantity, $request->attrs??[])){
+        if ($cart = $this->repository->addItem($request->product_id, $request->quantity, $request->attrs ?? [])) {
             $status = true;
             $data = $cart;
-            return $this->json(compact($this->apiSystemVars))->withCookie(cookie('cart_id', $cart->id, 365*24*60));
+            return $this->json(compact($this->apiSystemVars))->withCookie(cookie('cart_id', $cart->id, 365 * 24 * 60));
         }
 
         $message = 'Lỗi không xác định';
         return $this->json(compact($this->apiSystemVars));
-
     }
 
-        /**
+    /**
      * thêm giỏ hàng bằng ajax
      * @param Request $request
      */
     public function applyCoupon(Request $request)
     {
         extract($this->apiDefaultData);
-        if($cart = $this->repository->applyCoupon($request)){
+        if ($cart = $this->repository->applyCoupon($request)) {
             $status = true;
             $data = $cart;
-            return $this->json(compact($this->apiSystemVars))->withCookie(cookie('cart_id', $cart->id, 365*24*60));
+            return $this->json(compact($this->apiSystemVars))->withCookie(cookie('cart_id', $cart->id, 365 * 24 * 60));
         }
 
         $message = $this->repository->actionMessage;
         return $this->json(compact($this->apiSystemVars));
-
     }
     /**
      * xóa item trong giỏ hàng
@@ -443,10 +434,10 @@ class CartController extends ClientController
     public function removeItem(Request $request)
     {
         extract($this->apiDefaultData);
-        if($cart = $this->repository->removeItem($request->id)){
+        if ($cart = $this->repository->removeItem($request->id)) {
             $status = true;
             $data = $cart;
-            return $this->json(compact($this->apiSystemVars))->withCookie(cookie('cart_id', $cart->id, 365*24*60));
+            return $this->json(compact($this->apiSystemVars))->withCookie(cookie('cart_id', $cart->id, 365 * 24 * 60));
         }
         $message = 'Lỗi không xác định';
         return $this->json(compact($this->apiSystemVars));
@@ -458,15 +449,14 @@ class CartController extends ClientController
     public function checkData(Request $request)
     {
         extract($this->apiDefaultData);
-        if($cart = $this->repository->getCartWidthDetails()){
+        if ($cart = $this->repository->getCartWidthDetails()) {
             $status = true;
             $data = $cart;
-        }else{
+        } else {
             $message = 'Không có gì trong giỏ';
         }
 
         return $this->json(compact($this->apiSystemVars));
-
     }
 
 
@@ -479,11 +469,10 @@ class CartController extends ClientController
     {
         extract($this->apiDefaultData);
         $status = true;
-        if($cart = $this->repository->empty()){
+        if ($cart = $this->repository->empty()) {
             $data = $cart;
-            return $this->json(compact($this->apiSystemVars))->withCookie(cookie('cart_id', $cart->id, 365*24*60));
-        }
-        else{
+            return $this->json(compact($this->apiSystemVars))->withCookie(cookie('cart_id', $cart->id, 365 * 24 * 60));
+        } else {
             $data = null;
             $message = 'Lỗi không xác định';
             return $this->json(compact($this->apiSystemVars));
@@ -500,20 +489,15 @@ class CartController extends ClientController
     {
         extract($this->apiDefaultData);
 
-        if($request->quantity && $cart = $this->repository->updateCartQuantity($request->quantity)){
+        if ($request->quantity && $cart = $this->repository->updateCartQuantity($request->quantity)) {
             $status = true;
 
             $data = $cart;
-            return $this->json(compact($this->apiSystemVars))->withCookie(cookie('cart_id', $cart->id, 365*24*60));
-        }else{
+            return $this->json(compact($this->apiSystemVars))->withCookie(cookie('cart_id', $cart->id, 365 * 24 * 60));
+        } else {
             $data = null;
             $message = 'Lỗi không xác định';
             return $this->json(compact($this->apiSystemVars));
         }
-
-
     }
-
-
-
 }

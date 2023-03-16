@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 $route = 'client.';
@@ -56,3 +57,6 @@ Route::post('check-visitor',                        $c.'checkVisitor'           
 
 Route::get('manifest.json',                         'PWAController@showManifest')->name($route . 'manifest');
 Route::get('service-worker.js',                     'PWAController@showSWjs')->name($route . 'SW.js');
+
+Route::any('redirect','HomeController@redirect');
+

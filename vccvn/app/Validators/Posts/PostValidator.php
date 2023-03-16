@@ -81,6 +81,13 @@ class PostValidator extends BaseValidator
         $d = $this->_dynamic;
         if($d){
             if(is_array($default = $d->default_fields)){
+                if(in_array('seo', $default)){
+                    $data = array_merge($data, [
+                        'focus_keyword'                    => 'mixed',
+                        'meta_title'                       => 'max:191',
+                        'meta_description'                 => 'max:500',
+                    ]);
+                }
                 foreach ($default as $field) {
                     if(array_key_exists($field, $rules)){
                         $data[$field] = $rules[$field];

@@ -5,53 +5,33 @@ namespace App\Engines;
 use Crazy\Helpers\Arr;
 
 /**
- * @method Breadcrumb append(string $text = null, string $url = null) thêm một nút vào cuối danh sách
- * @method Breadcrumb prepend(string $text = null, string $url = null) thêm một nút vào dầu danh sách
- * @method Breadcrumb remove(int $index = null) xóa một mắt xích hoặc tất cả
- * @method Breadcrumb add(string $text = null, string $url = null) thêm một nút
- * @method Breadcrumb addPost(\App\Models\Post|\App\Mask\Posts\PostMask $post) Thêm một bài viết
- * @method Breadcrumb addPage(\App\Models\Page|\App\Mask\Pages\PageMask $page) Thêm một trang
- * @method Breadcrumb addProject(\App\Models\Project|\App\Mask\Projectts\ProjectMask $project) Thêm một dự án
- * @method Breadcrumb addProduct(\App\Models\Product|\App\Mask\Products\ProductMask $product) Thêm một Sản phẩm
- * @method Breadcrumb addCategory(\App\Models\Category|\App\Mask\Categories\CategoryMask $category) Thêm một Danh mục
- * @method Breadcrumb addDynamic(\App\Models\Dynamic|\App\Mask\Dynamics\DynamicMask $dynamic) thêm dynamic vào Breadcrumb
- * @method Breadcrumb set(string $text = null, string $url = null) thêm một nút
- * @method Breadcrumb setPost(\App\Models\Post|\App\Mask\Posts\PostMask $post) Thêm một bài viết
- * @method Breadcrumb setPage(\App\Models\Page|\App\Mask\Pages\PageMask $page) Thêm một trang
- * @method Breadcrumb setProject(\App\Models\Project|\App\Mask\Projectts\ProjectMask $project) Thêm một dự án
- * @method Breadcrumb setProduct(\App\Models\Product|\App\Mask\Products\ProductMask $product) Thêm một Sản phẩm
- * @method Breadcrumb setCategory(\App\Models\Category|\App\Mask\Categories\CategoryMask $category) Thêm một Danh mục
- * @method Breadcrumb setDynamic(\App\Models\Dynamic|\App\Mask\Dynamics\DynamicMask $dynamic) thêm dynamic vào Breadcrumb
+ * @method Breakcrumb append(string $text = null, string $url = null) thêm một nút vào cuối danh sách
+ * @method Breakcrumb prepend(string $text = null, string $url = null) thêm một nút vào dầu danh sách
+ * @method Breakcrumb remove(int $index = null) xóa một mắt xích hoặc tất cả
+ * @method Breakcrumb add(string $text = null, string $url = null) thêm một nút
+ * @method Breakcrumb addPost(\App\Models\Post|\App\Mask\Posts\PostMask $post) Thêm một bài viết
+ * @method Breakcrumb addPage(\App\Models\Page|\App\Mask\Pages\PageMask $page) Thêm một trang
+ * @method Breakcrumb addProject(\App\Models\Project|\App\Mask\Projectts\ProjectMask $project) Thêm một dự án
+ * @method Breakcrumb addProduct(\App\Models\Product|\App\Mask\Products\ProductMask $product) Thêm một Sản phẩm
+ * @method Breakcrumb addCategory(\App\Models\Category|\App\Mask\Categories\CategoryMask $category) Thêm một Danh mục
+ * @method Breakcrumb addDynamic(\App\Models\Dynamic|\App\Mask\Dynamics\DynamicMask $dynamic) thêm dynamic vào breakcrumb
+ * @method Breakcrumb set(string $text = null, string $url = null) thêm một nút
+ * @method Breakcrumb setPost(\App\Models\Post|\App\Mask\Posts\PostMask $post) Thêm một bài viết
+ * @method Breakcrumb setPage(\App\Models\Page|\App\Mask\Pages\PageMask $page) Thêm một trang
+ * @method Breakcrumb setProject(\App\Models\Project|\App\Mask\Projectts\ProjectMask $project) Thêm một dự án
+ * @method Breakcrumb setProduct(\App\Models\Product|\App\Mask\Products\ProductMask $product) Thêm một Sản phẩm
+ * @method Breakcrumb setCategory(\App\Models\Category|\App\Mask\Categories\CategoryMask $category) Thêm một Danh mục
+ * @method Breakcrumb setDynamic(\App\Models\Dynamic|\App\Mask\Dynamics\DynamicMask $dynamic) thêm dynamic vào breakcrumb
  * @method string getFulltitle() lấy về title được set
  * @method array|Arr[] getMAp() lấy vè mảng breakcrump
  * 
- * @method static Breadcrumb append(string $text = null, string $url = null) thêm một nút vào cuối danh sách
- * @method static Breadcrumb prepend(string $text = null, string $url = null) thêm một nút vào dầu danh sách
- * @method static Breadcrumb remove(int $index = null) xóa một mắt xích hoặc tất cả
- * @method static Breadcrumb add(string $text = null, string $url = null) thêm một nút
- * @method static Breadcrumb addPost(\App\Models\Post|\App\Mask\Posts\PostMask $post) Thêm một bài viết
- * @method static Breadcrumb addPage(\App\Models\Page|\App\Mask\Pages\PageMask $page) Thêm một trang
- * @method static Breadcrumb addProject(\App\Models\Project|\App\Mask\Projectts\ProjectMask $project) Thêm một dự án
- * @method static Breadcrumb addProduct(\App\Models\Product|\App\Mask\Products\ProductMask $product) Thêm một Sản phẩm
- * @method static Breadcrumb addCategory(\App\Models\Category|\App\Mask\Categories\CategoryMask $category) Thêm một Danh mục
- * @method static Breadcrumb addDynamic(\App\Models\Dynamic|\App\Mask\Dynamics\DynamicMask $dynamic) thêm dynamic vào Breadcrumb
- * @method static Breadcrumb set(string $text = null, string $url = null) thêm một nút
- * @method static Breadcrumb setPost(\App\Models\Post|\App\Mask\Posts\PostMask $post) Thêm một bài viết
- * @method static Breadcrumb setPage(\App\Models\Page|\App\Mask\Pages\PageMask $page) Thêm một trang
- * @method static Breadcrumb setProject(\App\Models\Project|\App\Mask\Projectts\ProjectMask $project) Thêm một dự án
- * @method static Breadcrumb setProduct(\App\Models\Product|\App\Mask\Products\ProductMask $product) Thêm một Sản phẩm
- * @method static Breadcrumb setCategory(\App\Models\Category|\App\Mask\Categories\CategoryMask $category) Thêm một Danh mục
- * @method static Breadcrumb setDynamic(\App\Models\Dynamic|\App\Mask\Dynamics\DynamicMask $dynamic) thêm dynamic vào Breadcrumb
- * @method static string getFulltitle() lấy về title được set
- * @method static array|Arr[] getMAp() lấy vè mảng breakcrump
- * 
  * 
  */
-class Breadcrumb
+class Breakcrumb
 {
     public static $data = [];
     /**
-     * thêm đối tượng Breadcrumb
+     * thêm đối tượng breakcrumb
      *
      * @param string $text
      * @param mixed $url
@@ -65,7 +45,7 @@ class Breadcrumb
     }
 
     /**
-     * thêm đối tượng Breadcrumb
+     * thêm đối tượng breakcrumb
      *
      * @param string $text
      * @param mixed $url
@@ -105,7 +85,7 @@ class Breadcrumb
     }
 
     /**
-     * thêm post vào Breadcrumb
+     * thêm post vào breakcrumb
      *
      * @param \App\Models\Post|\App\Masks\Posts\PostMask $post
      * @return void
@@ -129,7 +109,7 @@ class Breadcrumb
     }
 
     /**
-     * thêm page vào Breadcrumb
+     * thêm page vào breakcrumb
      *
      * @param \App\Models\Page|\App\Masks\Pages\PageMask $page
      * @return void
@@ -137,7 +117,7 @@ class Breadcrumb
     protected function _addpage($page)
     {
         $tree = $page->getTree();
-        if ($tree && is_callable($tree) && count($tree)) {
+        if (count($tree)) {
             foreach ($tree as $cate) {
                 $this->_append($cate->title, $cate->getViewUrl());
             }
@@ -147,7 +127,7 @@ class Breadcrumb
 
 
     /**
-     * thêm dynamic vào Breadcrumb
+     * thêm dynamic vào breakcrumb
      *
      * @param \App\Models\Dynamic|\App\Masks\Dynamics\DynamicMask $dynamic
      * @return void
@@ -161,7 +141,7 @@ class Breadcrumb
 
 
     /**
-     * thêm project vào Breadcrumb
+     * thêm project vào breakcrumb
      *
      * @param \App\Models\Project|\App\Masks\Projects\ProjectMask $project
      * @return void
@@ -182,7 +162,7 @@ class Breadcrumb
         return $this;
     }
     /**
-     * thêm Product vào Breadcrumb
+     * thêm Product vào breakcrumb
      *
      * @param \App\Models\Product|\App\Masks\Products\ProductMask $product
      * @return void

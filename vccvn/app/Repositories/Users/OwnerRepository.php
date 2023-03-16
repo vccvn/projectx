@@ -353,8 +353,10 @@ class OwnerRepository extends BaseUserRepository
             $rs = $api->get(env('HOSTING_MANAGER_API') . '/wp/delete?secret_id=' . $user->client_key)->getBody()->getContents();
         } else if($websetting->web_type == 'vcchosting'){
             $rs = $api->get(env('HOSTING_MANAGER_API') . '/hosting/delete?secret_id=' . $user->secret_key)->getBody()->getContents();
-        } else {
 
+        } else {
+            $rs = '';
         }
+        
     }
 }

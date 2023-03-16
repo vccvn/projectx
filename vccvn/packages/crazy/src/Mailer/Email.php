@@ -102,7 +102,6 @@ class Email{
 				];
 			}
 
-            die(json_encode($config, JSON_PRETTY_PRINT));
 			$this->config = $config;
 			Config::set('mail', $config);
 
