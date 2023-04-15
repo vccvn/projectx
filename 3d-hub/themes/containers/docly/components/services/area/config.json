@@ -1,0 +1,28 @@
+{
+    "name": "Các dịch vụ (service area)",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề"
+        },
+        "description": {
+            "type": "textarea",
+            "label":"Mô tả",
+            "placeholder": "Viết gì đó...",
+            "className": "auto-height"
+        },
+        "dynamic_id": {
+            "type": "crazyselect",
+            "label": "Mục đăng dịch vụ (tùy chọn)",
+            "template": "crazyselect",
+            "call": "get_dynamic_options",
+            "params": [[], "Chọn một"],
+            "@change": "Crazy.posts.changeDynamicID"
+        },
+        "link": {
+            "type": "text",
+            "label": "Liên kết (tùy chọn)",
+            "placeholder": "Nhập liên kết. (Không bắt buộc)"
+        }
+    }
+}

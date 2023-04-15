@@ -1,0 +1,63 @@
+{
+    "name": "Menu",
+    "package": "menus",
+    "use_trash": false,
+    "titles": {
+        "default": "Danh sách Menu",
+        "trash": "Danh sách Menu đã xóa"
+    },
+    "data": {
+        "type": {
+            "default": "Mặc định",
+            "product": "danh mục sản phâm",
+            "post": "Danh mục bài viết",
+            "project": "Danh mục dự án"
+        },
+        "is_main": ["Không", "Có"]
+    },
+    "filter": {
+        "general_columns": {
+            "name": "Tên Menu"
+        },
+        "search_columns": [],
+        "sort_columns": {
+            "priority": "Độ ưu tiên"
+        }
+    },
+    "table": {
+        "class": "",
+        "columns": [
+            {
+                "title": "ID",
+                "class": "id-col",
+                "text": ":id"
+            },
+            {
+                "title": "Tên menu",
+                "class": "",
+                "template": "<a href='{@route}'>{name}</a>",
+                "data":{
+                    "@route": [".items", {"menu_id":":id"}]
+                }
+            },
+            {
+                "title": "Loại menu",
+                "class": "text-center",
+                "data_access": "type.{type}"
+            },
+            {
+                "title": "Vị trí",
+                "class": "text-center",
+                "template": "getPositionText",
+                "data":{
+                    "getPositionText": []
+                }
+            }
+        ]
+    },
+    "resources": {
+        "js_data": [],
+        "js": [],
+        "css": []
+    }
+}

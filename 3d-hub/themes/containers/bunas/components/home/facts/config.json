@@ -1,0 +1,33 @@
+{
+    "name": "Home: Facts",
+    "inputs": {
+        "fact_1": {
+            "type":"textarea",
+            "label": "Fact 1",
+            "placeholder": "Tiêu đề (hoặc số)...\nTiêu đề phụ..\nNội dung... ",
+            "className": "auto-height"
+        },
+        "fact_2": {
+            "type":"textarea",
+            "label": "Fact 2",
+            "placeholder": "Tiêu đề (hoặc số)...\nTiêu đề phụ..\nNội dung... ",
+            "className": "auto-height"
+        },
+        "line_1": {
+            "type":"text",
+            "label":"Tiến trình 1",
+            "placeholder":"Tiêu đề = số (%)"
+        },
+        "line_2": {
+            "type":"text",
+            "label":"Tiến trình 2",
+            "placeholder":"Tiêu đề = số (%)"
+        },
+        "line_3": {
+            "type":"text",
+            "label":"Tiến trình 3",
+            "placeholder":"Tiêu đề = số (%)"
+        }
+
+    }
+}

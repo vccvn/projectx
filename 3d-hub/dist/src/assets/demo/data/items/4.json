@@ -1,0 +1,90 @@
+{
+    "id": 4,
+    "name": "Cái cốc",
+    "category_id": 0,
+    "description": "",
+    "status": "draft",
+    "type": "gltf",
+    "path": "https://threejs.vcc.vn/models/gltf/set14/",
+    "file": "scene.gltf",
+    "download_source_url": "https://threejs.vcc.vn/zip/set14.zip",
+    "thumbnail": "https://threejs.vcc.vn/models/gltf/set14/thumbnail.png",
+    "load_options": {
+        "useRoughnessMipmapper": true,
+        "materialNeedsUpdate": true
+    },
+    "settings": {
+        "options": {
+            "pivot": {
+                "x": "center",
+                "y": "center",
+                "z": "center"
+            }
+        },
+        "props": {
+            "castShadow": false,
+            "receiveShadow": false,
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            }
+        },
+        "meshes": [
+            {
+                "name": "Cone001",
+                "sid": "cone001_0",
+                "index": 0,
+                "title": "Cone001",
+                "data": {},
+                "editable": [
+                    "color",
+                    "map",
+                    "bumpMap",
+                    "bumpScale",
+                    "normalMap",
+                    "transparent",
+                    "opacity"
+                ]
+            },
+            {
+                "name": "Cylinder001",
+                "sid": "cylinder001_1",
+                "index": 1,
+                "title": "Cylinder001",
+                "data": {},
+                "editable": [
+                    "color",
+                    "map"
+                ]
+            },
+            {
+                "name": "Cone002",
+                "sid": "cone002_2",
+                "index": 2,
+                "title": "Cone002",
+                "data": {},
+                "editable": [
+                    "color",
+                    "map",
+                    "bumpMap"
+                ]
+            }
+        ]
+    },
+    "size": {
+        "x": 0.0934722498,
+        "y": 0.1751247123,
+        "z": 0.0930150524
+    }
+}

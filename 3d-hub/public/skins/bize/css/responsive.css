@@ -1,0 +1,228 @@
+/*==================================================
+                    Media Queries
+==================================================*/
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media screen and  (max-width: 320px) and (min-width: 0px) {
+    /*section heading*/
+    .headingOne h2{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    /*hero section*/
+    .biz-slider-text h1, .video-biz-slider-text h1, .slider-bg-contents-wrap h1, .hero-slider-text h1{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .biz-slider-text p, .video-biz-slider-text p, .slider-bg-contents-wrap p, .hero-slider-text p{
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    /*owl indicator*/
+    .white-indicator.owl-theme .owl-nav.disabled+.owl-dots, .color-indicator.owl-theme .owl-nav.disabled+.owl-dots{
+        display: none;
+    }
+
+    /*counter section*/
+    .overlay-bg-one{
+        margin-top: 0;
+    }
+    .single-counter{
+        width: 90%;
+        padding: 15px 0;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media screen and (max-width: 360px) and (min-width: 321px) {
+    /*section heading*/
+    .headingOne h2{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    /*hero section*/
+    .biz-slider-text h1, .video-biz-slider-text h1, .slider-bg-contents-wrap h1, .hero-slider-text h1{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .biz-slider-text p, .video-biz-slider-text p, .slider-bg-contents-wrap p, .hero-slider-text p{
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    /*owl indicator*/
+    .white-indicator.owl-theme .owl-nav.disabled+.owl-dots, .color-indicator.owl-theme .owl-nav.disabled+.owl-dots{
+        display: none;
+    }
+
+    /*counter section*/
+    .overlay-bg-one{
+        margin-top: 0;
+    }
+    .single-counter{
+        width: 90%;
+        padding: 15px 0;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media screen and (max-width: 375px) and (min-width: 361px) {
+    /*section heading*/
+    .headingOne h2{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    /*hero section*/
+    .biz-slider-text h1, .video-biz-slider-text h1, .slider-bg-contents-wrap h1, .hero-slider-text h1{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .biz-slider-text p, .video-biz-slider-text p, .slider-bg-contents-wrap p, .hero-slider-text p{
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    /*owl indicator*/
+    .white-indicator.owl-theme .owl-nav.disabled+.owl-dots, .color-indicator.owl-theme .owl-nav.disabled+.owl-dots{
+        display: none;
+    }
+
+    /*counter section*/
+    .overlay-bg-one{
+        margin-top: 0;
+    }
+    .single-counter{
+        width: 90%;
+        padding: 15px 0;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media screen and (max-width: 414px) and (min-width: 376px) {
+    /*section heading*/
+    .headingOne h2{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    /*hero section*/
+    .biz-slider-text h1, .video-biz-slider-text h1, .slider-bg-contents-wrap h1, .hero-slider-text h1{
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .biz-slider-text p, .video-biz-slider-text p, .slider-bg-contents-wrap p, .hero-slider-text p{
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    /*owl indicator*/
+    .white-indicator.owl-theme .owl-nav.disabled+.owl-dots, .color-indicator.owl-theme .owl-nav.disabled+.owl-dots{
+        display: none;
+    }
+
+    /*counter section*/
+    .overlay-bg-one{
+        margin-top: 0;
+    }
+    .single-counter{
+        width: 90%;
+        padding: 15px 0;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media screen and (max-width: 480px) and (min-width: 415px) {
+    /*section heading*/
+    .headingOne h2{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    /*hero section*/
+    .biz-slider-text h1, .video-biz-slider-text h1, .slider-bg-contents-wrap h1, .hero-slider-text h1{
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .biz-slider-text p, .video-biz-slider-text p, .slider-bg-contents-wrap p, .hero-slider-text p{
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    /*owl indicator*/
+    .white-indicator.owl-theme .owl-nav.disabled+.owl-dots, .color-indicator.owl-theme .owl-nav.disabled+.owl-dots{
+        display: none;
+    }
+
+    /*counter section*/
+    .overlay-bg-one{
+        margin-top: 0;
+    }
+    .single-counter{
+        width: 90%;
+        padding: 15px 0;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media screen and (max-width: 568px) and (min-width: 481px) {
+    /*section heading*/
+    .headingOne h2{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    /*hero section*/
+    .biz-slider-text h1, .video-biz-slider-text h1, .slider-bg-contents-wrap h1, .hero-slider-text h1{
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .biz-slider-text p, .video-biz-slider-text p, .slider-bg-contents-wrap p, .hero-slider-text p{
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    /*owl indicator*/
+    .white-indicator.owl-theme .owl-nav.disabled+.owl-dots, .color-indicator.owl-theme .owl-nav.disabled+.owl-dots{
+        display: none;
+    }
+
+    /*counter section*/
+    .overlay-bg-one{
+        margin-top: 0;
+    }
+    .single-counter{
+        width: 90%;
+        padding: 15px 0;
+    }
+}
+
+/* Min-width width 768px */
+@media (min-width: 768px) {
+
+    .biz-projects {
+        padding-top: 76px;
+        padding-bottom: 100px;
+    }
+
+    .biz-projects .project-item {
+        width: 20%;
+    }
+
+    .biz-projects .grid .project-item .overlay-text {
+        opacity: 0;
+        -o-transition: opacity .3s ease;
+        -webkit-transition: opacity .3s ease;
+        -moz-transition: opacity .3s ease;
+        transition: opacity .3s ease;
+    }
+
+    .biz-projects .grid .project-item .overlay-text span {
+        font: 500 16px/1em "Montserrat", sans-serif;
+    }
+
+    .biz-projects .grid .project-item:hover .overlay-text {
+        opacity: 1;
+    }
+
+
+}

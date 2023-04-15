@@ -1,0 +1,34 @@
+{
+    "name": "[module]",
+    "package": "3d.models",
+    "use_trash": true,
+    "titles": {
+        "default": "Danh sách [module]",
+        "trash": "Danh sách [module] đã xóa"
+    },
+    "data": [],
+    "filter": {
+        "search_columns": [],
+        "sort_columns": []
+    },
+    "table": {
+        "class": "header-center",
+        "columns": [
+            {
+                "title": "Tên",
+                "class": "",
+                "text": ":name"
+            },
+            {
+                "title": "Mô tả",
+                "class": "",
+                "text": ":description"
+            }
+        ]
+    },
+    "resources": {
+        "js_data": [],
+        "js": [],
+        "css": []
+    }
+}

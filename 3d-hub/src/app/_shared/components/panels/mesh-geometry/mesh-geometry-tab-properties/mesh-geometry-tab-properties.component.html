@@ -1,0 +1,18 @@
+<div class="tab-inner">
+    <div class="inputs store">
+        <inp-text-group class="item-name-group" name="name" label="Mesh Object Name" [(value)]="props.name" (subcribe)="onInputChange($event)"></inp-text-group>
+        <div class="inp-list" *ngIf="props">
+
+            <inp-switch-group class="inp-group-item" name="castShadow" [(value)]="props.castShadow" label="Cast Shadow" (subcribe)="onInputChange($event)"></inp-switch-group>
+
+            <inp-switch-group class="inp-group-item" name="receiveShadow" [(value)]="props.receiveShadow" label="Receive Shadow" (subcribe)="onInputChange($event)"></inp-switch-group>
+
+            <inp-vector3-group class="inp-group-item" name="scale" [(value)]="props.scale" label="Scale" (subcribe)="onInputChange($event)"></inp-vector3-group>
+
+            <inp-rotation-group class="inp-group-item" name="rotation" [(value)]="props.rotation" label="Rotation" (subcribe)="onInputChange($event)" [events]="events"></inp-rotation-group>
+
+            <inp-vector3-group class="inp-group-item" name="position" [(value)]="props.position" label="Position" (subcribe)="onInputChange($event)" [btnCenter]="true"></inp-vector3-group>
+
+        </div>
+    </div>
+</div>

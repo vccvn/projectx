@@ -1,0 +1,14 @@
+[2022-12-20 00:20:30] ip: 66.249.73.154, OS: Android, Brower: Handheld Browser, path: /blog/goi-trang-ca-nhan.html
+[2022-12-20 01:14:02] ip: 66.249.73.154, OS: Android, Brower: Handheld Browser, path: /blog/goi-tin-tuc.html
+[2022-12-20 06:16:32] ip: 35.89.235.148, OS: Mac OS X, Brower: Chrome, path: /
+[2022-12-20 06:16:39] ip: 35.89.235.148, OS: Mac OS X, Brower: Chrome, path: /3dhub.vcc.vn/.env
+[2022-12-20 06:16:40] ip: 35.89.235.148, OS: Mac OS X, Brower: Chrome, path: /3dhub.vcc.vn/.env
+[2022-12-20 06:16:41] ip: 35.89.235.148, OS: Mac OS X, Brower: Chrome, path: /vendor/.env
+[2022-12-20 06:16:42] ip: 35.89.235.148, OS: Mac OS X, Brower: Chrome, path: /vendor/.env
+[2022-12-20 06:16:43] ip: 35.89.235.148, OS: Mac OS X, Brower: Chrome, path: /3dhub.vcc.vn/.env
+[2022-12-20 06:16:44] ip: 35.89.235.148, OS: Mac OS X, Brower: Chrome, path: /3dhub.vcc.vn/.env
+[2022-12-20 06:16:45] ip: 35.89.235.148, OS: Mac OS X, Brower: Chrome, path: /admin/.env
+[2022-12-20 06:16:46] ip: 35.89.235.148, OS: Mac OS X, Brower: Chrome, path: /admin/.env
+[2022-12-20 06:16:48] ip: 35.89.235.148, OS: Mac OS X, Brower: Chrome, path: /3dhub.vcc.vn/.env
+[2022-12-20 06:16:49] ip: 35.89.235.148, OS: Mac OS X, Brower: Chrome, path: /3dhub.vcc.vn/.env
+[2022-12-20 06:52:48] ip: 3.84.100.34, OS: Mac OS X, Brower: Firefox, path: /prod/.env

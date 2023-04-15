@@ -1,0 +1,44 @@
+.preview.m-portlet > .m-portlet__body .btns-block {
+  display: none;
+  position: absolute;
+  top: 14px;
+  right: 15px;
+}
+
+.preview.m-portlet > .m-portlet__body .btns-block a {
+  padding: 15px 10px;
+  font-size: 20px;
+  text-decoration: none;
+  color: grey;
+  font-weight: 800;
+}
+
+.preview.m-portlet > .m-portlet__body .btns-block a:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.preview.m-portlet.m-portlet--fullscreen {
+  z-index: 1000;
+}
+
+.preview.m-portlet.m-portlet--fullscreen > .m-portlet__head {
+  display: none;
+}
+
+.preview.m-portlet.m-portlet--fullscreen > .m-portlet__body {
+  top: 0;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+
+.preview.m-portlet.m-portlet--fullscreen > .m-portlet__body .frame,
+.preview.m-portlet.m-portlet--fullscreen > .m-portlet__body iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.preview.m-portlet.m-portlet--fullscreen > .m-portlet__body .btns-block {
+  display: block;
+}

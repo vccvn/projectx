@@ -1,0 +1,52 @@
+:host{
+    display: block;
+    height: 100%;
+    position: relative;
+
+}
+.frame{
+    display: block;
+    height: 100%;
+    position: relative;
+}
+foreground-layer, mask-layer, .mask-wrapper, canvas-layer, viewport-loading-layer, .loading-layer, .preview-image{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+canvas-layer{
+    overflow: hidden;
+    z-index: 100;
+    height: 100%;
+}
+.preview-image{
+    z-index: 50;
+}
+foreground-layer{
+    z-index: 111;
+}
+mask-layer, .mask-wrapper{
+    z-index: 250;
+    overflow: hidden;
+}
+.mask-layer{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+viewport-object-toolbar, .object-toolbar, viewport-editor-toolbar, .editor-toolbar, client-viewport-edit-toolbar{
+    z-index: 280;
+}
+droppable-layer{
+    position: absolute;
+    z-index: 320;
+    top: 100%;
+    left: 50%;
+    height: 0;
+    width: 0;
+    
+}
+

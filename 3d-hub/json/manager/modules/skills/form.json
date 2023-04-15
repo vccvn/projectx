@@ -1,0 +1,31 @@
+{
+    "name": {
+        "type": "text",
+        "label": "Tên kỹ năng",
+        "placeholder": "nhập tên kỹ năng"
+    },
+    "type": {
+        "type": "radio",
+        "label": "Loại kỹ năng",
+        "data":{
+            "hard": "Kỹ năng chuyên môn",
+            "soft": "kỹ năng mềm"
+        },
+        "default": "hard"
+    },
+    "work_id": {
+        "type": "crazyselect",
+        "label": "Công việc",
+        "call": "get_work_options",
+        "params":[{"id":":defval"}],
+        "@select-type": "dynamic",
+        "@search-route": "works.select-options",
+        "@advance-click": "Profile.works.showAddForm",
+        "@advance-text": "Thêm Nghề nghiệp"
+    },
+    "description": {
+        "type": "textarea",
+        "label": "Mô tả",
+        "placeholder": "Viết gì đó..."
+    }
+}

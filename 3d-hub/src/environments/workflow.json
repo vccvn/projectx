@@ -1,0 +1,44 @@
+{
+  "header": {
+    "notification": {
+      "agency": {
+        "permittedRoles": [
+          "ROLE_AGENCY"
+        ]
+      },
+      "affiliate": {
+        "permittedRoles": [
+          "ROLE_AFFILIATE"
+        ]
+      }
+    }
+  },
+  "pages": {
+    "/pages/settings/genaral": {
+      "permittedRoles": [
+        "ROLE_ADMIN",
+        "ROLE_AFFILIATE",
+        "ROLE_AGENCY"
+      ]
+    },
+    "/pages/settings/profile": {
+      "permittedRoles": [
+        "ROLE_ADMIN",
+        "ROLE_AFFILIATE",
+        "ROLE_AGENCY"
+      ]
+    },
+    "/pages/settings/change-password": {
+      "permittedRoles": [
+        "ROLE_ADMIN",
+        "ROLE_AFFILIATE",
+        "ROLE_AGENCY"
+      ]
+    },
+    "/pages/settings/change-user-password": {
+      "permittedRoles": [
+        "ROLE_ADMIN"
+      ]
+    }
+  }
+}

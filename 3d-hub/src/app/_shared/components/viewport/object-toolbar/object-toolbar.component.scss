@@ -1,0 +1,25 @@
+:host{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: block;
+}
+.menu-buttons{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+    .btn{
+        height: 36px;
+        width: 36px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 36px;
+        cursor: pointer;
+        &.active, &:hover{
+            background: #ebebeb;
+        }
+    }
+}

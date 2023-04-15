@@ -1,0 +1,9 @@
+<div class="card" [ngStyle]="{ width: cardWidth + 'px' }">
+  <a [href]="'/design/' + link">
+    <div class="feature"><img [src]="thumnail" [ngStyle]="{ width: cardWidth + 'px', height: cardHeight + 'px' }" [alt]="name" /></div>
+    <div class="caption">
+      <div class="title">{{ name }}</div>
+      <div class="subtitle">{{ size.width }}x{{ size.height }}</div>
+    </div>
+  </a>
+</div>

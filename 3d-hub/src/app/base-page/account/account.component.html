@@ -1,0 +1,18 @@
+<page-header-wrapper autoBreadcrumb="false" [title]="''"> </page-header-wrapper>
+
+<page-grid>
+  <div class="main">
+    <div class="menu">
+      <ul nz-menu nzMode="horizontal">
+        <ng-container *ngFor="let item of menus">
+          <li nz-menu-item [nzSelected]="item.selected" [routerLink]="item.path">
+            {{ item.title }}
+          </li>
+        </ng-container>
+      </ul>
+    </div>
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</page-grid>

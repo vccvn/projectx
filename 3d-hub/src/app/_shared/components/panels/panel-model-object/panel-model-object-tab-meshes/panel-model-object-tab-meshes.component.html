@@ -1,0 +1,14 @@
+<div class="tab-inner">
+    <div class="inputs store">
+        <div *ngFor="let mesh of meshes; let i=index">
+            <ng-container *ngIf="mesh.data.isArrayMaterial; then arrayMaterialTemplate; else objectMaterialTemplate"></ng-container>
+            <ng-template #arrayMaterialTemplate>
+                
+            </ng-template>
+            <ng-template #objectMaterialTemplate>
+                <collapse-mesh-material [mesh]="mesh" [title]="mesh.title" [service]="_s" (subcribe)="onUpdateMaterial($event)"></collapse-mesh-material>
+            </ng-template>
+            
+        </div>
+    </div>
+</div>

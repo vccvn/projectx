@@ -1,0 +1,3 @@
+[2022-06-09 13:55:15] ip: 66.249.71.20, OS: Android, Brower: Handheld Browser, path: /
+[2022-06-09 13:56:13] ip: 66.249.71.23, OS: Android, Brower: Handheld Browser, path: /
+[2022-06-09 13:56:13] ip: 66.249.71.17, OS: Unknown OS Platform, Brower: Unknown Browser, path: /

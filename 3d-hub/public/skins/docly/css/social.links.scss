@@ -1,0 +1,169 @@
+
+$socials: "500px" "500px.com" #0099e5, 
+"amazon" "amazon.com" #f90,
+"amilia" "amilia.com" #46aaf8,
+"gitlab" "gitlab.com" #e65328,
+"ebay" "ebay.com" #0654ba, 
+"spotify" "spotify.com" #1ed760,
+"stackexchange" "stackexchange.com" #12457C,
+"stackoverflow" "stackoverflow.com" #f48024,
+"trello" "trello.com" #5aac44, 
+"facebook" "facebook.com" #3b5998,
+"twitter" "twitter.com" #00aced,
+"wordpress" "wordpress.org" #45bbe6,
+"wordpress" "wordpress.com" #45bbe6,
+"github" "github.com" #4183c4,
+"linkedin" "linkedin.com" #007bb6,
+"pinterest" "pinterest.com" #cb2027,
+"flickr" "flickr.com" #ff0084,
+"vimeo" "vimeo.com" #aad450,
+"youtube" "youtube.com" #bb0000,
+"instagram" "instagram.com" #517fa4,
+"dribbble" "dribbble.com" #ea4c89,
+"skype" "skype.com" #12a5f4,
+"codepen" "codepen.io" #000,
+"reddit" "reddit.com" #ff4500,
+"mailto" "mailto:" #1d62f0,
+"jsfiddle" "jsfiddle.net" #4679bd
+;
+
+
+
+.social-links {
+	text-align: center;
+	clear: both;
+	overflow: hidden;
+	ul {
+		margin: 0;
+		padding: 0;
+		li {
+			display: inline-block;
+			margin-right: 5px;
+			margin-top: 5px;
+			margin-left: 5px;
+			&::after{
+				display: none;
+			}
+			a {
+				border: 2px solid #cacaca;
+				display: inline-block;
+				height: 40px;
+				line-height: 1.7;
+				margin-right: 0;
+				padding: 0;
+				text-align: center;
+				vertical-align: middle;
+				width: 40px;
+				overflow: hidden;
+				i{
+
+					font-weight: 400;
+					line-height: 2.3;
+					font-size: 15px;
+				}
+				&:hover {
+					background-color: #001837;
+					border: 2px solid rgba(0, 0, 0, 0);
+					-moz-transition: all 0.4s ease-out 0s;
+					-webkit-transition: all 0.4s ease-out 0s;
+					transition: all 0.4s ease-out 0s;
+					i{
+						color: #fff;
+					}
+				}
+				
+			}
+		}
+		
+	}
+	&.circle  li a {
+		border-radius: 100%;
+	}
+
+	// icon color 
+	ul{
+		li{
+			@each $social, $domain, $color in $socials {
+				&.social-#{$social} a.link-#{$social}, [href*="#{$domain}"]{
+					i{
+						color: #{$color};
+					}
+					&:hover{
+						background: #{$color};
+						i{
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+	}
+	&.brand-color{
+		ul{
+			li{
+				@each $social, $domain, $color in $socials {
+					&.social-#{$social} a.link-#{$social}, [href*="#{$domain}"]{
+						background: #{$color};
+					}
+				}
+				a,i {
+					color: #fff;
+				}
+				a {
+					border: 2px solid transparent;
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width:1230px){
+	.social-links li a {
+		height: 30px;
+		width: 30px;
+	}
+
+	.social-links ul li a i::before {
+		line-height: 2;
+		font-size: 13px;
+	}
+
+	.section-featured-slider h3 {
+		font-size: 45px;
+	}
+
+	.section-featured-slider p {
+		font-size: 17px;
+	}
+
+}
+
+
+@media only screen and (max-width:900px){
+
+
+	.inner-wrapper {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+
+	.header-social-wrapper {
+		float: none;
+		text-align: center;
+		width: 100%;
+		clear: both;
+	}
+
+
+	.social-links li {
+		display: inline-block;
+	}
+
+
+	.header-social-wrapper {
+		clear: inherit;
+		float: left;
+		width: auto;
+		margin: 0;
+	}
+
+}

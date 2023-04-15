@@ -1,0 +1,15 @@
+{
+    "name": "Sidebar: Đăng ký theo dõi",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề (Tùy chọn)"
+        },
+        "description": {
+            "type": "textarea",
+            "label":"Mô tả theo dõi",
+            "placeholder": "Viết gì đó...",
+            "className": "auto-height"
+        }
+    }
+}

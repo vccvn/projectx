@@ -1,0 +1,22 @@
+<div>
+  <nz-breadcrumb nzSeparator=">">
+    <nz-breadcrumb-item>
+      <a [routerLink]="['/home']">Home</a>
+    </nz-breadcrumb-item>
+    <nz-breadcrumb-item> Upload Templates </nz-breadcrumb-item>
+  </nz-breadcrumb>
+
+  <nz-affix style="position: absolute; bottom: 20px; right: 20px">
+    <nz-upload [nzAction]="url" [nzHeaders]="headers">
+      <button nz-button nzType="primary"><i nz-icon nzType="upload"></i>Click to Upload</button>
+    </nz-upload>
+  </nz-affix>
+
+  <app-carousel
+    [items]="templates$ | async"
+    [loading]="loading$ | async"
+    [name]="'Upload Template'"
+    (loadMore)="onLoadMore()"
+    [type]="'template'"
+  ></app-carousel>
+</div>

@@ -1,0 +1,32 @@
+{
+    "title": {
+        "type": "text",
+        "label": "Tiêu đề",
+        "placeholder": "nhập tiêu đề"
+    },
+    "sub_title": {
+        "type": "text",
+        "label": "Tiêu đề phụ",
+        "placeholder": "nhập tiêu đề phụ (không bắt buộc)"
+    },
+    "description": {
+        "type": "textarea",
+        "label": "Mô tả",
+        "placeholder": "nhập nhập mô tả (không bắt buộc)"
+    },
+    "image": {
+        "type": "file",
+        "label": "Anh",
+        "placeholder": "nhập chọn file ảnh"
+    },
+    "link": {
+        "type": "text",
+        "label": "Liên kết",
+        "placeholder": "nhập liên kết"
+    },
+    "url": {
+        "type": "text",
+        "label": "Đườn dẫn video (youtube)",
+        "placeholder": "nhập đường dẫn video (không bắt buộc)"
+    }
+}

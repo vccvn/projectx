@@ -1,0 +1,15 @@
+{
+    "name": "Home: Báo giá (area)",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề (Tùy chọn)"
+        },
+        "description": {
+            "type": "textarea",
+            "label":"Mô tả",
+            "placeholder": "Viết gì đó...",
+            "className": "auto-height"
+        }
+    }
+}

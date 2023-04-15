@@ -1,0 +1,41 @@
+<div class="col-template">
+  <div class="col-template__header">
+    <h2>{{ name }}</h2>
+  </div>
+  <div class="col-template__body"></div>
+</div>
+
+<div
+  class="JustifiedLayout"
+  NgxJustifiedLayout
+  [options]="options"
+  [layoutOptions]="layoutOptions"
+  [items]="data"
+  [trackBy]="trackBy"
+  [groupBy]="groupBy"
+  [loading]="loading"
+  (append)="onAppend($event)"
+  (layoutComplete)="onLayoutComplete($event)"
+  #ig
+>
+  <div class="loading" #loading>
+    <!-- <div class="spinner" *ngIf="templatesEnd$ | async"> -->
+    <div class="spinner">
+      <div class="spinner-item"></div>
+      <div class="spinner-item"></div>
+      <div class="spinner-item"></div>
+      <div class="spinner-item"></div>
+      <div class="spinner-item"></div>
+    </div>
+  </div>
+
+  <app-template-card
+    *ngFor="let item of ig.visibleItems; trackBy: trackBy"
+    [name]="item.name"
+    [link]="item.id + '/' + type"
+    [thumnail]="item.files[0]?.thumbnail?.url"
+    [size]="item.files[0]?.thumbnail"
+    [maxHeight]="maxHeight"
+    class="item"
+  ></app-template-card>
+</div>

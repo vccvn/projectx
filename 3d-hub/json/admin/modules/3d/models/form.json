@@ -1,0 +1,62 @@
+{
+    "inputs": {
+        "thumbnail_url": {
+            "type": "modelpreview",
+            "label": "Preview",
+            "placeholder": "nhập tên model"
+        },
+        "name": {
+            "type": "text",
+            "label": "Tên model / Nhãn",
+            "placeholder": "nhập tên model"
+        },
+        
+        "category_id": {
+            "type": "crazyselect",
+            "label": "Danh mục",
+            "call": "get_3d_category_options",
+            "params": []
+        },
+        "description": {
+            "type": "textarea",
+            "label": "Mô tả",
+            "placeholder": "nhập viết gì đó"
+        },
+        "download_url": {
+            "type": "text",
+            "label": "Dường dẫn tải file nguồn",
+            "placeholder": "nhập Url"
+        },
+        "status": {
+            "type": "radio",
+            "label": "Trạng thái",
+            "call": "get_3d_status_options",
+            "params": []
+        }
+    },
+    "config": {
+        "name": "Thông tin Model",
+        "layout_type": "column",
+        "form_groups": {
+            "baseinfo": {
+                "title": "Preview",
+                "class": "col-12 col-md-6 col-lg-4 col-xl-4 hide-title",
+                "inputs": [
+                    "thumbnail_url"
+                    
+                ]
+            },
+            "detail": {
+                "title": "Chi tiết",
+                "class": "col-12 col-md-6 col-lg-8 col-xl-8 hide-title",
+                "inputs": [
+                    "name",
+                    "category_id",
+                    "description",
+                    "download_url",
+                    "status"
+                ]
+            }
+        }
+    }
+}

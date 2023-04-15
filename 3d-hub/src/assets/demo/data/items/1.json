@@ -1,0 +1,112 @@
+{
+    "id": 1,
+    "name": "Túi kéo",
+    "category_id": 0,
+    "description": "",
+    "status": "published",
+    "type": "gltf",
+    "path": "https://threejs.vcc.vn/models/gltf/set21/",
+    "file": "scene.gltf",
+    "download_source_url": "https://threejs.vcc.vn/zip/set21.zip",
+    "thumbnail": "https://threejs.vcc.vn/models/gltf/set21/thumbnail.png",
+    "load_options": {
+        "useRoughnessMipmapper": true,
+        "materialNeedsUpdate": true
+    },
+    "settings": {
+        "options": {
+            "pivot": {
+                "x": "center",
+                "y": "center",
+                "z": "center"
+            }
+        },
+        "props": {
+            "castShadow": true,
+            "receiveShadow": true,
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            }
+        },
+        "meshes": [
+            {
+                "name": "Plane001",
+                "sid": "plane001_0",
+                "index": 0,
+                "title": "Plane001",
+                "data": {
+                    "material": {
+                        "color": "#fdfdfd"
+                    }
+                },
+                "editable": [
+                    "color",
+                    "map",
+                    "bumpMap",
+                    "bumpScale",
+                    "normalMap",
+                    "normalMapType",
+                    "transparent",
+                    "opacity",
+                    "side",
+                    "visible"
+                ]
+            },
+            {
+                "name": "Mat_truoc",
+                "sid": "mat_truoc_1",
+                "index": 2,
+                "title": "Mặt trước",
+                "data": {},
+                "editable": [
+                    "color",
+                    "map",
+                    "bumpMap",
+                    "bumpScale",
+                    "normalMap",
+                    "normalMapType",
+                    "transparent",
+                    "opacity",
+                    "side",
+                    "visible"
+                ]
+            },
+            {
+                "name": "Plane002",
+                "sid": "plane002_2",
+                "index": 1,
+                "title": "Plane002",
+                "data": {},
+                "editable": [
+                    "color",
+                    "map",
+                    "bumpMap",
+                    "bumpScale",
+                    "normalMap",
+                    "normalMapType",
+                    "transparent",
+                    "opacity",
+                    "side",
+                    "visible"
+                ]
+            }
+        ]
+    },
+    "size": {
+        "x": 0.149999991,
+        "y": 0.25003505985780844,
+        "z": 0.07353769685122424
+    }
+}

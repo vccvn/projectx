@@ -1,0 +1,15 @@
+{
+    "name": "Nút gọi ngay",
+    "inputs": {
+        "Hotline": {
+            "type": "text",
+            "Label": "Hotline",
+            "placeholder": "Mặc dịnh sẽ lấy từ thiết lập Liên hệ"
+        },
+        "call_text": {
+            "type": "text",
+            "Label": "Text mời gọi",
+            "placeholder": "ví dụ: Gọi điện thoại"
+        }
+    }
+}

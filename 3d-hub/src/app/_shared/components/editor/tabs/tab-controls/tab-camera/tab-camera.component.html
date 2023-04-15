@@ -1,0 +1,44 @@
+<div class="tab-inner">
+    <div class="tab-header">
+        <h3>Camera</h3>
+    </div>
+    <div class="store">
+        <!-- props -->
+        <div class="props group">
+            <h4>Properties</h4>
+            <inp-range-group class="inp-group-item" name="fov" [(value)]="camera.fov" label="Field Of View" (subcribe)="updateCameraProperties($event)" [min]="10" [max]="172" [step]="1"></inp-range-group>
+            <inp-number-group class="inp-group-item" name="near" [(value)]="camera.near" label="Near (Macro)" (subcribe)="updateCameraProperties($event)" [min]="0.1" [max]="10" [step]="0.1"></inp-number-group>
+            <inp-number-group class="inp-group-item" name="far" [(value)]="camera.far" label="Far (Tele)" (subcribe)="updateCameraProperties($event)" [min]="10" [max]="4096" [step]="0.1"></inp-number-group>
+        </div>
+        <div class="settings group inp-group-item">
+            <h4>Position</h4>
+            <div class="pos-item" *ngFor="let option of posOptions; let i=index" [class.active]="option.selected">
+                <div class="item-header" (click)="changeType(option.type)">
+                    <span class="icon">
+                        <ng-container *ngIf="option.selected; then selectedTemplate; else notSelectedTemplate"></ng-container>
+                        <ng-template #selectedTemplate>
+                            <i nz-icon [nzType]="'check-circle'" [nzTheme]="'twotone'" [nzTwotoneColor]="'#52c41a'"></i>
+                        </ng-template>
+                        <ng-template #notSelectedTemplate>
+                            <i nz-icon [nzType]="'check-circle'"></i>
+                        </ng-template>
+
+                    </span>
+                    <span class="label">
+                        {{option.label}}
+                    </span>
+                </div>
+                <div class="item-body" *ngIf="option.selected && option.type!='default'">
+                    <div class="pos-group" *ngIf="option.type == 'face'">
+                        <div class="row" *ngFor="let faceRow of faceMatrix; let i=index">
+                            <div class="col" *ngFor="let face of faceRow; let i=index">
+                                <div class="face-item" *ngIf="face != null" [class.active]="isFaceActive(face)" (click)="changeFace(face)">{{face}}</div>
+                            </div>
+                        </div>
+                    </div>
+                    <inp-vector3-group name="custom" [(value)]="option.value" label="Vị trí" (subcribe)="updateCustomPos($event)" *ngIf="option.type=='custom'"></inp-vector3-group>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

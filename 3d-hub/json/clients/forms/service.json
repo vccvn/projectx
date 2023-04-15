@@ -1,0 +1,87 @@
+{
+    "inputs": {
+        "service_id": {
+            "type": "select",
+            "label": "Dịch vụ",
+            "call": "get_service_options",
+            "params": [[], "Chọn một"]
+        },
+        "package_id": {
+            "type": "select",
+            "label": "Gói",
+            "call": "get_service_package_options_storage",
+            "params": [
+                {
+                    "service_id": "#service_id"
+                }, 
+                null,
+                "GB"
+            ]
+        },
+        "promo_code":{
+            "type": "text",
+            "text": "Mã Khuyến mãi (nếu có)",
+            "column_class": "col-sm-12",
+            "placeholder": "Nhập mã khuyến mãi để dược giảm giá"
+        },
+        "email": {
+            "type": "email",
+            "label": "Email quản lý",
+            "placeholder": "Email",
+            "required": "true",
+            "prepend_text": "<i class=\"fa fa-envelope\"></i>"
+        },
+        "password": {
+            "type": "password",
+            "label": "Mật khẩu",
+            "placeholder": "Mật khẩu",
+            "prepend_text": "<i class=\"fa fa-key\"></i>"
+        },
+        "subdomain": {
+            "type": "text",
+            "text": "Tên miền con",
+            "required": "true",
+            "placeholder": "Sub Domain. ví dụ: doandeptrai",
+            "append_group": [
+                "domain"
+            ]
+        },
+        "domain": {
+            "type": "select",
+            "label": "Miền chính",
+            "data": "get_cfg_domain_options"
+        },
+        "alias_domain": {
+            "type": "text",
+            "text": "Tên miền Alias",
+            "placeholder": "Ví dụ: domain.com.vn"
+        }
+    },
+    "config": {
+        "title": "Mua gói dịch vụ",
+        "form_groups": {
+            "service": {
+                "title": "Thông tin dịch vụ",
+                "inputs": [
+                    "service_id",
+                    "package_id"
+                ]
+            },
+            "account": {
+                "title": "Tài khoản quản trị",
+                "inputs": [
+                    "email",
+                    "password"
+                ]
+            },
+            "web": {
+                "title":"Thông tin trang web",
+                "inputs": [
+                    "subdomain",
+                    "domain",
+                    "alias_domain"
+                ]
+            }
+        }
+    }
+}

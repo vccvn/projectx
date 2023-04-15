@@ -1,0 +1,48 @@
+.login-wrapper {
+  display: -webkit-box;
+  display: flex;
+  height: 100%;
+  background: url(/assets/images/bg.svg);
+  background-size: 100%;
+  background-position: 25.2rem 0;
+  background-repeat: no-repeat;
+}
+form {
+  background: #fafafa;
+  background: var(--clr-login-background-color, #fafafa);
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding: 1.2rem 3rem;
+  height: auto;
+  min-height: 100vh;
+  width: 25.2rem;
+}
+.title {
+  font-weight: 400;
+  .welcome {
+    line-height: 1.8rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+  .hint {
+    color: #000;
+    color: var(--clr-login-title-color, #000);
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+}
+.login-group {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  padding: 2.4rem 0 0;
+}

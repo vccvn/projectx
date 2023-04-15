@@ -1,0 +1,38 @@
+<div class="panel inner-layout" *ngIf="isShow">
+    <div class="panel-body">
+
+        <nz-tabset [nzSelectedIndex]="currentTab" nzTabPosition="top" nzType="line" class="main-tab w100" (nzSelectChange)="onChangeTab($event)">
+
+            <nz-tab [nzTitle]="iconMeshes">
+                <ng-template #iconMeshes>
+                    Meshes
+                </ng-template>
+                <!-- <mesh-geometry-tab-geometry [inputs]="geoInputs" (subcribe)="onGeometryParamChange($event)"></mesh-geometry-tab-geometry> -->
+                <panel-model-object-tab-meshes [secretKey]="secretKey" [meshes]="settings.meshes" (subcribe)="updateMesh($event)"></panel-model-object-tab-meshes>
+            </nz-tab>
+
+            <nz-tab [nzTitle]="iconProperties">
+                <ng-template #iconProperties>
+                    Properties
+                </ng-template>
+                <ng-template nz-tab>
+                    <panel-model-object-tab-properties [(props)]="props" (subcribe)="updateProps($event)" [events]="_service"></panel-model-object-tab-properties>
+                </ng-template>
+            </nz-tab>
+
+
+        </nz-tabset>
+    </div>
+
+
+
+    <div class="panel-footer">
+        <h3>{{"Actions" | translate}}</h3>
+        <div class="buttons">
+            <button nz-button nzType="primary" (click)="onDone()">{{btnDoneText}}</button>
+
+
+        </div>
+    </div>
+
+</div>

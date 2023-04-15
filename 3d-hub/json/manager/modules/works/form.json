@@ -1,0 +1,24 @@
+{
+    "title": {
+        "type": "text",
+        "text": "tên công việc",
+        "placeholder": "Nhập tên công việc",
+        "required": "true"
+    },
+    "work_group": {
+        "type": "deepselect",
+        "text": "Nhóm công việc",
+        "template": "deepselect",
+        "required": "true",
+        "data": {
+            "it": "Công nghệ thông tin",
+            "office": "Văn phòng",
+            "other": "khác"
+        }
+    },
+    "description": {
+        "type": "textarea",
+        "text": "Mô tả",
+        "placeholder": "Nhập mô tả công việc..."
+    }
+}

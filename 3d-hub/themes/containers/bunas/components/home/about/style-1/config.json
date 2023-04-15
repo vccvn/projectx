@@ -1,0 +1,31 @@
+{
+    "name": "Home: Giới thiệu",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề (Tùy chọn)"
+        },
+        "content": {
+            "type": "textarea",
+            "label":"Giới thiệu",
+            "placeholder": "Viết gì đó...",
+            "className": "auto-height"
+        },
+        "image": {
+            "type": "file",
+            "label": "Ảnh minh họa"
+        },
+        "youtube_url": {
+            "type": "text",
+            "label": "Video Youtube"
+        },
+        "services": {
+            "type":"textarea",
+            "label": "Dịch vụ nởi bật",
+            "placeholder": "Viết gì đó...\nMổi dịch vụ một dòng",
+            "className": "auto-height"
+        }
+
+        
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "name": "Home: banner > Style 1",
+    "inputs": {
+        "slider_id": {
+            "type": "crazyselect",
+            "label":"Slider",
+            "placeholder": "Viết gì đó...",
+            "call": "get_slider_options"
+        },
+        "btn_text":{
+            "type": "text",
+            "label": "Nút bấm",
+            "placeholder": "Chữ sẽ được hiển thị trên nút xem thêm"
+        }
+    }
+}

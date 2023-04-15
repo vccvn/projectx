@@ -1,0 +1,79 @@
+{
+    "name": "Danh mục dự án",
+    "package": "3d.categories",
+    "use_trash": true,
+    "titles": {
+        "default": "Danh sách danh mục",
+        "trash": "Danh mục đã xóa"
+    },
+    "data": {
+        
+    },
+    "filter": {
+        "general_columns": {
+            "name": "tên danh mục"
+        },
+        "search_columns": {
+            "keywords": "Từ khóa"
+        },
+        "sort_columns": {
+            "id": "Mã danh mục",
+            "created_at": "Thời gian khổi tạo"
+        }
+    },
+    "table": {
+        "columns": [
+            {
+                "title": "Mã",
+                "class": "id-col",
+                "text": ":id"
+            },
+            {
+                "title":"Ảnh",
+                "class":"text-center",
+                "template":"<a href=\"{@route}\"><img src=\"{@getFeatureImage}\" class=\"image-thumbnail\" alt=\"{name}\"></a>",
+                "data":{
+                    "@route": [".update", {"id": ":id"}],
+                    "@getFeatureImage":[]
+                }
+            },
+            {
+                "title": "Tên danh mục",
+                "class": "min-160 max-250",
+                "template": "<a href=\"{@route}\">{name}</a>",
+                "data": {
+                    "@route": [".update", {"id": ":id"}]
+                }
+            },
+            {
+                "title": "Mục cha",
+                "class": "min-160",
+                "template": "<span>{@getAttr}</span>",
+                "data": {
+                    "@getAttr": ["parent_name", "Không"]
+                }
+            },
+            {
+                "title": "Mô tả",
+                "class": "min-160",
+                "text": ":description"
+            },
+            {
+                "title": "Số dự án",
+                "header_class": "min-100 text-center",
+                "class": "min-100 text-center",
+                "template": "{@getAttr}",
+                "data": {
+                    "@getAttr": ["project_count",0]
+                }
+            }
+        ]
+    },
+    "resources": {
+        "js_data": {},
+        "js": [
+            
+        ],
+        "css": []
+    }
+}

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Jar
+* source:	https://sketchfab.com/3d-models/jar-e540be27512d4067ae777d78268112a6
+* author:	Geoffrey Marchal (https://sketchfab.com/geoffreymarchal)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Jar" (https://sketchfab.com/3d-models/jar-e540be27512d4067ae777d78268112a6) by Geoffrey Marchal (https://sketchfab.com/geoffreymarchal) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

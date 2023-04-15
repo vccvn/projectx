@@ -1,0 +1,21 @@
+{
+    "name": "Banner: Support",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề (Tùy chọn)"
+        },
+        "description": {
+            "type": "textarea",
+            "label":"Mô tả",
+            "placeholder": "Viết gì đó...",
+            "className": "auto-height"
+        },
+        "button_text": {
+            "type": "text",
+            "label": "Nút Tìm kiếm",
+            "placeholder": "Ví dụ: Tìm kiếm"
+        }
+
+    }
+}

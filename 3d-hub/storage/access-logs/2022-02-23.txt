@@ -1,0 +1,17 @@
+[2022-02-23 06:32:28] ip: 51.81.167.146, OS: iPhone, Brower: Handheld Browser, path: /
+[2022-02-23 07:06:54] ip: 65.154.226.165, OS: Windows 10, Brower: Chrome, path: /
+[2022-02-23 08:31:29] ip: 133.242.174.119, OS: Android, Brower: Handheld Browser, path: /
+[2022-02-23 08:31:29] ip: 133.242.140.127, OS: Android, Brower: Handheld Browser, path: /
+[2022-02-23 09:44:04] ip: 52.214.145.175, OS: Linux, Brower: Firefox, path: /
+[2022-02-23 09:44:15] ip: 52.214.145.175, OS: Linux, Brower: Firefox, path: /
+[2022-02-23 09:44:32] ip: 52.214.145.175, OS: Linux, Brower: Firefox, path: /gioi-thieu.html
+[2022-02-23 09:44:41] ip: 52.214.145.175, OS: Linux, Brower: Firefox, path: /gioi-thieu.html/favicon.ico
+[2022-02-23 09:44:46] ip: 52.214.145.175, OS: Linux, Brower: Firefox, path: /blog/goi-thuong-mai-dien-tu.html
+[2022-02-23 09:44:56] ip: 52.214.145.175, OS: Linux, Brower: Firefox, path: /blog/goi-thuong-mai-dien-tu.html/favicon.ico
+[2022-02-23 09:45:04] ip: 52.214.145.175, OS: Linux, Brower: Firefox, path: /blog/goi-tin-tuc.html
+[2022-02-23 09:45:13] ip: 52.214.145.175, OS: Linux, Brower: Firefox, path: /blog/goi-tin-tuc.html/favicon.ico
+[2022-02-23 15:04:17] ip: 66.249.79.63, OS: Unknown OS Platform, Brower: Unknown Browser, path: /tags/thuong-mai-dien-tu.html
+[2022-02-23 15:19:38] ip: 51.255.62.0, OS: Ubuntu, Brower: Firefox, path: /
+[2022-02-23 16:30:27] ip: 188.165.87.103, OS: Ubuntu, Brower: Firefox, path: /
+[2022-02-23 18:08:08] ip: 51.254.49.103, OS: Ubuntu, Brower: Firefox, path: /
+[2022-02-23 19:09:17] ip: 195.146.37.241, OS: Android, Brower: Handheld Browser, path: /

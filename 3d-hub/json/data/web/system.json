@@ -1,0 +1,63 @@
+{
+    "data": [
+        {
+            "name": "web_type",
+            "type": "radio",
+            "label":"Loại web",
+            "required": "true",
+            "template": "checklist",
+            "call": "get_system_config",
+            "params": [
+                "web_type_list"
+            ]
+        },
+        {
+            "name": "theme_id",
+            "type": "hidden",
+            "value_type": "number"
+        },
+        {
+            "name": "secret_key",
+            "type": "text",
+            "label": "Secret Key"
+        },
+        {
+            "name": "client_key",
+            "type": "text",
+            "label": "Client Key"
+        },
+        {
+            "name": "domain_list",
+            "type": "text",
+            "label": "Domain List"
+        },
+        
+        {
+            "name": "cache_data_time",
+            "type": "number",
+            "value_type": "number",
+            "label": "Thời gian lưu cache của Dữ liệu từ DB"
+        },
+        {
+            "name": "cache_view_time",
+            "type": "number",
+            "value_type": "number",
+            "label": "Thời gian lưu cache của view"
+        },
+        {
+            "name": "send_mail_notification",
+            "type": "checkbox",
+            "value_type": "boolean",
+            "label": "Gửi mail thông báo",
+            "props":{
+                "template": "switch"
+            }
+        },
+        {
+            "name": "mail_notification",
+            "type": "email",
+            "label": "Email nhận thông báo"
+        }
+    ]
+
+}

@@ -1,0 +1,20 @@
+<div class="text text-subheading">
+    <div class="item-text">
+        <div class="text-content">
+            <div nz-row [nzGutter]="{ xs: 8, sm: 16, md: 24, lg: 32 }" class="light-group">
+                <div nz-col class="gutter-row" [nzSpan]="18">
+                    <div class="inner-box light-name" (click)="onClick()">
+                        {{light.name}}
+                    </div>
+                </div>
+                <div nz-col class="gutter-row" [nzSpan]="6">
+                    <div class="inner-box text-right">
+                        <div class="delete" (click)="onClickDelete()">
+                            <i nz-icon nzType="delete" nzTheme="outline"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,4 @@
+[2021-10-22 10:02:37] ip: 127.0.0.1, OS: Windows 10, Brower: Chrome, path: /login
+[2021-10-22 10:02:44] ip: 127.0.0.1, OS: Windows 10, Brower: Chrome, path: /post-login
+[2021-10-22 10:03:30] ip: 127.0.0.1, OS: Windows 10, Brower: Chrome, path: /
+[2021-10-22 18:29:39] ip: 127.0.0.1, OS: Windows 10, Brower: Chrome, path: /static/crazy/js/app.libs.bundle.js

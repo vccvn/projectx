@@ -1,0 +1,2 @@
+[2022-10-12 12:45:37] ip: 205.185.116.25, OS: Mac OS X, Brower: Chrome, path: /
+[2022-10-12 20:34:35] ip: 113.142.154.173, OS: Mac OS X, Brower: Chrome, path: /

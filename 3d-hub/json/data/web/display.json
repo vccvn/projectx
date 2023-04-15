@@ -1,0 +1,64 @@
+{
+    "data": [
+        {
+            "name": "post_show_list_type",
+            "type": "radio",
+            "label": "Ưu tiên hiển thị trong các mục bài viết",
+            "data": {
+                "post": "Tất cả tin bài",
+                "category": "Danh mục hoặc danh mục con"
+            },
+            "value": "post"
+        },
+        {
+            "name": "post_per_page",
+            "type": "number",
+            "value_type": "number",
+            "label": "Số lượng bài viết hiển thị trên một trang",
+            "value": 12,
+            "props": {
+                "min": 1
+            }
+        },
+        {
+            "name": "page_per_page",
+            "type": "number",
+            "value_type": "number",
+            "label": "Số lượng trang con hiển thị trên một trang",
+            "value": 12,
+            "props": {
+                "min": 1
+            }
+        },
+        {
+            "name": "product_per_page",
+            "type": "number",
+            "value_type": "number",
+            "label": "Số lượng sản phẩm hiển thị trên một trang",
+            "value": 10,
+            "props": {
+                "min": 1
+            }
+        },
+        {
+            "name": "project_per_page",
+            "type": "number",
+            "value_type": "number",
+            "label": "Số lượng dự án hiển thị trên một trang",
+            "value": 10,
+            "props": {
+                "min": 1
+            }
+        },
+        {
+            "name": "result_per_page",
+            "type": "number",
+            "value_type": "number",
+            "label": "Số lượng kết quả tìm kiếm hiển thị trên một trang",
+            "value": 10,
+            "props": {
+                "min": 1
+            }
+        }
+    ]
+}

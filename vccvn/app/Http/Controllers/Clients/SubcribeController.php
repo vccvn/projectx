@@ -78,7 +78,7 @@ class SubcribeController extends ClientController
                     ->replyTo($mailFrom, $company)
                     ->subject("Thông báo: Có người Đăng ký theo dõi ")
                     ->body('mails.simple-alert')
-                    ->data(['content' => "Thông tin: \n". $result->getSubcribeInfo()])
+                    ->data(['content' => "Có người vừa đăng ký theo dõi với Thông tin: \n". $result->getSubcribeInfo()])
                     ->send();
             }
         }

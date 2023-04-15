@@ -1,0 +1,51 @@
+{
+    "data": {
+        "themes": {
+            "text": "Giao diện",
+            "title": "Quản lý Giao diện",
+            "active_key": "themes",
+            "route": "admin.themes",
+            "icon": "palette",
+            "submenu": {
+                "type": "list",
+                "data": [
+                    {
+                        "text": "Theme của tôi",
+                        "title": "Theme của tôi",
+                        "active_key": "my-themes",
+                        "route": "admin.themes.my-themes",
+                        "icon": "hand-holding-usd"
+                    },
+                    {
+                        "text": "Components",
+                        "title": "Components",
+                        "active_key": "components",
+                        "route": "admin.components.list",
+                        "icon": "puzzle-piece"
+                    },
+                    {
+                        "text": "Mã nhúng",
+                        "title": "Mã nhúng",
+                        "active_key": "embeds",
+                        "route": "admin.embeds.list",
+                        "icon": "code"
+                    },
+                    {
+                        "text": "Menu",
+                        "title": "Menu",
+                        "active_key": "menus",
+                        "route": "admin.menus.list",
+                        "icon": "bars"
+                    },
+                    {
+                        "text": "Slider",
+                        "title": "Slider",
+                        "active_key": "sliders",
+                        "route": "admin.sliders.list",
+                        "icon": "images"
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,108 @@
+{
+    "name": "Khuyến mãi",
+    "package": "service-promos",
+    "use_trash": true,
+    "titles": {
+        "default": "Danh sách Khuyến mãi",
+        "trash": "Danh sách Khuyến mãi đã xóa"
+    },
+    "data": {
+        "types": {
+            "down": "Hạ giá",
+            "replace": "Thay thế"
+        },
+        "price_type": {
+            "down": "-",
+            "replace": "*"
+        },
+        "units": {
+            "percent": "%",
+            "price": "VBĐ"
+        },
+        "stt": {
+            "0": "Không kích hoạt",
+            "1": "kích hoạt"
+        }
+    },
+    "filter": {
+        "search_columns": {
+            "name": "Tên chương trình"
+        },
+        "sort_columns": {
+            "name": "Tên chương trình",
+            "amount": "Giá / % giảm hoặc thay thế",
+            "total": "Tổng số mã khuyến mãi",
+            "started_at": "Thời gian bắt đầu",
+            "expired_at": "Thời gian kết thúc"
+        }
+    },
+    "table": {
+        "class": "header-center",
+        "columns": [
+            {
+                "title": "Tên chương trình",
+                "class": "",
+                "text": ":name"
+            },
+            {
+                "title": "Mã",
+                "class": "text-center",
+                "text": ":code"
+            },
+            {
+                "title": "Đã dùng",
+                "class": "text-right",
+                "template": "{usage} / {total}"
+            },
+            {
+                "title": "Áp dụng",
+                "class": "text-center",
+                "template": "<span class=\"total-price\">{@getTitle}</span>",
+                "data": {
+                    "@getTitle":[]
+                }
+            }, 
+            {
+                "title": "Hình thức",
+                "class": "text-center",
+                "data_access": "types.{type}"
+            },
+            {
+                "title": "Giá",
+                "class": "text-right",
+                "template": "{priceType} {amount}{unitText}",
+                "data": {
+                    "priceType": {
+                        "call": "getData",
+                        "params": ["price_type.{type}"]
+                    },
+                    "unitText": {
+                        "call": "getData",
+                        "params": ["units.{unit}"]
+                    }
+                }
+            },
+
+            {
+                "title": "Bắt đầu",
+                "class": "",
+                "text": ":started_at"
+            },
+            {
+                "title": "Kết thúc",
+                "class": "",
+                "text": ":expired_at"
+            },
+            {
+                "title": "Kết thúc",
+                "class": "text-center",
+                "data_access": "stt.{status}"
+            }
+        ]
+    },
+    "resources": {
+        "js_data": [],
+        "js": [],
+        "css": []
+    }
+}

@@ -1,0 +1,30 @@
+:host ::ng-deep .avatar-uploader > .ant-upload,
+:host ::ng-deep .avatar {
+  width: 128px;
+  height: 128px;
+}
+
+:host ::ng-deep .ant-upload-select-picture-card i {
+  font-size: 32px;
+  color: #999;
+}
+
+:host ::ng-deep .ant-upload-select-picture-card .ant-upload-text {
+  margin-top: 8px;
+  color: #666;
+}
+
+:host ::ng-deep nz-upload {
+  display: block;
+}
+
+:host ::ng-deep .ant-upload.ant-upload-drag {
+  height: 180px;
+}
+
+.has-error {
+  color: #f5222d;
+}
+img {
+  padding: 24px;
+}

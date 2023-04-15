@@ -1,0 +1,38 @@
+<div class="tab-inner">
+    <div class="inputs store">
+        <div *ngFor="let inp of inputs; let i=index">
+            <div [ngSwitch]="inp.type">
+                <inp-number-group 
+                    *ngSwitchCase="'number'" 
+                    [name]="inp.name" 
+                    [value]="inp.value" 
+                    [label]="inp.name" 
+                    [spin]="inp.spin" 
+                    [min]="inp.min" 
+                    [max]="inp.max" 
+                    (subcribe)="inputChange($event)" 
+                    [class.inp-group-item]="i > 0"
+                    [class.inp-group-item-first]="i == 0"
+                ></inp-number-group>
+                <inp-switch-group 
+                    *ngSwitchCase="'boolean'" 
+                    [name]="inp.name" 
+                    [value]="inp.value" 
+                    [label]="inp.name" 
+                    (subcribe)="inputChange($event)" 
+                    [class.inp-group-item]="i > 0" 
+                    [class.inp-group-item-first]="i == 0"
+                ></inp-switch-group>
+                <inp-text-group 
+                    *ngSwitchDefault 
+                    [name]="inp.name" 
+                    [value]="inp.value" 
+                    [label]="inp.name" 
+                    (subcribe)="inputChange($event)" 
+                    [class.inp-group-item]="i > 0" 
+                    [class.inp-group-item-first]="i == 0"
+                ></inp-text-group>
+            </div>
+        </div>
+    </div>
+</div>

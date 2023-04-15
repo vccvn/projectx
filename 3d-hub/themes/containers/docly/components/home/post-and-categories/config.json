@@ -1,0 +1,89 @@
+{
+    "name": "Home: Danh mục và tin bài",
+    "inputs": {
+        "cate_dynamic_id": {
+            "type": "crazyselect",
+            "label": "Mục (tùy chọn)",
+            "template": "crazyselect",
+            "call": "get_dynamic_options",
+            "params": [[], "Chọn một"],
+            "@change": "Crazy.posts.changeDynamicID",
+            "data-ref": "cate_parent_id"
+        },
+        "cate_parent_id": {
+            "type": "crazyselect",
+            "label": "Danh mục Cha",
+            "template": "crazyselect",
+            "call": "get_post_category_options",
+            "params": [
+                {
+                    "dynamic_id": "#cate_dynamic_id"
+                },
+                true
+            ],
+            "@label-type": "value"
+        },
+        "cate_sorttype": {
+            "type": "select",
+            "label": "kiểu sắp xếp",
+            "call": "get_post_category_sortby_options"
+        },
+        "cate_number": {
+            "type": "number",
+            "label": "Số lượng danh mục",
+            "min": 1,
+            "step": 1,
+            "valudate": "number|min:1",
+            "default": 10
+        },
+        
+        "list_title": {
+            "type": "text",
+            "label": "Tiêu đề list (Tùy chọn)"
+        },
+        
+        "list_dynamic_id": {
+            "type": "crazyselect",
+            "label": "Mục tin bài ở list (tùy chọn)",
+            "template": "crazyselect",
+            "call": "get_dynamic_options",
+            "params": [
+                [],
+                "Chọn một"
+            ],
+            "@change": "Crazy.posts.changeDynamicID",
+            "data-ref": "list_category_id",
+            "required": "true"
+        },
+        "list_category_id": {
+            "type": "crazyselect",
+            "label": "Danh mục ở list (tùy chọn)",
+            "template": "crazyselect",
+            "call": "get_post_category_options",
+            "params": [
+                {
+                    "dynamic_id": "#list_dynamic_id"
+                },
+                true
+            ],
+            "@label-type": "value"
+        },
+        "list_group_by_category": {
+            "type": "switch",
+            "label": "Nhóm theo danh mục (trong list)",
+            "value_type": "boolean"
+        },
+        "list_sorttype": {
+            "type": "select",
+            "label": "kiểu sắp xếp (trong list)",
+            "call": "get_post_sortby_options"
+        },
+        "list_post_number": {
+            "type": "number",
+            "label": "Số tin bài (trong list)",
+            "min": 1,
+            "step": 1,
+            "default": 12
+        }
+   }
+}

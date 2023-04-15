@@ -1,0 +1,90 @@
+<nz-spin [nzSpinning]="loading$ | async">
+  <div class="main" *ngIf="model">
+    <div class="left">
+      <form nzLayout="vertical" nz-form [formGroup]="validateForm" class="form-profile" (submit)="onSumbit()">
+        <nz-form-item>
+          <nz-form-label>{{ 'Username' | translate }} *</nz-form-label>
+          <nz-form-control nzHasFeedback [nzErrorTip]="usernameErrorTpl">
+            <input formControlName="username" nz-input placeholder="{{ 'Username' | translate }}" disabled />
+            <ng-template #usernameErrorTpl let-control>
+              <ng-container *ngIf="control.hasError('required')"> Nhập từ 3 đến 255 ký tự </ng-container>
+              <ng-container *ngIf="control.hasError('whitespace')"> Nhập phải bao gồm cả ký tự </ng-container>
+              <ng-container *ngIf="control.errors && control.errors.length > 0">
+                <div *ngFor="let e of control.errors">
+                  {{ e.message }}
+                </div>
+              </ng-container>
+            </ng-template>
+          </nz-form-control>
+        </nz-form-item>
+
+        <nz-form-item>
+          <nz-form-label> {{ 'FullName' | translate }} * </nz-form-label>
+          <nz-form-control nzHasFeedback [nzErrorTip]="fullNameErrorTpl">
+            <input formControlName="fullName" nz-input placeholder="{{ 'FullName' | translate }}" nzRequired minlength="1" maxlength="80" />
+            <ng-template #fullNameErrorTpl let-control>
+              <ng-container *ngIf="control.hasError('required')"> Nhập từ 1 đến 80 ký tự </ng-container>
+              <ng-container *ngIf="control.hasError('whitespace')"> Nhập phải bao gồm cả ký tự </ng-container>
+              <ng-container *ngIf="control.errors && control.errors.length > 0">
+                <div *ngFor="let e of control.errors">
+                  {{ e.message }}
+                </div>
+              </ng-container>
+            </ng-template>
+          </nz-form-control>
+        </nz-form-item>
+
+        <nz-form-item>
+          <nz-form-label>{{ 'Phone' | translate }} *</nz-form-label>
+          <nz-form-control nzHasFeedback [nzErrorTip]="phoneErrorTpl">
+            <input formControlName="phone" nz-input placeholder="{{ 'Phone' | translate }}" required minlength="10" maxlength="12" />
+            <ng-template #phoneErrorTpl let-control>
+              <ng-container *ngIf="control.hasError('required') || control.hasError('pattern')"> Nhập ít nhất 10 đến 12 số </ng-container>
+              <ng-container *ngIf="control.errors && control.errors.length > 0">
+                <div *ngFor="let e of control.errors">
+                  {{ e.message }}
+                </div>
+              </ng-container>
+            </ng-template>
+          </nz-form-control>
+        </nz-form-item>
+
+        <nz-form-item>
+          <nz-form-label>{{ 'Email' | translate }}</nz-form-label>
+          <nz-form-control nzHasFeedback [nzErrorTip]="emailErrorTpl">
+            <input formControlName="email" nz-input placeholder="{{ 'Email' | translate }}" />
+            <ng-template #emailErrorTpl let-control>
+              <ng-container *ngIf="control.hasError('email')"> Email chưa đúng định dạng </ng-container>
+              <ng-container *ngIf="control.errors && control.errors.length > 0">
+                <div *ngFor="let e of control.errors">
+                  {{ e.message }}
+                </div>
+              </ng-container>
+            </ng-template>
+          </nz-form-control>
+        </nz-form-item>
+      </form>
+
+      <button
+        style="margin-top: 24px"
+        nz-button
+        nzType="primary"
+        nz-popconfirm
+        nzPopconfirmTitle="Bạn muốn sửa thông tin?"
+        nzOkText="Tiếp tục"
+        nzCancelText="Không tiếp tục"
+        (nzOnConfirm)="onSumbit()"
+        [nzLoading]="loading$ | async"
+        nzPopconfirmPlacement="topLeft"
+        [disabled]="!validateForm.valid"
+        class="button-edit"
+      >
+        Sửa thông tin
+      </button>
+    </div>
+    <div class="right">
+      <div class="avatar_title">{{ 'Avatar' | translate }}</div>
+      <app-upload [(fileList)]="fileList" [path]="path" [quantity]="1"></app-upload>
+    </div>
+  </div>
+</nz-spin>

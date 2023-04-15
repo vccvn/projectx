@@ -1,0 +1,67 @@
+{
+    "inputs": {
+        "name": {
+            "type": "text",
+            "label": "Tên Slider",
+            "placeholder": "nhập tên slider",
+            "required": "true"
+        },
+        "slug": {
+            "type": "text",
+            "label": "Slug (option)",
+            "placeholder": "tùy chọn "
+        },
+        "description": {
+            "type": "textarea",
+            "label": "Mô tả",
+            "placeholder": "Viết gì đó "
+        },
+        "status": {
+            "type": "checkbox",
+            "template": "switch",
+            "label": "Trang chủ",
+            "check_label": "Có thể hiển thị trang chủ",
+            "@options": {
+                "form_group_class": "row",
+                "label_class": "col-12 col-sm-3 col-md-4 col-lg-2  col-form-label",
+                "wrapper_class": "col-12 col-sm-9 col-md-8 col-lg-10"
+            }
+        },
+        "crop": {
+            "type": "checkbox",
+            "template": "switch",
+            "label": "Cố định kích thước",
+            "check_label": "Có",
+            "@options": {
+                "form_group_class": "row",
+                "label_class": "col-12 col-sm-3 col-md-4 col-lg-2  col-form-label",
+                "wrapper_class": "col-12 col-sm-9 col-md-8 col-lg-10"
+            },
+            "@change": "Crazy.slider.checkCropStatus"
+        },
+        "width": {
+            "type": "number",
+            "label": "Kích thước (px)",
+            "placeholder": "nhập chiều rộng...",
+            "append_columns": [
+                "height"
+            ],
+            "@options": {
+                "form_group_class": "row toggle-by-crop"
+            }
+        },
+        "height": {
+            "type": "number",
+            "label": "Chiều cao",
+            "placeholder": "nhập chiều cao..."
+        }
+    },
+    "config": {
+        "assets": {
+            "js": [
+                "static/manager/js/sliders.js"
+            ],
+            "css": []
+        }
+    }
+}

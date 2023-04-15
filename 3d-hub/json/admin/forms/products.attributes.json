@@ -1,0 +1,148 @@
+{
+    "category_id": {
+        "type": "crazyselect",
+        "label": "Danh mục",
+        "required":"true",
+        "call": "get_product_attribute_category_options",
+        "@label-type":"value"
+    },
+    "name": {
+        "type": "text",
+        "label": "Tên thuộc tính",
+        "placeholder": "ví dụ: color, size, weight",
+        "required":"true"
+    },
+    "label": {
+        "type": "text",
+        "label": "Nhãn",
+        "placeholder": "ví dụ: Màu sắc, kích thước, trọng lượng"
+    },
+    "value_type":{
+        "type": "crazyselect",
+        "label": "Kiểu giá trị",
+        "data":{
+            "varchar": "Chữ, số, và ký tự",
+            "int": "Số nguyên",
+            "decimal": "Số thập phân",
+            "text": "Văn bản"
+        },
+        "default": "varchar",
+        "@change": "Product.attributes.checkValueType"
+    },
+    "value_unit": {
+        "type": "text",
+        "label": "Đơn vị (không bắt buộc)",
+        "placeholder": "ví dụ: cm, kg, g, ml, %, v.v..",
+        "@options": {
+            "form_group_class": "row toggle-by-value-type"
+        }
+    },
+    "is_required":{
+        "type": "checkbox",
+        "label": "Bắt buộc ?",
+        "template":"switch",
+        "check_label": "Nếu chọn trường này thì khi đăng sản phẩm người dùng bắt buộc phải nhập thông tin thuộc tính này?",
+        "@change": "Product.attributes.checkRequiredStatus",
+        "@group-type": "metronic"
+    },
+    "is_unique":{
+        "type": "checkbox",
+        "label": "Duy nhất ?",
+        "template":"switch",
+        "check_label": "Cho biết rằng sản mỗi sản phẩm chỉ có một hay nhiều giá trị của thuộc tính này",
+        "@change": "Product.attributes.checkUniqueStatus",
+        "@group-type": "metronic",
+        "@options": {
+            "form_group_class": "row toggle-by-required-status toggle-by-value-type"
+        }
+    },
+    "advance_value_type":{
+        "type": "radio",
+        "label": "Giá trị bổ xung",
+        "data":{
+            "default": "Mặc dịnh (không)",
+            "color": "Màu sắc",
+            "image": "Hình ảnh"
+        },
+        "default": "default",
+        "@options": {
+            "form_group_class": "row toggle-by-required-status toggle-by-unique-status"
+        }
+    },
+    "is_query":{
+        "type": "checkbox",
+        "label": "Thuộc tính truy vấn",
+        "template":"switch",
+        "check_label": "Cho phép tìm kiếm sản phẩm với thông thuộc tính này",
+        "@group-type": "metronic",
+        "@options": {
+            "form_group_class": "row toggle-by-value-type toggle-by-required-status"
+        }
+    },
+    "is_order_option":{
+        "type": "checkbox",
+        "label": "Tùy chọn trong Order",
+        "template":"switch",
+        "check_label": "Nếu chọn trường này thì khi Đặt hàng khách hàng phải chọn thuộc tính này",
+        "@change": "Product.attributes.checkIsOrderOption",
+        "@group-type": "metronic",
+        "@options": {
+            "form_group_class": "row toggle-by-value-type toggle-by-required-status toggle-by-unique-status"
+        }
+    },
+    
+    "is_variant":{
+        "type": "checkbox",
+        "label": "Biến thể về giá",
+        "template":"switch",
+        "@change": "Product.attributes.checkIsVariant",
+        "check_label": "khi khách hàng chọn thuộc tính có thể sẽ làm thay đổi giá sản phẩm",
+        "@group-type": "metronic",
+        "@options": {
+            "form_group_class": "row toggle-by-value-type toggle-by-is-order-option-status toggle-by-required-status toggle-by-unique-status"
+        }
+        
+    },
+    "price_type": {
+        "type": "radio",
+        "label": "Cách thức thay đổi giá",
+        "template":"radio",
+        "data":["Cộng dồn vào giá gốc", "Thay thế giá gốc"],
+        "@options": {
+            "form_group_class": "row toggle-by-value-type toggle-by-is-order-option-status toggle-by-required-status toggle-by-is-variant-status toggle-by-unique-status"
+        },
+        "@note": "Chỉ có thể tồn tại một thuộc tính duy nhất trong cây danh mục được phép thay đổi giá gốc bao gồm cả các thuộc tính chung"
+    },
+    "input_type":{
+        "type": "crazyselect",
+        "label": "Cách nhập giá trị",
+        "data":{
+            "default": "Mặc định (text / number)",
+            "select": "Select (chọn một)",
+            "checklist": "Danh sách checkbox",
+            "tags": "Tags (các thẻ)",
+            "multiselect": "Multi Select"
+        },
+        "default": "dropdown",
+        "@options": {
+            "form_group_class": "row toggle-by-unique-status toggle-by-value-type toggle-by-required-status"
+        }
+    },
+    "show_type": {
+        "type": "radio",
+        "label": "Kiểu hiển thị tùy chọn",
+        "template": "radio",
+        "data":{
+            "simple": "Giá trị đơn",
+            "dropdown": "Dropdown / select",
+            "radio": "Tùy chọn (chọn một)",
+            "checkbox": "Danh sách (chọn nhiều)",
+            "multiselect": "Multi Select"
+            
+        },
+        "default": "dropdown",
+        "@options": {
+            "form_group_class": "row toggle-by-value-type toggle-by-is-order-option-status toggle-by-required-status toggle-by-unique-status"
+        }
+    }    
+}

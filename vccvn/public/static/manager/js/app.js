@@ -5476,6 +5476,8 @@
 
     App.videos = App.prototype.videos = {
         getVideoUrlData: function (url) {
+            var protocol = location.protocol;
+            if(['http', 'https'].indexOf(protocol) == -1) protocol = 'http';
             if (!url) return {};
             var data = {};
             var u1 = url.match(/.*youtu\.be\/(.*?)($|\?|#)/i);
@@ -5488,16 +5490,16 @@
                 data = {
                     id: id,
                     server: 'youtube',
-                    thumbnail: 'http://img.youtube.com/vi/' + id + '/hqdefault.jpg',
-                    embed_url: "http://www.youtube.com/embed/" + id + "?rel=0&wmode=opaque"
+                    thumbnail: protocol+'://img.youtube.com/vi/' + id + '/hqdefault.jpg',
+                    embed_url: protocol+"://www.youtube.com/embed/" + id + "?rel=0&wmode=opaque"
                 };
             } else if (u2) {
                 var id = u2[1];
                 data = {
                     id: id,
                     server: 'youtube',
-                    thumbnail: 'http://img.youtube.com/vi/' + id + '/hqdefault.jpg',
-                    embed_url: "http://www.youtube.com/embed/" + id + "?rel=0&wmode=opaque"
+                    thumbnail: protocol+'://img.youtube.com/vi/' + id + '/hqdefault.jpg',
+                    embed_url: protocol+"://www.youtube.com/embed/" + id + "?rel=0&wmode=opaque"
                 };
             } else if (u3) {
                 var d = u3[1].split("/");
@@ -5506,7 +5508,7 @@
                     id: id,
                     server: 'vimeo',
                     thumbnail: null,
-                    embed_url: "http://player.vimeo.com/video/" + id + "?rel=0&wmode=opaque"
+                    embed_url: protocol+"://player.vimeo.com/video/" + id + "?rel=0&wmode=opaque"
                 };
             }
             else if (u4) {
@@ -5515,8 +5517,8 @@
                 data = {
                     id: id,
                     server: 'vimeo',
-                    thumbnail: 'http://img.youtube.com/vi/' + id + '/hqdefault.jpg',
-                    embed_url: "https://www.facebook.com/v2.0/plugins/video.php?allowfullscreen=true&container_width=620&href=$ac%2F" + page_id + "%2Fvideos%2Fvb." + page_id + "%2F" + id + "%2F%3Ftype%3D3&locale=en_US&sdk=joey"
+                    thumbnail: protocol+"://img.youtube.com/vi/' + id + '/hqdefault.jpg",
+                    embed_url: protocol+"://www.facebook.com/v2.0/plugins/video.php?allowfullscreen=true&container_width=620&href=$ac%2F" + page_id + "%2Fvideos%2Fvb." + page_id + "%2F" + id + "%2F%3Ftype%3D3&locale=en_US&sdk=joey"
                 };
             }
             return data;
@@ -5534,7 +5536,7 @@
             * @param {function} hideCallback hàm sẽ thực thi sau khi ẩn modal
             */
             alert: function (message, callback, hideCallback) {
-                message = App.str.replace(message, ['[nl]', "\r\n", "\n" ], '<br />');
+                message = App.str.replace(message, ['[nl]', "\r\n", "\n"], '<br />');
                 return Swal.fire({
                     title: 'Thông báo',
                     html: message,
@@ -5560,7 +5562,7 @@
              * @param {function} hideCallback hàm sẽ thực thi sau khi ẩn modal
              */
             info: function (message, callback, hideCallback) {
-                message = App.str.replace(message, ['[nl]', "\r\n", "\n" ], '<br />');
+                message = App.str.replace(message, ['[nl]', "\r\n", "\n"], '<br />');
                 return Swal.fire({
                     title: 'Thông tin',
                     html: message,
@@ -5586,7 +5588,7 @@
              * @param {function} hideCallback hàm sẽ thực thi sau khi ẩn modal
              */
             success: function (message, callback, hideCallback) {
-                message = App.str.replace(message, ['[nl]', "\r\n", "\n" ], '<br />');
+                message = App.str.replace(message, ['[nl]', "\r\n", "\n"], '<br />');
                 return Swal.fire({
                     title: 'Thành công!',
                     html: message,
@@ -5612,7 +5614,7 @@
              * @param {function} hideCallback hàm sẽ thực thi sau khi ẩn modal
              */
             warning: function (message, callback, hideCallback) {
-                message = App.str.replace(message, ['[nl]', "\r\n", "\n" ], '<br />');
+                message = App.str.replace(message, ['[nl]', "\r\n", "\n"], '<br />');
                 return Swal.fire({
                     title: 'Cảnh báo!',
                     html: message,
@@ -5638,7 +5640,7 @@
              * @param {function} hideCallback hàm sẽ thực thi sau khi ẩn modal
              */
             error: function (message, callback, hideCallback) {
-                message = App.str.replace(message, ['[nl]', "\r\n", "\n" ], '<br />');
+                message = App.str.replace(message, ['[nl]', "\r\n", "\n"], '<br />');
                 return Swal.fire({
                     title: 'Lỗi rồi!',
                     html: message,
@@ -5655,23 +5657,23 @@
                     }
                 });
             },
-            errorDetail: function (title, detail, callback, hideCallback){
+            errorDetail: function (title, detail, callback, hideCallback) {
                 var message = '';
                 var tyoe = App.getType(detail);
-                if(tyoe == 'string'){
-                    message = App.str.replace(detail, ['[nl]', "\r\n", "\n" ], '<br />');
+                if (tyoe == 'string') {
+                    message = App.str.replace(detail, ['[nl]', "\r\n", "\n"], '<br />');
                 }
-                else if(type == 'array'){
-                    message = detail.map(function(m){
-                        return App.str.replace(m, ['[nl]', "\r\n", "\n" ], '<br />');
+                else if (type == 'array') {
+                    message = detail.map(function (m) {
+                        return App.str.replace(m, ['[nl]', "\r\n", "\n"], '<br />');
                     }).join('<br />');
                 }
-                else if(type == 'object'){
-                    message = Object.keys(detail).map(function(m){
-                        return App.str.replace(detail[m], ['[nl]', "\r\n", "\n" ], '<br />');
+                else if (type == 'object') {
+                    message = Object.keys(detail).map(function (m) {
+                        return App.str.replace(detail[m], ['[nl]', "\r\n", "\n"], '<br />');
                     }).join('<br />');
                 }
-                
+
                 return Swal.fire({
                     title: title,
                     html: message,
@@ -5689,7 +5691,7 @@
                 });
             },
             confirm: function (message, yes, no, callback, hideCallback) {
-                message = App.str.replace(message, ['[nl]', "\r\n", "\n" ], '<br />');
+                message = App.str.replace(message, ['[nl]', "\r\n", "\n"], '<br />');
                 var cf = Swal.fire({
                     title: 'Xác nhận',
                     html: message,
@@ -5755,7 +5757,7 @@
                         // option.html = message;
                     } else {
                         option.title = message;
-                        option.html = App.str.replace(title, ['[nl]', "\r\n", "\n" ], '<br />');
+                        option.html = App.str.replace(title, ['[nl]', "\r\n", "\n"], '<br />');
                     }
                 }
                 Swal.fire(option);
@@ -5816,7 +5818,7 @@
                     Swal.close();
                 }
             },
-            show: function(id, cb, hideCb){
+            show: function (id, cb, hideCb) {
                 return App.modal.show(id, cb, hideCb);
             }
 

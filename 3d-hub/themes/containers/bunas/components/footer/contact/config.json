@@ -1,0 +1,24 @@
+{
+    "name": "Footer: Liên hệ",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề (Tùy chọn)"
+        },
+        "email": {
+            "type": "text",
+            "Label": "Email",
+            "placeholder": "Mặc dịnh sẽ lấy từ mục liên hệ"
+        },
+        "phone_number": {
+            "type": "text",
+            "Label": "Số điện thoại",
+            "placeholder": "Mặc dịnh sẽ lấy từ mục liên hệ"
+        },
+        "address": {
+            "type": "text",
+            "Label": "Địa chỉ",
+            "placeholder": "Mặc dịnh sẽ lấy từ mục liên hệ"
+        }
+    }
+}

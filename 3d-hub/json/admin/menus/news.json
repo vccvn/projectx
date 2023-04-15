@@ -1,0 +1,84 @@
+{
+    "data": {
+        "dashboard": {
+            "text": "Bảng điều khiển",
+            "title": "Bảng điều khiển",
+            "route": "admin.dashboard",
+            "icon": "tachometer-alt"
+        },
+        "@modules": ["users", "permissions"],
+        "pages": {
+            "text": "Trang",
+            "title": "Quản lý trang",
+            "route": "admin.pages",
+            "icon": "file-word",
+            "submenu": {
+                "type": "list",
+                "data": [
+                    {
+                        "text": "Danh sách",
+                        "title": "Danh sách trang",
+                        "active_key": "list",
+                        "route": "admin.pages.list",
+                        "icon": "list-ul"
+                    },
+                    {
+                        "text": "Thêm mới",
+                        "title": "Thêm mới",
+                        "active_key": "add",
+                        "route": "admin.pages.create",
+                        "icon": "plus-circle"
+                    },
+                    {
+                        "text": "Thùng rác",
+                        "title": "Thùng rác",
+                        "active_key": "trash",
+                        "route": "admin.pages.trash",
+                        "icon": "trash-alt"
+                    }
+                ]
+            }
+        },
+        "dynamics": {
+            "text": "Quản lý nội dung",
+            "title": "Quản lý nội dung",
+            "route": "admin.dynamics",
+            "icon": "briefcase-medical",
+            "submenu": {
+                "type": "list",
+                "data": [
+                    {
+                        "text": "Danh sách mục",
+                        "title": "Danh sách mục đăng bài",
+                        "active_key": "list",
+                        "route": "admin.dynamics.list",
+                        "icon": "list-ul"
+                    },
+                    {
+                        "text": "Thêm mục",
+                        "title": "Thêm mới",
+                        "active_key": "add",
+                        "route": "admin.dynamics.create",
+                        "icon": "plus-circle"
+                    },
+                    {
+                        "text": "Mục đã xóa",
+                        "title": "Thùng rác",
+                        "active_key": "trash",
+                        "route": "admin.dynamics.trash",
+                        "icon": "trash-alt"
+                    },
+                    {
+                        "text": "Thẻ",
+                        "title": "quản lý thẻ",
+                        "active_key": "tags",
+                        "route": "admin.tags.list",
+                        "icon": "tags"
+                    }
+                ]
+            }
+        },
+        "custom":["posts"],
+        "@module": ["crawler", "contacts", "subcribes", "themes", "settings"]
+    }
+}

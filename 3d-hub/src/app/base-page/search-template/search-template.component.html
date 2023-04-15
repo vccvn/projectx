@@ -1,0 +1,24 @@
+<div class="search-banner">
+  <h2>Anyone can become designer</h2>
+  <nz-input-group nzSearch [nzAddOnAfter]="addOnAfterBtn" style="width: 680px">
+    <input nzSize="large" type="text" nz-input placeholder="{{ 'Find in 1.000.000 ideas' | translate }}" />
+    <ng-template #addOnAfterBtn>
+      <button class="btn-search" nz-button nzType="text" nzSearch><i nz-icon nzType="search"></i></button>
+    </ng-template>
+  </nz-input-group>
+</div>
+
+<nz-breadcrumb nzSeparator=">">
+  <nz-breadcrumb-item>
+    <a [routerLink]="['/home']">Home</a>
+  </nz-breadcrumb-item>
+  <nz-breadcrumb-item> Templates </nz-breadcrumb-item>
+</nz-breadcrumb>
+
+<app-carousel
+  [items]="templates$ | async"
+  [loading]="loading$ | async"
+  [name]="'Templates'"
+  (loadMore)="onLoadMore()"
+  [type]="'use'"
+></app-carousel>

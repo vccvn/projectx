@@ -1,0 +1,25 @@
+{
+    "name": "Document Item",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề (Tùy chọn)"
+        },
+        "description": {
+            "type": "textarea",
+            "label":"Mô tả",
+            "placeholder": "Viết gì đó...",
+            "className": "auto-height"
+        },
+        "link": {
+            "type": "text",
+            "label": "Đường dẫn",
+            "placeholder":"Nhập liên kết"
+        },
+        "img_icon": {
+            "type": "file",
+            "label": "Icon (file ảnh)"
+        }
+
+    }
+}

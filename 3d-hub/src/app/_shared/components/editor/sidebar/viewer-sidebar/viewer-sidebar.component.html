@@ -1,0 +1,21 @@
+<nz-tabset [nzSelectedIndex]="currentTab" nzTabPosition="top" nzType="line" class="main-tab" (nzSelectChange)="onChangeTab($event)">
+
+    <nz-tab [nzTitle]="iconScene" [nzForceRender]="loadedTemplate">
+        <ng-template #iconScene>
+            <img src="/assets/icons/new-design/tab-top/scene.svg" alt="Scene" />
+        </ng-template>
+        <app-tab-viewer-scene></app-tab-viewer-scene>
+    </nz-tab>
+
+    <nz-tab [nzTitle]="iconLight">
+        <ng-template #iconLight>
+            <img src="/assets/icons/new-design/tab-top/light.svg" alt="Lighr" />
+        </ng-template>
+        <ng-template nz-tab>
+            <app-tab-light></app-tab-light>
+        </ng-template>
+    </nz-tab>
+
+
+
+</nz-tabset>

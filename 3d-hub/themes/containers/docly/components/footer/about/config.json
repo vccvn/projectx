@@ -1,0 +1,132 @@
+{
+    "name": "Footer Widget: About",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề câu hỏi (Tùy chọn)"
+        },
+        "description": {
+            "type": "textarea",
+            "label":"Nội dung",
+            "placeholder": "Viết gì đó...",
+            "className": "auto-height"
+        },
+        "email": {
+            "type": "text",
+            "Label": "Email",
+            "placeholder": "Mặc dịnh sẽ lấy từ thiết lập thông tin liên hệ"
+        },
+        "phone_number": {
+            "type": "text",
+            "Label": "Số điện thoại",
+            "placeholder": "Mặc dịnh sẽ lấy từ thiết lập thông tin liên hệ"
+        },
+        "address": {
+            "type": "text",
+            "Label": "Địa chỉ",
+            "placeholder": "Mặc dịnh sẽ lấy từ thiết lập thông tin liên hệ"
+        },
+
+        "col_xs": {
+            "type": "crazyselect",
+            "label": "col (col-xs)",
+            "data": {
+                "": "Không",
+                "1": "1 / 12",
+                "2": "2 / 12",
+                "3": "3 / 12",
+                "4": "4 / 12",
+                "5": "5 / 12",
+                "6": "6 / 12",
+                "7": "7 / 12",
+                "8": "8 / 12",
+                "9": "9 / 12",
+                "10": "10 / 12",
+                "11": "11 / 12",
+                "12": "12 / 12"
+            },
+            "default": 12
+        },
+        "col_sm": {
+            "type": "crazyselect",
+            "label": "col-sm",
+            "data": {
+                "": "Không",
+                "1": "1 / 12",
+                "2": "2 / 12",
+                "3": "3 / 12",
+                "4": "4 / 12",
+                "5": "5 / 12",
+                "6": "6 / 12",
+                "7": "7 / 12",
+                "8": "8 / 12",
+                "9": "9 / 12",
+                "10": "10 / 12",
+                "11": "11 / 12",
+                "12": "12 / 12"
+            },
+            "default": 12
+        },
+        "col_md": {
+            "type": "crazyselect",
+            "label": "col-md",
+            "data": {
+                "": "Không",
+                "1": "1 / 12",
+                "2": "2 / 12",
+                "3": "3 / 12",
+                "4": "4 / 12",
+                "5": "5 / 12",
+                "6": "6 / 12",
+                "7": "7 / 12",
+                "8": "8 / 12",
+                "9": "9 / 12",
+                "10": "10 / 12",
+                "11": "11 / 12",
+                "12": "12 / 12"
+            },
+            "default": 6
+        },
+        "col_lg": {
+            "type": "crazyselect",
+            "label": "col-lg",
+            "data": {
+                "": "Không",
+                "1": "1 / 12",
+                "2": "2 / 12",
+                "3": "3 / 12",
+                "4": "4 / 12",
+                "5": "5 / 12",
+                "6": "6 / 12",
+                "7": "7 / 12",
+                "8": "8 / 12",
+                "9": "9 / 12",
+                "10": "10 / 12",
+                "11": "11 / 12",
+                "12": "12 / 12"
+            },
+            "default": 4
+        },
+        "col_xl": {
+            "type": "crazyselect",
+            "label": "col-xl",
+            "data": {
+                "": "Không",
+                "1": "1 / 12",
+                "2": "2 / 12",
+                "3": "3 / 12",
+                "4": "4 / 12",
+                "5": "5 / 12",
+                "6": "6 / 12",
+                "7": "7 / 12",
+                "8": "8 / 12",
+                "9": "9 / 12",
+                "10": "10 / 12",
+                "11": "11 / 12",
+                "12": "12 / 12"
+            },
+            "default": 4
+        }
+ 
+    }
+}

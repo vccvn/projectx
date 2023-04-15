@@ -1,0 +1,85 @@
+.foreground-item{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-position: center center;
+    // background-size: contain;
+    background-repeat: no-repeat;
+    &.repeat, &[data-repeat="repeat"], &[data-repeat="auto"]{
+        background-repeat: repeat;
+    }
+    &.repeat-x, &[data-repeat="x"], &[data-repeat="repeat-x"]{
+        background-repeat: repeat-x;
+    }
+    &.repeat-y, &[data-repeat="y"], &[data-repeat="repeat-y"]{
+        background-repeat: repeat-y;
+    }
+    &.repeat-no, &.no-repeat, &[data-repeat="no-repeat"], &[data-repeat="no"]{
+        background-repeat: no-repeat;
+    }
+    
+    &.pos-x-left, &.pos-left, &[data-pos-x="left"]{
+        background-position-x: left;
+    }
+    &.pos-x-center, &[data-pos-x="center"]{
+        background-position-x: center;
+    }
+    &.pos-x-right, &.pos-right, &[data-pos-x="right"]{
+        background-position-x: right;
+    }
+    
+    &.pos-y-top, &.pos-top, &[data-pos-y="top"] {
+        background-position-y: top;
+    }
+    &.pos-y-center, &[data-pos-y="center"]{
+        background-position-y: center;
+    }
+    &.pos-y-bottom, &.pos-bottom, &[data-pos-y="bottom"]{
+        background-position-y: bottom;
+    }
+    &.pos-left-top, &[data-pos="left-top"]{
+        background-position: left top;
+    }
+    &.pos-left-center, &[data-pos="left-center"]{
+        background-position: left center;
+    }
+    &.pos-left-bottom, &[data-pos="left-bottom"]{
+        background-position: left bottom;
+    }
+    &.pos-center-top, &[data-pos="center-top"]{
+        background-position: center top;
+    }
+    &.pos-center-center, &[data-pos="center-center"]{
+        background-position: center center;
+    }
+    &.pos-center-bottom, &[data-pos="center-bottom"]{
+        background-position: center bottom;
+    }
+    &.pos-right-top, &[data-pos="right-top"]{
+        background-position: right top;
+    }
+    &.pos-right-center, &[data-pos="right-center"]{
+        background-position: right center;
+    }
+    &.pos-right-bottom, &[data-pos="right-bottom"]{
+        background-position: right bottom;
+    }
+
+    &.bg-size-contain, &[data-bg-size="contain"]{
+        background-size: contain;
+    }
+    &.bg-size-cover, &[data-bg-size="cover"]{
+        background-size: cover;
+    }
+    &.d-none, &.hide{
+        display: none;
+    }
+    
+    
+    
+    
+    
+}

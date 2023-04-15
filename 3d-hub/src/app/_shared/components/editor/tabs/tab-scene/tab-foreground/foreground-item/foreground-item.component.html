@@ -1,0 +1,54 @@
+<div class="fg-item" [class.active]="isActive">
+    <div class="item-header">
+        <div nz-row [nzGutter]="{ xs: 8, sm: 16, md: 24, lg: 32 }" class="fg-group">
+            <div nz-col class="gutter-row" [nzSpan]="19">
+                <div class="inner-box fg-name" (click)="toggleActive()">
+                    <span class="icon">
+                        <ng-container *ngIf="isActive; then showTemplate; else hideTemplate"></ng-container>
+                        <ng-template #showTemplate>
+                            <i nz-icon nzType="down" nzTheme="outline"></i>
+                        </ng-template>
+                        <ng-template #hideTemplate>
+                            <i nz-icon nzType="right" nzTheme="outline"></i>
+                        </ng-template>
+                    </span>
+                    <span class="image">
+                        <img src="{{data.url}}" alt="{{data.name}}">
+                    </span>
+                    <span class="name">{{data.name}}</span>
+                </div>
+            </div>
+            <div nz-col class="gutter-row" [nzSpan]="5">
+                <div class="inner-box text-right">
+                    <div class="delete" (click)="onClickDelete()">
+                        <i nz-icon nzType="delete" nzTheme="outline"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        
+    </div>
+    <div class="item-body" *ngIf="isActive">
+        <div class="inputs">
+            <inp-text-group class="inp-group-item-first" name="name" label="Foreground Name" [(value)]="data.name" (subcribe)="onChange($event)"></inp-text-group>
+            <inp-texture-group class="inp-group-item" name="url" label="Foreground Image" [(value)]="data.url" (subcribe)="onChange($event)" [output]="true" (modalCancelSelect)="modalCancelSelect()" [listType]="'foreground'"></inp-texture-group>
+            <inp-select-group class="inp-group-item" name="repeat" [(value)]="data.repeat" [options]="repeatOptions" (subcribe)="onChange($event)"></inp-select-group>
+            <inp-select-group class="inp-group-item" name="size" [(value)]="data.size" [options]="sizeOptions" (subcribe)="onChange($event)"></inp-select-group>
+            <div class="inp-group-item">
+                <div class="label">{{"Image position"|translate}}</div>
+                <div class="input-group pos-group">
+                    <div class="row" *ngFor="let y of position.y; let i=index">
+                        <div class="col" *ngFor="let x of position.x; let i=index">
+                            <div class="pos-item" (click)="changePosition(x,y)" [class.active]="x==data.position.x&&y==data.position.y">
+                                <img src="{{posimg}}" alt="{{x}}-{{y}}">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <inp-range-group class="input-group-item" name="opacity" [(value)]="data.opacity" [step]="0.01" [min]="0" [max]="1" (subcribe)="onChange($event)"></inp-range-group>
+        </div>
+    </div>
+</div>

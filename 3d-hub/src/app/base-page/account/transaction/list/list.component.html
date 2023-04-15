@@ -1,0 +1,66 @@
+<nz-table
+  #ajaxTable
+  nzShowSizeChanger
+  [nzFrontPagination]="false"
+  [nzData]="notifications$ | async"
+  [nzLoading]="loading$ | async"
+  [nzTotal]="totalRecords"
+  [(nzPageIndex)]="page"
+  [(nzPageSize)]="limit"
+  (nzPageIndexChange)="searchData()"
+  (nzPageSizeChange)="searchData(true)"
+  [nzScroll]="{ x: '850px' }"
+  nzSize="small"
+>
+  <thead>
+    <tr>
+      <th nzWidth="60px" nzLeft="0px"></th>
+      <th nzWidth="160px">
+        {{ 'From' | translate }}
+      </th>
+      <th nzWidth="220px">{{ 'Title' | translate }}</th>
+      <th nzWidth="300px">
+        {{ 'Message' | translate }}
+      </th>
+      <th nzWidth="100px">
+        {{ 'Created At' | translate }}
+      </th>
+      <th nzWidth="100px" nzRight="0px">
+        {{ 'Seen' | translate }}
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <ng-container *ngFor="let item of ajaxTable.data">
+      <tr>
+        <td [nzExpand]="expandSet.has(item.id)" (nzExpandChange)="onExpandChange(item.id, $event)"></td>
+        <td nzBreakWord>
+          <strong
+            ><a (click)="select(item)">{{ item.title | nzEllipsis: 36:'...' }}</a></strong
+          >
+        </td>
+        <td nzBreakWord>
+          {{ item.content }}
+        </td>
+
+        <td nzBreakWord>
+          {{ item.createdTime | date: 'dd/MM/yyyy HH:mm' }}
+        </td>
+
+        <td nzBreakWord>
+          <nz-badge [nzStatus]="item.seen ? 'default' : 'processing'" [nzText]="item.seen ? 'Đã xem' : 'Mới'"> </nz-badge>
+        </td>
+      </tr>
+      <tr [nzExpand]="expandSet.has(item.id)">
+        <nz-descriptions nzTitle="Chi tiết thông báo">
+          <nz-descriptions-item nzTitle="ObjectType">
+            {{ item.objectType }}
+          </nz-descriptions-item>
+          <nz-descriptions-item nzTitle="ObjectId">
+            {{ item.objectId }}
+          </nz-descriptions-item>
+        </nz-descriptions>
+      </tr>
+    </ng-container>
+  </tbody>
+</nz-table>

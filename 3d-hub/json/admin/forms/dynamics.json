@@ -1,0 +1,152 @@
+{
+    "inputs": {
+        "name": {
+            "type": "text",
+            "label": "Tên mục",
+            "placeholder": "Nhập tên mục",
+            "required": "true"
+        },
+        "slug": {
+            "type": "text",
+            "label": "Đường dẫn (slug)",
+            "placeholder": "Nhập đường dẫn",
+            "template": "crazyslug",
+            "@check-field": "custom_slug",
+            "@extension": ".html",
+            "@check-slug-route": "admin.dynamics.check-slug",
+            "@get-slug-route": "admin.dynamics.get-slug",
+            "@source-id": "name",
+            "@ajax-param-selectors": "#input-hidden-id",
+            "@ajax-check-name": "slug",
+            "@ajax-get-name": "slug"
+        },
+        "custom_slug": {
+            "type": "checkbox",
+            "label": "Tùy chọn slug",
+            "check_label": "Tùy chỉnh"
+        },
+        "description": {
+            "type": "textarea",
+            "label": "Mô tả ngắn",
+            "placeholder": "Nhập mô tả",
+            "style": {
+                "min-height": "100px"
+            }
+        },
+        "content": {
+            "type": "textarea",
+            "label": "Nội dung",
+            "placeholder": "Nhập Nội dung",
+            "className": "tiny-mce",
+            "template": "tinymce",
+            "height": 375
+        },
+        "keywords": {
+            "type": "text",
+            "label": "Từ khóa",
+            "placeholder": "Nhập từ khóa"
+        },
+        "feature_image": {
+            "type": "file",
+            "label": "Hình xem trước",
+            "template": "cropit",
+            "data-width": 400,
+            "data-height": 300
+        },
+        "post_type": {
+            "type": "select",
+            "label": "Loại nội dung",
+            "required": "true",
+            "data": {
+                "article": "Bài viết",
+                "news": "Tin tức",
+                "gallery": "Bộ sưu tập ảnh",
+                "video_embed": "Nhúng video",
+                "custom": "Có thể tùy biến"
+            }
+        },
+        "use_category": {
+            "type": "checkbox",
+            "label": "Sử dụng danh mục con",
+            "template": "switch"
+        },
+        "use_gallery": {
+            "type": "checkbox",
+            "label": "Sử dụng bộ sư tập ảnh",
+            "template": "switch"
+        },
+        "default_fields": {
+            "type": "checklist",
+            "label": "Các trường mặc định",
+            "template": "checklist",
+            "required": "true",
+            "data": {
+                "title": "Tiêu đề",
+                "slug": "Slug",
+                "description": "Mô tả",
+                "content_type": "Loại nội dung",
+                "content": "Nội dung",
+                "feature_image": "Ảnh xem trước",
+                "meta_title": "Meta Title",
+                "meta_description": "Meta Description",
+                "keywords": "Từ khóa",
+                "tags": "Tag",
+                "privacy": "Riêng tư"
+            },
+            "default": [
+                "title",
+                "slug",
+                "description",
+                "content",
+                "content_type",
+                "feature_image",
+                "keywords",
+                "tags",
+                "privacy",
+                "meta_title",
+                "meta_description"
+            ]
+        },
+        "advance_props": {
+            "type": "crazyprop",
+            "label": "Thuộc tính bổ xung",
+            "template": "crazyprop"
+        }
+    },
+    "config": {
+        "name": "Thông tin danh mục nội dung",
+        "layout_type": "column",
+        "form_groups": [
+            {
+                "title": "Thông tin cơ bản",
+                "class": "col-md-7",
+                "inputs": [
+                    "name",
+                    "slug",
+                    "description",
+                    "content"
+                ]
+            },
+            {
+                "title": "Ảnh và thuộc tính",
+                "class": "col-md-5",
+                "inputs": [
+                    "feature_image",
+                    "keywords",
+                    "post_type",
+                    "use_category",
+                    "use_gallery",
+                    "tags",
+                    "default_fields"
+                ]
+            },
+            {
+                "title": "Mở rộng",
+                "class": "col-md-12",
+                "inputs": [
+                    "advance_props"
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,81 @@
+{
+    "name": {
+        "type": "text",
+        "label": "Tên chương trình",
+        "placeholder": "Nhập tên chương trình khuyến mãi"
+    },
+    "times": {
+        "type": "daterange",
+        "template": "daterange",
+        "label": "Khoảng thời gian",
+        "placeholder": "Thời gian bắt đầu - thời gian kết thúc",
+        "data-format": "YYYY-MM-DD HH:mm",
+        "data-use-time": "true"
+    },
+    "description": {
+        "type": "textarea",
+        "label": "Mô tả",
+        "placeholder": "Mô tả ngắn về chương chình khuyến mãi"
+    },
+    "type": {
+        "type": "radio",
+        "label": "Hình thức giảm giá",
+        "data":["Trừ thẳng vào giá gốc", "Giảm theo phần trăn"]
+    },
+    "down_price": {
+        "type": "number",
+        "label": "Mức giảm",
+        "placeholder": "Mức giảm",
+        "default":0
+    },
+    "code": {
+        "type": "text",
+        "label": "Mã giảm giá (tùy chọn)",
+        "placeholder": "Nhập mã giảm gia"
+    },
+    "limited_type": {
+        "type": "radio",
+        "label": "Giới hạn",
+        "data": {
+            "0": "Không giới hạn",
+            "1": "Giới hạn số lượng"
+        },
+        "default": "0"
+    },
+    "limited_total": {
+        "type": "number",
+        "label": "Số lượng khuyến mãi (nếu giới hạn)",
+        "placeholder": "Số lượng khuyến mãi (nếu giới hạn)"
+    },
+    "limited_per_user": {
+        "type": "radio",
+        "label": "Giới hạn mỗi user",
+        "data": {
+            "0": "Không giới hạn",
+            "1": "Giới hạn số lượng"
+        },
+        "default": "0"
+    },
+    "quantity_per_user": {
+        "type": "number",
+        "label": "Số lượng cho mỗi user (nếu giới hạn)",
+        "placeholder": "Số lượng mỗi user "
+    },
+    "map_id": {
+        "type": "crazyselect",
+        "label": "Tìm theo Danh mục",
+        "call": "get_product_attribute_category_options",
+        "@label-type":"value"
+    },
+    "products":{
+        "type":"crazytag",
+        "label": "Danh sách sản phẩm",
+        "placeholder":"Nhập tên sản phẩm...",
+        "template":"crazytag",
+        "@type":"search",
+        "@search-route": "admin.products.tag-data",
+        "@search-params": "#map_id",
+        "call": "get_product_tag_data",
+        "params": ["promo", "#hidden_id"]
+    }
+}

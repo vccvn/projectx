@@ -1,0 +1,58 @@
+{
+    "name": "Footer Widget: Links",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề",
+            "placeholder": "ví dụ Liên kết"
+        },
+        "menu_id": {
+            "type": "crazyselect",
+            "label": "Menu",
+            "call": "get_menu_options"
+        },
+        "col_sm": {
+            "type": "crazyselect",
+            "label": "col-sm",
+            "data": {
+                "1": "1 / 12",
+                "2": "2 / 12",
+                "3": "3 / 12",
+                "4": "4 / 12",
+                "5": "5 / 12",
+                "6": "6 / 12",
+                "7": "7 / 12",
+                "8": "8 / 12",
+                "9": "9 / 12",
+                "10": "10 / 12",
+                "11": "11 / 12",
+                "12": "12 / 12"
+            },
+            "default": "6"
+        },
+        "col_lg": {
+            "type": "crazyselect",
+            "label": "col-sm",
+            "data": {
+                "1": "1 / 12",
+                "2": "2 / 12",
+                "3": "3 / 12",
+                "4": "4 / 12",
+                "5": "5 / 12",
+                "6": "6 / 12",
+                "7": "7 / 12",
+                "8": "8 / 12",
+                "9": "9 / 12",
+                "10": "10 / 12",
+                "11": "11 / 12",
+                "12": "12 / 12"
+            },
+            "default": 3
+        }
+        
+    },
+    "data": {
+        "menu_id": 0,
+        "title": "Liên kết"
+    }
+}

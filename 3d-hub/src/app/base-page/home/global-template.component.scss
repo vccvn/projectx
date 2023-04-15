@@ -1,0 +1,55 @@
+.search-banner {
+  margin-bottom: 32px;
+  padding: 32px 0 36px 0;
+  background-image: url(https://static.crello.com/images/home/banners/Banner_Home_Spring_06.jpg);
+  border-radius: 8px;
+  text-align: center;
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+}
+
+:host {
+  .ant-form-item {
+    margin-bottom: 16px;
+  }
+
+  .ant-input {
+    line-height: 2.5;
+  }
+
+  .btn-search {
+    width: 80px;
+  }
+
+  nz-input-group {
+    box-shadow: rgb(0 0 0 / 16%) 0px 0px 1px, rgb(0 0 0 / 8%) 0px 2px 4px 1px;
+    .ant-input-group-addon {
+      border: 1px solid #d9d9d9 !important;
+    }
+  }
+}
+
+.suggest-tag {
+  margin-top: 16px;
+}
+
+.ant-tag {
+  color: #262626;
+  background-color: #ffffff3d;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+  }
+}
+
+app-feature-slider {
+  display: block;
+  margin-bottom: 24px;
+}
+
+app-template-slider {
+  display: block;
+  margin-bottom: 24px;
+}

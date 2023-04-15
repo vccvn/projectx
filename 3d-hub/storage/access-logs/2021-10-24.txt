@@ -1,0 +1,11 @@
+[2021-10-24 09:38:03] ip: 127.0.0.1, OS: Windows 10, Brower: Chrome, path: /admin/3d/models/save?_token=utJrFJGiMQrzapYJYcySF76IAmdoxGfR6fLgZ9b1&id=75&status=draft&category_id=0&description=
+[2021-10-24 15:38:23] ip: 127.0.0.1, OS: Android, Brower: Handheld Browser, path: /admin/3d/models/update/%3C!---DEFAULT---%3E
+[2021-10-24 15:53:41] ip: 127.0.0.1, OS: Windows 10, Brower: Chrome, path: /admin/3d/models/update/%3C!---DEFAULT---%3E
+[2021-10-24 15:59:13] ip: 127.0.0.1, OS: Android, Brower: Handheld Browser, path: /admin/3d/models/update/%3C!---DEFAULT---%3E
+[2021-10-24 16:08:19] ip: 127.0.0.1, OS: Windows 10, Brower: Chrome, path: /admin/3d/models/update/%3C!---DEFAULT---%3E
+[2021-10-24 16:13:30] ip: 127.0.0.1, OS: Windows 10, Brower: Chrome, path: /static/sources/b86e86f6ef/thumbnail.png
+[2021-10-24 19:19:47] ip: 127.0.0.1, OS: Windows 10, Brower: Chrome, path: /static/manager/js/model.preview.js
+[2021-10-24 23:48:15] ip: 127.0.0.1, OS: Windows 10, Brower: Chrome, path: /logout
+[2021-10-24 23:48:16] ip: 127.0.0.1, OS: Windows 10, Brower: Chrome, path: /
+[2021-10-24 23:48:37] ip: 127.0.0.1, OS: Windows 10, Brower: Chrome, path: /login
+[2021-10-24 23:48:59] ip: 127.0.0.1, OS: Windows 10, Brower: Chrome, path: /post-login

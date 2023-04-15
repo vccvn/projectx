@@ -1,0 +1,28 @@
+<div class="tab-inner">
+    <div class="store">
+        <div class="background-options">
+            <div class="bg-item" *ngFor="let option of bgOptions; let i=index" [class.active]="option.selected">
+                <div class="item-header" (click)="changeType(option.type)">
+                    <span class="icon">
+                        <ng-container *ngIf="option.selected; then selectedTemplate; else notSelectedTemplate"></ng-container>
+                        <ng-template #selectedTemplate>
+                            <i nz-icon [nzType]="'check-circle'" [nzTheme]="'twotone'" [nzTwotoneColor]="'#52c41a'"></i>
+                        </ng-template>
+                        <ng-template #notSelectedTemplate>
+                            <i nz-icon [nzType]="'check-circle'"></i>
+                        </ng-template>
+                        
+                    </span>
+                    <span class="label">
+                        {{option.label}}
+                    </span>
+                </div>
+                <div class="item-body" *ngIf="option.selected && option.type!='none'">
+                    <inp-color *ngIf="option.type == 'color'" [name]="option.type" [label]="option.label" [(value)]="option.value" (subcribe)="updateColor($event)"></inp-color>
+                    <inp-texture *ngIf="option.type == 'texture'" [name]="option.type" [label]="option.label" [(value)]="option.value" (subcribe)="updateTexture($event)" [listType]="'background'" (modalCancelSelect)="emitRefresh()"></inp-texture>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

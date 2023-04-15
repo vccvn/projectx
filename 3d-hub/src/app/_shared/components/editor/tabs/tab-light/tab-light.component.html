@@ -1,0 +1,23 @@
+<div class="tab-inner" [class.height-50]="height50">
+    <h2>Lights & Shadows</h2>
+    <nz-tabset nzTabPosition="top" nzType="line" class="sub-tab">
+      <nz-tab [nzTitle]="iconLights">
+        <ng-template #iconLights>
+          <img src="/assets/icons/new-design/tab-sub/light.svg" alt="Light" />
+          <div>Light</div>
+        </ng-template>
+        <app-tab-lights></app-tab-lights>
+      </nz-tab>
+      <nz-tab [nzTitle]="iconShadow">
+        <ng-template #iconShadow>
+          <img src="/assets/icons/new-design/tab-sub/shadow.svg" alt="Shadow" />
+          <div>Shadow</div>
+        </ng-template>
+        <ng-template nz-tab>
+          <app-tab-shadow></app-tab-shadow>
+        </ng-template>
+      </nz-tab>
+      
+    </nz-tabset>
+  </div>
+  

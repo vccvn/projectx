@@ -1,0 +1,30 @@
+<div class="search-banner">
+  <h2>Anyone can become designer</h2>
+</div>
+
+<div style="padding-bottom: 36px">
+  <nz-tabset nzLinkRouter>
+    <nz-tab>
+      <a *nzTabLink nz-tab-link [routerLink]="['.']">Desgins</a>
+      <app-design-tab></app-design-tab>
+    </nz-tab>
+    <nz-tab>
+      <a *nzTabLink nz-tab-link [routerLink]="['.']" [queryParams]="{ tab: 'templates' }">Templates</a>
+      Templates
+    </nz-tab>
+    <nz-tab>
+      <a *nzTabLink nz-tab-link [routerLink]="['.']" [queryParams]="{ tab: 'folders' }">Folders</a>
+      Folders
+    </nz-tab>
+    <nz-tab>
+      <a *nzTabLink nz-tab-link [routerLink]="['.']" [queryParams]="{ tab: 'members' }">Members</a>
+      Members
+    </nz-tab>
+    <nz-tab>
+      <a *nzTabLink nz-tab-link [routerLink]="['.']" [queryParams]="{ tab: 'upload-templates' }">Upload Templates</a>
+      <ng-template nz-tab>
+        <app-draft-template-tab></app-draft-template-tab>
+      </ng-template>
+    </nz-tab>
+  </nz-tabset>
+</div>

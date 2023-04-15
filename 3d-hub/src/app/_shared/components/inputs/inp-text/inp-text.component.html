@@ -1,0 +1,6 @@
+<input nz-input 
+    placeholder="{{placeholder?placeholder:name|translate}}" 
+    [(ngModel)]="value" 
+    (input)="onChangeValue($event)" 
+    (change)="onChangeValue($event)" 
+/>

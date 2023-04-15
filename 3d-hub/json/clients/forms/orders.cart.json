@@ -1,0 +1,42 @@
+{
+    "inputs":{
+        "name": {
+            "type": "text",
+            "label": "Họ và tên",
+            "placeholder": "nhập Họ và tên",
+            "required": "true"
+        },
+        "phone_number": {
+            "type": "text",
+            "label": "Số điện thoại",
+            "placeholder": "nhập só điện thoại",
+            "required": "true"
+        },
+        "email": {
+            "type": "email",
+            "label": "Email",
+            "placeholder": "nhập email",
+            "required": "true"
+        },
+        "address": {
+            "type": "textarea",
+            "label": "Địa chỉ",
+            "placeholder": "nhập Địa chỉ"
+        },
+        "payment_method": {
+            "type": "radio",
+            "template": "radio",
+            "label": "Phương thức thanh toán",
+            "data": [
+                "Giao hàng trả tiền",
+                "Chuyển khoản ngân hàng",
+                "Thanh toán online"
+            ]
+        },
+        "note": {
+            "type": "textarea",
+            "label": "Ghi chú",
+            "placeholder": "nhập ghi chú"
+        }
+    }
+}

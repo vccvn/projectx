@@ -1,0 +1,2 @@
+[2023-02-04 01:13:07] ip: 209.141.36.112, OS: Mac OS X, Brower: Chrome, path: /
+[2023-02-04 13:27:59] ip: 66.249.70.136, OS: Android, Brower: Handheld Browser, path: /tags/portfolio.html

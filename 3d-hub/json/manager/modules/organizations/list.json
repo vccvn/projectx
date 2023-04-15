@@ -1,0 +1,63 @@
+{
+    "name": "Tổ chức",
+    "package": "organizations",
+    "use_trash": true,
+    "titles": {
+        "default": "Danh sách Tổ chức",
+        "trash": "Danh sách Tổ chức đã xóa"
+    },
+    "data": {
+        "type":{
+            "business":"Doanh nghiệp", 
+            "education":"Giáo dục"
+        }
+    },
+    "filter":{
+        "search_columns": {
+            "name": "tên tổ chức",
+            "address": "Địa chỉ",
+            "phone_number": "Số điện thoại",
+            "email": "Email",
+            "website": "Trang web"
+        },
+        "sort_columns": {
+            "name": "tên tổ chức",
+            "type": "Phân loại",
+            "email": "Email",
+            "website": "Trang web"
+        }
+    },
+    "table": {
+        "class": "list-center",
+        "columns": [
+            {"title": "Mã", "class": "id-col", "text": ":id"},
+            {
+                "title": "logo",
+                "class": "min-100",
+                "template": "<img src=\"{@getLogo}\" class=\"image-thumbnail\" alt=\"{name}\">",
+                "data": {
+                    "@getLogo": ["thumbnail"]
+                }
+            },
+            {
+                "title": "Tên tổ chức",
+                "class": "min-160",
+                "template": "<a href=\"{url}\">{name}</a>",
+                "data": {
+                    "url": {
+                        "call":"route",
+                        "params":[".update", {"id": ":id"}]
+                    }
+                }
+            },
+            {"title": "Phân loại", "class": "min-100", "data_access": "type.{type}"},
+            {"title": "Trang web", "class": "min-160 max-250", "template": "<a href=\"{website}\">{website}</a>"},
+            {"title": "Email", "class": "min-160 max-250", "text": ":email"}
+        ]
+    },
+    "resources":{
+        "js_data":{},
+        "js":[],
+        "css":[]
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "user_id": {
+        "type": "text",
+        "label": "",
+        "placeholder": "nhập "
+    },
+    "category_id": {
+        "type": "text",
+        "label": "",
+        "placeholder": "nhập "
+    },
+    "name": {
+        "type": "text",
+        "label": "",
+        "placeholder": "nhập "
+    },
+    "description": {
+        "type": "text",
+        "label": "",
+        "placeholder": "nhập "
+    },
+    "status": {
+        "type": "text",
+        "label": "",
+        "placeholder": "nhập "
+    },
+    "secret_id": {
+        "type": "text",
+        "label": "",
+        "placeholder": "nhập "
+    },
+    "type": {
+        "type": "text",
+        "label": "",
+        "placeholder": "nhập "
+    },
+    "path": {
+        "type": "text",
+        "label": "",
+        "placeholder": "nhập "
+    },
+    "file": {
+        "type": "text",
+        "label": "",
+        "placeholder": "nhập "
+    },
+    "download_url": {
+        "type": "text",
+        "label": "",
+        "placeholder": "nhập "
+    },
+    "zip_file": {
+        "type": "text",
+        "label": "",
+        "placeholder": "nhập "
+    },
+    "thumbnail": {
+        "type": "text",
+        "label": "",
+        "placeholder": "nhập "
+    },
+    "data": {
+        "type": "text",
+        "label": "",
+        "placeholder": "nhập "
+    }
+}

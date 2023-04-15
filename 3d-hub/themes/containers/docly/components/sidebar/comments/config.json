@@ -1,0 +1,28 @@
+{
+    "name": "Sidebar: Danh sách bình luận",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label":"Tiêu đề",
+            "placeholder": "Ví dụ comment mới nhất"
+        },
+        "ref": {
+            "type": "crazyselect",
+            "label": "mục lấy bình luận",
+            "call": "get_comment_ref_options",
+            "params": ["Tất cả"]
+        },
+        "number_comment": {
+            "type": "number",
+            "label": "Số bình luận hiển thị",
+            "mim": 1,
+            "step": 1,
+            "max": 10
+        }
+    },
+    "data": {
+        "title": "Bình luận mới nhất",
+        "number_comment": 5
+    }
+
+}

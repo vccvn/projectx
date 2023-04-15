@@ -1,0 +1,163 @@
+{
+    "type_list": {
+        "user": "Người người phổ thông",
+        "owner": "Chủ web / shop",
+        "content": "kiểm duyệt nội dung",
+        "mod": "Quản trị người dùng",
+        "admin": "Người quản trị hệ thông"
+    },
+    "status_list": {
+        "1": "Kích hoạt",
+        "0": "Chờ sác minh",
+        "-1": "Bị khóa"
+    },
+    "account_types": {
+        "demo": "Demo",
+        "pro": "Pro",
+        "max": "Max"
+    },
+    "account_settings": {
+        "general": {
+            "title": "Thông tin cá nhân",
+            "slug": "thong-tin-ca-nhan",
+            "inputs": {
+                "name": {
+                    "type": "text",
+                    "text": "Họ tên",
+                    "placeholder": "Nhập họ tên",
+                    "required": "true",
+                    "append_text": "<i class=\"fa fa-user-tie\"></i>"
+                },
+                "phone_number": {
+                    "type": "text",
+                    "text": "Số diện thoại",
+                    "placeholder": "Nhập số điện thoại",
+                    "append_text": "<i class=\"fa fa-phone\"></i>"
+                }
+                
+            }
+        },
+        "customer": {
+            "title": "Thông tin mua hàng",
+            "slug": "thong-tin-mua-hang",
+            "inputs": {
+                "name": {
+                    "type": "text",
+                    "text": "Họ tên",
+                    "placeholder": "Nhập họ tên",
+                    "required": "true",
+                    "append_text": "<i class=\"fa fa-user-tie\"></i>"
+                },
+                "email": {
+                    "type": "email",
+                    "text": "Địa chỉ E-mail",
+                    "required": "true",
+                    "placeholder": "Nhập email",
+                    "append_text": "<i class=\"fa fa-envelope\"></i>"
+                },
+                "phone_number": {
+                    "type": "text",
+                    "text": "Số diện thoại",
+                    "placeholder": "Nhập số điện thoại",
+                    "append_text": "<i class=\"fa fa-phone\"></i>"
+                },
+                "region_id": {
+                    "type": "crazyselect",
+                    "label": "Tỉnh / Thành phố",
+                    "className": "d-block",
+                    "call": "get_region_options",
+                    "@change": "App.location.changeRegionID"
+                },
+                
+                "district_id": {
+                    "type": "crazyselect",
+                    "label": "Quận / huyện",
+                    "className": "d-block",
+                    "call": "get_district_options",
+                    "params":[
+                        {
+                            "region_id":"#region_id|0"
+                        }
+                    ],
+                    "@change": "App.location.changeDistrictID"
+                },
+        
+                "ward_id": {
+                    "type": "crazyselect",
+                    "label": "Xã / phường",
+                    "className": "d-block",
+                    "call": "get_ward_options",
+                    "params":[
+                        {
+                            "district_id": "#district_id|0"
+                        }
+                    ]
+                },
+                "address": {
+                    "type": "text",
+                    "text": "Địa chỉ",
+                    "placeholder": "Nhập địa chỉ...",
+                    "append_text": "<i class=\"fa fa-map-marker-alt\"></i>"
+                }
+            }
+        },
+        "account": {
+            "title": "Thông tin tài khoản",
+            "slug": "thong-tin-tai-khoan",
+            "inputs": {
+                "username": {
+                    "type": "text",
+                    "text": "Tên đăng nhập",
+                    "required": "true",
+                    "prepend_text": "<i class=\"fa fa-user\"></i>"
+                },
+                "email": {
+                    "type": "email",
+                    "text": "Địa chỉ E-mail",
+                    "required": "true",
+                    "placeholder": "Nhập email",
+                    "append_text": "<i class=\"fa fa-envelope\"></i>"
+                },
+                "current_password": {
+                    "type": "password",
+                    "text": "Mật khẩu hiện tại",
+                    "placeholder": "Nhập mật khẩu hiện tại",
+                    "prepend_text": "<i class=\"fa fa-key\"></i>"
+                }
+            }
+        },
+        "password": {
+            "title": "Đổi mật khẩu",
+            "slug": "doi-mat-khau",
+            "inputs": {
+                "current_password": {
+                    "type": "password",
+                    "text": "Mật khẩu hiện tại",
+                    "placeholder": "Nhập mật khẩu hiện tại",
+                    "prepend_text": "<i class=\"fa fa-key\"></i>",
+                    "@inputonly": true
+                },
+                "password": {
+                    "type": "password",
+                    "text": "Mật khẩu mới",
+                    "placeholder": "Nhập mật khẩu mới",
+                    "prepend_text": "<i class=\"fa fa-key\"></i>",
+                    "@inputonly": true
+                },
+                "password_confirmation": {
+                    "type": "password",
+                    "text": "Mật khẩu xác nhận",
+                    "placeholder": "Nhập lại mật khẩu",
+                    "prepend_text": "<i class=\"fa fa-key\"></i>",
+                    "@inputonly": true
+                }
+            }
+        }
+    },
+    "account_setting_tabs": {
+        "thong-tin-ca-nhan": "general",
+        "thong-tin-tai-khoan": "account",
+        "thong-tin-mua-hang": "customer",
+        "doi-mat-khau": "password"
+    }
+}

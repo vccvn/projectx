@@ -1,0 +1,17 @@
+<div class="input-group text-group">
+    <div nz-row [nzGutter]="{ xs: 8, sm: 16, md: 24, lg: 32 }">
+        <div nz-col class="gutter-row" [nzSpan]="19">
+            <div class="inner-box">{{config.name | translate}}</div>
+        </div>
+
+        <div nz-col class="gutter-row" [nzSpan]="5">
+            <div class="inner-box">
+                <active-switch [name]="config.name" [(value)]="config.editable" (subcribe)="onEditable($event)"></active-switch>
+            </div>
+        </div>
+    </div>
+    
+    <div class="input-wrapper">
+        <inp-select [name]="config.name" [(value)]="config.value" [options]="config.options" (subcribe)="onSelect($event)"></inp-select>
+    </div>
+</div>

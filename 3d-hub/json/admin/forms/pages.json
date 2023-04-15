@@ -1,0 +1,153 @@
+{
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề",
+            "placeholder": "Nhập tiêu đề",
+            "required": "true"
+        },
+        "slug": {
+            "type": "text",
+            "label": "Đường dẫn (slug)",
+            "placeholder": "Nhập đường dẫn",
+            "template": "crazyslug",
+            "@check-field": "custom_slug",
+            "@extension": ".html",
+            "@check-slug-route": "admin.pages.check-slug",
+            "@get-slug-route": "admin.pages.get-slug",
+            "@source-id": "title",
+            "@ajax-param-selectors": "#input-hidden-id",
+            "@ajax-check-name": "slug",
+            "@ajax-get-name": "slug"
+        },
+        "custom_slug": {
+            "type": "checkbox",
+            "label": "Tùy chọn slug",
+            "check_label": "Tùy chỉnh",
+            "@hidden": true
+        },
+        "content": {
+            "type": "textarea",
+            "label": "Nội dung",
+            "placeholder": "Nhập nội dung",
+            "className": "tiny-mce",
+            "template": "tinymce",
+            "height": 500
+        },
+        "feature_image": {
+            "type": "file",
+            "label": "Hình xem trước",
+            "template": "cropit",
+            "data-width": 400,
+            "data-height": 300
+        },
+        "parent_id": {
+            "type": "crazyselect",
+            "label": "Mục cha",
+            "template": "crazyselect",
+            "call": "get_parent_page_options",
+            "params": [2],
+            "option_label_type": "value"
+        },
+        "description": {
+            "type": "textarea",
+            "label": "Mô tả",
+            "placeholder": "Nhập mô tả"
+        },
+        "meta_title": {
+            "type": "text",
+            "label": "Meta Title",
+            "placeholder": "Nhập meta title"
+        },
+        "meta_description": {
+            "type": "textarea",
+            "label": "Meta Description",
+            "placeholder": "Nhập meta description",
+            "row": 4
+        },
+        "keywords": {
+            "type": "text",
+            "label": "Từ khóa",
+            "placeholder": "Từ khóa"
+        },
+        "tags": {
+            "type": "crazytag",
+            "label": "Thẻ",
+            "placeholder": "Nhập thẻ...",
+            "template": "crazytag",
+            "@type": "dynamic",
+            "@search-route": "admin.tags.data",
+            "@create-route": "admin.tags.create",
+            "@create-field": "tags",
+            "call": "get_input_tag_data",
+            "params": [
+                "page",
+                "#hidden_id",
+                {
+                    "id": ":defval"
+                }
+            ]
+        },
+        "privacy": {
+            "type": "radio",
+            "template": "radio",
+            "label": "Riêng tư",
+            "data": {
+                "public": "Công khai",
+                "private": "Không công khai"
+            },
+            "default": "public",
+            "@options": {
+                "form_group_class": "row",
+                "label_class": "col-12 col-lg-4 col-xl-3 col-form-label",
+                "wrapper_class": "col-12 col-lg-8 col-xl-9"
+            }
+        }
+    },
+    "config": {
+        "name": "Thông tin trang",
+        "layout_type": "column",
+        "form_groups": [
+            {
+                "title": "Thông tin cơ bản",
+                "class": "col-md-7",
+                "inputs": [
+                    "title",
+                    "slug",
+                    "parent_id",
+                    "description"
+                ]
+            },
+            {
+                "title": "Ảnh",
+                "class": "col-md-5",
+                "inputs": [
+                    "feature_image"
+                ]
+            },
+            {
+                "title": "Thong tin chi tiết",
+                "class": "col-12",
+                "inputs": [
+                    "content"
+                ]
+            },
+            {
+                "title": "Thong tin SEO",
+                "class": "col-md-6",
+                "inputs": [
+                    "meta_title",
+                    "keywords",
+                    "meta_description"
+                ]
+            },
+            {
+                "class": "col-md-6",
+                "inputs": [
+                    "tags",
+                    "privacy"
+                ]
+            }
+        ]
+    }
+}

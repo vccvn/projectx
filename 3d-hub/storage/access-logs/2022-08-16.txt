@@ -1,0 +1,4 @@
+[2022-08-16 02:56:03] ip: 66.249.79.32, OS: Android, Brower: Handheld Browser, path: /du-an/laptop-xiaomi.html
+[2022-08-16 04:36:46] ip: 66.249.79.63, OS: Android, Brower: Handheld Browser, path: /du-an/xiaomi-ninh-binh.html
+[2022-08-16 09:12:44] ip: 66.249.79.32, OS: Android, Brower: Handheld Browser, path: /blog.html
+[2022-08-16 10:17:44] ip: 66.249.79.63, OS: Android, Brower: Handheld Browser, path: /blog/macbook-pro-16-inch-bat-ngo-giam-gia-300-usd-tren-amazon.html

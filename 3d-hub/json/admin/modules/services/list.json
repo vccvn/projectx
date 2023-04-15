@@ -1,0 +1,42 @@
+{
+    "name": "Gói dịch vụ",
+    "package": "services",
+    "use_trash": true,
+    "titles": {
+        "default": "Danh sách Gói dịch vụ",
+        "trash": "Danh sách Gói dịch vụ đã xóa"
+    },
+    "data": [],
+    "filter": {
+        "search_columns": [],
+        "sort_columns": []
+    },
+    "table": {
+        "class": "text-center",
+        "columns": [
+            {
+                "title": "Dịch vụ",
+                "class": "",
+                "text": ":name"
+            },
+            {
+                "title": "Mô tả",
+                "class": "max-200",
+                "text": ":description"
+            },
+            {
+                "title": "Các tùy chọn",
+                "class": "",
+                "template": "{@getPackageNameList}",
+                "data": {
+                    "@getPackageNameList": []
+                }
+            }
+        ]
+    },
+    "resources": {
+        "js_data": [],
+        "js": [],
+        "css": []
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "data": {
+        "settings": {
+            "text": "Thiết lập",
+            "title": "Thiết lập",
+            "url": "#settings",
+            "icon": "cogs",
+            "submenu": {
+                "type": "list",
+                "data": [
+                    {
+                        "text": "Thông tin website",
+                        "title": "Thông tin website",
+                        "active_key": "settings.siteinfo",
+                        "route": "admin.settings.group.form",
+                        "params": {"group":"siteinfo"},
+                        "icon": "info-circle"
+                    },
+                    {
+                        "text": "Cài đặt hệ thống",
+                        "title": "Cài đặt hệ thống",
+                        "active_key": "settings.system",
+                        "route": "admin.settings.group.form",
+                        "params": {"group":"system"},
+                        "icon": "wrench"
+                    },
+                    {
+                        "text": "Thiết lập tin bài",
+                        "title": "Thiết lập tin bài",
+                        "active_key": "settings.posts",
+                        "route": "admin.settings.group.form",
+                        "params": {"group":"posts"},
+                        "icon": "file-word"
+                    },
+                    {
+                        "text": "Thiết lập Email",
+                        "title": "Thiết lập Email",
+                        "active_key": "settings.mailer",
+                        "route": "admin.settings.group.form",
+                        "params": {"group":"mailer"},
+                        "icon": "envelope"
+                    },
+                    {
+                        "text": "Thiết lập JS SDK",
+                        "title": "Thiết lập JS SDK",
+                        "active_key": "settings.jssdk",
+                        "route": "admin.settings.group.form",
+                        "params": {"group":"jssdk"},
+                        "icon": "code"
+                    }
+                ]
+            }
+        }
+    }
+}

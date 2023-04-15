@@ -1,0 +1,12 @@
+<div class="tab-inner">
+    <div class="tab-header">
+        <h2>Shadow</h2>
+        
+    </div>
+    <div class="store">
+        <div class="inputs">
+            <inp-switch-group name="enabled" [(value)]="shadow.enabled" label="Enable" (subcribe)="updateSetting($event)" class="inp-group-item-first"></inp-switch-group>
+            <inp-switch-group name="pcss" [(value)]="shadow.pcss" label="PCSS" (subcribe)="updateSetting($event)" class="inp-group-item" *ngIf="shadow.enabled"></inp-switch-group>
+        </div>
+    </div>
+</div>

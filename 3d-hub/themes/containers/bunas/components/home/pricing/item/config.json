@@ -1,0 +1,54 @@
+{
+    "name": "Home: Báo giá (item)",
+    "inputs":{
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề",
+            "placeholder": "Ví dụ: Thương mại điện tử"
+        },
+
+        "label": {
+            "type": "text",
+            "label": "Nhãn (Tùy chọn)",
+            "placeholder": "Ví dụ: HOT"
+        },
+
+        "price_label": {
+            "type": "text",
+            "label": "Nhãn giá (Tùy chọn)",
+            "placeholder": "Ví dụ: Chỉ từ",
+            "default": "Chỉ từ"
+        },
+
+        "price": {
+            "type": "number",
+            "label": "Giá",
+            "default": 0,
+            "min": 0
+        },
+        "unit": {
+            "type": "text",
+            "label": "Đơn vị tiền",
+            "placeholder": "Ví dụ: VNĐ, $, ...",
+            "default": "VNĐ"
+        },
+
+        "content": {
+            "type": "textarea",
+            "label":"Nội dung (danh sách tính năng)",
+            "placeholder": "Ví dụ: [true] Miển phí hosting\n[false] Giới hạn tên miền",
+            "className": "auto-height"
+        },
+
+        "active": {
+            "type": "switch",
+            "label": "Active (kích hoạt)",
+            "value_type": "boolean"
+        },
+        "link": {
+            "type": "text",
+            "label": "Link đăng ký",
+            "placeholder": "Nhập link"
+        }
+    }
+}

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Set20
+* source:	https://sketchfab.com/3d-models/set20-9494aa1bc9de4e599104bbf9edf3bd70
+* author:	doanln16 (https://sketchfab.com/doanln16)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Set20" (https://sketchfab.com/3d-models/set20-9494aa1bc9de4e599104bbf9edf3bd70) by doanln16 (https://sketchfab.com/doanln16) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

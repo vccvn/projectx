@@ -1,0 +1,89 @@
+<ng-container *ngIf="mode == 'create'; then createFormTabs; else updateFormTabs"></ng-container>
+<ng-template #createFormTabs>
+    <nz-tabset [nzSelectedIndex]="currentTab" nzTabPosition="top" nzType="line" class="main-tab" (nzSelectChange)="onChangeTab($event)">
+
+        <nz-tab [nzTitle]="iconTemplate" [nzForceRender]="loadedTemplate">
+            <ng-template #iconTemplate>
+                <img src="/assets/icons/new-design/tab-top/template.svg" alt="Template" />
+            </ng-template>
+            <app-tab-template-create-form></app-tab-template-create-form>
+        </nz-tab>
+
+
+        <nz-tab [nzTitle]="iconObject">
+            <ng-template #iconObject>
+                <img src="/assets/icons/new-design/tab-top/object.svg" alt="Object" />
+            </ng-template>
+            <ng-template nz-tab>
+                <app-tab-object></app-tab-object>
+            </ng-template>
+        </nz-tab>
+        <nz-tab [nzTitle]="iconScene">
+            <ng-template #iconScene>
+                <img src="/assets/icons/new-design/tab-top/scene.svg" alt="Scene" />
+            </ng-template>
+            <ng-template nz-tab>
+                <app-tab-scene></app-tab-scene>
+            </ng-template>
+        </nz-tab>
+
+        <nz-tab [nzTitle]="iconLight">
+            <ng-template #iconLight>
+                <img src="/assets/icons/new-design/tab-top/light.svg" alt="Lighr" />
+            </ng-template>
+            <ng-template nz-tab>
+                <app-tab-light></app-tab-light>
+            </ng-template>
+        </nz-tab>
+
+        <nz-tab [nzTitle]="iconControls">
+            <ng-template #iconControls>
+                <img src="/assets/icons/new-design/tab-top/control-camera.svg" alt="Control Camera" />
+            </ng-template>
+            <ng-template nz-tab>
+                <app-tab-controls></app-tab-controls>
+            </ng-template>
+        </nz-tab>
+
+
+    </nz-tabset>
+</ng-template>
+<ng-template #updateFormTabs>
+    <nz-tabset [nzSelectedIndex]="currentTab" nzTabPosition="top" nzType="line" class="main-tab" (nzSelectChange)="onChangeTab($event)">
+
+        <nz-tab [nzTitle]="iconObject" [nzForceRender]="loadedObject">
+            <ng-template #iconObject>
+                <img src="/assets/icons/new-design/tab-top/object.svg" alt="Object" />
+            </ng-template>
+            <app-tab-object></app-tab-object>
+        </nz-tab>
+
+        <nz-tab [nzTitle]="iconScene">
+            <ng-template #iconScene>
+                <img src="/assets/icons/new-design/tab-top/scene.svg" alt="Scene" />
+            </ng-template>
+            <ng-template nz-tab>
+                <app-tab-scene></app-tab-scene>
+            </ng-template>
+        </nz-tab>
+
+        <nz-tab [nzTitle]="iconLight">
+            <ng-template #iconLight>
+                <img src="/assets/icons/new-design/tab-top/light.svg" alt="Lighr" />
+            </ng-template>
+            <ng-template nz-tab>
+                <app-tab-light></app-tab-light>
+            </ng-template>
+        </nz-tab>
+
+        <nz-tab [nzTitle]="iconControls">
+            <ng-template #iconControls>
+                <img src="/assets/icons/new-design/tab-top/control-camera.svg" alt="Control Camera" />
+            </ng-template>
+            <ng-template nz-tab>
+                <app-tab-controls></app-tab-controls>
+            </ng-template>
+        </nz-tab>
+
+    </nz-tabset>
+</ng-template>

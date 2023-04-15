@@ -1,0 +1,10 @@
+<div>
+  <h2>Your design</h2>
+  <app-carousel
+    [items]="templates$ | async"
+    [loading]="loading$ | async"
+    [name]=""
+    (loadMore)="onLoadMore()"
+    [type]="'edit'"
+  ></app-carousel>
+</div>

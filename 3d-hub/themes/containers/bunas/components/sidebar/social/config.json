@@ -1,0 +1,39 @@
+{
+    "name": "Mạng xã hội",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề (Tùy chọn)"
+        },
+        "facebook": {
+            "type": "text",
+            "label": "facebook (Tùy chọn)",
+            "placeholder": "Không bắt buộc (Mặc định theo mục social)"
+        },
+        "twitter": {
+            "type": "text",
+            "label": "twitter (Tùy chọn)",
+            "placeholder": "Không bắt buộc (Mặc định theo mục social)"
+        },
+        "youtube": {
+            "type": "text",
+            "label": "youtube (Tùy chọn)",
+            "placeholder": "Không bắt buộc (Mặc định theo mục social)"
+        },
+        "linkedin": {
+            "type": "text",
+            "label": "Linkedin (Tùy chọn)",
+            "placeholder": "Không bắt buộc (Mặc định theo mục social)"
+        },
+        "instagram": {
+            "type": "text",
+            "label": "instagram (Tùy chọn)",
+            "placeholder": "Không bắt buộc (Mặc định theo mục social)"
+        },
+        "pinterest": {
+            "type": "text",
+            "label": "Pinterest (Tùy chọn)",
+            "placeholder": "Không bắt buộc (Mặc định theo mục social)"
+        }
+    }
+}

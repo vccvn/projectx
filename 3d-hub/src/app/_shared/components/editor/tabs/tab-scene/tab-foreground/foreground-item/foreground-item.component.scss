@@ -1,0 +1,115 @@
+.tab-inner,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #fff;
+}
+.fg-item {
+    display: block;
+    flex: none;
+    border: 1px solid #999;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    
+    &.active {
+        background-color: #20242d;
+    }
+    .item-header {
+        cursor: pointer;
+        overflow: hidden;
+        border-radius: 5px;
+        .fg-group{
+            align-content: center;
+            align-items: center;
+        }
+        
+        .fg-name {
+            padding: 5px 10px;
+        }
+        .icon {
+            display: inline-block;
+            margin-right: 15px;
+        }
+        .image {
+            display: inline-block;
+            margin-right: 15px;
+            img {
+                width: 30px;
+                height: 30px;
+                object-fit: contain;
+            }
+        }
+        &:hover {
+            background-color: #20242d;
+        }
+    }
+
+    .item-body {
+        background-color: #40454e;
+        padding: 5px 10px;
+    }
+    .text-right {
+        text-align: right;
+    }
+    .delete {
+        display: inline-block;
+        height: 36px;
+        width: 36px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 36px;
+
+        cursor: pointer;
+        margin-right: 8px;
+        &.active,
+        &:hover {
+            background: #ebebeb;
+            color: #000;
+        }
+    }
+}
+.inputs{
+    .inp-group-item{
+        border-top: 1px dotted silver;
+        padding-top: 10px;
+    }
+}
+
+.inp-group-item-first{
+    padding-top: 10px;
+}
+.pos-group{
+    width: 150px;
+    // margin: 0 auto;
+    .row{
+        display: flex;
+        margin-left: -2.5px;
+        margin-right: -2.5px;
+
+        .col{
+            padding: 2.5px;
+            -ms-flex: 0 0 33.333333%;
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+        }
+    }
+    .pos-item{
+        height: 40px;
+        background-color: #20242d;
+        cursor: pointer;
+        &:hover{
+            background-color: #36405a;
+        }
+        &.active, &:active{
+            background-color: #1d47af;
+        }
+        img{
+            height: 30px;
+            width: 100%;
+        }
+    }
+
+}

@@ -1,0 +1,30 @@
+<div class="collapse" [class.expand]="show">
+    <div class="collapse-header" (click)="toggle()">
+        <h3 class="title">{{title}}</h3>
+        <div class="toggle-icon">
+            <ng-container *ngIf="show; then showTemplate; else hideTemplate"></ng-container>
+            <ng-template #showTemplate>
+                <i nz-icon nzType="down" nzTheme="outline"></i>
+            </ng-template>
+            <ng-template #hideTemplate>
+                <i nz-icon nzType="right" nzTheme="outline"></i>
+            </ng-template>
+        </div>
+    </div>
+    <div class="collapse-body" *ngIf="show">
+        <!-- <inp-text-group class="inp-group-item" name="title" label="Mesh Title" [(value)]="data.title" (subcribe)="onTitle($event)"></inp-text-group> -->
+        <div class="inputs">
+            <div class="input-group-item" *ngFor="let inp of inputs; let i=index">
+                <div class="input-item" [ngSwitch]="inp.type">
+                    <inp-switch-group *ngSwitchCase="'checkbox'" [config]="inp" (subcribe)="changeHandle($event)" class="input-group inp-group-item"></inp-switch-group>
+                    <inp-texture-group *ngSwitchCase="'texture'" [config]="inp" (subcribe)="changeHandle($event)" class="input-group inp-group-item"></inp-texture-group>
+                    <inp-color-group *ngSwitchCase="'color'" [config]="inp" (subcribe)="changeHandle($event)" class="input-group inp-group-item"></inp-color-group>
+                    <inp-select-group *ngSwitchCase="'select'" [config]="inp" (subcribe)="changeHandle($event)" class="input-group inp-group-item"></inp-select-group>
+                    <inp-range-group *ngSwitchCase="'range'" [config]="inp" (subcribe)="changeHandle($event)" class="input-group inp-group-item"></inp-range-group>
+                    <inp-number-group *ngSwitchCase="'number'" [config]="inp" (subcribe)="changeHandle($event)" class="input-group inp-group-item"></inp-number-group>
+                    <inp-text-group *ngSwitchDefault [config]="inp" (subcribe)="changeHandle($event)" class="input-group inp-group-item"></inp-text-group>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

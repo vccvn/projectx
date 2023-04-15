@@ -1,0 +1,38 @@
+:host {
+    color: #fff;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: #fff;
+    }
+}
+h2 {
+    line-height: 1;
+    color: #ffffff;
+    font-size: 15px;
+    margin-bottom: 12px;
+    font-weight: 600;
+    padding: 0 16px;
+}
+
+.inp-group-item {
+    border-top: 1px dotted silver;
+    padding-top: 10px;
+}
+.inp-group-item-first {
+    padding-top: 10px;
+}
+
+label,
+nz-form-label,
+nz-form-label * {
+    color: #ffffff !important;
+}
+
+.tab-inner > .store {
+    overflow-x: hidden;
+    box-sizing: border-box;
+}

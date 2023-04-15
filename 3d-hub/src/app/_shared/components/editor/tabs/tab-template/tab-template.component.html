@@ -1,0 +1,39 @@
+<div class="tab-inner">
+    <h2>{{"Template"|translate}}</h2>
+    <div class="block search">
+        <div class="search-inner">
+            <nz-input-group nzSearch [nzSuffix]="suffixIconSearch">
+                <input type="text" nz-input placeholder="Find in 1.000.000 items" [(ngModel)]="q.s" />
+            </nz-input-group>
+            <ng-template #suffixIconSearch>
+                <button nz-button nzType="link" (click)="onClickSearch()">
+                    <em nz-icon nzType="search"></em>
+                </button>
+            </ng-template>
+        </div>
+    </div>
+    <div class="store">
+        <ng-container *ngIf="mode=='explore'; then thenTemplate; else elseTemplate"></ng-container>
+        <ng-template #thenTemplate>
+            <div *ngFor="let cate of categories; let i=index" class="cate-item">
+                <template-list [items]="cate.templates" [title]="cate.name"></template-list>
+            </div>
+        </ng-template>
+        <ng-template #elseTemplate>
+            <ng-container [ngSwitch]="searchStatus">
+                <p *ngSwitchCase="'done'">
+                    <template-list [items]="searchResults" title="Tất cả"></template-list>
+                </p>
+                <p *ngSwitchCase="'notfound'">
+                    {{"Not Found" | translate}}
+                </p>
+                <p *ngSwitchCase="'error'">
+                    {{"Error" | translate}}
+                </p>
+                <p *ngSwitchDefault>
+                    {{"searching..." | translate}}
+                </p>
+            </ng-container>
+        </ng-template>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+{
+    "status": true,
+    "message": "Thao t\u00e1c th\u00e0nh c\u00f4ng!",
+    "data": {
+        "id": 95,
+        "owner_id": 9,
+        "upload_by": 9,
+        "sid": "7b9c63b06927a2ee40924c8fe05494e4",
+        "privacy": "public",
+        "ref": "gallery",
+        "ref_id": 0,
+        "folder_id": 0,
+        "date_path": "2021\/02\/24",
+        "filename": "A4 mat sau-6035c31432cf8.png",
+        "original_filename": "A4 mat sau.png",
+        "filetype": "image",
+        "mime": "image\/png",
+        "size": 302.43,
+        "extension": "png",
+        "title": null,
+        "description": null,
+        "created_at": "2021-02-24T03:08:04.000000Z",
+        "updated_at": "2021-02-24T03:08:04.000000Z",
+        "url": "https:\/\/threejs.vcc,.vn\/images\/A4 mat sau-6035c31432cf8.png",
+        "thumbnail": "https:\/\/threejs.vcc,.vn\/images\/120x120\/A4 mat sau-6035c31432cf8.png",
+        "size_unit": "KB",
+        "source": "https:\/\/threejs.vcc,.vn\/images\/A4 mat sau-6035c31432cf8.png"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "data": [
+        {
+            "name": "email",
+            "type": "email",
+            "value": "",
+            "label": "Địa chỉ email"
+        },
+        {
+            "name": "phone_number",
+            "type": "tel",
+            "value": "",
+            "label": "Số điện thoại"
+        },
+        {
+            "name": "address",
+            "type": "textarea",
+            "value": "",
+            "label": "Địa chỉ"
+        }
+    ]
+}

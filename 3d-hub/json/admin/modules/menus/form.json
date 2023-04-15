@@ -1,0 +1,100 @@
+{
+    "inputs": {
+        "name": {
+            "type": "text",
+            "label": "Tên menu",
+            "placeholder": "Nhập tên menu"
+        },
+        "slug": {
+            "type": "text",
+            "label": "Slug (tùy chọn)",
+            "placeholder": "Nhập Slug (tùy chọn)"
+        },
+        "depth": {
+            "type": "number",
+            "label": "Số cấp",
+            "placeholder": "Từ 1 đến 8",
+            "min": 1,
+            "max": 8,
+            "step": 1,
+            "default": 4
+        },
+        "type": {
+            "type": "crazyselect",
+            "label": "Loại menu",
+            "template": "crazyselect",
+            "call": "get_menu_type_options",
+            "@change": "Crazy.menu.form.checkType"
+        },
+        "ref_id": {
+            "type": "crazyselect",
+            "label": "Mục nội dung",
+            "template": "crazyselect",
+            "call": "get_dynamic_options",
+            "@options": {
+                "form_group_class": "row toggle-by-type",
+                "label_class": "col-12 col-sm-3 col-md-4 col-lg-2 col-form-label",
+                "wrapper_class": "col-12 col-sm-9 col-md-8 col-lg-10"
+            }
+        },
+        "positions": {
+            "type": "checklist",
+            "template": "checklist",
+            "label": "Vị trí menu",
+            "call": "get_menu_positions"
+        }
+    },
+    "second_inputs": {
+        "name": {
+            "type": "text",
+            "label": "Tên menu",
+            "placeholder": "Nhập tên menu"
+        },
+        "slug": {
+            "type": "text",
+            "label": "Slug (tùy chọn)",
+            "placeholder": "Nhập Slug (tùy chọn)"
+        },
+        "type": {
+            "type": "crazyselect",
+            "label": "Loại menu",
+            "template": "crazyselect",
+            "call": "get_menu_type_options",
+            "@change": "Crazy.menu.form.checkType"
+        },
+        "ref_id": {
+            "type": "crazyselect",
+            "label": "Mục nội dung",
+            "template": "crazyselect",
+            "call": "get_dynamic_options",
+            "@options": {
+                "form_group_class": "toggle-by-type",
+                "label_class": "",
+                "wrapper_class": ""
+            }
+        },
+        "depth": {
+            "type": "number",
+            "label": "Số cấp",
+            "placeholder": "Từ 1 đến 8",
+            "min": 1,
+            "max": 8,
+            "step": 1,
+            "default": 4
+        },
+        "positions": {
+            "type": "checklist",
+            "template": "checklist",
+            "label": "Vị trí menu",
+            "call": "get_menu_positions"
+        }
+    },
+    "config": {
+        "assets": {
+            "js": [
+                "static/manager/js/menu.form.js"
+            ],
+            "css": []
+        }
+    }
+}

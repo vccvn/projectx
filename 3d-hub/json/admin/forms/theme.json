@@ -1,0 +1,46 @@
+{
+    "name": {
+        "type": "text",
+        "label": "Tên theme",
+        "placeholder": "Nhập tên theme",
+        "required": "true"
+    },
+    "type": {
+        "type": "deepselect",
+        "label": "Loại theme",
+        "required": "true",
+        "template": "deepselect",
+        "func": "get_system_config",
+        "params": [
+            "web_type_list"
+        ],
+        "default": "user"
+    },
+    "version": {
+        "type": "number",
+        "label": "Phiên bản",
+        "required": "true",
+        "placeholder": "Nhập phien bản",
+        "min": 0.1,
+        "step": 0.1
+    },
+    "description": {
+        "type": "textarea",
+        "label": "Mô tả",
+        "placeholder": "Mô tả theme"
+    },
+    "privacy": {
+        "type": "deepselect",
+        "label": "Riêng tư",
+        "required": "true",
+        "template": "deepselect",
+        "data": {
+            "protected": "Được bảo vệ",
+            "public": "Công khai"
+        }
+    },
+    "zip":{
+        "type": "file",
+        "label": "Tập tin nén"
+    }
+}

@@ -1,0 +1,8 @@
+[2022-01-14 03:08:46] ip: 66.249.66.138, OS: Unknown OS Platform, Brower: Unknown Browser, path: /blog/goi-business.html
+[2022-01-14 04:57:08] ip: 34.77.162.28, OS: Unknown OS Platform, Brower: Unknown Browser, path: /
+[2022-01-14 11:31:07] ip: 34.86.35.6, OS: Unknown OS Platform, Brower: Unknown Browser, path: /
+[2022-01-14 20:39:16] ip: 66.249.72.20, OS: Android, Brower: Handheld Browser, path: /dich-vu/goi-blog.html
+[2022-01-14 20:46:27] ip: 66.249.72.18, OS: Android, Brower: Handheld Browser, path: /blog/goi-business.html
+[2022-01-14 21:15:53] ip: 66.249.72.18, OS: Android, Brower: Handheld Browser, path: /dich-vu/goi-tin-tuc.html
+[2022-01-14 21:51:15] ip: 66.249.72.20, OS: Android, Brower: Handheld Browser, path: /blog/cong-nghe-laptop-cu-cua-ban-sap-chay-muot-hon.html
+[2022-01-14 22:56:23] ip: 66.249.72.16, OS: Unknown OS Platform, Brower: Unknown Browser, path: /tags/cv-online.html

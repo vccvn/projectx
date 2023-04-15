@@ -1,0 +1,93 @@
+.deep-select-group{
+    .dropdown-header{
+        font-weight: 700;
+    }
+    h6.dropdown-header{
+        cursor: default;
+    }
+    &>.dropdown-menu{
+        a{
+            padding: .7rem 1.2rem !important;
+        }
+        &>.option-list{
+            max-height: 300px;
+            overflow-y: auto;
+            &>a.dropdown-item{
+                padding-left: 1rem;
+            }
+            &>.option-group{
+                &>a.dropdown-item{
+                    padding-left: 2rem;
+                }
+                &>.dropdown-header{
+                    padding-left: 1rem !important;
+                }
+                
+                &>.option-group{
+                    &>a.dropdown-item{
+                        padding-left: 3rem;
+                    }
+                    &>.dropdown-header{
+                        padding-left: 2rem !important;
+                    }
+                    &>.option-group{
+                        &>a.dropdown-item{
+                            padding-left: 4rem;
+                        }
+                        &>.dropdown-header{
+                            padding-left: 3rem !important;
+                        }
+                        &>.option-group{
+                            &>a.dropdown-item{
+                                padding-left: 5rem;
+                            }
+                            &>.dropdown-header{
+                                padding-left: 4rem !important;
+                            }
+                            &>.option-group{
+                                &>a.dropdown-item{
+                                    padding-left: 6rem;
+                                }
+                                &>.dropdown-header{
+                                    padding-left: 5rem !important;
+                                }
+                                &>.option-group{
+                                    &>a.dropdown-item{
+                                        padding-left: 7rem;
+                                    }
+                                    &>.dropdown-header{
+                                        padding-left: 6rem !important;
+                                    }
+                                    &>.option-group{
+                                        &>a.dropdown-item{
+                                            padding-left: 8rem;
+                                        }
+                                        &>.dropdown-header{
+                                            padding-left: 7rem !important;
+                                        }
+                                        &>.option-group{
+                                            &>a.dropdown-item{
+                                                padding-left: 9rem;
+                                            }
+                                            &>.dropdown-header{
+                                                padding-left: 8rem !important;
+                                            }
+                                            &>.option-group{
+                                                &>a.dropdown-item{
+                                                    padding-left: 10em;
+                                                }
+                                                &>.dropdown-header{
+                                                    padding-left: 9rem !important;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

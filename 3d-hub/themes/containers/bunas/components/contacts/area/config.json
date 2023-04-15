@@ -1,0 +1,19 @@
+{
+    "name": "Home: Mục liên hệ",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề (Tùy chọn)"
+        },
+        "description": {
+            "type": "textarea",
+            "label":"Mô tả",
+            "placeholder": "Viết gì đó...",
+            "className": "auto-height"
+        },
+        "faq_title": {
+            "type": "text",
+            "label": "Tiêu đề FAQ (Tùy chọn)"
+        }
+    }
+}

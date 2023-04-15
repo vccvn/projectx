@@ -1,0 +1,18 @@
+<canvas-layer [app]="app3D" [canvas]="canvas" *ngIf="canvas"></canvas-layer>
+<viewport-loading-layer></viewport-loading-layer>
+<div class="mask-wrapper">
+    <div class="mask-layer" 
+        (contextmenu)="transferEvent($event)" 
+        (pointerdown)="transferEvent($event)" 
+        (pointermove)="transferEvent($event)" 
+        (wheel)="transferEvent($event)" 
+        (touchstart)="transferEvent($event)" 
+        (touchend)="transferEvent($event)"
+        (touchmove)="transferEvent($event)" 
+        (keydown)="transferEvent($event)" 
+    ></div>
+
+</div>
+
+<app-vector-controls></app-vector-controls>
+<viewport-editor-toolbar></viewport-editor-toolbar>

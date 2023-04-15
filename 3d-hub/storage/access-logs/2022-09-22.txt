@@ -1,0 +1,2 @@
+[2022-09-22 00:31:32] ip: 66.249.66.56, OS: Android, Brower: Handheld Browser, path: /gioi-thieu.html
+[2022-09-22 05:49:58] ip: 66.249.66.18, OS: Android, Brower: Handheld Browser, path: /blog/goi-tieu-chuan.html

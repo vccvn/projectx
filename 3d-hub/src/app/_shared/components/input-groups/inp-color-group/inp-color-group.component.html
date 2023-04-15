@@ -1,0 +1,29 @@
+<div class="inner-box">{{label?label:name | translate}}</div>
+<div nz-row [nzGutter]="{ xs: 8, sm: 16, md: 24, lg: 32 }" class="color-group">
+    <div nz-col class="gutter-row" [nzSpan]="5">
+        <div class="inner-box">
+            <inp-color [name]="name" [(value)]="value" (subcribe)="onChange($event)"></inp-color>
+        </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="19">
+        <div *ngIf="hasAttach; then attachBlock else simpleBlock"></div>
+        <ng-template #attachBlock>
+            <inp-range-group 
+                [name]="attach.name" 
+                [min]="attach.min" 
+                [max]="attach.max" 
+                [step]="attach.step" 
+                [(value)]="attach.value" 
+                (subcribe)="onAttachChange($event)" 
+            ></inp-range-group>
+        </ng-template>
+        <ng-template #simpleBlock>
+            <div class="max-100">
+                <inp-text [name]="name" [(value)]="value" (subcribe)="onChange($event)" *ngIf="typeEnable"></inp-text>
+                <span *ngIf="output">{{value}}</span>
+            </div>
+        </ng-template>
+        
+    </div>
+
+</div>

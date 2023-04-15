@@ -1,0 +1,47 @@
+{
+    "data": [
+        {
+            "name": "decimals",
+            "type": "number",
+            "value_type": "number",
+            "label": "Số ký tự thập phân",
+            "value": 2
+        },
+        {
+            "name": "decimal_poiter",
+            "type": "select",
+            "label": "Ký tự ngăn cách phẩn thập phân",
+            "data": {
+                ",": "Đấu phẩy (.)",
+                ".": "Đấu chấm (.)"
+            },
+            "value": ","
+        },
+        {
+            "name": "thousands_sep",
+            "type": "select",
+            "label": "Ký tự ngăn cách hàng nghìn",
+            "data": {
+                ".": "Đấu chấm (.)",
+                ",": "Đấu phẩy (.)"
+            },
+            "value": "."
+        },
+        {
+            "name": "currency_type",
+            "type": "text",
+            "label": "Loại tiền tệ",
+            "value": "Đ"
+        },
+        {
+            "name": "currency_position",
+            "type": "select",
+            "label": "Vị trí đơn vị tiền",
+            "data": {
+                "left": "Trái",
+                "right": "Thải"
+            },
+            "value": "left"
+        }
+    ]
+}

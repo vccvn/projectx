@@ -1,0 +1,83 @@
+/* ======== COLORS ========= */
+.dropdown-menu>li.active>a, .dropdown-menu>li.active>a:focus, .dropdown-menu>li.active>a:hover{
+    background-image: none;
+}
+
+
+$colors: 
+    "red" #d4000e #be000c #fff #e4000d,
+    "blue" #40a9ff #3998e5 #fff #1958a4,
+    "dark-blue" #00469a #003f8a #fff #1958a4,
+    "green" #4cb050 #449e48 #fff #5db761,
+    "purple" #6441a5 #5a3a94 #fff #7354ae,
+    "orange" #ff9800 #fb8c00 #fff #ffa200,
+    "deep-orange" #ff4011 #f73100 #fff #ff4c1c,
+    "turquoise" #39c9bb #33b3a6 #fff #40e0d0,
+    "pink" #ea0253 #d2014a #fff #ec1b64;
+
+
+@each $name, $color1, $color2, $textColor, $color3 in $colors{
+
+    /* #{$name} */
+    [data-color="#{$name}"]{
+        .main-menu, .search-icon-btn, .breaking-ribbon, .flexslider li h3, #sidebar-newsletter button, #newsletter button, #time, .btn-primary:hover, .sponsored, .carousel-title, .play-icon, .title-style05.style-01, .title-left.underline04::before, .title-left.underline03::before, .pagination > .active > a, .read-more:hover:before, #nav-below-main .nav li a:hover:before, #nav-below-main .nav li.active a:before, .seach-block .nav li a:hover:before, .seach-block .nav li.active a:before, .btn:hover, .btn-info.focus, .btn-info:focus, .btn-default, .bg-default, .weather-city, .ui-datepicker-title, .icon-sub-menu .up-icon,
+        &.demo-color {
+            background-color: $color1;
+        }    
+        .title-style02, .title-style02-light, .blockquote_style02 {
+            border-left: 3px solid $color1;
+        }
+        .currentLink, .title-style01>h3, .style-02 span, .nav-tabs.nav-tabs-bottom > li.active > a {
+            border-bottom: 2px solid $color1;
+        }
+        .contact-us a, .content-wrap a, #calendar .ui-datepicker-calendar tbody td a.ui-state-highlight, #nav-below-main .nav li.active a, #nav-below-main .nav li a:hover, a:hover, .hour, .date, .day, .time, .media-body span, .header-logo h1, .sidenav-header-logo h2, .dropdown-menu a:hover, .read-more:hover, .blockquote_style01::before, .contact-us i, .currency h4, .square10, .square11, #cdate {
+            color: $color1;
+        }
+        .pagination > .active > a {
+            border: 1px solid $color1;
+        }
+        .navbar-nav > li.active > a {
+            background-color: $color2;
+        }
+        .sponsored:hover, #sidebar-newsletter button:hover, .main-menu .nav>li>a:hover, .nav .open>a, .nav .open>a:focus, .nav .open>a:hover, .carousel-title:hover, .pagination > .active > a:hover, .btn-default:hover, .nav-tabs.nav-tabs-solid > .active > a:focus, .nav-tabs.nav-tabs-solid .active a, .nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover, .dropdown-menu > li > a:hover, .dropdown-menu > li.active > a, .dropdown-menu > li.active > a:hover, .dropdown-menu > li.active > a:active, .block-title-1, .block-title-2 {
+            color: $textColor;
+            background-color: $color3;
+        }
+    }
+} 
+
+
+/*10.SLATE*/
+[data-color="slate"] {
+    
+    
+    .main-menu, .search-icon-btn, .flexslider li h3, #sidebar-newsletter button, #newsletter button, #time, .btn-primary:hover, .sponsored, .carousel-title, .title-left.underline04::before, .title-left.underline03::before, #nav-below-main .nav li a:hover:before, #nav-below-main .nav li.active a:before, .seach-block .nav li a:hover:before, .seach-block .nav li.active a:before, .btn:hover, .btn-info.focus, .btn-info:focus, .weather-city, .ui-datepicker-title, .icon-sub-menu .up-icon,
+    &.demo-color {
+        background-color: #64666c;
+    }
+    .breaking-ribbon, .title-style05.style-01, .btn-default, .pagination > .active > a, .read-more:hover:before, .play-icon {
+        background-color: #d4000e;
+    }
+    .title-style02, .title-style02-light, .blockquote_style02 {
+        border-left: 3px solid #64666c;
+    }
+    .currentLink, .title-style01>h3, .style-02 span, .nav-tabs.nav-tabs-bottom > li.active > a {
+        border-bottom: 2px solid #64666c;
+    }
+    .contact-us a, .content-wrap a, #calendar .ui-datepicker-calendar tbody td a.ui-state-highlight, #nav-below-main .nav li.active a, #nav-below-main .nav li a:hover, a:hover, .hour, .date, .day, .time, .media-body span, .header-logo h1, .sidenav-header-logo h2, .dropdown-menu a:hover, .blockquote_style01::before, .contact-us i, .currency h4 {
+        color: #64666c;
+    }
+    .square10, .square11, .read-more:hover, #cdate {
+        color: #d4000e;
+    }
+    .pagination > .active > a {
+        border: 1px solid #d4000e;
+    }
+    .navbar-nav > li.active > a {
+        background-color: #75777c;
+    }
+    .sponsored:hover, #sidebar-newsletter button:hover, .main-menu .nav>li>a:hover, .nav .open>a, .nav .open>a:focus, .nav .open>a:hover, .carousel-title:hover, .pagination > .active > a:hover, .btn-default:hover, .nav-tabs.nav-tabs-solid > .active > a:focus, .nav-tabs.nav-tabs-solid .active a, .nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover, .dropdown-menu > li > a:hover, .dropdown-menu > li.active > a, .dropdown-menu > li.active > a:hover, .dropdown-menu > li.active > a:active, .block-title-1, .block-title-2 {
+        color: #fff;
+        background-color: #53565c;
+    }
+}

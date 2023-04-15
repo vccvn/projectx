@@ -1,0 +1,34 @@
+{
+    "inputs": {
+        "name": {
+            "type": "text",
+            "label": "Tên dịch vụ",
+            "placeholder": "nhập "
+        },
+        "web_type": {
+            "type": "radio",
+            "label":"Loại web",
+            "required": "true",
+            "template": "checklist",
+            "call": "get_system_config",
+            "params": [
+                "web_type_list"
+            ],
+            "default": "default"
+        },
+        "description": {
+            "type": "textarea",
+            "label": "Mô tả dịch vụ",
+            "placeholder": "Viết gì đó để mô tả dịch vụ"
+        },
+        "packages": {
+            "type": "package",
+            "label": "Các gói dịch vụ",
+            "@template": "<div>{hello}</div>",
+            "@js": "static/manager/js/service-package-input.js"
+        }
+    },
+    "config": {
+        "name": "Thông tin khách hàng"
+    }
+}

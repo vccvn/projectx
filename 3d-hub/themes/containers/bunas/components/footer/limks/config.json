@@ -1,0 +1,15 @@
+{
+    "name": "Footer: Liên kết / menu",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề (Tùy chọn)"
+        },
+        "menu_id": {
+            "type": "crazyselect",
+            "label":"Menu",
+            "placeholder": "Viết gì đó...",
+            "call": "get_menu_options"
+        }
+    }
+}

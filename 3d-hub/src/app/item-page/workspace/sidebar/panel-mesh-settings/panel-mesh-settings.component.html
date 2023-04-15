@@ -1,0 +1,34 @@
+<div class="panel inner-layout" *ngIf="isShow">
+    <div class="panel-header">
+        <h3>{{title}}</h3>
+        <div class="btn-close" (click)="close()">
+            <i nz-icon nzType="close-circle" nzTheme="outline"></i>
+        </div>
+    </div>
+    <div class="panel-body">
+        <div class="store">
+            <inp-text-group name="title" [(value)]="mesh.title" label="Mesh Title" (subcribe)="updateMeshTitle($event)"></inp-text-group>
+            <material-activate-inputs 
+                index="-1" 
+                [material]="mesh.__ref__.material" 
+                [settings]="mesh.data" 
+                [editable]="mesh.editable" 
+                (onUpdate)="updateMaterial($event)" 
+                (updateEditable)="updateEditable($event)" 
+                [isArray]="false">
+            </material-activate-inputs>
+        </div>
+    </div>
+
+
+
+    <div class="panel-footer">
+        <h3>{{"Actions" | translate}}</h3>
+        <div class="buttons">
+            <button nz-button nzType="primary" (click)="onDone()">{{"Done"|translate}}</button>
+
+
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,38 @@
+{
+    "name": "Câu hỏi và đăng ký theo dõi",
+    "inputs": {
+        "question_title": {
+            "type": "text",
+            "label": "Tiêu đề câu hỏi (Tùy chọn)"
+        },
+        "question_description": {
+            "type": "textarea",
+            "label":"Mô tả phần câu hỏi",
+            "placeholder": "Mô tả phần câu hỏi. Viết gì đó...",
+            "className": "auto-height"
+        },
+        "subcribe_title": {
+            "type": "text",
+            "label": "Tiêu đề theo dõi (Tùy chọn)"
+        },
+        "subcribe_description": {
+            "type": "textarea",
+            "label":"Mô tả theo dõi",
+            "placeholder": "Viết gì đó...",
+            "className": "auto-height"
+        },
+        "policy_link": {
+            "type": "text",
+            "label": "Đường dẫn chính sách bảo mật",
+            "placeholder":"Nhập liên kết"
+        },
+
+        "boder_bottom": {
+            "type": "switch",
+            "label": "Border",
+            "value_type": "boolean",
+            "check_label": "Hiển thị border bottom"
+        }
+
+    }
+}

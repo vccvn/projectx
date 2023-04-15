@@ -1,0 +1,7 @@
+{
+    "email": {
+        "type": "email",
+        "label": "Email",
+        "placeholder": "nhập email"
+    }
+}

@@ -1,0 +1,4 @@
+<div class="inner-box">{{label?label:name | translate}}</div>
+<div class="input-wrapper">
+    <input nz-input placeholder="{{placeholder?placeholder:name|translate}}" [(ngModel)]="value" (input)="onChangeValue($event)" (change)="onChangeValue($event)" />
+</div>

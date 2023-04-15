@@ -1,0 +1,28 @@
+$border-width-base: 1px;
+$body-background: #fff;
+$border-style-base: solid;
+$border-color-split: #c9c9c9;
+$heading-color: #000;
+$tablet-max: 992px;
+
+.main {
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  overflow: auto;
+  background-color: $body-background;
+}
+
+.content {
+  flex: 1;
+  padding-top: 24px;
+  padding-bottom: 8px;
+
+  .title {
+    margin-bottom: 12px;
+    color: $heading-color;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}

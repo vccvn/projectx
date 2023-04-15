@@ -1,0 +1,37 @@
+{
+    "data": {
+        "transactions": {
+            "text": "Giao dịch",
+            "title": "Quản lý giao dịch",
+            "route": "admin.transactions.services",
+            "active_ley": "transactions.services",
+            "icon": "exchange-alt",
+            "submenu": {
+                "type": "list",
+                "data": [
+                    {
+                        "text": "Danh sách",
+                        "title": "Danh sách khách hàng",
+                        "active_key": "list",
+                        "route": "admin.transactions.services.list",
+                        "icon": "list-ul"
+                    },
+                    {
+                        "text": "Thêm mới",
+                        "title": "Thêm mới",
+                        "active_key": "add",
+                        "route": "admin.transactions.services.create",
+                        "icon": "plus-square"
+                    },
+                    {
+                        "text": "Đã xóa",
+                        "title": "Thùng rác",
+                        "active_key": "trash",
+                        "route": "admin.transactions.services.trash",
+                        "icon": "ban"
+                    }
+                ]
+            }
+        }
+    }
+}

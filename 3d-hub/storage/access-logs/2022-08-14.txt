@@ -1,0 +1,5 @@
+[2022-08-14 01:17:46] ip: 66.249.70.180, OS: Android, Brower: Handheld Browser, path: /blog/goi-business.html
+[2022-08-14 02:11:09] ip: 66.249.70.178, OS: Android, Brower: Handheld Browser, path: /tags/wordpress.html
+[2022-08-14 03:04:45] ip: 66.249.70.176, OS: Android, Brower: Handheld Browser, path: /du-an/noof-food.html
+[2022-08-14 09:30:57] ip: 66.249.70.178, OS: Android, Brower: Handheld Browser, path: /
+[2022-08-14 12:15:57] ip: 66.249.70.178, OS: Android, Brower: Handheld Browser, path: /blog/cong-nghe-laptop-cu-cua-ban-sap-chay-muot-hon.html

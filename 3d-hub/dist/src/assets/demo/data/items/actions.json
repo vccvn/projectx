@@ -1,0 +1,136 @@
+{
+    "data": {
+        "id": "1",
+        "name": "Túi 21",
+        "categort_id": 1,
+        "description": "Mô tả",
+        "status": "published",
+        "type": "gltf",
+        "path": "https://threejs.vcc.vn/models/gltf/set21/",
+        "file": "scene.gltf",
+        "download_source_url": "https://threejs.vcc.vn/zip/set21.zip",
+        "load_options": {
+            "useRoughnessMipmapper": true,
+            "materialNeedsUpdate": true
+        },
+        "settings": {
+            "props": {
+                "castShadow": true,
+                "receiveShadow": true,
+                "position": {
+                    "y": 0.02
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            },
+            "options": {
+                "pivot": {
+                    "x": "center",
+                    "y": "center",
+                    "z": "center"
+                }
+            },
+            "meshes": [
+                {
+                    "name": "Plane002",
+                    "sid": "plane002_0",
+                    "index": 2,
+                    "data": {
+                        "material": {
+                            "metalness": 0.22
+                        }
+                    },
+                    "editable": [
+                        "color",
+                        "lightMap",
+                        "metalness",
+                        "morphTargets",
+                        "normalMap",
+                        "roughnessMap",
+                        "name",
+                        "alphaMap",
+                        "roughness"
+                    ]
+                },
+                {
+                    "name": "Mat_truoc",
+                    "sid": "mat_truoc_1",
+                    "index": 1,
+                    "data": {
+                        "material": {
+                            "transparent": true,
+                            "map": {
+                                "$three": "texture",
+                                "file": "/images/Logo-6035c31b4fc70.jpg",
+                                "format": "jpg"
+                            }
+                        }
+                    },
+                    "editable": [
+                        "name",
+                        "alphaMap",
+                        "aoMap",
+                        "bumpMap",
+                        "bumpScale",
+                        "color",
+                        "displacementMap",
+                        "displacementScale",
+                        "displacementBias",
+                        "emissive",
+                        "emissiveMap",
+                        "envMapIntensity",
+                        "lightMap",
+                        "map",
+                        "metalness",
+                        "morphTargets",
+                        "roughness",
+                        "refractionRatio",
+                        "wireframeLinewidth",
+                        "opacity",
+                        "transparent",
+                        "roughnessMap",
+                        "vertexTangents",
+                        "metalnessMap",
+                        "wireframeLinecap"
+                    ]
+                },
+                {
+                    "name": "Plane001",
+                    "sid": "plane001_2",
+                    "index": 0,
+                    "title": "Plane001",
+                    "data": {
+                        "material": {
+                            "envMapIntensity": 1,
+                            "metalness": 0.23,
+                            "opacity": 0.32,
+                            "transparent": true
+                        }
+                    },
+                    "editable": [
+                        "name",
+                        "alphaMap",
+                        "aoMap",
+                        "bumpMap",
+                        "bumpScale",
+                        "color",
+                        "emissive",
+                        "displacementScale",
+                        "displacementBias",
+                        "emissiveMap",
+                        "lightMap",
+                        "map",
+                        "metalness",
+                        "metalnessMap",
+                        "opacity",
+                        "transparent"
+                    ]
+                }
+            ]
+        }
+    },
+    "validationErrors": []
+}

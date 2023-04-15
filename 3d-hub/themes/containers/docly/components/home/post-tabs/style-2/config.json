@@ -1,0 +1,197 @@
+{
+    "name": "Home: Tab list Slider (Style 2)",
+    "inputs": {
+        "slider_title": {
+            "type": "text",
+            "label": "Tiêu đề slider (Tùy chọn)"
+        },
+        
+        "slider_dynamic_id": {
+            "type": "crazyselect",
+            "label": "Mục tin bài slider (tùy chọn)",
+            "template": "crazyselect",
+            "call": "get_dynamic_options",
+            "params": [
+                [],
+                "Chọn một"
+            ],
+            "@change": "Crazy.posts.changeDynamicID",
+            "data-ref": "slider_category_id",
+            "required": "true"
+        },
+        "slider_category_id": {
+            "type": "crazyselect",
+            "label": "Danh mục slider (tùy chọn)",
+            "template": "crazyselect",
+            "call": "get_post_category_options",
+            "params": [
+                {
+                    "dynamic_id": "#slider_dynamic_id"
+                },
+                true
+            ],
+            "@label-type": "value"
+        },
+        "slider_cate_sorttype": {
+            "type": "select",
+            "label": "kiểu sắp xếp Danh mục",
+            "call": "get_post_category_sortby_options"
+        },
+        "slider_cate_number": {
+            "type": "number",
+            "label": "Số lượng danh mục con",
+            "min": 1,
+            "step": 1,
+            "valudate": "number|min:1",
+            "default": 10
+        },
+        "slider_group_by_category": {
+            "type": "switch",
+            "label": "Nhóm theo danh mục",
+            "value_type": "boolean"
+        },
+        "slider_sorttype": {
+            "type": "select",
+            "label": "kiểu sắp xếp slider",
+            "call": "get_post_sortby_options"
+        },
+        "slider_post_number": {
+            "type": "number",
+            "label": "Số tin bài slider",
+            "min": 1,
+            "step": 1,
+            "default": 25
+        },
+
+        "list_title": {
+            "type": "text",
+            "label": "Tiêu đề list (Tùy chọn)"
+        },
+        
+        "list_dynamic_id": {
+            "type": "crazyselect",
+            "label": "Mục tin bài ở list (tùy chọn)",
+            "template": "crazyselect",
+            "call": "get_dynamic_options",
+            "params": [
+                [],
+                "Chọn một"
+            ],
+            "@change": "Crazy.posts.changeDynamicID",
+            "data-ref": "list_category_id",
+            "required": "true"
+        },
+        "list_category_id": {
+            "type": "crazyselect",
+            "label": "Danh mục ở list (tùy chọn)",
+            "template": "crazyselect",
+            "call": "get_post_category_options",
+            "params": [
+                {
+                    "dynamic_id": "#list_dynamic_id"
+                },
+                true
+            ],
+            "@label-type": "value"
+        },
+        "list_group_by_category": {
+            "type": "switch",
+            "label": "Nhóm theo danh mục (trong list)",
+            "value_type": "boolean"
+        },
+        "list_sorttype": {
+            "type": "select",
+            "label": "kiểu sắp xếp (trong list)",
+            "call": "get_post_sortby_options"
+        },
+        "list_post_number": {
+            "type": "number",
+            "label": "Số tin bài (trong list)",
+            "min": 1,
+            "step": 1,
+            "default": 25
+        },
+        
+        "social_show": {
+            "type": "switch",
+            "label": "Hiển thị Liên kết MXH",
+            "value_type": "boolean",
+            "check_label": "Hiển thị"
+        },
+
+        "social_title": {
+            "type": "text",
+            "label": "Tiêu đề social (Tùy chọn)"
+        },
+        
+        "cate_show": {
+            "type": "switch",
+            "label": "Hiển thị Danhh mục",
+            "value_type": "boolean",
+            "check_label": "Hiển thị"
+        },
+
+ 
+        "cate_title": {
+            "type": "text",
+            "label": "Tiêu đề Phần danh mục (Tùy chọn)"
+        },
+        "cate_dynamic_id": {
+            "type": "crazyselect",
+            "label": "Mục (tùy chọn)",
+            "template": "crazyselect",
+            "call": "get_dynamic_options",
+            "params": [[], "Chọn một"],
+            "@change": "Crazy.posts.changeDynamicID",
+            "data-ref": "cate_parent_id"
+        },
+        "cate_parent_id": {
+            "type": "crazyselect",
+            "label": "Danh mục Cha",
+            "template": "crazyselect",
+            "call": "get_post_category_options",
+            "params": [
+                {
+                    "dynamic_id": "#cate_dynamic_id"
+                },
+                true
+            ],
+            "@label-type": "value"
+        },
+        "cate_sort": {
+            "type": "select",
+            "label": "kiểu sắp xếp",
+            "call": "get_post_category_sortby_options"
+        },
+        "cate_number": {
+            "type": "number",
+            "label": "Số lượng danh mục",
+            "min": 1,
+            "step": 1,
+            "valudate": "number|min:1",
+            "default": 10
+        },
+
+        "newsletter_show": {
+            "type": "switch",
+            "label": "Hiển thị đăng ký theo dõi",
+            "value_type": "boolean",
+            "check_label": "Hiển thị"
+        },
+
+        "newsletter_title": {
+            "type": "text",
+            "label": "Tiêu đề mục đăng ký (Tùy chọn)"
+        },
+        "newsletter_description": {
+            "type": "textarea",
+            "label":"Mô tả mục đăng ký",
+            "placeholder": "Viết gì đó...",
+            "className": "auto-height"
+        },
+        "newsletter_button": {
+            "type": "text",
+            "label": "Nút Đăng ký"
+        }
+   }
+}

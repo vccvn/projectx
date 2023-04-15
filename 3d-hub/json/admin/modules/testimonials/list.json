@@ -1,0 +1,61 @@
+{
+    "name": "Testimonials ",
+    "package": "testimonials",
+    "use_trash": false,
+    "titles": {
+        "default": "Danh sách testimonial",
+        "trash": "Danh sách testimonial đã xóa"
+    },
+    "data": [],
+    "filter": {
+        "search_columns": {
+            "name": "Họ tên"
+        },
+        "sort_columns": {
+            "name": "Họ tên"
+        }
+    },
+    "table": {
+        "columns": [
+            {
+                "title": "ID",
+                "class": "id-col",
+                "text": ":id"
+            },
+            {
+                "title": "Avatar",
+                "class": "",
+                "template":"<a href=\"{@route}\"><img src=\"{@getAvatar}\" class=\"image-thumbnail\" alt=\"{name}\"></a>",
+                    "data":{
+                        "@route": [".update", {"id": ":id"}],
+                        "@getAvatar":[]
+                    }
+            },
+            {
+                "title": "Hõ tên",
+                "class": "",
+                "text": ":name"
+            },
+            {
+                "title": "Công việc",
+                "class": "",
+                "text": ":job"
+            },
+            {
+                "title": "Nơi làm việc",
+                "class": "",
+                "text": ":company"
+            },
+            {
+                "title": "Nội dung",
+                "class": "",
+                "text": ":content"
+            }
+        ]
+    },
+    "resources": {
+        "js_data": [],
+        "js": [],
+        "css": []
+    }
+}

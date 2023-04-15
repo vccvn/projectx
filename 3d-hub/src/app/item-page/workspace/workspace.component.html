@@ -1,0 +1,37 @@
+<nz-layout>
+    <nz-header>
+        <app-header></app-header>
+    </nz-header>
+    <nz-content>
+        <ng-container *ngIf="isLoading; then loadingTemplate; else editorTemplate"></ng-container>
+        <ng-template #loadingTemplate>
+            <h3>Vui lòng chờ giây lát</h3>
+        </ng-template>
+        <ng-template #editorTemplate>
+            <ng-container *ngIf="mode=='notfound'; then notFoundTemplate; else editorTemplate"></ng-container>
+            <ng-template #notFoundTemplate>
+                <div class="not-found">
+                    Item Not Found
+                </div>
+            </ng-template>
+            <ng-template #editorTemplate>
+
+                <nz-layout class="inner-layout">
+                    <nz-sider nzWidth="380px" nzTheme="dark">
+                        <app-sidebar></app-sidebar>
+                    </nz-sider>
+                    <nz-content>
+                        <section id="content">
+                            <app-viewport></app-viewport>
+                        </section>
+                    </nz-content>
+                </nz-layout>
+            </ng-template>
+
+        </ng-template>
+
+
+    </nz-content>
+</nz-layout>
+<modal-image-library></modal-image-library>
+<app-panel-mesh-settings></app-panel-mesh-settings>

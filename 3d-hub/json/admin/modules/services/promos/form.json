@@ -1,0 +1,115 @@
+{
+    "inputs": {
+        "name": {
+            "type": "text",
+            "label": "Tên chương trình khuyến mãi",
+            "placeholder": "Tên chương trình khuyến mãi"
+        },
+        "service_id": {
+            "type": "crazyselect",
+            "label": "Chọn dịch vụ",
+            "placeholder": "Nhập tên dịch vụ",
+            "call": "get_service_options",
+            "params": [[], "Tất cả dịch vụ"],
+            "@change": "App.ServicePromos.changeServiceID"
+        },
+        "package_id": {
+            "type": "crazyselect",
+            "label": "Gói dịch vụ",
+            "placeholder": "nhập tên gói",
+            "call": "get_service_package_options",
+            "params": [
+                {
+                    "service_id": "#service_id"
+                },
+                "Tất cả"
+            ]
+        },
+        "description": {
+            "type": "textarea",
+            "label": "Mô tả",
+            "placeholder": "Viết gì đó"
+        },
+        "type": {
+            "type": "radio",
+            "label": "Hình thức áp dụng khuyến mãi",
+            "data": {
+                "down": "Giảm giá",
+                "replace": "Thay giá gốc"
+            },
+            "default": "down"
+        },
+        "unit": {
+            "type": "select",
+            "label": "Đơn vị",
+            "data": {
+                "percent": "Phần trăm",
+                "price": "Giá tiền"
+            },
+            "default": "percent"
+        },
+        "amount": {
+            "type": "number",
+            "label": "Giá hoặc phần trăm",
+            "placeholder": "nhập % hoặc giá"
+        },
+        "code": {
+            "type": "text",
+            "label": "Mã giảm khuyến mãi",
+            "placeholder": "Mã giảm khuyến mãi"
+        },
+        "total": {
+            "type": "number",
+            "label": "Số lượng",
+            "placeholder": "Số lượng",
+            "min": 1,
+            "step": 1,
+            "default": 1
+        },
+        "started_at": {
+            "type": "text",
+            "text": "Thời gian bắt đầu",
+            "className": "inp-time",
+            "data-format": "yyyy-mm-dd HH:ii:ss",
+            "append_text": "<i class=\"fa fa-calendar\"></i>",
+            "autocomplete": "off"
+        },
+        "expired_at": {
+            "type": "text",
+            "text": "Thời gian hết hạn",
+            "className": "inp-time",
+            "data-format": "yyyy-mm-dd HH:ii:ss",
+            "append_text": "<i class=\"fa fa-calendar\"></i>",
+            "autocomplete": "off"
+        },
+        "status": {
+            "type": "radio",
+            "label": "Trạng thái",
+            "data": {
+                "1": "Kích hoạt",
+                "0": "Không kích hoạt"
+            },
+            "default": "1"
+        }
+    },
+    "config": {
+        "name": "Chương trình khuyến mãi",
+        "layout_type": "column",
+        "form_groups": {
+            "nameinfo": {
+                "title": "Thông tin khuyến mãi",
+                "class": "col-12 col-md-7",
+                "inputs": ["name", "description", "code", "total", "started_at", "expired_at", "status"]
+            },
+            "apply": {
+                "title": "Ap dụng",
+                "class": "col-12 col-md-5",
+                "inputs": ["service_id", "package_id", "type", "amount", "unit"]
+            }
+            
+        }
+    },
+    "assets": {
+        "js": ["/static/manager/js/service.promos.js"]
+    }
+}

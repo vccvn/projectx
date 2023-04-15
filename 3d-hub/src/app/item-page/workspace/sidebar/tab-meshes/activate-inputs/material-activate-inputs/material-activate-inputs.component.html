@@ -1,0 +1,43 @@
+<div nz-row [nzGutter]="{ xs: 8, sm: 16, md: 24, lg: 32 }" class="input-group type-group">
+    <div nz-col class="gutter-row" [nzSpan]="12">
+        <div class="inner-box">{{'Material Type' | translate}}</div>
+    </div>
+    
+    <div nz-col class="gutter-row" [nzSpan]="12">
+        <div class="inner-box">
+            <inp-select name="type" label="Material Type" [options]="types" [(value)]="type" (subcribe)="changeType($event)"></inp-select>
+        </div>
+    </div>
+</div>
+
+
+<div class="material-inputs">
+    <div class="ig" *ngFor="let inp of inputs; let i=index">
+        <div class="input-item" [ngSwitch]="inp.type">
+            <div *ngSwitchCase="'checkbox'">
+                <activate-checkbox [config]="inp" (subcribe)="onChangeHandle($event)" (editable)="toggleEditable($event)"></activate-checkbox>
+            </div>
+            
+            <div *ngSwitchCase="'texture'">
+                <activate-texture [config]="inp" (subcribe)="onChangeHandle($event)" (editable)="toggleEditable($event)"></activate-texture>
+            </div>
+            <div *ngSwitchCase="'color'">
+                <activate-color [config]="inp" (subcribe)="onChangeHandle($event)" (editable)="toggleEditable($event)"></activate-color>
+            </div>
+            <div *ngSwitchCase="'select'">
+                <activate-select [config]="inp" (subcribe)="onChangeHandle($event)" (editable)="toggleEditable($event)"></activate-select>
+            </div>
+            <div *ngSwitchCase="'range'">
+                <activate-range [config]="inp" (subcribe)="onChangeHandle($event)" (editable)="toggleEditable($event)"></activate-range>
+            </div>
+            <div *ngSwitchCase="'number'">
+                <activate-number [config]="inp" (subcribe)="onChangeHandle($event)" (editable)="toggleEditable($event)"></activate-number>
+            </div>
+            
+            <div *ngSwitchDefault>
+                <activate-text [config]="inp" (subcribe)="onChangeHandle($event)" (editable)="toggleEditable($event)"></activate-text>
+            </div>
+        </div>
+    </div>
+</div>
+

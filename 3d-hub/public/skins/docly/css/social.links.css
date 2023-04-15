@@ -1,0 +1,519 @@
+.social-links {
+  text-align: center;
+  clear: both;
+  overflow: hidden;
+}
+
+.social-links ul {
+  margin: 0;
+  padding: 0;
+}
+
+.social-links ul li {
+  display: inline-block;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.social-links ul li::after {
+  display: none;
+}
+
+.social-links ul li a {
+  border: 2px solid #cacaca;
+  display: inline-block;
+  height: 40px;
+  line-height: 1.7;
+  margin-right: 0;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+  width: 40px;
+  overflow: hidden;
+}
+
+.social-links ul li a i {
+  font-weight: 400;
+  line-height: 2.3;
+  font-size: 15px;
+}
+
+.social-links ul li a:hover {
+  background-color: #001837;
+  border: 2px solid transparent;
+  -moz-transition: all 0.4s ease-out 0s;
+  -webkit-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+
+.social-links ul li a:hover i {
+  color: #fff;
+}
+
+.social-links.circle li a {
+  border-radius: 100%;
+}
+
+.social-links ul li.social-500px a.link-500px i, .social-links ul li [href*="500px.com"] i {
+  color: #0099e5;
+}
+
+.social-links ul li.social-500px a.link-500px:hover, .social-links ul li [href*="500px.com"]:hover {
+  background: #0099e5;
+}
+
+.social-links ul li.social-500px a.link-500px:hover i, .social-links ul li [href*="500px.com"]:hover i {
+  color: #fff;
+}
+
+.social-links ul li.social-amazon a.link-amazon i, .social-links ul li [href*="amazon.com"] i {
+  color: #f90;
+}
+
+.social-links ul li.social-amazon a.link-amazon:hover, .social-links ul li [href*="amazon.com"]:hover {
+  background: #f90;
+}
+
+.social-links ul li.social-amazon a.link-amazon:hover i, .social-links ul li [href*="amazon.com"]:hover i {
+  color: #fff;
+}
+
+.social-links ul li.social-amilia a.link-amilia i, .social-links ul li [href*="amilia.com"] i {
+  color: #46aaf8;
+}
+
+.social-links ul li.social-amilia a.link-amilia:hover, .social-links ul li [href*="amilia.com"]:hover {
+  background: #46aaf8;
+}
+
+.social-links ul li.social-amilia a.link-amilia:hover i, .social-links ul li [href*="amilia.com"]:hover i {
+  color: #fff;
+}
+
+.social-links ul li.social-gitlab a.link-gitlab i, .social-links ul li [href*="gitlab.com"] i {
+  color: #e65328;
+}
+
+.social-links ul li.social-gitlab a.link-gitlab:hover, .social-links ul li [href*="gitlab.com"]:hover {
+  background: #e65328;
+}
+
+.social-links ul li.social-gitlab a.link-gitlab:hover i, .social-links ul li [href*="gitlab.com"]:hover i {
+  color: #fff;
+}
+
+.social-links ul li.social-ebay a.link-ebay i, .social-links ul li [href*="ebay.com"] i {
+  color: #0654ba;
+}
+
+.social-links ul li.social-ebay a.link-ebay:hover, .social-links ul li [href*="ebay.com"]:hover {
+  background: #0654ba;
+}
+
+.social-links ul li.social-ebay a.link-ebay:hover i, .social-links ul li [href*="ebay.com"]:hover i {
+  color: #fff;
+}
+
+.social-links ul li.social-spotify a.link-spotify i, .social-links ul li [href*="spotify.com"] i {
+  color: #1ed760;
+}
+
+.social-links ul li.social-spotify a.link-spotify:hover, .social-links ul li [href*="spotify.com"]:hover {
+  background: #1ed760;
+}
+
+.social-links ul li.social-spotify a.link-spotify:hover i, .social-links ul li [href*="spotify.com"]:hover i {
+  color: #fff;
+}
+
+.social-links ul li.social-stackexchange a.link-stackexchange i, .social-links ul li [href*="stackexchange.com"] i {
+  color: #12457C;
+}
+
+.social-links ul li.social-stackexchange a.link-stackexchange:hover, .social-links ul li [href*="stackexchange.com"]:hover {
+  background: #12457C;
+}
+
+.social-links ul li.social-stackexchange a.link-stackexchange:hover i, .social-links ul li [href*="stackexchange.com"]:hover i {
+  color: #fff;
+}
+
+.social-links ul li.social-stackoverflow a.link-stackoverflow i, .social-links ul li [href*="stackoverflow.com"] i {
+  color: #f48024;
+}
+
+.social-links ul li.social-stackoverflow a.link-stackoverflow:hover, .social-links ul li [href*="stackoverflow.com"]:hover {
+  background: #f48024;
+}
+
+.social-links ul li.social-stackoverflow a.link-stackoverflow:hover i, .social-links ul li [href*="stackoverflow.com"]:hover i {
+  color: #fff;
+}
+
+.social-links ul li.social-trello a.link-trello i, .social-links ul li [href*="trello.com"] i {
+  color: #5aac44;
+}
+
+.social-links ul li.social-trello a.link-trello:hover, .social-links ul li [href*="trello.com"]:hover {
+  background: #5aac44;
+}
+
+.social-links ul li.social-trello a.link-trello:hover i, .social-links ul li [href*="trello.com"]:hover i {
+  color: #fff;
+}
+
+.social-links ul li.social-facebook a.link-facebook i, .social-links ul li [href*="facebook.com"] i {
+  color: #3b5998;
+}
+
+.social-links ul li.social-facebook a.link-facebook:hover, .social-links ul li [href*="facebook.com"]:hover {
+  background: #3b5998;
+}
+
+.social-links ul li.social-facebook a.link-facebook:hover i, .social-links ul li [href*="facebook.com"]:hover i {
+  color: #fff;
+}
+
+.social-links ul li.social-twitter a.link-twitter i, .social-links ul li [href*="twitter.com"] i {
+  color: #00aced;
+}
+
+.social-links ul li.social-twitter a.link-twitter:hover, .social-links ul li [href*="twitter.com"]:hover {
+  background: #00aced;
+}
+
+.social-links ul li.social-twitter a.link-twitter:hover i, .social-links ul li [href*="twitter.com"]:hover i {
+  color: #fff;
+}
+
+.social-links ul li.social-wordpress a.link-wordpress i, .social-links ul li [href*="wordpress.org"] i {
+  color: #45bbe6;
+}
+
+.social-links ul li.social-wordpress a.link-wordpress:hover, .social-links ul li [href*="wordpress.org"]:hover {
+  background: #45bbe6;
+}
+
+.social-links ul li.social-wordpress a.link-wordpress:hover i, .social-links ul li [href*="wordpress.org"]:hover i {
+  color: #fff;
+}
+
+.social-links ul li.social-wordpress a.link-wordpress i, .social-links ul li [href*="wordpress.com"] i {
+  color: #45bbe6;
+}
+
+.social-links ul li.social-wordpress a.link-wordpress:hover, .social-links ul li [href*="wordpress.com"]:hover {
+  background: #45bbe6;
+}
+
+.social-links ul li.social-wordpress a.link-wordpress:hover i, .social-links ul li [href*="wordpress.com"]:hover i {
+  color: #fff;
+}
+
+.social-links ul li.social-github a.link-github i, .social-links ul li [href*="github.com"] i {
+  color: #4183c4;
+}
+
+.social-links ul li.social-github a.link-github:hover, .social-links ul li [href*="github.com"]:hover {
+  background: #4183c4;
+}
+
+.social-links ul li.social-github a.link-github:hover i, .social-links ul li [href*="github.com"]:hover i {
+  color: #fff;
+}
+
+.social-links ul li.social-linkedin a.link-linkedin i, .social-links ul li [href*="linkedin.com"] i {
+  color: #007bb6;
+}
+
+.social-links ul li.social-linkedin a.link-linkedin:hover, .social-links ul li [href*="linkedin.com"]:hover {
+  background: #007bb6;
+}
+
+.social-links ul li.social-linkedin a.link-linkedin:hover i, .social-links ul li [href*="linkedin.com"]:hover i {
+  color: #fff;
+}
+
+.social-links ul li.social-pinterest a.link-pinterest i, .social-links ul li [href*="pinterest.com"] i {
+  color: #cb2027;
+}
+
+.social-links ul li.social-pinterest a.link-pinterest:hover, .social-links ul li [href*="pinterest.com"]:hover {
+  background: #cb2027;
+}
+
+.social-links ul li.social-pinterest a.link-pinterest:hover i, .social-links ul li [href*="pinterest.com"]:hover i {
+  color: #fff;
+}
+
+.social-links ul li.social-flickr a.link-flickr i, .social-links ul li [href*="flickr.com"] i {
+  color: #ff0084;
+}
+
+.social-links ul li.social-flickr a.link-flickr:hover, .social-links ul li [href*="flickr.com"]:hover {
+  background: #ff0084;
+}
+
+.social-links ul li.social-flickr a.link-flickr:hover i, .social-links ul li [href*="flickr.com"]:hover i {
+  color: #fff;
+}
+
+.social-links ul li.social-vimeo a.link-vimeo i, .social-links ul li [href*="vimeo.com"] i {
+  color: #aad450;
+}
+
+.social-links ul li.social-vimeo a.link-vimeo:hover, .social-links ul li [href*="vimeo.com"]:hover {
+  background: #aad450;
+}
+
+.social-links ul li.social-vimeo a.link-vimeo:hover i, .social-links ul li [href*="vimeo.com"]:hover i {
+  color: #fff;
+}
+
+.social-links ul li.social-youtube a.link-youtube i, .social-links ul li [href*="youtube.com"] i {
+  color: #bb0000;
+}
+
+.social-links ul li.social-youtube a.link-youtube:hover, .social-links ul li [href*="youtube.com"]:hover {
+  background: #bb0000;
+}
+
+.social-links ul li.social-youtube a.link-youtube:hover i, .social-links ul li [href*="youtube.com"]:hover i {
+  color: #fff;
+}
+
+.social-links ul li.social-instagram a.link-instagram i, .social-links ul li [href*="instagram.com"] i {
+  color: #517fa4;
+}
+
+.social-links ul li.social-instagram a.link-instagram:hover, .social-links ul li [href*="instagram.com"]:hover {
+  background: #517fa4;
+}
+
+.social-links ul li.social-instagram a.link-instagram:hover i, .social-links ul li [href*="instagram.com"]:hover i {
+  color: #fff;
+}
+
+.social-links ul li.social-dribbble a.link-dribbble i, .social-links ul li [href*="dribbble.com"] i {
+  color: #ea4c89;
+}
+
+.social-links ul li.social-dribbble a.link-dribbble:hover, .social-links ul li [href*="dribbble.com"]:hover {
+  background: #ea4c89;
+}
+
+.social-links ul li.social-dribbble a.link-dribbble:hover i, .social-links ul li [href*="dribbble.com"]:hover i {
+  color: #fff;
+}
+
+.social-links ul li.social-skype a.link-skype i, .social-links ul li [href*="skype.com"] i {
+  color: #12a5f4;
+}
+
+.social-links ul li.social-skype a.link-skype:hover, .social-links ul li [href*="skype.com"]:hover {
+  background: #12a5f4;
+}
+
+.social-links ul li.social-skype a.link-skype:hover i, .social-links ul li [href*="skype.com"]:hover i {
+  color: #fff;
+}
+
+.social-links ul li.social-codepen a.link-codepen i, .social-links ul li [href*="codepen.io"] i {
+  color: #000;
+}
+
+.social-links ul li.social-codepen a.link-codepen:hover, .social-links ul li [href*="codepen.io"]:hover {
+  background: #000;
+}
+
+.social-links ul li.social-codepen a.link-codepen:hover i, .social-links ul li [href*="codepen.io"]:hover i {
+  color: #fff;
+}
+
+.social-links ul li.social-reddit a.link-reddit i, .social-links ul li [href*="reddit.com"] i {
+  color: #ff4500;
+}
+
+.social-links ul li.social-reddit a.link-reddit:hover, .social-links ul li [href*="reddit.com"]:hover {
+  background: #ff4500;
+}
+
+.social-links ul li.social-reddit a.link-reddit:hover i, .social-links ul li [href*="reddit.com"]:hover i {
+  color: #fff;
+}
+
+.social-links ul li.social-mailto a.link-mailto i, .social-links ul li [href*="mailto:"] i {
+  color: #1d62f0;
+}
+
+.social-links ul li.social-mailto a.link-mailto:hover, .social-links ul li [href*="mailto:"]:hover {
+  background: #1d62f0;
+}
+
+.social-links ul li.social-mailto a.link-mailto:hover i, .social-links ul li [href*="mailto:"]:hover i {
+  color: #fff;
+}
+
+.social-links ul li.social-jsfiddle a.link-jsfiddle i, .social-links ul li [href*="jsfiddle.net"] i {
+  color: #4679bd;
+}
+
+.social-links ul li.social-jsfiddle a.link-jsfiddle:hover, .social-links ul li [href*="jsfiddle.net"]:hover {
+  background: #4679bd;
+}
+
+.social-links ul li.social-jsfiddle a.link-jsfiddle:hover i, .social-links ul li [href*="jsfiddle.net"]:hover i {
+  color: #fff;
+}
+
+.social-links.brand-color ul li.social-500px a.link-500px, .social-links.brand-color ul li [href*="500px.com"] {
+  background: #0099e5;
+}
+
+.social-links.brand-color ul li.social-amazon a.link-amazon, .social-links.brand-color ul li [href*="amazon.com"] {
+  background: #f90;
+}
+
+.social-links.brand-color ul li.social-amilia a.link-amilia, .social-links.brand-color ul li [href*="amilia.com"] {
+  background: #46aaf8;
+}
+
+.social-links.brand-color ul li.social-gitlab a.link-gitlab, .social-links.brand-color ul li [href*="gitlab.com"] {
+  background: #e65328;
+}
+
+.social-links.brand-color ul li.social-ebay a.link-ebay, .social-links.brand-color ul li [href*="ebay.com"] {
+  background: #0654ba;
+}
+
+.social-links.brand-color ul li.social-spotify a.link-spotify, .social-links.brand-color ul li [href*="spotify.com"] {
+  background: #1ed760;
+}
+
+.social-links.brand-color ul li.social-stackexchange a.link-stackexchange, .social-links.brand-color ul li [href*="stackexchange.com"] {
+  background: #12457C;
+}
+
+.social-links.brand-color ul li.social-stackoverflow a.link-stackoverflow, .social-links.brand-color ul li [href*="stackoverflow.com"] {
+  background: #f48024;
+}
+
+.social-links.brand-color ul li.social-trello a.link-trello, .social-links.brand-color ul li [href*="trello.com"] {
+  background: #5aac44;
+}
+
+.social-links.brand-color ul li.social-facebook a.link-facebook, .social-links.brand-color ul li [href*="facebook.com"] {
+  background: #3b5998;
+}
+
+.social-links.brand-color ul li.social-twitter a.link-twitter, .social-links.brand-color ul li [href*="twitter.com"] {
+  background: #00aced;
+}
+
+.social-links.brand-color ul li.social-wordpress a.link-wordpress, .social-links.brand-color ul li [href*="wordpress.org"] {
+  background: #45bbe6;
+}
+
+.social-links.brand-color ul li.social-wordpress a.link-wordpress, .social-links.brand-color ul li [href*="wordpress.com"] {
+  background: #45bbe6;
+}
+
+.social-links.brand-color ul li.social-github a.link-github, .social-links.brand-color ul li [href*="github.com"] {
+  background: #4183c4;
+}
+
+.social-links.brand-color ul li.social-linkedin a.link-linkedin, .social-links.brand-color ul li [href*="linkedin.com"] {
+  background: #007bb6;
+}
+
+.social-links.brand-color ul li.social-pinterest a.link-pinterest, .social-links.brand-color ul li [href*="pinterest.com"] {
+  background: #cb2027;
+}
+
+.social-links.brand-color ul li.social-flickr a.link-flickr, .social-links.brand-color ul li [href*="flickr.com"] {
+  background: #ff0084;
+}
+
+.social-links.brand-color ul li.social-vimeo a.link-vimeo, .social-links.brand-color ul li [href*="vimeo.com"] {
+  background: #aad450;
+}
+
+.social-links.brand-color ul li.social-youtube a.link-youtube, .social-links.brand-color ul li [href*="youtube.com"] {
+  background: #bb0000;
+}
+
+.social-links.brand-color ul li.social-instagram a.link-instagram, .social-links.brand-color ul li [href*="instagram.com"] {
+  background: #517fa4;
+}
+
+.social-links.brand-color ul li.social-dribbble a.link-dribbble, .social-links.brand-color ul li [href*="dribbble.com"] {
+  background: #ea4c89;
+}
+
+.social-links.brand-color ul li.social-skype a.link-skype, .social-links.brand-color ul li [href*="skype.com"] {
+  background: #12a5f4;
+}
+
+.social-links.brand-color ul li.social-codepen a.link-codepen, .social-links.brand-color ul li [href*="codepen.io"] {
+  background: #000;
+}
+
+.social-links.brand-color ul li.social-reddit a.link-reddit, .social-links.brand-color ul li [href*="reddit.com"] {
+  background: #ff4500;
+}
+
+.social-links.brand-color ul li.social-mailto a.link-mailto, .social-links.brand-color ul li [href*="mailto:"] {
+  background: #1d62f0;
+}
+
+.social-links.brand-color ul li.social-jsfiddle a.link-jsfiddle, .social-links.brand-color ul li [href*="jsfiddle.net"] {
+  background: #4679bd;
+}
+
+.social-links.brand-color ul li a, .social-links.brand-color ul li i {
+  color: #fff;
+}
+
+.social-links.brand-color ul li a {
+  border: 2px solid transparent;
+}
+
+@media only screen and (max-width: 1230px) {
+  .social-links li a {
+    height: 30px;
+    width: 30px;
+  }
+  .social-links ul li a i::before {
+    line-height: 2;
+    font-size: 13px;
+  }
+  .section-featured-slider h3 {
+    font-size: 45px;
+  }
+  .section-featured-slider p {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .inner-wrapper {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .header-social-wrapper {
+    float: none;
+    text-align: center;
+    width: 100%;
+    clear: both;
+  }
+  .social-links li {
+    display: inline-block;
+  }
+  .header-social-wrapper {
+    clear: inherit;
+    float: left;
+    width: auto;
+    margin: 0;
+  }
+}

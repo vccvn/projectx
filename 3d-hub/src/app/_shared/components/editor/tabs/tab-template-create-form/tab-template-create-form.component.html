@@ -1,0 +1,55 @@
+<div class="tab-inner">
+    <h2>{{"Template"|translate}}</h2>
+    <div class="search block">
+        <div class="search-inner">
+            <nz-input-group nzSearch [nzSuffix]="suffixIconSearch">
+                <input type="text" nz-input placeholder="Find in 1.000.000 items" [(ngModel)]="q.s" />
+            </nz-input-group>
+            <ng-template #suffixIconSearch>
+                <button nz-button nzType="link" (click)="onClickSearch()">
+                    <em nz-icon nzType="search"></em>
+                </button>
+            </ng-template>
+        </div>
+    </div>
+    
+    <div class="store">
+
+        <div class="templates">
+            <ng-container *ngIf="mode=='explore'; then thenTemplate; else elseTemplate"></ng-container>
+            <ng-template #thenTemplate>
+                <div *ngFor="let cate of categories; let i=index" class="cate-item">
+                    <template-list [items]="cate.templates" [title]="cate.name"></template-list>
+                </div>
+                <div class="view-more" *ngIf="hasMoreCategories">
+                    <button class="btn btn-ghost btn-icon" nz-button nzType="text" (click)="moreCategory()">
+                        <!-- <img src="/assets/icons/new-design/header/save.svg" /> -->
+                        <span>See More...</span>
+                    </button>
+                </div>
+            </ng-template>
+            <ng-template #elseTemplate>
+                <ng-container [ngSwitch]="searchStatus">
+                    <div *ngSwitchCase="'done'">
+                        <template-list [items]="searchResults" title="Tất cả"></template-list>
+                        <div class="view-more" *ngIf="hasMoreResults">
+                            <button class="btn btn-ghost btn-icon" nz-button nzType="text" (click)="moreResult()">
+                                <!-- <img src="/assets/icons/new-design/header/save.svg" /> -->
+                                <span>See More...</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div *ngSwitchCase="'notfound'">
+                        {{"Not Found" | translate}}
+                    </div>
+                    <div *ngSwitchCase="'error'">
+                        {{"Error" | translate}}
+                    </div>
+                    <div *ngSwitchDefault>
+                        {{"searching..." | translate}}
+                    </div>
+                </ng-container>
+            </ng-template>
+        </div>
+    </div>
+</div>

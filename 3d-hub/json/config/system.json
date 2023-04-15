@@ -1,0 +1,43 @@
+{
+    "web_type_list": {
+        "default": "Mặc định",
+        "business": "Business",
+        "news": "Tin tức"
+        
+        
+    },
+    "domain_list": [
+        "vcc.vn"
+    ],
+    "web_modules": {
+        "base":[
+            "pages", "dynamics", "files","tags", "contacts", "comments", "subcribes", "sliders","menus", "settings", "embeds", "themes", "components", "account"
+        ],
+        "default": [
+            "users", "permissions"
+        ],
+        "news": [
+            "users", "permissions"
+        ],
+        "business": [
+            "users", "permissions",  "transactions", "payments", "projects", "3d"
+        ]
+        
+    },
+
+    "times": {
+        "start": "1900-01-01",
+        "finish": "2200-12-31"
+    },
+    "backend": {
+
+    },
+    "frontend": {
+        "css": {
+            "prefix_class": "crazy-"
+        },
+        "js": {
+            "object": "Crazy"
+        }
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "inputs": {
+        "name": {
+            "type": "text",
+            "label": "Họ và tên",
+            "placeholder": "nhập họ và tên",
+            "required": "true"
+        },
+        "email": {
+            "type": "email",
+            "label": "Email",
+            "placeholder": "nhập email",
+            "required": "true"
+        },
+        "phone_number": {
+            "type": "text",
+            "label": "Số điện thoại",
+            "placeholder": "nhập số điện thoại"
+        },
+        "address": {
+            "type": "text",
+            "label": "Địa chỉ",
+            "placeholder": "nhập địa chỉ"
+        },
+        "subject": {
+            "type": "text",
+            "label": "Chủ đề",
+            "placeholder": "nhập chủ đề"
+        },
+        "message": {
+            "type": "textarea",
+            "label": "Nội dunng",
+            "placeholder": "nhập nội dung",
+            "required": "true"
+        }
+    },
+    "config": {
+        "name": "Thông tin Liên hệ",
+        "layout_type": "column",
+        "form_groups": {
+            "info1": {
+                "title": "Thông tin cá nhân",
+                "class": "col-md-6",
+                "inputs": [
+                    "name",
+                    "email"
+                ]
+            },
+            "info2": {
+                "class": "col-md-6",
+                "inputs": [
+                    "phone_number",
+                    "address"
+                    
+                ]
+            },
+            "detail": {
+                "title": "Chi tiết",
+                "class": "col-md-12",
+                "inputs": [
+                    "subject",
+                    "message"
+                ]
+            }
+        }
+    }
+}

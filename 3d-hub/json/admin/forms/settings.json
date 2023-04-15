@@ -1,0 +1,31 @@
+{
+    "web_type": {
+        "type": "crazyselect",
+        "text": "Gói dịch vụ",
+        "required": "true",
+        "template": "crazyselect",
+        "func": "get_system_config",
+        "params": [
+            "web_type_list"
+        ],
+        "default": "user"
+    },
+    "subdomain": {
+        "type": "text",
+        "text": "Tên miền",
+        "required": "true",
+        "append_group": [
+            "domain"
+        ]
+    },
+    "domain": {
+        "type": "deepselect",
+        "label": "Miền chính",
+        "data": "get_cfg_domain_options"
+    },
+    "alias_domain": {
+        "type": "text",
+        "text": "Tên miền Alias",
+        "placeholder": "Ví dụ: domain.com.vn"
+    }
+}

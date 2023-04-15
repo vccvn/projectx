@@ -1,0 +1,12 @@
+[2021-12-25 04:54:35] ip: 65.154.226.165, OS: Windows 10, Brower: Chrome, path: /
+[2021-12-25 06:28:54] ip: 54.78.60.123, OS: Linux, Brower: Firefox, path: /
+[2021-12-25 06:29:05] ip: 54.78.60.123, OS: Linux, Brower: Firefox, path: /
+[2021-12-25 06:29:18] ip: 54.78.60.123, OS: Linux, Brower: Firefox, path: /gioi-thieu.html
+[2021-12-25 06:29:25] ip: 54.78.60.123, OS: Linux, Brower: Firefox, path: /gioi-thieu.html/favicon.ico
+[2021-12-25 06:29:27] ip: 54.78.60.123, OS: Linux, Brower: Firefox, path: /blog/goi-thuong-mai-dien-tu.html
+[2021-12-25 06:29:29] ip: 54.78.60.123, OS: Linux, Brower: Firefox, path: /blog/goi-thuong-mai-dien-tu.html/favicon.ico
+[2021-12-25 06:29:31] ip: 54.78.60.123, OS: Linux, Brower: Firefox, path: /blog/goi-tin-tuc.html
+[2021-12-25 06:29:33] ip: 54.78.60.123, OS: Linux, Brower: Firefox, path: /blog/goi-tin-tuc.html/favicon.ico
+[2021-12-25 06:53:25] ip: 153.127.26.220, OS: Android, Brower: Handheld Browser, path: /
+[2021-12-25 06:53:28] ip: 153.127.26.220, OS: Android, Brower: Handheld Browser, path: /
+[2021-12-25 23:21:54] ip: 89.104.101.34, OS: Windows 10, Brower: Chrome, path: /

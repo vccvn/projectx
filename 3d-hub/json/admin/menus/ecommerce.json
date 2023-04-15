@@ -1,0 +1,7 @@
+{
+    "extends": "base",
+    "data": {
+        "@modules": ["users", "permissions", "ecommerce", "payments"]
+        
+    }
+}

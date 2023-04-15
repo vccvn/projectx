@@ -1,0 +1,9 @@
+<div class="template-list-header">
+    <h4 class="list-title">{{title}}</h4>
+    <div class="list-more">
+        <i nz-icon nzType="right" nzTheme="outline"></i>
+    </div>
+</div>
+<div class="template-list-body">
+    <template-item *ngFor="let item of items; let i=index" [item]="item"></template-item>
+</div>

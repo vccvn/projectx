@@ -1,0 +1,2 @@
+[2023-01-27 00:49:27] ip: 209.141.33.65, OS: Mac OS X, Brower: Chrome, path: /
+[2023-01-27 12:52:18] ip: 66.249.79.58, OS: Android, Brower: Handheld Browser, path: /du-an/moon-dental-studio.html

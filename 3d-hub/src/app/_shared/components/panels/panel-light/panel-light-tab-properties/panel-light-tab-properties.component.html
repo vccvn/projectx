@@ -1,0 +1,35 @@
+<div class="tab-inner">
+    <div class="inputs store">
+        <div class="inp-list" *ngIf="props">
+
+            <h3>{{"Properties"|translate}}</h3>
+            <inp-switch-group class="inp-group-item" name="visible" [(value)]="props.visible" label="Visible" (subcribe)="onInputChange($event)"></inp-switch-group>
+            <inp-vector3-group class="inp-group-item" name="position" [(value)]="props.position" label="Position" (subcribe)="onInputChange($event)"></inp-vector3-group>
+
+            <div *ngIf="hasShadow">
+                <h3 class="mt-20">{{"Shadow"|translate}}</h3>
+                <inp-switch-group class="inp-group-item" name="castShadow" [(value)]="props.castShadow" label="Cast Shadow" (subcribe)="onInputChange($event)"></inp-switch-group>
+                <inp-range-group class="inp-group-item" name="shadow.bias" [(value)]="props.shadow.bias" label="Bias" [min]="-5" [max]="5" [step]="0.0001" (subcribe)="onInputChange($event)"></inp-range-group>
+                <inp-range-group class="inp-group-item" name="shadow.darkness" [(value)]="props.shadow.darkness" label="Darkness" [min]="0" [max]="1" [step]="0.01" (subcribe)="onInputChange($event)"></inp-range-group>
+                <inp-number-group class="inp-group-item" name="shadow.radius" [(value)]="props.shadow.radius" label="Radius" [min]="0" [max]="500" [step]="0.1" (subcribe)="onInputChange($event)"></inp-number-group>
+                <h4 class="mt-20">{{"Map Size"|translate}}</h4>
+                <inp-number-group class="inp-group-item" name="shadow.mapSize.width" [(value)]="props.shadow.mapSize.width" label="Width" [min]="0" [max]="10240" [step]="1" (subcribe)="onInputChange($event)"></inp-number-group>
+                <inp-number-group class="inp-group-item" name="shadow.mapSize.height" [(value)]="props.shadow.mapSize.height" label="Height" [min]="0" [max]="10240" [step]="1" (subcribe)="onInputChange($event)"></inp-number-group>
+                <div *ngIf="hasShadowCamera">
+                    <h4 class="mt-20">{{"Shadow Camera"|translate}}</h4>
+                    <inp-number-group class="inp-group-item" name="shadow.camera.near" [(value)]="props.shadow.camera.near" label="Near" [min]="0.0001" [max]="10240" [step]="0.001" (subcribe)="onInputChange($event)"></inp-number-group>
+                    <inp-number-group class="inp-group-item" name="shadow.camera.far" [(value)]="props.shadow.camera.far" label="Far" [min]="0.0001" [max]="10240" [step]="0.001" (subcribe)="onInputChange($event)"></inp-number-group>
+                    <inp-number-group class="inp-group-item" name="shadow.camera.top" [(value)]="props.shadow.camera.top" label="Top" [min]="-1024" [max]="1024" [step]="0.001" (subcribe)="onInputChange($event)"></inp-number-group>
+                    <inp-number-group class="inp-group-item" name="shadow.camera.bottom" [(value)]="props.shadow.camera.bottom" label="Bottom" [min]="-1024" [max]="1024" [step]="0.001" (subcribe)="onInputChange($event)"></inp-number-group>
+                    <inp-number-group class="inp-group-item" name="shadow.camera.left" [(value)]="props.shadow.camera.left" label="Left" [min]="-1024" [max]="1024" [step]="0.001" (subcribe)="onInputChange($event)"></inp-number-group>
+                    <inp-number-group class="inp-group-item" name="shadow.camera.right" [(value)]="props.shadow.camera.right" label="Right" [min]="-1024" [max]="1024" [step]="0.001" (subcribe)="onInputChange($event)"></inp-number-group>
+                </div>
+                
+            </div>
+            <div *ngIf="hasTarget">
+                <h3 class="mt-20">{{"Target"|translate}}</h3>
+                <inp-vector3-group class="inp-group-item" name="target.position" [(value)]="props.target.position" label="Position" (subcribe)="onInputChange($event)"></inp-vector3-group>
+            </div>
+        </div>
+    </div>
+</div>

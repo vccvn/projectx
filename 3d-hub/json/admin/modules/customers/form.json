@@ -1,0 +1,81 @@
+{
+    "user_id": {
+        "type": "crazyselect",
+        "label": "Tài khoản người dùng",
+        "template": "crazyselect",
+        "@select-type": "search",
+        "@search-route": "admin.users.select-option",
+        "call": "App\\Repositories\\Users\\UserRepository::getDynamicSelectOptions",
+        "params": [
+            {
+                "id": ":defval"
+            }
+        ]
+    },
+    "name": {
+        "type": "text",
+        "text": "Họ tên",
+        "placeholder": "Nhập họ tên",
+        "required": "true",
+        "append_text": "<i class=\"fa fa-user-tie\"></i>"
+    },
+    "email": {
+        "type": "email",
+        "text": "Địa chỉ E-mail",
+        "required": "true",
+        "placeholder": "Nhập email",
+        "append_text": "<i class=\"fa fa-envelope\"></i>"
+    },
+    "phone_number": {
+        "type": "text",
+        "text": "Số diện thoại",
+        "placeholder": "Nhập số điện thoại",
+        "append_text": "<i class=\"fa fa-phone\"></i>"
+    },
+    "region_id": {
+        "type": "crazyselect",
+        "label": "Tỉnh / Thành phố",
+        "className": "d-block",
+        "call": "get_region_options",
+        "@change": "Crazy.location.changeRegionID"
+    },
+    
+    "district_id": {
+        "type": "crazyselect",
+        "label": "Quận / huyện",
+        "className": "d-block",
+        "call": "get_district_options",
+        "params":[
+            {
+                "region_id":"#region_id|0"
+            }
+        ],
+        "@change": "Crazy.location.changeDistrictID"
+    },
+
+    "ward_id": {
+        "type": "crazyselect",
+        "label": "Xã / phường",
+        "className": "d-block",
+        "call": "get_ward_options",
+        "params":[
+            {
+                "district_id": "#district_id|0"
+            }
+        ]
+    },
+    "address": {
+        "type": "text",
+        "text": "Địa chỉ",
+        "placeholder": "Nhập địa chỉ...",
+        "append_text": "<i class=\"fa fa-map-marker-alt\"></i>"
+    },
+    "balance": {
+        "type": "number",
+        "text": "Số dư",
+        "min": 0,
+        "placeholder": "Số dư tài khoản",
+        "append_text": "<i class=\"fa fa-money-bill\"></i>"
+    }
+    
+}

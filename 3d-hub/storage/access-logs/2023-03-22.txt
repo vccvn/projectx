@@ -1,0 +1,14 @@
+[2023-03-22 04:54:44] ip: 104.36.23.10, OS: Windows 10, Brower: Edge, path: /
+[2023-03-22 04:54:45] ip: 104.36.23.10, OS: Windows 10, Brower: Edge, path: /core/.env
+[2023-03-22 04:54:45] ip: 104.36.23.10, OS: Windows 10, Brower: Edge, path: /public/.env
+[2023-03-22 04:54:46] ip: 104.36.23.10, OS: Windows 10, Brower: Edge, path: /app/.env
+[2023-03-22 04:54:46] ip: 104.36.23.10, OS: Windows 10, Brower: Edge, path: /laravel/core/.env
+[2023-03-22 04:54:46] ip: 104.36.23.10, OS: Windows 10, Brower: Edge, path: /beta/.env
+[2023-03-22 04:54:47] ip: 104.36.23.10, OS: Windows 10, Brower: Edge, path: /config/.env
+[2023-03-22 04:54:47] ip: 104.36.23.10, OS: Windows 10, Brower: Edge, path: /kyc/.env
+[2023-03-22 04:54:48] ip: 104.36.23.10, OS: Windows 10, Brower: Edge, path: /admin/.env
+[2023-03-22 04:54:48] ip: 104.36.23.10, OS: Windows 10, Brower: Edge, path: /prod/.env
+[2023-03-22 04:54:48] ip: 104.36.23.10, OS: Windows 10, Brower: Edge, path: /api/.env
+[2023-03-22 04:54:49] ip: 104.36.23.10, OS: Windows 10, Brower: Edge, path: /tokenlite_app/.env
+[2023-03-22 04:54:49] ip: 104.36.23.10, OS: Windows 10, Brower: Edge, path: /backend/.env
+[2023-03-22 04:54:55] ip: 104.36.23.10, OS: Windows 10, Brower: Edge, path: /_ignition/execute-solution

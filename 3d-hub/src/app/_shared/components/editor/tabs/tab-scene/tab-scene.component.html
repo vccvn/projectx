@@ -1,0 +1,34 @@
+<div class="tab-inner" [class.height-50]="height50">
+  <h2>{{"Scene"|translate}}</h2>
+  <nz-tabset nzTabPosition="top" nzType="line" class="sub-tab">
+
+    <nz-tab [nzTitle]="iconBackground">
+      <ng-template #iconBackground>
+        <img src="/assets/icons/new-design/tab-sub/background.svg" alt="Background" />
+        <div>Background</div>
+      </ng-template>
+      <app-tab-background class="tab-background"></app-tab-background>
+    </nz-tab>
+
+    <nz-tab [nzTitle]="iconForeground">
+      <ng-template #iconForeground>
+        <img src="/assets/icons/new-design/tab-sub/foreground.svg" alt="Foreground" />
+        <div>Foreground</div>
+      </ng-template>
+      <ng-template nz-tab>
+        <app-tab-foreground></app-tab-foreground>
+      </ng-template>
+    </nz-tab>
+    
+    <nz-tab [nzTitle]="iconSettings">
+      <ng-template #iconSettings>
+        <img src="/assets/icons/new-design/tab-top/setting.svg" alt="Settings" />
+        <div>Settings</div>
+      </ng-template>
+      <ng-template nz-tab>
+        <app-tab-scene-settings></app-tab-scene-settings>
+      </ng-template>
+    </nz-tab>
+    
+  </nz-tabset>
+</div>

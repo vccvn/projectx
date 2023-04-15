@@ -1,0 +1,44 @@
+{
+    "data": {
+        "services": {
+            "text": "Gói dịch vụ",
+            "title": "Quản lý Gói dịch vụ",
+            "route": "admin.services",
+            "icon": "box-open",
+            "submenu": {
+                "type": "list",
+                "data": [
+                    {
+                        "text": "Danh sách",
+                        "title": "Danh sách",
+                        "active_key": "list",
+                        "route": "admin.services.list",
+                        "icon": "list-ul"
+                    },
+                    {
+                        "text": "Thêm mới",
+                        "title": "Thêm mới",
+                        "active_key": "add",
+                        "route": "admin.services.create",
+                        "icon": "user-plus"
+                    },
+                    {
+                        "text": "Đã xóa",
+                        "title": "Thùng rác",
+                        "active_key": "trash",
+                        "route": "admin.services.trash",
+                        "icon": "user-slash"
+                    },
+                    {
+                        "text": "Dịch vụ đã đăng ký",
+                        "title": "Danh sách",
+                        "active_key": "list",
+                        "route": "admin.services.users",
+                        "icon": "id-card"
+                    }
+                    
+                ]
+            }
+        }       
+    }
+}

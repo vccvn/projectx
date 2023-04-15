@@ -1,0 +1,94 @@
+$primary-color: #4a4ded;
+$primary-color-hover: #4a4dedb0;
+:host {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 24px;
+}
+
+.group-first {
+  display: flex;
+  justify-content: space-between;
+  width: 576px;
+}
+
+.group-center {
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
+  align-items: center;
+  .btn {
+    margin-right: 8px;
+  }
+  .btn:last-child {
+    margin-left: 8px;
+  }
+}
+
+.group-last {
+  display: flex;
+  justify-content: space-between;
+  
+  margin-right: 70px;
+}
+
+.logo {
+  width: 46px;
+  height: auto;
+}
+
+.btn {
+  height: 28px;
+  padding: 4px 16px;
+
+  line-height: 1.3;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &-ghost {
+    background-color: #1b1818;
+    border: 1px solid #c6c6c6;
+    color: #c6c6c6;
+    border: none;
+    &:hover {
+      background-color: #262222;
+      color: white;
+    }
+  }
+
+  &-primary {
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    &:hover {
+      background-color: $primary-color-hover;
+    }
+  }
+
+  &-icon {
+    display: flex;
+    align-items: center;
+    img,
+    svg {
+      height: 14px;
+    }
+    span {
+      margin-left: 8px;
+    }
+  }
+}
+
+.ant-avatar {
+  cursor: pointer;
+  margin-left: 24px;
+}
+
+
+.mr-auto{
+  margin-right: auto;
+}
+.invisible{
+  opacity: 0;
+}

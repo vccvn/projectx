@@ -1,0 +1,32 @@
+{
+    "name": {
+        "type": "text",
+        "label": "Tên danh mục",
+        "placeholder": "Nhập tên danh mục"
+    },
+    "parent_id": {
+        "type": "crazyselect",
+        "label": "Danh mục cha",
+        "template": "crazyselect",
+        "call": "get_3d_parent_category_options",
+        "params": [2],
+        "option_label_type": "value"
+    },
+    "description": {
+        "type": "textarea",
+        "label": "Mô tả",
+        "placeholder": "Nhập mô tả",
+        "style": {
+            "height": "290px"
+        }
+    },
+    "keywords": {
+        "type": "text",
+        "label": "Từ khóa",
+        "placeholder": "Nhập từ khóa"
+    },
+    "feature_image": {
+        "type": "file",
+        "label": "Hình xem trước"
+    }
+}

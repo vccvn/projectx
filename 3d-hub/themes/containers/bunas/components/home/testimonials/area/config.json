@@ -1,0 +1,39 @@
+{
+    "name": "Home: Testimonials (area)",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề (Tùy chọn)"
+        },
+        "description": {
+            "type": "textarea",
+            "label": "Mô tả",
+            "placeholder": "Viết gì đó...",
+            "className": "auto-height"
+        },
+        "list_type": {
+            "type": "radio",
+            "label": "Kiểu danh sách",
+            "data": {
+                "data": "Trong bảng phản hồi",
+                "custom": "Danh sách tùy biến"
+            },
+            "value": "custom"
+        },
+        "item_number": {
+            "type": "number",
+            "label": "Số lượng",
+            "value": 5
+        },
+        "sort_type": {
+            "type": "crazyselect",
+            "label": "Sắp xếp",
+            "data": {
+                "id-ASC": "Mặc định",
+                "id-DESC": "Mới nhất",
+                "name-ASC": "hứ tự bảng chự cái"
+            },
+            "value": "id-ASC"
+        }
+    }
+}

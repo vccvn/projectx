@@ -1,0 +1,193 @@
+.input-gallery .gallery-images, .input-gallery .gallery-images *{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.input-gallery {
+    .gallery-images{
+        text-align: center;
+        min-height: 150px;
+        max-height: 320px;
+        overflow-y: auto;
+        // border: 2px solid rgba(0, 0, 0, .3);
+        background: #fff;
+        padding: 10px;
+    
+        margin-bottom: 10px;
+        .dz-preview {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            margin: 10px;
+            min-height: 100px;
+    
+            cursor: pointer;
+            .btn-remove-file{
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                display: block;
+                z-index: 100;
+                opacity: 0.3;
+                svg{
+                    width: 22px;
+                    height: 22px;
+                }
+            }
+            &:hover {
+                z-index: 1000;
+                .dz-details {
+                    opacity: 1
+                }
+                .btn-remove-file{
+                    opacity: 0.7;
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+            }
+            &.dz-file-preview{
+                .dz-image {
+                    border-radius: 20px;
+                    background: #999;
+                    background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#ddd));
+                    background: linear-gradient(to bottom, #eee, #ddd);
+                }
+                .dz-details {
+                    opacity: 1
+                }
+                
+            }
+            &.dz-file-preview, &.dz-image-preview {
+                background: #fff
+            }
+            &.dz-image-preview {
+                .dz-details {
+                    -webkit-transition: opacity .2s linear;
+                    transition: opacity .2s linear
+                }
+            }
+            .dz-remove {
+                font-size: 14px;
+                text-align: center;
+                display: block;
+                cursor: pointer;
+                border: none;
+                &:hover {
+                    text-decoration: underline
+                }
+            }
+    
+            &:hover{
+                .dz-details {
+                    opacity: 1
+                }
+    
+            }
+    
+            .dz-details {
+                z-index: 20;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                font-size: 13px;
+                min-width: 100%;
+                max-width: 100%;
+                padding: 2em 1em;
+                text-align: center;
+                color: rgba(0, 0, 0, .9);
+                line-height: 150%;
+                .dz-size {
+                    margin-bottom: 1em;
+                    font-size: 16px
+                }
+                .dz-filename {
+                    white-space: nowrap;
+                    &:hover{
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        span {
+                            background-color: rgba(255, 255, 255, .4);
+                            padding: 0 .4em;
+                            border-radius: 3px;
+                            border: 1px solid transparent
+                        }
+                    }
+                    &:not(:hover) {
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        span {
+                            border: 1px solid transparent
+                        }
+                    }
+                }
+                .dz-size, .dz-filename{
+                    span {
+                        background-color: rgba(255, 255, 255, .4);
+                        padding: 0 .4em;
+                        border-radius: 3px
+                    }
+                    
+                }
+            } // end detail
+            
+            &:hover{
+                .dz-image img {
+                    // object-fit: cover;
+                    // object-position: center;
+                    -webkit-transform: scale(1.05, 1.05);
+                    transform: scale(1.05, 1.05);
+                    -webkit-filter: blur(8px);
+                    filter: blur(8px);
+    
+                }
+            }
+            .dz-image {
+                border-radius: 20px;
+                overflow: hidden;
+                width: 120px;
+                height: 120px;
+                position: relative;
+                display: block;
+                z-index: 10;
+                img {
+                    display: block;
+                    object-fit: cover;
+                    // object-position: 50% 50%;
+                    // object-position: center;
+                    width: 120px;
+                    height: 120px;
+                    
+    
+                }
+            }
+        } // end .preview
+    }
+
+    .drag-and-drop{
+        border: 2px dotted #c7cbd4;
+        border-radius: 5px;
+        -webkit-box-shadow: 0 1px 15px 1px rgba(69,65,78,.1);
+        box-shadow: 0 1px 15px 1px rgba(69,65,78,.1);
+        label{
+            display: block;
+            padding: 50px 0;
+            font-size: 20px;
+            cursor: pointer;
+            margin-bottom: 0;
+        }
+        &.is-dragover{
+            -webkit-box-shadow: 0 0 15px 1px rgba(0, 110, 255, 0.2);
+            box-shadow: 0 0 15px 1px rgba(0, 110, 255, 0.2);
+        }
+        &:hover{
+            border-color: #0a8cf0;
+            background: rgb(248, 248, 248);
+        }
+    }
+    .gallery-hidden-input-group{
+        display: none;
+    }
+    
+}

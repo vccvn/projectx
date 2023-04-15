@@ -1,0 +1,14 @@
+{
+    "name": "Project Sidebar: Danh mục Dự án",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề (Tùy chọn)"
+        },
+        "sorttype": {
+            "type": "select",
+            "label": "kiểu sắp xếp",
+            "call": "get_project_category_sortby_options"
+        }
+    }
+}

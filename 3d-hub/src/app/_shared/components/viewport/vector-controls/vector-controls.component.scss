@@ -1,0 +1,60 @@
+.canvas-wrapper{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 100px;
+    height: 100px;
+    z-index: 350;
+}
+
+.face-selection{
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    z-index: 350;
+    width: 150px;
+    inp-select{
+        display: block;
+        width: 100%;
+    }
+}
+
+.face-matrix{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 350;
+    width: 200px;
+    .row{
+        display: flex;
+        margin-left: -2.5px;
+        margin-right: -2.5px;
+        align-items: center;
+        align-content: center;
+        .col{
+            padding: 2.5px;
+            -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+    }
+    .face-item{
+        height: 25px;
+        line-height: 25px;
+        background-color: #20242d;
+        cursor: pointer;
+        text-align: center;
+        color: #fafafa;
+        font-size: 13px;
+        &:hover{
+            background-color: #345eca;
+            color: #fff;
+        }
+        &.active, &:active{
+            background-color: #1d47af;
+        }
+        
+    }
+
+}
+

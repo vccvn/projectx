@@ -1,0 +1,22 @@
+{
+    "name": "Section",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề (Tùy chọn)"
+        },
+        "content": {
+            "type": "textarea",
+            "label":"Nội dung",
+            "placeholder": "Viết gì đó...",
+            "className": "auto-height"
+        },
+        "boder_bottom": {
+            "type": "switch",
+            "label": "Border",
+            "value_type": "boolean",
+            "check_label": "Hiển thị border bottom"
+        }
+
+    }
+}

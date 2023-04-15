@@ -1,0 +1,25 @@
+{
+    "data": [
+        {
+            "name": "bank_account_number",
+            "type": "text",
+            "label": "Số tài khoản"
+        },
+        {
+            "name": "bank_account_owner",
+            "type": "text",
+            "label": "Chủ tài khoản"
+        },
+        {
+            "name": "bank_name",
+            "type": "text",
+            "label": "Tên ngân hàng"
+        },
+        {
+            "name": "bank_branch",
+            "type": "text",
+            "label": "Chi nhánh"
+        }
+        
+    ]
+}

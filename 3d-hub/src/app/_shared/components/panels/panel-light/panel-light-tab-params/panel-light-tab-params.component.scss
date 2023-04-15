@@ -1,0 +1,30 @@
+.text-right{
+    text-align: right;
+}
+.input-group{
+    border-top: 1px solid rgb(134, 134, 134);
+}
+.type-group{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.py10{
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.tab-inner{
+    color: #fff;
+}
+
+.input-item.item-first{
+    .input-group{
+        border-top: none;
+        
+    }
+    
+}
+
+.store{
+    height: 100% !important;
+    padding-bottom: 50px !important;
+}

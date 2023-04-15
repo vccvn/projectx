@@ -1,0 +1,15 @@
+nz-sider {
+  padding: 32px 0 0 16px;
+  .ant-menu-inline {
+    border-right: none;
+    .ant-menu-item::after {
+      display: none;
+    }
+  }
+  .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    background-color: #f4f4f5;
+  }
+}
+.inner-layout {
+  padding: 32px 32px 48px 16px;
+}

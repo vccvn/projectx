@@ -1,0 +1,15 @@
+[2022-12-28 12:33:29] ip: 66.249.79.63, OS: Unknown OS Platform, Brower: Unknown Browser, path: /
+[2022-12-28 12:33:29] ip: 66.249.79.58, OS: Android, Brower: Handheld Browser, path: /
+[2022-12-28 18:49:34] ip: 206.189.26.58, OS: Windows 7, Brower: Chrome, path: /core/.env
+[2022-12-28 18:49:35] ip: 206.189.26.58, OS: Windows 7, Brower: Chrome, path: /app/.env
+[2022-12-28 18:49:36] ip: 206.189.26.58, OS: Windows 7, Brower: Chrome, path: /api/.env
+[2022-12-28 18:49:36] ip: 206.189.26.58, OS: Windows 7, Brower: Chrome, path: /prod/.env
+[2022-12-28 18:49:37] ip: 206.189.26.58, OS: Windows 7, Brower: Chrome, path: /kyc/.env
+[2022-12-28 18:49:38] ip: 206.189.26.58, OS: Windows 7, Brower: Chrome, path: /OTApp/.env
+[2022-12-28 18:49:39] ip: 206.189.26.58, OS: Windows 7, Brower: Chrome, path: /application/.env
+[2022-12-28 18:49:39] ip: 206.189.26.58, OS: Windows 7, Brower: Chrome, path: /tokenlite_app/.env
+[2022-12-28 18:49:40] ip: 206.189.26.58, OS: Windows 7, Brower: Chrome, path: /tokenlite/tokenlite_app/.env
+[2022-12-28 18:49:41] ip: 206.189.26.58, OS: Windows 7, Brower: Chrome, path: /laravel/.env
+[2022-12-28 18:49:44] ip: 206.189.26.58, OS: Windows 7, Brower: Chrome, path: /admin/.env
+[2022-12-28 18:49:45] ip: 206.189.26.58, OS: Windows 7, Brower: Chrome, path: /blog/.env
+[2022-12-28 18:49:50] ip: 206.189.26.58, OS: Linux, Brower: Chrome, path: /_profiler/phpinfo

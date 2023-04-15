@@ -1,0 +1,19 @@
+<div class="collapse" [class.expand]="show">
+    <div class="collapse-header" (click)="toggle()">
+        <h3 class="title">{{title}}</h3>
+        <div class="toggle-icon">
+            <ng-container *ngIf="show; then showTemplate; else hideTemplate"></ng-container>
+            <ng-template #showTemplate>
+                <i nz-icon nzType="down" nzTheme="outline"></i>
+            </ng-template>
+            <ng-template #hideTemplate>
+                <i nz-icon nzType="right" nzTheme="outline"></i>
+            </ng-template>
+        </div>
+    </div>
+    <div class="collapse-body" *ngIf="show">
+        <div class="inputs">
+            <material-inputs [material]="material" [(settings)]="settings" (subcribe)="onUpdate($event)"></material-inputs>
+        </div>
+    </div>
+</div>

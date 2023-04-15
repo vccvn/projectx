@@ -1,0 +1,76 @@
+{
+    "data": [
+        {
+            "name": "mail_driver",
+            "type": "text",
+            "label": "Mail Drive",
+            "value": "smtp",
+            "props":{
+                "placeholder": "Ví dụ: smtp"
+            }
+        },
+        {
+            "name": "mail_host",
+            "type": "text",
+            "label": "Mail host",
+            "value": "smtp.gmail.com",
+            "props":{
+                "placeholder": "Ví dụ: smtp.gmail.com"
+            }
+        },
+        {
+            "name": "mail_post",
+            "type": "number",
+            "label": "Mail Port",
+            "value": "587",
+            "props":{
+                "placeholder": "Ví dụ: 587"
+            }
+        },
+        {
+            "name": "mail_encryption",
+            "type": "text",
+            "label": "Chuẩn mã hóa",
+            "value": "tls",
+            "props":{
+                "placeholder": "Ví dụ: tls"
+            }
+        },
+        {
+            "name": "mail_username",
+            "type": "text",
+            "label": "Tài khoản đăng nhập mail",
+            "value": "example@domain.com",
+            "props":{
+                "placeholder": "Ví dụ: example@domain.com"
+            }
+        },
+        {
+            "name": "mail_password",
+            "type": "password",
+            "label": "Mật khẩu",
+            "props":{
+                "placeholder": "Nhập mật khẩu đăng nhập email"
+            }
+        },
+        {
+            "name": "mail_from_address",
+            "type": "text",
+            "label": "Email gửi đi (fake)",
+            "value": "example@domain.com",
+            "props":{
+                "placeholder": "Ví dụ: example@domain.com"
+            }
+        },
+        {
+            "name": "mail_from_name",
+            "type": "text",
+            "label": "Tên người gửi",
+            "props":{
+                "placeholder": "Ví dụ: Nguyễn Văn A hoặc tên công ty"
+            }
+        }
+        
+    ]
+
+}

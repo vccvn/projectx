@@ -1,0 +1,53 @@
+<div class="search-banner">
+  <h2>Anyone can become designer</h2>
+  <nz-input-group nzSearch [nzAddOnAfter]="addOnAfterBtn" style="width: 680px">
+    <input nzSize="large" type="text" nz-input placeholder="{{ 'Find in 1.000.000 ideas' | translate }}" />
+    <ng-template #addOnAfterBtn>
+      <button class="btn-search" nz-button nzType="text" nzSearch><i nz-icon nzType="search"></i></button>
+    </ng-template>
+  </nz-input-group>
+  <div class="suggest-tag">
+    <nz-tag [nzColor]="'#ffffff3d'" *ngFor="let tag of categories" [routerLink]="['/templates']">{{ tag.text }}</nz-tag>
+  </div>
+</div>
+<div style="padding-bottom: 36px">
+  <app-slider
+    [cardTemplate]="cardTemplate"
+    *ngFor="let collection of collections"
+    [name]="collection.name"
+    [type]="'use'"
+    [items]="collection.items"
+  >
+  </app-slider>
+
+  <app-slider
+    [cardTemplate]="templateTemp"
+    *ngFor="let collection of templates"
+    [name]="collection.name"
+    [type]="'use'"
+    [items]="collection.items"
+  >
+  </app-slider>
+</div>
+
+<ng-template #cardTemplate let-cards="items" let-type="type">
+  <app-feature-card
+    *ngFor="let card of cards"
+    [name]="card.name"
+    [link]="card.id + '/' + type"
+    [thumnail]="card.thumbnail"
+    [size]="card.size"
+    [maxHeight]="200"
+  ></app-feature-card>
+</ng-template>
+
+<ng-template #templateTemp let-cards="items" let-type="type">
+  <app-template-card
+    *ngFor="let card of cards"
+    [name]="card.name"
+    [link]="card.id + '/' + type"
+    [thumnail]="card.thumbnail"
+    [size]="card.size"
+    [maxHeight]="200"
+  ></app-template-card>
+</ng-template>

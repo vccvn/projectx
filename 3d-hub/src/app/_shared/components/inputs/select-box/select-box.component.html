@@ -1,0 +1,6 @@
+<label>{{label | translate}}</label>
+<div class="input-wrapper">
+    <nz-select [(ngModel)]="value" (ngModelChange)="onChange($event)">
+        <nz-option *ngFor="let p of _options" [nzValue]="p.value" [nzLabel]="p.label"></nz-option>
+    </nz-select>
+</div>

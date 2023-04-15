@@ -1,0 +1,22 @@
+:host{
+    color: #fff;
+    h1, h2, h3, h4, h5, h6{
+        color: #fff;
+    }
+    .inputs{
+        .inp-group-item{
+            border-top: 1px dotted silver;
+            padding-top: 10px;
+        }
+    }
+
+    .inp-group-item-first{
+        padding-top: 10px;
+    }
+    
+    .store{
+        height: 100% !important;
+    }
+
+
+}

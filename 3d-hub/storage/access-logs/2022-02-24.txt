@@ -1,0 +1,5 @@
+[2022-02-24 00:35:44] ip: 45.90.60.13, OS: Windows 10, Brower: Chrome, path: /
+[2022-02-24 00:38:14] ip: 209.141.41.193, OS: Mac OS X, Brower: Chrome, path: /
+[2022-02-24 00:38:16] ip: 101.227.1.198, OS: Mac OS X, Brower: Chrome, path: /
+[2022-02-24 02:12:51] ip: 66.249.79.32, OS: Android, Brower: Handheld Browser, path: /tags/thuong-mai-dien-tu.html
+[2022-02-24 23:32:14] ip: 89.104.100.136, OS: Windows 10, Brower: Chrome, path: /

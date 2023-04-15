@@ -1,0 +1,18 @@
+h2 {
+    line-height: 1;
+    color: #ffffff;
+    font-size: 15px;
+    margin-bottom: 12px;
+    font-weight: 600;
+    padding: 0 16px;
+}
+
+:host {
+    .tab-inner {
+        &.height-50 {
+            .ant-tabs-content {
+                height: 50% !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+<div class="tab-inner">
+    <h2>{{ 'Properties' | translate }}</h2>
+    <div class="setting-form store" *ngIf="__show__">
+        <object-prop [props]="settings.props" [index]="index" (onUpdate)="updateProps($event)">
+        </object-prop>
+
+    </div>
+
+</div>

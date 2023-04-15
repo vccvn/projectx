@@ -1,0 +1,58 @@
+#toolview {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  .toolview-inner {
+    // background-color: #ffffff;
+    // padding: 8px 16px;
+    button {
+      padding: 2px 2px;
+      height: 30px;
+      text-align: center;
+      text-decoration: none;
+      color: #3f4652;
+      border: 1px solid transparent;
+      border-radius: 5px;
+      background-color: transparent;
+      transition: background-color 0.1s ease, width 0.1s ease, opacity 0.1s ease;
+      font-size: 1em;
+      outline: none;
+      box-sizing: border-box;
+      line-height: 18px;
+      background-color: #ffffff;
+      border: 1px solid #ecedee;
+      cursor: pointer;
+      min-width: 80px;
+      font-weight: 700;
+      &:hover {
+        background-color: #fffeee;
+      }
+    }
+  }
+}
+
+.dragging :host #toolview {
+  display: none;
+}
+
+:host {
+  :root {
+    --design-zoom: 1;
+  }
+}
+#content{
+  height: 100%;
+}
+
+app-viewport{
+  height: 100%;
+}
+.not-found{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  font-size: 60px;
+}

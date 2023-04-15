@@ -1,0 +1,64 @@
+{
+    "data": [
+        {
+            "name": "Head (css Hoặc js)",
+            "slug": "head",
+            "ref": "default"
+        },
+        {
+            "name": "Top (js: GA, FB,...)",
+            "slug": "top",
+            "ref": "default"
+        },
+        {
+            "name": "Header",
+            "slug": "header",
+            "ref": "default"
+        },
+        {
+            "name": "Đầu nội dung",
+            "slug": "article_top",
+            "ref": "default"
+        },
+        {
+            "name": "Main",
+            "slug": "main",
+            "ref": "default"
+        },
+        {
+            "name": "Cuối nội dung",
+            "slug": "article_bottom",
+            "ref": "default"
+        },
+        {
+            "name": "Sidebar",
+            "slug": "sidebar",
+            "ref": "default"
+        },
+        {
+            "name": "Đầu sidebar",
+            "slug": "sidebar_top",
+            "ref": "default"
+        },
+        {
+            "name": "Cuối sidebar",
+            "slug": "sidebar_bottom",
+            "ref": "default"
+        },
+        {
+            "name": "Footer",
+            "slug": "footer",
+            "ref": "default"
+        },
+        {
+            "name": "Bottom (js)",
+            "slug": "bottom",
+            "ref": "default"
+        },
+        {
+            "name": "Tùy chỉnh (custom)",
+            "slug": "custom",
+            "ref": "default"
+        }
+    ]
+}

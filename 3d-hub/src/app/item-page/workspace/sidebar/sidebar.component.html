@@ -1,0 +1,25 @@
+<nz-tabset [nzSelectedIndex]="currentTab" nzTabPosition="top" nzType="line" class="main-tab" (nzSelectChange)="onChangeTab($event)">
+  <!-- <nz-tab [nzTitle]="iconInfo"> -->
+    <!-- <ng-template #iconInfo>
+      <img src="/assets/icons/new-design/tab-top/info.svg" alt="info" />
+    </ng-template>
+    <app-tab-info></app-tab-info>
+  </nz-tab> -->
+
+  <nz-tab [nzTitle]="iconMeshes">
+    <ng-template #iconMeshes>
+      <img src="/assets/icons/new-design/tab-sub/model.svg" alt="Meshes" />
+    </ng-template>
+    <app-tab-meshes></app-tab-meshes>
+  </nz-tab>
+
+  <nz-tab [nzTitle]="iconProps">
+    <ng-template #iconProps>
+      <img src="/assets/icons/new-design/tab-top/setting.svg" alt="Props" />
+    </ng-template>
+    <app-tab-properties></app-tab-properties>
+  </nz-tab>
+
+  
+
+</nz-tabset>

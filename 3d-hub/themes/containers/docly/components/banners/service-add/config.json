@@ -1,0 +1,27 @@
+{
+    "name": "Banner: Add service",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề (Tùy chọn)"
+        },
+        "description": {
+            "type": "textarea",
+            "label":"Mô tả",
+            "placeholder": "Viết gì đó...",
+            "className": "auto-height"
+        },
+        "comment": {
+            "type": "textarea",
+            "label":"Chú thích",
+            "placeholder": "Viết gì đó...",
+            "className": "auto-height"
+        },
+        "create_button": {
+            "type": "text",
+            "label": "Nút khởi tạo",
+            "placeholder": "Ví dụ: Tạo website"
+        }
+
+    }
+}

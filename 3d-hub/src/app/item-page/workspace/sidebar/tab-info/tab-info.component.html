@@ -1,0 +1,23 @@
+<div class="tab-inner">
+    <h2>{{ 'Info' | translate }}</h2>
+    <div class="info-form store">
+        <ng-container *ngIf="asyncForm; then formTemplate; else waitTemplate"></ng-container>
+        <ng-template #formTemplate>
+            <div class="inputs">
+                <inp-text-group name="name" label="Item Name" [(value)]="item.name" placeholder="Enter Item Name" (subcribe)="onInpChange($event)" class="inp-group-item-first"></inp-text-group>
+                <inp-select-group name="category_id" [(value)]="item.category_id" [options]="categoryOptions" label="Category" (subcribe)="onInpChange($event)" class="inp-group-item"></inp-select-group>
+                <inp-radio-group name="status" [(value)]="item.status" [options]="privacyStatusOptions" label="Status" (subcribe)="onInpChange($event)" class="inp-group-item"></inp-radio-group>
+                <inp-textarea-group name="description" [(value)]="item.description" label="Description" placeholder="Enter Item Description" (subcribe)="onInpChange($event)" class="inp-group-item"></inp-textarea-group>
+            </div>
+        </ng-template>
+        <ng-template #waitTemplate>
+            <div class="sys-alert">
+                <h2>Vui lòng chờ...</h2>
+            </div>
+        </ng-template>
+        
+        
+
+    </div>
+
+</div>

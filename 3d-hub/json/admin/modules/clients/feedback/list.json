@@ -1,0 +1,47 @@
+{
+    "name": "Phản hồi",
+    "package": "clients.feedback",
+    "use_trash": false,
+    "titles": {
+        "default": "Danh sách Phản hồi",
+        "trash": "Danh sách Phản hồi đã xóa"
+    },
+    "data": [],
+    "filter": {
+        "general_columns": {
+            "client_name": "Tên khách hàng",
+            "subject": "Tiêu đề"
+        },
+        "search_columns": {
+            "message": "Nội dung"
+        },
+        "sort_columns": {
+            "created_at": "thời gian"
+        }
+    },
+    "table": {
+        "class": "list-center",
+        "columns": [
+            {
+                "title": "Khách hàng",
+                "class": "min-100 max-250",
+                "text": ":client_name"
+            },
+            {
+                "title": "Tiêu đề",
+                "class": "min-100",
+                "text": ":subject"
+            },
+            {
+                "title": "Nội dung",
+                "class": "min-160 max-250",
+                "text": ":message"
+            }
+        ]
+    },
+    "resources": {
+        "js_data": [],
+        "js": [],
+        "css": []
+    }
+}

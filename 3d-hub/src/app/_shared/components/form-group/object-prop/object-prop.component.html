@@ -1,0 +1,11 @@
+<div *ngIf="props">
+    
+    <inp-switch-group     name="castShadow"           [(value)]="props.castShadow"      label="Cast Shadow"      (subcribe)="onInputChange($event)"></inp-switch-group>
+
+    <inp-switch-group     name="receiveShadow"        [(value)]="props.receiveShadow"   label="Receive Shadow"   (subcribe)="onInputChange($event)"></inp-switch-group>
+
+    <inp-vector3-group    name="scale"                [(value)]="props.scale"           label="Scale"            (subcribe)="onInputChange($event)" [events]="events"></inp-vector3-group>
+    
+    <inp-rotation-group   name="rotation"             [(value)]="props.rotation"        label="Rotation"         (subcribe)="onInputChange($event)" [events]="events"></inp-rotation-group>
+    
+</div>

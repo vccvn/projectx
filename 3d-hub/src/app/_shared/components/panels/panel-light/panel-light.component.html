@@ -1,0 +1,43 @@
+<div class="panel inner-layout" *ngIf="isShow">
+    <div class="panel-body">
+        <nz-tabset [nzSelectedIndex]="currentTab" nzTabPosition="top" nzType="line" class="main-tab w100" (nzSelectChange)="onChangeTab($event)">
+            <nz-tab [nzTitle]="iconParams">
+                <ng-template #iconParams>
+                    Params
+                </ng-template>
+                <!-- <mesh-geometry-tab-geometry [inputs]="geoInputs" (subcribe)="onGeometryParamChange($event)"></mesh-geometry-tab-geometry> -->
+                <panel-light-tab-params [inputs]="paramFormGroup" (subcribe)="updateParams($event)"></panel-light-tab-params>
+            </nz-tab>
+
+            <nz-tab [nzTitle]="iconProperties">
+                <ng-template #iconProperties>
+                    Properties
+                </ng-template>
+                <ng-template nz-tab>
+                    <panel-light-tab-properties 
+                        [(props)]="props" 
+                        (subcribe)="updateProps($event)" 
+                        [service]="_service"
+                        [hasShadow]="hasShadow"
+                        [hasTarget]="hasTarget"
+                        [hasShadowCamera]="hasShadowCamera"
+                    ></panel-light-tab-properties>
+                </ng-template>
+            </nz-tab>
+
+
+        </nz-tabset>
+    </div>
+
+
+
+    <div class="panel-footer">
+        <h3>{{"Actions" | translate}}</h3>
+        <div class="buttons">
+            <button nz-button nzType="primary" (click)="onDone()">{{btnDoneText}}</button>
+
+
+        </div>
+    </div>
+
+</div>

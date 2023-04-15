@@ -1,0 +1,32 @@
+{
+    "name": "Thông tin phản hồi (Testimonial item)",
+    "inputs": {
+        "name": {
+            "type": "text",
+            "label": "tên người phản hồi",
+            "placeholder": "Ví dụ: Nguyễn Văn A"
+        },
+        "image": {
+            "type": "file",
+            "label": "Ãnh đại diện"
+        },
+        "job": {
+            "type": "text",
+            "label": "Công việc",
+            "placeholder": "Ví dụ: CEO"
+        },
+        "link": {
+            "type": "text",
+            "label": "Liên kết (tùy chọn)",
+            "placeholder": "Ví dụ: http://www.facebook.com/LeNgocDoan"
+        },
+        "content": {
+            "type": "textarea",
+            "label": "Mô tả ngắn",
+            "className": "auto-height",
+            "placeholder": "Ví dụ: Very grateful to have found this app. D&L team did a fantastic job..."
+        }
+    },
+    "data": {
+    }
+}

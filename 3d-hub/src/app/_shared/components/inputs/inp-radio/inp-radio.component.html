@@ -1,0 +1,3 @@
+<nz-radio-group [(ngModel)]="value" (ngModelChange)="onChange($event)">
+  <label nz-radio *ngFor="let p of _options" [nzValue]="p.value">{{p.label}}</label>
+</nz-radio-group>

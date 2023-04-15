@@ -1,0 +1,19 @@
+<div nz-row [nzGutter]="{ xs: 8, sm: 16, md: 24, lg: 32 }" class="input-group">
+    <div nz-col class="gutter-row" [nzSpan]="16">
+        <div class="inner-box">{{label?label:name | translate}}</div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="8">
+        <div class="inner-box text-right">
+            <inp-number 
+                [name]="name" 
+                [(value)]="value" 
+                [min]="min" 
+                [max]="max" 
+                [step]="step" 
+                [spin]="spin" 
+                (subcribe)="onChange($event)"
+            ></inp-number>
+        </div>
+    </div>
+
+</div>

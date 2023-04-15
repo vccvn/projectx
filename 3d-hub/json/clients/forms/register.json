@@ -1,0 +1,28 @@
+{
+    "inputs": {
+        "name": {
+            "type": "text",
+            "label": "Họ và tên",
+            "placeholder": "Họ và tên",
+            "required": "true"
+        },
+        "email": {
+            "type": "email",
+            "label": "Địa chỉ E-mail",
+            "placeholder": "Email",
+            "required": "true",
+            "prepend_text": "<i class=\"fa fa-envelope\"></i>"
+        },
+        "password": {
+            "type": "password",
+            "label": "Mật khẩu",
+            "placeholder": "Mật khẩu",
+            "prepend_text": "<i class=\"fa fa-key\"></i>"
+        },
+        "agree": {
+            "type": "checkbox",
+            "text": "Đồng ý với các điều khoản",
+            "check_label": "Tôi đã đọc và đồng ý với các điều khoản của trang web"
+        }
+    }
+}

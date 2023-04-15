@@ -1,0 +1,37 @@
+{
+    "data": {
+        "service-promos": {
+            "text": "Khuyến mãi",
+            "title": "Quản lý khuyến mãi",
+            "active_key": "service-promos",
+            "route": "admin.service-promos",
+            "icon": "gift",
+            "submenu": {
+                "type": "list",
+                "data": [
+                    {
+                        "text": "Danh sách",
+                        "title": "Danh sách khuyến mãi",
+                        "active_key": "list",
+                        "route": "admin.service-promos.list",
+                        "icon": "list-ul"
+                    },
+                    {
+                        "text": "Thêm mới",
+                        "title": "Thêm mới",
+                        "active_key": "add",
+                        "route": "admin.service-promos.create",
+                        "icon": "plus-circle"
+                    },
+                    {
+                        "text": "Thùng rác",
+                        "title": "Thùng rác",
+                        "active_key": "trash",
+                        "route": "admin.service-promos.trash",
+                        "icon": "trash-alt"
+                    }
+                ]
+            }
+        }
+    }
+}

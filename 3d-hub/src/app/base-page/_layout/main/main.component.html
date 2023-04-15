@@ -1,0 +1,32 @@
+<div class="ant-layout ant-layout-has-sider">
+  <div class="ant-layout" style="min-height: 100vh" [ngStyle]="getLayoutStyle">
+    <layout-pro-header></layout-pro-header>
+    <div class="ant-layout-content" [ngStyle]="getContentStyle">
+      <div *ngIf="isFetching" style="padding-top: 100px; text-align: center">
+        <nz-spin nzSpinning></nz-spin>
+      </div>
+      <ng-container *ngIf="!isFetching">
+        <div class="ant-layout">
+          <nz-layout class="sider-layout">
+            <nz-sider nzWidth="268px" nzTheme="light">
+              <ul nz-menu nzMode="inline" class="sider-menu">
+                <li nz-menu-item nzSelected nzTitle="subnav 1" routerLink="/home"><i nz-icon nzType="home"></i>Home</li>
+                <li nz-menu-item nzTitle="subnav 2" routerLink="/folders/designs">
+                  <i nz-icon nzType="appstore" nzTheme="outline"></i>Your designs
+                </li>
+                <li nz-menu-item nzTitle="Folder" routerLink="/folders"><i nz-icon nzType="folder"></i>Folder</li>
+                <li nz-menu-item nzTitle="Trash" routerLink="/folders/trash"><i nz-icon nzType="delete" r></i>Trash</li>
+                <li style="margin-top: 24px" nz-menu-item nzTitle="subnav 1" routerLink="/organization">
+                  <i nz-icon nzType="team"></i> Dizen Company
+                </li>
+              </ul>
+            </nz-sider>
+            <nz-layout class="inner-layout">
+              <router-outlet></router-outlet>
+            </nz-layout>
+          </nz-layout>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>

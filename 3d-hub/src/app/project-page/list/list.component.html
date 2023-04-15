@@ -1,0 +1,62 @@
+<nz-layout>
+    <nz-header>
+        <app-header></app-header>
+    </nz-header>
+    <nz-content>
+        <ng-container *ngIf="isLoading; then loadingTemplate; else editorTemplate"></ng-container>
+        <ng-template #loadingTemplate>
+            <div class="alert">
+                <h3>Vui lòng chờ giây lát</h3>
+            </div>
+        </ng-template>
+        <ng-template #editorTemplate>
+            <div class="list-template">
+                <div class="list-header">
+                    <h2>Những mẫu thiết kế 3D đẹp</h2>
+                </div>
+                <ng-container *ngIf="projects.length; then listTem; else emptyTem"></ng-container>
+                <ng-template #listTem>
+                    <div class="list container" >
+                        <div class="template-item" *ngFor="let project of projects" >
+                            <div class="inner">
+                                <div class="thumbnail">
+                                    <!-- <a [routerLink]="[ '/view', project.id ]">
+                                        <img src="{{project.thumbnail!=''?project.thumbnail:defaultThumbnail}}" alt="{{project.name}}">
+                                    </a> -->
+                                    
+                                    <a href="/view/{{project.id}}">
+                                        <img src="{{project.thumbnail!=''?project.thumbnail:defaultThumbnail}}" alt="{{project.name}}">
+                                    </a>
+                                    
+                                </div>
+                                <div class="detail">
+                                    <h3>
+                                        <a href="/view/{{project.id}}">
+                                            {{project.name}}
+                                        </a>
+                                    </h3>
+                                    <!-- <a [routerLink]="[ '/project', project.id, 'edit' ]">
+                                        {{"Edit"|translate}}
+                                    </a> -->
+                                    <a href="/project/{{project.id}}/edit">
+                                        {{"Edit"|translate}}
+                                    </a>
+                                    <p>{{project.description}}</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </ng-template>
+                <ng-template #emptyTem>
+                    Không có template
+                </ng-template>
+                
+                
+            </div>
+
+        </ng-template>
+
+
+    </nz-content>
+</nz-layout>

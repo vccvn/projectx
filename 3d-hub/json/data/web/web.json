@@ -1,0 +1,14 @@
+{
+    "data": [
+        {
+            "name": "web_type",
+            "type": "hidden"
+        },
+        {
+            "name": "theme_id",
+            "type": "hidden",
+            "value_type": "number"
+        }
+    ]
+
+}

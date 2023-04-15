@@ -1,0 +1,38 @@
+{
+    "inputs": {
+        "name": {
+            "type": "text",
+            "text": "Họ tên",
+            "placeholder": "Nhập họ tên",
+            "required": "true"
+        },
+        "email": {
+            "type": "text",
+            "text": "Địa chỉ E-mail"
+        },
+
+        "avatar": {
+            "type": "file",
+            "text": "Hình đại diện"
+        },
+
+        "job": {
+            "type": "text",
+            "text": "Công việc"
+        },
+        "company": {
+            "type": "text",
+            "text": "Công tác tại"
+        },
+
+        "content": {
+            "type": "textarea",
+            "text": "Nội dung",
+            "className": "min-heighr-150",
+            "required": "true"
+        }
+    },
+    "config": {
+        "name": "Thông tin khách hàng"
+    }
+}

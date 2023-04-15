@@ -1,0 +1,118 @@
+.loading-wrapper{
+    display: none;
+    position: absolute;
+    z-index: 600;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.4);
+    overflow: hidden;
+    .loading {
+        display: flex;
+        margin: auto;
+    }
+    .ctn-preloader {
+        padding-left: 15px;
+        padding-right: 15px;
+        display: block;
+        margin: auto;
+    }
+    .spinner {
+        animation: spinner 3s infinite linear;
+        border-radius: 50%;
+        border: 3px solid #f1f6f8;
+        border-left-color: #10b3d6;
+        border-top-color: #10b3d6;
+        margin: 0 auto 0em auto;
+        position: absolute;
+        left: -10px;
+        right: -10px;
+        bottom: -10px;
+        top: -10px;
+        &:before {
+            box-sizing: border-box;
+            content: "";
+            width: 20px;
+            height: 20px;
+            border: 6px solid #fff;
+            box-shadow: 0 0 20px 0 rgba(4, 46, 56, 0.2);
+            background: #10b3d6;
+            position: absolute;
+            right: 22px;
+            top: 35px;
+            border-radius: 50%;
+            @media (max-width: 576px) {
+                top: 18px;
+            }
+        }
+    }
+    .round_spinner {
+        border-width: 1px;
+        border-color: #eef3f4;
+        border-style: solid;
+        border-radius: 50%;
+        background-color: #fdfdfd;
+        box-shadow: 0 0 100px 0 rgba(4, 46, 56, 0.14);
+        width: 248px;
+        height: 248px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        @media (max-width: 576px) {
+            width: 155px;
+            height: 155px;
+        }
+        h4 {
+            font-size: 30px;
+            font-weight: 400;
+            margin-bottom: 0;
+            color: #1d2746;
+            span {
+                font-weight: 700;
+            }
+        }
+        
+    }
+    .head {
+        color: #1d2746;
+        display: block;
+        font-size: 26px;
+        font-weight: 700;
+        letter-spacing: 5.2px;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        margin: 5% 0 1% 0;
+        padding: 0;
+    }
+
+    &.active{
+    
+        display: flex;
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*================ preloader css ====================*/
+
+
+
+@keyframes spinner {
+    to {
+        transform: rotateZ(360deg);
+    }
+}

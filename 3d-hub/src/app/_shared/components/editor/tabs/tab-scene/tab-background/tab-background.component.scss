@@ -1,0 +1,65 @@
+.tab-inner,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #fff;
+}
+.bg-item {
+    display: block;
+    flex: none;
+    border: 1px solid #999;
+    border-radius: 5px;
+    &.active {
+        background-color: #20242d;
+    }
+    .item-header {
+        cursor: pointer;
+        padding: 5px 10px;
+        overflow: hidden;
+        border-radius: 5px;
+        .icon {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        &:hover {
+            background-color: #20242d;
+        }
+    }
+
+    .item-body {
+        background-color: #40454e;
+        padding: 5px 10px;
+    }
+}
+
+.text-right {
+    text-align: right;
+}
+.delete {
+    display: inline-block;
+    height: 36px;
+    width: 36px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 36px;
+
+    cursor: pointer;
+    &.active,
+    &:hover {
+        background: #ebebeb;
+        color: #000;
+    }
+}
+
+.tab-inner .store {
+    height: calc(100% - 35px) !important;
+    overflow-x: hidden;
+}
+
+.tab-inner {
+    box-sizing: border-box;
+    height: calc(100% - 35px) !important;
+}

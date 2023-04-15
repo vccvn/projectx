@@ -1,0 +1,16 @@
+{
+    "name": "Mục liên hệ - FAQ",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề "
+        },
+        "description": {
+            "type": "textarea",
+            "label": "Mô tả",
+            "placeholder": "Viết gì đó...",
+            "className": "auto-height"
+        }
+        
+    }
+}

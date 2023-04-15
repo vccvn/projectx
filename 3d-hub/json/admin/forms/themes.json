@@ -1,0 +1,114 @@
+{
+    "inputs": {
+        "name": {
+            "type": "text",
+            "label": "Tên theme",
+            "placeholder": "Nhập tên theme",
+            "required": "true"
+        },
+        "view_type": {
+            "type": "crazyselect",
+            "label": "Loại theme",
+            "required": "true",
+            "template": "crazyselect",
+            "data": {
+                "multi-page": "Web View (multi page)",
+                "spa": "SPA"
+            }
+        },
+        "web_types": {
+            "type": "checklist",
+            "label": "Loại web Hỗ trợ",
+            "required": "true",
+            "template": "checklist",
+            "func": "get_system_config",
+            "params": [
+                "web_type_list"
+            ]
+        },
+        "version": {
+            "type": "number",
+            "label": "Phiên bản",
+            "required": "true",
+            "placeholder": "Nhập phien bản",
+            "min": 0.1,
+            "step": 0.1
+        },
+        "description": {
+            "type": "textarea",
+            "label": "Mô tả",
+            "placeholder": "Mô tả theme"
+        },
+        "zip": {
+            "type": "file",
+            "label": "Tập tin nén"
+        },
+        "image": {
+            "type": "file",
+            "label": "Ảnh đại diện",
+            "acept": "image/*",
+            "template":"cropit", 
+            "data-width": 400, 
+            "data-height":300
+        },
+        "gallery": {
+            "type": "file",
+            "label": "Thư viện ảnh",
+            "template": "gallery",
+            "call": "get_client_file_uploads",
+            "params": [
+                {
+                    "ref": "theme",
+                    "ref_id": "#hidden_id"
+                }
+            ]
+        },
+        "privacy": {
+            "type": "crazyselect",
+            "label": "Riêng tư",
+            "required": "true",
+            "template": "crazyselect",
+            "data": {
+                "protected": "Chỉ mình tôi",
+                "public": "Công khai"
+            }
+        }
+    },
+    "config": {
+        "name": "Thông tin giao diện",
+        "layout_type": "column",
+        "form_groups": {
+            "info": {
+                "title": "Thông tin cơ bản",
+                "class": "col-md-7",
+                "inputs": [
+                    "name",
+                    "view_type",
+                    "web_types",
+                    "zip",
+                    "version"
+                ]
+            },
+            "image": {
+                "title": "Ảnh & riêng tư",
+                "class": "col-md-5",
+                "inputs": [
+                    "image",
+                    "privacy"
+                ]
+            },
+            "detail": {
+                "title": "Chi tiết",
+                "class": "col-sm-12",
+                "inputs": [
+                    "description",
+                    "gallery"
+                ]
+            }
+        },
+        "assets": {
+            "js": [],
+            "css": []
+        }
+    }
+}

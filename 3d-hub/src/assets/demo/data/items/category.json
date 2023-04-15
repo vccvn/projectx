@@ -1,0 +1,2730 @@
+{
+    "status": true,
+    "message": "Thao t\u00e1c th\u00e0nh c\u00f4ng!",
+    "data": [
+        {
+            "id": 1,
+            "name": "Túi xách",
+            "slug": "tui-xac",
+            "element_count": 7,
+            "items": [
+                {
+                    "id": 1,
+                    "name": "Túi kéo",
+                    "category_id": 0,
+                    "description": "",
+                    "status": "published",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/set21/",
+                    "file": "scene.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/set21.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/set21/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "options": {
+                            "pivot": {
+                                "x": "center",
+                                "y": "center",
+                                "z": "center"
+                            }
+                        },
+                        "props": {
+                            "castShadow": true,
+                            "receiveShadow": true,
+                            "position": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "rotation": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        },
+                        "meshes": [
+                            {
+                                "name": "Plane001",
+                                "sid": "plane001_0",
+                                "index": 0,
+                                "title": "Plane001",
+                                "data": {
+                                    "material": {
+                                        "color": "#fdfdfd"
+                                    }
+                                },
+                                "editable": [
+                                    "color",
+                                    "map",
+                                    "bumpMap",
+                                    "bumpScale",
+                                    "normalMap",
+                                    "normalMapType",
+                                    "transparent",
+                                    "opacity",
+                                    "side",
+                                    "visible"
+                                ]
+                            },
+                            {
+                                "name": "Mat_truoc",
+                                "sid": "mat_truoc_1",
+                                "index": 2,
+                                "title": "Mặt trước",
+                                "data": {},
+                                "editable": [
+                                    "color",
+                                    "map",
+                                    "bumpMap",
+                                    "bumpScale",
+                                    "normalMap",
+                                    "normalMapType",
+                                    "transparent",
+                                    "opacity",
+                                    "side",
+                                    "visible"
+                                ]
+                            },
+                            {
+                                "name": "Plane002",
+                                "sid": "plane002_2",
+                                "index": 1,
+                                "title": "Plane002",
+                                "data": {},
+                                "editable": [
+                                    "color",
+                                    "map",
+                                    "bumpMap",
+                                    "bumpScale",
+                                    "normalMap",
+                                    "normalMapType",
+                                    "transparent",
+                                    "opacity",
+                                    "side",
+                                    "visible"
+                                ]
+                            }
+                        ]
+                    },
+                    "size": {
+                        "x": 0.149999991,
+                        "y": 0.25003505985780844,
+                        "z": 0.07353769685122424
+                    }
+                },
+                {
+                    "id": 2,
+                    "name": "Túi Xách Giấy",
+                    "category_id": 2,
+                    "description": "",
+                    "status": "draft",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/set20-2/",
+                    "file": "scene.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/set20.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/set20/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "options": {
+                            "pivot": {
+                                "x": "center",
+                                "y": "center",
+                                "z": "center"
+                            }
+                        },
+                        "props": {
+                            "castShadow": true,
+                            "receiveShadow": true,
+                            "position": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "rotation": {
+                                "x": 0,
+                                "y": 1.5707963267948966,
+                                "z": 0
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        },
+                        "meshes": [
+                            {
+                                "name": "mesh_0",
+                                "sid": "mesh_0_0",
+                                "index": 0,
+                                "title": "mesh_0",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "mesh_1",
+                                "sid": "mesh_1_1",
+                                "index": 1,
+                                "title": "mesh_1",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "mesh_2",
+                                "sid": "mesh_2_2",
+                                "index": 2,
+                                "title": "mesh_2",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "mesh_3",
+                                "sid": "mesh_3_3",
+                                "index": 3,
+                                "title": "mesh_3",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "mesh_4",
+                                "sid": "mesh_4_4",
+                                "index": 4,
+                                "title": "mesh_4",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "mesh_5",
+                                "sid": "mesh_5_5",
+                                "index": 5,
+                                "title": "mesh_5",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "mesh_6",
+                                "sid": "mesh_6_6",
+                                "index": 6,
+                                "title": "mesh_6",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "mesh_7",
+                                "sid": "mesh_7_7",
+                                "index": 7,
+                                "title": "mesh_7",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "mesh_8",
+                                "sid": "mesh_8_8",
+                                "index": 8,
+                                "title": "mesh_8",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "mesh_9",
+                                "sid": "mesh_9_9",
+                                "index": 9,
+                                "title": "mesh_9",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "mesh_10",
+                                "sid": "mesh_10_10",
+                                "index": 10,
+                                "title": "mesh_10",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "mesh_11",
+                                "sid": "mesh_11_11",
+                                "index": 11,
+                                "title": "mesh_11",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "mesh_12",
+                                "sid": "mesh_12_12",
+                                "index": 12,
+                                "title": "mesh_12",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "mesh_13",
+                                "sid": "mesh_13_13",
+                                "index": 13,
+                                "title": "mesh_13",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "mesh_14",
+                                "sid": "mesh_14_14",
+                                "index": 14,
+                                "title": "mesh_14",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "mesh_15",
+                                "sid": "mesh_15_15",
+                                "index": 15,
+                                "title": "mesh_15",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "mesh_16",
+                                "sid": "mesh_16_16",
+                                "index": 16,
+                                "title": "mesh_16",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "mesh_17",
+                                "sid": "mesh_17_17",
+                                "index": 17,
+                                "title": "mesh_17",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "mesh_18",
+                                "sid": "mesh_18_18",
+                                "index": 18,
+                                "title": "mesh_18",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "mesh_19",
+                                "sid": "mesh_19_19",
+                                "index": 19,
+                                "title": "mesh_19",
+                                "data": {},
+                                "editable": []
+                            }
+                        ]
+                    },
+                    "size": {
+                        "x": 0.12652817334668312,
+                        "y": 0.4160888765815892,
+                        "z": 0.25336579792201525
+                    }
+                },
+                {
+                    "id": 3,
+                    "name": "2 Cốc",
+                    "category_id": 0,
+                    "description": "",
+                    "status": "draft",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/set16/",
+                    "file": "scene.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/set16.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/set16/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "options": {
+                            "pivot": {
+                                "x": "center",
+                                "y": "center",
+                                "z": "center"
+                            }
+                        },
+                        "props": {
+                            "castShadow": false,
+                            "receiveShadow": false,
+                            "position": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "rotation": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        },
+                        "meshes": [
+                            {
+                                "name": "Cone001",
+                                "sid": "cone001_0",
+                                "index": 0,
+                                "title": "Cone001",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Cylinder001",
+                                "sid": "cylinder001_1",
+                                "index": 1,
+                                "title": "Cylinder001",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Cone002",
+                                "sid": "cone002_2",
+                                "index": 2,
+                                "title": "Cone002",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Cone003",
+                                "sid": "cone003_3",
+                                "index": 3,
+                                "title": "Cone003",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Cone004",
+                                "sid": "cone004_4",
+                                "index": 4,
+                                "title": "Cone004",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Cylinder002",
+                                "sid": "cylinder002_5",
+                                "index": 5,
+                                "title": "Cylinder002",
+                                "data": {},
+                                "editable": []
+                            }
+                        ]
+                    },
+                    "size": {
+                        "x": 0.3436449198120606,
+                        "y": 0.18105581066502863,
+                        "z": 0.11495122052022133
+                    }
+                },
+                {
+                    "id": 4,
+                    "name": "Cái cốc",
+                    "category_id": 0,
+                    "description": "",
+                    "status": "draft",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/set14/",
+                    "file": "scene.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/set14.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/set14/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "options": {
+                            "pivot": {
+                                "x": "center",
+                                "y": "center",
+                                "z": "center"
+                            }
+                        },
+                        "props": {
+                            "castShadow": false,
+                            "receiveShadow": false,
+                            "position": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "rotation": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        },
+                        "meshes": [
+                            {
+                                "name": "Cone001",
+                                "sid": "cone001_0",
+                                "index": 0,
+                                "title": "Cone001",
+                                "data": {},
+                                "editable": [
+                                    "color",
+                                    "map",
+                                    "bumpMap",
+                                    "bumpScale",
+                                    "normalMap",
+                                    "transparent",
+                                    "opacity"
+                                ]
+                            },
+                            {
+                                "name": "Cylinder001",
+                                "sid": "cylinder001_1",
+                                "index": 1,
+                                "title": "Cylinder001",
+                                "data": {},
+                                "editable": [
+                                    "color",
+                                    "map"
+                                ]
+                            },
+                            {
+                                "name": "Cone002",
+                                "sid": "cone002_2",
+                                "index": 2,
+                                "title": "Cone002",
+                                "data": {},
+                                "editable": [
+                                    "color",
+                                    "map",
+                                    "bumpMap"
+                                ]
+                            }
+                        ]
+                    },
+                    "size": {
+                        "x": 0.0934722498,
+                        "y": 0.1751247123,
+                        "z": 0.0930150524
+                    }
+                },
+                {
+                    "id": 5,
+                    "name": "Giấy",
+                    "category_id": 0,
+                    "description": "",
+                    "status": "draft",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/set13/",
+                    "file": "scene.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/set13.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/set13/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "options": {
+                            "pivot": {
+                                "x": "center",
+                                "y": "center",
+                                "z": "center"
+                            }
+                        },
+                        "props": {
+                            "castShadow": false,
+                            "receiveShadow": false,
+                            "position": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "rotation": {
+                                "x": 1.5707963267948966,
+                                "y": 1.4660765716752369,
+                                "z": 0
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        },
+                        "meshes": [
+                            {
+                                "name": "Plane001",
+                                "sid": "plane001_0",
+                                "index": 0,
+                                "title": "Plane001",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Plane002",
+                                "sid": "plane002_1",
+                                "index": 1,
+                                "title": "Plane002",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Plane003",
+                                "sid": "plane003_2",
+                                "index": 2,
+                                "title": "Plane003",
+                                "data": {},
+                                "editable": []
+                            }
+                        ]
+                    },
+                    "size": {
+                        "x": 0.008476866932504736,
+                        "y": 0.021625354093673544,
+                        "z": 0.029757557498654538
+                    }
+                },
+                {
+                    "id": 6,
+                    "name": "2 cái bình",
+                    "category_id": 0,
+                    "description": "",
+                    "status": "draft",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/jar/",
+                    "file": "scene.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/jar.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/jar/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "options": {
+                            "pivot": {
+                                "x": "center",
+                                "y": "center",
+                                "z": "center"
+                            }
+                        },
+                        "props": {
+                            "castShadow": false,
+                            "receiveShadow": false,
+                            "position": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "rotation": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        },
+                        "meshes": [
+                            {
+                                "name": "Object_2",
+                                "sid": "object_2_0",
+                                "index": 0,
+                                "title": "Object_2",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Object_3",
+                                "sid": "object_3_1",
+                                "index": 1,
+                                "title": "Object_3",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Object_4",
+                                "sid": "object_4_2",
+                                "index": 2,
+                                "title": "Object_4",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Object_5",
+                                "sid": "object_5_3",
+                                "index": 3,
+                                "title": "Object_5",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Object_6",
+                                "sid": "object_6_4",
+                                "index": 4,
+                                "title": "Object_6",
+                                "data": {},
+                                "editable": []
+                            }
+                        ]
+                    },
+                    "size": {
+                        "x": 25.294570721342495,
+                        "y": 11.647350906764188,
+                        "z": 21.499504158723155
+                    }
+                },
+                {
+                    "id": 7,
+                    "name": "Hộp giấy",
+                    "category_id": 0,
+                    "description": "",
+                    "status": "draft",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/nc/",
+                    "file": "22.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/nc.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/nc/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "options": {
+                            "pivot": {
+                                "x": "center",
+                                "y": "center",
+                                "z": "center"
+                            }
+                        },
+                        "props": {
+                            "castShadow": false,
+                            "receiveShadow": false,
+                            "position": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "rotation": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        },
+                        "meshes": [
+                            {
+                                "name": "Line01_1",
+                                "sid": "line01_1_0",
+                                "index": 0,
+                                "title": "Line01_1",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Line01_2",
+                                "sid": "line01_2_1",
+                                "index": 1,
+                                "title": "Line01_2",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Line01_3",
+                                "sid": "line01_3_2",
+                                "index": 2,
+                                "title": "Line01_3",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Box06",
+                                "sid": "box06_3",
+                                "index": 3,
+                                "title": "Box06",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Box07",
+                                "sid": "box07_4",
+                                "index": 4,
+                                "title": "Box07",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Box08",
+                                "sid": "box08_5",
+                                "index": 5,
+                                "title": "Box08",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Box02",
+                                "sid": "box02_6",
+                                "index": 6,
+                                "title": "Box02",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Box03",
+                                "sid": "box03_7",
+                                "index": 7,
+                                "title": "Box03",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Box04",
+                                "sid": "box04_8",
+                                "index": 8,
+                                "title": "Box04",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Box05",
+                                "sid": "box05_9",
+                                "index": 9,
+                                "title": "Box05",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Box01",
+                                "sid": "box01_10",
+                                "index": 10,
+                                "title": "Box01",
+                                "data": {},
+                                "editable": []
+                            }
+                        ]
+                    },
+                    "size": {
+                        "x": 0.6851831417928489,
+                        "y": 0.31692728691419736,
+                        "z": 1.046818494
+                    }
+                },
+                {
+                    "id": 8,
+                    "name": "4 Cái cốc",
+                    "category_id": 3,
+                    "description": "",
+                    "status": "draft",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/4cup/",
+                    "file": "model.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/4cup.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/4cup/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "options": {
+                            "pivot": {
+                                "x": "center",
+                                "y": "center",
+                                "z": "center"
+                            }
+                        },
+                        "props": {
+                            "castShadow": false,
+                            "receiveShadow": false,
+                            "position": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "rotation": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        },
+                        "meshes": [
+                            {
+                                "name": "Cylinder001",
+                                "sid": "cylinder001_0",
+                                "index": 0,
+                                "title": "Cylinder001",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Cylinder002",
+                                "sid": "cylinder002_1",
+                                "index": 1,
+                                "title": "Cylinder002",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Cylinder003",
+                                "sid": "cylinder003_2",
+                                "index": 2,
+                                "title": "Cylinder003",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Cylinder004",
+                                "sid": "cylinder004_3",
+                                "index": 3,
+                                "title": "Cylinder004",
+                                "data": {},
+                                "editable": []
+                            }
+                        ]
+                    },
+                    "size": {
+                        "x": 0.39858187385630606,
+                        "y": 0.07199531353,
+                        "z": 0.10218687835205026
+                    }
+                }
+                
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Cốc",
+            "slug": "cốc",
+            "element_count": 3,
+            "items": [
+                {
+                    "id": 7,
+                    "name": "Hộp giấy",
+                    "category_id": 0,
+                    "description": "",
+                    "status": "draft",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/nc/",
+                    "file": "22.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/nc.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/nc/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "options": {
+                            "pivot": {
+                                "x": "center",
+                                "y": "center",
+                                "z": "center"
+                            }
+                        },
+                        "props": {
+                            "castShadow": false,
+                            "receiveShadow": false,
+                            "position": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "rotation": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        },
+                        "meshes": [
+                            {
+                                "name": "Line01_1",
+                                "sid": "line01_1_0",
+                                "index": 0,
+                                "title": "Line01_1",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Line01_2",
+                                "sid": "line01_2_1",
+                                "index": 1,
+                                "title": "Line01_2",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Line01_3",
+                                "sid": "line01_3_2",
+                                "index": 2,
+                                "title": "Line01_3",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Box06",
+                                "sid": "box06_3",
+                                "index": 3,
+                                "title": "Box06",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Box07",
+                                "sid": "box07_4",
+                                "index": 4,
+                                "title": "Box07",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Box08",
+                                "sid": "box08_5",
+                                "index": 5,
+                                "title": "Box08",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Box02",
+                                "sid": "box02_6",
+                                "index": 6,
+                                "title": "Box02",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Box03",
+                                "sid": "box03_7",
+                                "index": 7,
+                                "title": "Box03",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Box04",
+                                "sid": "box04_8",
+                                "index": 8,
+                                "title": "Box04",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Box05",
+                                "sid": "box05_9",
+                                "index": 9,
+                                "title": "Box05",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Box01",
+                                "sid": "box01_10",
+                                "index": 10,
+                                "title": "Box01",
+                                "data": {},
+                                "editable": []
+                            }
+                        ]
+                    },
+                    "size": {
+                        "x": 0.6851831417928489,
+                        "y": 0.31692728691419736,
+                        "z": 1.046818494
+                    }
+                },
+                {
+                    "id": 8,
+                    "name": "4 Cái cốc",
+                    "category_id": 3,
+                    "description": "",
+                    "status": "draft",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/4cup/",
+                    "file": "model.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/4cup.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/4cup/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "options": {
+                            "pivot": {
+                                "x": "center",
+                                "y": "center",
+                                "z": "center"
+                            }
+                        },
+                        "props": {
+                            "castShadow": false,
+                            "receiveShadow": false,
+                            "position": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "rotation": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        },
+                        "meshes": [
+                            {
+                                "name": "Cylinder001",
+                                "sid": "cylinder001_0",
+                                "index": 0,
+                                "title": "Cylinder001",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Cylinder002",
+                                "sid": "cylinder002_1",
+                                "index": 1,
+                                "title": "Cylinder002",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Cylinder003",
+                                "sid": "cylinder003_2",
+                                "index": 2,
+                                "title": "Cylinder003",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Cylinder004",
+                                "sid": "cylinder004_3",
+                                "index": 3,
+                                "title": "Cylinder004",
+                                "data": {},
+                                "editable": []
+                            }
+                        ]
+                    },
+                    "size": {
+                        "x": 0.39858187385630606,
+                        "y": 0.07199531353,
+                        "z": 0.10218687835205026
+                    }
+                },
+                {
+                    "id": 9,
+                    "name": "3 cái cốc",
+                    "category_id": 0,
+                    "description": "",
+                    "status": "draft",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/3cups2/",
+                    "file": "model.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/b3cups2.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/3cups2/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "options": {
+                            "pivot": {
+                                "x": "center",
+                                "y": "center",
+                                "z": "center"
+                            }
+                        },
+                        "props": {
+                            "castShadow": true,
+                            "receiveShadow": true,
+                            "position": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "rotation": {
+                                "x": 0,
+                                "y": 1.5707963267948966,
+                                "z": 0
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        },
+                        "meshes": [
+                            {
+                                "name": "Cylinder001",
+                                "sid": "cylinder001_0",
+                                "index": 0,
+                                "title": "Cylinder001",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Mat_coc",
+                                "sid": "mat_coc_1",
+                                "index": 1,
+                                "title": "Mat_coc",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Cylinder002",
+                                "sid": "cylinder002_2",
+                                "index": 2,
+                                "title": "Cylinder002",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Mat_coc001",
+                                "sid": "mat_coc001_3",
+                                "index": 3,
+                                "title": "Mat_coc001",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Cylinder003",
+                                "sid": "cylinder003_4",
+                                "index": 4,
+                                "title": "Cylinder003",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Mat_coc002",
+                                "sid": "mat_coc002_5",
+                                "index": 5,
+                                "title": "Mat_coc002",
+                                "data": {},
+                                "editable": []
+                            }
+                        ]
+                    },
+                    "size": {
+                        "x": 0.13273653537810018,
+                        "y": 0.07707188461,
+                        "z": 0.4382332131217169
+                    }
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Decor",
+            "slug": "decor",
+            "element_count": 7,
+            "items": [
+                {
+                    "id": 2,
+                    "name": "Túi Xách Giấy",
+                    "category_id": 2,
+                    "description": "",
+                    "status": "draft",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/set20-2/",
+                    "file": "scene.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/set20.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/set20/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "options": {
+                            "pivot": {
+                                "x": "center",
+                                "y": "center",
+                                "z": "center"
+                            }
+                        },
+                        "props": {
+                            "castShadow": true,
+                            "receiveShadow": true,
+                            "position": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "rotation": {
+                                "x": 0,
+                                "y": 1.5707963267948966,
+                                "z": 0
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        },
+                        "meshes": [
+                            {
+                                "name": "mesh_0",
+                                "sid": "mesh_0_0",
+                                "index": 0,
+                                "title": "mesh_0",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "mesh_1",
+                                "sid": "mesh_1_1",
+                                "index": 1,
+                                "title": "mesh_1",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "mesh_2",
+                                "sid": "mesh_2_2",
+                                "index": 2,
+                                "title": "mesh_2",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "mesh_3",
+                                "sid": "mesh_3_3",
+                                "index": 3,
+                                "title": "mesh_3",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "mesh_4",
+                                "sid": "mesh_4_4",
+                                "index": 4,
+                                "title": "mesh_4",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "mesh_5",
+                                "sid": "mesh_5_5",
+                                "index": 5,
+                                "title": "mesh_5",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "mesh_6",
+                                "sid": "mesh_6_6",
+                                "index": 6,
+                                "title": "mesh_6",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "mesh_7",
+                                "sid": "mesh_7_7",
+                                "index": 7,
+                                "title": "mesh_7",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "mesh_8",
+                                "sid": "mesh_8_8",
+                                "index": 8,
+                                "title": "mesh_8",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "mesh_9",
+                                "sid": "mesh_9_9",
+                                "index": 9,
+                                "title": "mesh_9",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "mesh_10",
+                                "sid": "mesh_10_10",
+                                "index": 10,
+                                "title": "mesh_10",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "mesh_11",
+                                "sid": "mesh_11_11",
+                                "index": 11,
+                                "title": "mesh_11",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "mesh_12",
+                                "sid": "mesh_12_12",
+                                "index": 12,
+                                "title": "mesh_12",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "mesh_13",
+                                "sid": "mesh_13_13",
+                                "index": 13,
+                                "title": "mesh_13",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "mesh_14",
+                                "sid": "mesh_14_14",
+                                "index": 14,
+                                "title": "mesh_14",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "mesh_15",
+                                "sid": "mesh_15_15",
+                                "index": 15,
+                                "title": "mesh_15",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "mesh_16",
+                                "sid": "mesh_16_16",
+                                "index": 16,
+                                "title": "mesh_16",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "mesh_17",
+                                "sid": "mesh_17_17",
+                                "index": 17,
+                                "title": "mesh_17",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "mesh_18",
+                                "sid": "mesh_18_18",
+                                "index": 18,
+                                "title": "mesh_18",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "mesh_19",
+                                "sid": "mesh_19_19",
+                                "index": 19,
+                                "title": "mesh_19",
+                                "data": {},
+                                "editable": []
+                            }
+                        ]
+                    },
+                    "size": {
+                        "x": 0.12652817334668312,
+                        "y": 0.4160888765815892,
+                        "z": 0.25336579792201525
+                    }
+                },
+                {
+                    "id": 3,
+                    "name": "2 Cốc",
+                    "category_id": 0,
+                    "description": "",
+                    "status": "draft",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/set16/",
+                    "file": "scene.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/set16.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/set16/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "options": {
+                            "pivot": {
+                                "x": "center",
+                                "y": "center",
+                                "z": "center"
+                            }
+                        },
+                        "props": {
+                            "castShadow": false,
+                            "receiveShadow": false,
+                            "position": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "rotation": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        },
+                        "meshes": [
+                            {
+                                "name": "Cone001",
+                                "sid": "cone001_0",
+                                "index": 0,
+                                "title": "Cone001",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Cylinder001",
+                                "sid": "cylinder001_1",
+                                "index": 1,
+                                "title": "Cylinder001",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Cone002",
+                                "sid": "cone002_2",
+                                "index": 2,
+                                "title": "Cone002",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Cone003",
+                                "sid": "cone003_3",
+                                "index": 3,
+                                "title": "Cone003",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Cone004",
+                                "sid": "cone004_4",
+                                "index": 4,
+                                "title": "Cone004",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Cylinder002",
+                                "sid": "cylinder002_5",
+                                "index": 5,
+                                "title": "Cylinder002",
+                                "data": {},
+                                "editable": []
+                            }
+                        ]
+                    },
+                    "size": {
+                        "x": 0.3436449198120606,
+                        "y": 0.18105581066502863,
+                        "z": 0.11495122052022133
+                    }
+                },
+                {
+                    "id": 4,
+                    "name": "Cái cốc",
+                    "category_id": 0,
+                    "description": "",
+                    "status": "draft",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/set14/",
+                    "file": "scene.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/set14.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/set14/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "options": {
+                            "pivot": {
+                                "x": "center",
+                                "y": "center",
+                                "z": "center"
+                            }
+                        },
+                        "props": {
+                            "castShadow": false,
+                            "receiveShadow": false,
+                            "position": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "rotation": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        },
+                        "meshes": [
+                            {
+                                "name": "Cone001",
+                                "sid": "cone001_0",
+                                "index": 0,
+                                "title": "Cone001",
+                                "data": {},
+                                "editable": [
+                                    "color",
+                                    "map",
+                                    "bumpMap",
+                                    "bumpScale",
+                                    "normalMap",
+                                    "transparent",
+                                    "opacity"
+                                ]
+                            },
+                            {
+                                "name": "Cylinder001",
+                                "sid": "cylinder001_1",
+                                "index": 1,
+                                "title": "Cylinder001",
+                                "data": {},
+                                "editable": [
+                                    "color",
+                                    "map"
+                                ]
+                            },
+                            {
+                                "name": "Cone002",
+                                "sid": "cone002_2",
+                                "index": 2,
+                                "title": "Cone002",
+                                "data": {},
+                                "editable": [
+                                    "color",
+                                    "map",
+                                    "bumpMap"
+                                ]
+                            }
+                        ]
+                    },
+                    "size": {
+                        "x": 0.0934722498,
+                        "y": 0.1751247123,
+                        "z": 0.0930150524
+                    }
+                },
+                {
+                    "id": 5,
+                    "name": "Giấy",
+                    "category_id": 0,
+                    "description": "",
+                    "status": "draft",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/set13/",
+                    "file": "scene.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/set13.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/set13/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "options": {
+                            "pivot": {
+                                "x": "center",
+                                "y": "center",
+                                "z": "center"
+                            }
+                        },
+                        "props": {
+                            "castShadow": false,
+                            "receiveShadow": false,
+                            "position": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "rotation": {
+                                "x": 1.5707963267948966,
+                                "y": 1.4660765716752369,
+                                "z": 0
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        },
+                        "meshes": [
+                            {
+                                "name": "Plane001",
+                                "sid": "plane001_0",
+                                "index": 0,
+                                "title": "Plane001",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Plane002",
+                                "sid": "plane002_1",
+                                "index": 1,
+                                "title": "Plane002",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Plane003",
+                                "sid": "plane003_2",
+                                "index": 2,
+                                "title": "Plane003",
+                                "data": {},
+                                "editable": []
+                            }
+                        ]
+                    },
+                    "size": {
+                        "x": 0.008476866932504736,
+                        "y": 0.021625354093673544,
+                        "z": 0.029757557498654538
+                    }
+                },
+                {
+                    "id": 6,
+                    "name": "2 cái bình",
+                    "category_id": 0,
+                    "description": "",
+                    "status": "draft",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/jar/",
+                    "file": "scene.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/jar.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/jar/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "options": {
+                            "pivot": {
+                                "x": "center",
+                                "y": "center",
+                                "z": "center"
+                            }
+                        },
+                        "props": {
+                            "castShadow": false,
+                            "receiveShadow": false,
+                            "position": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "rotation": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        },
+                        "meshes": [
+                            {
+                                "name": "Object_2",
+                                "sid": "object_2_0",
+                                "index": 0,
+                                "title": "Object_2",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Object_3",
+                                "sid": "object_3_1",
+                                "index": 1,
+                                "title": "Object_3",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Object_4",
+                                "sid": "object_4_2",
+                                "index": 2,
+                                "title": "Object_4",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Object_5",
+                                "sid": "object_5_3",
+                                "index": 3,
+                                "title": "Object_5",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Object_6",
+                                "sid": "object_6_4",
+                                "index": 4,
+                                "title": "Object_6",
+                                "data": {},
+                                "editable": []
+                            }
+                        ]
+                    },
+                    "size": {
+                        "x": 25.294570721342495,
+                        "y": 11.647350906764188,
+                        "z": 21.499504158723155
+                    }
+                },
+                {
+                    "id": 7,
+                    "name": "Hộp giấy",
+                    "category_id": 0,
+                    "description": "",
+                    "status": "draft",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/nc/",
+                    "file": "22.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/nc.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/nc/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "options": {
+                            "pivot": {
+                                "x": "center",
+                                "y": "center",
+                                "z": "center"
+                            }
+                        },
+                        "props": {
+                            "castShadow": false,
+                            "receiveShadow": false,
+                            "position": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "rotation": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        },
+                        "meshes": [
+                            {
+                                "name": "Line01_1",
+                                "sid": "line01_1_0",
+                                "index": 0,
+                                "title": "Line01_1",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Line01_2",
+                                "sid": "line01_2_1",
+                                "index": 1,
+                                "title": "Line01_2",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Line01_3",
+                                "sid": "line01_3_2",
+                                "index": 2,
+                                "title": "Line01_3",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Box06",
+                                "sid": "box06_3",
+                                "index": 3,
+                                "title": "Box06",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Box07",
+                                "sid": "box07_4",
+                                "index": 4,
+                                "title": "Box07",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Box08",
+                                "sid": "box08_5",
+                                "index": 5,
+                                "title": "Box08",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Box02",
+                                "sid": "box02_6",
+                                "index": 6,
+                                "title": "Box02",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Box03",
+                                "sid": "box03_7",
+                                "index": 7,
+                                "title": "Box03",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Box04",
+                                "sid": "box04_8",
+                                "index": 8,
+                                "title": "Box04",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Box05",
+                                "sid": "box05_9",
+                                "index": 9,
+                                "title": "Box05",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Box01",
+                                "sid": "box01_10",
+                                "index": 10,
+                                "title": "Box01",
+                                "data": {},
+                                "editable": []
+                            }
+                        ]
+                    },
+                    "size": {
+                        "x": 0.6851831417928489,
+                        "y": 0.31692728691419736,
+                        "z": 1.046818494
+                    }
+                },
+                {
+                    "id": 8,
+                    "name": "4 Cái cốc",
+                    "category_id": 3,
+                    "description": "",
+                    "status": "draft",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/4cup/",
+                    "file": "model.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/4cup.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/4cup/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "options": {
+                            "pivot": {
+                                "x": "center",
+                                "y": "center",
+                                "z": "center"
+                            }
+                        },
+                        "props": {
+                            "castShadow": false,
+                            "receiveShadow": false,
+                            "position": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "rotation": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        },
+                        "meshes": [
+                            {
+                                "name": "Cylinder001",
+                                "sid": "cylinder001_0",
+                                "index": 0,
+                                "title": "Cylinder001",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Cylinder002",
+                                "sid": "cylinder002_1",
+                                "index": 1,
+                                "title": "Cylinder002",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Cylinder003",
+                                "sid": "cylinder003_2",
+                                "index": 2,
+                                "title": "Cylinder003",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Cylinder004",
+                                "sid": "cylinder004_3",
+                                "index": 3,
+                                "title": "Cylinder004",
+                                "data": {},
+                                "editable": []
+                            }
+                        ]
+                    },
+                    "size": {
+                        "x": 0.39858187385630606,
+                        "y": 0.07199531353,
+                        "z": 0.10218687835205026
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Danh mục 4",
+            "slug": "danh-muc-4",
+            "element_count": 7,
+            "items": [
+                {
+                    "id": 3,
+                    "name": "2 Cốc",
+                    "category_id": 0,
+                    "description": "",
+                    "status": "draft",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/set16/",
+                    "file": "scene.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/set16.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/set16/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "options": {
+                            "pivot": {
+                                "x": "center",
+                                "y": "center",
+                                "z": "center"
+                            }
+                        },
+                        "props": {
+                            "castShadow": false,
+                            "receiveShadow": false,
+                            "position": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "rotation": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        },
+                        "meshes": [
+                            {
+                                "name": "Cone001",
+                                "sid": "cone001_0",
+                                "index": 0,
+                                "title": "Cone001",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Cylinder001",
+                                "sid": "cylinder001_1",
+                                "index": 1,
+                                "title": "Cylinder001",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Cone002",
+                                "sid": "cone002_2",
+                                "index": 2,
+                                "title": "Cone002",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Cone003",
+                                "sid": "cone003_3",
+                                "index": 3,
+                                "title": "Cone003",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Cone004",
+                                "sid": "cone004_4",
+                                "index": 4,
+                                "title": "Cone004",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Cylinder002",
+                                "sid": "cylinder002_5",
+                                "index": 5,
+                                "title": "Cylinder002",
+                                "data": {},
+                                "editable": []
+                            }
+                        ]
+                    },
+                    "size": {
+                        "x": 0.3436449198120606,
+                        "y": 0.18105581066502863,
+                        "z": 0.11495122052022133
+                    }
+                },
+                {
+                    "id": 4,
+                    "name": "Cái cốc",
+                    "category_id": 0,
+                    "description": "",
+                    "status": "draft",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/set14/",
+                    "file": "scene.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/set14.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/set14/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "options": {
+                            "pivot": {
+                                "x": "center",
+                                "y": "center",
+                                "z": "center"
+                            }
+                        },
+                        "props": {
+                            "castShadow": false,
+                            "receiveShadow": false,
+                            "position": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "rotation": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        },
+                        "meshes": [
+                            {
+                                "name": "Cone001",
+                                "sid": "cone001_0",
+                                "index": 0,
+                                "title": "Cone001",
+                                "data": {},
+                                "editable": [
+                                    "color",
+                                    "map",
+                                    "bumpMap",
+                                    "bumpScale",
+                                    "normalMap",
+                                    "transparent",
+                                    "opacity"
+                                ]
+                            },
+                            {
+                                "name": "Cylinder001",
+                                "sid": "cylinder001_1",
+                                "index": 1,
+                                "title": "Cylinder001",
+                                "data": {},
+                                "editable": [
+                                    "color",
+                                    "map"
+                                ]
+                            },
+                            {
+                                "name": "Cone002",
+                                "sid": "cone002_2",
+                                "index": 2,
+                                "title": "Cone002",
+                                "data": {},
+                                "editable": [
+                                    "color",
+                                    "map",
+                                    "bumpMap"
+                                ]
+                            }
+                        ]
+                    },
+                    "size": {
+                        "x": 0.0934722498,
+                        "y": 0.1751247123,
+                        "z": 0.0930150524
+                    }
+                },
+                {
+                    "id": 5,
+                    "name": "Giấy",
+                    "category_id": 0,
+                    "description": "",
+                    "status": "draft",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/set13/",
+                    "file": "scene.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/set13.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/set13/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "options": {
+                            "pivot": {
+                                "x": "center",
+                                "y": "center",
+                                "z": "center"
+                            }
+                        },
+                        "props": {
+                            "castShadow": false,
+                            "receiveShadow": false,
+                            "position": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "rotation": {
+                                "x": 1.5707963267948966,
+                                "y": 1.4660765716752369,
+                                "z": 0
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        },
+                        "meshes": [
+                            {
+                                "name": "Plane001",
+                                "sid": "plane001_0",
+                                "index": 0,
+                                "title": "Plane001",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Plane002",
+                                "sid": "plane002_1",
+                                "index": 1,
+                                "title": "Plane002",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Plane003",
+                                "sid": "plane003_2",
+                                "index": 2,
+                                "title": "Plane003",
+                                "data": {},
+                                "editable": []
+                            }
+                        ]
+                    },
+                    "size": {
+                        "x": 0.008476866932504736,
+                        "y": 0.021625354093673544,
+                        "z": 0.029757557498654538
+                    }
+                },
+                {
+                    "id": 6,
+                    "name": "2 cái bình",
+                    "category_id": 0,
+                    "description": "",
+                    "status": "draft",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/jar/",
+                    "file": "scene.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/jar.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/jar/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "options": {
+                            "pivot": {
+                                "x": "center",
+                                "y": "center",
+                                "z": "center"
+                            }
+                        },
+                        "props": {
+                            "castShadow": false,
+                            "receiveShadow": false,
+                            "position": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "rotation": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        },
+                        "meshes": [
+                            {
+                                "name": "Object_2",
+                                "sid": "object_2_0",
+                                "index": 0,
+                                "title": "Object_2",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Object_3",
+                                "sid": "object_3_1",
+                                "index": 1,
+                                "title": "Object_3",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Object_4",
+                                "sid": "object_4_2",
+                                "index": 2,
+                                "title": "Object_4",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Object_5",
+                                "sid": "object_5_3",
+                                "index": 3,
+                                "title": "Object_5",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Object_6",
+                                "sid": "object_6_4",
+                                "index": 4,
+                                "title": "Object_6",
+                                "data": {},
+                                "editable": []
+                            }
+                        ]
+                    },
+                    "size": {
+                        "x": 25.294570721342495,
+                        "y": 11.647350906764188,
+                        "z": 21.499504158723155
+                    }
+                },
+                {
+                    "id": 7,
+                    "name": "Hộp giấy",
+                    "category_id": 0,
+                    "description": "",
+                    "status": "draft",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/nc/",
+                    "file": "22.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/nc.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/nc/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "options": {
+                            "pivot": {
+                                "x": "center",
+                                "y": "center",
+                                "z": "center"
+                            }
+                        },
+                        "props": {
+                            "castShadow": false,
+                            "receiveShadow": false,
+                            "position": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "rotation": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        },
+                        "meshes": [
+                            {
+                                "name": "Line01_1",
+                                "sid": "line01_1_0",
+                                "index": 0,
+                                "title": "Line01_1",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Line01_2",
+                                "sid": "line01_2_1",
+                                "index": 1,
+                                "title": "Line01_2",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Line01_3",
+                                "sid": "line01_3_2",
+                                "index": 2,
+                                "title": "Line01_3",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Box06",
+                                "sid": "box06_3",
+                                "index": 3,
+                                "title": "Box06",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Box07",
+                                "sid": "box07_4",
+                                "index": 4,
+                                "title": "Box07",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Box08",
+                                "sid": "box08_5",
+                                "index": 5,
+                                "title": "Box08",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Box02",
+                                "sid": "box02_6",
+                                "index": 6,
+                                "title": "Box02",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Box03",
+                                "sid": "box03_7",
+                                "index": 7,
+                                "title": "Box03",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Box04",
+                                "sid": "box04_8",
+                                "index": 8,
+                                "title": "Box04",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Box05",
+                                "sid": "box05_9",
+                                "index": 9,
+                                "title": "Box05",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Box01",
+                                "sid": "box01_10",
+                                "index": 10,
+                                "title": "Box01",
+                                "data": {},
+                                "editable": []
+                            }
+                        ]
+                    },
+                    "size": {
+                        "x": 0.6851831417928489,
+                        "y": 0.31692728691419736,
+                        "z": 1.046818494
+                    }
+                },
+                {
+                    "id": 8,
+                    "name": "4 Cái cốc",
+                    "category_id": 3,
+                    "description": "",
+                    "status": "draft",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/4cup/",
+                    "file": "model.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/4cup.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/4cup/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "options": {
+                            "pivot": {
+                                "x": "center",
+                                "y": "center",
+                                "z": "center"
+                            }
+                        },
+                        "props": {
+                            "castShadow": false,
+                            "receiveShadow": false,
+                            "position": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "rotation": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        },
+                        "meshes": [
+                            {
+                                "name": "Cylinder001",
+                                "sid": "cylinder001_0",
+                                "index": 0,
+                                "title": "Cylinder001",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Cylinder002",
+                                "sid": "cylinder002_1",
+                                "index": 1,
+                                "title": "Cylinder002",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Cylinder003",
+                                "sid": "cylinder003_2",
+                                "index": 2,
+                                "title": "Cylinder003",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Cylinder004",
+                                "sid": "cylinder004_3",
+                                "index": 3,
+                                "title": "Cylinder004",
+                                "data": {},
+                                "editable": []
+                            }
+                        ]
+                    },
+                    "size": {
+                        "x": 0.39858187385630606,
+                        "y": 0.07199531353,
+                        "z": 0.10218687835205026
+                    }
+                },
+                {
+                    "id": 9,
+                    "name": "3 cái cốc",
+                    "category_id": 0,
+                    "description": "",
+                    "status": "draft",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/3cups2/",
+                    "file": "model.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/b3cups2.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/3cups2/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "options": {
+                            "pivot": {
+                                "x": "center",
+                                "y": "center",
+                                "z": "center"
+                            }
+                        },
+                        "props": {
+                            "castShadow": true,
+                            "receiveShadow": true,
+                            "position": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "rotation": {
+                                "x": 0,
+                                "y": 1.5707963267948966,
+                                "z": 0
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        },
+                        "meshes": [
+                            {
+                                "name": "Cylinder001",
+                                "sid": "cylinder001_0",
+                                "index": 0,
+                                "title": "Cylinder001",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Mat_coc",
+                                "sid": "mat_coc_1",
+                                "index": 1,
+                                "title": "Mat_coc",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Cylinder002",
+                                "sid": "cylinder002_2",
+                                "index": 2,
+                                "title": "Cylinder002",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Mat_coc001",
+                                "sid": "mat_coc001_3",
+                                "index": 3,
+                                "title": "Mat_coc001",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Cylinder003",
+                                "sid": "cylinder003_4",
+                                "index": 4,
+                                "title": "Cylinder003",
+                                "data": {},
+                                "editable": []
+                            },
+                            {
+                                "name": "Mat_coc002",
+                                "sid": "mat_coc002_5",
+                                "index": 5,
+                                "title": "Mat_coc002",
+                                "data": {},
+                                "editable": []
+                            }
+                        ]
+                    },
+                    "size": {
+                        "x": 0.13273653537810018,
+                        "y": 0.07707188461,
+                        "z": 0.4382332131217169
+                    }
+                }
+            ]
+        }
+    ],
+    "count": 4,
+    "totalItem": 4,
+    "page": 1,
+    "perPage": 10,
+    "currentPage": 1,
+    "totalPage": 1
+}

@@ -1,0 +1,39 @@
+<div class="folder-navigator">
+  <div class="title">
+    <nz-breadcrumb nzSeparator=">">
+      <nz-breadcrumb-item>
+        <a [routerLink]="['/folders']">Folder</a>
+      </nz-breadcrumb-item>
+      <nz-breadcrumb-item> {{ (currentFolder$ | async)?.name }} </nz-breadcrumb-item>
+    </nz-breadcrumb>
+  </div>
+  <div>
+    <div class="control">
+      <button nz-button nzType="text" nzSize="large" nz-dropdown [nzDropdownMenu]="menu">
+        <i nz-icon nzType="ellipsis" nzTheme="outline"></i>
+      </button>
+      <button nz-button nzType="text" nzSize="large" (click)="onClickBtnCreateFolder()">
+        <i nz-icon nzType="folder-add" nzTheme="outline"></i>
+      </button>
+      <button nz-button nzType="text" nzSize="large"><i nz-icon nzType="upload" nzTheme="outline"></i></button>
+      <button nz-button nzType="text" nzSize="large"><i nz-icon nzType="share-alt" nzTheme="outline"></i></button>
+      <nz-dropdown-menu #menu="nzDropdownMenu">
+        <ul nz-menu>
+          <li nz-menu-item><i nz-icon nzType="edit" nzTheme="outline"></i> Rename</li>
+          <li nz-menu-item><i nz-icon nzType="delete" nzTheme="outline"></i> Delete folder</li>
+        </ul>
+      </nz-dropdown-menu>
+    </div>
+  </div>
+</div>
+
+<h2>{{ (currentFolder$ | async)?.name }}</h2>
+
+<div class="folders" nz-row [nzGutter]="16">
+  <div class="folder" *ngFor="let folder of folders$ | async" nz-col [nzSpan]="6">
+    <a [routerLink]="['/folders', folder.id]">
+      <div class="feature"></div>
+      <div class="name">{{ folder.name }}</div>
+    </a>
+  </div>
+</div>

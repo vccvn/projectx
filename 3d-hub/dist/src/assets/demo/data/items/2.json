@@ -1,0 +1,211 @@
+{
+    "id": 2,
+    "name": "Túi Xách Giấy",
+    "category_id": 2,
+    "description": "",
+    "status": "draft",
+    "type": "gltf",
+    "path": "https://threejs.vcc.vn/models/gltf/set20-2/",
+    "file": "scene.gltf",
+    "download_source_url": "https://threejs.vcc.vn/zip/set20.zip",
+    "thumbnail": "https://threejs.vcc.vn/models/gltf/set20/thumbnail.png",
+    "load_options": {
+        "useRoughnessMipmapper": true,
+        "materialNeedsUpdate": true
+    },
+    "settings": {
+        "options": {
+            "pivot": {
+                "x": "center",
+                "y": "center",
+                "z": "center"
+            }
+        },
+        "props": {
+            "castShadow": true,
+            "receiveShadow": true,
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "x": 0,
+                "y": 1.5707963267948966,
+                "z": 0
+            },
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            }
+        },
+        "meshes": [
+            {
+                "name": "mesh_0",
+                "sid": "mesh_0_0",
+                "index": 0,
+                "title": "mesh_0",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "mesh_1",
+                "sid": "mesh_1_1",
+                "index": 1,
+                "title": "mesh_1",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "mesh_2",
+                "sid": "mesh_2_2",
+                "index": 2,
+                "title": "mesh_2",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "mesh_3",
+                "sid": "mesh_3_3",
+                "index": 3,
+                "title": "mesh_3",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "mesh_4",
+                "sid": "mesh_4_4",
+                "index": 4,
+                "title": "mesh_4",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "mesh_5",
+                "sid": "mesh_5_5",
+                "index": 5,
+                "title": "mesh_5",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "mesh_6",
+                "sid": "mesh_6_6",
+                "index": 6,
+                "title": "mesh_6",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "mesh_7",
+                "sid": "mesh_7_7",
+                "index": 7,
+                "title": "mesh_7",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "mesh_8",
+                "sid": "mesh_8_8",
+                "index": 8,
+                "title": "mesh_8",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "mesh_9",
+                "sid": "mesh_9_9",
+                "index": 9,
+                "title": "mesh_9",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "mesh_10",
+                "sid": "mesh_10_10",
+                "index": 10,
+                "title": "mesh_10",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "mesh_11",
+                "sid": "mesh_11_11",
+                "index": 11,
+                "title": "mesh_11",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "mesh_12",
+                "sid": "mesh_12_12",
+                "index": 12,
+                "title": "mesh_12",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "mesh_13",
+                "sid": "mesh_13_13",
+                "index": 13,
+                "title": "mesh_13",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "mesh_14",
+                "sid": "mesh_14_14",
+                "index": 14,
+                "title": "mesh_14",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "mesh_15",
+                "sid": "mesh_15_15",
+                "index": 15,
+                "title": "mesh_15",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "mesh_16",
+                "sid": "mesh_16_16",
+                "index": 16,
+                "title": "mesh_16",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "mesh_17",
+                "sid": "mesh_17_17",
+                "index": 17,
+                "title": "mesh_17",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "mesh_18",
+                "sid": "mesh_18_18",
+                "index": 18,
+                "title": "mesh_18",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "mesh_19",
+                "sid": "mesh_19_19",
+                "index": 19,
+                "title": "mesh_19",
+                "data": {},
+                "editable": []
+            }
+        ]
+    },
+    "size": {
+        "x": 0.12652817334668312,
+        "y": 0.4160888765815892,
+        "z": 0.25336579792201525
+    }
+}

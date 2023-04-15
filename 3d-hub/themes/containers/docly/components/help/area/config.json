@@ -1,0 +1,16 @@
+{
+    "name": "Help: Area",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề (Tùy chọn)"
+        },
+        "boder_bottom": {
+            "type": "switch",
+            "label": "Border",
+            "value_type": "boolean",
+            "check_label": "Hiển thị border bottom"
+        }
+
+    }
+}

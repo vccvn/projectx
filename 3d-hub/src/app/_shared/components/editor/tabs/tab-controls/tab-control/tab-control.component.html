@@ -1,0 +1,20 @@
+<div class="tab-inner">
+    <div class="tab-header">
+        <h3>Controls</h3>
+    </div>
+    <div class="store">
+        <div class="inputs">
+            <inp-switch-group name="enabled" [(value)]="controls.enabled" label="Enable" (subcribe)="updateControlSetting($event)" class="inp-group-item-first"></inp-switch-group>
+            <inp-switch-group name="autoUpdateScene" [(value)]="controls.autoUpdateScene" label="Auto Update Scene" (subcribe)="updateControlSetting($event)" class="inp-group-item" *ngIf="controls.enabled"></inp-switch-group>
+            <inp-switch-group name="enableRotate" [(value)]="controls.enableRotate" label="Rotate" (subcribe)="updateControlSetting($event)" class="inp-group-item" *ngIf="controls.enabled"></inp-switch-group>
+            <inp-switch-group name="enableZoom" [(value)]="controls.enableZoom" label="Zoom" (subcribe)="updateControlSetting($event)" class="inp-group-item" *ngIf="controls.enabled"></inp-switch-group>
+            <inp-number-group name="maxDistance" [(value)]="controls.maxDistance" label="Max Distance" (subcribe)="updateControlSetting($event)" [min]="0.1" [max]="10000" [step]="0.1" class="inp-group-item" *ngIf="controls.enabled && controls.enableZoom"></inp-number-group>
+            <inp-switch-group name="enableDamping" [(value)]="controls.enableDamping" label="Damping" (subcribe)="updateControlSetting($event)" class="inp-group-item" *ngIf="controls.enabled && (controls.enableRotate || controls.enableZoom)"></inp-switch-group>
+            <inp-switch-group name="highPerformance" [(value)]="controls.highPerformance" label="High-Performance" (subcribe)="updateControlSetting($event)" class="inp-group-item" *ngIf="controls.enabled && (controls.enableRotate || controls.enableZoom)"></inp-switch-group>
+            <inp-switch-group name="enablePan" [(value)]="controls.enablePan" label="Pan" (subcribe)="updateControlSetting($event)" class="inp-group-item" *ngIf="controls.enabled"></inp-switch-group>
+            <!-- <inp-number-group name="minDistance" [(value)]="controls.minDistance" label="Min Distance" (subcribe)="updateControlSetting($event)" [min]="0.1" [max]="10000" [step]="0.1"></inp-number-group> -->
+            
+            
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+{
+    "name": "Home: Dịch vụ (Service Item)",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề "
+        },
+        "description": {
+            "type": "textarea",
+            "label":"Mô tả",
+            "placeholder": "Viết gì đó...",
+            "className": "auto-height"
+        },
+        "link": {
+            "type": "text",
+            "label": "Đường dẫn"
+        },
+        "icon": {
+            "type": "text",
+            "label": "Biểu tượng (ti-...)",
+            "template": "iconpicker"
+        }
+        
+    }
+}

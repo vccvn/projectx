@@ -1,0 +1,76 @@
+{
+    "name": "Khách hàng",
+    "package": "clients",
+    "use_trash": false,
+    "titles": {
+        "default": "Danh sách Khách hàng",
+        "trash": "Danh sách Khách hàng đã xóa"
+    },
+    "data": {
+        
+    },
+    "filter":{
+        "general_columns":{
+            "name":"Họ và tên",
+            "email": "Email",
+            "phone_number": "Số điện thoại"
+        },
+        "search_columns": {
+            "address": "Địa chỉ"
+        },
+        "sort_columns": {
+            "id": "Mã khách"
+        }
+    },
+    "table": {
+        "class": "header-center",
+        "columns": [
+            {
+                "title": "Mã",
+                "class": "text-center",
+                "text": ":id"
+            },
+            {
+                "title":"Avatar",
+                "class":"text-center",
+                "template":"<a href=\"{@route}\"><img src=\"{@getAvatar}\" class=\"image-thumbnail\" alt=\"{title}\"></a>",
+                "data":{
+                    "@route": [".update", {"id": ":id"}],
+                    "@getAvatar":[]
+                }
+            },
+            {
+                "title": "Họ và tên",
+                "class": "min-160 text-center",
+                "template": "<a href=\"{@route}\">{name}</a>",
+                "data": {
+                    "@eoute":[".update", {"id": ":id"}],
+                    "id": ":id"
+                }
+            },
+            {
+                "title": "Email",
+                "class": "min-160 max-250 text-center",
+                "template": "<a href=\"mailto:{email}\">{email}</a>"
+            },
+            {
+                "title": "Số điện thoại",
+                "class": "min-100 text-center",
+                "template": "<a href=\"tel:{@getAttr}\">{phone_number}</a>",
+                "data":{
+                    "@getAttr":["phone_number", "0945786960"]
+                }
+            },
+            {
+                "title": "Địa chỉ",
+                "class": "min-160 max-250",
+                "text": ":address"
+            }
+        ]
+    },
+    "resources":{
+        "js_data":{},
+        "js":[],
+        "css":[]
+    }
+}

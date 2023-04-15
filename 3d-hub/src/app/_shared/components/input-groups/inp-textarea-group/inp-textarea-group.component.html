@@ -1,0 +1,4 @@
+<div class="inner-box">{{label?label:name | translate}}</div>
+<div class="input-wrapper">
+    <inp-textarea [name]="name" [placeholder]="placeholder" [(value)]="value" (subcribe)="onChange($event)" [minRows]="minRows" [maxRows]="maxRows"></inp-textarea>
+</div>

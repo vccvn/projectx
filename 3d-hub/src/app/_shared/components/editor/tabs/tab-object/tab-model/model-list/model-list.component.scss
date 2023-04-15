@@ -1,0 +1,26 @@
+:host{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.model-list-header{
+    display: flex;
+    h4 {
+        color: #fff;
+    }
+    .list-more{
+        margin-left: auto;
+    }
+}
+
+.model-list-body{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+    model-item{
+        width: 33.3333333333333333333%;
+        cursor: grab;
+        
+        
+    }
+}

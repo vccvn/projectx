@@ -1,0 +1,50 @@
+{
+    "name": "Quotes - Trích dẫn",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề"
+        },
+        "description": {
+            "type": "textarea",
+            "label":"Nội dung",
+            "placeholder": "Viết gì đó...",
+            "className": "auto-height"
+        },
+        "show_quote": {
+            "type": "switch",
+            "label": "Đánh dấu",
+            "value_type": "boolean",
+            "check_label": "Hiển thị Đánh dấu trích dẫn"
+        },
+        "image": {
+            "type": "file",
+            "label": "Ảnh nổi bật"
+        },
+        "light_title": {
+            "type": "text",
+            "label": "Tiêu đề chìm (Tùy chọn)"
+        },
+        "show_author": {
+            "type": "switch",
+            "label": "tác giả",
+            "value_type": "boolean",
+            "check_label": "Hiển thị Thông tin tác giả"
+        },
+        "author_name": {
+            "type": "text",
+            "label": "Tên"
+        },
+        "author_job": {
+            "type": "text",
+            "label": "Công việc"
+        },
+        "author_link": {
+            "type": "text",
+            "label": "liên kết (Tùy chọn)"
+        }
+        
+
+        
+    }
+}

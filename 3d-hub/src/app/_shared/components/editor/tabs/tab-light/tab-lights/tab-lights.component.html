@@ -1,0 +1,28 @@
+<div class="tab-inner" [class.height-50]="height50">
+    <div class="tab-header">
+        <h3>Light</h3>
+        <div class="btns">
+            <button nz-button nz-dropdown nzTrigger="click" [nzDropdownMenu]="menu">
+                <span>+</span>
+                <i nz-icon nzType="down"></i>
+            </button>
+            <nz-dropdown-menu #menu="nzDropdownMenu">
+                <ul nz-menu>
+                    <li nz-menu-item *ngFor="let name of lightTemplates; let i=index" (click)="addLight(name)">{{name}}</li>
+                </ul>
+            </nz-dropdown-menu>
+        </div>
+    </div>
+    <div class="tab-body store">
+        <ng-container *ngIf="lights.length; then lightList; else noLight"></ng-container>
+        <ng-template #lightList>
+            <tab-light-item *ngFor="let light of lights; let i=index" [light]="light" (clickDelete)="deleteLight($event)" (clickLight)="clickLight($event)"></tab-light-item>
+        </ng-template>
+        <ng-template #noLight>
+            <div class="alert">
+                there are no Light
+            </div>
+        </ng-template>
+
+    </div>
+</div>

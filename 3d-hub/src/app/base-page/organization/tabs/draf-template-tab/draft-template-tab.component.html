@@ -1,0 +1,14 @@
+<nz-upload [nzAction]="url" [nzHeaders]="headers">
+  <button nz-button nzType="primary"><i nz-icon nzType="upload"></i>Click to Upload</button>
+</nz-upload>
+
+<div class="inner-tab">
+  <app-carousel
+    [items]="templates$ | async"
+    [loading]="loading$ | async"
+    [name]="'Upload Template'"
+    (loadMore)="onLoadMore()"
+    [type]="'template'"
+  >
+  </app-carousel>
+</div>

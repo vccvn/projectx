@@ -1,0 +1,10 @@
+{
+    "status_list": {
+        "draft": "Draft",
+        "published": "Công khai"
+    },
+    "supported_file_extensions": [
+        "gltf", "glb", "stl", "obj", "fbx", "json", "fbx", "zip", "mtl"
+    ]
+
+}

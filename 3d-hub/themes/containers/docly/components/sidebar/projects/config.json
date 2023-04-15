@@ -1,0 +1,30 @@
+{
+    "name": "Sidebar: Danh sách dự án",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề (Tùy chọn)",
+            "default": "Các dự án"
+        },
+        
+        "category_id": {
+            "type": "crazyselect",
+            "label": "Danh mục",
+            "template": "crazyselect",
+            "call": "get_project_category_options",
+            "@label-type": "value"
+        },
+        "sorttype": {
+            "type": "select",
+            "label": "kiểu sắp xếp",
+            "call": "get_project_sortby_options"
+        },
+        "project_number": {
+            "type": "number",
+            "label": "Số dự án",
+            "min": 1,
+            "step": 1,
+            "default": 10
+        }
+    }
+}

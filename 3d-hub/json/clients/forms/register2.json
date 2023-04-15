@@ -1,0 +1,82 @@
+{
+    "inputs": {
+        "last_name": {
+            "type": "text",
+            "label": "Họ",
+            "placeholder": "Họ",
+            "required": "true"
+        },
+        "first_name": {
+            "type": "text",
+            "label": "Tên",
+            "placeholder": "Tên",
+            "required": "true"
+        },
+        "email": {
+            "type": "email",
+            "label": "Địa chỉ E-mail",
+            "placeholder": "Email",
+            "required": "true",
+            "prepend_text": "<i class=\"fa fa-envelope\"></i>"
+        },
+        "phone_number": {
+            "type": "text",
+            "label": "Số điện thoại",
+            "placeholder": "Só điện thoại",
+            "required": "true"
+        },
+        "username": {
+            "type": "text",
+            "label": "Tên đăng nhập",
+            "placeholder": "Tên tài khoản",
+            "required": "true",
+            "prepend_text": "<i class=\"fa fa-user\"></i>"
+        },
+        "password": {
+            "type": "password",
+            "label": "Mật khẩu",
+            "placeholder": "Mật khẩu",
+            "prepend_text": "<i class=\"fa fa-key\"></i>"
+        },
+        "password_confirmation": {
+            "type": "password",
+            "text": "Mật khẩu xác xác nhận",
+            "placeholder": "Nhập lại mật khẩu",
+            "prepend_text": "<i class=\"fa fa-key\"></i>"
+        },
+        "web_type": {
+            "type": "select",
+            "text": "Gói dịch vụ",
+            "required": "true",
+            "call": "get_system_config",
+            "params": [
+                "web_type_list"
+            ],
+            "default": "user"
+        },
+        "domain": {
+            "type": "select",
+            "label": "Miền chính",
+            "data": "get_cfg_domain_options"
+        },
+        "subdomain": {
+            "type": "text",
+            "text": "Tên miền con",
+            "required": "true",
+            "placeholder": "Sub Domain. ví dụ: domain",
+            "append_group": [
+                "domain"
+            ]
+        },
+        "alias_domain": {
+            "type": "text",
+            "text": "Tên miền Alias",
+            "placeholder": "Ví dụ: domain.com.vn"
+        },
+        "agree": {
+            "type": "checkbox",
+            "text": "Đồng ý với các điều khoản",
+            "check_label": "Tôi đã đọc và đồng ý với các điều khoản của trang web"
+        }
+    }
+}

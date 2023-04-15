@@ -1,0 +1,104 @@
+{
+    "name": "Home: Team (area)",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề (Tùy chọn)"
+        },
+        "description": {
+            "type": "textarea",
+            "label": "Mô tả",
+            "placeholder": "Viết gì đó...",
+            "className": "auto-height"
+        },
+        "list_type": {
+            "type": "radio",
+            "label": "Kiểu danh sách",
+            "data": {
+                "data": "Trong bảng Nhóm",
+                "custom": "Danh sách tùy biến"
+            },
+            "value": "custom"
+        },
+        "team_id": {
+            "type": "crazyselect",
+            "label": "Nhóm",
+            "call": "get_team_options",
+            "params": [
+                [],
+                "Chọn nhóm"
+            ]
+        },
+        "item_number": {
+            "type": "number",
+            "label": "Số lượng",
+            "value": 4
+        },
+        "sort_type": {
+            "type": "crazyselect",
+            "label": "Sắp xếp",
+            "data": {
+                "id-ASC": "Mặc định",
+                "id-DESC": "Mới nhất",
+                "users.name-ASC": "thứ tự bảng chự cái",
+                "is_leader-DESC": "Ưu tiên trưởng nhóm",
+                "job-ASC": "Công việc (A-z)",
+                "rand()": "Ngẫu nhiên"
+            },
+            "value": "id-ASC"
+        },
+
+        "bg_default_color": {
+            "type": "radio",
+            "label": "Màu có sẵn",
+            "data":{
+                "": "Không",
+                "gray": "Gray",
+                "light": "Light",
+                "theme-small": "Theme Small",
+                "theme": "Theme"
+            }
+        },
+        "bg_color": {
+            "type": "text",
+            "label":"Mã màu (Tùy chọn)",
+            "placeholder": "Nhập mã màu..."
+        },
+        "bg_image": {
+            "type": "file",
+            "label": "Hình nền (Tùy chọn)"
+        },
+        "bg_position":{
+            "type": "radio",
+            "label": "Vị trí ảnh",
+            "data": {
+                "": "Không",
+                "cover": "cover",
+                "contain": "contain",
+                "fixed": "fixed"
+            }
+        },
+        "bg_half": {
+            "type": "switch",
+            "label": "Bg Half",
+            "check_label": "Hiển thị một nửa hình nền",
+            "value_type": "boolean"
+        },
+        "advance": {
+            "type": "checklist",
+            "label": "Nâng cao",
+            "data": {
+                "shadow":"shadow",
+                "dark":"dark",
+                "dark-hard": "dark-hard",
+                "light": "light",
+                "theme": "theme",
+                "theme-hard": "theme-hard"
+            }
+        },
+        "class_name": {
+            "type": "text",
+            "label": "Class (Tùy chọn)"
+        }
+    }
+}

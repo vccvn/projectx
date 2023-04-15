@@ -1,0 +1,2 @@
+[2022-10-28 18:23:10] ip: 198.235.24.173, OS: Unknown OS Platform, Brower: Unknown Browser, path: /
+[2022-10-28 23:39:42] ip: 209.141.41.193, OS: Mac OS X, Brower: Chrome, path: /

@@ -1,0 +1,25 @@
+<div class="tab-inner">
+    <h2>{{ 'Settings' | translate }}</h2>
+    <nz-tabset nzTabPosition="top" nzType="line" class="sub-tab">
+
+        <nz-tab [nzTitle]="iconInfo">
+            <ng-template #iconInfo>
+                <img src="/assets/icons/new-design/tab-sub/info.svg" alt="Info" />
+                <div>Info</div>
+            </ng-template>
+            <app-tab-editor-info class="tab-info"></app-tab-editor-info>
+        </nz-tab>
+
+        <!-- <nz-tab [nzTitle]="iconForeground">
+          <ng-template #iconForeground>
+            <img src="/assets/icons/new-design/tab-sub/foreground.svg" alt="Foreground" />
+            <div>Foreground</div>
+          </ng-template>
+          <ng-template nz-tab>
+            <app-tab-foreground></app-tab-foreground>
+          </ng-template>
+        </nz-tab> -->
+
+    </nz-tabset>
+
+</div>

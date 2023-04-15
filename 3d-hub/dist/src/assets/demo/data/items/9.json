@@ -1,0 +1,99 @@
+{
+    "id": 9,
+    "name": "3 cái cốc",
+    "category_id": 0,
+    "description": "",
+    "status": "draft",
+    "type": "gltf",
+    "path": "https://threejs.vcc.vn/models/gltf/3cups2/",
+    "file": "model.gltf",
+    "download_source_url": "https://threejs.vcc.vn/zip/b3cups2.zip",
+    "thumbnail": "https://threejs.vcc.vn/models/gltf/3cups2/thumbnail.png",
+    "load_options": {
+        "useRoughnessMipmapper": true,
+        "materialNeedsUpdate": true
+    },
+    "settings": {
+        "options": {
+            "pivot": {
+                "x": "center",
+                "y": "center",
+                "z": "center"
+            }
+        },
+        "props": {
+            "castShadow": true,
+            "receiveShadow": true,
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "x": 0,
+                "y": 1.5707963267948966,
+                "z": 0
+            },
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            }
+        },
+        "meshes": [
+            {
+                "name": "Cylinder001",
+                "sid": "cylinder001_0",
+                "index": 0,
+                "title": "Cylinder001",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "Mat_coc",
+                "sid": "mat_coc_1",
+                "index": 1,
+                "title": "Mat_coc",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "Cylinder002",
+                "sid": "cylinder002_2",
+                "index": 2,
+                "title": "Cylinder002",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "Mat_coc001",
+                "sid": "mat_coc001_3",
+                "index": 3,
+                "title": "Mat_coc001",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "Cylinder003",
+                "sid": "cylinder003_4",
+                "index": 4,
+                "title": "Cylinder003",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "Mat_coc002",
+                "sid": "mat_coc002_5",
+                "index": 5,
+                "title": "Mat_coc002",
+                "data": {},
+                "editable": []
+            }
+        ]
+    },
+    "size": {
+        "x": 0.13273653537810018,
+        "y": 0.07707188461,
+        "z": 0.4382332131217169
+    }
+}

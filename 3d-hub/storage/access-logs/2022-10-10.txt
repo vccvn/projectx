@@ -1,0 +1,2 @@
+[2022-10-10 13:14:59] ip: 216.158.234.205, OS: Linux, Brower: Unknown Browser, path: /core/.env
+[2022-10-10 22:58:42] ip: 209.141.36.112, OS: Mac OS X, Brower: Chrome, path: /

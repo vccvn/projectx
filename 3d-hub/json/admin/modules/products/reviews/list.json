@@ -1,0 +1,68 @@
+{
+    "name": "Đánh giá Đánh giá",
+    "package": "products.reviews",
+    "use_trash": false,
+    "titles": {
+        "default": "Danh sách Đánh giá",
+        "trash": "Danh sách đã xóa"
+    },
+    "data": {},
+    "filter": {
+        "search_columns": {
+            "title": "Tiêu đề",
+            "product_name": "Tên sản phầm",
+            "customer_name": "Tên khách hàng",
+            "customer_email": "Email khách hàng"
+        },
+        "sort_columns": {
+            "title": "Tiêu đề",
+            "product_name": "Tên sản phầm",
+            "customer_name": "Tên khách hàng",
+            "customer_email": "Email khách hàng",
+            "rating": "điểm đánh giá"
+        }
+    },
+    "table": {
+        "class": "list-center",
+        "columns": [
+            {
+                "title": "Tên khách hàng",
+                "class": "min-160",
+                "text": "@getReviewerName"
+            },
+            {
+                "title": "Email",
+                "class": "min-100 max-250 text-center",
+                "template": "<a href=\"mailto:{@getReviewerEmail}\">{@getReviewerEmail}</a>",
+                "data": {
+                    "@getReviewerEmail": []
+                }
+            },
+            {
+                "title": "Tên sản phẩm",
+                "class": "min-100",
+                "text": ":product_name"
+            },
+            {
+                "title": "Đánh giá",
+                "class": "min-100 max-250",
+                "template": "{@str_limit}",
+                "data": {
+                    "@str_limit": [
+                        ":comment",
+                        100
+                    ]
+                }
+            },
+            {
+                "title": "Cếp hạng",
+                "text": ":rating"
+            }
+        ]
+    },
+    "resources": {
+        "js_data": {},
+        "js": [],
+        "css": []
+    }
+}

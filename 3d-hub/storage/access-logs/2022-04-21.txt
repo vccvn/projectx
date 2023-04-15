@@ -1,0 +1,4 @@
+[2022-04-21 03:48:54] ip: 46.28.108.153, OS: Linux, Brower: Chrome, path: /vendor/.env
+[2022-04-21 03:48:56] ip: 46.28.108.153, OS: Linux, Brower: Chrome, path: /storage/.env
+[2022-04-21 03:49:00] ip: 46.28.108.153, OS: Linux, Brower: Chrome, path: /public/.env
+[2022-04-21 07:45:02] ip: 174.138.62.192, OS: Mac OS X, Brower: Chrome, path: /

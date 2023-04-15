@@ -1,0 +1,51 @@
+{
+    "inputs":{
+        "name": { "type": "text", "text": "Họ tên", "placeholder":"Nhập họ tên", "required":"true"},
+        "email": { "type": "email", "text": "Địa chỉ E-mail", "required":"true" , "prepend_text":"<i class=\"fa fa-envelope\"></i>"},
+        "username": { "type": "text", "text": "Tên đăng nhập", "required":"true", "prepend_text":"<i class=\"fa fa-user\"></i>"},
+        "phone_number": { "type": "text", "text": "Số diện thoại", "prepend_text":"<i class=\"fa fa-phone\"></i>"},
+        "password": {"type":"password", "text":"Mật khẩu", "placeholder": "Nhập mật khẩu", "prepend_text":"<i class=\"fa fa-key\"></i>"},
+        "password_confirmation": {"type":"password", "text":"Mật khẩu xác xác nhận", "placeholder": "Nhập lại mật khẩu", "prepend_text":"<i class=\"fa fa-key\"></i>"},
+        "avatar": { "type": "file", "text": "Hình đại diện", "template":"cropit", "data-width": 300, "data-height":300},
+        "status": { "type": "crazyselect", "text": "Trạng thái", "required":"true", "func":"get_user_config", "params":["status_list"], "template":"deepselect" }
+    },
+    "config":{
+        "name": "Thông tin người dùng",
+        "layout_type": "column",
+        "form_groups": [
+            {
+                "title": "Th\u00f4ng tin c\u00e1 nh\u00e2n",
+                "class": "col-md-7",
+                "inputs": [
+                    "name",
+                    "username",
+                    "email",
+                    "phone_number"
+                    
+                ]
+            },
+            {
+                "class": "col-md-5",
+                "inputs": [
+                    "avatar"
+                ]
+            },
+            {
+                "title": "Mật khẩu",
+                "class": "col-md-6",
+                "inputs": [
+                    "password",
+                    "password_confirmation"
+                ]
+            },
+            {
+                "title": "Th\u00f4ng tin kh\u00e1c",
+                "class": "col-md-6",
+                "inputs": [
+                    "status"
+                ]
+            }
+            
+        ]
+    }
+}

@@ -1,0 +1,42 @@
+<div class="tab-inner">
+    <div class="tab-header">
+        <h3>Scene Settings</h3>
+    </div>
+    <div class="store">
+        <div class="inputs group group-border">
+            <h4>Size</h4>
+            <inp-number-group name="width" [(value)]="sceneSize.width" label="Width (x)" (subcribe)="updateSize($event)" [min]="0.1" [max]="1000" [step]="0.1" class="inp-group-item-first"></inp-number-group>
+            <inp-number-group name="depth" [(value)]="sceneSize.depth" label="Depth (z)" (subcribe)="updateSize($event)" [min]="0.1" [max]="1000" [step]="0.1" class="inp-group-item"></inp-number-group>
+        </div>
+        <div class="inputs group">
+            <h4>Floor</h4>
+            <inp-number-group name="y" [(value)]="floor.props.position.y" label="Position Y" (subcribe)="updateFloorPosition($event)" [min]="-1000" [max]="1000" [step]="0.001" class="inp-group-item-first"></inp-number-group>
+            <inp-switch-group name="above" [(value)]="floor.above" label="Dropping Object Above Floor" (subcribe)="updateFloor($event)" class="inp-group-item"></inp-switch-group>
+
+            <inp-switch-group name="enableGrid" [(value)]="floor.enableGrid" label="show Grid" (subcribe)="updateFloor($event)" class="inp-group-item"></inp-switch-group>
+            <!-- <inp-switch-group name="enableAxes" [(value)]="floor.enableAxes" label="show Axes" (subcribe)="updateFloor($event)" class="inp-group-item"></inp-switch-group> -->
+
+
+            <inp-switch-group name="enabled" [(value)]="floor.enabled" label="Enable (Show)" (subcribe)="updateFloor($event)" class="inp-group-item"></inp-switch-group>
+            <div *ngIf="floor.enabled">
+                <div class="hr"></div>
+                <h4>Floor size</h4>
+                <inp-number-group name="width" [(value)]="floor.params.width" label="Width (x)" (subcribe)="updateFloorParams($event)" [min]="0.1" [max]="1000" [step]="0.1" class="inp-group-item"></inp-number-group>
+                <inp-number-group name="height" [(value)]="floor.params.height" label="Depth (z)" (subcribe)="updateFloorParams($event)" [min]="0.1" [max]="1000" [step]="0.1" class="inp-group-item"></inp-number-group>
+                
+                <div class="hr"></div>
+                <h4>Floor Shadow</h4>
+                <inp-switch-group name="receiveShadow" [(value)]="floor.props.receiveShadow" label="Receive Shadow" (subcribe)="updateFloorProps($event)" class="inp-group-item"></inp-switch-group>
+                
+                <div class="hr"></div>
+                <h4>Material</h4>
+                <inp-color-group name="color" [(value)]="floor.material.color" label="Color" (subcribe)="updateFloorMaterial($event)" class="inp-group-item"></inp-color-group>
+                <inp-texture-group name="map" [(value)]="floor.material.map" label="Map" (subcribe)="updateFloorMaterial($event)" (onCloseLibrary)="onTextureCancel()" class="inp-group-item"></inp-texture-group>
+                <inp-texture-group name="bumpMap" [(value)]="floor.material.bumpMap" label="Bump Map" (subcribe)="updateFloorMaterial($event)" (onCloseLibrary)="onTextureCancel()" class="inp-group-item"></inp-texture-group>
+                <inp-texture-group name="normalMap" [(value)]="floor.material.normalMap" label="Normal Map" (subcribe)="updateFloorMaterial($event)" (onCloseLibrary)="onTextureCancel()" class="inp-group-item"></inp-texture-group>
+                <inp-switch-group name="transparent" [(value)]="floor.material.transparent" label="Transparent" (subcribe)="updateFloorMaterial($event)" class="inp-group-item"></inp-switch-group>
+                <inp-range-group name="opacity" [(value)]="floor.material.opacity" label="Opacity" (subcribe)="updateFloorMaterial($event)" [min]="0" [max]="1" [step]="0.01" class="inp-group-item"></inp-range-group>
+            </div>
+        </div>
+    </div>
+</div>

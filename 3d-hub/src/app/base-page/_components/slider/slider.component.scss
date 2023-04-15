@@ -1,0 +1,81 @@
+.flicking {
+  width: 100%;
+}
+
+.flicking .panel img {
+  max-width: 100%;
+}
+
+.col-template__header {
+  display: flex;
+  justify-content: space-between;
+  a {
+    color: #262626;
+    &:hover {
+      color: #000;
+    }
+  }
+}
+
+.col-template__body {
+  position: relative;
+}
+
+.control-next {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(20px, -20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  svg {
+    fill: currentcolor;
+    flex-shrink: 0;
+    transition: fill 0.3s ease 0s, transform 0.3s ease 0s;
+    transform: rotate(-90deg);
+  }
+}
+
+.control-prev {
+  position: absolute;
+  top: 50%;
+  transform: translate(-20px, -20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  svg {
+    fill: currentcolor;
+    flex-shrink: 0;
+    transition: fill 0.3s ease 0s, transform 0.3s ease 0s;
+    transform: rotate(90deg);
+  }
+}
+
+.btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(244, 244, 245);
+  box-shadow: rgb(0 0 0 / 16%) 0px 0px 1px, rgb(0 0 0 / 8%) 0px 4px 8px 1px;
+  z-index: 10000;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #fff;
+  }
+}
+
+.btn-big {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: rgb(244, 244, 245);
+  box-shadow: rgb(0 0 0 / 16%) 0px 0px 1px, rgb(0 0 0 / 8%) 0px 4px 8px 1px;
+  z-index: 10000;
+  cursor: pointer;
+  transform: translate(26px, -26px);
+  &:hover {
+    background-color: #fff;
+  }
+}

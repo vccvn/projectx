@@ -1,0 +1,27 @@
+{
+    "area_id": {
+        "type": "crazyselect",
+        "label": "Vị trí",
+        "template": "crazyselect"
+    },
+    "label": {
+        "type": "text",
+        "label": "",
+        "placeholder": "nhập "
+    },
+    "slug": {
+        "type": "text",
+        "label": "",
+        "placeholder": "nhập "
+    },
+    "code": {
+        "type": "text",
+        "label": "",
+        "placeholder": "nhập "
+    },
+    "status": {
+        "type": "text",
+        "label": "",
+        "placeholder": "nhập "
+    }
+}

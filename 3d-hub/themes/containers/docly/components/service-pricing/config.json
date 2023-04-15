@@ -1,0 +1,29 @@
+{
+    "name": "Bảng giá dịch vụ",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề"
+        },
+        "sub_title": {
+            "type": "text",
+            "label": "Tiêu đề phụ"
+        },
+        "description": {
+            "type": "textarea",
+            "label":"Mô tả",
+            "placeholder": "Viết gì đó...",
+            "className": "auto-height"
+        },
+        "service_id": {
+            "type": "checklist",
+            "label": "Các gói dịch vụ",
+            "call": "get_service_options"
+        },
+        "active_type": {
+            "type": "select",
+            "label": "Kích hoạt theo loại",
+            "call": "get_service_package_type_options"
+        }
+    }
+}

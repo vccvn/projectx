@@ -1,0 +1,74 @@
+{
+    "inputs":{
+        "name": { "type": "text", "label": "Họ tên", "placeholder":"Nhập họ tên", "required":"true"},
+        "first_name": { "type":"text", "label": "Họ và tên", "required":"true", "placeholder":"Tên", "prepend_group":["last_name"]},
+        "last_name": { "type":"text", "label": "họ và đệm", "required":"true", "placeholder":"Họ"},
+        "gender": { "type":"radio", "label": "Giới tính", "required":"true", "data":{"male":"Nam", "female":"Nữ"}, "default":"male" },
+        "birthday": { "type":"dateselect", "label": "Sinh nhật", "required":"true", "template":"date", "placeholder":"Nhập ngày sinh", "@year-params": ["vi", "current", -70]},
+        "address": { "type": "textarea", "label": "Địa chỉ", "placeholder":"Nhập địa chỉ..."},
+        "email": { "type": "email", "label": "Địa chỉ E-mail", "required":"true" , "prepend_text":"<i class=\"fa fa-envelope\"></i>"},
+        "username": { "type": "text", "label": "Tên đăng nhập", "required":"true", "prepend_text":"<i class=\"fa fa-user\"></i>"},
+        "phone_number": { "type": "text", "label": "Số diện thoại", "prepend_text":"<i class=\"fa fa-phone\"></i>"},
+        "current_password": {"type":"password", "label":"Mật khẩu hiện tại", "placeholder": "Nhập mật khẩu Hiện tại", "prepend_text":"<i class=\"fa fa-key\"></i>", "required": "true"},
+        "password": {"type":"password", "label":"Mật khẩu Mới", "placeholder": "Bỏ qua nếu không muốn thay đổi", "prepend_text":"<i class=\"fa fa-key\"></i>"},
+        "password_confirmation": {"type":"password", "label":"Mật khẩu xác xác nhận", "placeholder": "Bỏ qua nếu không muốn thay đổi", "prepend_text":"<i class=\"fa fa-key\"></i>"},
+        "avatar": { "type": "file", "label": "Hình đại diện", "template":"cropit", "data-width": 400, "data-height":400},
+        "status": { "type": "deepselect", "label": "Trạng thái", "required":"true", "func":"get_user_config", "params":["status_list"], "template":"deepselect" }
+    },
+    "config":{
+        "name": "Profile",
+        "layout_type": "tab",
+        "form_type": "multiform",
+        "tabs": {
+            "info": {
+                "title": "Thông tin cơ bản",
+                "route": "admin.account.info",
+                "config": {
+                    "layout_type": "column",                    
+                    "form_groups": [
+                        {
+                            "title": "Th\u00f4ng tin c\u00e1 nh\u00e2n",
+                            "class": "col-md-6",
+                            "inputs": [
+                                "name"
+                            ]
+                        },
+                        {
+                            "class": "col-md-6",
+                            "inputs": [
+                                "avatar"
+                            ]
+                        }
+                    ]
+                }
+            },
+            "security": {
+                "title": "Tài khoản",
+                "route": "admin.account.security",
+                "config": {
+                    "layout_type": "column",
+                    "form_groups": [
+                        {
+                            "title": "Tài khoản và mật khẩu",
+                            "class": "col-md-6",
+                            "inputs": [
+                                "email",
+                                "username",
+                                "phone_number"
+                            ]
+                        },
+                        {
+                            "class": "col-md-6",
+                            "inputs": [
+                                "current_password",
+                                "password", 
+                                "password_confirmation"
+                            ]
+                        }
+                    ]
+                }
+                
+            }
+        }
+    }
+}

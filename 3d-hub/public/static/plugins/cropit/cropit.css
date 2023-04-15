@@ -1,0 +1,87 @@
+.cropit-editor {
+    width: 250px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.cropit-preview {
+    /* You can specify preview size in CSS */
+    width: 250px;
+    height: 250px;
+}
+
+.cropit-preview.cropit-image-loading .spinner {
+    opacity: 1;
+}
+
+
+/* Show move cursor when image has been loaded */
+
+.cropit-preview.cropit-image-loaded .cropit-preview-image-container {
+    cursor: move;
+}
+
+
+/* Gray out zoom slider when the image cannot be zoomed */
+
+.cropit-image-zoom-input[disabled] {
+    opacity: .2;
+}
+
+
+/* The following styles are only relevant to when background image is enabled */
+
+
+/* Translucent background image */
+
+.cropit-preview-background {
+    opacity: .2;
+}
+
+
+/*
+* If the slider or anything else is covered by the background image,
+* use non-static position on it
+*/
+
+input.cropit-image-zoom-input {
+    position: relative;
+}
+
+.cropit-editor .change-icon-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    opacity: 0.4;
+}
+
+.cropit-editor .change-icon-wrapper:hover {
+    opacity: 1;
+}
+
+.cropit-editor .file-select {
+    position: relative;
+}
+
+.cropit-editor .file-select input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 45px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.cropit-editor .file-select .choose-icon {
+    background: rgba(255, 255, 255, 0.7);
+    font-size: 22px;
+    border-radius: 5px;
+    display: inline;
+    padding: 5px 10px;
+}
+
+.cropit-editor .change-icon-wrapper:hover .choose-icon {
+    background: rgba(255, 255, 255, 0.8);
+}

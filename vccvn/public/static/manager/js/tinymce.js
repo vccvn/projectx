@@ -64,7 +64,7 @@ function addTinymceEditor($content) {
                 items: 'openGallery | charmap hr codesample template | pagebreak nonbreaking anchor insertdatetime advlist '
             }
         },
-        extended_valid_elements : 'i[class],span[class]',
+        // extended_valid_elements : 'i[*],span[*]',
     };
     tinymce.init(options);
 
@@ -141,7 +141,6 @@ function addTinymceEditor($content) {
             })
         } else {
             var $editor = tinymce.activeEditor;
-            console.log($editor);
             App.library.open({
                 mode: "many",
                 type: "image",

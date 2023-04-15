@@ -1,0 +1,77 @@
+{
+    "name": "Page Setting item",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề (Tùy chọn)"
+        },
+        "page_id": {
+            "type": "crazyselect",
+            "label": "Trang",
+            "call": "get_page_options"
+        },
+        "list_show_breadcrumb": {
+            "type": "switch",
+            "label": "Breadcrumb",
+            "value_type": "boolean",
+            "check_label": "Hiển thị breadcrumb"
+        },
+        "list_layout": {
+            "type": "radio",
+            "label": "Layout Danh sách",
+            "data": {
+                "grid": "Lưới",
+                "list": "Danh sách"
+            },
+            "default": "grid"
+        },
+        "detail_container": {
+            "type": "radio",
+            "label": "container",
+            "data": {
+                "": "Không",
+                "container": ".container",
+                "container-max": ".container-max",
+                "container-fluid": ".container-fluid"
+
+            },
+            "default": ""
+        },
+        "detail_show_breadcrumb": {
+            "type": "switch",
+            "label": "Breadcrumb",
+            "value_type": "boolean",
+            "check_label": "Hiển thị breadcrumb"
+        },
+        "detail_hide_feature_image": {
+            "type": "switch",
+            "label": "Hide Feature Image",
+            "value_type": "boolean",
+            "check_label": "Ẩn ảnh nổi bật trên phần đầu nội dung"
+        },
+        "detail_hide_meta": {
+            "type": "switch",
+            "label": "Hide Meta",
+            "value_type": "boolean",
+            "check_label": "Ẩn thông tin meta"
+        },
+        "detail_hide_tags": {
+            "type": "switch",
+            "label": "Hide tags",
+            "value_type": "boolean",
+            "check_label": "Ẩn tags"
+        },
+        "detail_hide_share": {
+            "type": "switch",
+            "label": "Hide share buttons",
+            "value_type": "boolean",
+            "check_label": "Ẩn mục chia sẻ"
+        },
+        "detail_hide_comments": {
+            "type": "switch",
+            "label": "Hide Comments",
+            "value_type": "boolean",
+            "check_label": "Ẩn phần bình luận"
+        }
+    }
+}

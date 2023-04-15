@@ -1,0 +1,16 @@
+<div nz-row [nzGutter]="{ xs: 8, sm: 16, md: 24, lg: 32 }" class="input-group">
+    <div nz-col class="gutter-row" [nzSpan]="14">
+        <div class="inner-box">{{config.name | translate}}</div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="5">
+        <div class="inner-box text-right">
+            <label nz-checkbox [(ngModel)]="config.value" (ngModelChange)="valChange($event)"></label>                
+        </div>
+    </div>
+
+    <div nz-col class="gutter-row" [nzSpan]="5">
+        <div class="inner-box">
+            <active-switch [name]="config.name" [(value)]="config.editable" (subcribe)="onEditable($event)" ></active-switch>
+        </div>
+    </div>
+</div>

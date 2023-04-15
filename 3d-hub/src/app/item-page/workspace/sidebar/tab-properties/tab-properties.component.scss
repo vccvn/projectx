@@ -1,0 +1,20 @@
+:host{
+    color: #fff;
+    h1, h2, h3, h4, h5, h6{
+        color: #fff;
+    }
+    h2{
+        padding-left: 10px;
+    }
+}
+.tab-inner{
+    h2{
+        padding-left: 10px;
+    }
+}
+.store {
+    height: calc(100% - 30px) !important;
+    padding-bottom: 20px !important;
+    overflow-x: hidden !important;
+  }
+  

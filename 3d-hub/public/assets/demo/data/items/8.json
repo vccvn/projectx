@@ -1,0 +1,83 @@
+{
+    "id": 8,
+    "name": "4 Cái cốc",
+    "category_id": 3,
+    "description": "",
+    "status": "draft",
+    "type": "gltf",
+    "path": "https://threejs.vcc.vn/models/gltf/4cup/",
+    "file": "model.gltf",
+    "download_source_url": "https://threejs.vcc.vn/zip/4cup.zip",
+    "thumbnail": "https://threejs.vcc.vn/models/gltf/4cup/thumbnail.png",
+    "load_options": {
+        "useRoughnessMipmapper": true,
+        "materialNeedsUpdate": true
+    },
+    "settings": {
+        "options": {
+            "pivot": {
+                "x": "center",
+                "y": "center",
+                "z": "center"
+            }
+        },
+        "props": {
+            "castShadow": false,
+            "receiveShadow": false,
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            }
+        },
+        "meshes": [
+            {
+                "name": "Cylinder001",
+                "sid": "cylinder001_0",
+                "index": 0,
+                "title": "Cylinder001",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "Cylinder002",
+                "sid": "cylinder002_1",
+                "index": 1,
+                "title": "Cylinder002",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "Cylinder003",
+                "sid": "cylinder003_2",
+                "index": 2,
+                "title": "Cylinder003",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "Cylinder004",
+                "sid": "cylinder004_3",
+                "index": 3,
+                "title": "Cylinder004",
+                "data": {},
+                "editable": []
+            }
+        ]
+    },
+    "size": {
+        "x": 0.39858187385630606,
+        "y": 0.07199531353,
+        "z": 0.10218687835205026
+    }
+}

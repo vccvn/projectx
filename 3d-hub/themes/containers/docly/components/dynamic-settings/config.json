@@ -1,0 +1,176 @@
+{
+    "name": "Thiết lập mục đăng bài",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề Thiết lập (Tùy chọn)"
+        },
+        "dynamic_id": {
+            "type": "select",
+            "label": "Mục đăng bài",
+            "call": "get_dynamic_options"
+        },
+        "dynamic_type": {
+            "type": "select",
+            "label": "Loại mục",
+            "data": {
+                "post": "Tin bài",
+                "documentation": "Tài liệu",
+                "forum": "Forum"
+            }
+        },
+        "mobile_menu_id": {
+            "type": "select",
+            "label": "Menu trên mobile",
+            "call": "get_menu_options"
+        },
+        "sidebar_menu_id": {
+            "type": "select",
+            "label": "Menu cho tài liệu",
+            "call": "get_menu_options"
+        },
+        "header_style": {
+            "type": "radio",
+            "label": "Header Style mặc định",
+            "data": {
+                "1": "Style 1",
+                "2": "Style 2",
+                "3": "Style 3"
+            },
+            "default": "2"
+        },
+        "show_breadcrumb": {
+            "type": "switch",
+            "label": "Breadcrumb",
+            "value_type": "boolean",
+            "check_label": "Hiển thị breadcrumb"
+        },
+        "list_layout": {
+            "type": "radio",
+            "label": "Layout Danh sách",
+            "data": {
+                "sidebar": "sidebar",
+                "fullwidth": "fullwidth"
+            },
+            "default": "sidebar"
+        },
+        "list_type": {
+            "type": "radio",
+            "label": "Kiểu Danh sách",
+            "data": {
+                "list": "Danh sách (list)",
+                "grid": "Lưới (grid)"
+            },
+            "default": "grid"
+        },
+        "header_bg_default_color": {
+            "type": "radio",
+            "label": "Màu có sẵn",
+            "data": {
+                "": "Mặc định",
+                "gray": "Gray",
+                "light": "Light",
+                "theme-small": "Theme Small",
+                "theme": "Theme"
+            }
+        },
+        "header_bg_color": {
+            "type": "text",
+            "label": "Mã màu (Tùy chọn)",
+            "placeholder": "Nhập mã màu..."
+        },
+        "header_use_bg_image": {
+            "type": "switch",
+            "label": "Sử dụng hình nền",
+            "value_type": "boolean",
+            "check_label": "Có"
+        },
+        "header_bg_image": {
+            "type": "file",
+            "label": "Hình nền (Tùy chọn)"
+        },
+        "header_bg_position": {
+            "type": "radio",
+            "label": "Vị trí ảnh",
+            "data": {
+                "": "Không",
+                "cover": "cover",
+                "contain": "contain",
+                "fixed": "fixed"
+            }
+        },
+        "header_class_name": {
+            "type": "text",
+            "label": "Class (Tùy chọn)"
+        },
+        "detail_use_feature_image": {
+            "type": "switch",
+            "label": "Header Image",
+            "value_type": "boolean",
+            "check_label": "Sử dụng Feature Image làm hình nền Header"
+        },
+        "detail_hide_feature_image": {
+            "type": "switch",
+            "label": "Hide Feature Image",
+            "value_type": "boolean",
+            "check_label": "Ẩn ảnh nổi bật trên phần đầu nội dung"
+        },
+        "detail_hide_meta": {
+            "type": "switch",
+            "label": "Hide Meta",
+            "value_type": "boolean",
+            "check_label": "Ẩn thông tin meta"
+        },
+        "detail_hide_related": {
+            "type": "switch",
+            "label": "Hide related",
+            "value_type": "boolean",
+            "check_label": "Ẩn mục liên quan"
+        },
+        "detail_hide_comments": {
+            "type": "switch",
+            "label": "Hide Comments",
+            "value_type": "boolean",
+            "check_label": "Ẩn phần bình luận"
+        }
+    },
+    "config": {
+        "name": "Thiết lập mục đăng bài",
+        "layout_type": "single",
+        "form_groups": {
+            "general": {
+                "title": "Thiết lập chung",
+                "inputs": [
+                    "title",
+                    "dynamic_id",
+                    "dynamic_type",
+                    "list_layout",
+                    "list_type"
+                ]
+            },
+            "page_header": {
+                "title": "Thiết lập Page Header",
+                "inputs": [
+                    "header_style",
+                    "show_breadcrumb",
+                    "header_bg_default_color",
+                    "header_bg_color",
+                    "header_use_bg_image",
+                    "header_bg_image",
+                    "header_bg_position",
+                    "header_class_name"
+                ]
+            },
+            "detail": {
+                "title": "Thiết lập Trang chi tiết ",
+                "inputs": [
+                    "detail_use_feature_image",
+                    "detail_hide_feature_image",
+                    "detail_hide_meta",
+                    "detail_hide_related",
+                    "detail_hide_comments"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,5 @@
+<div class="menu-buttons" *ngIf="show">
+    <div class="btn" *ngFor="let btn of buttons; let i=index" title="{{btn.text}}" [class.active]="btn.isActive" (click)="onBtnClick(btn.name)">
+        <i nz-icon nzType="{{btn.icon}}" nzTheme="outline"></i>
+    </div>
+</div>

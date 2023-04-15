@@ -1,0 +1,22 @@
+<div class="tab-inner">
+    <h2>{{ 'Meshes' | translate }}</h2>
+    <div class="setting-form store" *ngIf="isShow">
+        <div class="gridlayout">
+            <nz-collapse>
+                <nz-collapse-panel *ngFor="let mesh of settings.meshes" [nzHeader]="mesh.title?mesh.title:mesh.name" [nzActive]="mesh.active" [nzDisabled]="mesh.disabled">
+                    <mesh-activate-inputs 
+                        [mesh]="mesh" 
+                        [index]="mesh.index"
+                        (onUpdate)="updateMesh($event)" 
+                        (onUpdateTitle)="onUpdateTitle($event)" 
+                        (onUpdateEditable)="updateEditable($event)"
+                       
+                    ></mesh-activate-inputs>
+                </nz-collapse-panel>
+            </nz-collapse>
+
+        </div>
+
+    </div>
+
+</div>

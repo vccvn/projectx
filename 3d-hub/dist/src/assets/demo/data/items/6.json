@@ -1,0 +1,91 @@
+{
+    "id": 6,
+    "name": "2 cái bình",
+    "category_id": 0,
+    "description": "",
+    "status": "draft",
+    "type": "gltf",
+    "path": "https://threejs.vcc.vn/models/gltf/jar/",
+    "file": "scene.gltf",
+    "download_source_url": "https://threejs.vcc.vn/zip/jar.zip",
+    "thumbnail": "https://threejs.vcc.vn/models/gltf/jar/thumbnail.png",
+    "load_options": {
+        "useRoughnessMipmapper": true,
+        "materialNeedsUpdate": true
+    },
+    "settings": {
+        "options": {
+            "pivot": {
+                "x": "center",
+                "y": "center",
+                "z": "center"
+            }
+        },
+        "props": {
+            "castShadow": false,
+            "receiveShadow": false,
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            }
+        },
+        "meshes": [
+            {
+                "name": "Object_2",
+                "sid": "object_2_0",
+                "index": 0,
+                "title": "Object_2",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "Object_3",
+                "sid": "object_3_1",
+                "index": 1,
+                "title": "Object_3",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "Object_4",
+                "sid": "object_4_2",
+                "index": 2,
+                "title": "Object_4",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "Object_5",
+                "sid": "object_5_3",
+                "index": 3,
+                "title": "Object_5",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "Object_6",
+                "sid": "object_6_4",
+                "index": 4,
+                "title": "Object_6",
+                "data": {},
+                "editable": []
+            }
+        ]
+    },
+    "size": {
+        "x": 25.294570721342495,
+        "y": 11.647350906764188,
+        "z": 21.499504158723155
+    }
+}

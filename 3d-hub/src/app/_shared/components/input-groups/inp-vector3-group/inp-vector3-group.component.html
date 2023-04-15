@@ -1,0 +1,23 @@
+<ng-container *ngIf="btnCenter; then centerTemplate; else labelTemplate"></ng-container>
+<ng-template #centerTemplate>
+    <div nz-row [nzGutter]="{ xs: 8, sm: 16, md: 24, lg: 32 }">
+        <div nz-col class="gutter-row" [nzSpan]="16">
+            <div class="label">{{label | translate}}</div>
+        </div>
+        <div nz-col class="gutter-row" [nzSpan]="8">
+            <div class="text-right">
+                <button nz-button nzType="default" [nzSize]="'small'" (click)="setCenter()">Center</button>
+            </div>
+        </div>
+    </div>
+</ng-template>
+<ng-template #labelTemplate>
+    <div class="label">{{label | translate}}</div>    
+</ng-template>
+
+
+<inp-vector3
+    [name]="name"
+    [(value)]="_value"
+    (subcribe)="updateVector($event)"
+></inp-vector3>

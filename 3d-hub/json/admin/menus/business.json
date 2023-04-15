@@ -1,0 +1,231 @@
+{
+    "extends": "base",
+    "data": {
+        "dashboard": {
+            "text": "Bảng điều khiển",
+            "title": "Bảng điều khiển",
+            "route": "admin.dashboard",
+            "icon": "tachometer-alt"
+        },
+        "@modules": ["themes", "settings"],
+        "categories": {
+            "text": "Danh mục 3D",
+            "title": "Quản lý Danh mục 3D",
+            "route": "admin.3d.categories",
+            "icon": "star",
+            "active_key": "3d.categories",
+            "parent": "3d",
+            "submenu": {
+                "type": "list",
+                "data": [
+                    {
+                        "text": "Danh sách",
+                        "title": "Danh sách Danh mục",
+                        "active_key": "list",
+                        "route": "admin.3d.categories.list",
+                        "icon": "list-ul"
+                    },
+                    {
+                        "text": "Thêm mới",
+                        "title": "Thêm mới",
+                        "active_key": "add",
+                        "route": "admin.3d.categories.create",
+                        "icon": "plus-circle"
+                    },
+                    {
+                        "text": "Thùng rác",
+                        "title": "Thùng rác",
+                        "active_key": "trash",
+                        "route": "admin.3d.categories.trash",
+                        "icon": "trash-alt"
+                    }
+                ]
+            }
+        },
+        "models": {
+            "text": "Model 3D",
+            "title": "Quản lý Model 3D",
+            "route": "admin.3d.models",
+            "icon": "briefcase-medical",
+            "parent": "3d",
+            "submenu": {
+                "type": "list",
+                "data": [
+                    {
+                        "text": "Danh sách model",
+                        "title": "Danh sách model",
+                        "active_key": "list",
+                        "route": "admin.3d.models.list",
+                        "icon": "list-ul"
+                    },
+                    {
+                        "text": "Tải lên",
+                        "title": "Tải lên",
+                        "active_key": "upload",
+                        "route": "admin.3d.models.upload",
+                        "icon": "plus-circle"
+                    },
+                    {
+                        "text": "Model đã xóa",
+                        "title": "Thùng rác",
+                        "active_key": "trash",
+                        "route": "admin.3d.models.trash",
+                        "icon": "trash-alt"
+                    }
+                ]
+            }
+        },
+        "templates": {
+            "text": "Template 3D",
+            "title": "Quản lý Template 3D",
+            "route": "admin.3d.templates",
+            "active_key": "3d.templates",
+            "icon": "briefcase-medical",
+            "parent": "3d",
+            "submenu": {
+                "type": "list",
+                "data": [
+                    {
+                        "text": "Danh sách Template",
+                        "title": "Danh sách Template",
+                        "active_key": "list",
+                        "route": "admin.3d.templates.list",
+                        "icon": "list-ul"
+                    },
+                    {
+                        "text": "Tải lên",
+                        "title": "Tải lên",
+                        "active_key": "create",
+                        "route": "admin.3d.templates.create",
+                        "icon": "plus-circle"
+                    },
+                    {
+                        "text": "Template đã xóa",
+                        "title": "Thùng rác",
+                        "active_key": "trash",
+                        "route": "admin.3d.templates.trash",
+                        "icon": "trash-alt"
+                    }
+                ]
+            }
+        },
+        
+        "projects": {
+            "text": "Project 3D",
+            "title": "Quản lý project 3D",
+            "route": "admin.3d.projects",
+            "active_key": "3d.projects",
+            "icon": "briefcase-medical",
+            "parent": "3d",
+            "submenu": {
+                "type": "list",
+                "data": [
+                    {
+                        "text": "Danh sách project",
+                        "title": "Danh sách project",
+                        "active_key": "list",
+                        "route": "admin.3d.projects.list",
+                        "icon": "list-ul"
+                    },
+                    {
+                        "text": "Tải lên",
+                        "title": "Tải lên",
+                        "active_key": "create",
+                        "route": "admin.3d.projects.create",
+                        "icon": "plus-circle"
+                    },
+                    {
+                        "text": "Project đã xóa",
+                        "title": "Thùng rác",
+                        "active_key": "trash",
+                        "route": "admin.3d.projects.trash",
+                        "icon": "trash-alt"
+                    }
+                ]
+            }
+        },
+        
+        "pages": {
+            "text": "Trang",
+            "title": "Quản lý trang",
+            "route": "admin.pages",
+            "icon": "file-word",
+            "submenu": {
+                "type": "list",
+                "data": [
+                    {
+                        "text": "Danh sách",
+                        "title": "Danh sách trang",
+                        "active_key": "list",
+                        "route": "admin.pages.list",
+                        "icon": "list-ul"
+                    },
+                    {
+                        "text": "Thêm mới",
+                        "title": "Thêm mới",
+                        "active_key": "add",
+                        "route": "admin.pages.create",
+                        "icon": "plus-circle"
+                    },
+                    {
+                        "text": "Thùng rác",
+                        "title": "Thùng rác",
+                        "active_key": "trash",
+                        "route": "admin.pages.trash",
+                        "icon": "trash-alt"
+                    }
+                ]
+            }
+        },
+        "dynamics": {
+            "text": "Quản lý nội dung",
+            "title": "Quản lý nội dung",
+            "route": "admin.dynamics",
+            "icon": "briefcase-medical",
+            "submenu": {
+                "type": "list",
+                "data": [
+                    {
+                        "text": "Danh sách mục",
+                        "title": "Danh sách mục đăng bài",
+                        "active_key": "list",
+                        "route": "admin.dynamics.list",
+                        "icon": "list-ul"
+                    },
+                    {
+                        "text": "Thêm mục",
+                        "title": "Thêm mới",
+                        "active_key": "add",
+                        "route": "admin.dynamics.create",
+                        "icon": "plus-circle"
+                    },
+                    {
+                        "text": "Mục đã xóa",
+                        "title": "Thùng rác",
+                        "active_key": "trash",
+                        "route": "admin.dynamics.trash",
+                        "icon": "trash-alt"
+                    },
+                    {
+                        "text": "Thẻ",
+                        "title": "quản lý thẻ",
+                        "active_key": "tags",
+                        "route": "admin.tags.list",
+                        "icon": "tags"
+                    }
+                ]
+            }
+        },
+        "@module_list": [],
+        "custom":["posts"],
+        "files": {
+            "text": "Tập tin",
+            "title": "Quản lý Tập tin",
+            "route": "admin.files.list",
+            "icon": "file-image"
+            
+        },
+        "@module": ["users", "permissions", "comments","contacts", "subcribes"]
+
+    }
+}

@@ -1,0 +1,99 @@
+{
+    "id": 3,
+    "name": "2 Cốc",
+    "category_id": 0,
+    "description": "",
+    "status": "draft",
+    "type": "gltf",
+    "path": "https://threejs.vcc.vn/models/gltf/set16/",
+    "file": "scene.gltf",
+    "download_source_url": "https://threejs.vcc.vn/zip/set16.zip",
+    "thumbnail": "https://threejs.vcc.vn/models/gltf/set16/thumbnail.png",
+    "load_options": {
+        "useRoughnessMipmapper": true,
+        "materialNeedsUpdate": true
+    },
+    "settings": {
+        "options": {
+            "pivot": {
+                "x": "center",
+                "y": "center",
+                "z": "center"
+            }
+        },
+        "props": {
+            "castShadow": false,
+            "receiveShadow": false,
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            }
+        },
+        "meshes": [
+            {
+                "name": "Cone001",
+                "sid": "cone001_0",
+                "index": 0,
+                "title": "Cone001",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "Cylinder001",
+                "sid": "cylinder001_1",
+                "index": 1,
+                "title": "Cylinder001",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "Cone002",
+                "sid": "cone002_2",
+                "index": 2,
+                "title": "Cone002",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "Cone003",
+                "sid": "cone003_3",
+                "index": 3,
+                "title": "Cone003",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "Cone004",
+                "sid": "cone004_4",
+                "index": 4,
+                "title": "Cone004",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "Cylinder002",
+                "sid": "cylinder002_5",
+                "index": 5,
+                "title": "Cylinder002",
+                "data": {},
+                "editable": []
+            }
+        ]
+    },
+    "size": {
+        "x": 0.3436449198120606,
+        "y": 0.18105581066502863,
+        "z": 0.11495122052022133
+    }
+}

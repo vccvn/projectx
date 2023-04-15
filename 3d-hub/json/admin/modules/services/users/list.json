@@ -1,0 +1,65 @@
+{
+    "name": "Dịch vụ đã đăng ký",
+    "package": "services.users",
+    "use_trash": true,
+    "titles": {
+        "default": "Danh sách Dịch vụ đã đăng ký",
+        "trash": "Danh sách Dịch vụ đã đăng ký đã xóa"
+    },
+    "data": [],
+    "filter": {
+        "search_columns": [],
+        "sort_columns": []
+    },
+    "table": {
+        "class": "",
+        "columns": [
+            {
+                "title": "ID",
+                "class": "",
+                "text": ":id"
+            },
+            {
+                "title": "User",
+                "class": "",
+                "text": ":user_name"
+            },
+            {
+                "title": "Dịch vụ",
+                "class": "",
+                "text": ":service_name"
+            },
+            {
+                "title": "Gói",
+                "class": "",
+                "text": ":package_name"
+            },
+
+            {
+                "title": "Giá",
+                "class": "",
+                "text": ":price"
+            },
+            {
+                "title": "Đã thanh toán",
+                "class": "",
+                "text": ":paid"
+            },
+            {
+                "title": "Ngày hết hạn",
+                "class": "",
+                "text": ":expired_at"
+            },
+            {
+                "title": "Trạng thái",
+                "class": "",
+                "text": ":status"
+            }
+        ]
+    },
+    "resources": {
+        "js_data": [],
+        "js": [],
+        "css": []
+    }
+}

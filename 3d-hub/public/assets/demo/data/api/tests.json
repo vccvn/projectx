@@ -1,0 +1,103 @@
+{
+    "id": "set_21",
+    "name": "Túi 21",
+    "categort_id": 1,
+    "description": "Mô tả",
+    "type": "gltf",
+    "path": "https://threejs.vcc.vn/models/gltf/set21/",
+    "file": "scene.gltf",
+    "download_source_url": "https://threejs.vcc.vn/zip/set21.zip",
+    "load_options": {
+        "useRoughnessMipmapper": true,
+        "materialNeedsUpdate": true
+    },
+    "settings": {
+        "props": {
+            "castShadow": true,
+            "receiveShadow": true,
+            "position": {
+                "y": 0.02
+            },
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            }
+        },
+        "options": {
+            "pivot": {
+                "x": "center",
+                "y": "center",
+                "z": "center"
+            }
+        },
+        "meshes": [
+            {
+                "name": "Plane001",
+                "sid": "plane001_0",
+                "index": 2,
+                "title": "Mat day",
+                "data": {
+                    "material": {
+                        "color": {
+                            "$three": "color",
+                            "color": "#f503a1"
+                        }
+                    }
+                },
+                "editable": [
+                    "color",
+                    "emissive",
+                    "emissiveIntensity",
+                    "map",
+                    "normalMap",
+                    "bumpMap"
+                ]
+            },
+            {
+                "name": "Mat_truoc",
+                "sid": "mat_truoc_1",
+                "index": 1,
+                "title": "Mặt Trước",
+                "data": {
+                    "material": {
+                        "map": {
+                            "$three": "texture",
+                            "file": "/images/Logo2-01-6035c31a78944.jpg"
+                        }
+                    }
+                },
+                "editable": [
+                    "bumpMap",
+                    "color",
+                    "map",
+                    "emissive",
+                    "emissiveIntensity",
+                    "normalMap"
+                ]
+            },
+            {
+                "name": "Plane002",
+                "sid": "plane002_2",
+                "index": 0,
+                "title": "Mặt Sau",
+                "data": {
+                    "material": {
+                        "map": {
+                            "$three": "texture",
+                            "file": "/images/Logo-6035c31b4fc70.jpg"
+                        }
+                    }
+                },
+                "editable": [
+                    "map",
+                    "bumpMap",
+                    "color",
+                    "normalMap"
+                ]
+            }
+        ]
+    },
+    "storageKey": "data/items/item-001.json",
+    "category_id": "1"
+}

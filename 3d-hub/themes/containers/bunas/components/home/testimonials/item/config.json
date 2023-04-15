@@ -1,0 +1,24 @@
+{
+    "name": "Home: Testimonials Item",
+    "inputs": {
+        "name": {
+            "type": "text",
+            "label": "tên người phản hồi",
+            "placeholder": "Ví dụ: Nguyễn Văn A"
+        },
+        "image": {
+            "type": "file",
+            "label": "Ãnh đại diện"
+        },
+        "job": {
+            "type": "text",
+            "label": "Công việc",
+            "placeholder": "Ví dụ: CEO"
+        },
+        "content": {
+            "type": "textarea",
+            "label": "Mô tả ngắn",
+            "placeholder": "Ví dụ: Very grateful to have found this app. D&L team did a fantastic job..."
+        }
+    }
+}

@@ -1,0 +1,1010 @@
+{
+    "status": true,
+    "message": "Thao t\u00e1c th\u00e0nh c\u00f4ng!",
+    "data": [
+        {
+            "id": 1,
+            "name": "Túi xách",
+            "slug": "tui-xac",
+            "element_count": 7,
+            "elements": [
+                {
+                    "id": "set_21",
+                    "name": "Túi 21",
+                    "categort_id": 1,
+                    "description": "Mô tả",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/set21/",
+                    "file": "scene.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/set21.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/set21/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "props": {
+                            "castShadow": true,
+                            "receiveShadow": true,
+                            "position": {
+                                "y": 0.02
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        },
+                        "options": {
+                            "pivot": {
+                                "x": "center",
+                                "y": "center",
+                                "z": "center"
+                            }
+                        },
+                        "meshes": [
+                            {
+                                "name": "Plane001",
+                                "sid": "plane001_0",
+                                "index": 2,
+                                "title": "Mat day",
+                                "data": {
+                                    "material": {
+                                        "color": {
+                                            "$three": "color",
+                                            "color": "#f503a1"
+                                        }
+                                    }
+                                },
+                                "editable": [
+                                    "color",
+                                    "emissive",
+                                    "emissiveIntensity",
+                                    "map",
+                                    "normalMap",
+                                    "bumpMap"
+                                ]
+                            },
+                            {
+                                "name": "Mat_truoc",
+                                "sid": "mat_truoc_1",
+                                "index": 1,
+                                "title": "Mặt Trước",
+                                "data": {
+                                    
+                                },
+                                "editable": [
+                                    "bumpMap",
+                                    "color",
+                                    "map",
+                                    "emissive",
+                                    "emissiveIntensity",
+                                    "normalMap"
+                                ]
+                            },
+                            {
+                                "name": "Plane002",
+                                "sid": "plane002_2",
+                                "index": 0,
+                                "title": "Mặt Sau",
+                                "data": {
+                                    
+                                },
+                                "editable": [
+                                    "map",
+                                    "bumpMap",
+                                    "color",
+                                    "normalMap"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "set_20",
+                    "name": "Túi 20",
+                    "categort_id": 1,
+                    "description": "Mô tả 20",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/set20/",
+                    "file": "scene.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/set20.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/set20/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "props": {
+                            "castShadow": true,
+                            "receiveShadow": true,
+                            "position": {
+                                "y": 0.02
+                            },
+                            "rotation": {
+                                "y": "{Math.PI / 2}"
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "set_19",
+                    "name": "Túi 19",
+                    "categort_id": 1,
+                    "description": "Mô tả 19",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/set19/",
+                    "file": "scene06.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/set19.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/set19/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "props": {
+                            "castShadow": true,
+                            "receiveShadow": true,
+                            "position": {
+                                "y": 0.02
+                            },
+                            "rotation": {
+                                "y": "{Math.PI / 2}"
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "set_16",
+                    "name": "Túi 16",
+                    "categort_id": 1,
+                    "description": "Mô tả 16",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/set16/",
+                    "file": "scene.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/set19.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/set19/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "props": {
+                            "castShadow": true,
+                            "receiveShadow": true,
+                            "position": {
+                                "y": 0.02
+                            },
+                            "rotation": {
+                                "y": "{Math.PI / 2}"
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "set_15",
+                    "name": "Túi 15",
+                    "categort_id": 2,
+                    "description": "Mô tả 15",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/set15/",
+                    "file": "scene.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/set19.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/set15/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "props": {
+                            "castShadow": true,
+                            "receiveShadow": true,
+                            "position": {
+                                "y": 0.02
+                            },
+                            "rotation": {
+                                "y": "{Math.PI / 2}"
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "set_14",
+                    "name": "Túi 14",
+                    "categort_id": 2,
+                    "description": "Mô tả 14",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/set14/",
+                    "file": "scene.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/set19.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/set14/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "props": {
+                            "castShadow": true,
+                            "receiveShadow": true,
+                            "position": {
+                                "y": 0.02
+                            },
+                            "rotation": {
+                                "y": "{Math.PI / 2}"
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "set_13",
+                    "name": "Túi 13",
+                    "categort_id": 2,
+                    "description": "Mô tả 13",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/set13/",
+                    "file": "scene.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/set19.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/set13/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "props": {
+                            "castShadow": true,
+                            "receiveShadow": true,
+                            "position": {
+                                "y": 0.02
+                            },
+                            "rotation": {
+                                "y": "{Math.PI / 2}"
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "8",
+                    "name": "Bình Hoa",
+                    "categort_id": 1,
+                    "description": "Bình Hoa",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/jar/",
+                    "file": "scene.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/jar.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/jar/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "props": {
+                            "castShadow": true,
+                            "receiveShadow": true,
+                            "position": {
+                                "y": 0.02
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        }
+                    }
+                }
+                
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Cốc",
+            "slug": "cốc",
+            "element_count": 3,
+            "elements": [
+                {
+                    "id": "set_15",
+                    "name": "Túi 15",
+                    "categort_id": 2,
+                    "description": "Mô tả 15",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/set15/",
+                    "file": "scene.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/set19.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/set15/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "props": {
+                            "castShadow": true,
+                            "receiveShadow": true,
+                            "position": {
+                                "y": 0.02
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        },
+                        "options": {
+                            "pivot": {
+                                "x": "center",
+                                "y": "center",
+                                "z": "center"
+                            }
+                        },
+                        "meshes": [
+                            {
+                                "name": "Plane001",
+                                "sid": "plane001_0",
+                                "index": 0,
+                                "data": {
+                                    "material": {}
+                                },
+                                "editable": [
+                                    "alphaMap",
+                                    "bumpMap"
+                                ]
+                            },
+                            {
+                                "name": "Plane002",
+                                "sid": "plane002_1",
+                                "index": 1,
+                                "data": {
+                                    "material": {
+                                        
+                                    }
+                                },
+                                "editable": [
+                                    "displacementMap",
+                                    "normalMap"
+                                ]
+                            },
+                            {
+                                "name": "Mat_truoc",
+                                "sid": "mat_truoc_2",
+                                "index": 2,
+                                "data": {
+                                    "material": {
+                                        
+                                    }
+                                },
+                                "editable": [
+                                    "emissiveMap",
+                                    "emissive",
+                                    "map"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "set_14",
+                    "name": "Túi 14",
+                    "categort_id": 2,
+                    "description": "Mô tả 14",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/set14/",
+                    "file": "scene.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/set19.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/set14/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "props": {
+                            "castShadow": true,
+                            "receiveShadow": true,
+                            "position": {
+                                "y": 0.02
+                            },
+                            "rotation": {
+                                "y": "{Math.PI / 2}"
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "set_13",
+                    "name": "Túi 13",
+                    "categort_id": 2,
+                    "description": "Mô tả 13",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/set13/",
+                    "file": "scene.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/set19.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/set13/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "props": {
+                            "castShadow": true,
+                            "receiveShadow": true,
+                            "position": {
+                                "y": 0.02
+                            },
+                            "rotation": {
+                                "y": "{Math.PI / 2}"
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Decor",
+            "slug": "decor",
+            "element_count": 7,
+            "elements": [
+                {
+                    "id": "set_21",
+                    "name": "Túi 21",
+                    "categort_id": 1,
+                    "description": "Mô tả",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/set21/",
+                    "file": "scene.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/set21.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/set21/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "props": {
+                            "castShadow": true,
+                            "receiveShadow": true,
+                            "position": {
+                                "y": 0.02
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "set_20",
+                    "name": "Túi 20",
+                    "categort_id": 1,
+                    "description": "Mô tả 20",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/set20/",
+                    "file": "scene.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/set20.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/set20/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "props": {
+                            "castShadow": true,
+                            "receiveShadow": true,
+                            "position": {
+                                "y": 0.02
+                            },
+                            "rotation": {
+                                "y": "{Math.PI / 2}"
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "set_19",
+                    "name": "Túi 19",
+                    "categort_id": 1,
+                    "description": "Mô tả 19",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/set19/",
+                    "file": "scene06.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/set19.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/set19/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "props": {
+                            "castShadow": true,
+                            "receiveShadow": true,
+                            "position": {
+                                "y": 0.02
+                            },
+                            "rotation": {
+                                "y": "{Math.PI / 2}"
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "set_16",
+                    "name": "Túi 16",
+                    "categort_id": 1,
+                    "description": "Mô tả 16",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/set16/",
+                    "file": "scene.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/set19.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/set19/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "props": {
+                            "castShadow": true,
+                            "receiveShadow": true,
+                            "position": {
+                                "y": 0.02
+                            },
+                            "rotation": {
+                                "y": "{Math.PI / 2}"
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "set_15",
+                    "name": "Túi 15",
+                    "categort_id": 2,
+                    "description": "Mô tả 15",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/set15/",
+                    "file": "scene.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/set19.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/set15/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "props": {
+                            "castShadow": true,
+                            "receiveShadow": true,
+                            "position": {
+                                "y": 0.02
+                            },
+                            "rotation": {
+                                "y": "{Math.PI / 2}"
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "set_14",
+                    "name": "Túi 14",
+                    "categort_id": 2,
+                    "description": "Mô tả 14",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/set14/",
+                    "file": "scene.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/set19.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/set14/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "props": {
+                            "castShadow": true,
+                            "receiveShadow": true,
+                            "position": {
+                                "y": 0.02
+                            },
+                            "rotation": {
+                                "y": "{Math.PI / 2}"
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "set_13",
+                    "name": "Túi 13",
+                    "categort_id": 2,
+                    "description": "Mô tả 13",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/set13/",
+                    "file": "scene.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/set19.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/set13/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "props": {
+                            "castShadow": true,
+                            "receiveShadow": true,
+                            "position": {
+                                "y": 0.02
+                            },
+                            "rotation": {
+                                "y": "{Math.PI / 2}"
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Danh mục 4",
+            "slug": "danh-muc-4",
+            "element_count": 7,
+            "elements": [
+                {
+                    "id": "set_21",
+                    "name": "Túi 21",
+                    "categort_id": 1,
+                    "description": "Mô tả",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/set21/",
+                    "file": "scene.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/set21.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/set21/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "props": {
+                            "castShadow": true,
+                            "receiveShadow": true,
+                            "position": {
+                                "y": 0.02
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        },
+                        "options": {
+                            "pivot": {
+                                "x": "center",
+                                "y": "center",
+                                "z": "center"
+                            }
+                        },
+                        "meshes": [
+                            {
+                                "name": "Plane001",
+                                "sid": "plane001_0",
+                                "index": 2,
+                                "title": "Mat day",
+                                "data": {
+                                    "material": {
+                                        "color": {
+                                            "$three": "color",
+                                            "color": "#f503a1"
+                                        }
+                                    }
+                                },
+                                "editable": [
+                                    "color",
+                                    "emissive",
+                                    "emissiveIntensity",
+                                    "map",
+                                    "normalMap",
+                                    "bumpMap"
+                                ]
+                            },
+                            {
+                                "name": "Mat_truoc",
+                                "sid": "mat_truoc_1",
+                                "index": 1,
+                                "title": "Mặt Trước",
+                                "data": {
+                                    "material": {
+                                        
+                                    }
+                                },
+                                "editable": [
+                                    "bumpMap",
+                                    "color",
+                                    "map",
+                                    "emissive",
+                                    "emissiveIntensity",
+                                    "normalMap"
+                                ]
+                            },
+                            {
+                                "name": "Plane002",
+                                "sid": "plane002_2",
+                                "index": 0,
+                                "title": "Mặt Sau",
+                                "data": {
+                                    "material": {
+                                        
+                                    }
+                                },
+                                "editable": [
+                                    "map",
+                                    "bumpMap",
+                                    "color",
+                                    "normalMap"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "set_20",
+                    "name": "Túi 20",
+                    "categort_id": 1,
+                    "description": "Mô tả 20",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/set20/",
+                    "file": "scene.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/set20.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/set20/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "props": {
+                            "castShadow": true,
+                            "receiveShadow": true,
+                            "position": {
+                                "y": 0.02
+                            },
+                            "rotation": {
+                                "y": "{Math.PI / 2}"
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "set_19",
+                    "name": "Túi 19",
+                    "categort_id": 1,
+                    "description": "Mô tả 19",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/set19/",
+                    "file": "scene06.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/set19.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/set19/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "props": {
+                            "castShadow": true,
+                            "receiveShadow": true,
+                            "position": {
+                                "y": 0.02
+                            },
+                            "rotation": {
+                                "y": "{Math.PI / 2}"
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "set_16",
+                    "name": "Túi 16",
+                    "categort_id": 1,
+                    "description": "Mô tả 16",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/set16/",
+                    "file": "scene.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/set19.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/set19/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "props": {
+                            "castShadow": true,
+                            "receiveShadow": true,
+                            "position": {
+                                "y": 0.02
+                            },
+                            "rotation": {
+                                "y": "{Math.PI / 2}"
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "set_15",
+                    "name": "Túi 15",
+                    "categort_id": 2,
+                    "description": "Mô tả 15",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/set15/",
+                    "file": "scene.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/set19.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/set15/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "props": {
+                            "castShadow": true,
+                            "receiveShadow": true,
+                            "position": {
+                                "y": 0.02
+                            },
+                            "rotation": {
+                                "y": "{Math.PI / 2}"
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "set_14",
+                    "name": "Túi 14",
+                    "categort_id": 2,
+                    "description": "Mô tả 14",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/set14/",
+                    "file": "scene.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/set19.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/set14/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "props": {
+                            "castShadow": true,
+                            "receiveShadow": true,
+                            "position": {
+                                "y": 0.02
+                            },
+                            "rotation": {
+                                "y": "{Math.PI / 2}"
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "set_13",
+                    "name": "Túi 13",
+                    "categort_id": 2,
+                    "description": "Mô tả 13",
+                    "type": "gltf",
+                    "path": "https://threejs.vcc.vn/models/gltf/set13/",
+                    "file": "scene.gltf",
+                    "download_source_url": "https://threejs.vcc.vn/zip/set19.zip",
+                    "thumbnail": "https://threejs.vcc.vn/models/gltf/set13/thumbnail.png",
+                    "load_options": {
+                        "useRoughnessMipmapper": true,
+                        "materialNeedsUpdate": true
+                    },
+                    "settings": {
+                        "props": {
+                            "castShadow": true,
+                            "receiveShadow": true,
+                            "position": {
+                                "y": 0.02
+                            },
+                            "rotation": {
+                                "y": "{Math.PI / 2}"
+                            },
+                            "scale": {
+                                "x": 1,
+                                "y": 1,
+                                "z": 1
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "count": 4,
+    "totalItem": 4,
+    "page": 1,
+    "perPage": 10,
+    "currentPage": 1,
+    "totalPage": 1
+}

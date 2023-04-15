@@ -1,0 +1,11 @@
+<div nz-dropdown [nzDropdownMenu]="groupMenu">
+  <i nz-icon nzType="global"></i>
+</div>
+<nz-dropdown-menu #groupMenu="nzDropdownMenu">
+  <div nz-menu class="width-sm">
+    <li nz-menu-item *ngFor="let item of groups" (click)="change(item.code)">
+      <span role="img" [attr.aria-label]="item.text">{{ item.abbr }}</span>
+      {{ item.text }}
+    </li>
+  </div>
+</nz-dropdown-menu>

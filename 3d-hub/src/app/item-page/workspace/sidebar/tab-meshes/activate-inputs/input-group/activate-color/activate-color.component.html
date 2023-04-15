@@ -1,0 +1,40 @@
+<div class="input-group">
+    <div class="inner-box">{{config.name | translate}}</div>
+    <div *ngIf="config.attach; then attachBlock else simpleBlock"></div>
+    <ng-template #attachBlock>
+        <div nz-row [nzGutter]="{ xs: 8, sm: 16, md: 24, lg: 32 }">
+            <div nz-col class="gutter-row" [nzSpan]="5">
+                <div class="inner-box"> 
+                    <inp-color [name]="config.name" [(value)]="config.value" (subcribe)="onChange($event)"></inp-color>
+                </div>
+            </div>
+            <div nz-col class="gutter-row" [nzSpan]="14">
+                <inp-range [name]="config.attach.name" [min]="config.attach.min" [max]="config.attach.max" [step]="config.attach.step" [(value)]="config.attach.value" (subcribe)="onAttachChange($event)"></inp-range>
+            </div>
+    
+            <div nz-col class="gutter-row" [nzSpan]="5">
+                <div class="inner-box">
+                    <active-switch [name]="config.name" [(value)]="config.editable" (subcribe)="onEditable($event)"></active-switch>
+                </div>
+            </div>
+        </div>
+        
+    </ng-template>
+    <ng-template #simpleBlock>
+        <div nz-row [nzGutter]="{ xs: 8, sm: 16, md: 24, lg: 32 }">
+            <div nz-col class="gutter-row" [nzSpan]="19">
+                <div class="inner-box">
+                    <inp-color [name]="config.name" [(value)]="config.value" (subcribe)="onChange($event)"></inp-color>
+                </div>
+            </div>
+            <div nz-col class="gutter-row" [nzSpan]="5">
+                <div class="inner-box">
+                    <active-switch [name]="config.name" [(value)]="config.editable" (subcribe)="onEditable($event)"></active-switch>
+                </div>
+            </div>
+        </div>
+        
+    </ng-template>
+    
+</div>
+

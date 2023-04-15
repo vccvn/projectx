@@ -1,0 +1,11 @@
+{
+    "name": "Sidebar: Tìm kiếm",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề (Tùy chọn)",
+            "default": "Tìm kiếm"
+        }
+        
+    }
+}

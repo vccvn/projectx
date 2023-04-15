@@ -1,0 +1,106 @@
+.JustifiedLayout {
+  &::-webkit-scrollbar {
+    width: 6px;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #555;
+  }
+
+  .loading {
+    text-align: center;
+    width: 100%;
+
+    .spinner {
+      --animation-duration: 1000ms;
+      width: var(--size);
+      height: var(--size);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 4px;
+      margin: 0 auto;
+      .spinner-item {
+        height: 40%;
+        background-color: var(--clr-spinner);
+        width: calc(var(--size) / 13);
+        animation: spinner5 var(--animation-duration) ease-in-out infinite;
+
+        @keyframes spinner5 {
+          25% {
+            transform: scaleY(2);
+          }
+
+          50% {
+            transform: scaleY(1);
+          }
+        }
+      }
+
+      .spinner-item:nth-child(1) {
+        --clr-spinner: var(--clr1);
+      }
+
+      .spinner-item:nth-child(2) {
+        --clr-spinner: var(--clr3);
+        animation-delay: calc(var(--animation-duration) / 10);
+      }
+
+      .spinner-item:nth-child(3) {
+        --clr-spinner: var(--clr5);
+        animation-delay: calc(var(--animation-duration) / 10 * 2);
+      }
+
+      .spinner-item:nth-child(4) {
+        --clr-spinner: var(--clr4);
+        animation-delay: calc(var(--animation-duration) / 10 * 3);
+      }
+
+      .spinner-item:nth-child(5) {
+        --clr-spinner: var(--clr2);
+        animation-delay: calc(var(--animation-duration) / 10 * 4);
+      }
+    }
+  }
+
+  .item {
+    opacity: 1;
+    display: block;
+    background-color: #485164;
+    &-box {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      transition: 0.5s ease;
+      border: 0 solid transparent;
+      position: relative;
+      background: #f6f6f6;
+      cursor: pointer;
+
+      width: 100%;
+      justify-content: center;
+      user-select: none;
+      background: unset;
+
+      &:hover {
+        background: rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+      }
+
+      img {
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+  }
+}

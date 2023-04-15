@@ -1,0 +1,35 @@
+<div class="panel inner-layout" *ngIf="isShow">
+    <div class="panel-header">
+        <h3>{{title}}</h3>
+        <div class="btn-close" (click)="close()">
+            <i nz-icon nzType="close-circle" nzTheme="outline"></i>
+        </div>
+    </div>
+    <div class="panel-body">
+        <div class="store">
+            <div class="input-group-item" [class.first]="i==0" *ngFor="let inp of inputs; let i=index">
+                <div class="input-item" [ngSwitch]="inp.type">
+                    <inp-switch-group *ngSwitchCase="'checkbox'" [config]="inp" (subcribe)="updateMaterial($event)" class="input-group"></inp-switch-group>
+                    <inp-texture-group *ngSwitchCase="'texture'" [config]="inp" (subcribe)="updateMaterial($event)" class="input-group"></inp-texture-group>
+                    <inp-color-group *ngSwitchCase="'color'" [config]="inp" (subcribe)="updateMaterial($event)" class="input-group"></inp-color-group>
+                    <inp-select-group *ngSwitchCase="'select'" [config]="inp" (subcribe)="updateMaterial($event)" class="input-group"></inp-select-group>
+                    <inp-range-group *ngSwitchCase="'range'" [config]="inp" (subcribe)="updateMaterial($event)" class="input-group"></inp-range-group>
+                    <inp-number-group *ngSwitchCase="'number'" [config]="inp" (subcribe)="updateMaterial($event)" class="input-group"></inp-number-group>
+                    <inp-text-group *ngSwitchDefault [config]="inp" (subcribe)="updateMaterial($event)" class="input-group"></inp-text-group>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="panel-footer">
+        <h3>{{"Actions" | translate}}</h3>
+        <div class="buttons">
+            <button nz-button nzType="primary" (click)="onDone()">{{"Done"|translate}}</button>
+
+
+        </div>
+    </div>
+
+</div>

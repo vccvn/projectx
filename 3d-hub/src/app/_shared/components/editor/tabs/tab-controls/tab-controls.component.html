@@ -1,0 +1,25 @@
+<div class="tab-inner">
+    <h2>{{ 'Camera & Controls' | translate }}</h2>
+    <nz-tabset nzTabPosition="top" nzType="line" class="sub-tab">
+
+        <nz-tab [nzTitle]="iconCamera">
+          <ng-template #iconCamera>
+            <img src="/assets/icons/new-design/tab-sub/camera.svg" alt="Camera" />
+            <div>Camera</div>
+          </ng-template>
+          <app-tab-camera class="tab-camera"></app-tab-camera>
+        </nz-tab>
+    
+        <nz-tab [nzTitle]="iconControl">
+          <ng-template #iconControl>
+            <img src="/assets/icons/new-design/tab-sub/control.svg" alt="Controls" />
+            <div>Controls</div>
+          </ng-template>
+          <ng-template nz-tab>
+            <app-tab-control></app-tab-control>
+          </ng-template>
+        </nz-tab>
+
+      </nz-tabset>
+
+</div>

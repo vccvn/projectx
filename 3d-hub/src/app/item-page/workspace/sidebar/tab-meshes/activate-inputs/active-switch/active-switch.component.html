@@ -1,0 +1,3 @@
+<nz-switch [(ngModel)]="value" [nzCheckedChildren]="checkedTemplate" [nzUnCheckedChildren]="unCheckedTemplate" (ngModelChange)="onChangeState($event)"></nz-switch>
+<ng-template #checkedTemplate><i nz-icon nzType="check"></i></ng-template>
+<ng-template #unCheckedTemplate><i nz-icon nzType="close"></i></ng-template>

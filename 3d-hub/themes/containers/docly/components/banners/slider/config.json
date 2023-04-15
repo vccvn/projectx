@@ -1,0 +1,31 @@
+{
+    "name": "Banner: Slider",
+    "inputs": {
+        "slider_id": {
+            "type": "crazyselect",
+            "label":"Slider",
+            "placeholder": "Viết gì đó...",
+            "call": "get_slider_options"
+        },
+        "btn_text":{
+            "type": "text",
+            "label": "Nút bấm",
+            "placeholder": "Chữ sẽ được hiển thị trên nút xem thêm"
+        },
+        "address": {
+            "type": "text",
+            "Label": "Địa chỉ",
+            "placeholder": "Mặc dịnh sẽ lấy từ thiết lập thông tin liên hệ"
+        },
+        "phone_number": {
+            "type": "text",
+            "Label": "Số điện thoại",
+            "placeholder": "Mặc dịnh sẽ lấy từ thiết lập thông tin liên hệ"
+        },
+        "email": {
+            "type": "text",
+            "Label": "Email",
+            "placeholder": "Mặc dịnh sẽ lấy từ thiết lập thông tin liên hệ"
+        }
+    }
+}

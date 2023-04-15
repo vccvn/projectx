@@ -1,0 +1,10 @@
+{
+    "type": {
+        "type": "hidden"
+    },
+    "products": {
+        "type": "product",
+        "template": "warehouse-product",
+        "label": "Sản phẩm"
+    }
+}

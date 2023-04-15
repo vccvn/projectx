@@ -1,0 +1,28 @@
+<div class="folder-navigator">
+  <div class="title">
+    <h2>Folders</h2>
+  </div>
+  <div>
+    <div class="control">
+      <button nz-button nzType="text" nzSize="large" (click)="onClickBtnCreateFolder()">
+        <i nz-icon nzType="folder-add" nzTheme="outline"></i>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="folders" nz-row [nzGutter]="16">
+  <div class="folder" *ngFor="let folder of folders" nz-col [nzSpan]="6">
+    <a [routerLink]="['/folders', folder.id]">
+      <div class="feature"></div>
+      <div class="name">{{ folder.name }}</div>
+    </a>
+  </div>
+
+  <div class="folder" *ngFor="let folder of folders$ | async" nz-col [nzSpan]="6">
+    <a [routerLink]="['/folders', folder.id]">
+      <div class="feature"></div>
+      <div class="name">{{ folder.name }}</div>
+    </a>
+  </div>
+</div>

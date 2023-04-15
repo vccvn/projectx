@@ -1,0 +1,5 @@
+<div class="menu" *ngIf="show">
+    <button nz-button (click)="onClick(btn.key)" *ngFor="let btn of showBtns">
+        {{btn.text|translate}}
+    </button>
+</div>

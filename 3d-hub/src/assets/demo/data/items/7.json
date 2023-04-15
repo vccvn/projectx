@@ -1,0 +1,139 @@
+{
+    "id": 7,
+    "name": "Hộp giấy",
+    "category_id": 0,
+    "description": "",
+    "status": "draft",
+    "type": "gltf",
+    "path": "https://threejs.vcc.vn/models/gltf/nc/",
+    "file": "22.gltf",
+    "download_source_url": "https://threejs.vcc.vn/zip/nc.zip",
+    "thumbnail": "https://threejs.vcc.vn/models/gltf/nc/thumbnail.png",
+    "load_options": {
+        "useRoughnessMipmapper": true,
+        "materialNeedsUpdate": true
+    },
+    "settings": {
+        "options": {
+            "pivot": {
+                "x": "center",
+                "y": "center",
+                "z": "center"
+            }
+        },
+        "props": {
+            "castShadow": false,
+            "receiveShadow": false,
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            }
+        },
+        "meshes": [
+            {
+                "name": "Line01_1",
+                "sid": "line01_1_0",
+                "index": 0,
+                "title": "Line01_1",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "Line01_2",
+                "sid": "line01_2_1",
+                "index": 1,
+                "title": "Line01_2",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "Line01_3",
+                "sid": "line01_3_2",
+                "index": 2,
+                "title": "Line01_3",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "Box06",
+                "sid": "box06_3",
+                "index": 3,
+                "title": "Box06",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "Box07",
+                "sid": "box07_4",
+                "index": 4,
+                "title": "Box07",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "Box08",
+                "sid": "box08_5",
+                "index": 5,
+                "title": "Box08",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "Box02",
+                "sid": "box02_6",
+                "index": 6,
+                "title": "Box02",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "Box03",
+                "sid": "box03_7",
+                "index": 7,
+                "title": "Box03",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "Box04",
+                "sid": "box04_8",
+                "index": 8,
+                "title": "Box04",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "Box05",
+                "sid": "box05_9",
+                "index": 9,
+                "title": "Box05",
+                "data": {},
+                "editable": []
+            },
+            {
+                "name": "Box01",
+                "sid": "box01_10",
+                "index": 10,
+                "title": "Box01",
+                "data": {},
+                "editable": []
+            }
+        ]
+    },
+    "size": {
+        "x": 0.6851831417928489,
+        "y": 0.31692728691419736,
+        "z": 1.046818494
+    }
+}

@@ -1,0 +1,24 @@
+<div class="tab-inner">
+    <div class="tab-header">
+        <h2>{{"Foregrounds"|translate}}</h2>
+        <div class="btns">
+            <button nz-button (click)="add()">
+                {{"Add"|translate}}
+            </button>
+            
+        </div>
+    </div>
+    <div class="store tab-body">
+        <app-foreground-item 
+           
+            *ngFor="let foreground of foregrounds; let i=index" 
+            [data]="foreground" 
+            (update)="updateForeground($event)"
+            (clickDelete)="deleteForeground($event)"
+            
+            (emitter)="listen($event)"
+        ></app-foreground-item>
+
+    </div>
+</div>
+

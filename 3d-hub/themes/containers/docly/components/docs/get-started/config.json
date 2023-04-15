@@ -1,0 +1,22 @@
+{
+    "name": "Get Started",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề (Tùy chọn)"
+        },
+        "description": {
+            "type": "textarea",
+            "label":"Mô tả",
+            "placeholder": "Viết gì đó...",
+            "className": "auto-height"
+        },
+        "boder_bottom": {
+            "type": "switch",
+            "label": "Border",
+            "value_type": "boolean",
+            "check_label": "Hiển thị border bottom"
+        }
+
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "name": "Home: Portfolio",
+    "inputs":{
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề",
+            "value": "Dự án"
+        },
+        "description": {
+            "type": "textarea",
+            "label":"Mô tả",
+            "placeholder": "Viết gì đó...",
+            "className": "auto-height"
+        },
+        "sorttype": {
+            "type": "crazyselect",
+            "label": "Kiểu sắp xếp",
+            "call": "get_project_sortby_options",
+            "value": 1
+        },
+        "project_number": {
+            "type": "number",
+            "label": "Số lượng",
+            "value": 10
+        }
+    }
+}

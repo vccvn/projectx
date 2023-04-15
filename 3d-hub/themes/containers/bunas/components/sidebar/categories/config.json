@@ -1,0 +1,41 @@
+{
+    "name": "Sidebar: Danh mục",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề (Tùy chọn)"
+        },
+        "get_by_dynamic_active": {
+            "type": "switch",
+            "label": "Ưu tiên mục đang xem",
+            "value_type": "boolean"
+        },
+        "dynamic_id": {
+            "type": "crazyselect",
+            "label": "Mục (tùy chọn)",
+            "template": "crazyselect",
+            "call": "get_dynamic_options",
+            "params": [[], "Chọn một"],
+            "@change": "Crazy.posts.changeDynamicID",
+            "data-ref": "parent_id"
+        },
+        "parent_id": {
+            "type": "crazyselect",
+            "label": "Danh mục Cha",
+            "template": "crazyselect",
+            "call": "get_post_category_options",
+            "params": [
+                {
+                    "dynamic_id": "#dynamic_id"
+                },
+                true
+            ],
+            "@label-type": "value"
+        },
+        "sorttype": {
+            "type": "select",
+            "label": "kiểu sắp xếp",
+            "call": "get_post_category_sortby_options"
+        }
+    }
+}

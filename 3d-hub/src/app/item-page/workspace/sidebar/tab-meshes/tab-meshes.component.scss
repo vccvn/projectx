@@ -1,0 +1,33 @@
+
+:host{
+  color: #fff;
+  h1, h2, h3, h4, h5, h6{
+      color: #fff;
+  }
+}
+h2 {
+  line-height: 1;
+  color: #ffffff;
+  font-size: 15px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  padding: 0 16px;
+}
+
+
+label {
+  color: #ffffff;
+}
+.input-group {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.tab-scroll-y {
+  height: calc(100%-30px);
+  overflow-y: auto;
+}
+.store {
+  height: calc(100% - 30px) !important;
+  padding-bottom: 20px !important;
+  overflow-x: hidden !important;
+}

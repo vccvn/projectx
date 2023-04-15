@@ -1,0 +1,257 @@
+{
+    "inputs": {
+        "name": {
+            "type": "text",
+            "label": "Tên sản phẩm",
+            "placeholder": "Nhập tên sản phẩm",
+            "required": "true",
+            "id": "product-name"
+        },
+        "slug": {
+            "type": "text",
+            "label": "Đường dẫn (slug)",
+            "placeholder": "Nhập đường dẫn",
+            "template": "crazyslug",
+            "@check-field": "custom_slug",
+            "@extension": ".html",
+            "@check-slug-route": "admin.products.check-slug",
+            "@get-slug-route": "admin.products.get-slug",
+            "@source-id": "product-name",
+            "@ajax-param-selectors": "#input-hidden-id",
+            "@ajax-check-name": "slug",
+            "@ajax-get-name": "slug"
+        },
+        "custom_slug": {
+            "type": "checkbox",
+            "label": "Tùy chọn slug",
+            "check_label": "Tùy chỉnh",
+            "@hidden": true
+        },
+        "category_id": {
+            "type": "crazyselect",
+            "label": "Danh mục sản phẩm",
+            "required": "true",
+            "call": "get_product_category_options",
+            "@label-type": "header",
+            "@change": "Product.form.changeCategory"
+        },
+        "description": {
+            "type": "textarea",
+            "label": "Mô tả",
+            "placeholder": "Nhập mô tả"
+        },
+        "detail": {
+            "type": "textarea",
+            "label": "Chi tiết sản phẩm",
+            "placeholder": "Nhập nội dung",
+            "className": "tiny-mce",
+            "template": "tinymce",
+            "height": 500
+        },
+        "feature_description": {
+            "type": "textarea",
+            "label": "Features (Đặc điễm nổi bật / Ưu đãi dặc biệt / v.v..) - thuộc tính tùy chọn ",
+            "placeholder": "Nhập nội dung",
+            "template": "ckeditor",
+            "height": 180,
+            "mode": "clean"
+        },
+        "meta_title": {
+            "type": "text",
+            "label": "Meta Title",
+            "placeholder": "Nhập meta title"
+        },
+        "meta_description": {
+            "type": "textarea",
+            "label": "Meta Description",
+            "placeholder": "Nhập meta description",
+            "row": 4
+        },
+        "keywords": {
+            "type": "text",
+            "label": "",
+            "placeholder": ""
+        },
+        "feature_image": {
+            "type": "file",
+            "label": "Hình xem trước",
+            "template": "cropit",
+            "data-width": 400,
+            "data-height": 400
+        },
+        "gallery": {
+            "type": "file",
+            "label": "Thư viện ảnh",
+            "template": "gallery",
+            "call": "get_client_file_uploads",
+            "params": [
+                {
+                    "ref": "product",
+                    "ref_id": "#hidden_id"
+                }
+            ]
+        },
+        "tags": {
+            "type": "crazytag",
+            "label": "Thẻ",
+            "placeholder": "Nhập thẻ...",
+            "template": "crazytag",
+            "@type": "dynamic",
+            "@search-route": "admin.tags.data",
+            "@create-route": "admin.tags.create",
+            "@create-field": "tags",
+            "call": "get_input_tag_data",
+            "params": [
+                "product",
+                "#hidden_id",
+                {
+                    "id": ":defval"
+                }
+            ]
+        },
+        "code": {
+            "type": "text",
+            "label": "Mã sản phẩm",
+            "placeholder": "Nhập mã sản phẩm"
+        },
+        "list_price": {
+            "type": "number",
+            "label": "Giá bán",
+            "required": "true",
+            "placeholder": "Nhập giá"
+        },
+        "sale_price": {
+            "type": "number",
+            "label": "Giá khuyến mại",
+            "placeholder": "Nhập giá khuyến mại",
+            "@options": {
+                "form_group_class": "toggle-by-on-sale-status"
+            }
+        },
+        "on_sale": {
+            "type": "checkbox",
+            "label": "Khuyến mại?",
+            "check_label": "Sản phẩm đang khuyến mại",
+            "template": "switch",
+            "@options": {
+                "form_group_class": "row",
+                "label_class": "col-12 col-sm-3 col-md-4 col-lg-3 col-form-label",
+                "wrapper_class": "col-12 col-sm-9 col-md-8 col-lg-9"
+            },
+            "@change": "Product.form.checkOnSaleStatus"
+        },
+        "total": {
+            "type": "number",
+            "label": "Kho hàng",
+            "placeholder": "Nhập số sản phẩm"
+        },
+        "privacy": {
+            "type": "radio",
+            "template": "radio",
+            "label": "Riêng tư",
+            "data": {
+                "public": "Công khai",
+                "private": "Không công khai"
+            },
+            "default": "public",
+            "@options": {
+                "form_group_class": "row",
+                "label_class": "col-12 col-lg-4 col-xl-3 col-form-label",
+                "wrapper_class": "col-12 col-lg-8 col-xl-9"
+            }
+        },
+        "status": {
+            "type": "radio",
+            "template": "radio",
+            "label": "Tình trạng",
+            "data": {
+                "1": "Còn hàng",
+                "0": "Hết hàng"
+            },
+            "default": "1",
+            "@options": {
+                "form_group_class": "row",
+                "label_class": "col-12 col-lg-4 col-xl-3 col-form-label",
+                "wrapper_class": "col-12 col-lg-8 col-xl-9"
+            }
+        },
+        "attributes": {
+            "type": "attribute",
+            "label": "Thuộc tính và biến thể",
+            "call": "get_product_attribute_input_data",
+            "params": [
+                "#category_id",
+                true
+            ],
+            "template": "attribute",
+            "@detail-route": "admin.products.attributes.detail-values",
+            "@add-value-route": "admin.products.attributes.values.create"
+        }
+    },
+    "config": {
+        "name": "Thông tin sản phẩm",
+        "layout_type": "column",
+        "form_groups": {
+            "baseinfo": {
+                "title": "Thông tin cơ bản",
+                "class": "col-md-7",
+                "inputs": [
+                    "name",
+                    "slug",
+                    "category_id",
+                    "description",
+                    "list_price",
+                    "on_sale",
+                    "sale_price"
+                    
+                ]
+            },
+            "images": {
+                "title": "Ảnh sản phẩm",
+                "class": "col-md-5",
+                "inputs": [
+                    "feature_image"
+                ]
+            },
+            "detail": {
+                "title": "Thông tin Chi tiết",
+                "class": "col-sm-12",
+                "inputs": [
+                    "detail"
+                ]
+            },
+            "features": {
+                "class": "col-md-6 col-lg-7",
+                "inputs": [
+                    "feature_description"
+                ]
+            },
+            "gallery": {
+                "class": "col-md-6 col-lg-5",
+                "inputs": [
+                    "code",
+                    "total",
+                    "status",
+                    "tags"
+                ]
+            },
+            
+            "props": {
+                "class": "col-md-6 col-lg-7",
+                "inputs": [
+                    "attributes",
+                    "gallery"
+                    
+                ]
+            },
+            "seo": {
+                "class": "col-md-6 col-lg-5",
+                "inputs": [
+                    "meta_title",
+                    "meta_description",
+                    "keywords"
+                ]
+            }
+        }
+    }
+}

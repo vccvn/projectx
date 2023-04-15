@@ -1,0 +1,23 @@
+<div class="input-group text-group">
+    <div nz-row [nzGutter]="{ xs: 8, sm: 16, md: 24, lg: 32 }">
+        <div nz-col class="gutter-row" [nzSpan]="19">
+            <div class="inner-box">{{config.name | translate}}</div>
+        </div>
+        <div nz-col class="gutter-row" [nzSpan]="5">
+            <div class="inner-box">
+                <active-switch [name]="config.name" [(value)]="config.editable" (subcribe)="onEditable($event)"></active-switch>
+            </div>
+        </div>
+    </div>
+    <div nz-row [nzGutter]="{ xs: 8, sm: 16, md: 24, lg: 32 }" class="input-wrapper">
+        <div nz-col class="gutter-row" [nzSpan]="16">
+            <nz-slider [name]="config.name" [nzMin]="config.min" [nzMax]="config.max" [nzStep]="config.step" [(ngModel)]="config.value" (ngModelChange)="valChange($event)"></nz-slider>
+        </div>
+
+        <div nz-col class="gutter-row" [nzSpan]="8">
+            <div class="inner-box">
+                <nz-input-number [name]="config.name" [nzMin]="config.min" [nzMax]="config.max" [nzStep]="config.step" [(ngModel)]="config.value" (ngModelChange)="valChange($event)" [ngStyle]="{ marginLeft: '0px' }"></nz-input-number>
+            </div>
+        </div>
+    </div>
+</div>

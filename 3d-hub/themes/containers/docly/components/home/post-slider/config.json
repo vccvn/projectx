@@ -1,0 +1,51 @@
+{
+    "name": "Home: Slider bài viết",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề (Tùy chọn)"
+        },
+        "dynamic_id": {
+            "type": "crazyselect",
+            "label": "Mục (tùy chọn)",
+            "template": "crazyselect",
+            "call": "get_dynamic_options",
+            "params": [
+                [],
+                "Chọn một"
+            ],
+            "@change": "Crazy.posts.changeDynamicID",
+            "required": "true"
+        },
+        "category_id": {
+            "type": "crazyselect",
+            "label": "Danh mục (tùy chọn)",
+            "template": "crazyselect",
+            "call": "get_post_category_options",
+            "params": [
+                {
+                    "dynamic_id": "#dynamic_id"
+                },
+                true
+            ],
+            "@label-type": "value"
+        },
+        "group_by_category": {
+            "type": "switch",
+            "label": "Nhóm theo danh mục",
+            "value_type": "boolean"
+        },
+        "sorttype": {
+            "type": "select",
+            "label": "kiểu sắp xếp",
+            "call": "get_post_sortby_options"
+        },
+        "post_number": {
+            "type": "number",
+            "label": "Số tin bài",
+            "min": 1,
+            "step": 1,
+            "default": 12
+        }
+    }
+}

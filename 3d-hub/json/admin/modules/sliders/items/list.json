@@ -1,0 +1,52 @@
+{
+    "name": "Slider Item",
+    "package": "slider_items",
+    "use_trash": true,
+    "titles": {
+        "default": "Danh sách Slider Item",
+        "trash": "Danh sách Slider Item đã xóa"
+    },
+    "data": {
+        "route_params": {
+            
+        }
+    },
+    "filter": {
+        "search_columns": [],
+        "sort_columns": []
+    },
+    "table": {
+        "class": "",
+        "columns": [
+            {
+                "title": "Ảnh",
+                "class": "thumb-col",
+                "template": "<a href='{@route}'><img src='{@getImage}' class='image-thumb'></a>",
+                "data":{
+                    "@route": [".update", {"slider": ":slider_id", "id": ":id"}],
+                    "@getImage": []
+                }
+            },
+            {
+                "title": "Tiêu đề",
+                "class": "min-160",
+                "text": ":title"
+            },
+            {
+                "title": "Mô tả",
+                "class": "min-160",
+                "text": ":description"
+            },
+            {
+                "title": "Liên kết",
+                "class": "text-cemter min-160",
+                "text": ":link"
+            }
+        ]
+    },
+    "resources": {
+        "js_data": [],
+        "js": [],
+        "css": []
+    }
+}

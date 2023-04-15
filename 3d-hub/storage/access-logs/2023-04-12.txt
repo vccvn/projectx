@@ -1,0 +1,1 @@
+[2023-04-12 11:25:15] ip: 52.25.14.4, OS: Linux, Brower: Chrome, path: /_profiler/phpinfo

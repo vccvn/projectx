@@ -1,0 +1,67 @@
+:host {
+    color: #fff;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: #fff;
+    }
+}
+.not-found,
+p {
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+h2 {
+    line-height: 1;
+    color: #ffffff;
+    font-size: 15px;
+    margin-bottom: 12px;
+    font-weight: 600;
+    padding: 0 16px;
+}
+
+.btn-show {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    color: #fff;
+    cursor: pointer;
+    &:hover {
+        background: #5d6574;
+    }
+    &:active {
+        background: #1a2231;
+    }
+}
+
+.inp-group-item {
+    border-top: 1px dotted silver;
+    padding-top: 10px;
+}
+.inp-group-item-first {
+    padding-top: 10px;
+}
+
+
+label,
+nz-form-label,
+nz-form-label * {
+    color: #ffffff !important;
+}
+.info-form{
+    margin-bottom: 15px;
+}
+.search,
+.templates {
+    margin-top: 15px;
+}
+.tab-inner>.store{
+    overflow-x: hidden;
+    box-sizing: border-box;
+    height: calc(100% - 95px) !important;
+}

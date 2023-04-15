@@ -1,0 +1,41 @@
+<div class="login-wrapper">
+  <form nz-form [formGroup]="loginForm" (ngSubmit)="onSubmit()" role="form">
+    <section class="title">
+      Brandgos
+      <h5 class="hint">Make your logo</h5>
+    </section>
+    <div class="login-group">
+      <nz-alert *ngIf="error" [nzType]="'error'" [nzMessage]="error" [nzShowIcon]="true" class="mb-lg"></nz-alert>
+      <nz-form-item>
+        <nz-form-control>
+          <nz-input-group nzSize="large" nzPrefixIcon="user">
+            <input nz-input formControlName="email" placeholder="Email" />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+
+      <nz-form-item>
+        <nz-form-control>
+          <nz-input-group nzSize="large" nzPrefixIcon="lock">
+            <input nz-input type="password" formControlName="password" placeholder="Password" />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+      <nz-form-item>
+        <!-- <nz-col [nzSpan]="12">
+        <label nz-checkbox formControlName="remember">{{
+          'Remember me' | translate
+        }}</label>
+      </nz-col> -->
+        <!-- <nz-col [nzSpan]="12" class="text-right">
+        <a class="forgot">{{ 'Forgot password' | translate }}</a>
+      </nz-col> -->
+      </nz-form-item>
+      <nz-form-item>
+        <button nz-button type="submit" nzType="primary" nzSize="large" [nzLoading]="isAuthenticating$ | async" nzBlock>
+          {{ 'Login' }}
+        </button>
+      </nz-form-item>
+    </div>
+  </form>
+</div>

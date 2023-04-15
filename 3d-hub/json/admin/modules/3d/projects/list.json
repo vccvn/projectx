@@ -1,0 +1,69 @@
+{
+    "name": "[module]",
+    "package": "crazy_3d_templates",
+    "use_trash": true,
+    "titles": {
+        "default": "Danh sách [module]",
+        "trash": "Danh sách [module] đã xóa"
+    },
+    "data": [],
+    "filter": {
+        "search_columns": [],
+        "sort_columns": []
+    },
+    "table": {
+        "class": "header-center",
+        "columns": [
+            {
+                "title": "",
+                "class": "",
+                "text": ":user_id"
+            },
+            {
+                "title": "",
+                "class": "",
+                "text": ":category_id"
+            },
+            {
+                "title": "",
+                "class": "",
+                "text": ":name"
+            },
+            {
+                "title": "",
+                "class": "",
+                "text": ":description"
+            },
+            {
+                "title": "",
+                "class": "",
+                "text": ":status"
+            },
+            {
+                "title": "",
+                "class": "",
+                "text": ":secret_id"
+            },
+            {
+                "title": "",
+                "class": "",
+                "text": ":thumbnail"
+            },
+            {
+                "title": "",
+                "class": "",
+                "text": ":__data__"
+            },
+            {
+                "title": "",
+                "class": "",
+                "text": ":deleted"
+            }
+        ]
+    },
+    "resources": {
+        "js_data": [],
+        "js": [],
+        "css": []
+    }
+}

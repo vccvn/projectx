@@ -1,0 +1,24 @@
+<div class="clearfix">
+  <nz-upload
+    class="hellooo"
+    nzListType="picture-card"
+    [(nzFileList)]="fileList"
+    [nzShowButton]="fileList.length < quantity"
+    [nzShowUploadList]="showUploadList"
+    [nzPreview]="handlePreview"
+    [nzCustomRequest]="customReq"
+    [nzRemove]="handleRemove"
+    [nzBeforeUpload]="beforeUpload"
+  >
+    <i nz-icon nzType="plus"></i>
+    <div class="ant-upload-text">Upload</div>
+  </nz-upload>
+
+  <div class="has-error">{{ error }}</div>
+
+  <nz-modal [nzVisible]="previewVisible" [nzContent]="modalContent" [nzFooter]="null" (nzOnCancel)="previewVisible = false">
+    <ng-template #modalContent>
+      <img [src]="previewImage" [ngStyle]="{ width: '100%' }" />
+    </ng-template>
+  </nz-modal>
+</div>

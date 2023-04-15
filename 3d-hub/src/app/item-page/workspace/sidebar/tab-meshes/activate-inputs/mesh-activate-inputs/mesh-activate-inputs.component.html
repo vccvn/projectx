@@ -1,0 +1,11 @@
+<inp-text-group name="title" [(value)]="mesh.title" label="Mesh Title" (subcribe)="updateMeshTitle($event)"></inp-text-group>
+<material-activate-inputs 
+        index="-1" 
+        [material]="mesh.__ref__.material" 
+        [settings]="mesh.data.material" 
+        [editable]="mesh.editable" 
+        (onUpdate)="updateMaterial($event)"
+        (updateEditable)="updateEditable($event)"
+
+        [isArray]="false">
+    </material-activate-inputs>

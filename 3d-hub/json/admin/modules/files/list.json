@@ -1,0 +1,83 @@
+{
+    "name": "Tập tin",
+    "package": "files",
+    "use_trash": false,
+    "titles": {
+        "default": "Danh sách Tập tin",
+        "trash": "Danh sách Tập tin đã xóa"
+    },
+    "data": {
+        "refs":{
+            "post": "Bài viết",
+            "page": "Trang",
+            "product": "Sản phẩm",
+            "gallery": "Thư viện",
+            "file": "Không"
+        }
+    },
+    "filter": {
+        "search_columns": {
+            "title": "Title",
+            "original_filename": "Filename"
+            
+        },
+        "sort_columns": {
+            "title": "Title",
+            "original_filename": "Filename",
+            "size": "Kích thước"
+            
+        }
+    },
+    "table": {
+        "class": "header-center",
+        "columns": [
+            {
+                "title": "Thumb",
+                "class": "text-center",
+                "template": "<img src=\"{@getThumbnail}\" class=\"image-thumbnail\" />",
+                "data": {
+                    "@getThumbnail": []
+                }
+            },
+            {
+                "title": "Tên file",
+                "class": "max-200",
+                "text": ":original_filename"
+            },
+            {
+                "title": "Type",
+                "class": "text-center",
+                "text": ":filetype"
+            },
+            {
+                "title": "size",
+                "class": "text-right",
+                "template": "{@getSizeText}",
+                "data":{
+                    "@getSizeText": []
+                }
+            },
+            {
+                "title": "Định dạng",
+                "class": "text-center",
+                "text": ":extension"
+            },
+            {
+                "title": "Tham chiếu",
+                "class": "text-center",
+                "data_access": "refs.{:ref}"
+            },
+            
+            {
+                "title": "Thông tin bổ xung",
+                "class": "",
+                "template": "<strong>{title}</strong><br>{description}"
+            }
+        ]
+    },
+    "resources": {
+        "js_data": [],
+        "js": [],
+        "css": []
+    }
+}

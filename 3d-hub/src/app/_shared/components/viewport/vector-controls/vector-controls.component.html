@@ -1,0 +1,15 @@
+<div class="fs" *ngIf="isShow">
+    <div class="face-selection">
+        <inp-select name="face" [(value)]="currentFace" [options]="faceOptions" [fullwidth]="true" (subcribe)="changeFace($event.value)"></inp-select>
+    </div>
+    <!-- <div class="face-matrix">
+        <div class="row" *ngFor="let faceRow of faceMatrix; let i=index">
+            <div class="col" *ngFor="let face of faceRow; let i=index">
+                <div class="face-item" *ngIf="face != null" (click)="changeFace(face)">{{face}}</div>
+            </div>
+        </div>
+    </div>
+     -->
+    <div class="canvas-wrapper"></div>
+    
+</div>

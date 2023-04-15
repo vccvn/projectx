@@ -1,0 +1,15 @@
+{
+    "name": "Footer: Giới thiệu",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề (Tùy chọn)"
+        },
+        "description": {
+            "type": "textarea",
+            "label":"Giới thiệu",
+            "placeholder": "Viết gì đó...",
+            "className": "auto-height"
+        }
+    }
+}

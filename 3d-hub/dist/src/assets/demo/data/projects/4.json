@@ -1,0 +1,704 @@
+{
+    "id": 4,
+    "name": "Template 4",
+    "category_id": 2,
+    "description": "Đây là màn hình view",
+    "status": "published",
+    "allow_custom": false,
+
+    "thumbnail": "https://threejs.vcc.vn/assets/images/templates/1.png", 
+    "renderer": {
+        "params": {
+            "antialias": true,
+            "alpha": true
+        },
+        "shadowMap": {
+            "enabled": true
+        },
+        "autoStart": false,
+        "outputEncoding": 3001
+    },
+    "scene": {
+        "size": {
+            "width": 4,
+            "height": 4,
+            "depth": 4
+        },
+        "background": {},
+        "foregrounds": [
+            {
+                "url": "https://threejs.vcc.vn/textures/Frame/image_02.png",
+                "name": "foreground",
+                "position": {
+                    "x": "right",
+                    "y": "bottom"
+                },
+                "repeat": "no",
+                "opacity": 1,
+                "size": "contain",
+                "secret_key": "vNcuLbtZ9xd99LDCaTVGDAIPhANys9Wz"
+            }
+        ],
+        "floor": {
+            "enabled": true,
+            "params": {
+                "type": "plane",
+                "width": 4,
+                "height": 4
+            },
+            "material": {
+                "type": "physical",
+                "color": "#ebebeb"
+            },
+            "props": {
+                "receiveShadow": true,
+                "position": {
+                    "x": 0,
+                    "y": -0.2,
+                    "z": 0
+                }
+            },
+            "above": true
+        }
+    },
+    "composer": {},
+    "shadow": {
+        "enabled": true,
+        "pcss": false,
+        "type": 1
+    },
+    "camera": {
+        "fov": 45,
+        "near": 0.001,
+        "far": 1000,
+        "position": {
+            "x": -0.8170046670215598,
+            "y": 0.09442890624749557,
+            "z": 1.3166573418053427
+        },
+        "autofit": true,
+        "settings": {
+            "position": {
+                "type": "custom",
+                "face": "front",
+                "custom": {
+                    "x": -0.8170046670215598,
+                    "y": 0.09442890624749557,
+                    "z": 1.3166573418053427
+                }
+            },
+            "rotation": {}
+        }
+    },
+    "control": {
+        "type": "orbit",
+        "autoUpdateScene": true,
+        "maxDistance": 1200,
+        "enableDamping": true,
+        "dampingFactor": 0.1,
+        "enablePan": false,
+        "enabled": true,
+        "highPerformance": true,
+        "constraint": {
+            "smoothZoom": true,
+            "zoomDampingFactor": 0.2,
+            "smoothZoomSpeed": 5
+        },
+        "settings": {
+            "enabled": true
+        },
+        "minDistance": 0.001
+    },
+    "lights": [
+        {
+            "type": "ambient",
+            "data": {
+                "params": {
+                    "color": "#ffffff",
+                    "intensity": 0.5
+                }
+            },
+            "secret_key": "DUkWmYXqHLn30h8srtGc1fClZ5VBh7Vs"
+        },
+        {
+            "type": "point",
+            "data": {
+                "params": {
+                    "color": "#4444cc",
+                    "intensity": 0.3
+                },
+                "props": {
+                    "position": {
+                        "x": 0,
+                        "y": -10
+                    }
+                }
+            },
+            "secret_key": "QT2uvl11GYiE9lBJ31kWLN7uZ4LVUY5h"
+        },
+        {
+            "type": "Directionallight",
+            "data": {
+                "params": {
+                    "color": "#FFE0B5",
+                    "intensity": 0.4
+                },
+                "props": {
+                    "position": {
+                        "x": 10,
+                        "y": 10,
+                        "z": 8
+                    },
+                    "castShadow": true,
+                    "shadow": {
+                        "mapSize": {
+                            "width": 4096,
+                            "height": 4096
+                        },
+                        "camera": {
+                            "near": 0.1,
+                            "far": 100,
+                            "left": 10,
+                            "right": -10,
+                            "top": 10,
+                            "bottom": -10
+                        },
+                        "darkness": 0.1,
+                        "bias": -0.0002,
+                        "radius": 5
+                    }
+                }
+            },
+            "secret_key": "4SBlh9qasmkym2qVinqXZQmrE1wyPz4g"
+        },
+        {
+            "type": "Directionallight",
+            "data": {
+                "params": {
+                    "color": "#FFE0B5",
+                    "intensity": 0.4
+                },
+                "props": {
+                    "position": {
+                        "x": 8,
+                        "y": 12,
+                        "z": 5
+                    }
+                }
+            },
+            "secret_key": "FSFhrzuO3FGYgYwdNRfMIaTuF0vwNr53"
+        },
+        {
+            "secret_key": "wnrnh6P4c3lYDTJDWv3MUOkjp1ds3eOF",
+            "type": "Directionallight",
+            "data": {
+                "params": {
+                    "color": "#FFE0B5",
+                    "intensity": 0.28
+                },
+                "props": {
+                    "position": {
+                        "x": 10,
+                        "y": 10,
+                        "z": -7
+                    },
+                    "castShadow": true,
+                    "shadow": {
+                        "mapSize": {
+                            "width": 4096,
+                            "height": 4096
+                        },
+                        "camera": {
+                            "near": 0.1,
+                            "far": 100,
+                            "left": 10,
+                            "right": -10,
+                            "top": 10,
+                            "bottom": -10
+                        },
+                        "darkness": 0.1,
+                        "bias": -0.0002,
+                        "radius": 5
+                    }
+                }
+            }
+        }
+    ],
+    "objects": [
+        {
+            "type": "model",
+            "secret_key": "a_RPCtRGN0Av90HqyvEJjSdk7NtndkW384",
+            "data": {
+                "id": 4,
+                "name": "Cái cốc",
+                "category_id": 0,
+                "description": "",
+                "status": "draft",
+                "type": "gltf",
+                "path": "https://threejs.vcc.vn/models/gltf/set14/",
+                "file": "scene.gltf",
+                "download_source_url": "https://threejs.vcc.vn/zip/set14.zip",
+                "thumbnail": "https://threejs.vcc.vn/models/gltf/set14/thumbnail.png",
+                "load_options": {
+                    "useRoughnessMipmapper": true,
+                    "materialNeedsUpdate": true
+                },
+                "settings": {
+                    "props": {
+                        "position": {
+                            "x": -0.013714691749999744,
+                            "y": -0.11243764385,
+                            "z": -0.023430136499998235
+                        },
+                        "castShadow": true,
+                        "receiveShadow": false,
+                        "rotation": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        },
+                        "scale": {
+                            "x": 1,
+                            "y": 1,
+                            "z": 1
+                        }
+                    },
+                    "options": {
+                        "pivot": {
+                            "x": "center",
+                            "y": "center",
+                            "z": "center"
+                        }
+                    },
+                    "meshes": [
+                        {
+                            "name": "Cone001",
+                            "sid": "cone001_0",
+                            "index": 0,
+                            "title": "Cone001",
+                            "data": {},
+                            "editable": [
+                                "bumpScale",
+                                "normalMap",
+                                "transparent",
+                                "opacity",
+                                "bumpMap",
+                                "map",
+                                "color"
+                            ]
+                        },
+                        {
+                            "name": "Cylinder001",
+                            "sid": "cylinder001_1",
+                            "index": 1,
+                            "title": "Cylinder001",
+                            "data": {},
+                            "editable": [
+                                "color",
+                                "map",
+                                "bumpMap"
+                            ]
+                        },
+                        {
+                            "name": "Cone002",
+                            "sid": "cone002_2",
+                            "index": 2,
+                            "title": "Cone002",
+                            "data": {},
+                            "editable": [
+                                "color",
+                                "map",
+                                "bumpMap"
+                            ]
+                        }
+                    ]
+                },
+                "size": {
+                    "x": 0.0934722498,
+                    "y": 0.1751247123,
+                    "z": 0.0930150524
+                }
+            }
+        },
+        {
+            "type": "model",
+            "secret_key": "a_ogZxL2gXoLayiP3lDNK66voCRQpzCf3e",
+            "data": {
+                "id": 1,
+                "name": "Túi kéo",
+                "category_id": 0,
+                "description": "",
+                "status": "published",
+                "type": "gltf",
+                "path": "https://threejs.vcc.vn/models/gltf/set21/",
+                "file": "scene.gltf",
+                "download_source_url": "https://threejs.vcc.vn/zip/set21.zip",
+                "thumbnail": "https://threejs.vcc.vn/models/gltf/set21/thumbnail.png",
+                "load_options": {
+                    "useRoughnessMipmapper": true,
+                    "materialNeedsUpdate": true
+                },
+                "settings": {
+                    "props": {
+                        "position": {
+                            "x": -0.3125001012499995,
+                            "y": -0.07498247007109579,
+                            "z": 0.040671087621472646
+                        },
+                        "castShadow": true,
+                        "receiveShadow": true,
+                        "rotation": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        },
+                        "scale": {
+                            "x": 1,
+                            "y": 1,
+                            "z": 1
+                        }
+                    },
+                    "options": {
+                        "pivot": {
+                            "x": "center",
+                            "y": "center",
+                            "z": "center"
+                        }
+                    },
+                    "meshes": [
+                        {
+                            "name": "Plane001",
+                            "sid": "plane001_0",
+                            "index": 0,
+                            "title": "Plane001",
+                            "data": {
+                                "material": {
+                                    "color": "#fdfdfd"
+                                }
+                            },
+                            "editable": [
+                                "color",
+                                "map",
+                                "bumpMap",
+                                "bumpScale",
+                                "normalMap",
+                                "normalMapType",
+                                "transparent",
+                                "opacity",
+                                "side",
+                                "visible"
+                            ]
+                        },
+                        {
+                            "name": "Plane002",
+                            "sid": "plane002_1",
+                            "index": 1,
+                            "title": "Plane002",
+                            "data": {},
+                            "editable": [
+                                "color",
+                                "map",
+                                "bumpMap",
+                                "bumpScale",
+                                "normalMap",
+                                "normalMapType",
+                                "transparent",
+                                "opacity",
+                                "side",
+                                "visible"
+                            ]
+                        },
+                        {
+                            "name": "Mat_truoc",
+                            "sid": "mat_truoc_2",
+                            "index": 2,
+                            "title": "Mặt trước",
+                            "data": {},
+                            "editable": [
+                                "color",
+                                "map",
+                                "bumpMap",
+                                "bumpScale",
+                                "normalMap",
+                                "normalMapType",
+                                "transparent",
+                                "opacity",
+                                "side",
+                                "visible"
+                            ]
+                        }
+                    ]
+                },
+                "size": {
+                    "x": 0.149999991,
+                    "y": 0.25003505985780844,
+                    "z": 0.07353769685122424
+                }
+            }
+        },
+        {
+            "type": "model",
+            "secret_key": "a_cUQkjHklDH0hfrEkhpbhLBcQs8nI9Vu3",
+            "data": {
+                "id": 3,
+                "name": "2 Cốc",
+                "category_id": 0,
+                "description": "",
+                "status": "draft",
+                "type": "gltf",
+                "path": "https://threejs.vcc.vn/models/gltf/set16/",
+                "file": "scene.gltf",
+                "download_source_url": "https://threejs.vcc.vn/zip/set16.zip",
+                "thumbnail": "https://threejs.vcc.vn/models/gltf/set16/thumbnail.png",
+                "load_options": {
+                    "useRoughnessMipmapper": true,
+                    "materialNeedsUpdate": true
+                },
+                "settings": {
+                    "props": {
+                        "position": {
+                            "x": -0.7113315507047728,
+                            "y": -0.1094720946674857,
+                            "z": 0.04038416423392721
+                        },
+                        "castShadow": true,
+                        "receiveShadow": false,
+                        "rotation": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        },
+                        "scale": {
+                            "x": 1,
+                            "y": 1,
+                            "z": 1
+                        }
+                    },
+                    "options": {
+                        "pivot": {
+                            "x": "center",
+                            "y": "center",
+                            "z": "center"
+                        }
+                    },
+                    "meshes": [
+                        {
+                            "name": "Cone001",
+                            "sid": "cone001_0",
+                            "index": 0,
+                            "title": "Cone001",
+                            "data": {},
+                            "editable": [
+                                "color",
+                                "map",
+                                "bumpMap",
+                                "bumpScale",
+                                "normalMap",
+                                "normalMapType",
+                                "transparent",
+                                "opacity",
+                                "side",
+                                "visible"
+                            ]
+                        },
+                        {
+                            "name": "Cylinder001",
+                            "sid": "cylinder001_1",
+                            "index": 1,
+                            "title": "Cylinder001",
+                            "data": {},
+                            "editable": [
+                                "color",
+                                "map",
+                                "bumpMap",
+                                "bumpScale",
+                                "normalMap",
+                                "normalMapType",
+                                "transparent",
+                                "opacity",
+                                "side",
+                                "visible"
+                            ]
+                        },
+                        {
+                            "name": "Cone002",
+                            "sid": "cone002_2",
+                            "index": 2,
+                            "title": "Cone002",
+                            "data": {},
+                            "editable": [
+                                "color",
+                                "map",
+                                "bumpMap",
+                                "bumpScale",
+                                "normalMap",
+                                "normalMapType",
+                                "transparent",
+                                "opacity",
+                                "side",
+                                "visible"
+                            ]
+                        },
+                        {
+                            "name": "Cone003",
+                            "sid": "cone003_3",
+                            "index": 3,
+                            "title": "Cone003",
+                            "data": {},
+                            "editable": [
+                                "color",
+                                "map",
+                                "bumpMap",
+                                "bumpScale",
+                                "normalMap",
+                                "normalMapType",
+                                "transparent",
+                                "opacity",
+                                "side",
+                                "visible"
+                            ]
+                        },
+                        {
+                            "name": "Cone004",
+                            "sid": "cone004_4",
+                            "index": 4,
+                            "title": "Cone004",
+                            "data": {},
+                            "editable": []
+                        },
+                        {
+                            "name": "Cylinder002",
+                            "sid": "cylinder002_5",
+                            "index": 5,
+                            "title": "Cylinder002",
+                            "data": {},
+                            "editable": []
+                        }
+                    ]
+                },
+                "size": {
+                    "x": 0.3436449198120606,
+                    "y": 0.18105581066502863,
+                    "z": 0.11495122052022133
+                }
+            }
+        },
+        {
+            "type": "model",
+            "secret_key": "a_H63jH5Hu4XPQb4FNrUd1Fdv91sY2Lx38",
+            "data": {
+                "id": 8,
+                "name": "4 Cái cốc",
+                "category_id": 3,
+                "description": "",
+                "status": "draft",
+                "type": "gltf",
+                "path": "https://threejs.vcc.vn/models/gltf/4cup/",
+                "file": "model.gltf",
+                "download_source_url": "https://threejs.vcc.vn/zip/4cup.zip",
+                "thumbnail": "https://threejs.vcc.vn/models/gltf/4cup/thumbnail.png",
+                "load_options": {
+                    "useRoughnessMipmapper": true,
+                    "materialNeedsUpdate": true
+                },
+                "settings": {
+                    "props": {
+                        "position": {
+                            "x": -0.10673609918254612,
+                            "y": -0.16400234323500001,
+                            "z": 0.4780318000372198
+                        },
+                        "castShadow": false,
+                        "receiveShadow": false,
+                        "rotation": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        },
+                        "scale": {
+                            "x": 1,
+                            "y": 1,
+                            "z": 1
+                        }
+                    },
+                    "options": {
+                        "pivot": {
+                            "x": "center",
+                            "y": "center",
+                            "z": "center"
+                        }
+                    },
+                    "meshes": [
+                        {
+                            "name": "Cylinder001",
+                            "sid": "cylinder001_0",
+                            "index": 0,
+                            "title": "Cylinder001",
+                            "data": {},
+                            "editable": []
+                        },
+                        {
+                            "name": "Cylinder002",
+                            "sid": "cylinder002_1",
+                            "index": 1,
+                            "title": "Cylinder002",
+                            "data": {},
+                            "editable": []
+                        },
+                        {
+                            "name": "Cylinder003",
+                            "sid": "cylinder003_2",
+                            "index": 2,
+                            "title": "Cylinder003",
+                            "data": {},
+                            "editable": []
+                        },
+                        {
+                            "name": "Cylinder004",
+                            "sid": "cylinder004_3",
+                            "index": 3,
+                            "title": "Cylinder004",
+                            "data": {},
+                            "editable": []
+                        }
+                    ]
+                },
+                "size": {
+                    "x": 0.39858187385630606,
+                    "y": 0.07199531353,
+                    "z": 0.10218687835205026
+                }
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "secret_key": "sjA1rGhN4DqA3oYk9DWLOwF69VNelmmh",
+            "data": {
+                "geometry": {
+                    "type": "plane",
+                    "width": 4,
+                    "height": 3,
+                    "widthSegments": 1,
+                    "heightSegments": 1
+                },
+                "material": {
+                    "type": "physical",
+                    "color": "#ffffff",
+                    "transparent": false,
+                    "opacity": 1,
+                    "name": "",
+                    "map": "https://threejs.vcc.vn/images/anh_dep_viet_nam_9_1-6035c3172ae6f.jpg"
+                },
+                "props": {
+                    "castShadow": true,
+                    "position": {
+                        "y": 0.6111351941818888,
+                        "x": 0.009624072673335093,
+                        "z": -0.21138137914061805
+                    }
+                }
+            }
+        }
+    ]
+}

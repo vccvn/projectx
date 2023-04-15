@@ -1,0 +1,1 @@
+[2021-12-23 04:32:58] ip: 37.0.11.64, OS: Windows 10, Brower: Chrome, path: /wp-admin/css/

@@ -1,0 +1,1 @@
+[2022-06-20 19:26:04] ip: 92.205.56.212, OS: Windows 10, Brower: Chrome, path: /wp-admin/css/

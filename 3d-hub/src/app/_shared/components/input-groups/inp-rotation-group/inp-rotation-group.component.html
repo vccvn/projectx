@@ -1,0 +1,38 @@
+<div class="label">{{label | translate}}</div>
+<div nz-row [nzGutter]="{ xs: 8, sm: 16, md: 24, lg: 32 }">
+    <div nz-col class="gutter-row" [nzSpan]="8">
+        <div class="inner-box">
+            <nz-input-number 
+                [(ngModel)]="_value.x" 
+                name="x" [nzStep]="0.01" 
+                (ngModelChange)="updateVector('x', $event)" 
+                [nzFormatter]="formatterX"
+                [nzParser]="parserX">
+            </nz-input-number>
+        </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="8">
+        <div class="inner-box">
+            <nz-input-number 
+                [(ngModel)]="_value.y" 
+                name="x" 
+                [nzStep]="0.01" 
+                (ngModelChange)="updateVector('y', $event)"
+                [nzFormatter]="formatterY"
+                [nzParser]="parserY">
+            </nz-input-number>
+        </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="8">
+        <div class="inner-box">
+            <nz-input-number 
+                [(ngModel)]="_value.z" 
+                name="x" 
+                [nzStep]="0.01" 
+                (ngModelChange)="updateVector('z', $event)"
+                [nzFormatter]="formatterZ"
+                [nzParser]="parserZ">
+            </nz-input-number>
+        </div>
+    </div>
+</div>

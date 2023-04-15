@@ -1,0 +1,35 @@
+[2023-02-28 05:53:47] ip: 54.187.232.4, OS: Mac OS X, Brower: Chrome, path: /
+[2023-02-28 05:53:54] ip: 54.187.232.4, OS: Windows 10, Brower: Chrome, path: /vendor/.env
+[2023-02-28 05:54:00] ip: 54.187.232.4, OS: Windows 10, Brower: Chrome, path: /.git/config
+[2023-02-28 05:54:01] ip: 54.187.232.4, OS: Windows 10, Brower: Chrome, path: /cron/.env
+[2023-02-28 05:54:03] ip: 54.187.232.4, OS: Windows 10, Brower: Chrome, path: /laravel/.env
+[2023-02-28 05:54:04] ip: 54.187.232.4, OS: Windows 10, Brower: Chrome, path: /sitemaps/.env
+[2023-02-28 05:54:04] ip: 54.187.232.4, OS: Windows 10, Brower: Chrome, path: /.vscode/sftp.json
+[2023-02-28 05:54:05] ip: 54.187.232.4, OS: Windows 10, Brower: Chrome, path: /public/.env
+[2023-02-28 05:54:07] ip: 54.187.232.4, OS: Windows 10, Brower: Chrome, path: /en/.env
+[2023-02-28 05:54:11] ip: 54.187.232.4, OS: Windows 10, Brower: Chrome, path: /config/config.json
+[2023-02-28 05:54:12] ip: 54.187.232.4, OS: Windows 10, Brower: Chrome, path: /admin/.env
+[2023-02-28 05:54:17] ip: 54.187.232.4, OS: Mac OS X, Brower: Chrome, path: /debug/default/view?panel=request
+[2023-02-28 05:54:17] ip: 54.187.232.4, OS: Windows 10, Brower: Chrome, path: /apps/.env
+[2023-02-28 05:54:26] ip: 54.187.232.4, OS: Windows 10, Brower: Chrome, path: /core/app/.env
+[2023-02-28 05:54:29] ip: 54.187.232.4, OS: Windows 10, Brower: Chrome, path: /uploads/.env
+[2023-02-28 05:54:35] ip: 54.187.232.4, OS: Windows 10, Brower: Chrome, path: /web/.env
+[2023-02-28 05:54:36] ip: 54.187.232.4, OS: Windows 10, Brower: Chrome, path: /tools/.env
+[2023-02-28 05:54:36] ip: 54.187.232.4, OS: Windows 10, Brower: Chrome, path: /administrator/.env
+[2023-02-28 05:54:38] ip: 54.187.232.4, OS: Windows 10, Brower: Chrome, path: /v2/.env
+[2023-02-28 05:54:39] ip: 54.187.232.4, OS: Windows 10, Brower: Chrome, path: /saas/.env
+[2023-02-28 05:54:39] ip: 54.187.232.4, OS: Windows 10, Brower: Chrome, path: /app/.env
+[2023-02-28 05:54:43] ip: 54.187.232.4, OS: Windows 10, Brower: Chrome, path: /lab/.env
+[2023-02-28 05:54:46] ip: 54.187.232.4, OS: Windows 10, Brower: Chrome, path: /exapi/.env
+[2023-02-28 05:54:46] ip: 54.187.232.4, OS: Windows 10, Brower: Chrome, path: /config/.env
+[2023-02-28 05:54:48] ip: 54.187.232.4, OS: Windows 10, Brower: Chrome, path: /lib/.env
+[2023-02-28 05:54:51] ip: 54.187.232.4, OS: Windows 10, Brower: Chrome, path: /assets/.env
+[2023-02-28 05:54:51] ip: 54.187.232.4, OS: Windows 10, Brower: Chrome, path: /core/.env
+[2023-02-28 05:54:51] ip: 54.187.232.4, OS: Windows 10, Brower: Chrome, path: /api/.env
+[2023-02-28 05:54:56] ip: 54.187.232.4, OS: Windows 10, Brower: Chrome, path: /v1/.env
+[2023-02-28 05:54:56] ip: 54.187.232.4, OS: Windows 10, Brower: Chrome, path: /database/.env
+[2023-02-28 05:55:02] ip: 54.187.232.4, OS: Windows 10, Brower: Chrome, path: /cronlab/.env
+[2023-02-28 05:55:02] ip: 54.187.232.4, OS: Windows 10, Brower: Chrome, path: /site/.env
+[2023-02-28 09:00:58] ip: 66.249.71.23, OS: Android, Brower: Handheld Browser, path: /tags/tin-tuc.html
+[2023-02-28 12:12:32] ip: 205.210.31.174, OS: Unknown OS Platform, Brower: Unknown Browser, path: /
+[2023-02-28 12:54:03] ip: 103.234.72.6, OS: Windows 7, Brower: Firefox, path: /

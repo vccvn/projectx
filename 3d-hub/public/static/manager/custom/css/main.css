@@ -1,0 +1,165 @@
+
+
+a:hover{
+    text-decoration: none;
+}
+td::before{
+    display: none;
+}
+.bg-red{
+    color: red;
+    text-transform: uppercase;
+}
+.bg-red:hover{
+    color: red;
+}
+.bg-orange{
+    color: orange;
+    text-transform: uppercase;
+}
+.bg-orange:hover{
+    color: orange;
+}
+.bg-white{
+    color: white;
+}
+.bg-white:hover{
+    color: white;
+}
+.bg-blue{
+    color: blue;
+    text-transform: uppercase;
+}
+.bg-black{
+    color: black;
+    text-transform: uppercase;
+}
+.btn-info{
+    margin: 0px;
+}
+.magr20{
+    margin-right: 20px;
+}
+.m-body .m-content{
+    padding: 0px;
+}
+.form-control{
+    padding: 0.5rem 1.15rem;
+}
+.full-width{
+    width: 100%;
+}
+.m-subheader {
+    padding: 10px 30px 0 30px;
+}
+.hei30{
+    height: 30px;
+    border-color: #ebedf2;
+    color: #575962;
+}
+.l49{
+    width: 49%;
+    float: left;
+}
+.r49{
+    width: 49%;
+    float: right;
+}
+.form-control1{
+    width: 100%;
+    border-radius: 30px;
+    padding: 5px 20px;
+    border:1px solid #ccc;
+    color: #575962;
+    outline: white;
+}
+.magb5{
+    margin-bottom: 5px;
+}
+.table1 td, .table1 th{
+    border: 1px solid #ccc;
+    padding: 5px 5px;
+}
+.border-check{
+    border-radius: 12px;
+    outline: #ccc;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+}
+.bg-green{
+    color: green;
+}
+.m-content{
+    overflow: hidden;
+}
+.setting-table tr{
+    border: 1px solid #ccc;
+}
+.setting-table tr td{
+    border: 1px solid #ccc;
+}
+.user-list{
+    font-size: 18px;
+}
+.padt20{
+    padding-top: 20px;
+}
+#choose{
+    display: none;
+}
+.style-choose-img{
+    height: 30px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+}
+.table-about tr{
+    border-bottom: 1px dashed #ccc;
+}
+.m-aside-menu .m-menu__nav{
+    padding: 0 0 30px 0 !important;
+}
+#choose-logo{
+    display: none;
+}
+.choose-img-logo{
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.title-table__pdv{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+.order-panel {
+    margin-top: 20px;
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 10px;
+    line-height: 1.6;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.comment_content {
+    min-height: 0px;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #E3E3E3;
+    background: #FFFFF0;
+    color: #666666;
+    padding: 10px;
+    max-height: 300px;
+    overflow-y: scroll;
+    margin-bottom: 5px;
+}
+.font-size-10{
+    font-size: 10px;
+}
+.magt10{
+    margin-top: 10px;
+}
+.count-all{
+    color: black;
+    font-size: 16px;
+}

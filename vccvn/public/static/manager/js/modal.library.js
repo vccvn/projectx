@@ -424,7 +424,7 @@ $(function () {
                 maxFilesize: 150,
                 addRemoveLinks: !0,
                 renameFile: true,
-                acceptedFiles: "image/*,application/pdf,.psd,*.mp4,*.3gp,*.avi,*.mov,*.h264,audio/*,*.qt",
+                acceptedFiles: "image/jpeg,image/gif,image/png,application/svg+xml,*.svg,.svg",
                 accept: function (e, o) { "justinbieber.jpg" == e.name ? o("Naha, you don't.") : o() }
             });
             dropzoneLibrary.on("complete", function (file) {

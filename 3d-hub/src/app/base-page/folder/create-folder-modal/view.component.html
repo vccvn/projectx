@@ -1,0 +1,28 @@
+<div class="header">
+  <h2>Create a Folder</h2>
+</div>
+<form nz-form [formGroup]="validateForm" nzLayout="vertical">
+  <div nz-row nzGutter="16">
+    <div nz-col nzSpan="24">
+      <nz-form-item>
+        <nz-form-label>{{ 'Folder name' }} *</nz-form-label>
+        <nz-form-control nzHasFeedback [nzErrorTip]="NameErrorTpl">
+          <input formControlName="name" nz-input required minlength="1" maxlength="255" />
+          <ng-template #NameErrorTpl let-control>
+            <ng-container *ngIf="control.hasError('required')"> {{ 'Required' | translate }} </ng-container>
+            <ng-container *ngIf="control.errors && control.errors.length > 0">
+              <div *ngFor="let e of control.errors">
+                {{ e.message }}
+              </div>
+            </ng-container>
+          </ng-template>
+        </nz-form-control>
+      </nz-form-item>
+    </div>
+  </div>
+</form>
+<div class="footer">
+  <button nz-button [nzLoading]="loading" nzType="primary" (click)="onClickSave(true)" [disabled]="!validateForm.valid">
+    {{ 'Create' | translate }}
+  </button>
+</div>

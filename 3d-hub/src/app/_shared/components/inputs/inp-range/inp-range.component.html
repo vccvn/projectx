@@ -1,0 +1,18 @@
+<ng-container *ngIf="output; then thenTemplate; else elseTemplate"></ng-container>
+<ng-template #thenTemplate>
+    <div nz-row [nzGutter]="{ xs: 8, sm: 16, md: 24, lg: 32 }">
+        <div nz-col class="gutter-row" [nzSpan]="16">
+            <nz-slider [name]="name" [nzMin]="min" [nzMax]="max" [nzStep]="step" [(ngModel)]="value" (ngModelChange)="onChange($event)"></nz-slider>
+        </div>
+
+        <div nz-col class="gutter-row" [nzSpan]="8">
+            <div class="inner-box">
+                <nz-input-number [name]="name" [nzMin]="min" [nzMax]="max" [nzStep]="step" [(ngModel)]="value" (ngModelChange)="onChange($event)" [ngStyle]="{ marginLeft: '0px' }"></nz-input-number>
+            </div>
+        </div>
+    </div>
+</ng-template>
+<ng-template #elseTemplate>
+    <nz-slider [name]="name" [nzMin]="min" [nzMax]="max" [nzStep]="step" [(ngModel)]="value" (ngModelChange)="onChange($event)"></nz-slider>
+</ng-template>
+

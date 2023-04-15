@@ -1,0 +1,35 @@
+{
+    "name": {
+        "type": "text",
+        "label": "Tên chương trình khuyến mãi",
+        "placeholder": "Nhập tên chương trình khuyến mãi"
+    },
+    "description": {
+        "type": "textara",
+        "label": "Mô tả",
+        "placeholder": "Mô tả ngắn về chương chình khuyến mãi"
+    },
+    "type": {
+        "type": "radio",
+        "label": "Hình thức giảm giá",
+        "data":["Trừ thẳng vào giá gốc", "Giảm theo phần trăn"]
+    },
+    "down_price": {
+        "type": "number",
+        "label": "Mức giảm",
+        "placeholder": "Mức giảm",
+        "default":0
+    },
+    "code": {
+        "type": "text",
+        "label": "Mã giảm giá (tùy chọn)",
+        "placeholder": "Nhập mã giảm gia"
+    },
+    "frame_time": {
+        "type": "daterange",
+        "template": "daterange",
+        "label": "Khoảng thời gian",
+        "placeholder": "Thời gian bắt đầu - thời gian kết thúc",
+        "data-format": "HH:mm DD/MM/YYY"
+    }
+}

@@ -1,0 +1,27 @@
+<div class="group-first">
+	<a href="{link}" target="_blank">
+		<img class="logo" src="{{logo}}" alt="Cretip logo" />
+	</a>
+	
+	<div class="group-center">
+		<button class="btn btn-ghost btn-icon" nz-button nzType="text" (click)="onClickUndo()">
+			<img src="/assets/icons/new-design/header/undo.svg" />
+		</button>
+		<button class="btn btn-ghost btn-icon mr-auto" nz-button nzType="text" (click)="onClickRedo()">
+			<img src="/assets/icons/new-design/header/redo.svg" />
+		</button>
+		<button class="btn btn-ghost btn-icon hidden invisble" nz-button nzType="text" (click)="save($event)">
+			<img src="/assets/icons/new-design/header/save.svg" />
+			<span>Save</span>
+		</button>
+	</div>
+
+	
+</div>
+
+<div class="group-last">
+	
+	<button class="btn btn-primary btn-icon" nz-button nzType="text" (click)="save($event)">
+		<img src="/assets/icons/new-design/header/save.svg" />
+		<span>Save</span>
+	</button>

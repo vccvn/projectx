@@ -1,0 +1,40 @@
+{
+  "app": {
+    "name": "Cretip",
+    "description": "Cretip app"
+  },
+  "menu": [{
+      "text": "Home",
+      "i18n": "Home",
+      "link": "/home",
+      "group": true
+    },
+    {
+      "text": "Templates",
+      "i18n": "Templates",
+      "link": "/templates",
+      "group": true
+    },
+    {
+      "text": "Pricing",
+      "i18n": "Pricing",
+      "link": "/pricing",
+      "group": true
+    }
+  ],
+
+  "paths": [
+    "pages./page/dashboard",
+    "pages./page/teams",
+    "pages./page/settings",
+    "pages./page/settings/genaral",
+    "pages./page/settings/seo",
+    "pages./page/settings/profiles",
+    "pages./page/settings/change-password",
+    "pages./page/users",
+    "pages./page/profile",
+    "pages./page/profile/genaral",
+    "pages./page/profile/change-password",
+    "pages./page/project-setting"
+  ]
+}

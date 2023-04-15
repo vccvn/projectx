@@ -1,0 +1,10 @@
+<notice-icon
+  btnClass="alain-pro__header-item"
+  btnIconClass="alain-pro__header-item-icon"
+  [data]="notifications"
+  [count]="count"
+  [loading]="loading$ | async"
+  (select)="select($event)"
+  (popoverVisibleChange)="loadNotifications()"
+>
+</notice-icon>

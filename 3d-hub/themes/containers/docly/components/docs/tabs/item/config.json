@@ -1,0 +1,22 @@
+{
+    "name": "Tab Item",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề (Tùy chọn)"
+        },
+        "active": {
+            "type": "switch",
+            "label": "Kích hoạt",
+            "value_type": "boolean",
+            "check_label": "Kích hoạt hiển thị tap mặc định"
+        },
+        "content": {
+            "type": "textarea",
+            "label":"Nội dung (Hỗ trợ HTML)",
+            "placeholder": "Viết gì đó...",
+            "className": "auto-height"
+        }
+
+    }
+}

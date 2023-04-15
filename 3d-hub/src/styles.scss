@@ -1,0 +1,28 @@
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  overflow: hidden;
+  * {
+    user-select: none;
+  }
+}
+
+// @import './styles/pro.scss';
+@import './styles/design/index';
+@import './styles/item/_index.scss';
+@import './styles/viewport/index';
+@import './styles/custom/index';
+.pcr-app {
+  position: absolute !important;
+  top: 48px !important;
+  border-radius: 4px;
+  width: 100% !important;
+  .pcr-interaction input {
+    font-weight: 0.95em;
+    font-weight: 500;
+    color: #282828;
+  }
+}

@@ -1,0 +1,78 @@
+{
+    "inputs": {
+        "service_id": {
+            "type": "select",
+            "label": "Dịch vụ",
+            "call": "get_service_options"
+        },
+        "package_id": {
+            "type": "select",
+            "label": "Gói",
+            "call": "get_service_package_options",
+            "params": [
+                {
+                    "service_id": "#service_id"
+                }
+            ]
+        },
+        "email": {
+            "type": "email",
+            "label": "Email quản lý",
+            "placeholder": "Email",
+            "required": "true",
+            "prepend_text": "<i class=\"fa fa-envelope\"></i>"
+        },
+        "password": {
+            "type": "password",
+            "label": "Mật khẩu",
+            "placeholder": "Mật khẩu",
+            "prepend_text": "<i class=\"fa fa-key\"></i>"
+        },
+        "domain": {
+            "type": "select",
+            "label": "Miền chính",
+            "data": "get_cfg_domain_options"
+        },
+        "subdomain": {
+            "type": "text",
+            "text": "Tên miền con",
+            "required": "true",
+            "placeholder": "Sub Domain. ví dụ: domain",
+            "append_group": [
+                "domain"
+            ]
+        },
+        "alias_domain": {
+            "type": "text",
+            "text": "Tên miền Alias",
+            "placeholder": "Ví dụ: domain.com.vn"
+        }
+    },
+    "config": {
+        "title": "Mua gói dịch vụ",
+        "form_groups": {
+            "service": {
+                "title": "Thông tin dịch vụ",
+                "inputs": [
+                    "service_id",
+                    "package_id"
+                ]
+            },
+            "account": {
+                "title": "Tài khoản quản trị",
+                "inputs": [
+                    "email",
+                    "password"
+                ]
+            },
+            "web": {
+                "title":"Thông tin trang web",
+                "inputs": [
+                    "domain",
+                    "subdomain",
+                    "alias_domain"
+                ]
+            }
+        }
+    }
+}

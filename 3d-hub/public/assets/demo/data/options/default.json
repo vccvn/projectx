@@ -1,0 +1,140 @@
+{
+    "autoStart": false,
+    "renderer": {
+        "params": {
+            "antialias": true
+        },
+        "shadowMap": {
+            "enabled": true
+        },
+        "outputEncoding": "{THREE.sRGBEncoding}"
+    },
+    "composer": {
+        "effect1": "bloom",
+        "params": {
+            "options": {
+                "blendFunction": 16,
+                "luminanceThreshold": 0.9,
+                "luminanceSmoothing": 0.025,
+                "resolutionScale": 0.5,
+                "intensity": 1
+            }
+        }
+    },
+    "shadow": {
+        "pcss": false
+    },
+    "scene": {
+        "background": {
+            "type1": "file",
+            "format": "hdr",
+            "path": "/textures/equirectangular/",
+            "file": "royal_esplanade_1k.hdr",
+            "typeP": "color",
+            "coloPr": "#a0a0a0"
+        },
+        "env0": {
+            "type": "room"
+        }
+    },
+    "camera": {
+        "fov": 45,
+        "near": 0.001,
+        "far": 1000,
+        "position": {
+            "x": 0,
+            "y": 0.3,
+            "z": 1
+        },
+        "@lookAt": [
+            0,
+            3,
+            0
+        ],
+        "autofit": true
+    },
+    "control": {
+        "type": "orbit",
+        "autoUpdateScene": true,
+        "maxPolarAngle0": "{Math.PI * 0.52}",
+        "maxDistance": 1200,
+        "enableDamping": true,
+        "dampingFactor": 0.08,
+        "constraint": {
+            "smoothZoom": true,
+            "zoomDampingFactor": 0.2,
+            "smoothZoomSpeed": 5.0
+        }
+    },
+    "lights": [
+        {
+            "type": "ambient",
+            "params": [
+                "#ffffff",
+                0.5
+            ]
+        },
+        {
+            "type": "point",
+            "params": [
+                "#4444cc",
+                0.3
+            ],
+            "props": {
+                "position": {
+                    "x": 0,
+                    "y": -10
+                }
+            }
+        },
+        {
+            "type": "Directionallight",
+            "params": {
+                "color": "#FFE0B5",
+                "intensity": 0.4
+            },
+            "props": {
+                "position": {
+                    "x": 40,
+                    "y": 40,
+                    "z": 30
+                },
+                "castShadow": true,
+                "shadow": {
+                    "mapSize": {
+                        "width": 4096,
+                        "height": 4096
+                    },
+                    "camera": {
+                        "near": 0.1,
+                        "far": 100,
+                        "left": 10,
+                        "right": -10,
+                        "top": 10,
+                        "bottom": -10
+                    },
+                    "darkness": 0.1,
+                    "bias": -0.0002,
+                    "radius": 5
+                }
+            }
+        },
+        {
+            "type": "Directionallight",
+            "params": {
+                "color": "#FFE0B5",
+                "intensity": 0.4
+            },
+            "props": {
+                "position": {
+                    "x": 60,
+                    "y": 30,
+                    "z": 30
+                }
+            }
+        }
+    ],
+    "objects": [
+        
+    ]
+}

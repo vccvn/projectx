@@ -1,0 +1,25 @@
+[2022-09-29 02:29:45] ip: 205.185.116.25, OS: Mac OS X, Brower: Chrome, path: /
+[2022-09-29 03:17:51] ip: 198.204.252.146, OS: Unknown OS Platform, Brower: Handheld Browser, path: /.well-known/ALFA_DATA
+[2022-09-29 03:17:53] ip: 198.204.252.146, OS: Unknown OS Platform, Brower: Handheld Browser, path: /.well-known/alfacgiapi
+[2022-09-29 03:17:56] ip: 198.204.252.146, OS: Unknown OS Platform, Brower: Handheld Browser, path: /.well-known/cgialfa
+[2022-09-29 03:17:57] ip: 198.204.252.146, OS: Unknown OS Platform, Brower: Handheld Browser, path: /wp-content/uploads/ALFA_DATA
+[2022-09-29 03:18:00] ip: 198.204.252.146, OS: Unknown OS Platform, Brower: Handheld Browser, path: /wp-content/uploads/alfacgiapi
+[2022-09-29 03:34:20] ip: 198.204.252.146, OS: Unknown OS Platform, Brower: Handheld Browser, path: /wp-includes/alfacgiapi
+[2022-09-29 03:35:12] ip: 198.204.252.146, OS: Unknown OS Platform, Brower: Handheld Browser, path: /wp-includes/cgialfa
+[2022-09-29 03:35:14] ip: 198.204.252.146, OS: Unknown OS Platform, Brower: Handheld Browser, path: /wp-admin/ALFA_DATA
+[2022-09-29 03:35:17] ip: 198.204.252.146, OS: Unknown OS Platform, Brower: Handheld Browser, path: /wp-admin/alfacgiapi
+[2022-09-29 03:35:20] ip: 198.204.252.146, OS: Unknown OS Platform, Brower: Handheld Browser, path: /wp-admin/cgialfa
+[2022-09-29 03:35:22] ip: 198.204.252.146, OS: Unknown OS Platform, Brower: Handheld Browser, path: /wp-content/ALFA_DATA
+[2022-09-29 03:35:25] ip: 198.204.252.146, OS: Unknown OS Platform, Brower: Handheld Browser, path: /wp-content/alfacgiapi
+[2022-09-29 03:35:27] ip: 198.204.252.146, OS: Unknown OS Platform, Brower: Handheld Browser, path: /wp-content/cgialfa
+[2022-09-29 03:35:30] ip: 198.204.252.146, OS: Unknown OS Platform, Brower: Handheld Browser, path: /templates/beez3/ALFA_DATA
+[2022-09-29 03:35:32] ip: 198.204.252.146, OS: Unknown OS Platform, Brower: Handheld Browser, path: /templates/beez3/alfacgiapi
+[2022-09-29 03:35:35] ip: 198.204.252.146, OS: Unknown OS Platform, Brower: Handheld Browser, path: /templates/beez3/cgialfa
+[2022-09-29 03:35:37] ip: 198.204.252.146, OS: Unknown OS Platform, Brower: Handheld Browser, path: /sites/default/files/ALFA_DATA
+[2022-09-29 03:35:39] ip: 198.204.252.146, OS: Unknown OS Platform, Brower: Handheld Browser, path: /sites/default/files/alfacgiapi
+[2022-09-29 03:35:42] ip: 198.204.252.146, OS: Unknown OS Platform, Brower: Handheld Browser, path: /sites/default/files/cgialfa
+[2022-09-29 03:35:44] ip: 198.204.252.146, OS: Unknown OS Platform, Brower: Handheld Browser, path: /admin/controller/extension/extension/ALFA_DATA
+[2022-09-29 03:35:47] ip: 198.204.252.146, OS: Unknown OS Platform, Brower: Handheld Browser, path: /admin/controller/extension/extension/alfacgiapi
+[2022-09-29 03:35:49] ip: 198.204.252.146, OS: Unknown OS Platform, Brower: Handheld Browser, path: /admin/controller/extension/extension/cgialfa
+[2022-09-29 03:35:52] ip: 198.204.252.146, OS: Unknown OS Platform, Brower: Handheld Browser, path: /index.php?3x=3x
+[2022-09-29 04:01:13] ip: 205.185.121.69, OS: Mac OS X, Brower: Chrome, path: /

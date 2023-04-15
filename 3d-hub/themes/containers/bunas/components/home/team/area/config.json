@@ -1,0 +1,56 @@
+{
+    "name": "Home: Team (area)",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề (Tùy chọn)"
+        },
+        "description": {
+            "type": "textarea",
+            "label": "Mô tả",
+            "placeholder": "Viết gì đó...",
+            "className": "auto-height"
+        },
+        "background": {
+            "type": "file",
+            "label": "Hình nền (Tùy chọn)"
+
+        },
+        "list_type": {
+            "type": "radio",
+            "label": "Kiểu danh sách",
+            "data": {
+                "data": "Trong bảng Nhóm",
+                "custom": "Danh sách tùy biến"
+            },
+            "value": "custom"
+        },
+        "team_id": {
+            "type": "crazyselect",
+            "label": "Nhóm",
+            "call": "get_team_options",
+            "params": [
+                [],
+                "Chọn nhóm"
+            ]
+        },
+        "item_number": {
+            "type": "number",
+            "label": "Số lượng",
+            "value": 4
+        },
+        "sort_type": {
+            "type": "crazyselect",
+            "label": "Sắp xếp",
+            "data": {
+                "id-ASC": "Mặc định",
+                "id-DESC": "Mới nhất",
+                "users.name-ASC": "thứ tự bảng chự cái",
+                "is_leader-DESC": "Ưu tiên trưởng nhóm",
+                "job-ASC": "Công việc (A-z)",
+                "rand()": "Ngẫu nhiên"
+            },
+            "value": "id-ASC"
+        }
+    }
+}

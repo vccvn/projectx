@@ -1,0 +1,23 @@
+<div class="tab-inner">
+  <h2>Objects</h2>
+  <nz-tabset nzTabPosition="top" nzType="line" class="sub-tab">
+    
+    <nz-tab [nzTitle]="iconModel">
+      <ng-template #iconModel>
+        <img src="/assets/icons/new-design/tab-sub/model.svg" alt="Item" />
+        <div>Item</div>
+      </ng-template>
+      <app-tab-model></app-tab-model>
+    </nz-tab>
+
+    <nz-tab [nzTitle]="iconGeometry" [nzForceRender]="loadedPhoto">
+      <ng-template #iconGeometry>
+        <img src="/assets/icons/new-design/tab-sub/element.svg" alt="Geometry" />
+        <div>Geometry</div>
+      </ng-template>
+      <ng-template nz-tab>
+        <app-tab-geometry></app-tab-geometry>
+      </ng-template>
+    </nz-tab>
+  </nz-tabset>
+</div>

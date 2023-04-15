@@ -1,0 +1,18 @@
+<div class="menu-buttons" *ngIf="show">
+    <div class="btn" *ngFor="let btn of buttons; let i=index" title="{{btn.text}}" [class.active]="btn.isActive" (click)="onBtnClick(btn.name)">
+        <i nz-icon nzType="{{btn.icon}}" nzTheme="outline"></i>
+    </div>
+    <a class="btn" nz-dropdown nzTrigger="click" [nzDropdownMenu]="menu" nzPlacement="bottomRight" *ngIf="currentType != 'light'">
+        <i nz-icon nzType="more" nzTheme="outline"></i>
+    </a>
+</div>
+
+
+<nz-dropdown-menu #menu="nzDropdownMenu">
+    <ul nz-menu>
+        <li nz-menu-item *ngFor="let btn of moreMenu" (click)="onBtnClick(btn.name)">
+            <i nz-icon nzType="{{btn.icon}}" nzTheme="outline"></i>
+            {{btn.label}}
+        </li>
+    </ul>
+</nz-dropdown-menu>

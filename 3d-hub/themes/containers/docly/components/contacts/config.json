@@ -1,0 +1,15 @@
+{
+    "name": "Mục Liên hệ",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề",
+            "value": "Liên hệ chúng tôi"
+        },
+        "button_text": {
+            "type": "text",
+            "label": "Nút gửi",
+            "value": "Gửi liên hệ"
+        }
+    }
+}

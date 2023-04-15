@@ -1,0 +1,15 @@
+<div class="tab-inner">
+    <div class="inputs store">
+        <div *ngFor="let inp of inputs; let i=index">
+            <div class="input-item" [ngSwitch]="inp.type" [class.item-first]="i==0">
+                <inp-switch-group *ngSwitchCase="'checkbox'" [config]="inp" (subcribe)="changeHandle($event)" class="input-group"></inp-switch-group>
+                <inp-texture-group *ngSwitchCase="'texture'" [config]="inp" (subcribe)="changeHandle($event)" class="input-group"></inp-texture-group>
+                <inp-color-group *ngSwitchCase="'color'" [config]="inp" (subcribe)="changeHandle($event)" class="input-group"></inp-color-group>
+                <inp-select-group *ngSwitchCase="'select'" [config]="inp" (subcribe)="changeHandle($event)" class="input-group"></inp-select-group>
+                <inp-range-group *ngSwitchCase="'range'" [config]="inp" (subcribe)="changeHandle($event)" class="input-group"></inp-range-group>
+                <inp-number-group *ngSwitchCase="'number'" [config]="inp" (subcribe)="changeHandle($event)" class="input-group"></inp-number-group>
+                <inp-text-group *ngSwitchDefault [config]="inp" (subcribe)="changeHandle($event)" class="input-group"></inp-text-group>
+            </div>
+        </div>
+    </div>
+</div>

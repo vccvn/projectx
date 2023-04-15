@@ -1,0 +1,10 @@
+<div class="inner-box">{{label?label:name | translate}}</div>
+<div class="input-wrapper">
+    <inp-radio
+    [name]="name"
+    [(value)]="value"
+    [options]="options"
+    (subcribe)="onChange($event)"
+></inp-radio>
+
+</div>

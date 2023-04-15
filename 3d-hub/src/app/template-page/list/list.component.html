@@ -1,0 +1,60 @@
+<nz-layout>
+    <nz-header>
+        <app-header (clickSave)="clickSave($event)"></app-header>
+    </nz-header>
+    <nz-content>
+        <ng-container *ngIf="isLoading; then loadingTemplate; else editorTemplate"></ng-container>
+        <ng-template #loadingTemplate>
+            <div class="alert">
+                <h3>Vui lòng chờ giây lát</h3>
+            </div>
+        </ng-template>
+        <ng-template #editorTemplate>
+            <ng-container *ngIf="mode=='notfound'; then notFoundTemplate; else editorTemplate"></ng-container>
+            <ng-template #notFoundTemplate>
+                <div class="alert not-found">
+                    template Not Found
+                </div>
+            </ng-template>
+            <ng-template #editorTemplate>
+                <div class="list-template">
+                    <div class="list-header">
+                        <h2>Danh sách template</h2>
+                    </div>
+                    <ng-container *ngIf="templates.length; then listTem; else emptyTem"></ng-container>
+                    <ng-template #listTem>
+                        <div class="list container" >
+                            <div class="template-item" *ngFor="let template of templates" >
+                                <div class="inner">
+                                    <div class="thumbnail">
+                                        <a href="/template/{{template.id}}/edit">
+                                            <img src="{{template.thumbnail!=''?template.thumbnail:defaultThumbnail}}" alt="{{template.name}}">
+                                        </a>
+                                        
+                                    </div>
+                                    <div class="detail">
+                                        <h3>
+                                            <a href="/template/{{template.id}}/edit">
+                                                {{template.name}}
+                                            </a>
+                                        </h3>
+                                        <p>{{template.description}}</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </ng-template>
+                    <ng-template #emptyTem>
+                        Không có template
+                    </ng-template>
+                    
+                    
+                </div>
+            </ng-template>
+
+        </ng-template>
+
+
+    </nz-content>
+</nz-layout>

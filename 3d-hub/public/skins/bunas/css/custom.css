@@ -1,0 +1,214 @@
+.pricing-area .pricing-item li h2 sub {
+  left: 0 !important;
+}
+
+.team-members .single-item .item .thumb img {
+  width: 100%;
+}
+
+.comments-list .commen-item .content {
+  display: flow-root;
+}
+
+.comments-list .commen-item.reply.reply-level-2 {
+  margin-left: 160px;
+}
+
+.comments-list .commen-item.reply.reply-level-3 {
+  margin-left: 240px;
+}
+
+.comments-list .commen-item.reply.reply-level-4 {
+  margin-left: 320px;
+}
+
+.comments-list .commen-item.reply.reply-level-5 {
+  margin-left: 400px;
+}
+
+@media only screen and (max-width: 767px) {
+  .comments-list .commen-item.reply.reply-level-2 {
+    margin-left: 0;
+  }
+  .comments-list .commen-item.reply.reply-level-3 {
+    margin-left: 0;
+  }
+  .comments-list .commen-item.reply.reply-level-4 {
+    margin-left: 0;
+  }
+  .comments-list .commen-item.reply.reply-level-5 {
+    margin-left: 0;
+  }
+}
+
+.breadcrumb-2 {
+  background: #f1f1f1;
+}
+
+.breadcrumb-2 .breadcrumb {
+  background: transparent;
+  transform: inherit;
+  margin-bottom: 0;
+  padding: 9px 0;
+}
+
+.breadcrumb-2 .breadcrumb::after {
+  background: #a7a7a7;
+}
+
+.breadcrumb-2 .breadcrumb a, .breadcrumb-2 .breadcrumb li {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #232323;
+}
+
+.breadcrumb-2 .breadcrumb li {
+  padding: 0 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.breadcrumb-2 .breadcrumb li i {
+  margin-right: 5px;
+}
+
+.breadcrumb-2 .breadcrumb li::after {
+  border: 2px solid #999999;
+  content: "";
+  height: 10px;
+  left: -7px;
+  margin-top: -5px;
+  position: absolute;
+  top: 50%;
+  width: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.breadcrumb-2 .breadcrumb li:first-child {
+  padding-left: 0;
+}
+
+.breadcrumb-2 .breadcrumb li:first-child:after {
+  display: none;
+}
+
+.breadcrumb-2 .breadcrumb li.active {
+  color: #f71735;
+}
+
+.page-title {
+  margin-bottom: 25px;
+  border-bottom: 1px solid #efefef;
+}
+
+.main-area {
+  padding-top: 70px;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonial-items .item .thumb {
+    max-width: 220px;
+  }
+}
+
+.contact-area-info .row {
+  padding: 0 0 !important;
+}
+
+.contact-area-info .features {
+  border-top: none;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.contact-area-info .features .item {
+  border-bottom: 1px solid #e7e7e7;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.contact-area-info .features .item i {
+  font-size: 20px;
+}
+
+.contact-area-info .features .item .info {
+  word-wrap: break-word;
+}
+
+.contact-area-info .features .item .info h4 {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 650px) {
+  .contact-area-info .info.box {
+    border-bottom: 1px solid #e7e7e7;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  .contact-area-info .info.box .item {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-area-info .info.box {
+    border-bottom: 1px solid #e7e7e7;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  .contact-area-info .info.box .item {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .contact-area-info .info.box {
+    border-bottom: 1px solid #e7e7e7;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.form-group.submtit {
+  text-align: center;
+}
+
+.form-group.submtit button {
+  border: 2px solid #e7e7e7;
+  background: transparent;
+  color: #f71735;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 25px;
+  margin-top: 20px;
+  padding: 12px 40px;
+  text-transform: uppercase;
+  transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -ms-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+}
+
+.form-group.submtit button:hover {
+  color: #ffffff;
+  background-color: #f71735;
+  border: 2px solid transparent;
+}
+
+.ps-form__footer {
+  text-align: center;
+}
+
+.blog-area .sidebar .sidebar-item {
+  background-color: #ffffff;
+}

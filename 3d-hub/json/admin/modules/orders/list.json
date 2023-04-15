@@ -1,0 +1,125 @@
+{
+    "name": "Đơn hàng",
+    "package": "orders",
+    "use_trash": true,
+    "titles": {
+        "default": "Danh sách đơn hàng",
+        "trash": "Danh sách đơn hàng đã xóa",
+        "pending-verify": "Chờ xác nhận", 
+        "verified": "Đã xác nhận", 
+        "pending-payment": "Chưa thanh toán", 
+        "paid": "Đã thanh toán", 
+        "pending": "Chờ xử lý", 
+        "processing": "Đang giao hàng", 
+        "completed": "Đang xử lý", 
+        "canceled": "Đơn hàng bị hủy"
+    },
+    "data": {
+        "status": {
+            "0": "Đang chờ xác nhận", 
+            "100": "Đã xác nhận", 
+            "200": "Chờ thanh toán", 
+            "300": "Đã thanh toán", 
+            "400": "Đang xử lý", 
+            "500": "Đang giao hàng", 
+            "1000": "Đã hoàn thành", 
+            "-1":"Bị hủy"
+        },
+        "payment_methods": ["Giao hàng trả tiền", "Chuyển khoản ngân hàng", "Thanh toán online"]
+    },
+    "filter":{
+        "form": "order",
+        "search_columns": {
+            "billing_name":"Họ và tên",
+            "billing_email": "Email",
+            "billing_phone_number": "Số điện thoại",
+            "id": "Mã đơn hàng"
+        },
+        "sort_columns": {
+            "billing_name":"Họ và tên",
+            "billing_email": "Email",
+            "billing_phone_number": "Số điện thoại",
+            "id": "Mã đơn hàng",
+            "status": "Trạng thái đơn hàng",
+            "completed_at": "Thời gian hoàn thành",
+            "created_at": "Thời gian khởi tạo"
+        }
+    },
+    "table": {
+        "columns": [
+            {
+                "title": "Mã",
+                "class": "",
+                "template": "<a href=\"{url}\">{id}</a>",
+                "data": {
+                    "url": {
+                        "call":"route",
+                        "params":[".update", {"id": ":id"}]
+                    },
+                    "id": ":id"
+                }
+            },
+            {
+                "title": "Họ tên",
+                "class": "min-160 max-200",
+                "text": ":billing_name"
+            },
+            {
+                "title": "Email",
+                "class": "min-160 max-200",
+                "template": "<a href=\"mailto:{billing_email}\">{billing_email}</a>"
+            },
+            {
+                "title": "Tổng tiền",
+                "class": "min-160 text-right",
+                "template": "<span class=\"total-price\">{value}</span>",
+                "data": {
+                    "value":{
+                        "call": "number_format",
+                        "params": [":total_money",2,",","."]
+                    }
+                }
+            }, 
+            {
+                "title": "Thanh toán",
+                "class": "min-160 text-center",
+                "data_access": "payment_methods.{payment_method}"
+            },
+            {
+                "title": "Trạng thái",
+                "class": "min-100 text-center",
+                "input":{
+                    "type": "select",
+                    "name": "orders[{id}][status]",
+                    "lanel": "Trạng thái",
+                    "value": ":status",
+                    "data": "@data:status",
+                    "class": "form-control-sm m-input order-item-status-select",
+                    "data-id": ":id"
+                    
+                }
+            },
+            {
+                "title": "Chi tiết",
+                "class": "min-100 text-center",
+                "template": "<a href=\"{url}\" class=\"view-order-detail\" data-id=\"{id}\">Chi tiết</a>",
+                "data": {
+                    "url": {
+                        "call":"route",
+                        "params":[".update", {"id": ":id"}]
+                    }
+                }
+                
+            }
+        ]
+    },
+    "resources":{
+        "js_data":{
+            "daterange_selectors": ["#input-daterange-group"]
+        },
+        "js":[
+            "static/manager/js/order.list.js"
+        ],
+        "css":[]
+    }
+}

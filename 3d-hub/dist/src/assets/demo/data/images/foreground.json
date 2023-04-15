@@ -1,0 +1,51 @@
+{
+    "status": true,
+    "message": "Thao t\u00e1c th\u00e0nh c\u00f4ng!",
+    "data": [
+        {
+            "id": 128,
+            "owner_id": 9,
+            "upload_by": 9,
+            "privacy": "publish",
+            "filename": "image_01.png",
+            "original_filename": "image_01.png",
+            "filetype": "image",
+            "mime": "image\/png",
+            "extension": "png",
+            "format": "png",
+            "title": null,
+            "description": null,
+            "url": "https:\/\/threejs.vcc.vn\/textures/Frame/image_01.png",
+            "thumbnail": "https:\/\/threejs.vcc.vn\/textures/Frame/image_01.png",
+            "source": "https:\/\/threejs.vcc.vn\/textures/Frame/image_01.png",
+            "size": 8.4,
+            "size_unit": "MB"
+        },
+        {
+            "id": 127,
+            "owner_id": 9,
+            "upload_by": 9,
+            "privacy": "publish",
+            "filename": "image_02.png",
+            "original_filename": "image_02.png",
+            "filetype": "image",
+            "mime": "image\/png",
+            "extension": "png",
+            "format": "png",
+            "title": null,
+            "description": null,
+            "url": "https:\/\/threejs.vcc.vn\/textures/Frame/image_02.png",
+            "thumbnail": "https:\/\/threejs.vcc.vn\/textures/Frame/image_02.png",
+            "source": "https:\/\/threejs.vcc.vn\/textures/Frame/image_02.png",
+            "size": 8.4,
+            "size_unit": "MB"
+        }
+        
+    ],
+    "count": 25,
+    "totalItem": 25,
+    "page": 1,
+    "perPage": 50,
+    "currentPage": 1,
+    "totalPage": 1
+}

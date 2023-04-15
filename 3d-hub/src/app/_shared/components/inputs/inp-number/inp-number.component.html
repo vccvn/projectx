@@ -1,0 +1,19 @@
+<ng-container *ngIf="spin; then thenTemplate; else elseTemplate"></ng-container>
+<ng-template #thenTemplate>
+    <nz-input-number 
+    [name]="name" 
+    [nzMin]="min" 
+    [nzMax]="max" 
+    [nzStep]="step" 
+    [(ngModel)]="value" 
+    (ngModelChange)="valChange($event)"
+></nz-input-number>    
+</ng-template>
+<ng-template #elseTemplate>
+    <nz-input-number 
+    [name]="name" 
+    [(ngModel)]="value" 
+    (ngModelChange)="valChange($event)"
+></nz-input-number>
+</ng-template>
+

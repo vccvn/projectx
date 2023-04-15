@@ -1,0 +1,47 @@
+<nz-layout>
+    <nz-header>
+        <app-header></app-header>
+    </nz-header>
+    <nz-content>
+        <ng-container *ngIf="isLoading; then loadingTemplate; else editorTemplate"></ng-container>
+        <ng-template #loadingTemplate>
+            <div class="alert">
+                <h3>Vui lòng chờ giây lát</h3>
+            </div>
+        </ng-template>
+        <ng-template #editorTemplate>
+            <ng-container *ngIf="allow_custom; then notFoundTemplate; else editorTemplate"></ng-container>
+            <ng-template #notFoundTemplate>
+                <nz-layout class="inner-layout">
+                    <nz-sider nzWidth="380px" nzTheme="dark" (nzCollapsedChange)="nzCollapsedChange($event)">
+                        <app-viewer-sidebar></app-viewer-sidebar>
+                    </nz-sider>
+                    <nz-content class="nz-layout-content">
+                        <section id="content">
+                            <app-client-viewport></app-client-viewport>
+                        </section>
+                    </nz-content>
+                </nz-layout>
+                
+            </ng-template>
+            <ng-template #editorTemplate>
+                <nz-content class="nz-layout-content">
+                    <section id="content">
+                        <app-client-viewport></app-client-viewport>
+                    </section>
+                </nz-content>
+            </ng-template>
+
+        </ng-template>
+
+
+    </nz-content>
+</nz-layout>
+<dragging-item></dragging-item>
+<dragging-geometry></dragging-geometry>
+<modal-image-library [app]="app"></modal-image-library>
+<panel-mesh-geometry></panel-mesh-geometry>
+<panel-model-object></panel-model-object>
+<panel-light></panel-light>
+<app-panel-mesh-customize></app-panel-mesh-customize>
+<app-sidebar-lock *ngIf="allow_custom"></app-sidebar-lock>
