@@ -1,0 +1,18 @@
+{
+    "positions": {
+        "sidebar": "Sidebar Menu",
+        "category": "Menu Danh mục sản phẩm"
+
+    },
+    "menus": {
+        "category": {
+            "name": "Menu Danh mục sản phẩm",
+            "type": "theme",
+            "depth": 3,
+            "positions": ["category"],
+            "items": [
+                
+            ]
+        }
+    }
+}

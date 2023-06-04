@@ -1,0 +1,23 @@
+{
+    "name": "Home: Slider Area",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề"
+        },
+        "type": {
+            "type": "radio",
+            "label": "Kiểu slider",
+            "data": {
+                "slider": "Slider",
+                "component": "Component"
+            },
+            "default": "slider"
+        },
+        "slider_id": {
+            "type": "crazyselect",
+            "label": "Slider",
+            "call": "get_slider_options"
+        }
+    }
+}

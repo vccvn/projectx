@@ -1,0 +1,31 @@
+{
+    "label": "Chung",
+    "inputs": {
+        "show_preloader": {
+            "type": "switch",
+            "label": "Preloader",
+            "value_type": "boolean",
+            "check_label": "Hiển thị preloader",
+            "value": true
+        },
+        "theme_primary_color": {
+            "type": "coloris",
+            "label": "Màu chủ đạo",
+            "value": "#AD213A"
+        },
+        "plugins": {
+            "type": "area",
+            "label": "Plugins",
+            "value": "plugins",
+            "@area": "plugins",
+            "@title-by": "title"
+        }
+    },
+    "config1": {
+        "name": "Thiết lập mục đăng bài",
+        "layout_type": "single",
+        "form_groups": {
+        
+        }
+    }
+}

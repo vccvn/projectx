@@ -1,0 +1,115 @@
+/*
+ * custom CSS here
+ */
+
+ $screen-mf-sizes: (
+    "sm": 576px,
+    "md": 768px,
+    "lg": 992px,
+    "xl": 1200px,
+    "ds": 1300px,
+    "xxl": 1400px,
+    "dl": 1600px,
+    "dx": 1780px,
+    "du": 1900px,
+);
+$screen-df-sizes: (
+    "dl": 1779px,
+    "xxl": 1599px,
+    "ds": 1399px,
+    "xl": 1365px,
+    "lg": 1199px,
+    "md": 991px,
+    "sm": 768px,
+    "xs": 576px,
+);
+$points: 1200px, 1366px, 1460px, 1780px;
+$sizes: 0, 10, 12, 15, 16, 20, 24, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200;
+$sides: "t" "top", "b" "bottom", "l" "left", "r" "right", "s" "left", "e" "right";
+$aligns: "left", "center", "right";
+$display-mode: "none", "inline", "inline-block", "block", "table", "table-row", "table-cell";
+$section-sizes: 0, 10, 12, 15, 18, 20, 25, 25, 28, 30, 40, 50, 60, 70, 80, 90, 100;
+$ssd: 576px 24px, 768px 28px, 992px 36px, 1200px 40px, 1400px, 48px, 1750px 60px, 1880px 75px;
+@each $size in $sizes {
+    .p-#{$size} {
+        padding: #{$size}px #{$size}px;
+    }
+    .py-#{$size} {
+        padding-top: #{$size}px;
+        padding-bottom: #{$size}px;
+    }
+    .px-#{$size} {
+        padding-left: #{$size}px;
+        padding-right: #{$size}px;
+    }
+    @each $sideName, $side in $sides {
+        .p#{$sideName}-#{$size} {
+            padding-#{$side}: #{$size}px !important;
+        }
+    }
+    .m-#{$size} {
+        margin: #{$size}px #{$size}px;
+    }
+    .my-#{$size} {
+        margin-top: #{$size}px;
+        margin-bottom: #{$size}px;
+    }
+    .mx-#{$size} {
+        margin-left: #{$size}px;
+        margin-right: #{$size}px;
+    }
+    @each $sideName, $side in $sides {
+        .m#{$sideName}-#{$size} {
+            margin-#{$side}: #{$size}px !important;
+        }
+    }
+}
+
+@each $sizeName, $ss in $screen-mf-sizes {
+    @media screen and(min-width: #{$ss}) {
+        @each $size in $sizes {
+            .p-#{$sizeName}-#{$size} {
+                padding: #{$size}px #{$size}px;
+            }
+            .py-#{$sizeName}-#{$size} {
+                padding-top: #{$size}px;
+                padding-bottom: #{$size}px;
+            }
+            .px-#{$sizeName}-#{$size} {
+                padding-left: #{$size}px;
+                padding-right: #{$size}px;
+            }
+            @each $sideName, $side in $sides {
+                .p#{$sideName}-#{$sizeName}-#{$size} {
+                    padding-#{$side}: #{$size}px !important;
+                }
+            }
+            .m-#{$sizeName}-#{$size} {
+                margin: #{$size}px #{$size}px;
+            }
+            .my-#{$sizeName}-#{$size} {
+                margin-top: #{$size}px;
+                margin-bottom: #{$size}px;
+            }
+            .mx-#{$sizeName}-#{$size} {
+                margin-left: #{$size}px;
+                margin-right: #{$size}px;
+            }
+            @each $sideName, $side in $sides {
+                .m#{$sideName}-#{$sizeName}-#{$size} {
+                    margin-#{$side}: #{$size}px !important;
+                }
+            }
+        }
+    }
+}
+
+@each $name, $ss in $screen-mf-sizes {
+    @media screen and(min-width: #{$ss}) {
+        @each $align in $aligns {
+            .text-#{$name}-#{$align} {
+                text-align: #{$align} !important;
+            }
+        }
+    }
+}

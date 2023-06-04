@@ -1,0 +1,38 @@
+{
+    "label": "Header",
+    "inputs": {
+        "logo_light": {
+            "type": "media",
+            "label": "Logo Light"
+        },
+        "logo_dark": {
+            "type": "media",
+            "label": "Logo Dark"
+        },
+        "show_search_button": {
+            "type": "switch",
+            "label": "Search button",
+            "value_type": "boolean",
+            "check_label": "Hiển thị nút tìm kiếm",
+            "value": true
+        },
+        "show_addon_button": {
+            "type": "switch",
+            "label": "Addon button",
+            "value_type": "boolean",
+            "check_label": "Hiển thị nút tính mở rộng",
+            "value": true
+        },
+        "addon_button_link": {
+            "type": "text",
+            "label": "Addon button link",
+            "placeholder": "ví dụ: https://vcc.vn"
+        },
+        "addon_button_text": {
+            "type": "text",
+            "label": "Addon button text",
+            "placeholder": "ví dụ: Đặt hàng"
+        }
+
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "label": "Sản Phẩm",
+    "inputs": {
+        "page_title": {
+            "type": "text",
+            "label": "Tiêu đề trang (tùy chọn)"
+        },
+        "meta_title": {
+            "type": "text",
+            "label": "Tiêu đề meta (tùy chọn)"
+        },
+        "meta_description": {
+            "type": "textarea",
+            "label": "Meta Description",
+            "placeholder": "Viết gì đó..."
+        },
+        "banners": {
+            "type": "area",
+            "label": "Banners",
+            "value": "product_banners",
+            "area": "product_banners",
+            "@title-by": "title"
+        }
+
+    }
+}

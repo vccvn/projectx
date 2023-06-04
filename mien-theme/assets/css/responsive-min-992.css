@@ -1,0 +1,325 @@
+@media screen and (min-width: 992px) {
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .footer .container {
+    max-width: 900px;
+  }
+  .footer .brand-widget {
+    margin-left: 0;
+  }
+  .footer .brand-widget .brand-text h3 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  .footer .footer-links {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+  }
+  .footer .footer-links .contact-menu {
+    padding-left: 35px;
+    max-width: 300px;
+  }
+  .footer .footer-links .contact-menu li {
+    position: relative;
+  }
+  .footer .footer-links .contact-menu li + li {
+    margin-top: 10px;
+  }
+  .footer .footer-links .contact-menu li a {
+    font-size: 16px;
+    line-height: 200%;
+  }
+  .footer .footer-links .contact-menu li i {
+    font-size: 26px;
+    top: 3px;
+    left: -35px;
+  }
+  .footer .footer-links .social-menu li + li {
+    margin-left: 35px;
+  }
+  .footer .footer-links .social-menu li a {
+    font-size: 30px;
+  }
+  .page-header {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .page-header .inner {
+    max-height: 600px;
+  }
+  .page-header .inner .title {
+    font-size: 48px;
+  }
+  .page-header .inner .sub-title {
+    font-size: 32px;
+  }
+  .page-header .inner .spactor {
+    height: 4px;
+    margin-top: 16px;
+  }
+  .page-header .inner .spactor::after {
+    border-bottom: 4px solid #000;
+    width: 230px;
+  }
+  .top-banner {
+    min-height: var(--screen-lg-height-without-header);
+  }
+  .top-banner .carousel .carousel-item {
+    height: var(--screen-lg-height-without-header);
+  }
+  .top-banner .carousel .carousel-item .slide-text .slide-title {
+    font-size: 80px;
+  }
+  .top-banner .carousel .carousel-item .slide-text .slide-description {
+    margin-top: -10px;
+    font-size: 22px;
+  }
+  .mien-posts .post-item .item-header {
+    padding-bottom: 10px;
+    border-bottom-width: 3px;
+    margin-bottom: 20px;
+  }
+  .mien-posts .post-item .item-header .item-title,
+  .mien-posts .post-item .item-header .item-title a {
+    font-size: 20px;
+  }
+  .mien-posts .post-item .item-header .item-cate {
+    margin-top: 10px;
+  }
+  .mien-posts .post-item .item-header .item-cate,
+  .mien-posts .post-item .item-header .item-cate a {
+    font-size: 20px;
+  }
+  .widget.category-widget .box {
+    margin-top: 30px;
+  }
+  .widget.category-widget .box .box-title {
+    margin-bottom: 30px;
+  }
+  .widget.category-widget .box .box-title,
+  .widget.category-widget .box .box-title a {
+    font-size: 20px;
+    text-align: right;
+  }
+  .widget.category-widget .box .box-body .post-list li {
+    text-align: right;
+  }
+  .widget.category-widget .box .box-body .post-list li + li {
+    margin-top: 10px;
+  }
+  .widget.category-widget .box .box-body .post-list li a {
+    font-size: 14px;
+    text-align: right;
+  }
+  .widget.category-widget .box:not(:last-child) {
+    padding-bottom: 30px;
+  }
+  .widget.category-widget .box:not(:last-child)::after {
+    height: 3px;
+    right: 0;
+    left: auto;
+  }
+  .sidebar {
+    padding-left: 20px;
+  }
+  .article-page .single-content {
+    font-size: 20px;
+  }
+  .about-page {
+    padding-top: 90px;
+  }
+  .about-page .inner-content .our-story {
+    margin-top: 60px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .about-page .inner-content .our-story .story .story-image {
+    width: 75%;
+  }
+  .about-page .inner-content .masonry-section .masonry-inner {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .about-page .inner-content .masonry-section .masonry-inner .masonry-item .masonry-item-box a {
+    top: 15px;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+  }
+  .product-page .tab-block {
+    padding-bottom: 60px;
+  }
+  .product-page .tab-block .tab-item .tab-link {
+    font-size: 20px;
+    line-height: 24px;
+    border-bottom: 4px solid transparent;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  .product-page .product-banners {
+    margin-bottom: 30px;
+  }
+  .product-page .product-banners .banner-item {
+    width: 50%;
+  }
+  .product-page .product-banners .banner-item img {
+    aspect-ratio: 572 / 300;
+    object-fit: cover;
+  }
+  .product-page .product-list .col-item {
+    margin-bottom: 30px;
+  }
+  .product-page .product-list .product-item .thumbnail {
+    margin-bottom: 20px;
+  }
+  .product-page .product-list .product-item .thumbnail img {
+    aspect-ratio: 360 / 460;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .product-page .product-list .product-item .info .product-name {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+  .product-page .product-list .product-item .info .product-name a {
+    font-size: 20px;
+  }
+  .product-page .product-list .product-item .info .product-price {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .product-page .product-container {
+    max-width: 1138px;
+    margin-top: 30px;
+  }
+  .product-page .product-detail .inner-content {
+    max-width: 942px;
+  }
+  .product-page .product-detail .col-info {
+    display: flex;
+    align-items: end;
+    align-content: end;
+  }
+  .product-page .product-detail .col-info > {
+    display: block;
+    width: 100%;
+  }
+  .product-page .product-detail .product-name {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .product-page .product-detail .product-price-box {
+    margin-top: 11px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .product-page .product-detail .addeffect-section {
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+  .product-page .product-detail .addeffect-section.cartMove .error-message {
+    display: block;
+  }
+  .product-page .product-detail .addeffect-section .error-message {
+    display: none;
+    color: var(--theme-color);
+    font-weight: 500;
+    margin: 10px 0;
+  }
+  .product-page .product-detail .addeffect-section .qty-box .input-group span button {
+    border: 1px solid #ced4da;
+    height: 100%;
+  }
+  .product-page .product-detail .addeffect-section .qty-box .input-group .form-control {
+    width: 60px;
+  }
+  .product-page .product-detail .addeffect-section .qty-box .input-group input {
+    padding: 8px 8px;
+  }
+  .product-page .product-detail .addeffect-section .qty-box .input-group button {
+    font-size: 12px;
+    line-height: 1;
+    padding: 12px 15px;
+  }
+  .product-page .product-detail .addeffect-section .qty-box .input-group button i {
+    font-weight: 900;
+    color: #212529;
+  }
+  .product-page .product-detail .addeffect-section .qty-box .input-group .icon {
+    padding-right: 0;
+  }
+  .product-page .product-detail .quantity-block .quantity-label {
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .product-page .product-detail .product-detail-content {
+    margin-top: 11px;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+  }
+  .product-page .product-detail .product-note {
+    border-left: 2px solid #000;
+    padding: 12px 15px;
+    font-size: 13px;
+  }
+  .product-page .product-detail .product-buttons {
+    text-align: right;
+    margin-top: 10px;
+  }
+  .product-page .product-detail .product-buttons .btn-add-to-cart {
+    max-width: 306px;
+    width: 100%;
+    text-align: center;
+  }
+  .product-page .product-detail .product-buttons .btn-add-to-cart .text {
+    font-size: 13px;
+    /* identical to box height, or 250% */
+    letter-spacing: 0.02em;
+  }
+  .product-page .product-detail .share-buttons {
+    margin-top: 10px;
+  }
+  .product-page .product-detail .share-buttons li {
+    margin-right: 14px;
+  }
+  .product-page .relative-products {
+    margin-top: 50px;
+  }
+  .product-page .relative-products .list-title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
+  .cart-page .cart-item-info-right {
+    width: 40%;
+  }
+  .cart-page .empty-content .empty-image {
+    max-width: 40%;
+  }
+  .payment-page h3 {
+    font-size: 22px;
+  }
+  .payment-page h4 {
+    font-size: 18px;
+  }
+  .payment-page p,
+  .payment-page label {
+    font-size: 15px;
+  }
+  .payment-page p {
+    margin-bottom: 1rem;
+  }
+  .payment-page .order-section {
+    max-width: 500px;
+    margin: auto;
+  }
+  .payment-page .order-section .input {
+    margin-bottom: 18px;
+  }
+}

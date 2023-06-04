@@ -1,0 +1,94 @@
+{
+    "name": "Footer menu",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề"
+        },
+        "menu_id": {
+            "type": "crazyselect",
+            "label": "Footer menu",
+            "call": "get_menu_options"
+        },
+        "menu_class": {
+            "type": "text",
+            "label": "Menu Class (Tùy chọn)",
+            "placeholder": "Menu Class (Tùy chọn)"
+        },
+        "class": {
+            "type": "text",
+            "label": "ClassName (Tùy chọn)",
+            "placeholder": "ClassName (Tùy chọn)"
+        },
+        "col_xs": {
+            "type":"radio",
+            "label": "Smartphone Column size  (&lt; 576px)",
+            "data": {
+                "1": "xs-1",
+                "2": "xs-2",
+                "3": "xs-3",
+                "4": "xs-4",
+                "5": "xs-5",
+                "6": "lg-6",
+                "12": "xs-12"
+            },
+            "default": 12
+        },
+        "col_sm": {
+            "type":"radio",
+            "label": "Smal Screen Column size (576px - 767px)",
+            "data": {
+                "1": "sm-1",
+                "2": "sm-2",
+                "3": "col-3",
+                "4": "sm-4",
+                "5": "sm-5",
+                "6": "sm-6",
+                "12": "sm-12"
+            },
+            "default": 6
+        },
+        "col_md": {
+            "type":"radio",
+            "label": "Medium Screen Column size (768px - 991px)",
+            "data": {
+                "1": "md-1",
+                "2": "md-2",
+                "3": "md-3",
+                "4": "md-4",
+                "5": "md-5",
+                "6": "md-6",
+                "12": "md-12"
+            },
+            "default": 4
+        },
+        "col_lg": {
+            "type":"radio",
+            "label": "Large Screen Column size (992px - 1199px)",
+            "data": {
+                "1": "lg-1",
+                "2": "lg-2",
+                "3": "lg-3",
+                "4": "lg-4",
+                "5": "lg-5",
+                "6": "lg-6",
+                "12": "lg-12"
+            },
+            "default": 6
+        },
+        "col_xl": {
+            "type":"radio",
+            "label": "Extra Large Screen Column size (&gt; 1200px)",
+            "data": {
+                "1": "xl-1",
+                "2": "xl-2",
+                "3": "xl-3",
+                "4": "xl-4",
+                "5": "xl-5",
+                "6": "xl-6",
+                "12": "xl-12"
+            },
+            "default": 6
+        }
+    }
+}

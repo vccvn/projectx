@@ -1,0 +1,17 @@
+{
+    "name": "About Page: Header",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề"
+        },
+        "sub_title": {
+            "type": "text",
+            "label": "Tiêu đề nhỏ"
+        },
+        "description": {
+            "type": "textarea",
+            "label": "Mô tả (Tuỳ chọn)"
+        }
+    }
+}

@@ -1,0 +1,79 @@
+{
+    "label": "Bài viết",
+    "inputs": {
+        "list_layout": {
+            "type": "radio",
+            "label": "Layout Danh sách",
+            "data": {
+                "sidebar": "sidebar",
+                "fullwidth": "fullwidth"
+            },
+            "default": "sidebar"
+        },
+        "list_type": {
+            "type": "radio",
+            "label": "Kiểu Danh sách",
+            "data": {
+                "classic": "Classic",
+                "grid": "Lưới (grid)"
+            },
+            "default": "grid"
+        },
+        
+        "detail_layout": {
+            "type": "radio",
+            "label": "Layout Danh sách",
+            "data": {
+                "sidebar": "Sidebar",
+                "fullwidth": "fullwidth"
+            },
+            "default": "sidebar"
+        },
+        "detail_use_feature_image": {
+            "type": "switch",
+            "label": "Header Image",
+            "value_type": "boolean",
+            "check_label": "Sử dụng Feature Image làm hình nền Header"
+        },
+        "post_settings": {
+            "type": "area",
+            "label": "Mục được thiết lập",
+            "value": "post_settings",
+            "@area": "post_settings",
+            "@title-by": "title"
+        }
+    },
+    "config": {
+        "name": "Thiết lập mục đăng bài",
+        "layout_type": "single",
+        "form_groups": {
+            "general": {
+                "title": "Thiết lập chung",
+                "inputs": [
+                    "list_layout",
+                    "list_type"
+                ]
+            },
+            "detail": {
+                "title": "Thiết lập Trang chi tiết ",
+                "inputs": [
+                    "detail_layout",
+                    "detail_use_feature_image",
+                    "detail_hide_feature_image"
+                    
+                ]
+            },
+            "post_settings": {
+                "title": "Thiết lập cho từng mục",
+                "className": "mt-3 pt-2 border-top",
+                "inputs": [
+                    "post_settings"
+                ]
+            }
+        }
+    },
+    "data": {
+        "list_layout": "sidebar",
+        "list_type": "grid"
+    }
+}

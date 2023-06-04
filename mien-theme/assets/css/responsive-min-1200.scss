@@ -1,0 +1,21 @@
+@media screen and(min-width: 1200px) {
+    // COMMON
+
+    .top-banner {
+        min-height: var(--screen-xl-height-without-header);
+        .carousel {
+            .carousel-item {
+                height: var(--screen-xl-height-without-header);
+                .slide-text {
+                    .slide-title {
+                        font-size: 96px;
+                    }
+                    .slide-description {
+                        margin-top: -15px;
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+}

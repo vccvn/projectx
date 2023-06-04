@@ -1,0 +1,18 @@
+{
+    "name": "Home: Slider Area",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề"
+        },
+        "image_url": {
+            "type": "media",
+            "label": "Ảnh",
+            "@filetype": "png,jpg,jpeg,gif,bmp"
+        },
+        "description": {
+            "type": "textarea",
+            "label": "Mô tả (Tuỳ chọn)"
+        }
+    }
+}

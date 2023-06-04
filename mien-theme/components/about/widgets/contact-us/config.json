@@ -1,0 +1,47 @@
+{
+    "name": "About Page: Contact",
+    "inputs": {
+        "thumbnail": {
+            "type": "media",
+            "label": "Ảnh",
+            "@filetype": "png,jpg,jpeg,gif,bmp"
+        },
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề"
+        },
+        
+        "description": {
+            "type": "textarea",
+            "label": "Mô tả (Tuỳ chọn)"
+        },
+        "email": {
+            "type": "text",
+            "label": "Email (Tuỳ chọn)",
+            "placeholder": "Mặc dịnh sẽ lấy từ thiết lập thông tin wwbsite"
+        },
+        "phone_number": {
+            "type": "text",
+            "label": "Số điện thoại (Tuỳ chọn)",
+            "placeholder": "Mặc dịnh sẽ lấy từ thiết lập thông tin wwbsite"
+        },
+        "address": {
+            "type": "text",
+            "label": "Địa chỉ (Tuỳ chọn)",
+            "placeholder": "Mặc dịnh sẽ lấy từ thiết lập thông tin wwbsite"
+        },
+        "url": {
+            "type": "text",
+            "label": "Đường dẫn xem thêm",
+            "placeholder": "http://..."
+        },
+        "btn_text": {
+            "type": "text",
+            "label": "Text của nút bấm",
+            "default": "our stories"
+        }
+
+
+
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "label": "Về chúng tôi",
+    "inputs": {
+        "about_page_id": {
+            "type": "crazyselect",
+            "label": "About",
+            "call": "get_page_options"
+        },
+        "widgets": {
+            "type": "area",
+            "label": "Nội dung",
+            "value": "about_contents",
+            "area": "about_contents",
+            "@title-by": "title"
+        }
+    }
+}

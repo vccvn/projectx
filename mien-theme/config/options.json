@@ -1,0 +1,33 @@
+{
+    "title": "Miên options",
+    "groups": {
+        "general": {
+            "label": "Chung",
+            "file": "general.json"
+        },
+        "footer": {
+            "label": "Footer",
+            "file": "footer.json"
+        },
+        "sidebar": {
+            "label": "Sidebar",
+            "file": "sidebar.json"
+        },
+        "home": {
+            "label": "Home",
+            "file": "home.json"
+        },
+        "products": {
+            "label": "Trang sản phẩm",
+            "file": "products.json"
+        },
+        "about": {
+            "label": "About",
+            "file": "about.json"
+        },
+        "contacts": {
+            "label": "Trang liên hệ",
+            "file": "contacts.json"
+        }
+    }
+}

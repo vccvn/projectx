@@ -1,0 +1,35 @@
+{
+    "label": "MXH",
+    "inputs": {
+        "facebook": {
+            "type": "text",
+            "label": "facebook (Tùy chọn)",
+            "placeholder": "Không bắt buộc"
+        },
+        "twitter": {
+            "type": "text",
+            "label": "twitter (Tùy chọn)",
+            "placeholder": "Không bắt buộc"
+        },
+        "youtube": {
+            "type": "text",
+            "label": "youtube (Tùy chọn)",
+            "placeholder": "Không bắt buộc"
+        },
+        "linkedin": {
+            "type": "text",
+            "label": "Linkedin (Tùy chọn)",
+            "placeholder": "Không bắt buộc"
+        },
+        "instagram": {
+            "type": "text",
+            "label": "instagram (Tùy chọn)",
+            "placeholder": "Không bắt buộc"
+        },
+        "pinterest": {
+            "type": "text",
+            "label": "Pinterest (Tùy chọn)",
+            "placeholder": "Không bắt buộc"
+        }
+    }
+}

@@ -1,0 +1,110 @@
+{
+    "label": "Trang",
+    "inputs": {
+        "header_style": {
+            "type": "radio",
+            "label": "Header Style mặc định",
+            "data": {
+                "1": "Style 1",
+                "2": "Style 2"
+            },
+            "default": "1"
+        },
+        "list_layout": {
+            "type": "radio",
+            "label": "Layout Danh sách",
+            "data": {
+                "sidebar": "Sidebar",
+                "fullwidth": "fullwidth"
+            },
+            "default": "sidebar"
+        },
+        "list_type": {
+            "type": "radio",
+            "label": "Kiểu Danh sách",
+            "data": {
+                "classic": "Classic",
+                "grid": "Lưới (grid)"
+            },
+            "default": "grid"
+        },
+        "header_use_bg_image": {
+            "type": "switch",
+            "label": "Sử dụng hình nền",
+            "value_type": "boolean",
+            "check_label": "Có"
+        },
+        "header_bg_image": {
+            "type": "media",
+            "@filetype": "image",
+            "label": "Hình nền (Tùy chọn)"
+        },
+        
+        "detail_layout": {
+            "type": "radio",
+            "label": "Layout Danh sách",
+            "data": {
+                "sidebar": "Sidebar",
+                "fullwidth": "fullwidth",
+                "page": "Layout tùy biến cho trang"
+            },
+            "default": "sidebar"
+        },
+        
+        "detail_use_feature_image": {
+            "type": "switch",
+            "label": "Header Image",
+            "value_type": "boolean",
+            "check_label": "Sử dụng Feature Image làm hình nền Header"
+
+        },
+        "page_settings": {
+            "type": "area",
+            "label": "Mục được thiết lập",
+            "value": "page_settings",
+            "@area": "page_settings",
+            "@title-by": "title"
+        }
+    },
+    "config": {
+        "name": "Thiết lập mục đăng bài",
+        "layout_type": "single",
+        "form_groups": {
+            "general": {
+                "title": "Thiết lập chung",
+                "inputs": [
+                    "list_layout",
+                    "list_type"
+                ]
+            },
+            "page_header": {
+                "title": "Thiết lập Page Header",
+                "inputs": [
+                    "header_style",
+                    "header_use_bg_image",
+                    "header_bg_image"
+                ]
+            },
+            "detail": {
+                "title": "Thiết lập Trang chi tiết ",
+                "inputs": [
+                    "detail_layout",
+                    "detail_use_feature_image"
+                   
+                ]
+            },
+            "page": {
+                "title": "Thiết lập Trang cụ thể ",
+                "inputs": [
+                    "page_settings"
+                   
+                ]
+            }
+        }
+    },
+    "data": {
+        "show_breadcrumb": true,
+        "list_layout": "sidebar",
+        "list_type": "grid"
+    }
+}

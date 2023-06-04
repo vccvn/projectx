@@ -1,0 +1,12 @@
+{
+    "label": "Footer",
+    "inputs": {
+        "widgets": {
+            "type": "area",
+            "label": "Nội dung footer",
+            "value": "footer_slogans",
+            "area": "footer_widgets",
+            "@title-by": "title"
+        }
+    }
+}

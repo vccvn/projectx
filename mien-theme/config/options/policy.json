@@ -1,0 +1,19 @@
+{
+    "label": "Trang chính sách",
+    "inputs": {
+        "page_id": {
+            "type": "crazyselect",
+            "label": "Trang hiển thị",
+            "call": "get_page_options"
+        },
+
+        "policy_contents": {
+            "type": "area",
+            "label": "Nội dung trang",
+            "value": "policy_contents",
+            "area": "policy_contents",
+            "@title-by": "title"
+        }
+        
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "label": "Trang chủ",
+    "inputs": {
+        "title": {
+            "type": "text",
+            "label": "Tiêu đề (Tùy chọn)",
+            "placeholder": "Viết gì đó..."
+        },
+        "description": {
+            "type": "textarea",
+            "label": "Mô tả (Tùy chọn(",
+            "placeholder": "Viết gì đó..."
+        },
+        "thumbnail": {
+            "type": "media",
+            "label": "Thumbnail (Tùy chọn)",
+            "@filetype": "png,jpg,jpeg,gif,bmp"
+        },
+        
+        "content_area": {
+            "type": "area",
+            "label": "Nội dung Trang chủ",
+            "value": "home_area",
+            "@area": "home_area",
+            "@title-by": "title"
+        }
+    }
+}

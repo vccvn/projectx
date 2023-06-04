@@ -1,0 +1,45 @@
+{
+    "name": "About Page: Stories",
+    "inputs": {
+        "first_title": {
+            "type": "text",
+            "label": "Tiêu đề 1"
+        },
+        "first_content": {
+            "type": "textarea",
+            "label": "Nội dung 1"
+        },
+        "first_image": {
+            "type": "media",
+            "label": "Ảnh 1",
+            "@filetype": "png,jpg,jpeg,gif,bmp"
+        },
+        
+        "second_title": {
+            "type": "text",
+            "label": "Tiêu đề 2"
+        },
+        "second_content": {
+            "type": "textarea",
+            "label": "Nội dung 2"
+        },
+        "second_image": {
+            "type": "media",
+            "label": "Ảnh 2",
+            "@filetype": "png,jpg,jpeg,gif,bmp"
+        },
+        "url": {
+            "type": "text",
+            "label": "Đường dẫn xem thêm",
+            "placeholder": "http://..."
+        },
+        "btn_text": {
+            "type": "text",
+            "label": "Text của nút bấm",
+            "default": "our stories"
+        }
+
+
+
+    }
+}

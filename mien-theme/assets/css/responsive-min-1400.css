@@ -1,0 +1,21 @@
+@media screen and (min-width: 1400px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1140px;
+  }
+  .footer .container {
+    max-width: 900px;
+  }
+  .top-banner {
+    min-height: var(--screen-xxl-height-without-header);
+  }
+  .top-banner .carousel .carousel-item {
+    height: var(--screen-xxl-height-without-header);
+  }
+  .top-banner .carousel .carousel-item .slide-text .slide-title {
+    font-size: 120px;
+  }
+  .top-banner .carousel .carousel-item .slide-text .slide-description {
+    margin-top: -20px;
+    font-size: 30px;
+  }
+}
