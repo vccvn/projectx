@@ -275,7 +275,7 @@ async function getHtmlWithCookie(url, cBrowser) {
     await page.goto(site.home);
     await page.waitFor(500);
     await page.goto(url);
-    
+
 
 
 
@@ -454,6 +454,21 @@ app.get('/hosting/update', async (req, res) => {
             'a2ensite ' + secret_id + '.conf',
 
         ];
+        if (fs.existsSync('/etc/nginx/sites-enabled/' + secret_id)){
+
+            cmdList.push(
+                'rm  /etc/nginx/sites-enabled/' + secret_id,
+
+            );
+        }
+
+        cmdList.push(
+            'sudo ln -s /etc/nginx/sites-available/vcc/' + secret_id + '.conf /etc/nginx/sites-enabled/',
+            'cd /etc/apache2/sites-available/ && a2dissite ' + secret_id + '.conf',
+            'cp ' + rootPath + 'webdata/hosting/' + secret_id + '.conf /etc/apache2/sites-available/' + secret_id + '.conf',
+            'a2ensite ' + secret_id + '.conf',
+
+        );
         var status = await execCmdList(cmdList);
 
         if (status) {
@@ -650,7 +665,7 @@ app.get('/certbot', async (req, res) => {
             console.log(r)
             res.send("1");
         });
-        
+
         if (!r) {
             if (status) {
                 res.send("success");

@@ -61,7 +61,7 @@ if(!function_exists('get_cfg_domains')){
         static $domains = [];
         if(!count($domains)){
             $domains = explode(',', str_replace(' ', '', env('APP_BASE_DOMAIN_LIST')));
-            
+
             // get_system_config('domain_list');
         }
         return $domains;
@@ -106,6 +106,7 @@ if(!function_exists('get_domain')){
         return $domain;
     }
 }
+
 if(!function_exists('get_non_www_domain')){
     /**
      * lấy tên miên dược ko chứa www

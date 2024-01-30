@@ -11,7 +11,7 @@
         "branch": "Chi nhánh (Hệ thống con)"
     },
     "domain_list": [
-        "vcc.vn"
+        "demo.vcc.vn"
     ],
     "web_modules": {
         "base":["pages", "dynamics", "files", "forms","tags", "contacts", "comments", "subcribes", "sliders","menus", "settings", "embeds", "themes", "components", "account"],
