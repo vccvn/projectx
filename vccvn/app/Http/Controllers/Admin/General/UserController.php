@@ -14,7 +14,7 @@ class UserController extends AdminController
     protected $module = 'users';
 
     protected $moduleName = 'Người dùng';
-    
+
     protected $data = [];
 
 
@@ -23,16 +23,16 @@ class UserController extends AdminController
      *
      * @return void
      */
-    public function __construct(UserRepository $UserRepository, ProfileRepository $profileRepository)
+    public function __construct(UserRepository $UserRepository, protected ProfileRepository $profiles)
     {
         $this->repository = $UserRepository;
         $this->repository->staffQuery();
 
-        $this->profiles = $profileRepository;
-        
+        // $this->profiles = $profileRepository;
+
 
         $this->init();
-        
+
     }
 
     /**
@@ -60,7 +60,7 @@ class UserController extends AdminController
         }
     }
 
-    
+
     /**
      * can thiệp trước khi luu
      * @param Request $request
@@ -79,7 +79,7 @@ class UserController extends AdminController
         $this->data = $data->all();
     }
 
-    
+
 
     /**
      * can thiệp sau khi luu
@@ -97,7 +97,7 @@ class UserController extends AdminController
 
 
     /**
-     * tim kiếm thông tin người dùng 
+     * tim kiếm thông tin người dùng
      * @param Request $request
      * @return json
      */
@@ -115,9 +115,9 @@ class UserController extends AdminController
         return $this->json(compact(...$this->apiSystemVars));
     }
 
-    
+
     /**
-     * tim kiếm thông tin người dùng 
+     * tim kiếm thông tin người dùng
      * @param Request $request
      * @return json
      */

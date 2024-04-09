@@ -335,7 +335,7 @@ class ThemeRepository extends BaseRepository
         if ($l = $filemanager->getJson($config . '/layout')) $layout = array_merge($layout, $l);
         if ($i = $filemanager->getJson($config . '/icons')) $package['icons'] = $i;
         if ($packageJson = $filemanager->getJson($config . '/package')) $package = array_merge($package, $packageJson);
-        
+
         if (is_dir($config . '/components')) $components = array_merge($components, $this->getJsonComponents($filemanager, $config . '/components'));
 
         if (is_dir($cPath = base_path($theme_path . '/components'))) {
@@ -555,7 +555,7 @@ class ThemeRepository extends BaseRepository
         $theme = $this->detailQuery()->like('web_types', 'default')->first();
         if (!$theme) return false;
         $theme->applyMeta();
-        
+
         if (app(SettingRepository::class)->saveOwnerSetting($owner_id, ['theme_id'=>$theme->id])) {
             $this->firstSetup($theme);
             return true;
@@ -574,15 +574,18 @@ class ThemeRepository extends BaseRepository
         if($owner_id = $this->getOwnerID()){
             $this->metadataReposirory->setOwnerID($owner_id);
         }
+        if($this->getOptionRepository()->first(['ref' => 'theme', 'ref_id' => $theme_id]))
+            return true;
         if ($listStr = $this->metadataReposirory->getMetaMeta('data', 0, 'theme_active_list')) {
             try {
                 $this->theme_active_list = is_array($listStr)?$listStr:json_decode($listStr, true);
             } catch (NotReportException $th) {
                 $this->theme_active_list = [];
             }
-            
+
             return in_array($theme_id, $this->theme_active_list);
         }
+
         return false;
     }
 
